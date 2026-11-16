@@ -17,6 +17,11 @@ files can no longer drift, because one is derived from the other.
 
 Absolute URLs, `mailto:`, `tel:`, bare fragments, and root-absolute paths are
 left untouched.
+
+Generated `.html` pages are the exception to the `../` rewrite: on github.com a
+repo-relative `.html` link opens the file's source view, not the page, so those
+targets point at the published site (`SITE_ORIGIN`) instead. Every such page is
+served there at the same path.
 """
 
 from __future__ import annotations
@@ -28,6 +33,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SOURCE = REPO_ROOT / "README.md"
 OUT = REPO_ROOT / ".github" / "README.md"
+
+# Published site that serves the generated `.html` pages at their repo paths.
+SITE_ORIGIN = "https://danielarifriedman.com/"
 
 GENERATED_MARKER = (
     "<!-- Generated from ../README.md by code/orchestrators/build_github_readme.py."
@@ -50,12 +58,19 @@ _ABSOLUTE_PREFIXES = (
 
 
 def relocate_target(target: str) -> str:
-    """Prefix a repo-relative target so it resolves from `.github/`."""
+    """Prefix a repo-relative target so it resolves from `.github/`.
+
+    Repo-relative `.html` pages resolve to the published site instead.
+    """
     if not target or target.startswith(_ABSOLUTE_PREFIXES):
         return target
     if ":" in target.split("/", 1)[0]:
         # Any other scheme (ftp:, irc:, ...) is absolute for our purposes.
         return target
+    path = target.split("#", 1)[0].split("?", 1)[0]
+    if path.endswith(".html"):
+        # github.com shows an .html blob as source; send readers to the rendered page.
+        return SITE_ORIGIN + target
     return "../" + target
 
 

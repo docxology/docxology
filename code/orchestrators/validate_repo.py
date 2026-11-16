@@ -662,7 +662,7 @@ def _resolve_release_commit(value: str | None) -> str:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         raise SystemExit(f"Unable to resolve release commit: {requested}")
     return result.stdout.strip()
@@ -688,7 +688,7 @@ def _release_worktree_errors(repo_root: Path = REPO_ROOT) -> list[str]:
         cwd=repo_root,
         capture_output=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         return ["unable to inspect release worktree"]
     changed: list[str] = []
@@ -848,7 +848,7 @@ def run_isolated_candidate_validation(
             ],
             cwd=repo_root,
             check=True,
-        )
+        stdin=subprocess.DEVNULL)
         try:
             print("Validating committed release source in an isolated worktree")
             subprocess.run(list(command), cwd=candidate_root, check=True)
@@ -859,7 +859,7 @@ def run_isolated_candidate_validation(
                 ["git", "worktree", "remove", "--force", str(candidate_root)],
                 cwd=repo_root,
                 check=True,
-            )
+            stdin=subprocess.DEVNULL)
 
 
 def main() -> None:

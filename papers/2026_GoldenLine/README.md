@@ -4,7 +4,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21754237-blue)](https://doi.org/10.5281/zenodo.21754237)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24069423-blue)](https://doi.org/10.5281/zenodo.24069423)
 
 ---
 
@@ -36,7 +36,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.21754237](https://doi.org/10.5281/zenodo.21754237)
+- DOI: [10.5281/zenodo.24069423](https://doi.org/10.5281/zenodo.24069423)
 - Artifact DOI: [10.5281/zenodo.22833506](https://doi.org/10.5281/zenodo.22833506)
 - Zenodo record: [https://zenodo.org/records/22833506](https://zenodo.org/records/22833506)
 - Historical local PDF: [golden_line_combined.pdf](golden_line_combined.pdf)
@@ -47,7 +47,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Golden Line: Toward What Matters*. Zenodo. DOI: 10.5281/zenodo.21754237. URL: https://doi.org/10.5281/zenodo.21754237.
+> Daniel Ari Friedman (2026). *Golden Line: Toward What Matters*. Zenodo. DOI: 10.5281/zenodo.24069423. URL: https://doi.org/10.5281/zenodo.24069423.
 
 ## Related
 

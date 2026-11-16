@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22833489.svg)](https://doi.org/10.5281/zenodo.22833489)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24069450.svg)](https://doi.org/10.5281/zenodo.24069450)
 
 ---
 
@@ -18,7 +18,7 @@ stewardship · maintenance · line set · accountability
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.22833489](https://doi.org/10.5281/zenodo.22833489) |
+| **DOI** | [10.5281/zenodo.24069450](https://doi.org/10.5281/zenodo.24069450) |
 | **Published** | 2026-09-18 |
 | **Version** | 0.1.0 |
 | **Zenodo record** | https://zenodo.org/records/22833489 |
@@ -29,9 +29,15 @@ stewardship · maintenance · line set · accountability
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *The Blue Line: A Stewardship Instrument for Maintained Commitments*. Zenodo. DOI: 10.5281/zenodo.22833489. URL: https://doi.org/10.5281/zenodo.22833489.
+> Daniel Ari Friedman (2026). *The Blue Line: A Stewardship Instrument for Maintained Commitments*. Zenodo. DOI: 10.5281/zenodo.24069450. URL: https://doi.org/10.5281/zenodo.24069450.
 
 ## Related
 
 - Zenodo record: https://zenodo.org/records/22833489
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+
+## Source archive (2026-11-15)
+
+[Repository archive](https://doi.org/10.5281/zenodo.24124418). [Prior manuscript deposit](https://doi.org/10.5281/zenodo.24069450). The retained manuscript PDF and extracted text represent their earlier documented editions.
+
+Prior manuscript deposit: https://doi.org/10.5281/zenodo.22833489. The retained PDF and extraction retain their earlier documented edition.

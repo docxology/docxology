@@ -192,6 +192,8 @@ SCHEMAS = {
             "language": "string or empty",
             "stars": "integer or null; API snapshot value",
             "updated_or_year": "string; API snapshot month/year or source year",
+            "homepage": "optional string; curated public site or demo",
+            "install_url": "optional string; curated package installation destination",
             "paper_path": "string or empty",
             "zenodo_url": "string or empty",
         },

@@ -4,18 +4,18 @@ type: article
 title: "The Line Set: Holding Instruments Apart"
 version: "0.1.0"
 date-released: 2026-08-02
-doi: 10.5281/zenodo.21754243
-url: "https://doi.org/10.5281/zenodo.21754243"
+doi: 10.5281/zenodo.24069474
+url: "https://doi.org/10.5281/zenodo.24069474"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.21754243"
+    value: "10.5281/zenodo.24069474"
     description: "Canonical citation DOI"
   - type: url
-    value: "https://doi.org/10.5281/zenodo.21754243"
+    value: "https://doi.org/10.5281/zenodo.24069474"
     description: "Canonical citation DOI resolver"
   - type: doi
     value: "10.5281/zenodo.22833507"

@@ -7,9 +7,13 @@ import argparse
 import html
 import json
 import re
+import sys
 from email.utils import format_datetime, parsedate_to_datetime
 from datetime import datetime, timezone
 from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parents[1] / "src"))
+from docxology_tools.citation_metadata import publication_date  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "feed.xml"
@@ -124,9 +128,12 @@ def render(build_date: datetime | None = None, *, repo_root: Path = REPO_ROOT) -
             )
         )
     for work in works[:25]:
-        # Use actual publication year as the pubDate (Jan 1 of that year)
+        # Use source-backed exact dates, retaining year-only fallback.
         try:
-            work_date = datetime(int(work["year"]), 1, 1, tzinfo=timezone.utc)
+            metadata_path = repo_root / str(work.get("docs_path") or "") / "metadata.json"
+            metadata = json.loads(metadata_path.read_text()) if metadata_path.is_file() else {}
+            date = publication_date(work, metadata)
+            work_date = datetime.fromisoformat(date if len(date) == 10 else date + "-01-01").replace(tzinfo=timezone.utc)
         except ValueError, TypeError:
             work_date = build_date
         entries.append(

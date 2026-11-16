@@ -4473,5 +4473,25 @@
       "kind": "publisher_description",
       "review_scope": "Pre-event program description, not a claim of a completed event or a research-study abstract."
     }
+  },
+  "2026_OPHFEP_Synergetics": {
+    "year": "2026",
+    "topic": "OPHFEP_Synergetics",
+    "name": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+    "description": "An executable correspondence battery across Observer Patch Holography, the Free Energy Principle and Fuller’s Synergetics. Repository-declared scope; this catalog does not independently verify its scientific claims.",
+    "abstract": "An executable correspondence battery across Observer Patch Holography, the Free Energy Principle and Fuller’s Synergetics. Repository-declared scope; this catalog does not independently verify its scientific claims.",
+    "tags": [
+      "active inference",
+      "synergetics",
+      "observer patch holography"
+    ],
+    "domain": "Active Inference",
+    "authors": "Daniel Ari Friedman",
+    "doi": "",
+    "keywords": [
+      "active inference",
+      "synergetics",
+      "observer patch holography"
+    ]
   }
 }

@@ -55,6 +55,7 @@ def strip_md(value: str) -> str:
     value = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1", value)
     value = re.sub(r"<[^>]+>", "", value)
     value = value.replace("📄", "").strip()
+    value = re.sub(r"(?:\s*·\s*){2,}", " · ", value)
     return re.sub(r"\s*[·;,-]\s*$", "", value).strip()
 
 
@@ -310,6 +311,7 @@ def software_rows_to_dict(row: SoftwareRow) -> dict:
         "owner": row.owner,
         "catalog_section": row.catalog_section,
         "description": description_plain(row.description_raw),
+        **material_links(row.description_raw),
         "language": row.language,
         "stars": row.stars,
         "updated_or_year": row.updated_or_year,
@@ -351,3 +353,14 @@ def software_catalog_dois(
                 doi.casefold(), {"software_row": row.name, "paper_folder": folder}
             )
     return linked
+
+
+def material_links(description_raw: str) -> dict[str, str]:
+    """Return curated public destinations while retaining the GitHub source URL."""
+    fields = {}
+    for label, url in MARKDOWN_LINK_RE.findall(description_raw):
+        if label.casefold() in {"site", "demo", "homepage"}:
+            fields.setdefault("homepage", url)
+        elif label.casefold() == "pypi":
+            fields.setdefault("install_url", url)
+    return fields

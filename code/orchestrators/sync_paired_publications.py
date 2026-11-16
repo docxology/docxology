@@ -67,6 +67,7 @@ from docxology_tools.zenodo_pagination import fetch_zenodo_search  # noqa: E402
 from docxology_tools.biblio_table import bibliography_rows_from_lines  # noqa: E402
 from docxology_tools.generated_outputs import read_generated_output_text  # noqa: E402
 from docxology_tools.public_integrity import contains_local_paths, redact_local_paths  # noqa: E402
+from docxology_tools.public_repository_links import project_pairing_report, public_repositories  # noqa: E402
 from docxology_tools.work_identifiers import (  # noqa: E402
     next_catalog_num,
     write_catalog_with_identifiers,
@@ -1666,6 +1667,7 @@ def write_report(
     classification_cache: dict[str, Any] | None = None,
     previous_report: dict[str, Any] | None = None,
     explicit_zenodo_record_ids: list[int] | None = None,
+    repo_root: Path | None = None,
 ) -> None:
     if explicit_zenodo_record_ids is not None:
         _explicit_ids_for_records(explicit_zenodo_record_ids, records)
@@ -1766,6 +1768,7 @@ def write_report(
         payload["source_observations"] = deepcopy(
             previous_report["source_observations"]
         )
+    payload = project_pairing_report(payload, public_repositories(repo_root or REPO_ROOT))
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"

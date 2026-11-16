@@ -213,7 +213,7 @@ def test_work_page_exposes_pdf_and_folder_and_preserves_text_encoding(
     page = bwp.render_work_page(work)
     assert 'download="paper.pdf"' in page
     assert "Paper folder on GitHub" in page
-    assert "citation_pdf_url" in page
+    assert "citation_pdf_url" not in page  # Unknown byline: no partial Scholar block.
     graph = json.loads(bwp.json_ld(work))
     assert "author" not in graph
     assert {encoding["encodingFormat"] for encoding in graph["encoding"]} == {

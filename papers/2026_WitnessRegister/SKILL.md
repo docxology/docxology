@@ -5,7 +5,7 @@ description: "The selected Witness Register edition describes a co-registration 
 tags: ["co-registration", "append-only-log", "provenance", "non-compensatory-decision-rules", "boundary-objects", "research-infrastructure", "open-science"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *The Witness Register: Co-Registration Without Aggregation*. Zenodo."
-doi: "10.5281/zenodo.21754245"
+doi: "10.5281/zenodo.24069487"
 artifact_doi: "10.5281/zenodo.22833511"
 ---
 
@@ -41,7 +41,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- Canonical DOI: 10.5281/zenodo.21754245
+- Canonical DOI: 10.5281/zenodo.24069487
 - PDF SHA-256: 78d34b5db3f603e4c65d17ae8511a78fe1356363611cbb1a4581c1126f4d1c44
 - Pairing confidence: unknown
 - Last checked: 2026-11-06T18:27:13.394678+00:00
@@ -57,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.21754245`
+1. Reference the DOI for citation: `10.5281/zenodo.24069487`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

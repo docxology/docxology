@@ -46,7 +46,7 @@ async function init() {
     payload = await response.json();
   } catch (error) {
     document.getElementById('loading').innerHTML =
-      '<p style="color:var(--text-secondary)">Video index unavailable. Run <code>python3 code/orchestrators/build_video_pages.py</code> to generate data.</p>';
+      '<p style="color:var(--text-secondary)">Video index unavailable. Please try again later.</p>';
     return;
   }
 
@@ -60,7 +60,7 @@ async function init() {
 
   if (allVideos.length === 0) {
     document.getElementById('loading').innerHTML =
-      '<p style="color:var(--text-secondary)">No video data found. Run <code>python3 code/orchestrators/fetch_youtube_data.py</code> to generate data.</p>';
+      '<p style="color:var(--text-secondary)">No video data found. Please try again later.</p>';
     return;
   }
 
@@ -618,7 +618,12 @@ function applyUrlParams() {
 // ── GO ──
 init().catch(err => {
   console.error(err);
-  document.getElementById('loading').innerHTML =
-    `<p style="color:var(--red)">Error loading data: ${err.message}</p>
-     <p style="color:var(--text-secondary);font-size:.82rem;margin-top:.5rem">Run <code>python3 code/orchestrators/fetch_youtube_data.py</code> to generate video data, then serve locally with <code>python3 -m http.server 8080</code></p>`;
+  const loading = document.getElementById('loading');
+  loading.innerHTML =
+    `<p style="color:var(--text-secondary);font-size:.82rem;margin-top:.5rem">Please try again later.</p>`;
+  // The error text goes in as text, never as markup.
+  const message = document.createElement('p');
+  message.style.color = 'var(--red)';
+  message.textContent = `Error loading data: ${err && err.message ? err.message : err}`;
+  loading.prepend(message);
 });

@@ -381,6 +381,7 @@ def fetch_with_retries(url: str, timeout: int, attempts: int = 3) -> dict:
 
 
 def pages_status(timeout: int) -> dict:
+    cli_error = ""
     try:
         proc = subprocess.run(
             ["gh", "api", "repos/docxology/docxology/pages"],
@@ -388,6 +389,7 @@ def pages_status(timeout: int) -> dict:
             text=True,
             timeout=timeout,
             check=False,
+            stdin=subprocess.DEVNULL,
         )
         if proc.returncode == 0:
             payload = json.loads(proc.stdout)
@@ -401,8 +403,8 @@ def pages_status(timeout: int) -> dict:
                 "source": payload.get("source", {}),
                 "html_url": payload.get("html_url", ""),
             }
-    except Exception:
-        pass
+    except Exception as exc:
+        cli_error = f"{type(exc).__name__}: {exc}"
     url = "https://api.github.com/repos/docxology/docxology/pages"
     headers = {}
     token = os.environ.get("GITHUB_TOKEN")
@@ -410,7 +412,7 @@ def pages_status(timeout: int) -> dict:
         headers["Authorization"] = f"Bearer {token}"
     data = fetch(url, timeout, headers)
     if not data["ok"]:
-        return {"ok": False, "status": data["status"], "error": data["error"]}
+        return {"ok": False, "status": data["status"], "error": data["error"], "cli_error": cli_error}
     try:
         payload = json.loads(data["text"])
     except json.JSONDecodeError as exc:
@@ -443,6 +445,7 @@ def latest_deployment_run(timeout: int, run_id: int | None = None) -> dict:
             text=True,
             timeout=timeout,
             check=False,
+            stdin=subprocess.DEVNULL,
         )
         payload = json.loads(proc.stdout) if proc.returncode == 0 else {}
         if not isinstance(payload, dict):
@@ -668,7 +671,7 @@ def local_source_commit(repo_root: Path = REPO_ROOT) -> str:
             text=True,
             timeout=10,
             check=False,
-        )
+        stdin=subprocess.DEVNULL)
         return proc.stdout.strip() if proc.returncode == 0 else ""
     except OSError, subprocess.SubprocessError:
         return ""

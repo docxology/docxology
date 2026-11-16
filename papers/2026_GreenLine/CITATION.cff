@@ -4,16 +4,16 @@ type: article
 title: "Green Line: a capacity-under-development instrument"
 version: "0.1.0"
 date-released: 2026-09-18
-doi: 10.5281/zenodo.22833491
-url: "https://doi.org/10.5281/zenodo.22833491"
+doi: 10.5281/zenodo.24069456
+url: "https://doi.org/10.5281/zenodo.24069456"
 authors:
   - family-names: "Friedman"
     given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22833491"
+    value: "10.5281/zenodo.24069456"
     description: "Canonical citation DOI"
   - type: url
-    value: "https://doi.org/10.5281/zenodo.22833491"
+    value: "https://doi.org/10.5281/zenodo.24069456"
     description: "Canonical citation DOI resolver"

@@ -51,6 +51,7 @@ def _write_minimal_repo(root: Path) -> None:
     (root / "papers").mkdir()
     (root / "reports").mkdir()
     (root / "data").mkdir()
+    (root / "data/github-repositories.json").write_text(json.dumps({"repositories": [{"full_name": "docxology/new_repo", "private": False}, {"full_name": "docxology/CogSecSkills", "private": False}]}))
     (root / "pages" / "BIBLIOGRAPHY.md").write_text(
         "\n".join(
             [
@@ -246,6 +247,7 @@ def test_applied_strong_update_report_binds_exact_action_and_metadata(tmp_path: 
         actions=[action],
         warnings=[],
         applied=[attested],
+        repo_root=tmp_path,
     )
 
     receipt = json.loads(report_path.read_text(encoding="utf-8"))["applied"][0]
@@ -990,6 +992,7 @@ def test_report_payload_roundtrips_releases_records_and_cache(tmp_path: Path):
         actions=actions,
         warnings=[],
         classification_cache=classification_cache_payload(entries, repo_root=tmp_path),
+        repo_root=tmp_path,
     )
     payload = json.loads(report.read_text(encoding="utf-8"))
     assert github_releases_from_payload(payload) == [pair.release]
@@ -1025,6 +1028,7 @@ def test_public_report_redacts_release_paths_and_rejects_reintroduced_paths(
         pairs=[pair],
         actions=[],
         warnings=[],
+        repo_root=tmp_path,
     )
     payload = json.loads(report.read_text())
     for release in (payload["github_releases"][0], payload["pairs"][0]["release"]):
@@ -1109,6 +1113,7 @@ def test_cached_body_cleanup_preserves_original_provenance_and_is_idempotent(tmp
         pairs=[pair],
         actions=[],
         warnings=[],
+        repo_root=tmp_path,
     )
     payload = json.loads(report.read_text())
     expected_body = cached_body.replace(
@@ -1193,6 +1198,7 @@ def test_load_cached_scan_payload_matches_fresh_classification(tmp_path: Path):
         pairs=[pair],
         actions=[],
         warnings=[],
+        repo_root=tmp_path,
     )
     releases, records = load_cached_scan_payload(report)
     assert (releases, records) == ([pair.release], [pair.record])
@@ -1374,10 +1380,10 @@ def test_observation_refresh_retains_exact_apply_receipt_without_new_approval(
         warnings=[],
     )
     monkeypatch.setattr(sync, "generated_timestamp", lambda: "2026-10-12T10:00:00Z")
-    write_report(report, **kwargs, applied=[attested])
+    write_report(report, **kwargs, applied=[attested], repo_root=tmp_path)
     old = json.loads(report.read_text())["applied"]
     monkeypatch.setattr(sync, "generated_timestamp", lambda: "2026-10-12T11:00:00Z")
-    write_report(report, **kwargs)
+    write_report(report, **kwargs, repo_root=tmp_path)
     refreshed = json.loads(report.read_text())
     assert refreshed["generated_at"] == "2026-10-12T11:00:00Z"
     assert (
@@ -1385,7 +1391,7 @@ def test_observation_refresh_retains_exact_apply_receipt_without_new_approval(
     )  # Original hashes, approval, and apply time survive.
     check_report(repo_root=tmp_path)
     kwargs["actions"] = []
-    write_report(report, **kwargs)
+    write_report(report, **kwargs, repo_root=tmp_path)
     assert (
         json.loads(report.read_text())["applied"] == []
     )  # No receipt transferred to another action.
@@ -2612,6 +2618,7 @@ def test_explicit_record_persisted_check_refuses_a_declared_missing_record(tmp_p
         pairs=[pair],
         actions=[],
         warnings=[],
+        repo_root=tmp_path,
     )
     payload = json.loads(path.read_text())
     payload["explicit_zenodo_record_ids"] = [201]

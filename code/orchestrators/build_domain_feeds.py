@@ -35,6 +35,7 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from build_domain_pages import DOMAINS  # noqa: E402
+from docxology_tools.citation_metadata import publication_date  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from docxology_tools.sitemap_policy import SITE_ORIGIN  # noqa: E402
 
@@ -101,16 +102,20 @@ def domain_items(slug: str, works: list[dict]) -> list[dict]:
         if _EMOJI_SLUGS.get(work.get("domain")) != slug:
             continue
         year = int(work.get("year") or 0)
+        metadata_path = REPO_ROOT / str(work.get("docs_path") or "") / "metadata.json"
+        metadata = json.loads(metadata_path.read_text()) if metadata_path.is_file() else {}
+        date = publication_date(work, metadata)
+        date = date if len(date) == 10 else f"{year:04d}-01-01"
         contributors = ", ".join(work.get("authors") or [])
         if contributors and work.get("contributor_role") == "editor":
             contributors += " (eds.)"
         items.append(
             {
-                "sort_date": f"{year:04d}-01-01",
+                "sort_date": date,
                 "title": work.get("title") or f"Work #{work.get('num')}",
                 "link": work.get("url") or SITE_ORIGIN,
                 "guid": work.get("url") or f"work-{work.get('num')}",
-                "pub_date": f"{year:04d}-01-01T00:00:00+00:00",
+                "pub_date": f"{date}T00:00:00+00:00",
                 "description": f"{work.get('type', 'Work')} \u2014 {work.get('venue', 'Zenodo')}"
                 + (f" \u2014 {contributors}" if contributors else ""),
             }

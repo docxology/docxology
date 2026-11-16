@@ -265,5 +265,209 @@
     "contains_local_paths": false,
     "secret_pattern_count": 0,
     "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  },
+  "registry_refresh_2026_11_15": {
+    "record": {
+      "created": "2026-11-11T03:26:38.403812+00:00",
+      "modified": "2026-11-11T03:26:38.539091+00:00",
+      "id": 24124421,
+      "conceptrecid": "24069474",
+      "doi": "10.5281/zenodo.24124421",
+      "conceptdoi": "10.5281/zenodo.24069474",
+      "doi_url": "https://doi.org/10.5281/zenodo.24124421",
+      "metadata": {
+        "title": "The Line Set: The Collected Volume",
+        "doi": "10.5281/zenodo.24124421",
+        "publication_date": "2026-11-11",
+        "description": "<p>A thin reader that declares what a set of small evaluative instruments is, reads available sibling packages, and reports unexempted cross-line collisions in published enum member names. It adds no instrument of its own and computes no aggregate. A reading does not establish conceptual separation or verify sibling conclusions.</p><p><strong>Subtitle:</strong> A Declaration, a Reader, and a Non-Overlap Contract for a Growing Set of Small Instruments</p><p>Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "keywords": [
+          "modularity",
+          "information hiding",
+          "separation of concerns",
+          "boundary objects",
+          "namespace collision",
+          "declarative registry",
+          "reproducible review",
+          "open science"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/line_set",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/red_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/black_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/golden_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/white_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/witness_register",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/silver_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/blue_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/green_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754236",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754238",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754240",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754242",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754246",
+            "relation": "cites",
+            "scheme": "doi"
+          }
+        ],
+        "version": "0.8.0",
+        "custom": {
+          "code:codeRepository": "https://github.com/docxology/line_set"
+        },
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "license": {
+          "id": "cc-by-4.0"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 1,
+              "is_last": true,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "24069474"
+              }
+            }
+          ]
+        },
+        "notes": "Source metadata for version 0.8.0; a source declaration is not a release or deposit receipt. The owner-chosen display title The Line Set: The Collected Volume is retained for this source citation. The public source ZIP, standalone wrapper paper The Line Set: Holding Instruments Apart, and PRIVATE eleven-work omnibus are distinct objects. Previously verified public source ZIP: 0.7.0 / 10.5281/zenodo.24069475; historical 0.2.0 / 10.5281/zenodo.22833507 remains a separate reference. Neither identifies this source edition, the standalone rendered wrapper, or the private omnibus; no omnibus deposit is claimed. Cite later source through its repository until its exact edition/object is independently verified. Membership is declared by the registry; Violet, Copper, and Iron remain private. Repository references grant no access. This metadata grants no deposit authority."
+      },
+      "title": "The Line Set: The Collected Volume",
+      "links": {
+        "self": "https://zenodo.org/api/records/24124421",
+        "self_html": "https://zenodo.org/records/24124421",
+        "preview_html": "https://zenodo.org/records/24124421?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.24124421",
+        "self_doi": "https://doi.org/10.5281/zenodo.24124421",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24124421",
+        "reserve_doi": "https://zenodo.org/api/records/24124421/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/24069474",
+        "parent_html": "https://zenodo.org/records/24069474",
+        "parent_doi": "https://doi.org/10.5281/zenodo.24069474",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24069474",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:24124421/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:24124421/sequence/default",
+        "files": "https://zenodo.org/api/records/24124421/files",
+        "media_files": "https://zenodo.org/api/records/24124421/media-files",
+        "latest": "https://zenodo.org/api/records/24124421/versions/latest",
+        "latest_html": "https://zenodo.org/records/24124421/latest",
+        "versions": "https://zenodo.org/api/records/24124421/versions",
+        "draft": "https://zenodo.org/api/records/24124421/draft",
+        "access_links": "https://zenodo.org/api/records/24124421/access/links",
+        "access_grants": "https://zenodo.org/api/records/24124421/access/grants",
+        "access_users": "https://zenodo.org/api/records/24124421/access/users",
+        "access_request": "https://zenodo.org/api/records/24124421/access/request",
+        "access": "https://zenodo.org/api/records/24124421/access",
+        "communities": "https://zenodo.org/api/records/24124421/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/24124421/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/24124421/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/24124421/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/24124421/quota-increase",
+        "requests": "https://zenodo.org/api/records/24124421/requests"
+      },
+      "updated": "2026-11-11T03:26:38.539091+00:00",
+      "recid": "24124421",
+      "revision": 4,
+      "files": [
+        {
+          "id": "6df351bf-e008-4fe5-9161-be740722fc28",
+          "key": "docxology/line_set-v0.8.0.zip",
+          "size": 605251,
+          "checksum": "md5:6eeb35ba6710e4655b078b2f3ec03b5a",
+          "links": {
+            "self": "https://zenodo.org/api/records/24124421/files/docxology/line_set-v0.8.0.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "131706"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 5,
+        "unique_downloads": 5,
+        "views": 9,
+        "unique_views": 9,
+        "version_downloads": 3,
+        "version_unique_downloads": 3,
+        "version_unique_views": 5,
+        "version_views": 5
+      },
+      "state": "done",
+      "submitted": true
+    },
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions.",
+    "public_link_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_observation_sha256": "0aee623001fa52f8d3f5a50d8db9a981826917ada5bc888cf71a7ed9eaac4c00",
+      "scope": "Public projection only; does not refresh or approve upstream observations."
+    }
   }
 }

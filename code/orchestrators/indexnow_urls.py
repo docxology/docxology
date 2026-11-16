@@ -3,6 +3,11 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401
 
 from submit_indexnow import indexnow_urls  # noqa: E402
 

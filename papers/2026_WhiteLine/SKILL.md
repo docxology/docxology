@@ -5,7 +5,7 @@ description: "A typed ledger for absence: epistemic gaps, ethical restraint, and
 tags: ["absence", "epistemic-gaps", "missing-evidence", "withheld-material", "uncertainty", "negative-results", "research-ethics", "open-science"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *White Line: A Typed Ledger for the Edge of the Claim*. Zenodo."
-doi: "10.5281/zenodo.21754241"
+doi: "10.5281/zenodo.24069433"
 ---
 
 # White Line: A Typed Ledger for the Edge of the Claim
@@ -46,7 +46,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- Canonical DOI: 10.5281/zenodo.21754241
+- Canonical DOI: 10.5281/zenodo.24069433
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-08-02T15:12:11Z
@@ -61,6 +61,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.21754241`
+1. Reference the DOI for citation: `10.5281/zenodo.24069433`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

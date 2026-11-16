@@ -241,5 +241,208 @@
     "contains_local_paths": false,
     "secret_pattern_count": 0,
     "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  },
+  "registry_refresh_2026_11_15": {
+    "record": {
+      "created": "2026-11-11T03:26:49.246557+00:00",
+      "modified": "2026-11-11T03:26:49.435300+00:00",
+      "id": 24124428,
+      "conceptrecid": "24069487",
+      "doi": "10.5281/zenodo.24124428",
+      "conceptdoi": "10.5281/zenodo.24069487",
+      "doi_url": "https://doi.org/10.5281/zenodo.24124428",
+      "metadata": {
+        "title": "The Witness Register: Co-Registration Without Aggregation",
+        "doi": "10.5281/zenodo.24124428",
+        "publication_date": "2026-11-11",
+        "description": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores native status as an opaque detached JSON snapshot, records authored relations and scoped authority events separately, preserves append-only history, and emits a bounded posture with its full state reference and reasons. It never ranks, merges or overrides instruments. Code is MIT licensed; prose and figures are CC BY 4.0.",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "keywords": [
+          "co-registration",
+          "append-only log",
+          "provenance",
+          "non-compensatory decision rules",
+          "boundary objects",
+          "research infrastructure",
+          "open science"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/witness_register",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/red_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/black_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/golden_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/white_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/line_set",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754236",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754238",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754240",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754242",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754244",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "https://github.com/docxology/silver_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/blue_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/green_line",
+            "relation": "references",
+            "scheme": "url"
+          }
+        ],
+        "version": "0.5.0",
+        "custom": {
+          "code:codeRepository": "https://github.com/docxology/witness_register"
+        },
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "license": {
+          "id": "cc-by-4.0"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 1,
+              "is_last": true,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "24069487"
+              }
+            }
+          ]
+        },
+        "notes": "Source metadata for version 0.5.0; a source declaration is not a release or deposit receipt. Previously verified source archive: 0.4.0 / 10.5281/zenodo.24069488, identifying that SOURCE ZIP only, not a standalone manuscript or this source edition. Historical 0.1.1 / 10.5281/zenodo.22833511 remains a separate reference. Cite later source through its repository until its exact edition/object is independently verified. Witness stands beside the ten instruments and Main, outside LINE_SET and the PRIVATE omnibus. Violet, Copper, and Iron remain private; public Witness envelopes are separately disclosure-reviewed synthetic exports with empty source references. Full native provenance stays private. This metadata does not authorize a deposit."
+      },
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "links": {
+        "self": "https://zenodo.org/api/records/24124428",
+        "self_html": "https://zenodo.org/records/24124428",
+        "preview_html": "https://zenodo.org/records/24124428?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.24124428",
+        "self_doi": "https://doi.org/10.5281/zenodo.24124428",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24124428",
+        "reserve_doi": "https://zenodo.org/api/records/24124428/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/24069487",
+        "parent_html": "https://zenodo.org/records/24069487",
+        "parent_doi": "https://doi.org/10.5281/zenodo.24069487",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24069487",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:24124428/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:24124428/sequence/default",
+        "files": "https://zenodo.org/api/records/24124428/files",
+        "media_files": "https://zenodo.org/api/records/24124428/media-files",
+        "latest": "https://zenodo.org/api/records/24124428/versions/latest",
+        "latest_html": "https://zenodo.org/records/24124428/latest",
+        "versions": "https://zenodo.org/api/records/24124428/versions",
+        "draft": "https://zenodo.org/api/records/24124428/draft",
+        "access_links": "https://zenodo.org/api/records/24124428/access/links",
+        "access_grants": "https://zenodo.org/api/records/24124428/access/grants",
+        "access_users": "https://zenodo.org/api/records/24124428/access/users",
+        "access_request": "https://zenodo.org/api/records/24124428/access/request",
+        "access": "https://zenodo.org/api/records/24124428/access",
+        "communities": "https://zenodo.org/api/records/24124428/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/24124428/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/24124428/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/24124428/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/24124428/quota-increase",
+        "requests": "https://zenodo.org/api/records/24124428/requests"
+      },
+      "updated": "2026-11-11T03:26:49.435300+00:00",
+      "recid": "24124428",
+      "revision": 4,
+      "files": [
+        {
+          "id": "054a7e25-f883-421e-81b6-1c4364ee2c4e",
+          "key": "docxology/witness_register-v0.5.0.zip",
+          "size": 404868,
+          "checksum": "md5:61a2ee5e68e3abe65f8374a9a9cc1a6d",
+          "links": {
+            "self": "https://zenodo.org/api/records/24124428/files/docxology/witness_register-v0.5.0.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "131706"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 5,
+        "unique_downloads": 5,
+        "views": 9,
+        "unique_views": 9,
+        "version_downloads": 3,
+        "version_unique_downloads": 3,
+        "version_unique_views": 5,
+        "version_views": 5
+      },
+      "state": "done",
+      "submitted": true
+    },
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions.",
+    "public_link_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_observation_sha256": "9b75ce03dd118a09b45b08628f1324ce5461a86309da93738030bb4f3a84906c",
+      "scope": "Public projection only; does not refresh or approve upstream observations."
+    }
   }
 }

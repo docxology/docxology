@@ -1007,7 +1007,7 @@
     {
       "id": "person:guénin—carlut, avel",
       "kind": "person",
-      "label": "Guénin—Carlut, Avel",
+      "label": "GUÉNIN—CARLUT, Avel",
       "url": ""
     },
     {
@@ -2365,6 +2365,12 @@
       "kind": "software",
       "label": "docxology/ntqr_llm",
       "url": "https://github.com/docxology/ntqr_llm"
+    },
+    {
+      "id": "software:https://github.com/docxology/oph-fep-synergetics",
+      "kind": "software",
+      "label": "docxology/OPH-FEP-Synergetics",
+      "url": "https://github.com/docxology/OPH-FEP-Synergetics"
     },
     {
       "id": "software:https://github.com/docxology/prior_cognitive_art",
@@ -3874,6 +3880,13 @@
       "kind": "work",
       "label": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
       "url": "/works/Friedman2026MusicNeverStoppedGrateful150.html",
+      "year": 2026
+    },
+    {
+      "id": "work:Friedman2026OPHFEPSynergeticsExecutable238",
+      "kind": "work",
+      "label": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+      "url": "/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
       "year": 2026
     },
     {
@@ -6329,7 +6342,7 @@
     },
     {
       "source": "work:Friedman2022ActiveInferenceOntologyDecentralized066",
-      "target": "person:guénin—carlut, avel",
+      "target": "person:guénin-carlut, avel",
       "relation": "Recorded author",
       "provenance": "data/work-authors.json"
     },
@@ -10454,6 +10467,24 @@
       "target": "software:https://github.com/activeinferenceinstitute/symposium",
       "relation": "Associated software",
       "provenance": "papers/2026_SymposiumPresenterProgram/metadata.json"
+    },
+    {
+      "source": "work:Friedman2026OPHFEPSynergeticsExecutable238",
+      "target": "domain:active inference",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026OPHFEPSynergeticsExecutable238",
+      "target": "person:friedman, daniel ari",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026OPHFEPSynergeticsExecutable238",
+      "target": "software:https://github.com/docxology/oph-fep-synergetics",
+      "relation": "Associated software",
+      "provenance": "papers/2026_OPHFEP_Synergetics/metadata.json"
     }
   ]
 }

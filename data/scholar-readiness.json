@@ -4,20 +4,23 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "43470ee1cf4edb703499e3fdc27d684c0f2c31fe3a34b05137af0432e3f1fc12",
+  "works_sha256": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
   "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
-    "works": 233,
+    "works": 234,
     "local_status": {
-      "blocked": 228,
+      "blocked": 229,
       "requires_review": 5
     },
     "blockers": {
       "missing_citation_author": 11,
+      "missing_citation_doi": 1,
+      "missing_citation_publication_date": 8,
+      "missing_citation_title": 8,
       "no_selected_local_pdf": 42,
-      "pdf_directory_differs_from_abstract": 186,
+      "pdf_directory_differs_from_abstract": 187,
       "pdf_exceeds_byte_limit": 41
     }
   },
@@ -74,20 +77,15 @@
       "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
       "type": "Series",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceJournal500002.html",
-      "page_sha256": "fd7bb9df24e00b3f6e164027a3fb9bebc4b2d9445824e55d06b9a245b481841a",
-      "citation_tags": {
-        "citation_title": [
-          "Active Inference Journal — 500+ videos on Active Inference with transcripts"
-        ],
-        "citation_publication_date": [
-          "2026"
-        ]
-      },
+      "page_sha256": "d571ecb0bffa43bf04b93803e38941186d96ab2e121ddf7aa7ea704e0a966569",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -238,20 +236,15 @@
       "title": "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",
       "type": "Series",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026PersonalYouTube200Livestreams006.html",
-      "page_sha256": "3bfa95b17c72dafcc79cc05757026340d417f80ffb4e612f41cb0c96f5298112",
-      "citation_tags": {
-        "citation_title": [
-          "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions"
-        ],
-        "citation_publication_date": [
-          "2026"
-        ]
-      },
+      "page_sha256": "4be2f9bc091eba47ef80c2dbe3a7ad9f24486e0af3bd3d9f0609c4ad8946b653",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -830,7 +823,7 @@
       "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025QuadMathAnalyticalReview4D018.html",
-      "page_sha256": "ea41ced591c274c72023b35d64afbb115ef9b4c984d74edfd9578792d10b96f8",
+      "page_sha256": "b2acd4f1451b9d2aa916104b56523adcd6b92293a96b86e976b2ad112be0dda3",
       "citation_tags": {
         "citation_title": [
           "QuadMath: An Analytical Review of 4D and Quadray Coordinates"
@@ -929,7 +922,7 @@
       "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html",
-      "page_sha256": "434bd279c6e3e945438d0189ea88454b9ce53a8cf155f57ebd6f789d4cea4114",
+      "page_sha256": "f95a4e8ff0d2dad58cb6ae2e791979083f890cc9bdc8828a98b61348b8aadd5b",
       "citation_tags": {
         "citation_title": [
           "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting"
@@ -3380,7 +3373,7 @@
       "title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2022ActiveInferenceOntologyDecentralized066.html",
-      "page_sha256": "91e75167ae35520bad3d009478550e69c3607811de3444e3b70b72865120f28d",
+      "page_sha256": "a54b169c17fe9d508b6b6d26f8ff082852d21a0ccc5795ed1785dc3a5130364e",
       "citation_tags": {
         "citation_title": [
           "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons"
@@ -3395,7 +3388,7 @@
           "Arhan Choudhury",
           "RJ Cordes",
           "Shady El Damaty",
-          "Avel Guénin—Carlut",
+          "Avel Guénin-Carlut",
           "V. Bleu Knight",
           "Ivan Metelkin",
           "Siddhant Shrivastava",
@@ -4239,20 +4232,15 @@
       "title": "Communication for Remote Teams",
       "type": "Course",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2020CommunicationRemoteTeams083.html",
-      "page_sha256": "cd8723465b66a604bc5771a4c25efd01abb4de0ff023679f599b5930b1a9848d",
-      "citation_tags": {
-        "citation_title": [
-          "Communication for Remote Teams"
-        ],
-        "citation_publication_date": [
-          "2020"
-        ]
-      },
+      "page_sha256": "d39ba43fef2932ec38aac9dc5c316532ab97453d0ff12ec5b1a023b9b5fbb959",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -4472,20 +4460,15 @@
       "title": "How to use Keybase for remote teams",
       "type": "Course",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2020HowUseKeybaseRemote087.html",
-      "page_sha256": "502ced82dd428fca883070dae681f5c5ab9ac030deee705bea7308a21fa84e67",
-      "citation_tags": {
-        "citation_title": [
-          "How to use Keybase for remote teams"
-        ],
-        "citation_publication_date": [
-          "2020"
-        ]
-      },
+      "page_sha256": "a25dc74b4b57313ceb6f4041b11c22a7927104585df2d738ffdaf09333edb479",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -7952,23 +7935,16 @@
       "title": "Full speed ahead to the City on the Hill",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2016FullSpeedAheadCity156.html",
-      "page_sha256": "a2a90e268502602ec00daeb53d44773a53646dc0f79f0edc5ec44cf9acf43498",
-      "citation_tags": {
-        "citation_title": [
-          "Full speed ahead to the City on the Hill"
-        ],
-        "citation_publication_date": [
-          "2016"
-        ],
-        "citation_doi": [
-          "10.1126/science.aag1520"
-        ]
-      },
+      "page_sha256": "3a8e0173a2fab9b31f7229193bb2c288704363e6c33e04a8704d42fb9d8d26ad",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
+        "missing_citation_doi",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -7986,20 +7962,15 @@
       "title": "Disinforge",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html",
-      "page_sha256": "f80745e7d4c7476a2295316438cec05fc65f475b36a7c8e0cd06c1a51c17787e",
-      "citation_tags": {
-        "citation_title": [
-          "Disinforge"
-        ],
-        "citation_publication_date": [
-          "2021"
-        ]
-      },
+      "page_sha256": "341facab0f341acde2a38a29f39052d9bd3b6257253ac4e1bc0fa378f62f8a29",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -8230,20 +8201,15 @@
       "title": "Osteopathy and the Variable Variability of Health",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2017OsteopathyVariableVariabilityHealth163.html",
-      "page_sha256": "1cdf93b3dfd1feda83e13314c41007637535c92c12ddd98241a4b8e85119a778",
-      "citation_tags": {
-        "citation_title": [
-          "Osteopathy and the Variable Variability of Health"
-        ],
-        "citation_publication_date": [
-          "2017"
-        ]
-      },
+      "page_sha256": "00ffcde6e3c7928955959acc53ca2beb6f9b258d95429af87264ec7bdeef2f19",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -8261,20 +8227,15 @@
       "title": "Cells, Mechanobiology, and Osteopathy",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2016CellsMechanobiologyOsteopathy164.html",
-      "page_sha256": "260cd540782fbdfbe83a10b76142e65779432d929449c54665e083456eaf5765",
-      "citation_tags": {
-        "citation_title": [
-          "Cells, Mechanobiology, and Osteopathy"
-        ],
-        "citation_publication_date": [
-          "2016"
-        ]
-      },
+      "page_sha256": "dbbb3f28dd14240460e2ac1d6b5ba51ac2335f79940f1b570e15d658a04991af",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -9883,7 +9844,7 @@
       "title": "The Witness Register: Co-Registration Without Aggregation",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026WitnessRegisterCoRegistration200.html",
-      "page_sha256": "c6e89e57cc19b600ac3626a73ffb26604fe8ec8e970be782fab245a86a97b15c",
+      "page_sha256": "3a5e47dd6e28ceb8aff431e1532c5de4e7a4838afc9ca93bd7d3801bd07f3f0c",
       "citation_tags": {
         "citation_title": [
           "The Witness Register: Co-Registration Without Aggregation"
@@ -9895,7 +9856,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.21754245"
+          "10.5281/zenodo.24069487"
         ],
         "citation_pdf_url": [
           "https://zenodo.org/api/records/22833511/files/witness_register_combined.pdf/content"
@@ -9922,7 +9883,7 @@
       "title": "The Line Set: Holding Instruments Apart",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026LineSetHoldingInstruments201.html",
-      "page_sha256": "1546f81f6be6f117f53584cb28021fa16886864cac944f457e15b2ff3bf9296d",
+      "page_sha256": "2cf81b22022335e23502284d900adcde766c3926f6fcf368293468104b0db181",
       "citation_tags": {
         "citation_title": [
           "The Line Set: Holding Instruments Apart"
@@ -9934,7 +9895,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.21754243"
+          "10.5281/zenodo.24069474"
         ],
         "citation_pdf_url": [
           "https://zenodo.org/api/records/22833507/files/line_set_combined.pdf/content"
@@ -9961,7 +9922,7 @@
       "title": "White Line: A Typed Ledger for the Edge of the Claim",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026WhiteLineTypedLedger202.html",
-      "page_sha256": "5036c2a8d6be02c2ac0d5b2c02fc8d88eb106fa6cde81555744d9384291d3a04",
+      "page_sha256": "0b813b0f5c10db219d868cee124f27dade8cfec1c1325f470c5a1c36d2883ab0",
       "citation_tags": {
         "citation_title": [
           "White Line: A Typed Ledger for the Edge of the Claim"
@@ -9973,7 +9934,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.21754241"
+          "10.5281/zenodo.24069433"
         ],
         "citation_pdf_url": [
           "https://danielarifriedman.com/papers/2026_WhiteLine/white_line_combined.pdf"
@@ -10008,7 +9969,7 @@
       "title": "Personal Red Lines for Development",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026PersonalRedLinesDevelopment203.html",
-      "page_sha256": "c132e05c3c7b1022934a3d8c978f27b044032185350a491890e0547d904b3ba4",
+      "page_sha256": "ce2a1b4694a96498240665251e0af49fe4279e55564718e454de7836b1748458",
       "citation_tags": {
         "citation_title": [
           "Personal Red Lines for Development"
@@ -10020,7 +9981,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.21754239"
+          "10.5281/zenodo.24069255"
         ],
         "citation_pdf_url": [
           "https://danielarifriedman.com/papers/2026_PersonalRedLines/red_line_combined.pdf"
@@ -10056,7 +10017,7 @@
       "title": "Golden Line: Toward What Matters",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026GoldenLineTowardWhat204.html",
-      "page_sha256": "20bc6d4bf68397e8207011e11ed9678a66962406a868e34e0b808e9084820a24",
+      "page_sha256": "5152e6871c263e3e2f93f5c1635665ed8faca10485f0520d5e66e9310be21536",
       "citation_tags": {
         "citation_title": [
           "Golden Line: Toward What Matters"
@@ -10068,7 +10029,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.21754237"
+          "10.5281/zenodo.24069423"
         ],
         "citation_pdf_url": [
           "https://zenodo.org/api/records/22833506/files/golden_line_combined.pdf/content"
@@ -10095,7 +10056,7 @@
       "title": "Black Line: Strong Work in Public",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026BlackLineStrongWork205.html",
-      "page_sha256": "cb78e8fe4a59efcc747673f0c75b6a759627ed0f446a1f0c749be9bb4952bfaa",
+      "page_sha256": "51d6b47f2864b7d4a7a8a308a1e2268f33d16f2888eb3e22063b32973c9c0cd0",
       "citation_tags": {
         "citation_title": [
           "Black Line: Strong Work in Public"
@@ -10107,7 +10068,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.21754235"
+          "10.5281/zenodo.24069414"
         ],
         "citation_pdf_url": [
           "https://zenodo.org/api/records/22833503/files/black_line_combined.pdf/content"
@@ -10776,7 +10737,7 @@
       "title": "Green Line: a capacity-under-development instrument",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026GreenLineCapacityUnder220.html",
-      "page_sha256": "1b47a3d55f0e27135a97b2800830c9810a4fda699181eb3c91130d2fddb0494e",
+      "page_sha256": "e23b4d3c5cfbb4f2ca23697fc3d6f7b229cbbbb0511aec0b2b27955809e17614",
       "citation_tags": {
         "citation_title": [
           "Green Line: a capacity-under-development instrument"
@@ -10788,7 +10749,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.22833491"
+          "10.5281/zenodo.24069456"
         ],
         "citation_pdf_url": [
           "https://danielarifriedman.com/papers/2026_GreenLine/green_line_combined.pdf"
@@ -10823,7 +10784,7 @@
       "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026BlueLineStewardshipInstrument221.html",
-      "page_sha256": "e924e381743b02be0f6a18cfef4df9d51613ec4d72b940b56dacfdb29a6132b0",
+      "page_sha256": "6eee847d8dc8cc08387661d6e30992567a901e4369164fd68f5471f446a47f27",
       "citation_tags": {
         "citation_title": [
           "The Blue Line: A Stewardship Instrument for Maintained Commitments"
@@ -10835,7 +10796,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.22833489"
+          "10.5281/zenodo.24069450"
         ],
         "citation_pdf_url": [
           "https://danielarifriedman.com/papers/2026_BlueLine/blue_line_combined.pdf"
@@ -10917,7 +10878,7 @@
       "title": "The Silver Line: A Memory-and-Succession Instrument",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026SilverLineMemorySuccession223.html",
-      "page_sha256": "d9f2127a295e4878a3da678da500d1a4124b3d5ea4d54813b3a71b65812b2747",
+      "page_sha256": "09f58d471d7d613067d026b0dc22132ef3d878bd6274672313438fd7ad3a7e54",
       "citation_tags": {
         "citation_title": [
           "The Silver Line: A Memory-and-Succession Instrument"
@@ -10929,7 +10890,7 @@
           "Daniel Ari Friedman"
         ],
         "citation_doi": [
-          "10.5281/zenodo.22833485"
+          "10.5281/zenodo.24069438"
         ],
         "citation_pdf_url": [
           "https://danielarifriedman.com/papers/2026_SilverLine/silver_line_combined.pdf"
@@ -11257,7 +11218,7 @@
       "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
-      "page_sha256": "4181478e37afea23279c317133338d69aad74bcde020a34513316d4b5822f995",
+      "page_sha256": "143b9294454c32e6d6cb432c4505dd74637b91b9e98b4caf1230b9ee9da074a3",
       "citation_tags": {
         "citation_title": [
           "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics"
@@ -11479,13 +11440,13 @@
       "title": "Observers are all you need",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ObserversAreAllYou235.html",
-      "page_sha256": "456f746f5c84532a5a01942e09a9e3499166f265a0025e98eccf191bb85dd80a",
+      "page_sha256": "8dd44e6d5e7381c3997cf594c7af124950a7c5ae945a7b34770fc7a34c7bf9de",
       "citation_tags": {
         "citation_title": [
           "Observers are all you need"
         ],
         "citation_publication_date": [
-          "2026/10/28"
+          "2026/11/12"
         ],
         "citation_author": [
           "Bernhard Mueller",
@@ -11500,11 +11461,11 @@
           "10.5281/zenodo.18288113"
         ],
         "citation_pdf_url": [
-          "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content"
+          "https://zenodo.org/api/records/24151588/files/observers_are_all_you_need.pdf/content"
         ]
       },
       "primary_pdf": null,
-      "selection_issue": "Current PDF version r2054 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
+      "selection_issue": "Current PDF version r2065 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
       "local_status": "blocked",
       "blockers": [
         "no_selected_local_pdf"
@@ -11638,6 +11599,50 @@
       "local_status": "blocked",
       "blockers": [
         "no_selected_local_pdf"
+      ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026OPHFEPSynergeticsExecutable238",
+      "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+      "type": "Paper",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
+      "page_sha256": "2f67a05ce47700a14de641ec0e0ba61f27db89021a073cfd2fe8442a46a65d7a",
+      "citation_tags": {
+        "citation_title": [
+          "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics"
+        ],
+        "citation_publication_date": [
+          "2026/11/15"
+        ],
+        "citation_author": [
+          "Daniel Ari Friedman"
+        ],
+        "citation_pdf_url": [
+          "https://danielarifriedman.com/papers/2026_OPHFEP_Synergetics/OPH-FEP-Synergetics_combined.pdf"
+        ]
+      },
+      "primary_pdf": {
+        "path": "papers/2026_OPHFEP_Synergetics/OPH-FEP-Synergetics_combined.pdf",
+        "url": "https://danielarifriedman.com/papers/2026_OPHFEP_Synergetics/OPH-FEP-Synergetics_combined.pdf",
+        "selection_basis": "only archived PDF",
+        "bytes": 4407619,
+        "sha256": "7409d8d1a9cf3073da0712781cde0e209a139bee5c5dccde85af3795540592a3",
+        "within_byte_limit": true,
+        "same_directory_as_abstract": false
+      },
+      "selection_issue": "",
+      "local_status": "blocked",
+      "blockers": [
+        "pdf_directory_differs_from_abstract"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},

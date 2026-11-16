@@ -52,7 +52,7 @@ def export_template(repository: Path, destination: Path) -> dict:
         capture_output=True,
         timeout=60,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode or len(result.stdout) > 100 * 1024 * 1024:
         raise ValueError(
             "Pinned docxology/template source is unavailable or exceeds the export bound"

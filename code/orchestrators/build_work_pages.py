@@ -965,7 +965,9 @@ def page_head(work: dict) -> str:
         citation_meta.append(
             f'<meta name="citation_pdf_url" content="{h(resources.primary_pdf_url)}">'
         )
-    citation_meta_html = "\n    ".join(citation_meta)
+    if not work.get("authors"):
+        citation_meta = []
+    citation_meta_html = "\n    ".join(citation_meta) if citation_meta else ""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -974,7 +976,7 @@ def page_head(work: dict) -> str:
     <title>{h(page_title)}</title>
     <meta name="description" content="{h(description)}">
     <meta name="robots" content="index, follow">
-    {citation_meta_html}
+{("    " + citation_meta_html) if citation_meta_html else ""}
     <link rel="canonical" href="{h(canon_url)}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">

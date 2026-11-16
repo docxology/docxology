@@ -2512,7 +2512,7 @@
         "given": "Shady"
       },
       {
-        "family": "Guénin—Carlut",
+        "family": "Guénin-Carlut",
         "given": "Avel"
       },
       {
@@ -6609,8 +6609,8 @@
     "note": "Catalog row 200; docs: papers/2026_WitnessRegister/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.21754245",
-    "URL": "https://doi.org/10.5281/zenodo.21754245"
+    "DOI": "10.5281/zenodo.24069487",
+    "URL": "https://doi.org/10.5281/zenodo.24069487"
   },
   {
     "id": "Friedman2026LineSetHoldingInstruments201",
@@ -6634,8 +6634,8 @@
     "note": "Catalog row 201; docs: papers/2026_LineSet/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.21754243",
-    "URL": "https://doi.org/10.5281/zenodo.21754243"
+    "DOI": "10.5281/zenodo.24069474",
+    "URL": "https://doi.org/10.5281/zenodo.24069474"
   },
   {
     "id": "Friedman2026WhiteLineTypedLedger202",
@@ -6659,8 +6659,8 @@
     "note": "Catalog row 202; docs: papers/2026_WhiteLine/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.21754241",
-    "URL": "https://doi.org/10.5281/zenodo.21754241"
+    "DOI": "10.5281/zenodo.24069433",
+    "URL": "https://doi.org/10.5281/zenodo.24069433"
   },
   {
     "id": "Friedman2026PersonalRedLinesDevelopment203",
@@ -6684,8 +6684,8 @@
     "note": "Catalog row 203; docs: papers/2026_PersonalRedLines/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.21754239",
-    "URL": "https://doi.org/10.5281/zenodo.21754239"
+    "DOI": "10.5281/zenodo.24069255",
+    "URL": "https://doi.org/10.5281/zenodo.24069255"
   },
   {
     "id": "Friedman2026GoldenLineTowardWhat204",
@@ -6709,8 +6709,8 @@
     "note": "Catalog row 204; docs: papers/2026_GoldenLine/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.21754237",
-    "URL": "https://doi.org/10.5281/zenodo.21754237"
+    "DOI": "10.5281/zenodo.24069423",
+    "URL": "https://doi.org/10.5281/zenodo.24069423"
   },
   {
     "id": "Friedman2026BlackLineStrongWork205",
@@ -6734,8 +6734,8 @@
     "note": "Catalog row 205; docs: papers/2026_BlackLine/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.21754235",
-    "URL": "https://doi.org/10.5281/zenodo.21754235"
+    "DOI": "10.5281/zenodo.24069414",
+    "URL": "https://doi.org/10.5281/zenodo.24069414"
   },
   {
     "id": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
@@ -7120,8 +7120,8 @@
     "note": "Catalog row 220; docs: papers/2026_GreenLine/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.22833491",
-    "URL": "https://doi.org/10.5281/zenodo.22833491"
+    "DOI": "10.5281/zenodo.24069456",
+    "URL": "https://doi.org/10.5281/zenodo.24069456"
   },
   {
     "id": "Friedman2026BlueLineStewardshipInstrument221",
@@ -7145,8 +7145,8 @@
     "note": "Catalog row 221; docs: papers/2026_BlueLine/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.22833489",
-    "URL": "https://doi.org/10.5281/zenodo.22833489"
+    "DOI": "10.5281/zenodo.24069450",
+    "URL": "https://doi.org/10.5281/zenodo.24069450"
   },
   {
     "id": "Friedman2026VioletLineConsentLedger222",
@@ -7195,8 +7195,8 @@
     "note": "Catalog row 223; docs: papers/2026_SilverLine/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.22833485",
-    "URL": "https://doi.org/10.5281/zenodo.22833485"
+    "DOI": "10.5281/zenodo.24069438",
+    "URL": "https://doi.org/10.5281/zenodo.24069438"
   },
   {
     "id": "Friedman2026CoordinatingFieldCaseEcosystem224",
@@ -7808,5 +7808,29 @@
     "publisher": "Zenodo (presenter program)",
     "DOI": "10.5281/zenodo.23986504",
     "URL": "https://doi.org/10.5281/zenodo.23986504"
+  },
+  {
+    "id": "Friedman2026OPHFEPSynergeticsExecutable238",
+    "type": "article-journal",
+    "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/",
+    "container-title": "GitHub release v0.1.0",
+    "publisher": "GitHub release v0.1.0",
+    "URL": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0"
   }
 ]

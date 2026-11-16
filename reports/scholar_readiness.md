@@ -6,13 +6,16 @@ Per-work source/content/rights reviews are recorded separately from local placem
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
 
-Audited works: 233. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
+Audited works: 234. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
 | missing_citation_author | 11 |
+| missing_citation_doi | 1 |
+| missing_citation_publication_date | 8 |
+| missing_citation_title | 8 |
 | no_selected_local_pdf | 42 |
-| pdf_directory_differs_from_abstract | 186 |
+| pdf_directory_differs_from_abstract | 187 |
 | pdf_exceeds_byte_limit | 41 |
 
 ## Work-level findings
@@ -20,11 +23,11 @@ Audited works: 233. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | Work | PDF bytes | Local blockers |
 | --- | ---: | --- |
 | [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](../works/Friedman2026TemplateApproachReproducibleGenerative001.html) | 1153790 | pdf_directory_differs_from_abstract |
-| [Active Inference Journal — 500+ videos on Active Inference with transcripts](../works/Friedman2026ActiveInferenceJournal500002.html) | — | missing_citation_author, no_selected_local_pdf |
+| [Active Inference Journal — 500+ videos on Active Inference with transcripts](../works/Friedman2026ActiveInferenceJournal500002.html) | — | missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf |
 | [Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology](../works/Friedman2026BeforePragmatismHadName003.html) | 1653944 | pdf_directory_differs_from_abstract |
 | [The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value](../works/Friedman2026GoldenCompassLunarFlux004.html) | 708881 | pdf_directory_differs_from_abstract |
 | [Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)](../works/Friedman2026CognitiveIntegrityFrameworkFormal005.html) | — | no_selected_local_pdf |
-| [Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions](../works/Friedman2026PersonalYouTube200Livestreams006.html) | — | missing_citation_author, no_selected_local_pdf |
+| [Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions](../works/Friedman2026PersonalYouTube200Livestreams006.html) | — | missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf |
 | [The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing](../works/Friedman2026DoorsPerceptionAreThreshold007.html) | 4259955 | pdf_directory_differs_from_abstract |
 | [Abstract book for: 5th Applied Active Inference Symposium](../works/Friedman20255thAppliedActiveInference008.html) | 414282 | pdf_directory_differs_from_abstract |
 | [Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems](../works/Friedman2025AdaptiveBasicIncomeAuBI009.html) | 34435370 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
@@ -99,11 +102,11 @@ Audited works: 233. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Narrative Information Management](../works/Friedman2021NarrativeInformationManagement080.html) | 738658 | pdf_directory_differs_from_abstract |
 | [The Facilitator's Catechism Playbook](../works/Friedman2021FacilitatorSCatechismPlaybook081.html) | — | no_selected_local_pdf |
 | [Active Inference & Behavior Engineering for Teams](../works/Friedman2020ActiveInferenceBehaviorEngineering082.html) | 3810012 | pdf_directory_differs_from_abstract |
-| [Communication for Remote Teams](../works/Friedman2020CommunicationRemoteTeams083.html) | — | missing_citation_author, no_selected_local_pdf |
+| [Communication for Remote Teams](../works/Friedman2020CommunicationRemoteTeams083.html) | — | missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf |
 | [Distributed physiology and the molecular basis of social life in eusocial insects](../works/Friedman2020DistributedPhysiologyMolecularBasis084.html) | 711416 | pdf_directory_differs_from_abstract |
 | [Emergent Teams for Complex Threats](../works/Friedman2020EmergentTeamsComplexThreats085.html) | 186028 | pdf_directory_differs_from_abstract |
 | [Gene expression variation in the brains of harvester ant foragers is associated with collective behavior](../works/Friedman2020GeneExpressionVariationBrains086.html) | 1115979 | Separate content and indexing review required |
-| [How to use Keybase for remote teams](../works/Friedman2020HowUseKeybaseRemote087.html) | — | missing_citation_author, no_selected_local_pdf |
+| [How to use Keybase for remote teams](../works/Friedman2020HowUseKeybaseRemote087.html) | — | missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf |
 | [Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies](../works/Friedman2020MeasurementNaturalVariationNeurotransmitter088.html) | 1521334 | pdf_directory_differs_from_abstract |
 | [The Great Preset: Remote Teams and Operational Art](../works/Friedman2020GreatPresetRemoteTeams089.html) | 5001516 | missing_citation_author, pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [The Innovator's Catechism](../works/Friedman2020InnovatorSCatechism090.html) | 2008642 | pdf_directory_differs_from_abstract |
@@ -171,15 +174,15 @@ Audited works: 233. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine](../works/Friedman2026TriplicateDataDrivenLarge153.html) | 58491 | pdf_directory_differs_from_abstract |
 | [The Template Textbook](../works/Friedman2026TemplateTextbook154.html) | 1122785 | pdf_directory_differs_from_abstract |
 | [Lessons from the colony](../works/Friedman2016LessonsFromColony155.html) | — | no_selected_local_pdf |
-| [Full speed ahead to the City on the Hill](../works/Friedman2016FullSpeedAheadCity156.html) | — | missing_citation_author, no_selected_local_pdf |
-| [Disinforge](../works/Friedman2021Disinforge157.html) | — | missing_citation_author, no_selected_local_pdf |
+| [Full speed ahead to the City on the Hill](../works/Friedman2016FullSpeedAheadCity156.html) | — | missing_citation_title, missing_citation_author, missing_citation_publication_date, missing_citation_doi, no_selected_local_pdf |
+| [Disinforge](../works/Friedman2021Disinforge157.html) | — | missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf |
 | [Defining events: 2020 in hindsight](../works/Friedman2021DefiningEvents2020Hindsight158.html) | — | no_selected_local_pdf |
 | [Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling](../works/Friedman2022ActiveBlockferenceCadCADActive159.html) | — | no_selected_local_pdf |
 | [From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace](../works/Friedman2024FromNeuronalPacketsThoughtseeds160.html) | — | no_selected_local_pdf |
 | [Knowledge Management Archipelago](../works/Friedman2021KnowledgeManagementArchipelago161.html) | — | no_selected_local_pdf |
 | [Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379](../works/Friedman2024CommentsSubmittedByBlockScience162.html) | — | no_selected_local_pdf |
-| [Osteopathy and the Variable Variability of Health](../works/Friedman2017OsteopathyVariableVariabilityHealth163.html) | — | missing_citation_author, no_selected_local_pdf |
-| [Cells, Mechanobiology, and Osteopathy](../works/Friedman2016CellsMechanobiologyOsteopathy164.html) | — | missing_citation_author, no_selected_local_pdf |
+| [Osteopathy and the Variable Variability of Health](../works/Friedman2017OsteopathyVariableVariabilityHealth163.html) | — | missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf |
+| [Cells, Mechanobiology, and Osteopathy](../works/Friedman2016CellsMechanobiologyOsteopathy164.html) | — | missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf |
 | [iTrace: verification-first webcam eye-movement analysis (corrected manuscript)](../works/Friedman2026ITraceVerificationFirstWebcam165.html) | 5732341 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [DemoCreate: Declarative Audio-Visual Demo Generation for Software](../works/Friedman2026DemoCreateDeclarativeAudioVisual166.html) | 1246461 | pdf_directory_differs_from_abstract |
 | [ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data](../works/Friedman2026ENTOENcryptedTypedOmnitrack167.html) | 3481755 | pdf_directory_differs_from_abstract |
@@ -252,3 +255,4 @@ Audited works: 233. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Observers are all you need](../works/Friedman2026ObserversAreAllYou235.html) | — | no_selected_local_pdf |
 | [Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology](../works/Friedman2026RikishiReproducibleOperationAnalysis236.html) | — | no_selected_local_pdf |
 | [2026 Active Inference Symposium — Presenter Program](../works/Friedman20262026ActiveInferenceSymposium237.html) | — | no_selected_local_pdf |
+| [Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics](../works/Friedman2026OPHFEPSynergeticsExecutable238.html) | 4407619 | pdf_directory_differs_from_abstract |

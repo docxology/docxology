@@ -1,8 +1,8 @@
 {
   "title": "White Line: A Typed Ledger for the Edge of the Claim",
   "version": "0.7.0",
-  "doi": "10.5281/zenodo.21754241",
-  "doi_url": "https://doi.org/10.5281/zenodo.21754241",
+  "doi": "10.5281/zenodo.24069433",
+  "doi_url": "https://doi.org/10.5281/zenodo.24069433",
   "zenodo_record": "https://zenodo.org/records/21754241",
   "record_id": "21754242",
   "publication_date": "2026-08-02",
@@ -91,11 +91,40 @@
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
   },
   "latest_software_release": {
-    "version": "v0.8.0",
-    "publication_date": "2026-10-21",
-    "github_release_url": "https://github.com/docxology/white_line/releases/tag/v0.8.0",
-    "source_report": "reports/publication_intake_2026-10-23.json",
-    "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
-    "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    "version": "v0.9.2",
+    "publication_date": "2026-11-11",
+    "github_release_url": "https://github.com/docxology/white_line/releases/tag/v0.9.2",
+    "source_report": "reports/paired_publications_2026-11-16.json",
+    "source_report_sha256": "f07dc875526301ff8647dd0d10526eb37b71a65d0ae4e4797044830e4debd452",
+    "scope": "Verified repository release and source ZIP archive; retained manuscript PDF version, extracted text and source-specific findings remain independent earlier editions.",
+    "source_report_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_report_sha256": "265636a68bc9f03574578ee378d4f4f4a6bfa0602f0a560907086411b3072c22"
+    }
+  },
+  "prior_deposits": [
+    {
+      "doi": "10.5281/zenodo.21754241",
+      "note": "Retained manuscript citation and PDF edition before source-archive refresh."
+    }
+  ],
+  "latest_source_archive": {
+    "doi": "10.5281/zenodo.24124429",
+    "concept_doi": "10.5281/zenodo.24069433",
+    "record_id": "24124429",
+    "version": "0.9.2",
+    "publication_date": "2026-11-11",
+    "files": [
+      {
+        "id": "93efd54d-7ea0-4993-9b41-a9aa82b3865b",
+        "key": "docxology/white_line-v0.9.2.zip",
+        "size": 362518,
+        "checksum": "md5:48b3aa18851cf1a9986203c1206ae013",
+        "links": {
+          "self": "https://zenodo.org/api/records/24124429/files/docxology/white_line-v0.9.2.zip/content"
+        }
+      }
+    ],
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
   }
 }

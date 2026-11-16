@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T01:44:24Z",
+  "generated_at": "2026-11-16T03:52:06Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,18 +61,18 @@
     }
   ],
   "max_score": 6,
-  "work_count": 233,
+  "work_count": 234,
   "signal_totals": {
     "persistent_id": 217,
     "public_archive": 175,
-    "open_full_text": 211,
-    "source_documents": 216,
-    "executable_code": 85,
-    "agent_readable": 216
+    "open_full_text": 212,
+    "source_documents": 217,
+    "executable_code": 87,
+    "agent_readable": 217
   },
   "band_counts": {
     "independently reproducible": 173,
-    "independently checkable": 43,
+    "independently checkable": 44,
     "citable only": 8,
     "unverified": 9
   },
@@ -80,12 +80,12 @@
     "0": 9,
     "1": 4,
     "2": 4,
-    "3": 10,
+    "3": 11,
     "4": 33,
-    "5": 92,
-    "6": 81
+    "5": 90,
+    "6": 83
   },
-  "mean_score": 4.807,
+  "mean_score": 4.808,
   "works": [
     {
       "num": 5,
@@ -190,6 +190,48 @@
       },
       "repositories": [
         "markdown_decision_process"
+      ]
+    },
+    {
+      "num": 18,
+      "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
+      "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+      "year": 2025,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "QuadMath"
+      ]
+    },
+    {
+      "num": 20,
+      "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
+      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
+      "year": 2025,
+      "domain_name": "Art & Synergetics",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "symergetics"
       ]
     },
     {
@@ -1980,49 +2022,11 @@
       "repositories": []
     },
     {
-      "num": 18,
-      "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
-      "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
-      "year": 2025,
-      "domain_name": "Art & Synergetics",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 19,
       "citation_key": "Friedman2025ResNeiSolutionDesignDocument019",
       "title": "ResNei: Solution Design Document",
       "year": 2025,
       "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 20,
-      "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
-      "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
-      "year": 2025,
-      "domain_name": "Art & Synergetics",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",
@@ -2626,7 +2630,7 @@
         "agent_readable": true
       },
       "repositories": [
-        "ActiveInferAnts",
+        "Active_InferAnts",
         "MetaInformAnt"
       ]
     },
@@ -4350,6 +4354,25 @@
       "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "year": 2026,
       "domain_name": "Computational",
+      "type": "Paper",
+      "score": 3,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 238,
+      "citation_key": "Friedman2026OPHFEPSynergeticsExecutable238",
+      "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+      "year": 2026,
+      "domain_name": "Active Inference",
       "type": "Paper",
       "score": 3,
       "band": "independently checkable",

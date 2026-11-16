@@ -1,0 +1,35 @@
+{
+  "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+  "version": "0.1.0",
+  "publication_date": "2026-11-15",
+  "doi": "",
+  "doi_url": "",
+  "github_repo": "docxology/OPH-FEP-Synergetics",
+  "github_release_url": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0",
+  "domain": "🧠",
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari"
+    }
+  ],
+  "description": "An executable correspondence battery across Observer Patch Holography, the Free Energy Principle and Fuller’s Synergetics. Repository-declared scope; this catalog does not independently verify its scientific claims.",
+  "keywords": [
+    "active inference",
+    "synergetics",
+    "observer patch holography"
+  ],
+  "source": "GitHub release; no archival DOI asserted",
+  "document_title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+  "pdf_sha256": "7409d8d1a9cf3073da0712781cde0e209a139bee5c5dccde85af3795540592a3",
+  "pages": 50,
+  "files": [
+    {
+      "name": "OPH-FEP-Synergetics_combined.pdf",
+      "size_bytes": 4407619,
+      "checksum": "sha256:7409d8d1a9cf3073da0712781cde0e209a139bee5c5dccde85af3795540592a3",
+      "download_url": "https://github.com/docxology/OPH-FEP-Synergetics/releases/download/v0.1.0/OPH-FEP-Synergetics_combined.pdf"
+    }
+  ],
+  "license": null,
+  "rights_note": "No separate paper license is asserted from the repository MIT declaration."
+}

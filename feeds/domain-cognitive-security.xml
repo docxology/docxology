@@ -4,63 +4,77 @@
     <title>Cognitive Security — RSS</title>
     <link>https://danielarifriedman.com/domain-cognitive-security.html</link>
     <description>Narrative ecosystems, information commons, digital rhetoric, and multiagent security.</description>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
     <language>en</language>
     <atom:link href="https://danielarifriedman.com/feeds/domain-cognitive-security.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
-    <item>
-      <title>Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations</title>
-      <link>https://doi.org/10.5281/zenodo.21330636</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21330636</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Black Line: Strong Work in Public</title>
-      <link>https://doi.org/10.5281/zenodo.21754235</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21754235</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>California Public Records: A Technical and Legal Reference for the Post-AB 473 Era</title>
-      <link>https://doi.org/10.5281/zenodo.20789899</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20789899</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
     <item>
       <title>CogSecSkills: Multiharness Agentic Skills for Cognitive Security</title>
       <link>https://doi.org/10.5281/zenodo.21513316</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21513316</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Black Line: Strong Work in Public</title>
+      <link>https://doi.org/10.5281/zenodo.24069414</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069414</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)</title>
+      <link>https://doi.org/10.5281/zenodo.22243472</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22243472</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Report — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
       <title>Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)</title>
       <link>https://doi.org/10.5281/zenodo.22134545</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22134545</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
       <title>Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)</title>
       <link>https://doi.org/10.5281/zenodo.18364118</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.18364118</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
       <title>Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)</title>
       <link>https://doi.org/10.5281/zenodo.22134547</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22134547</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Personal Red Lines for Development</title>
+      <link>https://doi.org/10.5281/zenodo.24069255</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069255</guid>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations</title>
+      <link>https://doi.org/10.5281/zenodo.21330636</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21330636</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>California Public Records: A Technical and Legal Reference for the Post-AB 473 Era</title>
+      <link>https://doi.org/10.5281/zenodo.20789899</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20789899</guid>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
       <title>Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast</title>
       <link>https://doi.org/10.5281/zenodo.20286170</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20286170</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel</description>
     </item>
     <item>
@@ -71,32 +85,25 @@
       <description>Paper — Zenodo — Shrivastava, Siddhant, Goh, Evelyn C., Alexandra Mikhailova, Friedman, Daniel Ari</description>
     </item>
     <item>
-      <title>Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)</title>
-      <link>https://doi.org/10.5281/zenodo.22243472</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22243472</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Report — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Personal Red Lines for Development</title>
-      <link>https://doi.org/10.5281/zenodo.21754239</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21754239</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses</title>
-      <link>https://doi.org/10.1002/asi.24900</link>
-      <guid isPermaLink="true">https://doi.org/10.1002/asi.24900</guid>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <description>Paper — JASIST — Mascarenhas, Mridula, Friedman, Daniel Ari, Cordes, Richard J</description>
+      <title>FarmWorks: Decentralized AI Agents for Personalized Solutions</title>
+      <link>https://doi.org/10.5281/zenodo.13754585</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.13754585</guid>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Baulin, Vladimir, Vyatkin, Alex, GUÉNIN—CARLUT, Avel, Friedman, Daniel, Bolt, John, Falkenstein, Stefan, Jassal, Parishrut, Trois, Celio, Minchin, Jonathan</description>
     </item>
     <item>
       <title>Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office&#x27;s Request for Comment on The Creation of a National Digital Twins R&amp;D Strategic Plan NITRD-2024-13379</title>
       <link>https://doi.org/10.5281/zenodo.13273681</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.13273681</guid>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Cordes, RJ</description>
+    </item>
+    <item>
+      <title>Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses</title>
+      <link>https://doi.org/10.1002/asi.24900</link>
+      <guid isPermaLink="true">https://doi.org/10.1002/asi.24900</guid>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      <description>Paper — JASIST — Mascarenhas, Mridula, Friedman, Daniel Ari, Cordes, Richard J</description>
     </item>
     <item>
       <title>Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office&#x27;s Request for Comment on The Creation of a National Digital Twins R&amp;D Strategic Plan NITRD-2024-13379</title>
@@ -106,46 +113,60 @@
       <description>Paper — Zenodo — Cordes, RJ</description>
     </item>
     <item>
-      <title>FarmWorks: Decentralized AI Agents for Personalized Solutions</title>
-      <link>https://doi.org/10.5281/zenodo.13754585</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.13754585</guid>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Baulin, Vladimir, Vyatkin, Alex, GUÉNIN—CARLUT, Avel, Friedman, Daniel, Bolt, John, Falkenstein, Stefan, Jassal, Parishrut, Trois, Celio, Minchin, Jonathan</description>
-    </item>
-    <item>
       <title>ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management</title>
       <link>https://doi.org/10.5281/zenodo.10296601</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.10296601</guid>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Cordes, R.J., David, Scott, Friedman, Daniel, Mikhailova, Alexandra, Penland, Andrew, Young, Sam, Zacharias, Colten</description>
     </item>
     <item>
       <title>Cognitive Sovereignty &amp; Active Inference in the State of Exception</title>
       <link>https://doi.org/10.5281/zenodo.10038231</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.10038231</guid>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security</title>
+      <link>https://doi.org/10.5281/zenodo.10034511</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.10034511</guid>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Wilkinson, Thomas M., Cordes, RJ, David, Scott, Friedman, Daniel Ari</description>
     </item>
     <item>
       <title>Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC</title>
       <link>https://doi.org/10.5281/zenodo.8025956</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.8025956</guid>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Jun 2023 00:00:00 +0000</pubDate>
       <description>Paper — NTIA — David, Scott, Abu-Ghazaleh, Jumana, Friedman, Daniel, Cordes, RJ</description>
     </item>
     <item>
       <title>Open Access science needs Open Science Sensemaking (OSSm): open infrastructure for sharing scientific sensemaking data</title>
       <link>https://doi.org/10.31222/osf.io/9nb3u</link>
       <guid isPermaLink="true">https://doi.org/10.31222/osf.io/9nb3u</guid>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       <description>Paper — MetaArXiv — Tamari, Ronen, Friedman, Daniel</description>
     </item>
     <item>
-      <title>The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security</title>
-      <link>https://doi.org/10.5281/zenodo.10034511</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.10034511</guid>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Wilkinson, Thomas M., Cordes, RJ, David, Scott, Friedman, Daniel Ari</description>
+      <title>Systems Modeling and Cognitive Audits for Hypercert Ecosystems</title>
+      <link>https://doi.org/10.5281/zenodo.7626768</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.7626768</guid>
+      <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Smékal, Jakub, Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims</title>
+      <link>https://doi.org/10.5281/zenodo.7093836</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.7093836</guid>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Cordes, R.J., David, Scott, Friedman, Daniel</description>
+    </item>
+    <item>
+      <title>Tracking Public Sensemaking through Rhetorical Annotation of Image Memes</title>
+      <link>https://doi.org/10.5281/zenodo.6904426</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.6904426</guid>
+      <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Mascarenhas, Mridula, Cordes, RJ, Knight, Bleu, Murphy, Sarah, Friedman, Daniel A.</description>
     </item>
     <item>
       <title>From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking</title>
@@ -162,31 +183,24 @@
       <description>Book — COGSEC.org — David, Scott, Cordes, R.J., Friedman, Daniel A. (eds.)</description>
     </item>
     <item>
-      <title>Systems Modeling and Cognitive Audits for Hypercert Ecosystems</title>
-      <link>https://doi.org/10.5281/zenodo.7626768</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.7626768</guid>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Smékal, Jakub, Friedman, Daniel Ari</description>
+      <title>Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse</title>
+      <link>https://doi.org/10.5281/zenodo.5573946</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.5573946</guid>
+      <pubDate>Sat, 16 Oct 2021 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Mascarenhas, Mridula, Cordes, Richard J., Friedman, Daniel A.</description>
     </item>
     <item>
-      <title>Tracking Public Sensemaking through Rhetorical Annotation of Image Memes</title>
-      <link>https://doi.org/10.5281/zenodo.6904426</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.6904426</guid>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Mascarenhas, Mridula, Cordes, RJ, Knight, Bleu, Murphy, Sarah, Friedman, Daniel A.</description>
-    </item>
-    <item>
-      <title>TrustFinder: Recommendations for a Community-Based System for Finding Trusted Sources and Evaluating Claims</title>
-      <link>https://doi.org/10.5281/zenodo.7093836</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.7093836</guid>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Cordes, R.J., David, Scott, Friedman, Daniel</description>
+      <title>Narrative Information Management</title>
+      <link>https://doi.org/10.5281/zenodo.5565577</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.5565577</guid>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Cordes, Richard J., Applegate-Swanson, Shaun, Friedman, Daniel Ari, Knight, Virginia Bleu, Mikhailova, Alexandra</description>
     </item>
     <item>
       <title>Collaborative Writing for Catechism-Based Teams</title>
       <link>https://doi.org/10.5281/zenodo.4624298</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.4624298</guid>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Cordes, Richard J., Friedman, Daniel Ari</description>
     </item>
     <item>
@@ -197,25 +211,11 @@
       <description>Paper — Science — Protzko, John, Tanner, Isaac Z., Dedyo, Morgan Daly, Fu, JiaJia, Perma, Bhavya, Friedman, Daniel Ari, Blidner, Ada Gabriela, Johnston, Juliet Tegan, Srivastava, Anant Kumar, Ruscher, Roland, Kupz, Andreas, Tarselli, Michael A., Beardsley, Felicia, Jensen, Mark Martin, Konstantinides, Nikos, Agarwal, Divyansh, Yuen, Julia, Gopinath, Suchitra D., Duong, Michael Tran, Strong, Michael, Soták, Matúš, Burnette, Katie, Kirshner, Samuel Nathan, Nikolaou, Athanasia, Ali, Basant A., de Oliveira, Benedito Alves, Sojli, Elvira</description>
     </item>
     <item>
-      <title>Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse</title>
-      <link>https://doi.org/10.5281/zenodo.5573946</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.5573946</guid>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Mascarenhas, Mridula, Cordes, Richard J., Friedman, Daniel A.</description>
-    </item>
-    <item>
       <title>Disinforge</title>
       <link>https://www.science.org/doi/10.1126/science.abg0904</link>
       <guid isPermaLink="true">https://www.science.org/doi/10.1126/science.abg0904</guid>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <description>Paper — Science</description>
-    </item>
-    <item>
-      <title>Knowledge Management Archipelago</title>
-      <link>https://doi.org/10.5281/zenodo.5034808</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.5034808</guid>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari, Cordes, Richard J.</description>
     </item>
   </channel>
 </rss>

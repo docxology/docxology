@@ -22,8 +22,10 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+from docxology_tools.site_facts import generated_date  # noqa: E402
 from docxology_tools.software_table import (  # noqa: E402
     SoftwareRow,
+    material_links,
     DEFAULT_SOFTWARE_PATH,
     description_html,
     description_plain,
@@ -166,6 +168,11 @@ def main_entity_object(
         topics = repo.get("topics")
         if isinstance(topics, list) and topics:
             obj["keywords"] = ", ".join(topics)
+    destinations = material_links(row.description_raw)
+    if destinations.get("homepage"):
+        obj["url"] = destinations["homepage"]
+    if destinations.get("install_url"):
+        obj["installUrl"] = destinations["install_url"]
     zenodo = software_archive_url(row.description_raw)
     if zenodo:
         obj["sameAs"] = zenodo
@@ -194,6 +201,7 @@ def build_collection_page(rows: list[SoftwareRow]) -> dict:
             "url": "https://danielarifriedman.com/",
         },
         "mainEntity": me,
+        "mentions": [{"@type": "SoftwareApplication", "name": "dotscope", "url": "https://pypi.org/project/dotscope/", "installUrl": "https://pypi.org/project/dotscope/"}],
     }
 
 
@@ -220,7 +228,7 @@ def render_docx_footer(docx_count: int) -> str:
     return (
         f'        <p class="text-center mt-2">'
         f'<a href="https://github.com/docxology" class="filter-btn">'
-        f"View all {docx_count} owned repositories on GitHub</a> "
+        f"View {docx_count} catalogued owned repositories on GitHub</a> "
         f'<a href="repositories.html" class="filter-btn">Search full generated inventory</a></p>'
     )
 
@@ -382,6 +390,7 @@ def render_outputs_from_template(
         html_out, SHARED_NAV_BEGIN, SHARED_NAV_END, render_nav(active="software")
     )
     html_out = replace_head_meta(html_out, len(docx), len(aii), github_counts)
+    html_out = re.sub(r'<meta name="revised" content="[^"]+">', f'<meta name="revised" content="{generated_date()}">', html_out)
     html_out = replace_between_markers(
         html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx)
     )

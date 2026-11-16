@@ -46,7 +46,7 @@ def resolve_commit(value: str | None) -> str:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         raise SystemExit(f"Unable to resolve release commit: {requested}")
     return result.stdout.strip()

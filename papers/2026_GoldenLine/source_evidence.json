@@ -241,5 +241,233 @@
     "contains_local_paths": false,
     "secret_pattern_count": 0,
     "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  },
+  "registry_refresh_2026_11_15": {
+    "record": {
+      "created": "2026-11-11T03:26:27.238605+00:00",
+      "modified": "2026-11-11T03:26:27.394200+00:00",
+      "id": 24124417,
+      "conceptrecid": "24069423",
+      "doi": "10.5281/zenodo.24124417",
+      "conceptdoi": "10.5281/zenodo.24069423",
+      "doi_url": "https://doi.org/10.5281/zenodo.24124417",
+      "metadata": {
+        "title": "Golden Line: Toward What Matters",
+        "doi": "10.5281/zenodo.24124417",
+        "publication_date": "2026-11-11",
+        "description": "<p>A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT_OBSERVED means no valid entry was admitted rather than that nobody looked.</p><p><strong>Subtitle:</strong> An Aspirational Thread for Long-Horizon Work</p><p>Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "keywords": [
+          "aspiration",
+          "long-horizon work",
+          "directional assessment",
+          "values in practice",
+          "research ethics",
+          "open science",
+          "non-compensatory reading"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "10.5281/zenodo.24069424",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833506",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "https://github.com/docxology/green_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/blue_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/silver_line",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/golden_line",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/red_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/black_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/white_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/line_set",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/witness_register",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754236",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754240",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754242",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754244",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754246",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833503",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833507",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833511",
+            "relation": "cites",
+            "scheme": "doi"
+          }
+        ],
+        "version": "0.7.0",
+        "custom": {
+          "code:codeRepository": "https://github.com/docxology/golden_line"
+        },
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "license": {
+          "id": "cc-by-4.0"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 1,
+              "is_last": true,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "24069423"
+              }
+            }
+          ]
+        },
+        "notes": "Current membership belongs to https://github.com/docxology/line_set; the founding four are historical origin. Copper resource quantities are not aspiration priorities or proof of fair allocation; Iron recorded recovery target comparisons are not aspirational progress or promises of future recovery. Violet, Copper, and Iron sources are access-controlled; membership is not access. Known sibling DOIs are retained historical identities. Previously verified source archive: 0.6.2, DOI 10.5281/zenodo.24069424; identifies that source ZIP only, not a standalone manuscript. DOI 10.5281/zenodo.22833506 identifies historical edition 0.4.1. This metadata cites later source through its repository until that exact edition/object is independently verified."
+      },
+      "title": "Golden Line: Toward What Matters",
+      "links": {
+        "self": "https://zenodo.org/api/records/24124417",
+        "self_html": "https://zenodo.org/records/24124417",
+        "preview_html": "https://zenodo.org/records/24124417?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.24124417",
+        "self_doi": "https://doi.org/10.5281/zenodo.24124417",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24124417",
+        "reserve_doi": "https://zenodo.org/api/records/24124417/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/24069423",
+        "parent_html": "https://zenodo.org/records/24069423",
+        "parent_doi": "https://doi.org/10.5281/zenodo.24069423",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24069423",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:24124417/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:24124417/sequence/default",
+        "files": "https://zenodo.org/api/records/24124417/files",
+        "media_files": "https://zenodo.org/api/records/24124417/media-files",
+        "latest": "https://zenodo.org/api/records/24124417/versions/latest",
+        "latest_html": "https://zenodo.org/records/24124417/latest",
+        "versions": "https://zenodo.org/api/records/24124417/versions",
+        "draft": "https://zenodo.org/api/records/24124417/draft",
+        "access_links": "https://zenodo.org/api/records/24124417/access/links",
+        "access_grants": "https://zenodo.org/api/records/24124417/access/grants",
+        "access_users": "https://zenodo.org/api/records/24124417/access/users",
+        "access_request": "https://zenodo.org/api/records/24124417/access/request",
+        "access": "https://zenodo.org/api/records/24124417/access",
+        "communities": "https://zenodo.org/api/records/24124417/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/24124417/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/24124417/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/24124417/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/24124417/quota-increase",
+        "requests": "https://zenodo.org/api/records/24124417/requests"
+      },
+      "updated": "2026-11-11T03:26:27.394200+00:00",
+      "recid": "24124417",
+      "revision": 4,
+      "files": [
+        {
+          "id": "a84f21a8-9902-4305-84ea-1a95ca068b89",
+          "key": "docxology/golden_line-v0.7.0.zip",
+          "size": 4410839,
+          "checksum": "md5:994e2fe3987a2505afc378aac1ca374c",
+          "links": {
+            "self": "https://zenodo.org/api/records/24124417/files/docxology/golden_line-v0.7.0.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "131706"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 4,
+        "unique_downloads": 4,
+        "views": 7,
+        "unique_views": 7,
+        "version_downloads": 2,
+        "version_unique_downloads": 2,
+        "version_unique_views": 3,
+        "version_views": 3
+      },
+      "state": "done",
+      "submitted": true
+    },
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions.",
+    "public_link_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_observation_sha256": "31b89f960b1c68c90037d9e00fc461b8845290db3ce065a30e9b7d747be97c9d",
+      "scope": "Public projection only; does not refresh or approve upstream observations."
+    }
   }
 }

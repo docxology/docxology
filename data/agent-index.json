@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-11-07T22:09:45+00:00",
+  "generated_at": "2026-11-16T03:51:19+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -303,12 +303,12 @@
   "datasets": {
     "collection_catalog": {
       "path": "/data/collection-catalog.json",
-      "count": 233,
+      "count": 234,
       "schema": "CollectionCatalog"
     },
     "research_map": {
       "path": "/data/research-map.json",
-      "count": 650,
+      "count": 652,
       "schema": "ResearchMap"
     },
     "research_trails": {
@@ -323,22 +323,22 @@
     },
     "works": {
       "path": "/data/works.json",
-      "count": 233,
+      "count": 234,
       "schema": "Work"
     },
     "work_identifiers": {
       "path": "/data/work-identifiers.json",
-      "count": 237,
+      "count": 238,
       "schema": "WorkIdentifierRegistry"
     },
     "software": {
       "path": "/data/software.json",
-      "count": 209,
+      "count": 208,
       "schema": "SoftwareRepository"
     },
     "repositories": {
       "path": "/data/github-repositories.json",
-      "count": 322,
+      "count": 315,
       "schema": "Repository"
     },
     "artworks": {
@@ -378,12 +378,12 @@
     },
     "coverage_exceptions": {
       "path": "/data/coverage-exceptions.json",
-      "count": 41,
+      "count": 42,
       "schema": "CoverageException"
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 113,
+      "count": 107,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -413,12 +413,12 @@
     },
     "scholar_readiness": {
       "path": "/data/scholar-readiness.json",
-      "count": 233,
+      "count": 234,
       "schema": "ScholarReadiness"
     },
     "work_enrichment": {
       "path": "/data/work-enrichment.json",
-      "count": 233,
+      "count": 234,
       "schema": "WorkEnrichment"
     },
     "catalog": {
@@ -433,7 +433,7 @@
     },
     "reproducibility": {
       "path": "/data/reproducibility.json",
-      "count": 233,
+      "count": 234,
       "schema": "ReproducibilityLedger"
     },
     "generated_manifest": {
@@ -466,21 +466,21 @@
     },
     {
       "id": "paired-publications",
-      "path": "/reports/paired_publications_2026-11-07.json",
+      "path": "/reports/paired_publications_2026-11-16.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-11-09.json",
+      "path": "/reports/accessibility_static_2026-11-16.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-11-09.json",
+      "path": "/reports/asset_size_2026-11-16.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -627,6 +627,8 @@
         "language": "string or empty",
         "stars": "integer or null; API snapshot value",
         "updated_or_year": "string; API snapshot month/year or source year",
+        "homepage": "optional string; curated public site or demo",
+        "install_url": "optional string; curated package installation destination",
         "paper_path": "string or empty",
         "zenodo_url": "string or empty"
       }
@@ -1265,16 +1267,16 @@
     },
     "SoftwareRepository": [
       {
-        "name": "template",
-        "url": "https://github.com/docxology/template",
+        "name": "CRAM",
+        "url": "https://github.com/docxology/CRAM",
         "owner": "docxology",
         "catalog_section": "docxology",
-        "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo ·  · Software version 5.0.0 artifact",
-        "language": "Python",
-        "stars": 23,
+        "description": "Compact Reasoning Associative Memory: Classical Energies Learn to Reason 1,000× Faster than Looped Models",
+        "language": "",
+        "stars": 1,
         "updated_or_year": "2026-11",
-        "paper_path": "papers/2026_AutopoieticProjectGeneration/",
-        "zenodo_url": "https://doi.org/10.5281/zenodo.20584820"
+        "paper_path": "",
+        "zenodo_url": ""
       }
     ],
     "ArtworkIndex": [
@@ -1377,8 +1379,8 @@
         "license": "MIT",
         "default_branch": "main",
         "created_at": "2026-11-05T16:40:30Z",
-        "updated_at": "2026-11-08T00:58:53Z",
-        "pushed_at": "2026-11-08T02:27:21Z",
+        "updated_at": "2026-11-11T23:03:39Z",
+        "pushed_at": "2026-11-16T02:02:31Z",
         "curated": true,
         "recently_updated": true
       }
@@ -1386,14 +1388,14 @@
     "ClaimWithEvidence": [
       {
         "id": "curated-work-count",
-        "claim": "The curated bibliography contains 233 works.",
+        "claim": "The curated bibliography contains 234 works.",
         "status": "curated-local",
         "sources": [
           "pages/BIBLIOGRAPHY.md",
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-11-07T22:09:45+00:00",
+        "checked_at": "2026-11-16T03:51:19+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1429,20 +1431,23 @@
       "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
       "pdf_byte_limit": 5000000,
       "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-      "works_sha256": "43470ee1cf4edb703499e3fdc27d684c0f2c31fe3a34b05137af0432e3f1fc12",
+      "works_sha256": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
       "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
       "network_checked": false,
       "indexing_verified": false,
       "summary": {
-        "works": 233,
+        "works": 234,
         "local_status": {
-          "blocked": 228,
+          "blocked": 229,
           "requires_review": 5
         },
         "blockers": {
           "missing_citation_author": 11,
+          "missing_citation_doi": 1,
+          "missing_citation_publication_date": 8,
+          "missing_citation_title": 8,
           "no_selected_local_pdf": 42,
-          "pdf_directory_differs_from_abstract": 186,
+          "pdf_directory_differs_from_abstract": 187,
           "pdf_exceeds_byte_limit": 41
         }
       },
@@ -1563,11 +1568,11 @@
       "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
       "command": "uv run python3 code/orchestrators/build_current_counts.py",
       "counts": {
-        "bibliography_docs_links": 216,
-        "bibliography_works": 233,
+        "bibliography_docs_links": 217,
+        "bibliography_works": 234,
         "domains": {
           "AII Ecosystem": 7,
-          "Active Inference": 48,
+          "Active Inference": 49,
           "Art & Synergetics": 17,
           "Cognitive Security": 37,
           "Computational": 71,
@@ -1576,29 +1581,29 @@
           "Presentations & Media": 15
         },
         "extracted_images": 8959,
-        "full_text_papers": 211,
+        "full_text_papers": 212,
         "generated_exports": {
-          "data_publications_ld_main_entity": 233,
-          "data_software_json": 209,
-          "data_software_ld_main_entity": 209,
-          "data_works_json": 233
+          "data_publications_ld_main_entity": 234,
+          "data_software_json": 208,
+          "data_software_ld_main_entity": 208,
+          "data_works_json": 234
         },
         "github_inventory": {
           "ActiveInferenceInstitute": 47,
-          "archived": 96,
-          "curated": 209,
-          "docxology": 275,
+          "archived": 92,
+          "curated": 208,
+          "docxology": 268,
           "fork_ActiveInferenceInstitute": 2,
-          "fork_docxology": 104,
-          "forks": 106,
+          "fork_docxology": 99,
+          "forks": 101,
           "primary_ActiveInferenceInstitute": 45,
-          "primary_docxology": 171,
-          "primary_total": 216,
+          "primary_docxology": 169,
+          "primary_total": 214,
           "private": 0,
-          "public": 322,
-          "recently_updated": 320,
-          "total": 322,
-          "uncataloged": 113
+          "public": 315,
+          "recently_updated": 315,
+          "total": 315,
+          "uncataloged": 107
         },
         "paired_publication_decisions": {
           "decision": "mixed",
@@ -1607,17 +1612,17 @@
           "raw_candidates": 708
         },
         "paired_publications": {
-          "already_reviewed": 612,
+          "already_reviewed": 0,
           "create_new": 0,
-          "github_releases": 338,
-          "needs_review": 0,
-          "pairs": 613,
+          "github_releases": 35,
+          "needs_review": 174,
+          "pairs": 175,
           "software_catalogued": 1,
-          "strong_pairs": 75,
+          "strong_pairs": 1,
           "update_existing": 0,
-          "zenodo_records": 179
+          "zenodo_records": 193
         },
-        "paper_folder_docs": 216,
+        "paper_folder_docs": 217,
         "papers_with_images": 145,
         "public_source_snapshot": {
           "Crossref ORCID DOI records": 15,
@@ -1631,25 +1636,25 @@
         },
         "software": {
           "active_inference_institute": 43,
-          "curated_total": 209,
-          "docxology_owned": 166
+          "curated_total": 208,
+          "docxology_owned": 165
         },
         "types": {
           "Books": 6,
           "Courses": 3,
-          "Papers": 211,
+          "Papers": 212,
           "Playbooks": 2,
           "Presentations": 8,
           "Report": 1,
           "Series": 2
         }
       },
-      "generated_at": "2026-11-07T22:09:45+00:00",
+      "generated_at": "2026-11-16T03:51:19+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
-        "paired_publications": "reports/paired_publications_2026-11-07.json",
+        "paired_publications": "reports/paired_publications_2026-11-16.json",
         "paper_folders": "papers/README.md",
         "public_source_snapshot": "reports/public_source_snapshot_2026-11-06.json",
         "software_catalog": "pages/SOFTWARE.md",
@@ -1668,11 +1673,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 967162679,
+        "source_bytes": 966867413,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6275,
-        "artifact_bytes": 968275355
+        "artifact_file_count": 6296,
+        "artifact_bytes": 967983884
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1684,7 +1689,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-11-07T01:44:24Z",
+      "generated_at": "2026-11-16T03:52:06Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1746,18 +1751,18 @@
         }
       ],
       "max_score": 6,
-      "work_count": 233,
+      "work_count": 234,
       "signal_totals": {
         "persistent_id": 217,
         "public_archive": 175,
-        "open_full_text": 211,
-        "source_documents": 216,
-        "executable_code": 85,
-        "agent_readable": 216
+        "open_full_text": 212,
+        "source_documents": 217,
+        "executable_code": 87,
+        "agent_readable": 217
       },
       "band_counts": {
         "independently reproducible": 173,
-        "independently checkable": 43,
+        "independently checkable": 44,
         "citable only": 8,
         "unverified": 9
       },
@@ -1765,12 +1770,12 @@
         "0": 9,
         "1": 4,
         "2": 4,
-        "3": 10,
+        "3": 11,
         "4": 33,
-        "5": 92,
-        "6": 81
+        "5": 90,
+        "6": 83
       },
-      "mean_score": 4.807,
+      "mean_score": 4.808,
       "works": [
         {
           "num": 5,
@@ -1875,6 +1880,48 @@
           },
           "repositories": [
             "markdown_decision_process"
+          ]
+        },
+        {
+          "num": 18,
+          "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
+          "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+          "year": 2025,
+          "domain_name": "Art & Synergetics",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "QuadMath"
+          ]
+        },
+        {
+          "num": 20,
+          "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
+          "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
+          "year": 2025,
+          "domain_name": "Art & Synergetics",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "symergetics"
           ]
         },
         {
@@ -3665,49 +3712,11 @@
           "repositories": []
         },
         {
-          "num": 18,
-          "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
-          "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
-          "year": 2025,
-          "domain_name": "Art & Synergetics",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
           "num": 19,
           "citation_key": "Friedman2025ResNeiSolutionDesignDocument019",
           "title": "ResNei: Solution Design Document",
           "year": 2025,
           "domain_name": "Computational",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 20,
-          "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
-          "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
-          "year": 2025,
-          "domain_name": "Art & Synergetics",
           "type": "Paper",
           "score": 5,
           "band": "independently reproducible",
@@ -4311,7 +4320,7 @@
             "agent_readable": true
           },
           "repositories": [
-            "ActiveInferAnts",
+            "Active_InferAnts",
             "MetaInformAnt"
           ]
         },
@@ -6049,6 +6058,25 @@
           "repositories": []
         },
         {
+          "num": 238,
+          "citation_key": "Friedman2026OPHFEPSynergeticsExecutable238",
+          "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+          "year": 2026,
+          "domain_name": "Active Inference",
+          "type": "Paper",
+          "score": 3,
+          "band": "independently checkable",
+          "signals": {
+            "persistent_id": false,
+            "public_archive": false,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": false,
+            "agent_readable": true
+          },
+          "repositories": []
+        },
+        {
           "num": 64,
           "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
           "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
@@ -6375,33 +6403,33 @@
     }
   },
   "dataset_hashes": {
-    "blake_index": "7a5ed7826fe15b66fefa1d8591f4a2a617d9fb9ec0f486b85c72c2bd30121afe",
-    "works": "43470ee1cf4edb703499e3fdc27d684c0f2c31fe3a34b05137af0432e3f1fc12",
-    "work_identifiers": "8d56befd1e741321c720a778da4034731e564da22d4a87431cbf45643996bcd7",
-    "software": "1340e71cefebfc1b5b8f82c61f5c543a56d76e12503fcf85fed7e5f251b8fd33",
-    "repositories": "40d9e5920f11e1c30c9d67c79d445796e31b0db6820cd1825dc326d9611f19bf",
+    "blake_index": "470a9434dee8293ba9c6c0115364d34989458fcc2555862fe668647660dc374c",
+    "works": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
+    "work_identifiers": "23826d73d524fcf0a521f6f16894a3e8dccd886adef2fb2f77dfca3bab2d01c4",
+    "software": "22e910623e5ac15723e08096bc78a32d88572ec79a64ceffb2a688b8e43edd69",
+    "repositories": "df9168b00ac29fe678762c0773747f75787466db7c2fc71a72417e9b47a38e2c",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "4ab5da15a6878393ece05d08c613d931968035eefbeb107d148cf8ff5ddfb687",
     "videos_index": "aef1cfda7fa82b229d97d49742fc04e417cd8fba6db97bda12fcc8a323470f10",
-    "search": "2e891cc5567f1b3f85377c5336f2dabe10695af185d872fd39d01705d8a0f134",
-    "claims": "94ae341a7ea869e8700a79fca983810bbd3a806b99bc9252dc1f334a2720ce6e",
+    "search": "e27656128f400404030e37b35e315e9224c6d5b4466b936b7cadadd174eb1be9",
+    "claims": "5be7cade42bf0aceb94f9ea8ebca75bf0f78b3cf460ee72fc2c0bfcc05ab762d",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
-    "coverage_exceptions": "4e30caa4f1898236a05b27cdc922faaf0290baf2220e6ef6c46e84f19fbdc732",
-    "repository_classification": "8fdcefab905fec0464dd24ca4753e21686bb08a6526fcd3d057f252a4f17f04a",
-    "people": "3b7f0a658425ffba8f6a6a4b0ee641cfcabd4c7695bcee04d0b5f124d4b46254",
-    "organizations": "6c95f235ed4e7cd41d8132337c3ffeb80fd217a6be1fe0bed2ea968168de84b2",
-    "resume": "3fd90861e5ad923650a1f5187231a4b05a2e6890ee3e50476b4a7ead60c373b6",
-    "work_enrichment": "79d64d3d045ae26b07f4ce20a6114c22f7cca5fcba92645bb31da51202c299c5",
-    "collection_catalog": "b0e08a313b3630cb8ca1f0cde09c678cf6e89250546686843db69ac11dc19921",
-    "research_map": "27faba79085a8f64b414346fe06f4e9322f945493873244b66c7889ef1411348",
+    "coverage_exceptions": "e8a253e85f233ddedc483897452251cb1a4de4371823286e4258f59567b274c0",
+    "repository_classification": "72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b",
+    "people": "564402efe181f975a1a1318b99f82b5aa25fbdd8191560bf2093188ae01f49bb",
+    "organizations": "4e3a79239075023a50db1d0b11243a9eee765431916b739fced6daec6dc89b72",
+    "resume": "bf66651e788cdf9d79b334d19c1ee5733fba2b83435254995e15ecb21a1ba429",
+    "work_enrichment": "3e1b51faba0d2ee08c4f2079028bf541e9308e28f279721a6219326cdb592d31",
+    "collection_catalog": "654499e2aeb531ae449c1228ff2daf652f64b4220922023f1a175b7e68ae1f3c",
+    "research_map": "f4f7051d652f20435c763eca9ff44dcedd47f19c0df7cbfa4746a5637a61db69",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
-    "scholar_readiness": "ebd8a92655b1e1236117e3278013427ef4541f6590829e673bb36d7929337f36",
-    "catalog": "c5db98820169263f3884f09d79274e824e3db261ec1ad2943e8c8525ae0265c3",
-    "reconciliation": "ccae7160c9f83ae748fbd790156c1f3c83f84af4a84e505f6d1b2455bd37cefa",
-    "reproducibility": "84d589b0f1c6022462d195b6d7ddcc74a93b806a78fef43fe7ff45947de94f70",
-    "generated_manifest": "c8a035b6c4686a9ef59700a15dd2e8b250b3b47de4e450320f9ad16dc98e0e80",
-    "current_counts": "336feacb1f882329db8cc14a46315e5fdac929f4a6a7c45193112139c4b702ed"
+    "scholar_readiness": "1e88ddc93b9303c134340f73f6e59826329d08456fa38415208b5d2db1787742",
+    "catalog": "fb8d606e38a397d5cf64554117471a37a0d2b49ea8d9dd0b993e0511e0bc9b1f",
+    "reconciliation": "8bfb1938cc54583b2c65b81e151c953b3377ee790980d3f51daba5b414a43c6b",
+    "reproducibility": "6f95aa4ee5eb6370b307670bad0c6767415287069be77ca6a9dbf669d52b890f",
+    "generated_manifest": "bf3757019681598afff785db4f3c34901eb7bd38455b080b7b2e79e065ec4dab",
+    "current_counts": "0ab9ccb57fbe7a2bb0128fa77183401336b456f8ab5f5d5becf3743db15f7ab9"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -6430,11 +6458,11 @@
     "pages_status": "built"
   },
   "counts": {
-    "bibliography_docs_links": 216,
-    "bibliography_works": 233,
+    "bibliography_docs_links": 217,
+    "bibliography_works": 234,
     "domains": {
       "AII Ecosystem": 7,
-      "Active Inference": 48,
+      "Active Inference": 49,
       "Art & Synergetics": 17,
       "Cognitive Security": 37,
       "Computational": 71,
@@ -6443,29 +6471,29 @@
       "Presentations & Media": 15
     },
     "extracted_images": 8959,
-    "full_text_papers": 211,
+    "full_text_papers": 212,
     "generated_exports": {
-      "data_publications_ld_main_entity": 233,
-      "data_software_json": 209,
-      "data_software_ld_main_entity": 209,
-      "data_works_json": 233
+      "data_publications_ld_main_entity": 234,
+      "data_software_json": 208,
+      "data_software_ld_main_entity": 208,
+      "data_works_json": 234
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 47,
-      "archived": 96,
-      "curated": 209,
-      "docxology": 275,
+      "archived": 92,
+      "curated": 208,
+      "docxology": 268,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 104,
-      "forks": 106,
+      "fork_docxology": 99,
+      "forks": 101,
       "primary_ActiveInferenceInstitute": 45,
-      "primary_docxology": 171,
-      "primary_total": 216,
+      "primary_docxology": 169,
+      "primary_total": 214,
       "private": 0,
-      "public": 322,
-      "recently_updated": 320,
-      "total": 322,
-      "uncataloged": 113
+      "public": 315,
+      "recently_updated": 315,
+      "total": 315,
+      "uncataloged": 107
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -6474,17 +6502,17 @@
       "raw_candidates": 708
     },
     "paired_publications": {
-      "already_reviewed": 612,
+      "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 338,
-      "needs_review": 0,
-      "pairs": 613,
+      "github_releases": 35,
+      "needs_review": 174,
+      "pairs": 175,
       "software_catalogued": 1,
-      "strong_pairs": 75,
+      "strong_pairs": 1,
       "update_existing": 0,
-      "zenodo_records": 179
+      "zenodo_records": 193
     },
-    "paper_folder_docs": 216,
+    "paper_folder_docs": 217,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -6498,13 +6526,13 @@
     },
     "software": {
       "active_inference_institute": 43,
-      "curated_total": 209,
-      "docxology_owned": 166
+      "curated_total": 208,
+      "docxology_owned": 165
     },
     "types": {
       "Books": 6,
       "Courses": 3,
-      "Papers": 211,
+      "Papers": 212,
       "Playbooks": 2,
       "Presentations": 8,
       "Report": 1,

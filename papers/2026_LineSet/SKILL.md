@@ -5,7 +5,7 @@ description: "The selected deposit is a 248-page collected volume whose cover na
 tags: ["modularity", "information-hiding", "separation-of-concerns", "boundary-objects", "namespace-collision", "declarative-registry", "reproducible-review", "open-science"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *The Line Set: Holding Instruments Apart*. Zenodo."
-doi: "10.5281/zenodo.21754243"
+doi: "10.5281/zenodo.24069474"
 artifact_doi: "10.5281/zenodo.22833507"
 ---
 
@@ -41,7 +41,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- Canonical DOI: 10.5281/zenodo.21754243
+- Canonical DOI: 10.5281/zenodo.24069474
 - PDF SHA-256: deaac4ed4bb747b4fd7c97fe67535ff28fd65764b4ae9a45e2225ab589b69f25
 - Pairing confidence: unknown
 - Last checked: 2026-11-06T18:27:15.602557+00:00
@@ -57,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.21754243`
+1. Reference the DOI for citation: `10.5281/zenodo.24069474`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

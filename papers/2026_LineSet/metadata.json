@@ -1,8 +1,8 @@
 {
   "title": "The Line Set: Holding Instruments Apart",
   "version": "0.2.0",
-  "doi": "10.5281/zenodo.21754243",
-  "doi_url": "https://doi.org/10.5281/zenodo.21754243",
+  "doi": "10.5281/zenodo.24069474",
+  "doi_url": "https://doi.org/10.5281/zenodo.24069474",
   "zenodo_record": "https://zenodo.org/records/22833507",
   "record_id": "22833507",
   "publication_date": "2026-09-18",
@@ -94,12 +94,16 @@
     ]
   },
   "latest_software_release": {
-    "version": "v0.5.0",
-    "publication_date": "2026-10-22",
-    "github_release_url": "https://github.com/docxology/line_set/releases/tag/v0.5.0",
-    "source_report": "reports/publication_intake_2026-10-23.json",
-    "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
-    "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+    "version": "v0.8.0",
+    "publication_date": "2026-11-11",
+    "github_release_url": "https://github.com/docxology/line_set/releases/tag/v0.8.0",
+    "source_report": "reports/paired_publications_2026-11-16.json",
+    "source_report_sha256": "f07dc875526301ff8647dd0d10526eb37b71a65d0ae4e4797044830e4debd452",
+    "scope": "Verified repository release and source ZIP archive; retained manuscript PDF version, extracted text and source-specific findings remain independent earlier editions.",
+    "source_report_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_report_sha256": "265636a68bc9f03574578ee378d4f4f4a6bfa0602f0a560907086411b3072c22"
+    }
   },
   "pages": 248,
   "pdf_sha256": "deaac4ed4bb747b4fd7c97fe67535ff28fd65764b4ae9a45e2225ab589b69f25",
@@ -132,5 +136,30 @@
     "scientific_or_runtime_reproduction": false,
     "historical_text_file": "full_text_before_2026-11-06.md"
   },
-  "document_title": "The Line Set: The Collected Volume"
+  "document_title": "The Line Set: The Collected Volume",
+  "prior_deposits": [
+    {
+      "doi": "10.5281/zenodo.21754243",
+      "note": "Retained manuscript citation and PDF edition before source-archive refresh."
+    }
+  ],
+  "latest_source_archive": {
+    "doi": "10.5281/zenodo.24124421",
+    "concept_doi": "10.5281/zenodo.24069474",
+    "record_id": "24124421",
+    "version": "0.8.0",
+    "publication_date": "2026-11-11",
+    "files": [
+      {
+        "id": "6df351bf-e008-4fe5-9161-be740722fc28",
+        "key": "docxology/line_set-v0.8.0.zip",
+        "size": 605251,
+        "checksum": "md5:6eeb35ba6710e4655b078b2f3ec03b5a",
+        "links": {
+          "self": "https://zenodo.org/api/records/24124421/files/docxology/line_set-v0.8.0.zip/content"
+        }
+      }
+    ],
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+  }
 }

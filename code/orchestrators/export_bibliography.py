@@ -140,7 +140,7 @@ def source_paths(repo_root: Path = REPO_ROOT) -> frozenset[str]:
         cwd=repo_root,
         check=False,
         capture_output=True,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         raise RuntimeError("unable to enumerate Git-visible bibliography source files")
     return frozenset(

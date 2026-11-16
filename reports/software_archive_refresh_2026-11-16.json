@@ -1,0 +1,200 @@
+{
+  "observed_at": "2026-11-16T04:54:51.617932+00:00",
+  "source": "Zenodo REST API exact record GETs",
+  "records": [
+    {
+      "repository": "symergetics",
+      "requested_record": "17114383",
+      "record_id": "24094526",
+      "doi": "10.5281/zenodo.24094526",
+      "concept_doi": "10.5281/zenodo.17114383",
+      "title": "symergetics",
+      "version": "1.4.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/docxology/symergetics/tree/1.4.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": "1.4.0"
+    },
+    {
+      "repository": "QuadMath",
+      "requested_record": "16887790",
+      "record_id": "24094527",
+      "doi": "10.5281/zenodo.24094527",
+      "concept_doi": "10.5281/zenodo.16887790",
+      "title": "QuadMath",
+      "version": "0.7.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/docxology/QuadMath/tree/0.7.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": "0.7.0"
+    },
+    {
+      "repository": "steganographer",
+      "requested_record": "21513412",
+      "record_id": "24090621",
+      "doi": "10.5281/zenodo.24090621",
+      "concept_doi": "10.5281/zenodo.21513412",
+      "title": "docxology/steganographer: steganographer 0.9.1",
+      "version": "v0.9.1",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/docxology/steganographer/tree/v0.9.1",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": "v0.9.1"
+    },
+    {
+      "repository": "opentir",
+      "requested_record": "23372602",
+      "record_id": "23372603",
+      "doi": "10.5281/zenodo.23372603",
+      "concept_doi": "10.5281/zenodo.23372602",
+      "title": "docxology/opentir: Opentir v1.1.0",
+      "version": "v1.1.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/docxology/opentir/tree/v1.1.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": null
+    },
+    {
+      "repository": "qr_live_protocol",
+      "requested_record": "21513385",
+      "record_id": "21710734",
+      "doi": "10.5281/zenodo.21710734",
+      "concept_doi": "10.5281/zenodo.21513385",
+      "title": "docxology/qr_live_protocol: Release v1.5.0: OpenTimestamps integration for QR timestamp attestation",
+      "version": "v1.5.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/docxology/qr_live_protocol/tree/v1.5.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": null
+    },
+    {
+      "repository": "p3if",
+      "requested_record": "21513392",
+      "record_id": "21517443",
+      "doi": "10.5281/zenodo.21517443",
+      "concept_doi": "10.5281/zenodo.21513392",
+      "title": "docxology/p3if: v2.5.0 — Type Annotations, 32 New Tests, OperationFailedError Fix",
+      "version": "v2.5.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/docxology/p3if/tree/v2.5.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": null
+    },
+    {
+      "repository": "mdkv",
+      "requested_record": "21513254",
+      "record_id": "21517244",
+      "doi": "10.5281/zenodo.21517244",
+      "concept_doi": "10.5281/zenodo.21513254",
+      "title": "docxology/mdkv: MDKV v0.10.0 — GUI coverage to 86%, total to 93%, TODO cleanup",
+      "version": "v0.10.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/docxology/mdkv/tree/v0.10.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": null
+    },
+    {
+      "repository": "SynthOBS",
+      "requested_record": "21418687",
+      "record_id": "21418901",
+      "doi": "10.5281/zenodo.21418901",
+      "concept_doi": "10.5281/zenodo.21418687",
+      "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "version": "1.618.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/docxology/SynthOBS/releases/tag/v1.618.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        },
+        {
+          "identifier": "https://github.com/docxology/SynthOBS/tree/v1.618.0",
+          "relation": "isIdenticalTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": null
+    },
+    {
+      "repository": "ActiveInferenceJournal",
+      "requested_record": "7299755",
+      "record_id": "21074926",
+      "doi": "10.5281/zenodo.21074926",
+      "concept_doi": "10.5281/zenodo.7299755",
+      "title": "ActiveInferenceInstitute/ActiveInferenceJournal: v2.0.0: restructured, complete, agent-navigable journal",
+      "version": "v2.0.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/v2.0.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": null
+    },
+    {
+      "repository": "Journal_Utilities",
+      "requested_record": "7752714",
+      "record_id": "21074936",
+      "doi": "10.5281/zenodo.21074936",
+      "concept_doi": "10.5281/zenodo.7752714",
+      "title": "ActiveInferenceInstitute/Journal_Utilities: v1.1.0: journal refactor pipeline + complete channel coverage",
+      "version": "v1.1.0",
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/ActiveInferenceInstitute/Journal_Utilities/tree/v1.1.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "observed_release_tag": null
+    }
+  ],
+  "homepage_review": [
+    {
+      "url": "https://docxology.github.io/template/",
+      "status": 404,
+      "observed_at": "2026-11-16T05:01:54Z",
+      "decision": "Remove the unavailable clickable demo link from the curated catalog; retain the raw GitHub inventory homepage as a dated upstream fact."
+    }
+  ]
+}

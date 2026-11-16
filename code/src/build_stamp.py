@@ -129,7 +129,7 @@ def _git(repo_root: Path, *args: str) -> str:
             capture_output=True,
             text=True,
             check=True,
-        )
+        stdin=subprocess.DEVNULL)
     except (OSError, subprocess.CalledProcessError) as exc:
         raise BuildStampError(f"git {' '.join(args)} failed: {exc}") from exc
     return result.stdout.strip()

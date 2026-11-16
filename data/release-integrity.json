@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-09T19:28:37Z",
-  "source_commit_at_generation": "ca5722efdbd075a94ec47de96e0cf627905a3c6d",
+  "generated_at": "2026-11-16T07:22:18Z",
+  "source_commit_at_generation": "62710daea876893a7ea4ebe6dee442341ca7cbe7",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -13,39 +13,39 @@
       ".python-version": "1253c91eccb2aac1c6ff2ac03fd69c1aaa0b221abd3d1bf5b563c12602452b4e",
       "uv.lock": "c74cba60e380643748e9f4d2c71e73cdf8598e410b4181dbcbf6e092eed4ec45",
       "code/orchestrators/regenerate_all.py": "0c02ffb579e25ae343f7861fde4c2223bf3f22abb0ca9435fe53720b3bd8ec88",
-      "code/orchestrators/build_pages_artifact.py": "34539d1b8939225c80669cd7b7b4c05719d1a839e5dfc42543b9389a69899895",
-      "code/orchestrators/build_agent_index.py": "d3c9d34e5d4e63ace397f3ccf2cacf4b17e28634aa0db2cd46cc4f4d4e235828",
+      "code/orchestrators/build_pages_artifact.py": "cd57397cd24e70c95850e0519d1f3faa88563ad3c1a68ed3b50a2b7fb3c9585c",
+      "code/orchestrators/build_agent_index.py": "040840f156c22c31ddd4450b36daff8b5a58f46f7c983dc96307d7583e1047fd",
       "code/orchestrators/build_coverage_exceptions.py": "29072d45f5b87ba2a9f029fcf29ef14e023621de574ae01e09672511b7c4744b",
       "code/orchestrators/classify_repositories.py": "2de92ab1b0a98274e486bf4e86dd3839985fbbb75ca5d45e7991af2ec29f1020",
       "code/orchestrators/audit_assets.py": "5e63be3639b9f2af31f7bea94a30c27c1393a9220d6ae9f5f23a4d0bb28e3bd5",
       "code/src/public_integrity.py": "1449b9d023f8ac2a742aeb6d67b2d3b285cb6265f31d321a666a475c9f1036ac",
-      "code/src/release_controls.py": "139210ec8ff1ee4351d3424e133cfe18db0948ef4ec3063d0be51a9a6ea9857e",
+      "code/src/release_controls.py": "3f97f08170cda9f1f0119af848f728d391bce87755ab2b0ce0fbbe6f893fb670",
       "code/src/work_identifiers.py": "f27b1771074f0c2af555c12e21779a3df347c701339d6477358f9c301b74e1b3"
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "d478ae698d8ff71a63585ae860e3543ba066d9653c56f2b6db0157651107d9a2",
-    "data/work-identifiers.json": "8d56befd1e741321c720a778da4034731e564da22d4a87431cbf45643996bcd7",
-    "pages/SOFTWARE.md": "a375f879a11fb1864f26330e6ae4eecfcc31ccfa8191cd8f553d3c42a3c512fb",
+    "pages/BIBLIOGRAPHY.md": "43caca91f0ddce70de01cfadeb856157fc588ccc901f12c84988f998d6b70b62",
+    "data/work-identifiers.json": "23826d73d524fcf0a521f6f16894a3e8dccd886adef2fb2f77dfca3bab2d01c4",
+    "pages/SOFTWARE.md": "d091ced778bdebbcad8f4a20fd63c606c9cbb2f0ea6121fde0d4049700655303",
     "resume/source.json": "69cbd668ee8f0b859f525eef8216955dbf0eb87490ac51e01493996c81f2202a",
-    "data/current-counts.json": "336feacb1f882329db8cc14a46315e5fdac929f4a6a7c45193112139c4b702ed",
-    "data/coverage-exceptions.json": "4e30caa4f1898236a05b27cdc922faaf0290baf2220e6ef6c46e84f19fbdc732",
-    "data/repository-classification.json": "8fdcefab905fec0464dd24ca4753e21686bb08a6526fcd3d057f252a4f17f04a",
-    "data/agent-index.json": "533c005edfe53d324b281d455705e7d49127afe0fc4dee2f222455c0ad73e01d",
-    "data/generated-manifest.json": "c8a035b6c4686a9ef59700a15dd2e8b250b3b47de4e450320f9ad16dc98e0e80",
-    "data/pages-artifact-manifest.json": "54c3f56af67832289d3b75b6dffc502baf3b7cead19760f135117b2e2c111d44"
+    "data/current-counts.json": "0ab9ccb57fbe7a2bb0128fa77183401336b456f8ab5f5d5becf3743db15f7ab9",
+    "data/coverage-exceptions.json": "e8a253e85f233ddedc483897452251cb1a4de4371823286e4258f59567b274c0",
+    "data/repository-classification.json": "72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b",
+    "data/agent-index.json": "7318e764230b8f9f1a77e7860d0cf97f13b73335e5bccf18110aaf9553bf56df",
+    "data/generated-manifest.json": "bf3757019681598afff785db4f3c34901eb7bd38455b080b7b2e79e065ec4dab",
+    "data/pages-artifact-manifest.json": "8755c33371dcb52e7145f489f404d9663bfaff9235a3e7af6a4765ce5b618957"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "ca5722efdbd075a94ec47de96e0cf627905a3c6d",
-    "artifact_file_count": 6275,
-    "artifact_bytes": 968275355,
+    "source_commit_at_generation": "62710daea876893a7ea4ebe6dee442341ca7cbe7",
+    "artifact_file_count": 6296,
+    "artifact_bytes": 967983884,
     "omitted_paper_image_count": 8959,
-    "omitted_superseded_report_count": 786
+    "omitted_superseded_report_count": 798
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "ca5722efdbd075a94ec47de96e0cf627905a3c6d",
+    "candidate_source_commit": "62710daea876893a7ea4ebe6dee442341ca7cbe7",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -54,11 +54,11 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 216,
-    "bibliography_works": 233,
+    "bibliography_docs_links": 217,
+    "bibliography_works": 234,
     "domains": {
       "AII Ecosystem": 7,
-      "Active Inference": 48,
+      "Active Inference": 49,
       "Art & Synergetics": 17,
       "Cognitive Security": 37,
       "Computational": 71,
@@ -67,29 +67,29 @@
       "Presentations & Media": 15
     },
     "extracted_images": 8959,
-    "full_text_papers": 211,
+    "full_text_papers": 212,
     "generated_exports": {
-      "data_publications_ld_main_entity": 233,
-      "data_software_json": 209,
-      "data_software_ld_main_entity": 209,
-      "data_works_json": 233
+      "data_publications_ld_main_entity": 234,
+      "data_software_json": 208,
+      "data_software_ld_main_entity": 208,
+      "data_works_json": 234
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 47,
-      "archived": 96,
-      "curated": 209,
-      "docxology": 275,
+      "archived": 92,
+      "curated": 208,
+      "docxology": 268,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 104,
-      "forks": 106,
+      "fork_docxology": 99,
+      "forks": 101,
       "primary_ActiveInferenceInstitute": 45,
-      "primary_docxology": 171,
-      "primary_total": 216,
+      "primary_docxology": 169,
+      "primary_total": 214,
       "private": 0,
-      "public": 322,
-      "recently_updated": 320,
-      "total": 322,
-      "uncataloged": 113
+      "public": 315,
+      "recently_updated": 315,
+      "total": 315,
+      "uncataloged": 107
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -98,17 +98,17 @@
       "raw_candidates": 708
     },
     "paired_publications": {
-      "already_reviewed": 612,
+      "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 338,
-      "needs_review": 0,
-      "pairs": 613,
+      "github_releases": 35,
+      "needs_review": 174,
+      "pairs": 175,
       "software_catalogued": 1,
-      "strong_pairs": 75,
+      "strong_pairs": 1,
       "update_existing": 0,
-      "zenodo_records": 179
+      "zenodo_records": 193
     },
-    "paper_folder_docs": 216,
+    "paper_folder_docs": 217,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -122,13 +122,13 @@
     },
     "software": {
       "active_inference_institute": 43,
-      "curated_total": 209,
-      "docxology_owned": 166
+      "curated_total": 208,
+      "docxology_owned": 165
     },
     "types": {
       "Books": 6,
       "Courses": 3,
-      "Papers": 211,
+      "Papers": 212,
       "Playbooks": 2,
       "Presentations": 8,
       "Report": 1,

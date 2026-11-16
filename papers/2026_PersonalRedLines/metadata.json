@@ -1,8 +1,8 @@
 {
   "title": "Personal Red Lines for Development",
   "version": "0.3.0",
-  "doi": "10.5281/zenodo.21754239",
-  "doi_url": "https://doi.org/10.5281/zenodo.21754239",
+  "doi": "10.5281/zenodo.24069255",
+  "doi_url": "https://doi.org/10.5281/zenodo.24069255",
   "zenodo_record": "https://zenodo.org/records/21754239",
   "record_id": "21754240",
   "publication_date": "2026-08-02",
@@ -92,5 +92,42 @@
     "method": "Evidence-grounded extraction from full_text.md: every method and finding carries a verbatim quote from the paper text, mechanically verified to occur in full_text.md (whitespace/ligature-normalized) before merge.",
     "notes": "Personal policy instrument with accompanying code; results are executed tests on constructed fixtures, not real-world validation. The paper states it is 'not yet externally attested publication'.",
     "reviewed": "2026-10-01 independent review of every item against its quote and context; no corrections needed"
+  },
+  "prior_deposits": [
+    {
+      "doi": "10.5281/zenodo.21754239",
+      "note": "Retained manuscript citation and PDF edition before source-archive refresh."
+    }
+  ],
+  "latest_source_archive": {
+    "doi": "10.5281/zenodo.24124420",
+    "concept_doi": "10.5281/zenodo.24069255",
+    "record_id": "24124420",
+    "version": "0.5.2",
+    "publication_date": "2026-11-11",
+    "files": [
+      {
+        "id": "d37c6ad6-147f-4cad-a817-bd91dfa6b88f",
+        "key": "docxology/red_line-v0.5.2.zip",
+        "size": 5058879,
+        "checksum": "md5:bd990ad1de39609bab18f8fb796cf715",
+        "links": {
+          "self": "https://zenodo.org/api/records/24124420/files/docxology/red_line-v0.5.2.zip/content"
+        }
+      }
+    ],
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+  },
+  "latest_software_release": {
+    "version": "v0.5.2",
+    "publication_date": "2026-11-11",
+    "github_release_url": "https://github.com/docxology/red_line/releases/tag/v0.5.2",
+    "source_report": "reports/paired_publications_2026-11-16.json",
+    "source_report_sha256": "f07dc875526301ff8647dd0d10526eb37b71a65d0ae4e4797044830e4debd452",
+    "scope": "Verified repository release and source ZIP archive; retained manuscript PDF version, extracted text and source-specific findings remain independent earlier editions.",
+    "source_report_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_report_sha256": "265636a68bc9f03574578ee378d4f4f4a6bfa0602f0a560907086411b3072c22"
+    }
   }
 }

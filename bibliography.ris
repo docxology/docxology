@@ -988,7 +988,7 @@ AU  - Balbuena, Jessica Angeli
 AU  - Choudhury, Arhan
 AU  - Cordes, RJ
 AU  - El Damaty, Shady
-AU  - Guénin—Carlut, Avel
+AU  - Guénin-Carlut, Avel
 AU  - Knight, V. Bleu
 AU  - Metelkin, Ivan
 AU  - Shrivastava, Siddhant
@@ -2765,8 +2765,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Witness Register: Co-Registration Without Aggregation
 T2  - Zenodo
-DO  - 10.5281/zenodo.21754245
-UR  - https://doi.org/10.5281/zenodo.21754245
+DO  - 10.5281/zenodo.24069487
+UR  - https://doi.org/10.5281/zenodo.24069487
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 200; docs: papers/2026_WitnessRegister/
@@ -2777,8 +2777,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Line Set: Holding Instruments Apart
 T2  - Zenodo
-DO  - 10.5281/zenodo.21754243
-UR  - https://doi.org/10.5281/zenodo.21754243
+DO  - 10.5281/zenodo.24069474
+UR  - https://doi.org/10.5281/zenodo.24069474
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 201; docs: papers/2026_LineSet/
@@ -2789,8 +2789,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - White Line: A Typed Ledger for the Edge of the Claim
 T2  - Zenodo
-DO  - 10.5281/zenodo.21754241
-UR  - https://doi.org/10.5281/zenodo.21754241
+DO  - 10.5281/zenodo.24069433
+UR  - https://doi.org/10.5281/zenodo.24069433
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 202; docs: papers/2026_WhiteLine/
@@ -2801,8 +2801,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Personal Red Lines for Development
 T2  - Zenodo
-DO  - 10.5281/zenodo.21754239
-UR  - https://doi.org/10.5281/zenodo.21754239
+DO  - 10.5281/zenodo.24069255
+UR  - https://doi.org/10.5281/zenodo.24069255
 KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 203; docs: papers/2026_PersonalRedLines/
@@ -2813,8 +2813,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Golden Line: Toward What Matters
 T2  - Zenodo
-DO  - 10.5281/zenodo.21754237
-UR  - https://doi.org/10.5281/zenodo.21754237
+DO  - 10.5281/zenodo.24069423
+UR  - https://doi.org/10.5281/zenodo.24069423
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 204; docs: papers/2026_GoldenLine/
@@ -2825,8 +2825,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Black Line: Strong Work in Public
 T2  - Zenodo
-DO  - 10.5281/zenodo.21754235
-UR  - https://doi.org/10.5281/zenodo.21754235
+DO  - 10.5281/zenodo.24069414
+UR  - https://doi.org/10.5281/zenodo.24069414
 KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 205; docs: papers/2026_BlackLine/
@@ -3008,8 +3008,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Green Line: a capacity-under-development instrument
 T2  - Zenodo
-DO  - 10.5281/zenodo.22833491
-UR  - https://doi.org/10.5281/zenodo.22833491
+DO  - 10.5281/zenodo.24069456
+UR  - https://doi.org/10.5281/zenodo.24069456
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 220; docs: papers/2026_GreenLine/
@@ -3020,8 +3020,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Blue Line: A Stewardship Instrument for Maintained Commitments
 T2  - Zenodo
-DO  - 10.5281/zenodo.22833489
-UR  - https://doi.org/10.5281/zenodo.22833489
+DO  - 10.5281/zenodo.24069450
+UR  - https://doi.org/10.5281/zenodo.24069450
 KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 221; docs: papers/2026_BlueLine/
@@ -3044,8 +3044,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Silver Line: A Memory-and-Succession Instrument
 T2  - Zenodo
-DO  - 10.5281/zenodo.22833485
-UR  - https://doi.org/10.5281/zenodo.22833485
+DO  - 10.5281/zenodo.24069438
+UR  - https://doi.org/10.5281/zenodo.24069438
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 223; docs: papers/2026_SilverLine/
@@ -3295,4 +3295,15 @@ UR  - https://doi.org/10.5281/zenodo.23986504
 KW  - Media & Teaching
 KW  - Book
 N1  - Catalog row 237; docs: papers/2026_SymposiumPresenterProgram/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics
+T2  - GitHub release v0.1.0
+UR  - https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/
 ER  -

@@ -996,6 +996,7 @@ ARTIFACTS = [
 # discoverable from the authoritative matrix. MD-only: data/generated-manifest.json
 # keeps its frozen {generated_at, artifacts} schema for downstream consumers.
 UTILITIES = [
+    ("project_public_source_links.py", "Filter newly imported owned-repository links against the observed public inventory without altering literal historical extracts.", "privacy projection"),
     (
         "audit_content_citations.py",
         "Checks published HTML targets/fragments, catalog-derived citations and explicit joint authorship; optional source-bound inventories and live external probes",

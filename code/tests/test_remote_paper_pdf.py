@@ -66,7 +66,7 @@ def _work(resources):
         "domain": "🎨",
         "doi": "10.5281/zenodo.123455",
         "url": "https://doi.org/10.5281/zenodo.123455",
-        "authors": [],
+        "authors": ["Example, Author"],
         "docs_path": "papers/2026_Example/",
         "_resources": resources,
     }

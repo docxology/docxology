@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22833485.svg)](https://doi.org/10.5281/zenodo.22833485)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24069438.svg)](https://doi.org/10.5281/zenodo.24069438)
 
 ---
 
@@ -18,7 +18,7 @@ memory · succession · active inference · declared custody · review gaps
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.22833485](https://doi.org/10.5281/zenodo.22833485) |
+| **DOI** | [10.5281/zenodo.24069438](https://doi.org/10.5281/zenodo.24069438) |
 | **Artifact DOI (archived version)** | [10.5281/zenodo.22833486](https://doi.org/10.5281/zenodo.22833486) |
 | **Published** | 2026-09-18 |
 | **Version** | 0.1.0 |
@@ -30,9 +30,15 @@ memory · succession · active inference · declared custody · review gaps
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *The Silver Line: A Memory-and-Succession Instrument*. Zenodo. DOI: 10.5281/zenodo.22833485. URL: https://doi.org/10.5281/zenodo.22833485.
+> Daniel Ari Friedman (2026). *The Silver Line: A Memory-and-Succession Instrument*. Zenodo. DOI: 10.5281/zenodo.24069438. URL: https://doi.org/10.5281/zenodo.24069438.
 
 ## Related
 
 - Zenodo record: https://zenodo.org/records/22833485
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+
+## Source archive (2026-11-15)
+
+[Repository archive](https://doi.org/10.5281/zenodo.24124425). [Prior manuscript deposit](https://doi.org/10.5281/zenodo.24069438). The retained manuscript PDF and extracted text represent their earlier documented editions.
+
+Prior manuscript deposit: https://doi.org/10.5281/zenodo.22833485. The retained PDF and extraction retain their earlier documented edition.

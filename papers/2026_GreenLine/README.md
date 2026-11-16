@@ -2,7 +2,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22833491.svg)](https://doi.org/10.5281/zenodo.22833491)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24069456.svg)](https://doi.org/10.5281/zenodo.24069456)
 
 ---
 
@@ -18,7 +18,7 @@ active inference · governance · apprenticeship · growth records · capacity u
 
 | Field | Value |
 |------|-------|
-| **DOI** | [10.5281/zenodo.22833491](https://doi.org/10.5281/zenodo.22833491) |
+| **DOI** | [10.5281/zenodo.24069456](https://doi.org/10.5281/zenodo.24069456) |
 | **Published** | 2026-09-18 |
 | **Version** | 0.1.0 |
 | **Zenodo record** | https://zenodo.org/records/22833491 |
@@ -29,9 +29,15 @@ active inference · governance · apprenticeship · growth records · capacity u
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Green Line: a capacity-under-development instrument*. Zenodo. DOI: 10.5281/zenodo.22833491. URL: https://doi.org/10.5281/zenodo.22833491.
+> Daniel Ari Friedman (2026). *Green Line: a capacity-under-development instrument*. Zenodo. DOI: 10.5281/zenodo.24069456. URL: https://doi.org/10.5281/zenodo.24069456.
 
 ## Related
 
 - Zenodo record: https://zenodo.org/records/22833491
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+
+## Source archive (2026-11-15)
+
+[Repository archive](https://doi.org/10.5281/zenodo.24124419). [Prior manuscript deposit](https://doi.org/10.5281/zenodo.24069456). The retained manuscript PDF and extracted text represent their earlier documented editions.
+
+Prior manuscript deposit: https://doi.org/10.5281/zenodo.22833491. The retained PDF and extraction retain their earlier documented edition.

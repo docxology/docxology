@@ -78,22 +78,22 @@ def verified_archives(root: Path) -> dict[str, dict]:
             check=True,
             capture_output=True,
             timeout=30,
-        )
+        stdin=subprocess.DEVNULL)
         spec = f"{item['commit']}:{name}"
         size = subprocess.check_output(
             ["git", "cat-file", "-s", spec], cwd=root, timeout=30, text=True
-        )
+        , stdin=subprocess.DEVNULL)
         if int(size) != item["bytes"]:
             raise ValueError("Office archive object size differs")
         original = subprocess.check_output(
             ["git", "cat-file", "blob", spec], cwd=root, timeout=30
-        )
+        , stdin=subprocess.DEVNULL)
         if hashlib.sha256(original).hexdigest() != item["sha256"]:
             raise ValueError("Office archive object bytes differ")
     inventory = (
         subprocess.check_output(
             ["git", "ls-files", "-co", "--exclude-standard", "-z"], cwd=root, timeout=30
-        )
+        , stdin=subprocess.DEVNULL)
         .decode()
         .split("\0")
     )

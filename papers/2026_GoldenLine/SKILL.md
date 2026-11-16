@@ -5,7 +5,7 @@ description: "Golden Line describes an aspirational thread and a versioned nine-
 tags: ["aspiration", "long-horizon-work", "directional-assessment", "values-in-practice", "research-ethics", "open-science", "non-compensatory-reading"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Golden Line: Toward What Matters*. Zenodo."
-doi: "10.5281/zenodo.21754237"
+doi: "10.5281/zenodo.24069423"
 artifact_doi: "10.5281/zenodo.22833506"
 ---
 
@@ -47,7 +47,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- Canonical DOI: 10.5281/zenodo.21754237
+- Canonical DOI: 10.5281/zenodo.24069423
 - PDF SHA-256: be801cc282ada39af586c46b32e978231b922a4f95000c0c53866bbb8c1afab7
 - Pairing confidence: unknown
 - Last checked: 2026-11-06T18:28:07.712051+00:00
@@ -63,6 +63,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.21754237`
+1. Reference the DOI for citation: `10.5281/zenodo.24069423`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

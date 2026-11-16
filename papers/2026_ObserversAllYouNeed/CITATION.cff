@@ -31,11 +31,11 @@ identifiers:
     value: "https://doi.org/10.5281/zenodo.18288113"
     description: "Canonical citation DOI resolver"
   - type: doi
-    value: "10.5281/zenodo.23719196"
+    value: "10.5281/zenodo.24151588"
     description: "Version/download DOI (Zenodo artifact)"
   - type: url
-    value: "https://doi.org/10.5281/zenodo.23719196"
+    value: "https://doi.org/10.5281/zenodo.24151588"
     description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
-    value: "https://zenodo.org/records/23719196"
+    value: "https://zenodo.org/records/24151588"
     description: "Version/download landing page (Zenodo artifact)"

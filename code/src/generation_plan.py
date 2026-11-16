@@ -92,6 +92,8 @@ ASSET_AUDIT_INPUTS_EXCLUDE: tuple[str, ...] = (
 )
 
 LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
+    # In-place source projection: output bytes cannot also be cache inputs.
+    GenerationStep("public-source-links", "project_public_source_links.py", (), ("--check",), "Public inventory boundary for newly imported source links"),
     # Bibliography table -> citation exports + works.json (pure renderer).
     GenerationStep(
         "export-bibliography",
@@ -729,7 +731,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
         (),
         ("--check",),
         "RSS feed",
-        ("data/works.json", "data/site-updates.json"),
+        ("data/works.json", "data/site-updates.json", "papers/*/metadata.json"),
     ),
     GenerationStep(
         "domain-feeds",
@@ -738,6 +740,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
         ("--check",),
         "Per-domain RSS feeds",
         (
+            "papers/*/metadata.json",
             "data/works.json",
             "data/videos.json",
             "code/orchestrators/build_domain_pages.py",
@@ -1262,7 +1265,7 @@ def step_input_fingerprint(
             capture_output=True,
             check=False,
             timeout=15,
-        )
+        stdin=subprocess.DEVNULL)
     except OSError, subprocess.TimeoutExpired:
         return None
     if result.returncode:

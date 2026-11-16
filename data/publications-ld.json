@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 233 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 234 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -3072,7 +3072,7 @@
                     "@type": "Person"
                 },
                 {
-                    "name": "Avel Guénin—Carlut",
+                    "name": "Avel Guénin-Carlut",
                     "@type": "Person"
                 },
                 {
@@ -3119,7 +3119,7 @@
                 "url": "https://doi.org/10.5281/zenodo.6320574"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.6320574",
-            "citation": "Friedman, Daniel; Applegate-Swanson, Shaun; Balbuena, Jessica Angeli; Choudhury, Arhan; Cordes, RJ; El Damaty, Shady; Guénin—Carlut, Avel; Knight, V. Bleu; Metelkin, Ivan; Shrivastava, Siddhant; Singh, Amit Kumar; Smékal, Jakub; Caleb, Tuttle.; Vyatkin, Alexander. 2022. An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons. Zenodo. DOI: 10.5281/zenodo.6320574. URL: https://doi.org/10.5281/zenodo.6320574."
+            "citation": "Friedman, Daniel; Applegate-Swanson, Shaun; Balbuena, Jessica Angeli; Choudhury, Arhan; Cordes, RJ; El Damaty, Shady; Guénin-Carlut, Avel; Knight, V. Bleu; Metelkin, Ivan; Shrivastava, Siddhant; Singh, Amit Kumar; Smékal, Jakub; Caleb, Tuttle.; Vyatkin, Alexander. 2022. An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons. Zenodo. DOI: 10.5281/zenodo.6320574. URL: https://doi.org/10.5281/zenodo.6320574."
         },
         {
             "@type": "ScholarlyArticle",
@@ -8315,11 +8315,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.21754245",
-                "url": "https://doi.org/10.5281/zenodo.21754245"
+                "value": "10.5281/zenodo.24069487",
+                "url": "https://doi.org/10.5281/zenodo.24069487"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754245",
-            "citation": "Friedman, Daniel Ari. 2026. The Witness Register: Co-Registration Without Aggregation. Zenodo. DOI: 10.5281/zenodo.21754245. URL: https://doi.org/10.5281/zenodo.21754245."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069487",
+            "citation": "Friedman, Daniel Ari. 2026. The Witness Register: Co-Registration Without Aggregation. Zenodo. DOI: 10.5281/zenodo.24069487. URL: https://doi.org/10.5281/zenodo.24069487."
         },
         {
             "@type": "ScholarlyArticle",
@@ -8349,11 +8349,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.21754243",
-                "url": "https://doi.org/10.5281/zenodo.21754243"
+                "value": "10.5281/zenodo.24069474",
+                "url": "https://doi.org/10.5281/zenodo.24069474"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754243",
-            "citation": "Friedman, Daniel Ari. 2026. The Line Set: Holding Instruments Apart. Zenodo. DOI: 10.5281/zenodo.21754243. URL: https://doi.org/10.5281/zenodo.21754243."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069474",
+            "citation": "Friedman, Daniel Ari. 2026. The Line Set: Holding Instruments Apart. Zenodo. DOI: 10.5281/zenodo.24069474. URL: https://doi.org/10.5281/zenodo.24069474."
         },
         {
             "@type": "ScholarlyArticle",
@@ -8383,11 +8383,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.21754241",
-                "url": "https://doi.org/10.5281/zenodo.21754241"
+                "value": "10.5281/zenodo.24069433",
+                "url": "https://doi.org/10.5281/zenodo.24069433"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754241",
-            "citation": "Friedman, Daniel Ari. 2026. White Line: A Typed Ledger for the Edge of the Claim. Zenodo. DOI: 10.5281/zenodo.21754241. URL: https://doi.org/10.5281/zenodo.21754241."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069433",
+            "citation": "Friedman, Daniel Ari. 2026. White Line: A Typed Ledger for the Edge of the Claim. Zenodo. DOI: 10.5281/zenodo.24069433. URL: https://doi.org/10.5281/zenodo.24069433."
         },
         {
             "@type": "ScholarlyArticle",
@@ -8417,11 +8417,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.21754239",
-                "url": "https://doi.org/10.5281/zenodo.21754239"
+                "value": "10.5281/zenodo.24069255",
+                "url": "https://doi.org/10.5281/zenodo.24069255"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754239",
-            "citation": "Friedman, Daniel Ari. 2026. Personal Red Lines for Development. Zenodo. DOI: 10.5281/zenodo.21754239. URL: https://doi.org/10.5281/zenodo.21754239."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069255",
+            "citation": "Friedman, Daniel Ari. 2026. Personal Red Lines for Development. Zenodo. DOI: 10.5281/zenodo.24069255. URL: https://doi.org/10.5281/zenodo.24069255."
         },
         {
             "@type": "ScholarlyArticle",
@@ -8451,11 +8451,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.21754237",
-                "url": "https://doi.org/10.5281/zenodo.21754237"
+                "value": "10.5281/zenodo.24069423",
+                "url": "https://doi.org/10.5281/zenodo.24069423"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754237",
-            "citation": "Friedman, Daniel Ari. 2026. Golden Line: Toward What Matters. Zenodo. DOI: 10.5281/zenodo.21754237. URL: https://doi.org/10.5281/zenodo.21754237."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069423",
+            "citation": "Friedman, Daniel Ari. 2026. Golden Line: Toward What Matters. Zenodo. DOI: 10.5281/zenodo.24069423. URL: https://doi.org/10.5281/zenodo.24069423."
         },
         {
             "@type": "ScholarlyArticle",
@@ -8485,11 +8485,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.21754235",
-                "url": "https://doi.org/10.5281/zenodo.21754235"
+                "value": "10.5281/zenodo.24069414",
+                "url": "https://doi.org/10.5281/zenodo.24069414"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754235",
-            "citation": "Friedman, Daniel Ari. 2026. Black Line: Strong Work in Public. Zenodo. DOI: 10.5281/zenodo.21754235. URL: https://doi.org/10.5281/zenodo.21754235."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069414",
+            "citation": "Friedman, Daniel Ari. 2026. Black Line: Strong Work in Public. Zenodo. DOI: 10.5281/zenodo.24069414. URL: https://doi.org/10.5281/zenodo.24069414."
         },
         {
             "@type": "ScholarlyArticle",
@@ -9007,11 +9007,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.22833491",
-                "url": "https://doi.org/10.5281/zenodo.22833491"
+                "value": "10.5281/zenodo.24069456",
+                "url": "https://doi.org/10.5281/zenodo.24069456"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.22833491",
-            "citation": "Friedman, Daniel Ari. 2026. Green Line: a capacity-under-development instrument. Zenodo. DOI: 10.5281/zenodo.22833491. URL: https://doi.org/10.5281/zenodo.22833491."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069456",
+            "citation": "Friedman, Daniel Ari. 2026. Green Line: a capacity-under-development instrument. Zenodo. DOI: 10.5281/zenodo.24069456. URL: https://doi.org/10.5281/zenodo.24069456."
         },
         {
             "@type": "ScholarlyArticle",
@@ -9041,11 +9041,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.22833489",
-                "url": "https://doi.org/10.5281/zenodo.22833489"
+                "value": "10.5281/zenodo.24069450",
+                "url": "https://doi.org/10.5281/zenodo.24069450"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.22833489",
-            "citation": "Friedman, Daniel Ari. 2026. The Blue Line: A Stewardship Instrument for Maintained Commitments. Zenodo. DOI: 10.5281/zenodo.22833489. URL: https://doi.org/10.5281/zenodo.22833489."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069450",
+            "citation": "Friedman, Daniel Ari. 2026. The Blue Line: A Stewardship Instrument for Maintained Commitments. Zenodo. DOI: 10.5281/zenodo.24069450. URL: https://doi.org/10.5281/zenodo.24069450."
         },
         {
             "@type": "ScholarlyArticle",
@@ -9109,11 +9109,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.22833485",
-                "url": "https://doi.org/10.5281/zenodo.22833485"
+                "value": "10.5281/zenodo.24069438",
+                "url": "https://doi.org/10.5281/zenodo.24069438"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.22833485",
-            "citation": "Friedman, Daniel Ari. 2026. The Silver Line: A Memory-and-Succession Instrument. Zenodo. DOI: 10.5281/zenodo.22833485. URL: https://doi.org/10.5281/zenodo.22833485."
+            "sameAs": "https://doi.org/10.5281/zenodo.24069438",
+            "citation": "Friedman, Daniel Ari. 2026. The Silver Line: A Memory-and-Succession Instrument. Zenodo. DOI: 10.5281/zenodo.24069438. URL: https://doi.org/10.5281/zenodo.24069438."
         },
         {
             "@type": "ScholarlyArticle",
@@ -9842,6 +9842,34 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.23986504",
             "citation": "Active Inference Institute; Bradly Alicea; Dan Corva, Kevin Backhouse; Hongju Pae; Karl Friston; Alison Gopnik; Bianca Avanzo; Ed Ober; John Boik, Glen EP Ropella; Luca Possati; Majid D. Beni; Mike Levin; Montijn van Loo; Ryan Smith; Sergio Rubin; Takuya Isomura; Ted J. Vrioni; Ahmad Nazzal; Alexander Sabine; Andrew Pashea; Anna Pereira; Avel Guénin—Carlut; Bo Lee; Bruce Tisler; Cleber Gomes; Colin Turfus; Daniel Dragolich; Daniel Friedman; Diaconescu Adrian-Stelian; Harshil Shah, Andrew Pashea; Harshil Shah, Satyaki Maitra; Holly Grimm, John H. Clippinger, Daniel Ari Friedman; Hyojun Choi; Jean-François Cloutier; Lancelot Da Costa; Matthew Brown; Michael Lennon; Michael Walker; Nick Hay, Adam Safron; Patricia Craja; Paulo Santiago; Rajkaushik Borgohain; Robert Worden; Sheena Yap Chan; Stell; Steph Macurdy; Tao Gong; Tiga Kailimai; Tran Hoang Linh; Viraj Deshwal; Vitalii Shapovalov; Vitória de Souza; Xin Sun. 2026. 2026 Active Inference Symposium — Presenter Program. Zenodo (presenter program). DOI: 10.5281/zenodo.23986504. URL: https://doi.org/10.5281/zenodo.23986504."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+            "headline": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "GitHub release v0.1.0"
+            },
+            "keywords": "🧠",
+            "@id": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
+            "sameAs": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0",
+            "citation": "Friedman, Daniel Ari. 2026. Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics. GitHub release v0.1.0. URL: https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0."
         }
     ]
 }

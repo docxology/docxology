@@ -39,6 +39,10 @@ TARGETS = [
     REPO_ROOT / "pages" / "DISCOVERY.md",
     REPO_ROOT / "llms.txt",
     REPO_ROOT / "art.html",
+    REPO_ROOT / "collaborators.html",
+    REPO_ROOT / "cite-verify.html",
+    REPO_ROOT / "media.html",
+    REPO_ROOT / "search.html",
     REPO_ROOT / "videos.html",
 ]
 
@@ -99,6 +103,9 @@ def render(path: Path) -> str:
     }
     for pattern, replacement in replacements.items():
         text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+
+    if path.suffix == ".html":
+        text = re.sub(r'<meta name="revised" content="[^"]+">', f'<meta name="revised" content="{date}">', text)
 
     if path.name == "index.html":
         text = re.sub(

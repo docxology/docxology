@@ -1,0 +1,153 @@
+{
+  "registry_refresh_2026_11_15": {
+    "record": {
+      "created": "2026-11-11T03:26:48.646352+00:00",
+      "modified": "2026-11-11T03:26:48.795523+00:00",
+      "id": 24124425,
+      "conceptrecid": "24069438",
+      "doi": "10.5281/zenodo.24124425",
+      "conceptdoi": "10.5281/zenodo.24069438",
+      "doi_url": "https://doi.org/10.5281/zenodo.24124425",
+      "metadata": {
+        "title": "The Silver Line: A Memory-and-Succession Instrument",
+        "doi": "10.5281/zenodo.24124425",
+        "publication_date": "2026-11-11",
+        "description": "<p>A memory-and-succession instrument in the docxology line set. It reads a declared succession picture — what is preserved, what is entrusted to whom, what is allowed to lapse — and returns a verdict about declared provision and review gaps, pinned to a registry digest. A KEPT verdict describes declared custody at a review date; it is never permission and never a promise that anything survives.</p><p><strong>Subtitle:</strong> What is preserved, what is entrusted to whom, what is allowed to lapse</p><p>Code is MIT licensed; see LICENSE in the repository.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "keywords": [
+          "memory",
+          "succession",
+          "active inference",
+          "declared custody",
+          "review gaps"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "10.5281/zenodo.24069439",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833486",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "https://github.com/docxology/silver_line",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/line_set",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/witness_register",
+            "relation": "references",
+            "scheme": "url"
+          }
+        ],
+        "version": "0.5.0",
+        "custom": {
+          "code:codeRepository": "https://github.com/docxology/silver_line"
+        },
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "license": {
+          "id": "mit-license"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 1,
+              "is_last": true,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "24069438"
+              }
+            }
+          ]
+        },
+        "notes": "A custody-and-succession instrument in the current Line Set declaration; its colorless Main reader holds the native instruments apart, and Witness remains outside LINE_SET. Copper records allocation arithmetic; Iron records scenario-bound recovery comparisons; neither replaces Silver custody declarations. Source availability is access-dependent. Previously verified source archive: 0.4.0, DOI 10.5281/zenodo.24069439; identifies that source ZIP only, not a standalone manuscript. DOI 10.5281/zenodo.22833486 remains an earlier historical archive reference. This metadata cites later source through its repository until that exact edition/object is independently verified. Any GitHub Release and existing public Zenodo hook use require actual owner authority; verify resulting archives under docs/publication.md without guessing identifiers or amending immutable tags."
+      },
+      "title": "The Silver Line: A Memory-and-Succession Instrument",
+      "links": {
+        "self": "https://zenodo.org/api/records/24124425",
+        "self_html": "https://zenodo.org/records/24124425",
+        "preview_html": "https://zenodo.org/records/24124425?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.24124425",
+        "self_doi": "https://doi.org/10.5281/zenodo.24124425",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24124425",
+        "reserve_doi": "https://zenodo.org/api/records/24124425/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/24069438",
+        "parent_html": "https://zenodo.org/records/24069438",
+        "parent_doi": "https://doi.org/10.5281/zenodo.24069438",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24069438",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:24124425/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:24124425/sequence/default",
+        "files": "https://zenodo.org/api/records/24124425/files",
+        "media_files": "https://zenodo.org/api/records/24124425/media-files",
+        "latest": "https://zenodo.org/api/records/24124425/versions/latest",
+        "latest_html": "https://zenodo.org/records/24124425/latest",
+        "versions": "https://zenodo.org/api/records/24124425/versions",
+        "draft": "https://zenodo.org/api/records/24124425/draft",
+        "access_links": "https://zenodo.org/api/records/24124425/access/links",
+        "access_grants": "https://zenodo.org/api/records/24124425/access/grants",
+        "access_users": "https://zenodo.org/api/records/24124425/access/users",
+        "access_request": "https://zenodo.org/api/records/24124425/access/request",
+        "access": "https://zenodo.org/api/records/24124425/access",
+        "communities": "https://zenodo.org/api/records/24124425/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/24124425/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/24124425/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/24124425/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/24124425/quota-increase",
+        "requests": "https://zenodo.org/api/records/24124425/requests"
+      },
+      "updated": "2026-11-11T03:26:48.795523+00:00",
+      "recid": "24124425",
+      "revision": 4,
+      "files": [
+        {
+          "id": "b016eac3-3321-4e0f-b907-5ec93752e8ea",
+          "key": "docxology/silver_line-v0.5.0.zip",
+          "size": 211296,
+          "checksum": "md5:c0ebb901f1bb283fa7df5ae00b48f8ac",
+          "links": {
+            "self": "https://zenodo.org/api/records/24124425/files/docxology/silver_line-v0.5.0.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "131706"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 6,
+        "unique_downloads": 6,
+        "views": 8,
+        "unique_views": 8,
+        "version_downloads": 3,
+        "version_unique_downloads": 3,
+        "version_unique_views": 4,
+        "version_views": 4
+      },
+      "state": "done",
+      "submitted": true
+    },
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+  }
+}
