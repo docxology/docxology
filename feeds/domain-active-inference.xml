@@ -4,9 +4,16 @@
     <title>Active Inference &amp; Free Energy Principle — RSS</title>
     <link>https://danielarifriedman.com/domain-active-inference.html</link>
     <description>Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.</description>
-    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 00:00:00 +0000</lastBuildDate>
     <language>en</language>
     <atom:link href="https://danielarifriedman.com/feeds/domain-active-inference.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities</title>
+      <link>https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0</link>
+      <guid isPermaLink="true">https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Paper — GitHub release v0.1.0 — Friedman, Daniel Ari</description>
+    </item>
     <item>
       <title>Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics</title>
       <link>https://doi.org/10.5281/zenodo.19699233</link>
@@ -208,13 +215,6 @@
       <link>https://danielarifriedman.com/videos/institute-oOd1XOpuNw8.html</link>
       <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-oOd1XOpuNw8.html</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>Fundamentals of Active Inference (Chapter 8, Session 36) August 14, 2026</title>
-      <link>https://danielarifriedman.com/videos/institute-RaT71q68sOc.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-RaT71q68sOc.html</guid>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <description>Video — Active Inference Institute</description>
     </item>
   </channel>

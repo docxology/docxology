@@ -23,8 +23,8 @@
     "total": 315,
     "docxology": 268,
     "ActiveInferenceInstitute": 47,
-    "curated": 199,
-    "uncataloged": 116,
+    "curated": 208,
+    "uncataloged": 107,
     "forks": 101,
     "archived": 92,
     "public": 315,
@@ -2952,7 +2952,7 @@
       "created_at": "2026-07-28T11:45:37Z",
       "updated_at": "2026-11-11T19:08:35Z",
       "pushed_at": "2026-11-16T02:02:16Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -3149,7 +3149,7 @@
       "created_at": "2026-09-05T19:06:02Z",
       "updated_at": "2026-11-11T19:09:09Z",
       "pushed_at": "2026-11-16T02:02:19Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -6364,7 +6364,7 @@
       "created_at": "2026-07-28T11:45:40Z",
       "updated_at": "2026-11-11T06:02:17Z",
       "pushed_at": "2026-11-16T02:02:17Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -6495,7 +6495,7 @@
       "created_at": "2026-09-05T19:07:53Z",
       "updated_at": "2026-11-11T19:03:42Z",
       "pushed_at": "2026-11-16T02:02:19Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -7117,7 +7117,7 @@
       "created_at": "2026-07-28T11:45:46Z",
       "updated_at": "2026-11-16T01:38:22Z",
       "pushed_at": "2026-11-16T02:02:17Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -8737,7 +8737,7 @@
       "created_at": "2026-07-28T11:45:34Z",
       "updated_at": "2026-11-16T01:38:42Z",
       "pushed_at": "2026-11-16T02:02:17Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -9233,7 +9233,7 @@
       "created_at": "2026-09-05T19:02:53Z",
       "updated_at": "2026-11-16T01:37:57Z",
       "pushed_at": "2026-11-16T02:02:19Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -11051,7 +11051,7 @@
       "created_at": "2026-07-28T11:45:42Z",
       "updated_at": "2026-11-11T06:03:05Z",
       "pushed_at": "2026-11-16T02:02:17Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -11124,7 +11124,7 @@
       "created_at": "2026-08-02T04:26:38Z",
       "updated_at": "2026-11-11T06:03:07Z",
       "pushed_at": "2026-11-16T02:02:18Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {

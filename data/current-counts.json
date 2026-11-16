@@ -18,14 +18,14 @@
     "full_text_papers": 211,
     "generated_exports": {
       "data_publications_ld_main_entity": 234,
-      "data_software_json": 199,
-      "data_software_ld_main_entity": 199,
+      "data_software_json": 208,
+      "data_software_ld_main_entity": 208,
       "data_works_json": 234
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 47,
       "archived": 92,
-      "curated": 199,
+      "curated": 208,
       "docxology": 268,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 99,
@@ -37,7 +37,7 @@
       "public": 315,
       "recently_updated": 315,
       "total": 315,
-      "uncataloged": 116
+      "uncataloged": 107
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -46,17 +46,17 @@
       "raw_candidates": 708
     },
     "paired_publications": {
-      "already_reviewed": 612,
+      "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 338,
-      "needs_review": 0,
-      "pairs": 613,
+      "github_releases": 35,
+      "needs_review": 174,
+      "pairs": 175,
       "software_catalogued": 1,
-      "strong_pairs": 75,
+      "strong_pairs": 1,
       "update_existing": 0,
-      "zenodo_records": 179
+      "zenodo_records": 193
     },
-    "paper_folder_docs": 216,
+    "paper_folder_docs": 217,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -70,8 +70,8 @@
     },
     "software": {
       "active_inference_institute": 43,
-      "curated_total": 199,
-      "docxology_owned": 156
+      "curated_total": 208,
+      "docxology_owned": 165
     },
     "types": {
       "Books": 6,
@@ -83,12 +83,12 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-11-16T02:50:37+00:00",
+  "generated_at": "2026-11-16T03:30:24+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
-    "paired_publications": "reports/paired_publications_2026-11-07.json",
+    "paired_publications": "reports/paired_publications_2026-11-16.json",
     "paper_folders": "papers/README.md",
     "public_source_snapshot": "reports/public_source_snapshot_2026-11-06.json",
     "software_catalog": "pages/SOFTWARE.md",

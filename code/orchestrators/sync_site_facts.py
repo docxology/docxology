@@ -39,7 +39,6 @@ TARGETS = [
     REPO_ROOT / "pages" / "DISCOVERY.md",
     REPO_ROOT / "llms.txt",
     REPO_ROOT / "art.html",
-    REPO_ROOT / "software.html",
     REPO_ROOT / "collaborators.html",
     REPO_ROOT / "cite-verify.html",
     REPO_ROOT / "media.html",

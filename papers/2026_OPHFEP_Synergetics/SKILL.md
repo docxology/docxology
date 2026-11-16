@@ -1,7 +1,7 @@
 ---
 name: oph-fep-synergetics
 description: Navigate executable correspondences across OPH, FEP and Synergetics.
-tags: [active-inference, synergetics]
+tags: ["active-inference", "synergetics"]
 domain: Active Inference
 citation: "Friedman, Daniel Ari (2026). OPH-FEP-Synergetics, v0.1.0."
 ---

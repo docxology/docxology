@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-11-16T02:50:37+00:00",
+  "generated_at": "2026-11-16T03:12:59+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -333,7 +333,7 @@
     },
     "software": {
       "path": "/data/software.json",
-      "count": 199,
+      "count": 208,
       "schema": "SoftwareRepository"
     },
     "repositories": {
@@ -383,7 +383,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 116,
+      "count": 107,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -466,21 +466,21 @@
     },
     {
       "id": "paired-publications",
-      "path": "/reports/paired_publications_2026-11-07.json",
+      "path": "/reports/paired_publications_2026-11-16.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-11-09.json",
+      "path": "/reports/accessibility_static_2026-11-16.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-11-09.json",
+      "path": "/reports/asset_size_2026-11-16.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -627,6 +627,8 @@
         "language": "string or empty",
         "stars": "integer or null; API snapshot value",
         "updated_or_year": "string; API snapshot month/year or source year",
+        "homepage": "optional string; curated public site or demo",
+        "install_url": "optional string; curated package installation destination",
         "paper_path": "string or empty",
         "zenodo_url": "string or empty"
       }
@@ -1393,7 +1395,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-11-16T02:50:37+00:00",
+        "checked_at": "2026-11-16T03:12:59+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1441,9 +1443,6 @@
         },
         "blockers": {
           "missing_citation_author": 11,
-          "missing_citation_doi": 1,
-          "missing_citation_publication_date": 8,
-          "missing_citation_title": 8,
           "no_selected_local_pdf": 43,
           "pdf_directory_differs_from_abstract": 186,
           "pdf_exceeds_byte_limit": 41
@@ -1582,14 +1581,14 @@
         "full_text_papers": 211,
         "generated_exports": {
           "data_publications_ld_main_entity": 234,
-          "data_software_json": 199,
-          "data_software_ld_main_entity": 199,
+          "data_software_json": 208,
+          "data_software_ld_main_entity": 208,
           "data_works_json": 234
         },
         "github_inventory": {
           "ActiveInferenceInstitute": 47,
           "archived": 92,
-          "curated": 199,
+          "curated": 208,
           "docxology": 268,
           "fork_ActiveInferenceInstitute": 2,
           "fork_docxology": 99,
@@ -1601,7 +1600,7 @@
           "public": 315,
           "recently_updated": 315,
           "total": 315,
-          "uncataloged": 116
+          "uncataloged": 107
         },
         "paired_publication_decisions": {
           "decision": "mixed",
@@ -1610,15 +1609,15 @@
           "raw_candidates": 708
         },
         "paired_publications": {
-          "already_reviewed": 612,
+          "already_reviewed": 0,
           "create_new": 0,
-          "github_releases": 338,
-          "needs_review": 0,
-          "pairs": 613,
+          "github_releases": 35,
+          "needs_review": 174,
+          "pairs": 175,
           "software_catalogued": 1,
-          "strong_pairs": 75,
+          "strong_pairs": 1,
           "update_existing": 0,
-          "zenodo_records": 179
+          "zenodo_records": 193
         },
         "paper_folder_docs": 216,
         "papers_with_images": 145,
@@ -1634,8 +1633,8 @@
         },
         "software": {
           "active_inference_institute": 43,
-          "curated_total": 199,
-          "docxology_owned": 156
+          "curated_total": 208,
+          "docxology_owned": 165
         },
         "types": {
           "Books": 6,
@@ -1647,12 +1646,12 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-11-16T02:50:37+00:00",
+      "generated_at": "2026-11-16T03:12:59+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
-        "paired_publications": "reports/paired_publications_2026-11-07.json",
+        "paired_publications": "reports/paired_publications_2026-11-16.json",
         "paper_folders": "papers/README.md",
         "public_source_snapshot": "reports/public_source_snapshot_2026-11-06.json",
         "software_catalog": "pages/SOFTWARE.md",
@@ -1671,11 +1670,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 967219385,
+        "source_bytes": 962226914,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6276,
-        "artifact_bytes": 968332181
+        "artifact_file_count": 6290,
+        "artifact_bytes": 963342277
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1687,7 +1686,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-11-16T02:51:48Z",
+      "generated_at": "2026-11-16T03:12:04Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1755,7 +1754,7 @@
         "public_archive": 175,
         "open_full_text": 211,
         "source_documents": 217,
-        "executable_code": 76,
+        "executable_code": 87,
         "agent_readable": 217
       },
       "band_counts": {
@@ -1770,10 +1769,10 @@
         "2": 5,
         "3": 10,
         "4": 33,
-        "5": 101,
-        "6": 72
+        "5": 90,
+        "6": 83
       },
-      "mean_score": 4.756,
+      "mean_score": 4.803,
       "works": [
         {
           "num": 5,
@@ -1878,6 +1877,48 @@
           },
           "repositories": [
             "markdown_decision_process"
+          ]
+        },
+        {
+          "num": 18,
+          "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
+          "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
+          "year": 2025,
+          "domain_name": "Art & Synergetics",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "QuadMath"
+          ]
+        },
+        {
+          "num": 20,
+          "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
+          "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
+          "year": 2025,
+          "domain_name": "Art & Synergetics",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "symergetics"
           ]
         },
         {
@@ -2827,6 +2868,132 @@
           ]
         },
         {
+          "num": 200,
+          "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
+          "title": "The Witness Register: Co-Registration Without Aggregation",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "witness_register"
+          ]
+        },
+        {
+          "num": 201,
+          "citation_key": "Friedman2026LineSetHoldingInstruments201",
+          "title": "The Line Set: Holding Instruments Apart",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "line_set"
+          ]
+        },
+        {
+          "num": 202,
+          "citation_key": "Friedman2026WhiteLineTypedLedger202",
+          "title": "White Line: A Typed Ledger for the Edge of the Claim",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "white_line"
+          ]
+        },
+        {
+          "num": 203,
+          "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
+          "title": "Personal Red Lines for Development",
+          "year": 2026,
+          "domain_name": "Cognitive Security",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "red_line"
+          ]
+        },
+        {
+          "num": 204,
+          "citation_key": "Friedman2026GoldenLineTowardWhat204",
+          "title": "Golden Line: Toward What Matters",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "golden_line"
+          ]
+        },
+        {
+          "num": 205,
+          "citation_key": "Friedman2026BlackLineStrongWork205",
+          "title": "Black Line: Strong Work in Public",
+          "year": 2026,
+          "domain_name": "Cognitive Security",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "black_line"
+          ]
+        },
+        {
           "num": 206,
           "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
           "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
@@ -3076,6 +3243,69 @@
           },
           "repositories": [
             "daf-jev"
+          ]
+        },
+        {
+          "num": 220,
+          "citation_key": "Friedman2026GreenLineCapacityUnder220",
+          "title": "Green Line: a capacity-under-development instrument",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "green_line"
+          ]
+        },
+        {
+          "num": 221,
+          "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
+          "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+          "year": 2026,
+          "domain_name": "Active Inference",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "blue_line"
+          ]
+        },
+        {
+          "num": 223,
+          "citation_key": "Friedman2026SilverLineMemorySuccession223",
+          "title": "The Silver Line: A Memory-and-Succession Instrument",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 6,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "silver_line"
           ]
         },
         {
@@ -3479,49 +3709,11 @@
           "repositories": []
         },
         {
-          "num": 18,
-          "citation_key": "Friedman2025QuadMathAnalyticalReview4D018",
-          "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
-          "year": 2025,
-          "domain_name": "Art & Synergetics",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
           "num": 19,
           "citation_key": "Friedman2025ResNeiSolutionDesignDocument019",
           "title": "ResNei: Solution Design Document",
           "year": 2025,
           "domain_name": "Computational",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 20,
-          "citation_key": "Friedman2025SymergeticsSymbolicSynergeticsRational020",
-          "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
-          "year": 2025,
-          "domain_name": "Art & Synergetics",
           "type": "Paper",
           "score": 5,
           "band": "independently reproducible",
@@ -4928,120 +5120,6 @@
           "repositories": []
         },
         {
-          "num": 200,
-          "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
-          "title": "The Witness Register: Co-Registration Without Aggregation",
-          "year": 2026,
-          "domain_name": "Computational",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 201,
-          "citation_key": "Friedman2026LineSetHoldingInstruments201",
-          "title": "The Line Set: Holding Instruments Apart",
-          "year": 2026,
-          "domain_name": "Computational",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 202,
-          "citation_key": "Friedman2026WhiteLineTypedLedger202",
-          "title": "White Line: A Typed Ledger for the Edge of the Claim",
-          "year": 2026,
-          "domain_name": "Computational",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 203,
-          "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
-          "title": "Personal Red Lines for Development",
-          "year": 2026,
-          "domain_name": "Cognitive Security",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 204,
-          "citation_key": "Friedman2026GoldenLineTowardWhat204",
-          "title": "Golden Line: Toward What Matters",
-          "year": 2026,
-          "domain_name": "Computational",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 205,
-          "citation_key": "Friedman2026BlackLineStrongWork205",
-          "title": "Black Line: Strong Work in Public",
-          "year": 2026,
-          "domain_name": "Cognitive Security",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
           "num": 213,
           "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
           "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
@@ -5080,68 +5158,11 @@
           "repositories": []
         },
         {
-          "num": 220,
-          "citation_key": "Friedman2026GreenLineCapacityUnder220",
-          "title": "Green Line: a capacity-under-development instrument",
-          "year": 2026,
-          "domain_name": "Computational",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 221,
-          "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
-          "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
-          "year": 2026,
-          "domain_name": "Active Inference",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
           "num": 222,
           "citation_key": "Friedman2026VioletLineConsentLedger222",
           "title": "The Violet Line: A Consent Ledger of Affected Parties",
           "year": 2026,
           "domain_name": "Active Inference",
-          "type": "Paper",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 223,
-          "citation_key": "Friedman2026SilverLineMemorySuccession223",
-          "title": "The Silver Line: A Memory-and-Succession Instrument",
-          "year": 2026,
-          "domain_name": "Computational",
           "type": "Paper",
           "score": 5,
           "band": "independently reproducible",
@@ -6382,30 +6403,30 @@
     "blake_index": "da913913337d1795101ef698d634b04b388fb05523c424b1f6d7491a172424d0",
     "works": "10f852d90714f64c04e3af0427cf2de2972306ddf862c07576a21b0bf3fee640",
     "work_identifiers": "23826d73d524fcf0a521f6f16894a3e8dccd886adef2fb2f77dfca3bab2d01c4",
-    "software": "4f89a74804c73aacb0c24cb5959569082f63a7c7c0100785ef020fdc6e07f0e1",
-    "repositories": "8af905b0daa58bcace607e0b07a920e987fb66b012dc1cafdada94ff5033e58c",
+    "software": "9e2e18e56c5f4ec3a0532928ea33386f4eb3699ea3b90c76f56bc54800fa797b",
+    "repositories": "df9168b00ac29fe678762c0773747f75787466db7c2fc71a72417e9b47a38e2c",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "4ab5da15a6878393ece05d08c613d931968035eefbeb107d148cf8ff5ddfb687",
     "videos_index": "aef1cfda7fa82b229d97d49742fc04e417cd8fba6db97bda12fcc8a323470f10",
-    "search": "25c1283f1f6ee8da6ed4c9f34f5b4f0ceade4e5e566c80d2f1d35d71bad086eb",
-    "claims": "6b3607c24e5a91954fd918bfdf60df4a61e07b5db634ae3cff1a67004331f3b5",
+    "search": "6d6812453336f34053355472d56b4415c73ff0b5a284ed9bf588da58317b624a",
+    "claims": "588022fc27475e5065f2f7c7beb449202052b29cbaf9437f25a5b3e2bbcc6a8c",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
     "coverage_exceptions": "58a32cadd6087c73206580326b9381f94ed6e2df81dc1a66ddcaf210fb2bd9a4",
-    "repository_classification": "4913b5435945703d27281ca8a550c15c2e05bce7b9c22b71f63ddda906ef2099",
-    "people": "b1399b6787a452ae48d0ca8448e6991f845d3ff078451c4dbc84861339aa090d",
-    "organizations": "88e50dce33afd18d5664fe1ceaae0a6725720fd59a9e81acf5f68a07db2fd16d",
-    "resume": "56bd60243debdc081b3752e33cb3a5247bbfe08a236ae943d7219ea424a2aaac",
+    "repository_classification": "72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b",
+    "people": "5dd2406eabbd072dd9d5c0894eda532f7cfb8b09be5e1b7ebcb3bd2280079323",
+    "organizations": "982179e8b138826b8e37eeb6920011260269dc26aec15377f471ce6140c9bc8e",
+    "resume": "6ea5282962cb271833dadfd88a5cb438be69e7a5fb193ef59862702dba607dcf",
     "work_enrichment": "3e1b51faba0d2ee08c4f2079028bf541e9308e28f279721a6219326cdb592d31",
     "collection_catalog": "e985cb39686116fd21d394594ec711046cc85ebab028920654f0279ce694cf57",
     "research_map": "0218f5b7e0061cbbe31a7177336b088ff36e60cfaee0380d7c66e726d2f68f5a",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
-    "scholar_readiness": "f8409779eaeb3810a51ff552e3ed07268a846fedd290a82fa038e279a6516dc7",
-    "catalog": "e84ad3c2c752da9b1fc54d7198adaf05b3387784ed7816cf2a227bc5e7b30802",
-    "reconciliation": "bfd965c7f1ff1ad2e876b125d2b0223a73a43fa1bbeaf05a0c5cc4c9f13792ca",
-    "reproducibility": "797517ed602e709f688d0ccca8c0b4f83999775ec1de19d7ff9a642890e5a070",
-    "generated_manifest": "c8a035b6c4686a9ef59700a15dd2e8b250b3b47de4e450320f9ad16dc98e0e80",
-    "current_counts": "0b9be52b60a14b628ad1c213e48d7ef6a799e62fda2e0d2bca3d370c5262abd0"
+    "scholar_readiness": "730f3ea0f65a843f90669a644237d928094ffe91be91988a299ff5c50ff88011",
+    "catalog": "526bc678e7d56f1dd6715af532dd8714057b36e07d66218bf67fd44e60d695e3",
+    "reconciliation": "8bfb1938cc54583b2c65b81e151c953b3377ee790980d3f51daba5b414a43c6b",
+    "reproducibility": "5dcf81e663d3824c5207c78e7600a743ca09690f1aea0471f6762e85eb0e6f68",
+    "generated_manifest": "e701cd663c89f801c4cfb346663cb3f7da69780282f931a090ef4d1508b106d2",
+    "current_counts": "e14aefe7872caef4729c29396578d1a93843c58a77a2820f1e687a65e03931d3"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -6450,14 +6471,14 @@
     "full_text_papers": 211,
     "generated_exports": {
       "data_publications_ld_main_entity": 234,
-      "data_software_json": 199,
-      "data_software_ld_main_entity": 199,
+      "data_software_json": 208,
+      "data_software_ld_main_entity": 208,
       "data_works_json": 234
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 47,
       "archived": 92,
-      "curated": 199,
+      "curated": 208,
       "docxology": 268,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 99,
@@ -6469,7 +6490,7 @@
       "public": 315,
       "recently_updated": 315,
       "total": 315,
-      "uncataloged": 116
+      "uncataloged": 107
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -6478,15 +6499,15 @@
       "raw_candidates": 708
     },
     "paired_publications": {
-      "already_reviewed": 612,
+      "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 338,
-      "needs_review": 0,
-      "pairs": 613,
+      "github_releases": 35,
+      "needs_review": 174,
+      "pairs": 175,
       "software_catalogued": 1,
-      "strong_pairs": 75,
+      "strong_pairs": 1,
       "update_existing": 0,
-      "zenodo_records": 179
+      "zenodo_records": 193
     },
     "paper_folder_docs": 216,
     "papers_with_images": 145,
@@ -6502,8 +6523,8 @@
     },
     "software": {
       "active_inference_institute": 43,
-      "curated_total": 199,
-      "docxology_owned": 156
+      "curated_total": 208,
+      "docxology_owned": 165
     },
     "types": {
       "Books": 6,

@@ -34,7 +34,7 @@ const calls = [];
 const failing = new Set();
 global.fetch = async (path, options) => {
  calls.push(path);
- assert.equal(options.cache, 'no-cache');
+ assert.equal(options.cache, 'default');
  return {ok:!failing.has(path), status:failing.has(path)?503:200, json:async()=>structuredClone(payloads[path])};
 };
 """

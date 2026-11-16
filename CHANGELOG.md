@@ -1700,3 +1700,9 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - Fix homepage JavaScript comment and cover service worker registration in Chromium.
 - Fix direct IndexNow execution outside the repository directory.
 - Fix DOI prose punctuation normalization while retaining internal punctuation.
+
+- Refresh the public GitHub inventory and software material links, expose curated homepages in visible cards and SoftwareSourceCode data, and preserve unavailable dotscope GitHub history through its public PyPI destination.
+- Curate the new Line-Set archive concepts with prior manuscript deposits retained, add the OPH-FEP-Synergetics release-backed work, and bind the observed Observers r2065 PDF edition without asserting the requested but unobserved r2066 label.
+- Use source-backed RSS dates, browser caching for deferred search data, noninteractive Git subprocess input, an explicit 404 noindex directive, and revised-date synchronization.
+
+- Omit incomplete scholarly citation blocks for unknown bylines while retaining verified editor roles, and align the strict native Pandoc pin to the Pandoc version declared by pandoc-crossref 0.3.26.

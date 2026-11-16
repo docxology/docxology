@@ -31,7 +31,7 @@ from docxology_tools.manuscript_validation import (
 )
 
 TOOLS = {
-    "pandoc": "3.12.1",
+    "pandoc": "3.14",
     "pandoc-crossref": "0.3.26",
     "xelatex": "3.141592653-2.6-0.999998",
     "bibtex": "0.99e",

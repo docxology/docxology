@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-16T02:55:33Z",
+  "generated_at": "2026-11-16T03:30:25Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 199,
+  "count": 208,
   "repositories": [
     {
       "name": "CRAM",
@@ -70,12 +70,12 @@
       "url": "https://github.com/docxology/QuadCraft",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.5.0",
+      "description": "Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.5.0 · Software DOI",
       "language": "JavaScript",
       "stars": 8,
       "updated_or_year": "2026-11",
       "paper_path": "",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.16887767"
     },
     {
       "name": "CogSecSkills",
@@ -142,24 +142,24 @@
       "url": "https://github.com/docxology/literature",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications",
+      "description": "Literature collection and analysis tools for structured ingestion, annotation, and exploration of scientific publications · Repository version DOI",
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2026-11",
       "paper_path": "",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.17954157"
     },
     {
       "name": "FORMINDEX",
       "url": "https://github.com/docxology/FORMINDEX",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation",
+      "description": "Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation · Repository version DOI",
       "language": "Rich Text Format",
       "stars": 2,
       "updated_or_year": "2026-11",
       "paper_path": "",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.13927024"
     },
     {
       "name": "crescent-city",
@@ -178,12 +178,12 @@
       "url": "https://github.com/docxology/QuadMath",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.6.0",
+      "description": "Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.6.0 · Software DOI",
       "language": "Python",
       "stars": 2,
       "updated_or_year": "2026-11",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2025_QuadMath/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.16887790"
     },
     {
       "name": "active_inference",
@@ -251,12 +251,12 @@
       "url": "https://github.com/docxology/curriculum",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science",
+      "description": "Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science · Repository version DOI",
       "language": "HTML",
       "stars": 1,
       "updated_or_year": "2026-11",
       "paper_path": "",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.17954165"
     },
     {
       "name": "lean_niche",
@@ -649,12 +649,12 @@
       "url": "https://github.com/docxology/markdown_decision_process",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning",
+      "description": "Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning · Repository version DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-11",
       "paper_path": "papers/2025_MarkdownDecisionProcess/",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.17244387"
     },
     {
       "name": "mdkv",
@@ -722,12 +722,12 @@
       "url": "https://github.com/docxology/symergetics",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.3.0",
+      "description": "Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.3.0 · Software DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-11",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2025_Symergetics/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.17114383"
     },
     {
       "name": "transformer",
@@ -904,7 +904,7 @@
       "url": "https://github.com/docxology/thalia",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · Zenodo",
+      "description": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · Zenodo · Software DOI",
       "language": "Python",
       "stars": 1,
       "updated_or_year": "2026-11",
@@ -1193,6 +1193,114 @@
       "updated_or_year": "2026-11",
       "paper_path": "papers/2026_PROJECTBONDSpecial/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21843592"
+    },
+    {
+      "name": "line_set",
+      "url": "https://github.com/docxology/line_set",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice; repository v0.5.0 · Citation DOI · Zenodo artifact v0.1.0 · Prior manuscript deposit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_LineSet/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069474"
+    },
+    {
+      "name": "black_line",
+      "url": "https://github.com/docxology/black_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · Citation DOI · Prior manuscript deposit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_BlackLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069414"
+    },
+    {
+      "name": "white_line",
+      "url": "https://github.com/docxology/white_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable; repository v0.8.0 · Zenodo · Prior manuscript deposit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_WhiteLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069433"
+    },
+    {
+      "name": "golden_line",
+      "url": "https://github.com/docxology/golden_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · Citation DOI · Prior manuscript deposit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_GoldenLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069423"
+    },
+    {
+      "name": "red_line",
+      "url": "https://github.com/docxology/red_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A personal security boundary and explicit No document for dual-use development · Zenodo · Prior manuscript deposit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_PersonalRedLines/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069255"
+    },
+    {
+      "name": "witness_register",
+      "url": "https://github.com/docxology/witness_register",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · Citation DOI · Prior manuscript deposit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_WitnessRegister/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069487"
+    },
+    {
+      "name": "blue_line",
+      "url": "https://github.com/docxology/blue_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work; repository v0.2.0 · Zenodo · Prior manuscript deposit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_BlueLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069450"
+    },
+    {
+      "name": "green_line",
+      "url": "https://github.com/docxology/green_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A capacity-under-development instrument: the green line of the docxology line set; repository v0.2.0 · Zenodo · Prior manuscript deposit",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_GreenLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069456"
+    },
+    {
+      "name": "silver_line",
+      "url": "https://github.com/docxology/silver_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse; repository v0.2.0 · Citation DOI · Zenodo artifact v0.1.0 · Prior manuscript deposit",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_SilverLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.24069438"
     },
     {
       "name": "template_advanced_literature_review",
@@ -2081,25 +2189,25 @@
       "url": "https://github.com/ActiveInferenceInstitute/Research-Discovery-Engine",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature · Site",
+      "description": "AI-driven research synthesis and navigation — semantic search, citation graph analysis, and cross-domain connection discovery across the Active Inference literature · Site · Repository version DOI",
       "homepage": "https://research-discovery-engine.vercel.app",
       "language": "HTML",
       "stars": 6,
       "updated_or_year": "2026-11",
       "paper_path": "",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.15084931"
     },
     {
       "name": "Start",
       "url": "https://github.com/ActiveInferenceInstitute/Start",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants",
+      "description": "Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants · Repository version DOI",
       "language": "Python",
       "stars": 6,
       "updated_or_year": "2026-11",
       "paper_path": "",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.17047617"
     },
     {
       "name": "act_inf_metaanalysis",
@@ -2118,12 +2226,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/Knowledge-Engineering",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference",
+      "description": "Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference · Repository version DOI",
       "language": "Jupyter Notebook",
       "stars": 6,
       "updated_or_year": "2026-11",
       "paper_path": "",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.7449027"
     },
     {
       "name": "fep_formal",

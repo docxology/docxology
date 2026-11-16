@@ -50,7 +50,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 - [ant_stack](https://github.com/docxology/ant_stack) — The Ant Stack — layered computational model of collective ant-colony intelligence
 - [ant-pheromone](https://github.com/docxology/ant-pheromone) — Computational simulation of ant pheromone trail dynamics and stigmergic communication
 - [ento_linguistics](https://github.com/docxology/ento_linguistics) — Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring · Zenodo
-- [FORMINDEX](https://github.com/docxology/FORMINDEX) — Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation
+- [FORMINDEX](https://github.com/docxology/FORMINDEX) — Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation · Repository version DOI
 
 ## 🧠 [Active Inference & Free Energy Principle](../domain-active-inference.html)
 
@@ -155,11 +155,11 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 **Selected repositories**
 
-- [QuadCraft](https://github.com/docxology/QuadCraft) — Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.5.0
-- [QuadMath](https://github.com/docxology/QuadMath) — Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.6.0
+- [QuadCraft](https://github.com/docxology/QuadCraft) — Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.5.0 · Software DOI
+- [QuadMath](https://github.com/docxology/QuadMath) — Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.6.0 · Software DOI
 - [ivm-xyz](https://github.com/docxology/ivm-xyz) — Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations
 - [godel_ivm](https://github.com/docxology/godel_ivm) — Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
-- [symergetics](https://github.com/docxology/symergetics) — Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.3.0
+- [symergetics](https://github.com/docxology/symergetics) — Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.3.0 · Software DOI
 
 ## 💻 [Computational Methods & Open Science](../domain-computational.html)
 
@@ -191,7 +191,7 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 - [template](https://github.com/docxology/template) — Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · Software version 5.0.0 artifact · Citation DOI · Site
 - [mdkv](https://github.com/docxology/mdkv) — MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents
-- [markdown_decision_process](https://github.com/docxology/markdown_decision_process) — Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning
+- [markdown_decision_process](https://github.com/docxology/markdown_decision_process) — Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning · Repository version DOI
 - [steganographer](https://github.com/docxology/steganographer) — Rust steganography and signed-media tools for image, audio, and video carriers, with native and WebAssembly builds, capacity checks, and bounded forensic analysis · Release v0.9.0
 - [timeline_generator](https://github.com/docxology/timeline_generator) — Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
 - [codomyrmex](https://github.com/docxology/codomyrmex) — AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Citation DOI

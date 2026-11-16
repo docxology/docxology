@@ -22,6 +22,7 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+from docxology_tools.site_facts import generated_date  # noqa: E402
 from docxology_tools.software_table import (  # noqa: E402
     SoftwareRow,
     material_links,
@@ -200,6 +201,7 @@ def build_collection_page(rows: list[SoftwareRow]) -> dict:
             "url": "https://danielarifriedman.com/",
         },
         "mainEntity": me,
+        "mentions": [{"@type": "SoftwareApplication", "name": "dotscope", "url": "https://pypi.org/project/dotscope/", "installUrl": "https://pypi.org/project/dotscope/"}],
     }
 
 
@@ -388,6 +390,7 @@ def render_outputs_from_template(
         html_out, SHARED_NAV_BEGIN, SHARED_NAV_END, render_nav(active="software")
     )
     html_out = replace_head_meta(html_out, len(docx), len(aii), github_counts)
+    html_out = re.sub(r'<meta name="revised" content="[^"]+">', f'<meta name="revised" content="{generated_date()}">', html_out)
     html_out = replace_between_markers(
         html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx)
     )

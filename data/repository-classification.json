@@ -1,20 +1,20 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-11-16T02:50:38Z",
+  "generated_at": "2026-11-16T03:11:04Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
   "summary": {
     "total_inventory": 315,
-    "uncatalogued": 116,
+    "uncatalogued": 107,
     "forks": 99,
     "acknowledged_forks": 99,
-    "primary_requires_review": 10,
+    "primary_requires_review": 1,
     "acknowledged_excluded": 7,
     "archived": 89,
     "missing_description": 10,
     "short_description": 18,
-    "substantive_description": 88
+    "substantive_description": 79
   },
   "repositories": [
     {
@@ -516,59 +516,6 @@
       "reviewed_by": "standing_policy",
       "reviewed_at": "2026-09-25",
       "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated"
-    },
-    {
-      "full_name": "docxology/black_line",
-      "github_id": 1314913607,
-      "github_node_id": "R_kgDOTl_9Rw",
-      "name": "black_line",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/black_line",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Python method instrument for declaring and auditing research and engineering practice — evaluate_work() scores submissions against a versioned registry of tag-practice cells, returning ALIGNED, NEEDS_EVIDENCE, NEEDS_REWORK or OUTSIDE_SCOPE with present/missing/stale witness surfaces and coverage analytics.",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "audit",
-        "best-practices",
-        "evaluation",
-        "governance",
-        "ledger",
-        "python",
-        "research-integrity"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
-    },
-    {
-      "full_name": "docxology/blue_line",
-      "github_id": 1358484659,
-      "github_node_id": "R_kgDOUPjUsw",
-      "name": "blue_line",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/blue_line",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Blue Line — A stewardship instrument for maintained commitments: systems, obligations,",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "docxology-line-set",
-        "python",
-        "reproducible-research",
-        "research-instrument"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
     },
     {
       "full_name": "docxology/CatColab",
@@ -1208,34 +1155,6 @@
       "reviewed_at": "2026-08-26"
     },
     {
-      "full_name": "docxology/golden_line",
-      "github_id": 1314913652,
-      "github_node_id": "R_kgDOTl_9dA",
-      "name": "golden_line",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/golden_line",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Aspiration tracker for the four-line governance set: evaluates long-horizon aspirations against markers and counter-signals, returning TOWARD, INQUIRY, DRIFTING, or NOT_OBSERVED, plus all_invariants structural checks and dated readings for currentness. Python, zero dependencies.",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "aspirations",
-        "audit",
-        "governance",
-        "ledger",
-        "python",
-        "research-integrity",
-        "values"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
-    },
-    {
       "full_name": "docxology/graphcoder",
       "github_id": 1385745614,
       "github_node_id": "R_kgDOUpjMzg",
@@ -1281,31 +1200,6 @@
       "acknowledged_reason": "fork_not_curated",
       "reviewed_by": "principal",
       "reviewed_at": "2026-08-26"
-    },
-    {
-      "full_name": "docxology/green_line",
-      "github_id": 1358486189,
-      "github_node_id": "R_kgDOUPjarQ",
-      "name": "green_line",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/green_line",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Green Line — A capacity-under-development instrument: the green line of the docxology",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "docxology-line-set",
-        "python",
-        "reproducible-research",
-        "research-instrument"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
     },
     {
       "full_name": "docxology/GuildNet",
@@ -1620,34 +1514,6 @@
       "reviewed_by": "standing_policy",
       "reviewed_at": "2026-09-14",
       "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated"
-    },
-    {
-      "full_name": "docxology/line_set",
-      "github_id": 1314913744,
-      "github_node_id": "R_kgDOTl_90A",
-      "name": "line_set",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/line_set",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Registry and validator for the Red, Black, Golden, and White Line governance packages: reads installed siblings, checks their enum vocabularies for collisions, and reports SET_LEGIBLE, SET_PARTIAL, SET_COLLIDING, or SET_UNDECLARED. Pure Python stdlib, CLI, and SVG figures.",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "audit",
-        "cli",
-        "governance",
-        "python",
-        "registry",
-        "research-integrity",
-        "validation"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
     },
     {
       "full_name": "docxology/links",
@@ -2254,35 +2120,6 @@
       "reviewed_at": "2026-08-26"
     },
     {
-      "full_name": "docxology/red_line",
-      "github_id": 1314913561,
-      "github_node_id": "R_kgDOTl_9GQ",
-      "name": "red_line",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/red_line",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Versioned, executable declaration of personal refusals in dual-use software — evaluate_action() checks proposed work against declared red lines with typed exemptions and oversight tiers, backed by a SHA-256 warrant canary, with deterministic evaluations, generated figures and a tested Python codebase.",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "ai-safety",
-        "dual-use",
-        "ethics",
-        "governance",
-        "python",
-        "research-integrity",
-        "responsible-ai",
-        "warrant-canary"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
-    },
-    {
       "full_name": "docxology/RGMs",
       "github_id": 1351075887,
       "github_node_id": "R_kgDOUIfILw",
@@ -2538,30 +2375,6 @@
       "reviewed_at": "2026-08-26"
     },
     {
-      "full_name": "docxology/silver_line",
-      "github_id": 1358482465,
-      "github_node_id": "R_kgDOUPjMIQ",
-      "name": "silver_line",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/silver_line",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Silver Line — What is preserved, what is entrusted to whom, what is allowed to lapse",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "docxology-line-set",
-        "reproducible-research",
-        "research-instrument"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
-    },
-    {
       "full_name": "docxology/smartville",
       "github_id": 1089709172,
       "github_node_id": "R_kgDOQPOkdA",
@@ -2798,63 +2611,6 @@
       "acknowledged_reason": "fork_not_curated",
       "reviewed_by": "principal",
       "reviewed_at": "2026-08-26"
-    },
-    {
-      "full_name": "docxology/white_line",
-      "github_id": 1314913691,
-      "github_node_id": "R_kgDOTl_9mw",
-      "name": "white_line",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/white_line",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Absence ledger for the four-line governance set: records epistemic gaps, withheld claims, and deliberate non-assertion as NAMED, UNRESOLVED, WITHHELD, or NOT_RECORDED, decays dated observations past their review horizon, and exports line.report-envelope/1.0 reports.",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "audit",
-        "epistemics",
-        "governance",
-        "ledger",
-        "python",
-        "research-integrity",
-        "uncertainty"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
-    },
-    {
-      "full_name": "docxology/witness_register",
-      "github_id": 1319816498,
-      "github_node_id": "R_kgDOTqrNMg",
-      "name": "witness_register",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/witness_register",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Python registry that co-registers audit reports from the four line instruments without merging, scoring, or overriding them: nine-field envelopes keep each line's native status verbatim, typed records capture blocks and tensions, and an append-only digest chain seals the history.",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [
-        "accountability",
-        "append-only",
-        "audit",
-        "cli",
-        "governance",
-        "provenance",
-        "python",
-        "research-integrity"
-      ],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
     },
     {
       "full_name": "docxology/yt-transcriber",

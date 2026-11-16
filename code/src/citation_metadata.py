@@ -36,6 +36,11 @@ def publication_date(work: dict, metadata: dict) -> str:
         value = citation.get("publication_date")
     elif doi and metadata_doi == doi:
         value = metadata.get("publication_date")
+    elif (
+        not doi and not metadata_doi and work.get("url")
+        and work["url"] == metadata.get("github_release_url")
+    ):
+        value = metadata.get("publication_date")
     else:
         value = None
     if not isinstance(value, str) or len(value) != 10:

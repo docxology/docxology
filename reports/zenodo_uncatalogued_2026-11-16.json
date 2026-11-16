@@ -1,101 +1,17 @@
 {
-  "generated_at": "2026-11-16T03:06:27Z",
+  "generated_at": "2026-11-16T03:38:03Z",
   "zenodo_records_fetched": 193,
   "zenodo_records_source": {
     "mode": "cached",
     "source_report": "reports/paired_publications_2026-11-16.json"
   },
   "bibliography_dois": 226,
-  "uncatalogued_count": 3,
-  "software_catalogued_count": 7,
+  "uncatalogued_count": 1,
+  "software_catalogued_count": 9,
   "reviewed_source_archive_count": 1,
   "reviewed_source_archive_context": {
     "schema_version": 1,
     "records": [
-      {
-        "record_id": "24094526",
-        "doi": "10.5281/zenodo.17114383",
-        "title": "symergetics",
-        "publication_date": "2026-11-10",
-        "version": "1.4.0",
-        "resource_type": {
-          "title": "Software",
-          "type": "software"
-        },
-        "creators": [
-          {
-            "name": "Friedman, Daniel Ari",
-            "affiliation": null,
-            "orcid": "0000-0001-6232-9096"
-          }
-        ],
-        "description": "Fraction-backed arithmetic, integer quadray geometry, live solid measurements and computed scientific visualizations. Part of the Synergetics suite with QuadMath and QuadCraft.",
-        "keywords": [],
-        "related_identifiers": [
-          {
-            "identifier": "https://github.com/docxology/symergetics/tree/1.4.0",
-            "relation": "isSupplementTo",
-            "resource_type": "software",
-            "scheme": "url"
-          }
-        ],
-        "files": [
-          {
-            "id": "dad4f4ae-504d-429c-8d30-e10086ec5562",
-            "key": "docxology/symergetics-1.4.0.zip",
-            "size": 51953682,
-            "checksum": "md5:8bd22ad5a8a4e5e13db1bf9456b95868",
-            "links": {
-              "self": "https://zenodo.org/api/records/24094526/files/docxology/symergetics-1.4.0.zip/content"
-            }
-          }
-        ],
-        "html_url": "https://zenodo.org/records/24094526",
-        "doi_url": "https://doi.org/10.5281/zenodo.17114383",
-        "record_url": "https://zenodo.org/records/17114383"
-      },
-      {
-        "record_id": "24094527",
-        "doi": "10.5281/zenodo.16887790",
-        "title": "QuadMath",
-        "publication_date": "2026-11-10",
-        "version": "0.7.0",
-        "resource_type": {
-          "title": "Software",
-          "type": "software"
-        },
-        "creators": [
-          {
-            "name": "Friedman, Daniel Ari",
-            "affiliation": null,
-            "orcid": "0000-0001-6232-9096"
-          }
-        ],
-        "description": "Quadray mathematics in Python: rank-three embeddings, exact rational volumes, lattice dynamics, optimization and reproducible scientific figures. Part of the Synergetics suite with symergetics and QuadCraft.",
-        "keywords": [],
-        "related_identifiers": [
-          {
-            "identifier": "https://github.com/docxology/QuadMath/tree/0.7.0",
-            "relation": "isSupplementTo",
-            "resource_type": "software",
-            "scheme": "url"
-          }
-        ],
-        "files": [
-          {
-            "id": "91dc4d64-fd90-4fd3-a42c-5653c31ad62e",
-            "key": "docxology/QuadMath-0.7.0.zip",
-            "size": 40467176,
-            "checksum": "md5:87189815e35bb3668b86a2b273ea8007",
-            "links": {
-              "self": "https://zenodo.org/api/records/24094527/files/docxology/QuadMath-0.7.0.zip/content"
-            }
-          }
-        ],
-        "html_url": "https://zenodo.org/records/24094527",
-        "doi_url": "https://doi.org/10.5281/zenodo.16887790",
-        "record_url": "https://zenodo.org/records/16887790"
-      },
       {
         "record_id": "24094530",
         "doi": "10.5281/zenodo.16887767",
@@ -282,20 +198,6 @@
   "warnings": [],
   "uncatalogued": [
     {
-      "record_id": "24094526",
-      "doi": "10.5281/zenodo.17114383",
-      "title": "symergetics",
-      "publication_date": "2026-11-10",
-      "html_url": "https://zenodo.org/records/24094526"
-    },
-    {
-      "record_id": "24094527",
-      "doi": "10.5281/zenodo.16887790",
-      "title": "QuadMath",
-      "publication_date": "2026-11-10",
-      "html_url": "https://zenodo.org/records/24094527"
-    },
-    {
       "record_id": "24094530",
       "doi": "10.5281/zenodo.16887767",
       "title": "QuadCraft",
@@ -317,6 +219,20 @@
       "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
       "software_row": "alphacogant",
       "paper_folder": "2026_AlphaCOGANT"
+    },
+    {
+      "record_id": "24094526",
+      "concept_doi": "10.5281/zenodo.17114383",
+      "title": "symergetics",
+      "software_row": "symergetics",
+      "paper_folder": "2025_Symergetics"
+    },
+    {
+      "record_id": "24094527",
+      "concept_doi": "10.5281/zenodo.16887790",
+      "title": "QuadMath",
+      "software_row": "QuadMath",
+      "paper_folder": "2025_QuadMath"
     },
     {
       "record_id": "23987623",

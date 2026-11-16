@@ -52,7 +52,7 @@ uv run python3 code/orchestrators/validate_manuscript.py --json
 The read-only validator checks root-relative configuration, section labels, citation-key resolution, unresolved tokens, cross-references, and local references, including reference-style links/images. It checks bounded BibTeX entry delimiters and key inventory, rejecting unclosed entries, stray text, duplicate keys, and unresolved citations. It rejects duplicate YAML keys and non-boolean gate/render settings. It does not validate complete BibTeX field grammar, citation style, TeX rendering, external sources, or publication readiness. `--root PATH` supports disposable repository fixtures; JSON goes to stdout without creating a receipt.
 
 The PDF uses the native `PDFRenderer.render_combined` API from the committed
-docxology/template revision pinned in `config.yaml`. Pandoc 3.12.1 and
+docxology/template revision pinned in `config.yaml`. Pandoc 3.14 and
 pandoc-crossref 0.3.26 (built against that Pandoc) serve all formats; the native
 PDF additionally requires XeTeX 3.141592653-2.6-0.999998 and BibTeX 0.99e.
 Provide a local template Git repository containing that commit and a qualified

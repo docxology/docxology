@@ -77,7 +77,7 @@
       "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
       "type": "Series",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceJournal500002.html",
-      "page_sha256": "99dd59ac3cc1d9cc2cb213fc253428ecf829abe3060c094646c6fac306748766",
+      "page_sha256": "d571ecb0bffa43bf04b93803e38941186d96ab2e121ddf7aa7ea704e0a966569",
       "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
@@ -236,7 +236,7 @@
       "title": "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",
       "type": "Series",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026PersonalYouTube200Livestreams006.html",
-      "page_sha256": "2429651d3610f8cddf4b845f478ca3afc56831de505dd21de7213d641a1b656f",
+      "page_sha256": "4be2f9bc091eba47ef80c2dbe3a7ad9f24486e0af3bd3d9f0609c4ad8946b653",
       "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
@@ -4232,7 +4232,7 @@
       "title": "Communication for Remote Teams",
       "type": "Course",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2020CommunicationRemoteTeams083.html",
-      "page_sha256": "f35445923d949b24a248d1a0e94cf3b968d590a5250d91980ec6aded1a3b62bc",
+      "page_sha256": "d39ba43fef2932ec38aac9dc5c316532ab97453d0ff12ec5b1a023b9b5fbb959",
       "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
@@ -4460,7 +4460,7 @@
       "title": "How to use Keybase for remote teams",
       "type": "Course",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2020HowUseKeybaseRemote087.html",
-      "page_sha256": "85b025add7775e9ce33fbb062342876f7c00715b72d560f9ce0e5277441591c3",
+      "page_sha256": "a25dc74b4b57313ceb6f4041b11c22a7927104585df2d738ffdaf09333edb479",
       "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
@@ -7935,7 +7935,7 @@
       "title": "Full speed ahead to the City on the Hill",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2016FullSpeedAheadCity156.html",
-      "page_sha256": "f787f246e6c67f3a27ac4d836afd23d5978e8c37c6c20b33736a64969e2e89e1",
+      "page_sha256": "3a8e0173a2fab9b31f7229193bb2c288704363e6c33e04a8704d42fb9d8d26ad",
       "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
@@ -7962,7 +7962,7 @@
       "title": "Disinforge",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html",
-      "page_sha256": "1abcaea4447721e739e7e24c3b1465f88888e20904ea9fcda37f99f1e5bf1270",
+      "page_sha256": "341facab0f341acde2a38a29f39052d9bd3b6257253ac4e1bc0fa378f62f8a29",
       "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
@@ -8201,7 +8201,7 @@
       "title": "Osteopathy and the Variable Variability of Health",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2017OsteopathyVariableVariabilityHealth163.html",
-      "page_sha256": "af01e39c504c42874f54336104f89fcd3935f54599b8bbc3dab17f28f2e06bc2",
+      "page_sha256": "00ffcde6e3c7928955959acc53ca2beb6f9b258d95429af87264ec7bdeef2f19",
       "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
@@ -8227,7 +8227,7 @@
       "title": "Cells, Mechanobiology, and Osteopathy",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2016CellsMechanobiologyOsteopathy164.html",
-      "page_sha256": "a91eb0c8ab0ba4e3b83588f283191d7f471eaa128e6b12173f743b6ba9bdb11e",
+      "page_sha256": "dbbb3f28dd14240460e2ac1d6b5ba51ac2335f79940f1b570e15d658a04991af",
       "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
@@ -11615,13 +11615,13 @@
       "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
-      "page_sha256": "c256f7f010233182cbe5e929bb7fa996422f77eda4417695353061f7c8bc0bda",
+      "page_sha256": "9d6f2aca297c2ccd0f73cc95bf9938f1706d15cdc730700f264ec8c368935dc1",
       "citation_tags": {
         "citation_title": [
           "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities"
         ],
         "citation_publication_date": [
-          "2026"
+          "2026/11/15"
         ],
         "citation_author": [
           "Daniel Ari Friedman"

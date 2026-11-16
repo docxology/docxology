@@ -527,8 +527,8 @@ def test_exact_toolchain_and_crossref_build_are_required(monkeypatch, tmp_path):
     binary.write_bytes(b"synthetic renderer")
     monkeypatch.setattr(rendering.shutil, "which", lambda name: str(binary))
     banners = {
-        "pandoc": "pandoc 3.12.1",
-        "pandoc-crossref": "pandoc-crossref v0.3.26 built with Pandoc v3.12.1,",
+        "pandoc": "pandoc 3.14",
+        "pandoc-crossref": "pandoc-crossref v0.3.26 built with Pandoc v3.14,",
         "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)",
         "bibtex": "BibTeX 0.99e (TeX Live 2026)",
     }
@@ -540,14 +540,14 @@ def test_exact_toolchain_and_crossref_build_are_required(monkeypatch, tmp_path):
         data["binary_sha256"] == hashlib.sha256(binary.read_bytes()).hexdigest()
         for data in result.values()
     )
-    for pandoc_version in ("3.10.1", "3.12.10"):
+    for pandoc_version in ("3.10.1", "3.140"):
         banners["pandoc-crossref"] = (
             f"pandoc-crossref v0.3.26 built with Pandoc v{pandoc_version},"
         )
         calls = iter(banners.values())
         with pytest.raises(ValueError, match="pinned Pandoc build"):
             rendering.toolchain(tmp_path)
-    banners["pandoc-crossref"] = "pandoc-crossref v0.3.260 built with Pandoc v3.12.1,"
+    banners["pandoc-crossref"] = "pandoc-crossref v0.3.260 built with Pandoc v3.14,"
     calls = iter(banners.values())
     with pytest.raises(ValueError, match="version mismatch"):
         rendering.toolchain(tmp_path)

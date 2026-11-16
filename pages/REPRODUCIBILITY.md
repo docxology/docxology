@@ -32,10 +32,10 @@ from that computation.
 | Public archive | 175 / 234 | 75% | Fetch a deposited copy from a third-party archive. |
 | Open full text | 211 / 234 | 90% | Read the full text without a paywall or request. |
 | Source documents | 217 / 234 | 93% | Inspect the working folder behind the entry. |
-| Executable code | 76 / 234 | 32% | Run the software that produced or accompanies it. |
+| Executable code | 87 / 234 | 37% | Run the software that produced or accompanies it. |
 | Agent-readable guidance | 217 / 234 | 93% | Parse structured guidance without scraping prose. |
 
-Mean score 4.756 of 6.
+Mean score 4.803 of 6.
 
 ## Bands
 

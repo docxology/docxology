@@ -230,6 +230,8 @@ def check_work_citations(repo_root: Path) -> list[str]:
                 ).items()
             }
         )
+        if not work.get("authors"):
+            expected = {}
         for name in tags.keys() | expected.keys():
             if tags.get(name, []) != expected.get(name, []):
                 errors.append(

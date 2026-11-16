@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T03:06:27Z",
+  "generated_at": "2026-11-16T03:38:03Z",
   "source": "GitHub Releases API + Zenodo Records API",
   "owners": [
     "docxology",
@@ -38613,7 +38613,7 @@
   "applied": [],
   "classification_cache": {
     "inputs": {
-      "bibliography_sha256": "949a6d4c557d71566db59d745de0eb811054577855d13f56e62f3a7beb883eb9",
+      "bibliography_sha256": "88b63a3f1f7798d75cc8d1e099f5175b88694e0ee43b27ad9e71215f4d87303b",
       "decisions_sha256": "27f3ce3932e529bd290ee4b06ef4c56c15466c016a4db6b34c949787046464fa"
     },
     "already_reviewed": []
