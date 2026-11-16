@@ -609,6 +609,13 @@ def test_dangling_report_reference_guard(
     (repo / "reports").mkdir(parents=True)
     _git(repo, "init", "-q")
     (repo / "reports" / "asset_size_2026-09-10.json").write_text("{}", encoding="utf-8")
+    # The closed evidence inventory describes retained files; it does not link them.
+    (output / "data" / "public-link-evidence.json").write_text(
+        json.dumps({"entries": [{"path": "reports/asset_size_2026-09-10.json"}]}),
+        encoding="utf-8",
+    )
+    assert bpa.dangling_report_references(output) == []
+
     (output / "pages" / "dangling.html").write_text(
         '<a href="reports/asset_size_2026-09-10.json">superseded</a>', encoding="utf-8"
     )

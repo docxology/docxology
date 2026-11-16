@@ -956,6 +956,7 @@ _GUARD_SKIP_FILES = {
     "data/pages-artifact-manifest.json",
     "data/generated-manifest.json",
     "data/report-retention.json",
+    "data/public-link-evidence.json",
 }
 
 
