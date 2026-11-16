@@ -61,11 +61,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -174,6 +169,11 @@
       "state": "done",
       "submitted": true
     },
-    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions.",
+    "public_link_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_observation_sha256": "dc915ee8cae2a136f3732a74856e39bdc9e1d2046e6ac785edefe724c957b2b8",
+      "scope": "Public projection only; does not refresh or approve upstream observations."
+    }
   }
 }

@@ -123,7 +123,11 @@
     "publication_date": "2026-11-11",
     "github_release_url": "https://github.com/docxology/red_line/releases/tag/v0.5.2",
     "source_report": "reports/paired_publications_2026-11-16.json",
-    "source_report_sha256": "265636a68bc9f03574578ee378d4f4f4a6bfa0602f0a560907086411b3072c22",
-    "scope": "Verified repository release and source ZIP archive; retained manuscript PDF version, extracted text and source-specific findings remain independent earlier editions."
+    "source_report_sha256": "f07dc875526301ff8647dd0d10526eb37b71a65d0ae4e4797044830e4debd452",
+    "scope": "Verified repository release and source ZIP archive; retained manuscript PDF version, extracted text and source-specific findings remain independent earlier editions.",
+    "source_report_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_report_sha256": "265636a68bc9f03574578ee378d4f4f4a6bfa0602f0a560907086411b3072c22"
+    }
   }
 }

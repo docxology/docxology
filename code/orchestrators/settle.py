@@ -739,6 +739,7 @@ def create_pr(title: str, tier: str, checks: int) -> bool:
         capture_output=True,
         text=True,
         check=False,
+        stdin=subprocess.DEVNULL,
     )
     if result.returncode != 0:
         print("FAIL")

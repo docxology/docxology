@@ -7686,11 +7686,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/silver_line",
             "relation": "references",
             "scheme": "url"
@@ -7848,11 +7843,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -8487,11 +8477,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -8602,11 +8587,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -8724,27 +8704,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -8876,27 +8841,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -9052,27 +9002,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -9203,27 +9138,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -9310,11 +9230,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -9476,11 +9391,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -9851,11 +9761,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -9962,11 +9867,6 @@
           },
           {
             "identifier": "https://github.com/docxology/silver_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "isPartOf",
             "scheme": "url"
           },
@@ -10088,27 +9988,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -10240,27 +10125,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -10416,27 +10286,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -10567,27 +10422,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -11210,11 +11050,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/silver_line",
             "relation": "references",
             "scheme": "url"
@@ -11376,11 +11211,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/silver_line",
             "relation": "references",
             "scheme": "url"
@@ -12011,11 +11841,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -12122,11 +11947,6 @@
           },
           {
             "identifier": "https://github.com/docxology/silver_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "isPartOf",
             "scheme": "url"
           },
@@ -12248,27 +12068,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -12400,27 +12205,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -12576,27 +12366,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -12727,27 +12502,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -12834,11 +12594,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -13000,11 +12755,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -13179,11 +12929,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -13290,11 +13035,6 @@
           },
           {
             "identifier": "https://github.com/docxology/silver_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "isPartOf",
             "scheme": "url"
           },
@@ -13416,27 +13156,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -13568,27 +13293,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -13744,27 +13454,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -13895,27 +13590,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -14538,11 +14218,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/silver_line",
             "relation": "references",
             "scheme": "url"
@@ -14700,11 +14375,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -15517,11 +15187,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -15628,11 +15293,6 @@
           },
           {
             "identifier": "https://github.com/docxology/silver_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "isPartOf",
             "scheme": "url"
           },
@@ -15754,27 +15414,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -15906,27 +15551,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -16082,27 +15712,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -16233,27 +15848,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -16872,11 +16472,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -17038,11 +16633,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -17677,11 +17267,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -17788,11 +17373,6 @@
           },
           {
             "identifier": "https://github.com/docxology/silver_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "isPartOf",
             "scheme": "url"
           },
@@ -17914,27 +17494,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -18066,27 +17631,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -18242,27 +17792,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -18393,27 +17928,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -18500,11 +18020,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -18666,11 +18181,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -19023,11 +18533,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -19134,11 +18639,6 @@
           },
           {
             "identifier": "https://github.com/docxology/silver_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "isPartOf",
             "scheme": "url"
           },
@@ -19260,27 +18760,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -19412,27 +18897,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -19588,27 +19058,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -19739,27 +19194,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -20378,11 +19818,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -20544,11 +19979,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -21183,11 +20613,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -21294,11 +20719,6 @@
           },
           {
             "identifier": "https://github.com/docxology/silver_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "isPartOf",
             "scheme": "url"
           },
@@ -21420,27 +20840,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -21572,27 +20977,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -21748,27 +21138,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -21899,27 +21274,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -22538,11 +21898,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -22704,11 +22059,6 @@
           },
           {
             "identifier": "https://github.com/docxology/blue_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -23521,11 +22871,6 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "isPartOf",
             "scheme": "url"
@@ -23632,11 +22977,6 @@
           },
           {
             "identifier": "https://github.com/docxology/silver_line",
-            "relation": "isPartOf",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/violet_line",
             "relation": "isPartOf",
             "scheme": "url"
           },
@@ -23758,27 +23098,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -23910,27 +23235,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           },
@@ -24086,27 +23396,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -24237,27 +23532,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -26013,27 +25293,12 @@
           "scheme": "url"
         },
         {
-          "identifier": "https://github.com/docxology/violet_line",
-          "relation": "references",
-          "scheme": "url"
-        },
-        {
           "identifier": "https://github.com/docxology/blue_line",
           "relation": "references",
           "scheme": "url"
         },
         {
           "identifier": "https://github.com/docxology/green_line",
-          "relation": "references",
-          "scheme": "url"
-        },
-        {
-          "identifier": "https://github.com/docxology/copper_line",
-          "relation": "references",
-          "scheme": "url"
-        },
-        {
-          "identifier": "https://github.com/docxology/iron_line",
           "relation": "references",
           "scheme": "url"
         }
@@ -26187,27 +25452,12 @@
           "scheme": "url"
         },
         {
-          "identifier": "https://github.com/docxology/violet_line",
-          "relation": "references",
-          "scheme": "url"
-        },
-        {
           "identifier": "https://github.com/docxology/blue_line",
           "relation": "references",
           "scheme": "url"
         },
         {
           "identifier": "https://github.com/docxology/green_line",
-          "relation": "references",
-          "scheme": "url"
-        },
-        {
-          "identifier": "https://github.com/docxology/copper_line",
-          "relation": "references",
-          "scheme": "url"
-        },
-        {
-          "identifier": "https://github.com/docxology/iron_line",
           "relation": "references",
           "scheme": "url"
         },
@@ -26425,11 +25675,6 @@
           "scheme": "url"
         },
         {
-          "identifier": "https://github.com/docxology/violet_line",
-          "relation": "isPartOf",
-          "scheme": "url"
-        },
-        {
           "identifier": "https://github.com/docxology/blue_line",
           "relation": "isPartOf",
           "scheme": "url"
@@ -26506,11 +25751,6 @@
         },
         {
           "identifier": "https://github.com/docxology/blue_line",
-          "relation": "references",
-          "scheme": "url"
-        },
-        {
-          "identifier": "https://github.com/docxology/violet_line",
           "relation": "references",
           "scheme": "url"
         },
@@ -31142,14 +30382,7 @@
       ],
       "description": "Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether \"there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system.\" This paper tests one qualified route through that problem. It places William Blake's fourfold vision beside Buckminster Fuller's Synergetics without claiming shared vocabulary, historical influence, or Blakean anticipation of Quadray: Blake supplies a historically situated problem of plural seeing, while Quadray and tetrahedral geometry supply a reproducible model of relational aspects, partial views, and reconstruction. The formal result is exact: for any non-degenerate convex tetrahedron observed by a strictly exterior camera, one frame exposes 1, 2, or 3 faces, never 4; an atlas can preserve all 4 across successive views. The project combines an argument graph, exact rational geometry, deterministic visualizations, a rights-aware corpus ledger, and a dependency-free viewer. \"Synchronous omni-rational form\" names this operational integration—a relational whole retained across partial views, sequences, source boundaries, and explicit limits—not a historical Blakean or Fullerian doctrine.",
       "keywords": [],
-      "related_identifiers": [
-        {
-          "identifier": "https://github.com/docxology/blake_fourfold_synergetics",
-          "relation": "references",
-          "resource_type": "software",
-          "scheme": "url"
-        }
-      ],
+      "related_identifiers": [],
       "files": [
         {
           "id": "4804b4a8-3e06-4a7d-8b98-3630535a2d7e",
@@ -32793,7 +32026,7 @@
           "orcid": "0000-0001-6232-9096"
         }
       ],
-      "description": "California maintains a highly codified public-records ecosystem anchored by the California Public Records Act (CPRA), recodified by Assembly Bill 473 effective January 2023 to Government Code §§ 7920.000 et seq., and extended in practice through state and local open-data portals, request platforms, API frameworks, metadata schemas, intergovernmental data-sharing surfaces, and exemption rules that determine what must be disclosed and in what form. This reference compiles that ecosystem as a machine-readable and reproducible artifact: 22 registered CPRA statute sections across 5 structural categories; 17 open-data and request portals across 7 hosting platforms and 10 subject-matter domains; 7 exemption clusters, including 1 balancing-test and 6 categorical clusters; a 8-dataset OpenJustice taxonomy; standard-library clients for programmatic API surfaces; and a Federal FOIA comparator that clarifies where California state and local access law differs from federal executive-branch disclosure, reporting, appeal, and FOIA.gov API infrastructure. Every registry-derived number in the prose is generated from the source registries, every non-token factual claim is tied to the claim ledger or a cited primary source, every figure caption is emitted from the caption registry, and the defensive security layer maps source poisoning, citation laundering, dependency compromise, build provenance, artifact tampering, live-source volatility, and secret-handling risk to explicit local controls and target posture. The result is both a technical reference for requesters, researchers, journalists, civic technologists, and public agencies, and a reproducibility contract: the same version-controlled inputs regenerate the inventories, validation reports, analytical figures, dashboard, manuscript variables, title-page cover art, and paper outputs while preserving explicit caveats around legal authority, portal completeness, live-source volatility, security posture, and remaining verification residuals.\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 (https://github.com/docxology/CA_public_records/releases/tag/v0.1.0)\nDOI: https://doi.org/10.5281/zenodo.20789899\nZenodo: https://zenodo.org/records/20789899\nPDF SHA-256: 8f09eac27807918f7b2f48a13d88f40c3ac326a915bafbb78ca1a0c242b9ee97",
+      "description": "California maintains a highly codified public-records ecosystem anchored by the California Public Records Act (CPRA), recodified by Assembly Bill 473 effective January 2023 to Government Code §§ 7920.000 et seq., and extended in practice through state and local open-data portals, request platforms, API frameworks, metadata schemas, intergovernmental data-sharing surfaces, and exemption rules that determine what must be disclosed and in what form. This reference compiles that ecosystem as a machine-readable and reproducible artifact: 22 registered CPRA statute sections across 5 structural categories; 17 open-data and request portals across 7 hosting platforms and 10 subject-matter domains; 7 exemption clusters, including 1 balancing-test and 6 categorical clusters; a 8-dataset OpenJustice taxonomy; standard-library clients for programmatic API surfaces; and a Federal FOIA comparator that clarifies where California state and local access law differs from federal executive-branch disclosure, reporting, appeal, and FOIA.gov API infrastructure. Every registry-derived number in the prose is generated from the source registries, every non-token factual claim is tied to the claim ledger or a cited primary source, every figure caption is emitted from the caption registry, and the defensive security layer maps source poisoning, citation laundering, dependency compromise, build provenance, artifact tampering, live-source volatility, and secret-handling risk to explicit local controls and target posture. The result is both a technical reference for requesters, researchers, journalists, civic technologists, and public agencies, and a reproducibility contract: the same version-controlled inputs regenerate the inventories, validation reports, analytical figures, dashboard, manuscript variables, title-page cover art, and paper outputs while preserving explicit caveats around legal authority, portal completeness, live-source volatility, security posture, and remaining verification residuals.\n\n---\nAssociated artifacts\nGitHub release: v0.1.0 ([non-public repository])\nDOI: https://doi.org/10.5281/zenodo.20789899\nZenodo: https://zenodo.org/records/20789899\nPDF SHA-256: 8f09eac27807918f7b2f48a13d88f40c3ac326a915bafbb78ca1a0c242b9ee97",
       "keywords": [
         "California Public Records Act",
         "open data",
@@ -32806,20 +32039,7 @@
         "cognitive security",
         "civic technology"
       ],
-      "related_identifiers": [
-        {
-          "identifier": "https://github.com/docxology/CA_public_records/releases/tag/v0.1.0",
-          "relation": "isSupplementTo",
-          "resource_type": "software",
-          "scheme": "url"
-        },
-        {
-          "identifier": "https://github.com/docxology/CA_public_records",
-          "relation": "references",
-          "resource_type": "software",
-          "scheme": "url"
-        }
-      ],
+      "related_identifiers": [],
       "files": [
         {
           "id": "ba3f633e-0c7d-4366-b145-82ed214102a4",
@@ -38617,5 +37837,10 @@
       "decisions_sha256": "27f3ce3932e529bd290ee4b06ef4c56c15466c016a4db6b34c949787046464fa"
     },
     "already_reviewed": []
+  },
+  "public_link_projection": {
+    "policy": "public-owned-repositories-v1",
+    "original_observation_sha256": "04fe61b0e900f615552ac537a30f4264050b12739b0a8b4ee272f99c01660103",
+    "scope": "Public projection only; does not refresh or approve upstream observations."
   }
 }

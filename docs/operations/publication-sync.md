@@ -56,6 +56,21 @@ The safest default is: **scan live sources, inspect the report, apply only stron
   This mode performs no network intake or classification. `--check` rejects
   local paths reintroduced into release bodies.
 
+## Public repository links in imported evidence
+
+The observed public inventory in `data/github-repositories.json` authorizes new
+`docxology` repository links. Refresh that inventory before deliberate intake
+when a new public repository is expected. The paired-report writer and the
+ordered local `project_public_source_links.py` step remove unlisted owned links
+from new report data and registry-refresh sidecars. The projection records an
+original observation digest, preserves capture dates, and grants no new
+observation or approval receipt. Missing inventory fails closed.
+
+Frozen source-PDF evidence and literal historical extracts remain unchanged.
+The shipped-source regression permits previously published references only at
+their original paths in the pinned public baseline; those historical references
+do not authorize newly imported links.
+
 ## Exact Edition Review and Intake Limits
 
 The public pairing key keeps its six existing fields, including the canonical

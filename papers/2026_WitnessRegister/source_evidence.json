@@ -335,27 +335,12 @@
             "scheme": "url"
           },
           {
-            "identifier": "https://github.com/docxology/violet_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
             "identifier": "https://github.com/docxology/blue_line",
             "relation": "references",
             "scheme": "url"
           },
           {
             "identifier": "https://github.com/docxology/green_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/copper_line",
-            "relation": "references",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/iron_line",
             "relation": "references",
             "scheme": "url"
           }
@@ -453,6 +438,11 @@
       "state": "done",
       "submitted": true
     },
-    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions.",
+    "public_link_projection": {
+      "policy": "public-owned-repositories-v1",
+      "original_observation_sha256": "9b75ce03dd118a09b45b08628f1324ce5461a86309da93738030bb4f3a84906c",
+      "scope": "Public projection only; does not refresh or approve upstream observations."
+    }
   }
 }

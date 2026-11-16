@@ -1712,3 +1712,19 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - Align all nine Line-Set software release labels with the verified November 11 source archives while preserving the explicitly earlier manuscript PDF editions.
 
 - Remove the unavailable template demo link after a fresh HTTP 404 observation; retain its evidence and the dated upstream GitHub homepage fact.
+
+## Workflowz review — 2026-11-10: completed refresh acceptance
+
+PR #71 is superseded by the refresh branch. The PR's legacy DOC-017/018/019
+labels map to DOC-018/019/020 below; DOC-017 remains the manuscript backlog item.
+This explicit completed record is retained for the requested PR closeout.
+
+- [x] **DOC-018 — External homepage service-worker JavaScript** — P1; owner: Maintainer; trigger: PR #71 review; deliverable: standard JavaScript comment before `/sw.js` registration; acceptance: `test_homepage_runtime_browser.py` opens the homepage, checks page/console errors and waits for an active service worker; dependencies: installed Chromium.
+- [x] **DOC-019 — Direct IndexNow invocation** — P1; owner: Maintainer; trigger: PR #71 review; deliverable: canonical import bootstrap; acceptance: `test_indexnow_direct_execution_from_other_cwd` executes the command in an unrelated directory and checks its URL output; dependencies: sitemap policy.
+- [x] **DOC-020 — Punctuation-delimited DOI extraction** — P2; owner: Maintainer; trigger: PR #71 review; deliverable: canonical DOI URL normalization; acceptance: `test_refresh_regressions.py` covers trailing punctuation, prose separators and valid internal DOI punctuation; dependencies: bibliography URL grammar.
+
+Related completed PRs: #69 (CJK-safe metadata emoji matching and text-only video
+error rendering) and #72 (published-site links in the generated GitHub README),
+covered by the CJK regression and `test_github_readme_mirror.py`.
+
+- Normalize repository identities in paper citations, project newly imported repository links through the public inventory, and compare IndexNow output as parsed URLs. Preserve historical source literals and their extraction provenance.

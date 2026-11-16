@@ -389,6 +389,7 @@ def pages_status(timeout: int) -> dict:
             text=True,
             timeout=timeout,
             check=False,
+            stdin=subprocess.DEVNULL,
         )
         if proc.returncode == 0:
             payload = json.loads(proc.stdout)
@@ -444,6 +445,7 @@ def latest_deployment_run(timeout: int, run_id: int | None = None) -> dict:
             text=True,
             timeout=timeout,
             check=False,
+            stdin=subprocess.DEVNULL,
         )
         payload = json.loads(proc.stdout) if proc.returncode == 0 else {}
         if not isinstance(payload, dict):

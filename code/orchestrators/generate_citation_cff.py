@@ -33,6 +33,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -168,7 +169,14 @@ def _repository_code(meta: dict[str, Any]) -> str:
             return url
     github_repo = meta.get("github_repo")
     if isinstance(github_repo, str) and github_repo.strip():
-        return f"https://github.com/{github_repo.strip()}"
+        raw = github_repo.strip()
+        parsed = urlsplit(raw)
+        if not parsed.scheme:
+            parsed = urlsplit("https://github.com/" + raw)
+        parts = parsed.path.strip("/").split("/")
+        if parsed.hostname != "github.com" or parsed.scheme not in {"https", "http"} or len(parts) != 2 or parsed.query or parsed.fragment:
+            raise ValueError("github_repo must identify one GitHub owner/repository")
+        return "https://github.com/" + "/".join(parts)
     return ""
 
 

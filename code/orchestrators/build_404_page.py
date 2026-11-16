@@ -9,8 +9,8 @@ instead of bouncing. It is rendered here — never hand-edited (GENERATED.md).
 The search box reuses js/search-page.js: with no query the page shows the
 recent/popular default listing, so the 404 doubles as a functional search
 surface. Search engines already exclude true 404 responses from indexing via
-the HTTP status code; an explicit noindex directive also protects a 200 preview (previously a ``noindex`` meta here
-would fail Lighthouse's ``is-crawlable`` audit while adding nothing).
+the HTTP status code; an explicit noindex directive also protects previews
+served with HTTP 200.
 """
 
 from __future__ import annotations
