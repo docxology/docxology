@@ -41,6 +41,8 @@ STEPS: dict[str, GenerationStep] = {
 # with a one-line reason in the plan comment. Keep this set in sync — a new
 # unclassified always-run step must either declare inputs or join this list.
 DERIVED_STEPS = {
+    # In-place privacy projection of new upstream report/sidecar fields.
+    "public-source-links",
     # Cross-pass cycle: reads the data/software.json projection that agent-data
     # rewrites later in the same pass while agent-data reads its own output.
     "current-counts",

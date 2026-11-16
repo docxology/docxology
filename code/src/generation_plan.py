@@ -92,6 +92,7 @@ ASSET_AUDIT_INPUTS_EXCLUDE: tuple[str, ...] = (
 )
 
 LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
+    # In-place source projection: output bytes cannot also be cache inputs.
     GenerationStep("public-source-links", "project_public_source_links.py", (), ("--check",), "Public inventory boundary for newly imported source links"),
     # Bibliography table -> citation exports + works.json (pure renderer).
     GenerationStep(
