@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:38:45Z",
+  "generated_at": "2026-11-16T17:07:01Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -36,7 +36,7 @@
         "data/blake-review.json",
         "papers/*/full_text.md",
         "papers/*/metadata.json",
-        "reports/publication_intake_2026-11-05.json"
+        "reports/public_projection_publication_intake_2026-11-05.json"
       ],
       "command": "uv run python code/orchestrators/build_blake_index.py"
     },

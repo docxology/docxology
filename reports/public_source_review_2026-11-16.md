@@ -2,7 +2,7 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `62710daea876893a7ea4ebe6dee442341ca7cbe7`
+Source commit: `093952b716c49e96e92092da62d01d39e1908987`
 
 ## Disposition summary
 
@@ -26,11 +26,11 @@ Source commit: `62710daea876893a7ea4ebe6dee442341ca7cbe7`
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`01b0ad19e520c8d8190b5da9cb447fbbcfbc41b5a26ce7a5c5b200eab7d1c67e`)
 - `claims_ledger`: `data/claims.json` (`5be7cade42bf0aceb94f9ea8ebca75bf0f78b3cf460ee72fc2c0bfcc05ab762d`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
-- `paired_publication_decisions`: `data/paired-publication-decisions.json` (`27f3ce3932e529bd290ee4b06ef4c56c15466c016a4db6b34c949787046464fa`)
+- `paired_publication_decisions`: `data/paired-publication-decisions.json` (`5c2e4b9f0f088d69af64781a3ceaca1fa1b65859ad23c9f0e3abb9af66f6c0ea`)
 - `paired_publications`: `reports/paired_publications_2026-11-16.json` (`f07dc875526301ff8647dd0d10526eb37b71a65d0ae4e4797044830e4debd452`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-11-05.json` (`b5d115240d903723afa6c790c59c2dfba137b8b6d400c6483b95ad0915d96af2`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-11-06.json` (`3a66683c35ae8a89db5dbeed1dd5916f43bc8b46d80b62d25d5feded2fbf2e12`)
-- `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`574eb00a918e990198aefca851a3ff382e5345a53ced1bf85d1ae3d1eae2a0fa`)
+- `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`7a61b36e2530b38b5fe2b7b516065ee3274ebabad2d896019c3cee2c35cc2c30`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-11-06.json` (`f5dfe3343933b06204876a5047829760d3d39bbe8a2839e0fd6074b5736c0710`)
 - `repository_classification`: `data/repository-classification.json` (`72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`2e2aab3529828a978757d3d08ecc57c9c7303ee9883c77ef765a646155a1cca9`)

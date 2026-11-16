@@ -1673,11 +1673,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 966867413,
+        "source_bytes": 965965523,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6296,
-        "artifact_bytes": 967983884
+        "artifact_file_count": 6299,
+        "artifact_bytes": 967082620
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6403,7 +6403,7 @@
     }
   },
   "dataset_hashes": {
-    "blake_index": "470a9434dee8293ba9c6c0115364d34989458fcc2555862fe668647660dc374c",
+    "blake_index": "f7f8fb0c8d06ed7db389dd3b35149a9792e39c184b1b908a11c958e8834fdb18",
     "works": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
     "work_identifiers": "23826d73d524fcf0a521f6f16894a3e8dccd886adef2fb2f77dfca3bab2d01c4",
     "software": "22e910623e5ac15723e08096bc78a32d88572ec79a64ceffb2a688b8e43edd69",
@@ -6428,7 +6428,7 @@
     "catalog": "fb8d606e38a397d5cf64554117471a37a0d2b49ea8d9dd0b993e0511e0bc9b1f",
     "reconciliation": "8bfb1938cc54583b2c65b81e151c953b3377ee790980d3f51daba5b414a43c6b",
     "reproducibility": "6f95aa4ee5eb6370b307670bad0c6767415287069be77ca6a9dbf669d52b890f",
-    "generated_manifest": "bf3757019681598afff785db4f3c34901eb7bd38455b080b7b2e79e065ec4dab",
+    "generated_manifest": "b690d0a1f711a93983b7118e26f09cc00c0d3179d996de84227738cb4ecbcfba",
     "current_counts": "0ab9ccb57fbe7a2bb0128fa77183401336b456f8ab5f5d5becf3743db15f7ab9"
   },
   "source_provenance": {
@@ -6450,12 +6450,15 @@
     "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
   },
   "verification_status": {
-    "live_report": "/reports/live_site_verification_2026-11-05.json",
-    "generated_at": "2026-11-05T03:07:40Z",
-    "overall_ok": false,
-    "passing": 12,
-    "checked_urls": 17,
-    "pages_status": "built"
+    "status": "pending_post_deploy_attestation",
+    "live_report": null,
+    "generated_at": null,
+    "overall_ok": null,
+    "passing": null,
+    "checked_urls": null,
+    "pages_status": null,
+    "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
+    "policy": "This source manifest does not promote historical live reports into verification of the current candidate. Verify the deployed SHA through a post-deploy attestation."
   },
   "counts": {
     "bibliography_docs_links": 217,
