@@ -1,13 +1,13 @@
 # Current Source Coverage
 
-Generated: `2026-11-16T02:50:01Z`
+Generated: `2026-11-16T03:51:20Z`
 
 This report records legitimate bibliography coverage gaps explicitly. A gap is not evidence that a work is invalid; it identifies what is or is not available in the repository projection.
 
 ## Summary
 
 - no_paper_folder: `17`
-- no_full_text: `23`
+- no_full_text: `22`
 - no_doi: `17`
 - no_canonical_url: `2`
 - non_paper_record: `22`
@@ -57,4 +57,4 @@ This report records legitimate bibliography coverage gaps explicitly. A gap is n
 | Friedman2026ObserversWhoReadTheir230 | Paper | no_doi | needs_review |
 | Friedman2026ActiveInferenceLanguageModel231 | Paper | no_full_text | needs_review |
 | Friedman20262026ActiveInferenceSymposium237 | Book | non_paper_record | legitimate_gap |
-| Friedman2026OPHFEPSynergeticsExecutable238 | Paper | no_full_text, no_doi | needs_review |
+| Friedman2026OPHFEPSynergeticsExecutable238 | Paper | no_doi | needs_review |

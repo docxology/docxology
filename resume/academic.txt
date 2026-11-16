@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-11-16T03:30:25Z
+Generated: 2026-11-16T03:51:20Z
 
 Current public metrics: 234 curated works; 208 catalogued software repositories (165 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 268 docxology + 47 AII public repositories (214 primary, 101 forks).
 
@@ -371,7 +371,7 @@ WORKS AND PUBLICATIONS (234)
 [235] 2026 | Paper | Observers are all you need | Zenodo (preprint) | 10.5281/zenodo.18288113
 [236] 2026 | Paper | Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology | Zenodo (preprint) | 10.5281/zenodo.23987670
 [237] 2026 | Book | 2026 Active Inference Symposium — Presenter Program | Zenodo (presenter program) | 10.5281/zenodo.23986504
-[238] 2026 | Paper | OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities | GitHub release v0.1.0 | https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0
+[238] 2026 | Paper | Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics | GitHub release v0.1.0 | https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0
 
 SOFTWARE (109)
 --------------

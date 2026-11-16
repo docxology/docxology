@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T02:49:21Z",
+  "generated_at": "2026-11-16T03:51:19Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
   "count": 234,
@@ -5886,18 +5886,18 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+      "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
       "venue": "GitHub release v0.1.0",
       "url": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0",
       "doi": "",
       "docs_path": "papers/2026_OPHFEP_Synergetics/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_OPHFEP_Synergetics/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]

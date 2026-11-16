@@ -10889,18 +10889,18 @@
     },
     {
       "key": "Friedman2026OPHFEPSynergeticsExecutable238",
-      "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+      "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
       "authors": [
         "Friedman, Daniel Ari"
       ],
       "year": 2026,
       "url": "/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
-      "bib": "@article{Friedman2026OPHFEPSynergeticsExecutable238,\n  title = {OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {GitHub release v0.1.0},\n  url = {https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0},\n  keywords = {Active Inference; Paper},\n  note = {Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities\nT2  - GitHub release v0.1.0\nUR  - https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0\nKW  - Active Inference\nKW  - Paper\nN1  - Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/\nER  -",
+      "bib": "@article{Friedman2026OPHFEPSynergeticsExecutable238,\n  title = {Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {GitHub release v0.1.0},\n  url = {https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0},\n  keywords = {Active Inference; Paper},\n  note = {Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics\nT2  - GitHub release v0.1.0\nUR  - https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0\nKW  - Active Inference\nKW  - Paper\nN1  - Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/\nER  -",
       "csl": {
         "id": "Friedman2026OPHFEPSynergeticsExecutable238",
         "type": "article-journal",
-        "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+        "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
         "author": [
           {
             "family": "Friedman",

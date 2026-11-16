@@ -2,14 +2,14 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `ca5722efdbd075a94ec47de96e0cf627905a3c6d`
+Source commit: `3488a7eaeaee10b4aa6aa56bb7b787b9fec6d692`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
-| Applied | 487 |
-| Deferred | 3 |
+| Applied | 480 |
+| Deferred | 4 |
 | Rejected | 323 |
 
 | Category | Applied | Deferred | Rejected |
@@ -17,14 +17,14 @@ Source commit: `ca5722efdbd075a94ec47de96e0cf627905a3c6d`
 | `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 7 | 3 | 0 |
 | `public_source_observation` | 12 | 0 | 0 |
-| `repository_classification` | 113 | 0 | 0 |
+| `repository_classification` | 106 | 1 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 290 | 0 | 323 |
 
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`01b0ad19e520c8d8190b5da9cb447fbbcfbc41b5a26ce7a5c5b200eab7d1c67e`)
-- `claims_ledger`: `data/claims.json` (`94ae341a7ea869e8700a79fca983810bbd3a806b99bc9252dc1f334a2720ce6e`)
+- `claims_ledger`: `data/claims.json` (`02f2fd6462ba45e4bb1b7f714af3013237ee3b89260b7327847e963a794f94de`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`27f3ce3932e529bd290ee4b06ef4c56c15466c016a4db6b34c949787046464fa`)
 - `paired_publications`: `reports/paired_publications_2026-11-07.json` (`05eda369765db8b21719cc86c0056efc4630cbe88c9053f1c0cad8c676e85303`)
@@ -32,7 +32,7 @@ Source commit: `ca5722efdbd075a94ec47de96e0cf627905a3c6d`
 - `public_source_inventory`: `reports/public_source_inventory_2026-11-06.json` (`3a66683c35ae8a89db5dbeed1dd5916f43bc8b46d80b62d25d5feded2fbf2e12`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`574eb00a918e990198aefca851a3ff382e5345a53ced1bf85d1ae3d1eae2a0fa`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-11-06.json` (`f5dfe3343933b06204876a5047829760d3d39bbe8a2839e0fd6074b5736c0710`)
-- `repository_classification`: `data/repository-classification.json` (`8fdcefab905fec0464dd24ca4753e21686bb08a6526fcd3d057f252a4f17f04a`)
+- `repository_classification`: `data/repository-classification.json` (`72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`2e2aab3529828a978757d3d08ecc57c9c7303ee9883c77ef765a646155a1cca9`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d`)
 
@@ -41,6 +41,7 @@ Source commit: `ca5722efdbd075a94ec47de96e0cf627905a3c6d`
 - **`biographical_claim_change` — biographical-claim:aii-board-count**: A durable review decision exists, but its SHA-bound claim or cited-source evidence no longer matches; re-review is required.
 - **`biographical_claim_change` — biographical-claim:aii-officer-roles**: A durable review decision exists, but its SHA-bound claim or cited-source evidence no longer matches; re-review is required.
 - **`biographical_claim_change` — biographical-claim:aii-textbook-cohorts**: A durable review decision exists, but its SHA-bound claim or cited-source evidence no longer matches; re-review is required.
+- **`repository_classification` — repository:docxology/.github**: The repository remains outside the curated catalog pending a human classification decision.
 
 ## Applied decisions
 
@@ -146,14 +147,12 @@ Source commit: `ca5722efdbd075a94ec47de96e0cf627905a3c6d`
 - **`repository_classification` — repository:docxology/FEP_RL_VAE**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/FPF**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/FluSight-forecast-hub**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
-- **`repository_classification` — repository:docxology/GEO-INFER-1**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/GitNexus**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/GraphPPL.jl**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/GuildNet**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/HSMM_covariates**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/InsightSpike-AI**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/IntroductionToAlgebraicEvaluation**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
-- **`repository_classification` — repository:docxology/Journal-Utilities**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/LeanDB**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/MatrixCorrectionTools.jl**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/MemOS**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
@@ -174,7 +173,6 @@ Source commit: `ca5722efdbd075a94ec47de96e0cf627905a3c6d`
 - **`repository_classification` — repository:docxology/aif_iwai2025_thoughtseeds**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/amalgkit**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/ant_social_complexity**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
-- **`repository_classification` — repository:docxology/ants**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/aqua-js-cli**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/axiom**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/bend**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
@@ -195,11 +193,8 @@ Source commit: `ca5722efdbd075a94ec47de96e0cf627905a3c6d`
 - **`repository_classification` — repository:docxology/gfacs**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/gno**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/graphcoder**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
-- **`repository_classification` — repository:docxology/groma.md**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
-- **`repository_classification` — repository:docxology/herdr**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/hermes-agent-self-evolution**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/hongos**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
-- **`repository_classification` — repository:docxology/institute_website**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/k**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/keepassxc**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/ki_us**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
@@ -224,7 +219,6 @@ Source commit: `ca5722efdbd075a94ec47de96e0cf627905a3c6d`
 - **`repository_classification` — repository:docxology/pyDMBD**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/pydymax**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/pyhgf**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
-- **`repository_classification` — repository:docxology/pymdp**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/quantum-logical-framework**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/rsv-forecast-hub**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/rxinfer-fastmcp-example**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.

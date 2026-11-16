@@ -14,8 +14,8 @@ Audited works: 234. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | missing_citation_doi | 1 |
 | missing_citation_publication_date | 8 |
 | missing_citation_title | 8 |
-| no_selected_local_pdf | 43 |
-| pdf_directory_differs_from_abstract | 186 |
+| no_selected_local_pdf | 42 |
+| pdf_directory_differs_from_abstract | 187 |
 | pdf_exceeds_byte_limit | 41 |
 
 ## Work-level findings
@@ -255,4 +255,4 @@ Audited works: 234. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | [Observers are all you need](../works/Friedman2026ObserversAreAllYou235.html) | — | no_selected_local_pdf |
 | [Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology](../works/Friedman2026RikishiReproducibleOperationAnalysis236.html) | — | no_selected_local_pdf |
 | [2026 Active Inference Symposium — Presenter Program](../works/Friedman20262026ActiveInferenceSymposium237.html) | — | no_selected_local_pdf |
-| [OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities](../works/Friedman2026OPHFEPSynergeticsExecutable238.html) | — | no_selected_local_pdf |
+| [Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics](../works/Friedman2026OPHFEPSynergeticsExecutable238.html) | 4407619 | pdf_directory_differs_from_abstract |

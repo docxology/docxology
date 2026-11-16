@@ -9845,8 +9845,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
-            "headline": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+            "name": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+            "headline": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
             "datePublished": "2026",
             "author": [
                 {
@@ -9869,7 +9869,7 @@
             "url": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
             "sameAs": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0",
-            "citation": "Friedman, Daniel Ari. 2026. OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities. GitHub release v0.1.0. URL: https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0."
+            "citation": "Friedman, Daniel Ari. 2026. Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics. GitHub release v0.1.0. URL: https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0."
         }
     ]
 }

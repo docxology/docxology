@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T03:30:25Z",
+  "generated_at": "2026-11-16T03:51:20Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "65d72eb97b23413cecee2f6f743b1533dde905c03f75f9d505bf11cb87bf55d2",
+      "sha256": "a3295a59c546d49139c0947a9b17493ad48a652cef381396f733f1e66a714605",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 193932,
-          "sha256": "10f852d90714f64c04e3af0427cf2de2972306ddf862c07576a21b0bf3fee640"
+          "bytes": 194077,
+          "sha256": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330"
         },
         {
           "path": "data/software.json",
           "bytes": 107347,
-          "sha256": "cd758ad54eb09ba7ff85bd704546854d2c2923bdc84aa0e78996515c086e8317"
+          "sha256": "a21c46bdd2f95eaf8e8f4ff5344bf688a0a602190e2e836f28f2dc6b482d6090"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 13016,
-          "sha256": "48cf52125cf9d3c84278ee95ce0bba3dcd3c9a8cc7783f153985ae9a7cce77fc"
+          "sha256": "02f2fd6462ba45e4bb1b7f714af3013237ee3b89260b7327847e963a794f94de"
         },
         {
           "path": "data/github-repositories.json",
@@ -8194,18 +8194,18 @@
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+      "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
       "venue": "GitHub release v0.1.0",
       "url": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0",
       "doi": "",
       "docs_path": "papers/2026_OPHFEP_Synergetics/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_OPHFEP_Synergetics/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -10742,7 +10742,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-16T03:30:24+00:00",
+      "checked_at": "2026-11-16T03:51:19+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10756,7 +10756,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-16T03:30:24+00:00",
+      "checked_at": "2026-11-16T03:51:19+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

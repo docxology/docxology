@@ -4,7 +4,7 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "10f852d90714f64c04e3af0427cf2de2972306ddf862c07576a21b0bf3fee640",
+  "works_sha256": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
   "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
   "network_checked": false,
   "indexing_verified": false,
@@ -19,8 +19,8 @@
       "missing_citation_doi": 1,
       "missing_citation_publication_date": 8,
       "missing_citation_title": 8,
-      "no_selected_local_pdf": 43,
-      "pdf_directory_differs_from_abstract": 186,
+      "no_selected_local_pdf": 42,
+      "pdf_directory_differs_from_abstract": 187,
       "pdf_exceeds_byte_limit": 41
     }
   },
@@ -823,7 +823,7 @@
       "title": "QuadMath: An Analytical Review of 4D and Quadray Coordinates",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025QuadMathAnalyticalReview4D018.html",
-      "page_sha256": "904ea17348b7872b565d9d27a0358c093417c558418e2be7a6e19eee17da7047",
+      "page_sha256": "b2acd4f1451b9d2aa916104b56523adcd6b92293a96b86e976b2ad112be0dda3",
       "citation_tags": {
         "citation_title": [
           "QuadMath: An Analytical Review of 4D and Quadray Coordinates"
@@ -922,7 +922,7 @@
       "title": "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html",
-      "page_sha256": "6a05af2d8b8e18a7afd8a6975baf7af01872d55f2ea56ce113d20e41da327539",
+      "page_sha256": "f95a4e8ff0d2dad58cb6ae2e791979083f890cc9bdc8828a98b61348b8aadd5b",
       "citation_tags": {
         "citation_title": [
           "Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting"
@@ -11218,7 +11218,7 @@
       "title": "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026ObserversWhoReadTheir230.html",
-      "page_sha256": "75844310cf49fe7f86a2b8d9a0b93788f68a99c5a3653f6bce726d863f13e8fa",
+      "page_sha256": "143b9294454c32e6d6cb432c4505dd74637b91b9e98b4caf1230b9ee9da074a3",
       "citation_tags": {
         "citation_title": [
           "Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics"
@@ -11612,26 +11612,37 @@
     },
     {
       "citation_key": "Friedman2026OPHFEPSynergeticsExecutable238",
-      "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+      "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
       "type": "Paper",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
-      "page_sha256": "9d6f2aca297c2ccd0f73cc95bf9938f1706d15cdc730700f264ec8c368935dc1",
+      "page_sha256": "2f67a05ce47700a14de641ec0e0ba61f27db89021a073cfd2fe8442a46a65d7a",
       "citation_tags": {
         "citation_title": [
-          "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities"
+          "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics"
         ],
         "citation_publication_date": [
           "2026/11/15"
         ],
         "citation_author": [
           "Daniel Ari Friedman"
+        ],
+        "citation_pdf_url": [
+          "https://danielarifriedman.com/papers/2026_OPHFEP_Synergetics/OPH-FEP-Synergetics_combined.pdf"
         ]
       },
-      "primary_pdf": null,
+      "primary_pdf": {
+        "path": "papers/2026_OPHFEP_Synergetics/OPH-FEP-Synergetics_combined.pdf",
+        "url": "https://danielarifriedman.com/papers/2026_OPHFEP_Synergetics/OPH-FEP-Synergetics_combined.pdf",
+        "selection_basis": "only archived PDF",
+        "bytes": 4407619,
+        "sha256": "7409d8d1a9cf3073da0712781cde0e209a139bee5c5dccde85af3795540592a3",
+        "within_byte_limit": true,
+        "same_directory_as_abstract": false
+      },
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
-        "no_selected_local_pdf"
+        "pdf_directory_differs_from_abstract"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "name": "OPH-FEP-Synergetics_combined.pdf",
+    "url": "https://github.com/docxology/OPH-FEP-Synergetics/releases/download/v0.1.0/OPH-FEP-Synergetics_combined.pdf",
+    "bytes": 4407619,
+    "sha256": "7409d8d1a9cf3073da0712781cde0e209a139bee5c5dccde85af3795540592a3",
+    "storage": "retained local original"
+  },
+  "registry_observation": {
+    "source": "GitHub Releases API",
+    "repository": "https://github.com/docxology/OPH-FEP-Synergetics",
+    "release": "v0.1.0",
+    "published_at": "2026-11-15T21:42:58Z",
+    "asset_id": "752443692",
+    "asset_sha256": "7409d8d1a9cf3073da0712781cde0e209a139bee5c5dccde85af3795540592a3"
+  },
+  "document_observation": {
+    "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "publication_date": "2026-11-15",
+    "pages": 50,
+    "scope": "Title-page byline/date and full-document text privacy screening; no independent scientific replication."
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "5462c889bd2f0b696b9d6ef35197c2773ebbfa86c3e9dbbee1a1e9277f61cb2a",
+    "source_pdf_sha256": "7409d8d1a9cf3073da0712781cde0e209a139bee5c5dccde85af3795540592a3",
+    "tool": "PyMuPDF 1.28.2",
+    "method": "All pages in document order with page markers; no OCR or image extraction."
+  }
+}

@@ -277,6 +277,7 @@ The contributor column lists authors unless otherwise specified: the contributor
 | 235 | 2026 | 💻 | Paper | Observers are all you need | *Zenodo (preprint)* | [10.5281/zenodo.18288113](https://doi.org/10.5281/zenodo.18288113) | [📁](../papers/2026_ObserversAllYouNeed/) | Mueller, Bernhard; Poneder, Mario; Osika, Alexander; Xue, Kai; Cassie, Ben; Nguyen, Peter; Friedman, Daniel Ari |
 | 236 | 2026 | 💻 | Paper | Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology | *Zenodo (preprint)* | [10.5281/zenodo.23987670](https://doi.org/10.5281/zenodo.23987670) | [📁](../papers/2026_Rikishi/) | Friedman, Daniel Ari |
 | 237 | 2026 | 🎥 | Book | 2026 Active Inference Symposium — Presenter Program | *Zenodo (presenter program)* | [10.5281/zenodo.23986504](https://doi.org/10.5281/zenodo.23986504) | [📁](../papers/2026_SymposiumPresenterProgram/) | Active Inference Institute; Bradly Alicea; Dan Corva, Kevin Backhouse; Hongju Pae; Karl Friston; Alison Gopnik; Bianca Avanzo; Ed Ober; John Boik, Glen EP Ropella; Luca Possati; Majid D. Beni; Mike Levin; Montijn van Loo; Ryan Smith; Sergio Rubin; Takuya Isomura; Ted J. Vrioni; Ahmad Nazzal; Alexander Sabine; Andrew Pashea; Anna Pereira; Avel Guénin—Carlut; Bo Lee; Bruce Tisler; Cleber Gomes; Colin Turfus; Daniel Dragolich; Daniel Friedman; Diaconescu Adrian-Stelian; Harshil Shah, Andrew Pashea; Harshil Shah, Satyaki Maitra; Holly Grimm, John H. Clippinger, Daniel Ari Friedman; Hyojun Choi; Jean-François Cloutier; Lancelot Da Costa; Matthew Brown; Michael Lennon; Michael Walker; Nick Hay, Adam Safron; Patricia Craja; Paulo Santiago; Rajkaushik Borgohain; Robert Worden; Sheena Yap Chan; Stell; Steph Macurdy; Tao Gong; Tiga Kailimai; Tran Hoang Linh; Viraj Deshwal; Vitalii Shapovalov; Vitória de Souza; Xin Sun |
+| 238 | 2026 | 🧠 | Paper | Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics | *GitHub release v0.1.0* | [Release](https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0) | [📁](../papers/2026_OPHFEP_Synergetics/) | Friedman, Daniel Ari |
 ---
 
 ## Domain Index
@@ -393,5 +394,3 @@ The contributor column lists authors unless otherwise specified: the contributor
 *Maintained by Daniel Ari Friedman | [← Back to Home](../README.md)*
 
 </div>
-
-| 238 | 2026 | 🧠 | Paper | OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities | *GitHub release v0.1.0* | [Release](https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0) | [📁](../papers/2026_OPHFEP_Synergetics/) | Friedman, Daniel Ari |

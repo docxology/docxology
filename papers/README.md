@@ -232,7 +232,7 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 214 | [2026_ObserversAllYouNeed](2026_ObserversAllYouNeed/) | — | 2026 | ObserversAllYouNeed |
 | 215 | [2026_Rikishi](2026_Rikishi/) | [Zenodo PDF](https://zenodo.org/api/records/23987671/files/rikishi-1.1.0-paper.pdf/content) | 2026 | Rikishi |
 | 216 | [2026_SymposiumPresenterProgram](2026_SymposiumPresenterProgram/) | [Zenodo PDF](https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf/content) | 2026 | SymposiumPresenterProgram |
-| 217 | [2026_OPHFEP_Synergetics](2026_OPHFEP_Synergetics/) | [Release PDF](https://github.com/docxology/OPH-FEP-Synergetics/blob/v0.1.0/output/pdf/OPH-FEP-Synergetics_combined.pdf) | 2026 | OPH, FEP and Synergetics |
+| 217 | [2026_OPHFEP_Synergetics](2026_OPHFEP_Synergetics/) | ✅ | 2026 | OPH, FEP and Synergetics |
 
 ## Scripts
 

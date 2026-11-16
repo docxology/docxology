@@ -15,7 +15,7 @@
       "Presentations & Media": 15
     },
     "extracted_images": 8959,
-    "full_text_papers": 211,
+    "full_text_papers": 212,
     "generated_exports": {
       "data_publications_ld_main_entity": 234,
       "data_software_json": 208,
@@ -83,7 +83,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-11-16T03:30:24+00:00",
+  "generated_at": "2026-11-16T03:51:19+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-11-08T21:07:14Z",
+      "generated_at": "2026-11-16T03:51:20Z",
       "path": "data/claims.json",
-      "sha256": "94ae341a7ea869e8700a79fca983810bbd3a806b99bc9252dc1f334a2720ce6e",
+      "sha256": "02f2fd6462ba45e4bb1b7f714af3013237ee3b89260b7327847e963a794f94de",
       "source_commit": null
     },
     "doi_role_review": {
@@ -57,9 +57,9 @@
       "source_commit": "d5508e52f5076e5044b17c7f9a7f13e6f9f3bdd7"
     },
     "repository_classification": {
-      "generated_at": "2026-11-05T20:46:40Z",
+      "generated_at": "2026-11-16T03:11:04Z",
       "path": "data/repository-classification.json",
-      "sha256": "8fdcefab905fec0464dd24ca4753e21686bb08a6526fcd3d057f252a4f17f04a",
+      "sha256": "72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -2172,7 +2172,7 @@
     {
       "candidate": {
         "acknowledged_reason": "fork_not_curated",
-        "archived": true,
+        "archived": false,
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
@@ -2182,25 +2182,6 @@
       },
       "category": "repository_classification",
       "id": "repository:docxology/FluSight-forecast-hub",
-      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "applied"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "fork_not_curated",
-        "archived": false,
-        "catalog_role": "acknowledged_not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/GEO-INFER-1",
-        "html_url": "https://github.com/docxology/GEO-INFER-1",
-        "review_status": "acknowledged"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/GEO-INFER-1",
       "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
       "sources": [
         "data/repository-classification.json"
@@ -2328,25 +2309,6 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
-        "full_name": "docxology/Journal-Utilities",
-        "html_url": "https://github.com/docxology/Journal-Utilities",
-        "review_status": "acknowledged"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/Journal-Utilities",
-      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "applied"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "fork_not_curated",
-        "archived": true,
-        "catalog_role": "acknowledged_not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
         "full_name": "docxology/LeanDB",
         "html_url": "https://github.com/docxology/LeanDB",
         "review_status": "acknowledged"
@@ -2457,7 +2419,7 @@
     {
       "candidate": {
         "acknowledged_reason": "fork_not_curated",
-        "archived": false,
+        "archived": true,
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
@@ -2727,25 +2689,6 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
-        "full_name": "docxology/ants",
-        "html_url": "https://github.com/docxology/ants",
-        "review_status": "acknowledged"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/ants",
-      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "applied"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "fork_not_curated",
-        "archived": true,
-        "catalog_role": "acknowledged_not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
         "full_name": "docxology/aqua-js-cli",
         "html_url": "https://github.com/docxology/aqua-js-cli",
         "review_status": "acknowledged"
@@ -2818,7 +2761,7 @@
     {
       "candidate": {
         "acknowledged_reason": "fork_not_curated",
-        "archived": true,
+        "archived": false,
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
@@ -3126,44 +3069,6 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
-        "full_name": "docxology/groma.md",
-        "html_url": "https://github.com/docxology/groma.md",
-        "review_status": "acknowledged"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/groma.md",
-      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "applied"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "fork_not_curated",
-        "archived": true,
-        "catalog_role": "acknowledged_not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/herdr",
-        "html_url": "https://github.com/docxology/herdr",
-        "review_status": "acknowledged"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/herdr",
-      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "applied"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "fork_not_curated",
-        "archived": true,
-        "catalog_role": "acknowledged_not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
         "full_name": "docxology/hermes-agent-self-evolution",
         "html_url": "https://github.com/docxology/hermes-agent-self-evolution",
         "review_status": "acknowledged"
@@ -3189,25 +3094,6 @@
       },
       "category": "repository_classification",
       "id": "repository:docxology/hongos",
-      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "applied"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "website",
-        "archived": false,
-        "catalog_role": "acknowledged_not_curated",
-        "exclusion_reason": "acknowledged_not_catalogued",
-        "fork": false,
-        "full_name": "docxology/institute_website",
-        "html_url": "https://github.com/docxology/institute_website",
-        "review_status": "acknowledged"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/institute_website",
       "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
       "sources": [
         "data/repository-classification.json"
@@ -3677,25 +3563,6 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
-        "full_name": "docxology/pymdp",
-        "html_url": "https://github.com/docxology/pymdp",
-        "review_status": "acknowledged"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/pymdp",
-      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "applied"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "fork_not_curated",
-        "archived": true,
-        "catalog_role": "acknowledged_not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
         "full_name": "docxology/quantum-logical-framework",
         "html_url": "https://github.com/docxology/quantum-logical-framework",
         "review_status": "acknowledged"
@@ -3711,7 +3578,7 @@
     {
       "candidate": {
         "acknowledged_reason": "fork_not_curated",
-        "archived": true,
+        "archived": false,
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
@@ -3901,7 +3768,7 @@
     {
       "candidate": {
         "acknowledged_reason": "fork_not_curated",
-        "archived": false,
+        "archived": true,
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
@@ -3973,6 +3840,25 @@
         "data/repository-classification.json"
       ],
       "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "",
+        "archived": false,
+        "catalog_role": "not_curated",
+        "exclusion_reason": "primary_repo_requires_manual_review",
+        "fork": false,
+        "full_name": "docxology/.github",
+        "html_url": "https://github.com/docxology/.github",
+        "review_status": "defer"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/.github",
+      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "deferred"
     },
     {
       "candidate": {
@@ -19944,12 +19830,81 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "ca5722efdbd075a94ec47de96e0cf627905a3c6d",
-  "source_tree_sha": "495dc501c6121b3a1174e601aa6c86bbcad2ada3",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_commit": "3488a7eaeaee10b4aa6aa56bb7b787b9fec6d692",
+  "source_tree_sha": "948c9e3bc21686983cc87574608fbe574f6b213e",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "bibliography.bib",
+    "bibliography.csl.json",
+    "bibliography.ris",
+    "blake-pathway.html",
+    "catalog.html",
+    "data/blake-index.json",
+    "data/catalog.json",
+    "data/claims.json",
+    "data/collection-catalog.json",
+    "data/coverage-exceptions.json",
+    "data/current-counts.json",
+    "data/organizations.json",
+    "data/people.json",
+    "data/publications-ld.json",
+    "data/reproducibility.json",
+    "data/research-map.json",
+    "data/resume.json",
+    "data/scholar-readiness.json",
+    "data/software.json",
+    "data/works.json",
+    "discovery.html",
+    "domain-active-inference.html",
+    "evidence.html",
+    "feed.xml",
+    "feeds/domain-active-inference.xml",
+    "llms.txt",
+    "pages/BIBLIOGRAPHY.md",
+    "pages/BLAKE.md",
+    "pages/DISCOVERY.md",
+    "pages/EVIDENCE.md",
+    "pages/REPRODUCIBILITY.md",
+    "papers/2026_OPHFEP_Synergetics/CITATION.cff",
+    "papers/2026_OPHFEP_Synergetics/OPH-FEP-Synergetics_combined.pdf",
+    "papers/2026_OPHFEP_Synergetics/README.md",
+    "papers/2026_OPHFEP_Synergetics/SKILL.md",
+    "papers/2026_OPHFEP_Synergetics/full_text.md",
+    "papers/2026_OPHFEP_Synergetics/index.html",
+    "papers/2026_OPHFEP_Synergetics/metadata.json",
+    "papers/2026_OPHFEP_Synergetics/source_evidence.json",
+    "papers/2026_ObserversAllYouNeed/README.md",
+    "papers/2026_ObserversAllYouNeed/SKILL.md",
+    "papers/2026_ObserversAllYouNeed/metadata.json",
+    "papers/README.md",
+    "papers/paper_metadata.json",
+    "publications.html",
+    "reports/current_counts.md",
+    "reports/scholar_readiness.md",
+    "reports/source_coverage_2026-11-16.json",
+    "reports/source_coverage_2026-11-16.md",
+    "reproducibility.html",
+    "resume/academic.txt",
+    "resume/full.txt",
+    "resume/resume.html",
+    "resume/resume.pdf",
+    "resume/software-consulting.txt",
+    "resume/teaching-service.txt",
+    "resume/verify.html",
+    "search-index-bootstrap.json",
+    "search-index-content-video.json",
+    "search-index-content-work.json",
+    "search-index-core.json",
+    "search-index.json",
+    "start-here.html",
+    "works/Friedman2025QuadMathAnalyticalReview4D018.html",
+    "works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html",
+    "works/Friedman2026OPHFEPSynergeticsExecutable238.html",
+    "works/Friedman2026ObserversWhoReadTheir230.html",
+    "works/index.html"
+  ],
   "summary": {
-    "applied": 487,
+    "applied": 480,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
@@ -19967,8 +19922,8 @@
         "rejected": 0
       },
       "repository_classification": {
-        "applied": 113,
-        "deferred": 0,
+        "applied": 106,
+        "deferred": 1,
         "rejected": 0
       },
       "scholar_metric_change": {
@@ -19982,8 +19937,8 @@
         "rejected": 323
       }
     },
-    "deferred": 3,
-    "items": 813,
+    "deferred": 4,
+    "items": 807,
     "rejected": 323,
     "review_required": true
   }

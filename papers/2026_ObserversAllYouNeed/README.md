@@ -31,8 +31,7 @@ _No paper-specific findings have been summarized yet; see the abstract and the f
 - Zenodo record: [https://zenodo.org/records/18288113](https://zenodo.org/records/18288113)
 - Current PDF (Zenodo, version r2065): [observers_are_all_you_need.pdf](https://zenodo.org/api/records/24151588/files/observers_are_all_you_need.pdf/content)
 - Extracted text retains its own source provenance; a matching filename does not establish edition identity.
-- PDF download: [observers_are_all_you_need.pdf](https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content)
-- PDF SHA-256: d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68
+- PDF SHA-256: cb10f71191c5b4cb217a264b4137bc77b800293a94bdccd63ac4b8de5e235620
 
 ## Citation
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-11-16T03:12:59+00:00",
+  "generated_at": "2026-11-16T03:51:19+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -1395,7 +1395,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-11-16T03:12:59+00:00",
+        "checked_at": "2026-11-16T03:51:19+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1431,7 +1431,7 @@
       "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
       "pdf_byte_limit": 5000000,
       "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-      "works_sha256": "10f852d90714f64c04e3af0427cf2de2972306ddf862c07576a21b0bf3fee640",
+      "works_sha256": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
       "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
       "network_checked": false,
       "indexing_verified": false,
@@ -1443,8 +1443,11 @@
         },
         "blockers": {
           "missing_citation_author": 11,
-          "no_selected_local_pdf": 43,
-          "pdf_directory_differs_from_abstract": 186,
+          "missing_citation_doi": 1,
+          "missing_citation_publication_date": 8,
+          "missing_citation_title": 8,
+          "no_selected_local_pdf": 42,
+          "pdf_directory_differs_from_abstract": 187,
           "pdf_exceeds_byte_limit": 41
         }
       },
@@ -1578,7 +1581,7 @@
           "Presentations & Media": 15
         },
         "extracted_images": 8959,
-        "full_text_papers": 211,
+        "full_text_papers": 212,
         "generated_exports": {
           "data_publications_ld_main_entity": 234,
           "data_software_json": 208,
@@ -1619,7 +1622,7 @@
           "update_existing": 0,
           "zenodo_records": 193
         },
-        "paper_folder_docs": 216,
+        "paper_folder_docs": 217,
         "papers_with_images": 145,
         "public_source_snapshot": {
           "Crossref ORCID DOI records": 15,
@@ -1646,7 +1649,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-11-16T03:12:59+00:00",
+      "generated_at": "2026-11-16T03:51:19+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1670,11 +1673,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 962226914,
+        "source_bytes": 966806560,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6290,
-        "artifact_bytes": 963342277
+        "artifact_file_count": 6293,
+        "artifact_bytes": 967922493
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1686,7 +1689,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-11-16T03:12:04Z",
+      "generated_at": "2026-11-16T03:52:06Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1752,27 +1755,27 @@
       "signal_totals": {
         "persistent_id": 217,
         "public_archive": 175,
-        "open_full_text": 211,
+        "open_full_text": 212,
         "source_documents": 217,
         "executable_code": 87,
         "agent_readable": 217
       },
       "band_counts": {
         "independently reproducible": 173,
-        "independently checkable": 43,
-        "citable only": 9,
+        "independently checkable": 44,
+        "citable only": 8,
         "unverified": 9
       },
       "score_histogram": {
         "0": 9,
         "1": 4,
-        "2": 5,
-        "3": 10,
+        "2": 4,
+        "3": 11,
         "4": 33,
         "5": 90,
         "6": 83
       },
-      "mean_score": 4.803,
+      "mean_score": 4.808,
       "works": [
         {
           "num": 5,
@@ -6055,6 +6058,25 @@
           "repositories": []
         },
         {
+          "num": 238,
+          "citation_key": "Friedman2026OPHFEPSynergeticsExecutable238",
+          "title": "Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics",
+          "year": 2026,
+          "domain_name": "Active Inference",
+          "type": "Paper",
+          "score": 3,
+          "band": "independently checkable",
+          "signals": {
+            "persistent_id": false,
+            "public_archive": false,
+            "open_full_text": true,
+            "source_documents": true,
+            "executable_code": false,
+            "agent_readable": true
+          },
+          "repositories": []
+        },
+        {
           "num": 64,
           "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
           "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course in 2023",
@@ -6127,25 +6149,6 @@
             "source_documents": false,
             "executable_code": false,
             "agent_readable": false
-          },
-          "repositories": []
-        },
-        {
-          "num": 238,
-          "citation_key": "Friedman2026OPHFEPSynergeticsExecutable238",
-          "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
-          "year": 2026,
-          "domain_name": "Active Inference",
-          "type": "Paper",
-          "score": 2,
-          "band": "citable only",
-          "signals": {
-            "persistent_id": false,
-            "public_archive": false,
-            "open_full_text": false,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
           },
           "repositories": []
         },
@@ -6400,33 +6403,33 @@
     }
   },
   "dataset_hashes": {
-    "blake_index": "da913913337d1795101ef698d634b04b388fb05523c424b1f6d7491a172424d0",
-    "works": "10f852d90714f64c04e3af0427cf2de2972306ddf862c07576a21b0bf3fee640",
+    "blake_index": "470a9434dee8293ba9c6c0115364d34989458fcc2555862fe668647660dc374c",
+    "works": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
     "work_identifiers": "23826d73d524fcf0a521f6f16894a3e8dccd886adef2fb2f77dfca3bab2d01c4",
-    "software": "9e2e18e56c5f4ec3a0532928ea33386f4eb3699ea3b90c76f56bc54800fa797b",
+    "software": "a21c46bdd2f95eaf8e8f4ff5344bf688a0a602190e2e836f28f2dc6b482d6090",
     "repositories": "df9168b00ac29fe678762c0773747f75787466db7c2fc71a72417e9b47a38e2c",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "4ab5da15a6878393ece05d08c613d931968035eefbeb107d148cf8ff5ddfb687",
     "videos_index": "aef1cfda7fa82b229d97d49742fc04e417cd8fba6db97bda12fcc8a323470f10",
-    "search": "6d6812453336f34053355472d56b4415c73ff0b5a284ed9bf588da58317b624a",
-    "claims": "588022fc27475e5065f2f7c7beb449202052b29cbaf9437f25a5b3e2bbcc6a8c",
+    "search": "450b61f4376854d3c98dc036b6f6c9e88d2e2c501c06edb5568edc2b11521330",
+    "claims": "02f2fd6462ba45e4bb1b7f714af3013237ee3b89260b7327847e963a794f94de",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
-    "coverage_exceptions": "58a32cadd6087c73206580326b9381f94ed6e2df81dc1a66ddcaf210fb2bd9a4",
+    "coverage_exceptions": "e8a253e85f233ddedc483897452251cb1a4de4371823286e4258f59567b274c0",
     "repository_classification": "72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b",
-    "people": "5dd2406eabbd072dd9d5c0894eda532f7cfb8b09be5e1b7ebcb3bd2280079323",
-    "organizations": "982179e8b138826b8e37eeb6920011260269dc26aec15377f471ce6140c9bc8e",
-    "resume": "6ea5282962cb271833dadfd88a5cb438be69e7a5fb193ef59862702dba607dcf",
+    "people": "e3bb582020ed9e34b5f1ec22d476c332552dd69ff1ad71655600a6200f9bdfa5",
+    "organizations": "9f8b88eb9a55ee85a93693a19e8e3063d8290f5e9dfd44b328162ca70f945a4c",
+    "resume": "ffaed9d62d096e1075a4f0ce7644944b8b472e28ecacc0996d4320838373e633",
     "work_enrichment": "3e1b51faba0d2ee08c4f2079028bf541e9308e28f279721a6219326cdb592d31",
-    "collection_catalog": "e985cb39686116fd21d394594ec711046cc85ebab028920654f0279ce694cf57",
-    "research_map": "0218f5b7e0061cbbe31a7177336b088ff36e60cfaee0380d7c66e726d2f68f5a",
+    "collection_catalog": "654499e2aeb531ae449c1228ff2daf652f64b4220922023f1a175b7e68ae1f3c",
+    "research_map": "f4f7051d652f20435c763eca9ff44dcedd47f19c0df7cbfa4746a5637a61db69",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
-    "scholar_readiness": "730f3ea0f65a843f90669a644237d928094ffe91be91988a299ff5c50ff88011",
-    "catalog": "526bc678e7d56f1dd6715af532dd8714057b36e07d66218bf67fd44e60d695e3",
+    "scholar_readiness": "1e88ddc93b9303c134340f73f6e59826329d08456fa38415208b5d2db1787742",
+    "catalog": "fb8d606e38a397d5cf64554117471a37a0d2b49ea8d9dd0b993e0511e0bc9b1f",
     "reconciliation": "8bfb1938cc54583b2c65b81e151c953b3377ee790980d3f51daba5b414a43c6b",
-    "reproducibility": "5dcf81e663d3824c5207c78e7600a743ca09690f1aea0471f6762e85eb0e6f68",
-    "generated_manifest": "e701cd663c89f801c4cfb346663cb3f7da69780282f931a090ef4d1508b106d2",
-    "current_counts": "e14aefe7872caef4729c29396578d1a93843c58a77a2820f1e687a65e03931d3"
+    "reproducibility": "6f95aa4ee5eb6370b307670bad0c6767415287069be77ca6a9dbf669d52b890f",
+    "generated_manifest": "a9ee54df8199b8be4f0df8eb8c5aba8fbd64b539656a88270fb929ad1e89c5eb",
+    "current_counts": "0ab9ccb57fbe7a2bb0128fa77183401336b456f8ab5f5d5becf3743db15f7ab9"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -6468,7 +6471,7 @@
       "Presentations & Media": 15
     },
     "extracted_images": 8959,
-    "full_text_papers": 211,
+    "full_text_papers": 212,
     "generated_exports": {
       "data_publications_ld_main_entity": 234,
       "data_software_json": 208,
@@ -6509,7 +6512,7 @@
       "update_existing": 0,
       "zenodo_records": 193
     },
-    "paper_folder_docs": 216,
+    "paper_folder_docs": 217,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,

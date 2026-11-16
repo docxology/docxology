@@ -95,15 +95,15 @@
   "files": [
     {
       "name": "observers_are_all_you_need.pdf",
-      "size_bytes": 1017315,
-      "checksum": "md5:c28482248292ff6727f9515f0c530c13",
-      "download_url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content"
+      "size_bytes": 449348,
+      "checksum": "md5:1fb60cdcc96e896911a649f9fa2dc909",
+      "download_url": "https://zenodo.org/api/records/24151588/files/observers_are_all_you_need.pdf/content"
     }
   ],
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-11-05T02:52:11Z",
+  "checked_at": "2026-11-16T02:46:19Z",
   "remote_primary_pdf": {
     "name": "observers_are_all_you_need.pdf",
     "url": "https://zenodo.org/api/records/24151588/files/observers_are_all_you_need.pdf/content",
@@ -114,8 +114,8 @@
   },
   "artifact_doi": "10.5281/zenodo.24151588",
   "artifact_doi_url": "https://doi.org/10.5281/zenodo.24151588",
-  "pages": 191,
-  "pdf_sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+  "pages": 71,
+  "pdf_sha256": "cb10f71191c5b4cb217a264b4137bc77b800293a94bdccd63ac4b8de5e235620",
   "domain": "💻",
   "related_papers": [
     "2026_ObserversReadUniverse"
@@ -167,8 +167,24 @@
         "version": "r2054"
       },
       "publication_date": "2026-10-28",
-      "version": "r2054"
+      "version": "r2054",
+      "pages": 191,
+      "files": [
+        {
+          "name": "observers_are_all_you_need.pdf",
+          "size_bytes": 1017315,
+          "checksum": "md5:c28482248292ff6727f9515f0c530c13",
+          "download_url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content"
+        }
+      ]
     }
   ],
-  "refresh_scope": "Registry metadata and checksum-verified current PDF. Existing extracted text, previews and summaries remain attributed to their retained earlier source edition; no new scientific verification. Deposited PDF title page states r2065, released November 11, 2026; registry publication date is November 12. The requested r2066 label is not asserted without source evidence."
+  "refresh_scope": "Registry metadata and checksum-verified current PDF. Existing extracted text, previews and summaries remain attributed to their retained earlier source edition; no new scientific verification. Deposited PDF title page states r2065, released November 11, 2026; registry publication date is November 12. The requested r2066 label is not asserted without source evidence.",
+  "primary_pdf_observation": {
+    "pages": 71,
+    "printed_version": "r2065",
+    "printed_date": "2026-11-11",
+    "sha256": "cb10f71191c5b4cb217a264b4137bc77b800293a94bdccd63ac4b8de5e235620",
+    "scope": "Current PDF title page and page count checked; the older extracted text and its frozen author-verification receipt remain unchanged."
+  }
 }
