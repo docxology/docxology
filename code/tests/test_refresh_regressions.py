@@ -158,8 +158,20 @@ def test_retained_reports_are_not_linked_from_html():
     from docxology_tools.public_repository_links import evidence_entries
     from docxology_tools.report_references import local_report_paths
     archived = {entry["path"] for entry in evidence_entries(ROOT) if entry["class"] == "superseded-report"}
+    from html.parser import HTMLParser
+
+    class LinkedPaths(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.targets = []
+
+        def handle_starttag(self, tag, attrs):
+            self.targets.extend(value for name, value in attrs if name in {"href", "src"} and value)
+
     for path in [*ROOT.glob("*.html"), *(ROOT / "works").glob("*.html")]:
-        assert not (local_report_paths(path.read_text()) & archived), path
+        links = LinkedPaths()
+        links.feed(path.read_text())
+        assert not (local_report_paths("\n".join(links.targets)) & archived), path
 
 
 def test_public_redirects_require_the_same_public_repository_id(tmp_path):
