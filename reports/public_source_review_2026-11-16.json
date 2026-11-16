@@ -29,7 +29,7 @@
     "paired_publications": {
       "generated_at": "2026-11-16T03:38:03Z",
       "path": "reports/paired_publications_2026-11-16.json",
-      "sha256": "265636a68bc9f03574578ee378d4f4f4a6bfa0602f0a560907086411b3072c22",
+      "sha256": "f07dc875526301ff8647dd0d10526eb37b71a65d0ae4e4797044830e4debd452",
       "source_commit": null
     },
     "previous_public_source_snapshot": {
@@ -8442,8 +8442,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "2ca12af615de8701c37597ad111c20fefe331875",
-  "source_tree_sha": "6cdb99f4814d6ff7e6706d398a51c92b8905c9b8",
+  "source_commit": "1b39d8fd56e17d1c68eb23dd145192e7b1e3010f",
+  "source_tree_sha": "57dc29582157db86e99bf0c985f06358a2d6cdaa",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {

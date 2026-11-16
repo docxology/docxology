@@ -71,6 +71,7 @@ Scripts under `code/orchestrators/` that do not produce a matrix artifact row: r
 
 | Script | Role | Purpose |
 | --- | --- | --- |
+| `code/orchestrators/project_public_source_links.py` | privacy projection | Filter newly imported owned-repository links against the observed public inventory without altering literal historical extracts. |
 | `code/orchestrators/audit_content_citations.py` | audit | Checks published HTML targets/fragments, catalog-derived citations and explicit joint authorship; optional source-bound inventories and live external probes |
 | `code/orchestrators/profile_backend.py` | inspection | Bounded Python 3.15 timing/tracing for fixed read-only backend workloads with source/runtime/result bindings; external JSON diagnostics only |
 | `code/orchestrators/agent.py` | inspection | Offline read-only maintenance inspection: versioned JSON status and ordered write/check previews derived from the canonical generation plan; never executes writers or network intake |

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-16T05:39:00Z",
-  "source_commit_at_generation": "2ca12af615de8701c37597ad111c20fefe331875",
+  "generated_at": "2026-11-16T06:58:27Z",
+  "source_commit_at_generation": "1b39d8fd56e17d1c68eb23dd145192e7b1e3010f",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 966874429,
+    "source_bytes": 966866728,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6294,
-    "artifact_bytes": 967990545
+    "artifact_file_count": 6296,
+    "artifact_bytes": 967983198
   },
   "included_files": [
     {
@@ -81,8 +81,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 161132,
-      "sha256": "5c39546da14e6487998b60467faf40d62ad0423be91042ca5983d30a529ff574"
+      "bytes": 162879,
+      "sha256": "432f3e408ae00fa3ae5df7a968dc8fd4e1614dc77230a98f31d4e7e90d76393b"
     },
     {
       "path": "CITATION.cff",
@@ -121,8 +121,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 21677,
-      "sha256": "dc4677a780b4b71205007de5751ef4b8a773a706a4f016a0a9af3a3c0fb18ef4"
+      "bytes": 20168,
+      "sha256": "75932d287aab2418ada22730a6a6b6452004fa8c9df8d8f507546ac3009fb53e"
     },
     {
       "path": "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt",
@@ -10271,8 +10271,8 @@
     },
     {
       "path": "code/orchestrators/build_404_page.py",
-      "bytes": 7638,
-      "sha256": "bef90a3e23c3d9da05daa44e82c7f0b5e0e94706d567a46c27490a783956747d"
+      "bytes": 7549,
+      "sha256": "d981068cf26426205b86cdc8f211d657aa2b5de39befa2635e611e26e5a1807e"
     },
     {
       "path": "code/orchestrators/build_agent_index.py",
@@ -10336,8 +10336,8 @@
     },
     {
       "path": "code/orchestrators/build_generated_manifest.py",
-      "bytes": 44325,
-      "sha256": "bd9dff742cf9b672eb853495dae6e75e195b8a8b871c9f4ef9bec4d961e72676"
+      "bytes": 44519,
+      "sha256": "62dfdb07122dcd626fd0f1b4e2ed15eb3e102bd6b5ec47e4a8160485ae4fc7ca"
     },
     {
       "path": "code/orchestrators/build_github_inventory.py",
@@ -10481,8 +10481,8 @@
     },
     {
       "path": "code/orchestrators/generate_citation_cff.py",
-      "bytes": 26096,
-      "sha256": "db7e89002fe1e9a343309b90e44cdefe3a77070806551798b7ea6b580b93133c"
+      "bytes": 26556,
+      "sha256": "d10c3ab4b35a26e6b95f4484141e4c2e365db410f02655d6da138a647f4bc1d3"
     },
     {
       "path": "code/orchestrators/generate_feed.py",
@@ -10518,6 +10518,11 @@
       "path": "code/orchestrators/profile_backend.py",
       "bytes": 3042,
       "sha256": "47ca0bda98591c882cfd748b246a8ceae3f3b191e22902941c1f9277dffef6bd"
+    },
+    {
+      "path": "code/orchestrators/project_public_source_links.py",
+      "bytes": 1091,
+      "sha256": "81dde4147645de186c5d3fd39105868078dd610b060dca3fb1a0c0837a61caa8"
     },
     {
       "path": "code/orchestrators/prune_old_reports.py",
@@ -10571,8 +10576,8 @@
     },
     {
       "path": "code/orchestrators/settle.py",
-      "bytes": 34816,
-      "sha256": "79a79c61aeaaa3ebce017ea1b12376bdae1a3cb4c8e964c08650af449c5249a5"
+      "bytes": 34850,
+      "sha256": "a6f15879b3529f0e072b6319886805be6496145086ae14c3f5a759ddd3b12e84"
     },
     {
       "path": "code/orchestrators/submit_indexnow.py",
@@ -10591,8 +10596,8 @@
     },
     {
       "path": "code/orchestrators/sync_paired_publications.py",
-      "bytes": 84274,
-      "sha256": "f26b0e7c05f08dc673a3f26ace8f46fecced1f80c35b7ca64de653c2244721e6"
+      "bytes": 84462,
+      "sha256": "6decc4ada2f1d10646803efe84801b743dc881eaffe3933cef83614b6c71101a"
     },
     {
       "path": "code/orchestrators/sync_publications_html.py",
@@ -10631,8 +10636,8 @@
     },
     {
       "path": "code/orchestrators/verify_live_site.py",
-      "bytes": 35248,
-      "sha256": "965a042e3d994a4fb4935209ebeed70a4b4d39a9250c278d859d70b96f96d389"
+      "bytes": 35324,
+      "sha256": "9eff562e817448e87eecdf1ad976107f553817a8f827b5541085d8e664b550f7"
     },
     {
       "path": "code/orchestrators/visual_qa.py",
@@ -10766,8 +10771,8 @@
     },
     {
       "path": "code/src/generation_plan.py",
-      "bytes": 47136,
-      "sha256": "d5136e3be051fa47fef6114fa16fd18815a999a300c33cb2b56c0a624d4e4527"
+      "bytes": 47292,
+      "sha256": "79dd765679a85f9caceab4adfea1b217190afc821e2c776450e2e86693d3db78"
     },
     {
       "path": "code/src/manuscript_figures.py",
@@ -10823,6 +10828,11 @@
       "path": "code/src/public_integrity.py",
       "bytes": 3969,
       "sha256": "1449b9d023f8ac2a742aeb6d67b2d3b285cb6265f31d321a666a475c9f1036ac"
+    },
+    {
+      "path": "code/src/public_repository_links.py",
+      "bytes": 4503,
+      "sha256": "db2cd9591914646160b9f58f266fa5ed6781be062ae205f875b4d172b751e018"
     },
     {
       "path": "code/src/public_source_review.py",
@@ -11526,8 +11536,8 @@
     },
     {
       "path": "code/tests/test_refresh_regressions.py",
-      "bytes": 2915,
-      "sha256": "5645282319275d3f6b3d2b186c8c2e0a083f244187330580762f8f258a6216d2"
+      "bytes": 8450,
+      "sha256": "9149c2eaab58bc0b875c61ff66f561af1ffd373170368e62adb56884d05a7904"
     },
     {
       "path": "code/tests/test_regenerate_all.py",
@@ -12416,8 +12426,8 @@
     },
     {
       "path": "docs/operations/publication-sync.md",
-      "bytes": 47062,
-      "sha256": "b9d8ea5c39aaf0cda1d48ac366845902e78a14693b35ae14dfa7f998d76df1a0"
+      "bytes": 47915,
+      "sha256": "d4b2e19220ae3aa0e8a9c4f73d736e97203ea019f52fedfbb21db2ed92935501"
     },
     {
       "path": "docs/operations/regeneration.md",
@@ -19376,8 +19386,8 @@
     },
     {
       "path": "papers/2026_BlackLine/metadata.json",
-      "bytes": 10276,
-      "sha256": "62343c314d8c181156dcf68b200381258db5070ff51184fdf79125d943ba574c"
+      "bytes": 10464,
+      "sha256": "b89a29d2f58ed0df8438feff62576e3a1de196d2e86d77debd6c98e29577c9fb"
     },
     {
       "path": "papers/2026_BlackLine/source_evidence.json",
@@ -19521,8 +19531,8 @@
     },
     {
       "path": "papers/2026_BlueLine/metadata.json",
-      "bytes": 7289,
-      "sha256": "1cc9a03d056ebfd4573b0cae453a365e81b399a68334f9ef3885a61a96c5f3a2"
+      "bytes": 7477,
+      "sha256": "8f584a966b9f430ea2ca373dc3a3b56ec1a9b760b9cc2388bc86b593a79520f4"
     },
     {
       "path": "papers/2026_BlueLine/source_evidence.json",
@@ -21111,13 +21121,13 @@
     },
     {
       "path": "papers/2026_GoldenLine/metadata.json",
-      "bytes": 10151,
-      "sha256": "a89adeb49f7f2cb7db358b239cfc981d7194515612a01cd702b2f18ce10b2da9"
+      "bytes": 10339,
+      "sha256": "dce5e9ab66b7e7a8489c9e46c5e169b51636c2529fe6891e8824fbce9aab5066"
     },
     {
       "path": "papers/2026_GoldenLine/source_evidence.json",
-      "bytes": 23976,
-      "sha256": "f71bd57f95ccd248f8495a8e23551ec0c849ab7eefb532bcfa70633f09bd0c80"
+      "bytes": 24099,
+      "sha256": "959b8be3d26635b7840ec8b308a8b406272e252624e61b20f250f04e3a4216c3"
     },
     {
       "path": "papers/2026_GreenLine/AGENTS.md",
@@ -21166,13 +21176,13 @@
     },
     {
       "path": "papers/2026_GreenLine/metadata.json",
-      "bytes": 7021,
-      "sha256": "636e6fcb56f082e13a0269c61abc3c56a45e88115b1d58d973da35229420db74"
+      "bytes": 7209,
+      "sha256": "45841db01aa6a42c9b7e739491178dbeb5069ea2587a59a6bc8d4cf1021873ae"
     },
     {
       "path": "papers/2026_GreenLine/source_evidence.json",
-      "bytes": 8018,
-      "sha256": "01a7642bd9d29a931337902054676b56f42175fe1bb7b1a934f1608cfb004f0b"
+      "bytes": 8143,
+      "sha256": "d7fc82c63df180430c786a9db94fdd5ed3edb93873a946c1d7d862ddab1e2921"
     },
     {
       "path": "papers/2026_ITrace/AGENTS.md",
@@ -21386,13 +21396,13 @@
     },
     {
       "path": "papers/2026_LineSet/metadata.json",
-      "bytes": 8424,
-      "sha256": "24445d4975975058ef24f129110cacc6c6be9e5687c64e9a57806e7981e7015b"
+      "bytes": 8612,
+      "sha256": "d8d608eadbf9bbb439d47758c6057a50dd59e608204e54d719d23adffa807cc3"
     },
     {
       "path": "papers/2026_LineSet/source_evidence.json",
-      "bytes": 25297,
-      "sha256": "4d64aeab156712809470a1550f6648adcfd3ed64395d6af0e580af790f3aba12"
+      "bytes": 25100,
+      "sha256": "cccdd29d68d730dcebdaa94affb1ed37a2e1b1f782b49d06485bc39c70f49c7f"
     },
     {
       "path": "papers/2026_LivingMetaAnalysis/AGENTS.md",
@@ -21616,8 +21626,8 @@
     },
     {
       "path": "papers/2026_OPHFEP_Synergetics/CITATION.cff",
-      "bytes": 678,
-      "sha256": "efd66a54b45d4ae70e42afa05b9cc25dfffc15f2a68b4a92e53d080851e2356f"
+      "bytes": 659,
+      "sha256": "08adce6648460d809b5165d2221f6ea43c0c0230cf26f797b42006cdd900fc8d"
     },
     {
       "path": "papers/2026_OPHFEP_Synergetics/OPH-FEP-Synergetics_combined.pdf",
@@ -21646,8 +21656,8 @@
     },
     {
       "path": "papers/2026_OPHFEP_Synergetics/metadata.json",
-      "bytes": 1691,
-      "sha256": "78cb428076535ca063e468f9b40bc70d963bf425e3afb6e3d67572ee3ba59ed6"
+      "bytes": 1672,
+      "sha256": "e230203d944c9faec2333230767827f35c379359eebc840ab7280b45826b3248"
     },
     {
       "path": "papers/2026_OPHFEP_Synergetics/source_evidence.json",
@@ -21841,8 +21851,8 @@
     },
     {
       "path": "papers/2026_PersonalRedLines/metadata.json",
-      "bytes": 7904,
-      "sha256": "f9df239004ba4818ecbfe68606ad038b936ca453197218fd6169d1d64436e96a"
+      "bytes": 8092,
+      "sha256": "8e688a1fdd071301969fe530c8f3d12953666feed73c266406051d30befd87c8"
     },
     {
       "path": "papers/2026_PersonalRedLines/red_line_combined.pdf",
@@ -22651,8 +22661,8 @@
     },
     {
       "path": "papers/2026_SilverLine/metadata.json",
-      "bytes": 8045,
-      "sha256": "2a03720bfc734df51b5464e5556de1c59c9aa0ddd46696efdc540f8f89763615"
+      "bytes": 8233,
+      "sha256": "c4566c341c7ba6ed08c1624ea506ee9ba2f322e79a06d4b93e6c7b1d9e667f33"
     },
     {
       "path": "papers/2026_SilverLine/silver_line_combined.pdf",
@@ -23391,8 +23401,8 @@
     },
     {
       "path": "papers/2026_WhiteLine/metadata.json",
-      "bytes": 7578,
-      "sha256": "05b843f3ef9c1ebd5a894d4b72220237495373436e8ce0feac1bda21452b305f"
+      "bytes": 7766,
+      "sha256": "a39496e76a964b6ca1b45519fcf40e20cdc6579b7135c0797a8a8eee710fe8ee"
     },
     {
       "path": "papers/2026_WhiteLine/source_evidence.json",
@@ -23441,13 +23451,13 @@
     },
     {
       "path": "papers/2026_WitnessRegister/metadata.json",
-      "bytes": 7582,
-      "sha256": "3f66a10d682539565b9684682222afff7f6831d7f337e8cea8622d3cabd0e039"
+      "bytes": 7770,
+      "sha256": "cd93a9f707e83b9f208fc7ef1b54ac027edcacfa96ffae56467098bf7946c4ea"
     },
     {
       "path": "papers/2026_WitnessRegister/source_evidence.json",
-      "bytes": 24357,
-      "sha256": "88f0811dd5fa11ac97f26d7a92e1f76cc627abcd93be48e9af38a1e8264d6674"
+      "bytes": 24160,
+      "sha256": "f4e7910d7db797912cf6c8afab5c4a72d3a6399ec16beb389180201943109d03"
     },
     {
       "path": "papers/2026_WitnessRegister/witness_register_combined.pdf",
@@ -23806,8 +23816,8 @@
     },
     {
       "path": "reports/paired_publications_2026-11-16.json",
-      "bytes": 2184464,
-      "sha256": "265636a68bc9f03574578ee378d4f4f4a6bfa0602f0a560907086411b3072c22"
+      "bytes": 2159784,
+      "sha256": "f07dc875526301ff8647dd0d10526eb37b71a65d0ae4e4797044830e4debd452"
     },
     {
       "path": "reports/paired_publications_review_queue_2026-06-04.md",
@@ -24256,8 +24266,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 245715,
-      "sha256": "4ad73025cc69782f37fa20d9dc91001a4b81ef40a29da250f5f08839903d9b7a"
+      "bytes": 247947,
+      "sha256": "779940cef459aed0d9a3b77b8da52aace21faba0a11c0a151d7ffa891e10460a"
     },
     {
       "path": "uv.lock",
@@ -31611,7 +31621,7 @@
   },
   "omitted_superseded_reports": {
     "count": 798,
-    "bytes": 256557641,
+    "bytes": 256563087,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",

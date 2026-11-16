@@ -2,7 +2,7 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `2ca12af615de8701c37597ad111c20fefe331875`
+Source commit: `1b39d8fd56e17d1c68eb23dd145192e7b1e3010f`
 
 ## Disposition summary
 
@@ -27,7 +27,7 @@ Source commit: `2ca12af615de8701c37597ad111c20fefe331875`
 - `claims_ledger`: `data/claims.json` (`5be7cade42bf0aceb94f9ea8ebca75bf0f78b3cf460ee72fc2c0bfcc05ab762d`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`27f3ce3932e529bd290ee4b06ef4c56c15466c016a4db6b34c949787046464fa`)
-- `paired_publications`: `reports/paired_publications_2026-11-16.json` (`265636a68bc9f03574578ee378d4f4f4a6bfa0602f0a560907086411b3072c22`)
+- `paired_publications`: `reports/paired_publications_2026-11-16.json` (`f07dc875526301ff8647dd0d10526eb37b71a65d0ae4e4797044830e4debd452`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-11-05.json` (`b5d115240d903723afa6c790c59c2dfba137b8b6d400c6483b95ad0915d96af2`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-11-06.json` (`3a66683c35ae8a89db5dbeed1dd5916f43bc8b46d80b62d25d5feded2fbf2e12`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`574eb00a918e990198aefca851a3ff382e5345a53ced1bf85d1ae3d1eae2a0fa`)
