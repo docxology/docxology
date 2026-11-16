@@ -4,7 +4,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21754245-blue)](https://doi.org/10.5281/zenodo.21754245)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24069487-blue)](https://doi.org/10.5281/zenodo.24069487)
 
 ---
 
@@ -30,7 +30,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.21754245](https://doi.org/10.5281/zenodo.21754245)
+- DOI: [10.5281/zenodo.24069487](https://doi.org/10.5281/zenodo.24069487)
 - Artifact DOI: [10.5281/zenodo.22833511](https://doi.org/10.5281/zenodo.22833511)
 - Zenodo record: [https://zenodo.org/records/22833511](https://zenodo.org/records/22833511)
 - Historical local PDF: [witness_register_combined.pdf](witness_register_combined.pdf)
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *The Witness Register: Co-Registration Without Aggregation*. Zenodo. DOI: 10.5281/zenodo.21754245. URL: https://doi.org/10.5281/zenodo.21754245.
+> Daniel Ari Friedman (2026). *The Witness Register: Co-Registration Without Aggregation*. Zenodo. DOI: 10.5281/zenodo.24069487. URL: https://doi.org/10.5281/zenodo.24069487.
 
 ## Related
 

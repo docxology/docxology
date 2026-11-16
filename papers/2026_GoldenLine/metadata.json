@@ -1,8 +1,8 @@
 {
   "title": "Golden Line: Toward What Matters",
   "version": "0.4.1",
-  "doi": "10.5281/zenodo.21754237",
-  "doi_url": "https://doi.org/10.5281/zenodo.21754237",
+  "doi": "10.5281/zenodo.24069423",
+  "doi_url": "https://doi.org/10.5281/zenodo.24069423",
   "zenodo_record": "https://zenodo.org/records/22833506",
   "record_id": "22833506",
   "publication_date": "2026-09-18",
@@ -134,5 +134,30 @@
     "scientific_or_runtime_reproduction": false,
     "historical_text_file": "full_text_before_2026-11-06.md"
   },
-  "document_title": "Golden Line: Toward What Matters"
+  "document_title": "Golden Line: Toward What Matters",
+  "prior_deposits": [
+    {
+      "doi": "10.5281/zenodo.21754237",
+      "note": "Retained manuscript citation and PDF edition before source-archive refresh."
+    }
+  ],
+  "latest_source_archive": {
+    "doi": "10.5281/zenodo.24124417",
+    "concept_doi": "10.5281/zenodo.24069423",
+    "record_id": "24124417",
+    "version": "0.7.0",
+    "publication_date": "2026-11-11",
+    "files": [
+      {
+        "id": "a84f21a8-9902-4305-84ea-1a95ca068b89",
+        "key": "docxology/golden_line-v0.7.0.zip",
+        "size": 4410839,
+        "checksum": "md5:994e2fe3987a2505afc378aac1ca374c",
+        "links": {
+          "self": "https://zenodo.org/api/records/24124417/files/docxology/golden_line-v0.7.0.zip/content"
+        }
+      }
+    ],
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+  }
 }

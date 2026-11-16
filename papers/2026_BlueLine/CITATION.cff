@@ -4,16 +4,16 @@ type: article
 title: "The Blue Line: A Stewardship Instrument for Maintained Commitments"
 version: "0.1.0"
 date-released: 2026-09-18
-doi: 10.5281/zenodo.22833489
-url: "https://doi.org/10.5281/zenodo.22833489"
+doi: 10.5281/zenodo.24069450
+url: "https://doi.org/10.5281/zenodo.24069450"
 authors:
   - family-names: "Friedman"
     given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22833489"
+    value: "10.5281/zenodo.24069450"
     description: "Canonical citation DOI"
   - type: url
-    value: "https://doi.org/10.5281/zenodo.22833489"
+    value: "https://doi.org/10.5281/zenodo.24069450"
     description: "Canonical citation DOI resolver"

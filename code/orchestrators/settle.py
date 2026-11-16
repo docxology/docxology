@@ -137,7 +137,7 @@ def _release_step() -> tuple[str, tuple[str, ...]]:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if head.returncode == 0:
         attestation = (
             Path("reports/deployment-attestations") / f"{head.stdout.strip()}.json"
@@ -207,7 +207,7 @@ def dirty_paths() -> list[str]:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         raise SystemExit(f"git status failed: {result.stderr.strip()}")
     paths: list[str] = []
@@ -345,7 +345,7 @@ def _git_paths(*args: str) -> set[str]:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode:
         raise SystemExit(f"git ls-files failed: {result.stderr.strip()}")
     return set(filter(None, result.stdout.split("\0")))
@@ -358,7 +358,7 @@ def _head() -> str:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode:
         raise SystemExit(f"git HEAD lookup failed: {result.stderr.strip()}")
     return result.stdout.strip()
@@ -400,7 +400,7 @@ def stage_paths(paths: Iterable[str]) -> bool:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if staged.returncode:
         print("staging selected paths ... FAIL")
         print(_tail(staged.stderr or staged.stdout))
@@ -419,7 +419,7 @@ def commit_paths(paths: list[str], message: str, label: str) -> bool:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if committed.returncode != 0:
         print(f"commit {label} ... FAIL (git commit)")
         print(_tail((committed.stdout or "") + (committed.stderr or "")))
@@ -717,7 +717,7 @@ def push_head() -> bool:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         print("FAIL")
         print(_tail(result.stderr or result.stdout))

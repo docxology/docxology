@@ -4,15 +4,176 @@
     <title>Computational Methods &amp; Open Science — RSS</title>
     <link>https://danielarifriedman.com/domain-computational.html</link>
     <description>Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.</description>
-    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0000</lastBuildDate>
     <language>en</language>
     <atom:link href="https://danielarifriedman.com/feeds/domain-computational.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>Observers are all you need</title>
+      <link>https://doi.org/10.5281/zenodo.18288113</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.18288113</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo (preprint) — Mueller, Bernhard, Poneder, Mario, Osika, Alexander, Xue, Kai, Cassie, Ben, Nguyen, Peter, Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology</title>
+      <link>https://doi.org/10.5281/zenodo.23987670</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23987670</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo (preprint) — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Mapping William Blake&#x27;s Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls</title>
+      <link>https://doi.org/10.5281/zenodo.21047573</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21047573</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method</title>
+      <link>https://doi.org/10.5281/zenodo.22409418</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22409418</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>GNN-based active inference for Battleship</title>
+      <link>https://doi.org/10.5281/zenodo.23670187</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23670187</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Thanks for Nothing: Gratitude, Model Revisability, and the Practice of Realizing Emptiness</title>
+      <link>https://doi.org/10.5281/zenodo.23402516</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23402516</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Active Assembly Theory and Practice</title>
+      <link>https://doi.org/10.5281/zenodo.23484107</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23484107</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>iTrace: verification-first webcam eye-movement analysis (corrected manuscript)</title>
+      <link>https://doi.org/10.5281/zenodo.20614908</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20614908</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
     <item>
       <title>Homeward: Typed Geospatial Active Inference in Cascadia | GEO-INFER, GNN &amp; Lean 4</title>
       <link>https://danielarifriedman.com/videos/institute-ULPPTRUvmg4.html</link>
       <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-ULPPTRUvmg4.html</guid>
       <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
       <description>Video — Active Inference Institute</description>
+    </item>
+    <item>
+      <title>antropy: native multidimensional entropy and configurable complexity analysis</title>
+      <link>https://doi.org/10.5281/zenodo.23306200</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23306200</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation</title>
+      <link>https://doi.org/10.5281/zenodo.22663906</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22663906</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>daf-jev: Modular Decision Models, Orchestration, and Reproducible Evaluation</title>
+      <link>https://doi.org/10.5281/zenodo.22816187</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22816187</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Golden Line: Toward What Matters</title>
+      <link>https://doi.org/10.5281/zenodo.24069423</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069423</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Green Line: a capacity-under-development instrument</title>
+      <link>https://doi.org/10.5281/zenodo.24069456</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069456</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>The Line Set: Holding Instruments Apart</title>
+      <link>https://doi.org/10.5281/zenodo.24069474</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069474</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>The Silver Line: A Memory-and-Succession Instrument</title>
+      <link>https://doi.org/10.5281/zenodo.24069438</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069438</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>The Witness Register: Co-Registration Without Aggregation</title>
+      <link>https://doi.org/10.5281/zenodo.24069487</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069487</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</title>
+      <link>https://doi.org/10.5281/zenodo.22754351</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22754351</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>docxplus — the Intelligent Document Container</title>
+      <link>https://doi.org/10.5281/zenodo.21983948</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21983948</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>PROJECT BOND — The Special-Agent Operations Compendium</title>
+      <link>https://doi.org/10.5281/zenodo.21843592</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21843592</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>THALIA: Typed Harness with Analytical Lexical-Integrated Architecture</title>
+      <link>https://doi.org/10.5281/zenodo.21763244</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21763244</guid>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>White Line: A Typed Ledger for the Edge of the Claim</title>
+      <link>https://doi.org/10.5281/zenodo.24069433</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069433</guid>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Codomyrmex: An Artificial Ecology for Agentic Software Development</title>
+      <link>https://doi.org/10.5281/zenodo.21750800</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21750800</guid>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>SynthOBS &amp; FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer</title>
+      <link>https://doi.org/10.5281/zenodo.21418782</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21418782</guid>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
       <title>ActInf GuestStream 128.1: Active Inference as the Test-Time Scaling Law for Physical AI Agents</title>
@@ -22,199 +183,38 @@
       <description>Video — Active Inference Institute</description>
     </item>
     <item>
-      <title>Fundamentals of Active Inference (Coding + Agents, Session 25) July 7, 2026</title>
-      <link>https://danielarifriedman.com/videos/institute-V46B4Xy1PeQ.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-V46B4Xy1PeQ.html</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>Generate Narrated Software Demos from a Config File (DemoCreate, Open Source)</title>
-      <link>https://danielarifriedman.com/videos/personal-GbsZXNjqHuM.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-GbsZXNjqHuM.html</guid>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Video — Personal Channel</description>
-    </item>
-    <item>
-      <title>Fundamentals of Active Inference - Open Source code available up through Chapter 10</title>
-      <link>https://danielarifriedman.com/videos/institute-tmqPfDfQ5-s.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-tmqPfDfQ5-s.html</guid>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>CodeStream #005.1 ~ Inside the template/ studio</title>
-      <link>https://danielarifriedman.com/videos/personal-HCASYc6sUhk.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-HCASYc6sUhk.html</guid>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <description>Video — Personal Channel</description>
-    </item>
-    <item>
-      <title>Fundamentals of Active Inference - Open Source code available</title>
-      <link>https://danielarifriedman.com/videos/institute-qwjwbiJ1LLw.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-qwjwbiJ1LLw.html</guid>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>Turning a City&#x27;s Municipal Code into a Searchable Open-Source App</title>
-      <link>https://danielarifriedman.com/videos/personal-hQC9IcTExaI.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-hQC9IcTExaI.html</guid>
-      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-      <description>Video — Personal Channel</description>
-    </item>
-    <item>
-      <title>A Deterministic Testbed for Self-Organizing Agent-Team Coordination</title>
-      <link>https://doi.org/10.5281/zenodo.20533669</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20533669</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <title>DuckRabbit: Typed Multimodal Illusion Generator</title>
+      <link>https://doi.org/10.5281/zenodo.21419693</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21419693</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
-      <title>A Domain Language for Specifying Controlled Methods</title>
-      <link>https://doi.org/10.5281/zenodo.21086548</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21086548</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Redacted Report Template: Disclosure Control and Release Audit</title>
+      <link>https://doi.org/10.5281/zenodo.21298890</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21298890</guid>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
-      <title>A Living Meta-Analysis of the Modafinil Literature</title>
-      <link>https://doi.org/10.5281/zenodo.20931964</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20931964</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>A template/ approach to Reproducible Generative Research</title>
-      <link>https://doi.org/10.5281/zenodo.20419007</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20419007</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication</title>
-      <link>https://doi.org/10.5281/zenodo.16903351</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.16903351</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>AGEINT: Agentic Intelligence</title>
-      <link>https://doi.org/10.5281/zenodo.20732274</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20732274</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Active Assembly Theory and Practice</title>
-      <link>https://doi.org/10.5281/zenodo.23484107</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23484107</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Active Inference Language Model: A Fully Explicit Discrete Language System and a Gate-Audit Method</title>
-      <link>https://doi.org/10.5281/zenodo.22409418</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22409418</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Active Inference Multi-Track Exemplar</title>
-      <link>https://doi.org/10.5281/zenodo.20417021</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417021</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</title>
-      <link>https://doi.org/10.5281/zenodo.22754351</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22754351</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference</title>
-      <link>https://doi.org/10.5281/zenodo.20976824</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20976824</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari, Tucker Cahill Chambers</description>
-    </item>
-    <item>
-      <title>Autopoietic Project Generation</title>
-      <link>https://doi.org/10.5281/zenodo.21227869</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21227869</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation</title>
-      <link>https://doi.org/10.5281/zenodo.20420556</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20420556</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari, Chambers, Tucker Cahill</description>
-    </item>
-    <item>
-      <title>Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task</title>
-      <link>https://doi.org/10.5281/zenodo.20417016</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417016</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>COGANT: Deterministic Codebase-to-GNN Translation</title>
-      <link>https://doi.org/10.5281/zenodo.20705350</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20705350</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Codomyrmex: An Artificial Ecology for Agentic Software Development</title>
-      <link>https://doi.org/10.5281/zenodo.21750800</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21750800</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Convergence Analysis of Gradient Descent Optimization</title>
-      <link>https://doi.org/10.5281/zenodo.20417136</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417136</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Registered Report Template: Preregistration, Deviations, and Claim Boundaries</title>
+      <link>https://doi.org/10.5281/zenodo.21298892</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21298892</guid>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
       <title>Data Descriptor Template: Schema, Provenance, and Release Readiness</title>
       <link>https://doi.org/10.5281/zenodo.21298883</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21298883</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
-      <title>DemoCreate: Declarative Audio-Visual Demo Generation for Software</title>
-      <link>https://doi.org/10.5281/zenodo.20693216</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20693216</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>DuckRabbit: Typed Multimodal Illusion Generator</title>
-      <link>https://doi.org/10.5281/zenodo.21419693</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21419693</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data</title>
-      <link>https://doi.org/10.5281/zenodo.20396328</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20396328</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Editorial Quality at Scale: A Reproducible Prose-Review Pipeline</title>
-      <link>https://doi.org/10.5281/zenodo.20417104</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417104</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <title>template_pitch_deck: Reproducible, Validated Pitch-Deck Generation</title>
+      <link>https://doi.org/10.5281/zenodo.21281509</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21281509</guid>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
   </channel>

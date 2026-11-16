@@ -302,7 +302,7 @@ def require_committed_manifest(repo_root: Path, commit: str) -> None:
         raise ValueError("expected commit must be a full lowercase Git SHA")
     committed = subprocess.check_output(
         ["git", "show", f"{commit}:{MANIFEST_PATH}"], cwd=repo_root
-    )
+    , stdin=subprocess.DEVNULL)
     if (repo_root / MANIFEST_PATH).read_bytes() != committed:
         raise ValueError(
             "Pages manifest bytes differ from the expected committed candidate"
@@ -432,7 +432,7 @@ def main() -> None:
         )
     head = subprocess.check_output(
         ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT, text=True
-    ).strip()
+    , stdin=subprocess.DEVNULL).strip()
     if args.expected_commit != head:
         parser.error("expected deployment commit must equal checkout HEAD")
     try:

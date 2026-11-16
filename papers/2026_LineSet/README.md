@@ -4,7 +4,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21754243-blue)](https://doi.org/10.5281/zenodo.21754243)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24069474-blue)](https://doi.org/10.5281/zenodo.24069474)
 
 ---
 
@@ -30,7 +30,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.21754243](https://doi.org/10.5281/zenodo.21754243)
+- DOI: [10.5281/zenodo.24069474](https://doi.org/10.5281/zenodo.24069474)
 - Artifact DOI: [10.5281/zenodo.22833507](https://doi.org/10.5281/zenodo.22833507)
 - Zenodo record: [https://zenodo.org/records/22833507](https://zenodo.org/records/22833507)
 - Historical local PDF: [line_set_combined.pdf](line_set_combined.pdf)
@@ -41,7 +41,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *The Line Set: Holding Instruments Apart*. Zenodo. DOI: 10.5281/zenodo.21754243. URL: https://doi.org/10.5281/zenodo.21754243.
+> Daniel Ari Friedman (2026). *The Line Set: Holding Instruments Apart*. Zenodo. DOI: 10.5281/zenodo.24069474. URL: https://doi.org/10.5281/zenodo.24069474.
 
 ## Related
 

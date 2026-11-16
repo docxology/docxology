@@ -66,7 +66,7 @@ def _batch_latest_map(repo_root: Path) -> dict[str, str]:
             capture_output=True,
             text=True,
             timeout=300,
-        )
+        stdin=subprocess.DEVNULL)
     except OSError, subprocess.SubprocessError:
         _BATCH_LATEST = {}
         return _BATCH_LATEST
@@ -102,7 +102,7 @@ def git_lastmod(rel: str, repo_root: Path = REPO_ROOT) -> str | None:
             capture_output=True,
             text=True,
             timeout=60,
-        )
+        stdin=subprocess.DEVNULL)
     except OSError, subprocess.SubprocessError:
         return None
     date = result.stdout.strip()

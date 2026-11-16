@@ -47,7 +47,7 @@ def git(*args: str, text: bool = False) -> str | bytes:
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode:
         stderr = result.stderr.decode("utf-8", "replace").strip()
         raise ValueError(f"git {' '.join(args)} failed: {stderr}")
@@ -67,7 +67,7 @@ def git_text(ref: str, path: str) -> str | None:
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode:
         return None
     return result.stdout.decode("utf-8", "surrogateescape")

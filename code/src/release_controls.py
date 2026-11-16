@@ -177,7 +177,7 @@ def _first_parent(repo_root: Path, commit: str) -> str | None:
         check=False,
         capture_output=True,
         text=True,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         return None
     parents = result.stdout.split()
@@ -208,7 +208,7 @@ def _diff_paths(repo_root: Path, parent: str, commit: str) -> list[Path]:
         cwd=repo_root,
         check=False,
         capture_output=True,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         return [Path(".unresolved-source-revision")]
     return [
@@ -225,7 +225,7 @@ def _parents(repo_root: Path, commit: str) -> list[str]:
         check=False,
         capture_output=True,
         text=True,
-    )
+    stdin=subprocess.DEVNULL)
     return result.stdout.split() if result.returncode == 0 else []
 
 
@@ -236,7 +236,7 @@ def _tree(repo_root: Path, commit: str) -> str | None:
         check=False,
         capture_output=True,
         text=True,
-    )
+    stdin=subprocess.DEVNULL)
     return result.stdout.strip() if result.returncode == 0 else None
 
 
@@ -253,7 +253,7 @@ def source_payload_commit(repo_root: Path) -> str:
         check=False,
         capture_output=True,
         text=True,
-    )
+    stdin=subprocess.DEVNULL)
     head = result.stdout.strip() if result.returncode == 0 else "unknown"
     if head == "unknown":
         return head
@@ -277,5 +277,5 @@ def source_tree_sha(repo_root: Path, commit: str) -> str:
         check=False,
         capture_output=True,
         text=True,
-    )
+    stdin=subprocess.DEVNULL)
     return result.stdout.strip() if result.returncode == 0 else "unknown"

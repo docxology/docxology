@@ -4,7 +4,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21754241-blue)](https://doi.org/10.5281/zenodo.21754241)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24069433-blue)](https://doi.org/10.5281/zenodo.24069433)
 
 ---
 
@@ -36,14 +36,14 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.21754241](https://doi.org/10.5281/zenodo.21754241)
+- DOI: [10.5281/zenodo.24069433](https://doi.org/10.5281/zenodo.24069433)
 - Zenodo record: [https://zenodo.org/records/21754241](https://zenodo.org/records/21754241)
 - PDF: [white_line_combined.pdf](white_line_combined.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21754241)
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *White Line: A Typed Ledger for the Edge of the Claim*. Zenodo. DOI: 10.5281/zenodo.21754241. URL: https://doi.org/10.5281/zenodo.21754241.
+> Daniel Ari Friedman (2026). *White Line: A Typed Ledger for the Edge of the Claim*. Zenodo. DOI: 10.5281/zenodo.24069433. URL: https://doi.org/10.5281/zenodo.24069433.
 
 ## Related
 

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities"
+version: "0.1.0"
+date-released: 2026-11-15
+repository-code: "https://github.com/https://github.com/docxology/OPH-FEP-Synergetics"
+authors:
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: url
+    value: "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0"
+    description: "GitHub release"

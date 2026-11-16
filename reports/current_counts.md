@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-11-07T22:09:45+00:00`
+Generated: `2026-11-16T02:50:37+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -30,18 +30,18 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ## Counts
 
-- Bibliography works: `233`
+- Bibliography works: `234`
 - Paper-folder docs: `216`
 - Full-text extractions: `211`
 - Papers with image galleries: `145`
 - Total extracted images: `8959`
-- Bibliography docs links: `216`
+- Bibliography docs links: `217`
 
 ### Types
 
 - Books: `6`
 - Courses: `3`
-- Papers: `211`
+- Papers: `212`
 - Playbooks: `2`
 - Presentations: `8`
 - Report: `1`
@@ -50,7 +50,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Domains
 
 - Entomology: `24`
-- Active Inference: `48`
+- Active Inference: `49`
 - Cognitive Security: `37`
 - Art & Synergetics: `17`
 - Computational: `71`
@@ -60,33 +60,33 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Software
 
-- docxology_owned: `166`
+- docxology_owned: `156`
 - active_inference_institute: `43`
-- curated_total: `209`
+- curated_total: `199`
 
 ### Generated Exports
 
-- data_works_json: `233`
-- data_software_json: `209`
-- data_publications_ld_main_entity: `233`
-- data_software_ld_main_entity: `209`
+- data_works_json: `234`
+- data_software_json: `199`
+- data_publications_ld_main_entity: `234`
+- data_software_ld_main_entity: `199`
 
 ### GitHub Inventory
 
-- total: `322`
-- docxology: `275`
+- total: `315`
+- docxology: `268`
 - ActiveInferenceInstitute: `47`
-- curated: `209`
-- uncataloged: `113`
-- forks: `106`
-- archived: `96`
-- public: `322`
+- curated: `199`
+- uncataloged: `116`
+- forks: `101`
+- archived: `92`
+- public: `315`
 - private: `0`
-- recently_updated: `320`
-- primary_total: `216`
-- primary_docxology: `171`
+- recently_updated: `315`
+- primary_total: `214`
+- primary_docxology: `169`
 - primary_ActiveInferenceInstitute: `45`
-- fork_docxology: `104`
+- fork_docxology: `99`
 - fork_ActiveInferenceInstitute: `2`
 
 ### Public Source Snapshot

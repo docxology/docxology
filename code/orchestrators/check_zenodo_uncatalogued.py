@@ -135,7 +135,11 @@ def version_doi(record: ZenodoRecord) -> str:
 
 def bibliography_doi_set(repo_root: Path = REPO_ROOT) -> set[str]:
     """Every DOI cited in the bibliography, regardless of whether the row has a papers/ folder."""
-    return {row["doi"] for row in parse_bibliography_rows(repo_root) if row["doi"]}
+    rows = parse_bibliography_rows(repo_root)
+    cited = {row["doi"] for row in rows if row["doi"]}
+    for row in rows:
+        cited.update(re.findall(r"\[Prior deposit\]\(https://doi\.org/(10\.[^\s)]+)\)", row["link"]))
+    return cited
 
 
 def _in_bibliography(record: ZenodoRecord, catalogued_dois: set[str]) -> bool:

@@ -1,8 +1,8 @@
 {
   "title": "The Line Set: Holding Instruments Apart",
   "version": "0.2.0",
-  "doi": "10.5281/zenodo.21754243",
-  "doi_url": "https://doi.org/10.5281/zenodo.21754243",
+  "doi": "10.5281/zenodo.24069474",
+  "doi_url": "https://doi.org/10.5281/zenodo.24069474",
   "zenodo_record": "https://zenodo.org/records/22833507",
   "record_id": "22833507",
   "publication_date": "2026-09-18",
@@ -132,5 +132,30 @@
     "scientific_or_runtime_reproduction": false,
     "historical_text_file": "full_text_before_2026-11-06.md"
   },
-  "document_title": "The Line Set: The Collected Volume"
+  "document_title": "The Line Set: The Collected Volume",
+  "prior_deposits": [
+    {
+      "doi": "10.5281/zenodo.21754243",
+      "note": "Retained manuscript citation and PDF edition before source-archive refresh."
+    }
+  ],
+  "latest_source_archive": {
+    "doi": "10.5281/zenodo.24124421",
+    "concept_doi": "10.5281/zenodo.24069474",
+    "record_id": "24124421",
+    "version": "0.8.0",
+    "publication_date": "2026-11-11",
+    "files": [
+      {
+        "id": "6df351bf-e008-4fe5-9161-be740722fc28",
+        "key": "docxology/line_set-v0.8.0.zip",
+        "size": 605251,
+        "checksum": "md5:6eeb35ba6710e4655b078b2f3ec03b5a",
+        "links": {
+          "self": "https://zenodo.org/api/records/24124421/files/docxology/line_set-v0.8.0.zip/content"
+        }
+      }
+    ],
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+  }
 }

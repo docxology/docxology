@@ -116,7 +116,7 @@ def _git_grep_report_references(repo_root: Path, *, strict: bool = False) -> set
             text=True,
             check=False,
             timeout=30,
-        )
+        stdin=subprocess.DEVNULL)
     except (OSError, subprocess.TimeoutExpired) as exc:
         if strict:
             raise ReferenceScanError("Git reference scan failed or timed out") from exc
@@ -144,7 +144,7 @@ def _unignored_working_tree_files(
             capture_output=True,
             check=False,
             timeout=30,
-        )
+        stdin=subprocess.DEVNULL)
     except (OSError, subprocess.TimeoutExpired) as exc:
         if strict:
             raise ReferenceScanError("Git file inventory failed or timed out") from exc

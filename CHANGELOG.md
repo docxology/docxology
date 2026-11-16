@@ -1693,3 +1693,10 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - Renamed paper folders from author-title form to `YYYY_Topic`.
 - Added `2020_FacilitatorsCatechism`.
 - Added shared bibliography-table parser and publication HTML synchronization script.
+
+## 2026-11-15 — Refresh candidate
+
+- Integrate PR #69 metadata emoji and safe video error rendering fixes and PR #72 published-site README links.
+- Fix homepage JavaScript comment and cover service worker registration in Chromium.
+- Fix direct IndexNow execution outside the repository directory.
+- Fix DOI prose punctuation normalization while retaining internal punctuation.

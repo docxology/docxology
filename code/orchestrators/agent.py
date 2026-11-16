@@ -115,7 +115,7 @@ def _git(root: Path, *args: str) -> subprocess.CompletedProcess:
         check=False,
         timeout=15,
         env={**os.environ, "GIT_OPTIONAL_LOCKS": "0"},
-    )
+    stdin=subprocess.DEVNULL)
 
 
 def status_payload(root: Path) -> dict:

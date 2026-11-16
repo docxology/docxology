@@ -25,7 +25,7 @@ function esc(value) {
     const pendingSegments = new Map();
 
     async function readIndex(path) {
-        const response = await fetch(path, { cache: 'no-cache' });
+        const response = await fetch(path, { cache: 'default' });
         if (!response.ok) throw new Error('Search index request failed: ' + response.status);
         const data = await response.json();
         if (!data || !Array.isArray(data.items) || typeof data.generated_at !== 'string') {

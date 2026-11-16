@@ -71,7 +71,7 @@ def sha256(path: Path) -> str:
 def git_value(*args: str) -> str:
     result = subprocess.run(
         ["git", *args], cwd=REPO_ROOT, capture_output=True, text=True, check=False
-    )
+    , stdin=subprocess.DEVNULL)
     return result.stdout.strip() if result.returncode == 0 else "unknown"
 
 
@@ -93,7 +93,7 @@ def current_worktree_has_release_changes() -> bool:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     return has_release_changes(result.stdout) if result.returncode == 0 else True
 
 
@@ -124,7 +124,7 @@ def deployed_content_differs(deployed_commit: str) -> bool | None:
         cwd=REPO_ROOT,
         capture_output=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode == 0:
         return False
     if result.returncode == 1:

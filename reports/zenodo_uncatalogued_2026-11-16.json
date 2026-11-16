@@ -1,0 +1,375 @@
+{
+  "generated_at": "2026-11-16T03:06:27Z",
+  "zenodo_records_fetched": 193,
+  "zenodo_records_source": {
+    "mode": "cached",
+    "source_report": "reports/paired_publications_2026-11-16.json"
+  },
+  "bibliography_dois": 226,
+  "uncatalogued_count": 3,
+  "software_catalogued_count": 7,
+  "reviewed_source_archive_count": 1,
+  "reviewed_source_archive_context": {
+    "schema_version": 1,
+    "records": [
+      {
+        "record_id": "24094526",
+        "doi": "10.5281/zenodo.17114383",
+        "title": "symergetics",
+        "publication_date": "2026-11-10",
+        "version": "1.4.0",
+        "resource_type": {
+          "title": "Software",
+          "type": "software"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": null,
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "Fraction-backed arithmetic, integer quadray geometry, live solid measurements and computed scientific visualizations. Part of the Synergetics suite with QuadMath and QuadCraft.",
+        "keywords": [],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/symergetics/tree/1.4.0",
+            "relation": "isSupplementTo",
+            "resource_type": "software",
+            "scheme": "url"
+          }
+        ],
+        "files": [
+          {
+            "id": "dad4f4ae-504d-429c-8d30-e10086ec5562",
+            "key": "docxology/symergetics-1.4.0.zip",
+            "size": 51953682,
+            "checksum": "md5:8bd22ad5a8a4e5e13db1bf9456b95868",
+            "links": {
+              "self": "https://zenodo.org/api/records/24094526/files/docxology/symergetics-1.4.0.zip/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/24094526",
+        "doi_url": "https://doi.org/10.5281/zenodo.17114383",
+        "record_url": "https://zenodo.org/records/17114383"
+      },
+      {
+        "record_id": "24094527",
+        "doi": "10.5281/zenodo.16887790",
+        "title": "QuadMath",
+        "publication_date": "2026-11-10",
+        "version": "0.7.0",
+        "resource_type": {
+          "title": "Software",
+          "type": "software"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": null,
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "Quadray mathematics in Python: rank-three embeddings, exact rational volumes, lattice dynamics, optimization and reproducible scientific figures. Part of the Synergetics suite with symergetics and QuadCraft.",
+        "keywords": [],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/QuadMath/tree/0.7.0",
+            "relation": "isSupplementTo",
+            "resource_type": "software",
+            "scheme": "url"
+          }
+        ],
+        "files": [
+          {
+            "id": "91dc4d64-fd90-4fd3-a42c-5653c31ad62e",
+            "key": "docxology/QuadMath-0.7.0.zip",
+            "size": 40467176,
+            "checksum": "md5:87189815e35bb3668b86a2b273ea8007",
+            "links": {
+              "self": "https://zenodo.org/api/records/24094527/files/docxology/QuadMath-0.7.0.zip/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/24094527",
+        "doi_url": "https://doi.org/10.5281/zenodo.16887790",
+        "record_url": "https://zenodo.org/records/16887790"
+      },
+      {
+        "record_id": "24094530",
+        "doi": "10.5281/zenodo.16887767",
+        "title": "QuadCraft",
+        "publication_date": "2026-11-10",
+        "version": "v0.6.0",
+        "resource_type": {
+          "title": "Software",
+          "type": "software"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": null,
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "Quadray-based Python/JavaScript games and an experimental C++/OpenGL voxel project. Shared coordinate contracts and browser/native checks in the Synergetics suite.",
+        "keywords": [],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/QuadCraft/tree/v0.6.0",
+            "relation": "isSupplementTo",
+            "resource_type": "software",
+            "scheme": "url"
+          }
+        ],
+        "files": [
+          {
+            "id": "97208023-f316-459a-b17c-3c2fc532890a",
+            "key": "docxology/QuadCraft-v0.6.0.zip",
+            "size": 7262702,
+            "checksum": "md5:184bc2f0f8cbdc994cce8018a548fbd9",
+            "links": {
+              "self": "https://zenodo.org/api/records/24094530/files/docxology/QuadCraft-v0.6.0.zip/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/24094530",
+        "doi_url": "https://doi.org/10.5281/zenodo.16887767",
+        "record_url": "https://zenodo.org/records/16887767"
+      },
+      {
+        "record_id": "23922458",
+        "doi": "10.5281/zenodo.23922457",
+        "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "publication_date": "2026-11-03",
+        "version": "0.5.0",
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We present *blake*, a 7-phase pipeline that connects a 104-entry work-level target ledger with retained source records, local analysis, provenance, recoverability checks, and generated publication artifacts.\n\nThe saved offline run analyzes 727 local source/copy records. Its 6109 image associations reference 5975 distinct files. It represents 69 ledger targets (66.3%) and fully satisfies the declared evidence profile for 45 targets (43.3%). The text-bearing subset has 540 records and 682407 tokenizer-defined words. These exploratory text results include retained transcriptions with unverified authorship; they are not a Blake-authored language census. The top-level analysis ledger records 727/727 records analyzed and 0 top-level errors. Nested sub-analysis limitations are counted separately.\n\nLocal recovery preserves 8481 inventoried files and 5975/6003 discovered image identifiers, leaving 28 unresolved. Checksums and a corruption-detection restore drill establish recoverability of the captured inventory, not completeness of Blake's oeuvre. Quantitative prose, tables, and figures derive from saved artifacts. Public releases contain project-authored software, manuscript sources, aggregate evidence, and checksums; provider texts, XML, images, private indexes, backups, and source-image mosaics remain local. The contribution is an auditable corpus-governance and preservation method with explicit scholarly and distribution limits.\n\nThe implementation separates corpus custody from application policy. Portable source snapshots and explicit schema conversion preserve source identities and roles, while distinct retrieval profiles expose normalized-token, literal-casefold and regex contracts. Shared counting, hierarchy and evidence-admission methods support application papers without embedding their vocabularies or interpretations. Current source-derived diagrams identify those interfaces separately from the historical analytical producer.\n\nThis deposit pairs the 94-page manuscript edition 0.5.0 with Blake software release 0.7.0. Generic half-open interval methods preserve occupied support, multiplicity and overlapping record pairs while applications retain source grouping and domain judgments. Entomology and Federalism are independent applications, linked as related research objects rather than runtime dependencies.",
+        "keywords": [
+          "William Blake",
+          "digital humanities",
+          "corpus acquisition",
+          "source provenance",
+          "rights-bounded release"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/blake/tree/v0.7.0",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "10.5281/zenodo.23900583",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.23900617",
+            "relation": "references",
+            "scheme": "doi"
+          }
+        ],
+        "files": [
+          {
+            "id": "1a208432-7f13-439a-ab50-7d3b853e6392",
+            "key": "docxology/blake-v0.7.0.zip",
+            "size": 46414221,
+            "checksum": "md5:4c813d8798b1444b4d4dc34d2b0fe50d",
+            "links": {
+              "self": "https://zenodo.org/api/records/23922458/files/docxology/blake-v0.7.0.zip/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/23922458",
+        "doi_url": "https://doi.org/10.5281/zenodo.23922457",
+        "record_url": "https://zenodo.org/records/23922457"
+      }
+    ]
+  },
+  "reviewed_source_archives": [
+    {
+      "record_id": "23922458",
+      "concept_doi": "10.5281/zenodo.23922457",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "resource_type": {
+        "title": "Working paper",
+        "type": "publication",
+        "subtype": "workingpaper"
+      },
+      "software_row": "blake",
+      "paper_folder": "2026_MappingWilliamBlake",
+      "decision_group": "review-2026-11-04-2d2a04dec9b18376",
+      "decision_sha256": "19b7fa5b9541a90a6acd26d28271b954648118befc9841b5fee34809d85b23ab",
+      "source_report": "reports/publication_intake_2026-11-05.json",
+      "source_report_sha256": "db46247a829c34c630554fe205b79fbc3a8bbc9819f94b4b28dec5f4a1d9a645",
+      "record": {
+        "record_id": "23922458",
+        "doi": "10.5281/zenodo.23922457",
+        "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "publication_date": "2026-11-03",
+        "version": "0.5.0",
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "description": "William Blake's works survive across editions, copy records, image archives, museum catalogues, transcriptions, and finding aids. Computational coverage is difficult to assess without explicit units, source authority, and evidence boundaries. We present *blake*, a 7-phase pipeline that connects a 104-entry work-level target ledger with retained source records, local analysis, provenance, recoverability checks, and generated publication artifacts.\n\nThe saved offline run analyzes 727 local source/copy records. Its 6109 image associations reference 5975 distinct files. It represents 69 ledger targets (66.3%) and fully satisfies the declared evidence profile for 45 targets (43.3%). The text-bearing subset has 540 records and 682407 tokenizer-defined words. These exploratory text results include retained transcriptions with unverified authorship; they are not a Blake-authored language census. The top-level analysis ledger records 727/727 records analyzed and 0 top-level errors. Nested sub-analysis limitations are counted separately.\n\nLocal recovery preserves 8481 inventoried files and 5975/6003 discovered image identifiers, leaving 28 unresolved. Checksums and a corruption-detection restore drill establish recoverability of the captured inventory, not completeness of Blake's oeuvre. Quantitative prose, tables, and figures derive from saved artifacts. Public releases contain project-authored software, manuscript sources, aggregate evidence, and checksums; provider texts, XML, images, private indexes, backups, and source-image mosaics remain local. The contribution is an auditable corpus-governance and preservation method with explicit scholarly and distribution limits.\n\nThe implementation separates corpus custody from application policy. Portable source snapshots and explicit schema conversion preserve source identities and roles, while distinct retrieval profiles expose normalized-token, literal-casefold and regex contracts. Shared counting, hierarchy and evidence-admission methods support application papers without embedding their vocabularies or interpretations. Current source-derived diagrams identify those interfaces separately from the historical analytical producer.\n\nThis deposit pairs the 94-page manuscript edition 0.5.0 with Blake software release 0.7.0. Generic half-open interval methods preserve occupied support, multiplicity and overlapping record pairs while applications retain source grouping and domain judgments. Entomology and Federalism are independent applications, linked as related research objects rather than runtime dependencies.",
+        "keywords": [
+          "William Blake",
+          "digital humanities",
+          "corpus acquisition",
+          "source provenance",
+          "rights-bounded release"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "https://github.com/docxology/blake/tree/v0.7.0",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "10.5281/zenodo.23900583",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.23900617",
+            "relation": "references",
+            "scheme": "doi"
+          }
+        ],
+        "files": [
+          {
+            "id": "1a208432-7f13-439a-ab50-7d3b853e6392",
+            "key": "docxology/blake-v0.7.0.zip",
+            "size": 46414221,
+            "checksum": "md5:4c813d8798b1444b4d4dc34d2b0fe50d",
+            "links": {
+              "self": "https://zenodo.org/api/records/23922458/files/docxology/blake-v0.7.0.zip/content"
+            }
+          }
+        ],
+        "html_url": "https://zenodo.org/records/23922458",
+        "doi_url": "https://doi.org/10.5281/zenodo.23922457",
+        "record_url": "https://zenodo.org/records/23922457"
+      }
+    }
+  ],
+  "reviewed_source_archive_drift_count": 0,
+  "reviewed_source_archive_drift": [],
+  "non_canonical_doi_count": 0,
+  "approved_version_specific_doi_exception_count": 2,
+  "version_specific_doi_exception_drift_count": 0,
+  "warnings": [],
+  "uncatalogued": [
+    {
+      "record_id": "24094526",
+      "doi": "10.5281/zenodo.17114383",
+      "title": "symergetics",
+      "publication_date": "2026-11-10",
+      "html_url": "https://zenodo.org/records/24094526"
+    },
+    {
+      "record_id": "24094527",
+      "doi": "10.5281/zenodo.16887790",
+      "title": "QuadMath",
+      "publication_date": "2026-11-10",
+      "html_url": "https://zenodo.org/records/24094527"
+    },
+    {
+      "record_id": "24094530",
+      "doi": "10.5281/zenodo.16887767",
+      "title": "QuadCraft",
+      "publication_date": "2026-11-10",
+      "html_url": "https://zenodo.org/records/24094530"
+    }
+  ],
+  "software_catalogued": [
+    {
+      "record_id": "24147945",
+      "concept_doi": "10.5281/zenodo.24034464",
+      "title": "docxplus \u2014 the Intelligent Document Container",
+      "software_row": "docxplus",
+      "paper_folder": "2026_DocxplusIntelligentDocument"
+    },
+    {
+      "record_id": "24147321",
+      "concept_doi": "10.5281/zenodo.24062584",
+      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "software_row": "alphacogant",
+      "paper_folder": "2026_AlphaCOGANT"
+    },
+    {
+      "record_id": "23987623",
+      "concept_doi": "10.5281/zenodo.23987622",
+      "title": "Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology",
+      "software_row": "rikishi",
+      "paper_folder": "2026_Rikishi"
+    },
+    {
+      "record_id": "23631895",
+      "concept_doi": "10.5281/zenodo.23196891",
+      "title": "fep_formal: Towards Lean 4 Formalization of the Free Energy Principle",
+      "software_row": "fep_formal",
+      "paper_folder": "2026_FEPLean"
+    },
+    {
+      "record_id": "23404029",
+      "concept_doi": "10.5281/zenodo.23404028",
+      "title": "iTrace: verification-first webcam eye-movement analysis",
+      "software_row": "itrace",
+      "paper_folder": "2026_ITrace"
+    },
+    {
+      "record_id": "23383319",
+      "concept_doi": "10.5281/zenodo.23380253",
+      "title": "Realizing Emptiness",
+      "software_row": "realizing_emptiness",
+      "paper_folder": "2026_RealizingEmptiness"
+    },
+    {
+      "record_id": "24092899",
+      "concept_doi": "10.5281/zenodo.24061758",
+      "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+      "software_row": "thalia",
+      "paper_folder": "2026_THALIA"
+    }
+  ],
+  "non_canonical_doi": [],
+  "approved_version_specific_doi_exceptions": [
+    {
+      "record_id": "17982447",
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
+      "concept_doi": "10.5281/zenodo.14108991",
+      "version_doi_in_bibliography": "10.5281/zenodo.17982447",
+      "reason": "AII Ecosystem v3 is a separately curated 2025 bibliographic snapshot, distinct from the earlier v2 concept record."
+    },
+    {
+      "record_id": "15168382",
+      "title": "On Time",
+      "concept_doi": "10.5281/zenodo.15168381",
+      "version_doi_in_bibliography": "10.5281/zenodo.15168382",
+      "reason": "On Time is a separately curated 2025 paper snapshot; all references were deliberately pointed at version record 15168382 in commit d086e7a3 (2026-08-22)."
+    }
+  ],
+  "version_specific_doi_exception_drift": []
+}

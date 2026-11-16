@@ -241,5 +241,198 @@
     "contains_local_paths": false,
     "secret_pattern_count": 0,
     "source": "Canonical URL-aware scan of selected current text and proposed source evidence; historical text is separately reviewed."
+  },
+  "registry_refresh_2026_11_15": {
+    "record": {
+      "created": "2026-11-11T03:26:26.857716+00:00",
+      "modified": "2026-11-11T03:26:27.003244+00:00",
+      "id": 24124416,
+      "conceptrecid": "24069414",
+      "doi": "10.5281/zenodo.24124416",
+      "conceptdoi": "10.5281/zenodo.24069414",
+      "doi_url": "https://doi.org/10.5281/zenodo.24124416",
+      "metadata": {
+        "title": "Black Line: Strong Work in Public",
+        "doi": "10.5281/zenodo.24124416",
+        "publication_date": "2026-11-11",
+        "description": "<p>A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing.</p><p><strong>Subtitle:</strong> A Positive Operating Discipline for Concise, Rigorous Research and Engineering</p><p>Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Friedman, Daniel Ari",
+            "affiliation": "Active Inference Institute",
+            "orcid": "0000-0001-6232-9096"
+          }
+        ],
+        "keywords": [
+          "research practice",
+          "declaration coverage",
+          "evidence discipline",
+          "scientific integrity",
+          "reproducibility",
+          "open science",
+          "engineering practice"
+        ],
+        "related_identifiers": [
+          {
+            "identifier": "10.5281/zenodo.24069415",
+            "relation": "references",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833503",
+            "relation": "isNewVersionOf",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "https://github.com/docxology/black_line",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/red_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/golden_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/white_line",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/line_set",
+            "relation": "isPartOf",
+            "scheme": "url"
+          },
+          {
+            "identifier": "https://github.com/docxology/witness_register",
+            "relation": "references",
+            "scheme": "url"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833506",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754240",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.21754242",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833507",
+            "relation": "cites",
+            "scheme": "doi"
+          },
+          {
+            "identifier": "10.5281/zenodo.22833511",
+            "relation": "cites",
+            "scheme": "doi"
+          }
+        ],
+        "version": "0.6.2",
+        "custom": {
+          "code:codeRepository": "https://github.com/docxology/black_line"
+        },
+        "resource_type": {
+          "title": "Working paper",
+          "type": "publication",
+          "subtype": "workingpaper"
+        },
+        "license": {
+          "id": "cc-by-4.0"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 1,
+              "is_last": true,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "24069414"
+              }
+            }
+          ]
+        },
+        "notes": "Current membership belongs to https://github.com/docxology/line_set. Copper resource quantities are not Black evidence-label declaration burden; Iron recorded recovery target comparisons are not clean rerun or handoff practice and do not predict recovery success. Violet, Copper, and Iron sources are access-controlled; membership is not access. Five earlier companion citation links are retained. Previously verified source archive: 0.6.1, DOI 10.5281/zenodo.24069415; identifies that source ZIP only, not a standalone manuscript. The historical isNewVersionOf DOI 10.5281/zenodo.22833503 identifies archived 0.4.1. This metadata cites later source through its repository until that exact edition/object is independently verified."
+      },
+      "title": "Black Line: Strong Work in Public",
+      "links": {
+        "self": "https://zenodo.org/api/records/24124416",
+        "self_html": "https://zenodo.org/records/24124416",
+        "preview_html": "https://zenodo.org/records/24124416?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.24124416",
+        "self_doi": "https://doi.org/10.5281/zenodo.24124416",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24124416",
+        "reserve_doi": "https://zenodo.org/api/records/24124416/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/24069414",
+        "parent_html": "https://zenodo.org/records/24069414",
+        "parent_doi": "https://doi.org/10.5281/zenodo.24069414",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.24069414",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:24124416/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:24124416/sequence/default",
+        "files": "https://zenodo.org/api/records/24124416/files",
+        "media_files": "https://zenodo.org/api/records/24124416/media-files",
+        "latest": "https://zenodo.org/api/records/24124416/versions/latest",
+        "latest_html": "https://zenodo.org/records/24124416/latest",
+        "versions": "https://zenodo.org/api/records/24124416/versions",
+        "draft": "https://zenodo.org/api/records/24124416/draft",
+        "access_links": "https://zenodo.org/api/records/24124416/access/links",
+        "access_grants": "https://zenodo.org/api/records/24124416/access/grants",
+        "access_users": "https://zenodo.org/api/records/24124416/access/users",
+        "access_request": "https://zenodo.org/api/records/24124416/access/request",
+        "access": "https://zenodo.org/api/records/24124416/access",
+        "communities": "https://zenodo.org/api/records/24124416/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/24124416/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/24124416/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/24124416/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/24124416/quota-increase",
+        "requests": "https://zenodo.org/api/records/24124416/requests"
+      },
+      "updated": "2026-11-11T03:26:27.003244+00:00",
+      "recid": "24124416",
+      "revision": 4,
+      "files": [
+        {
+          "id": "0039f114-84db-48f1-bce7-007e19e7a7c4",
+          "key": "docxology/black_line-v0.6.2.zip",
+          "size": 345855,
+          "checksum": "md5:675b04a63dc6df506aa264fc79ed7149",
+          "links": {
+            "self": "https://zenodo.org/api/records/24124416/files/docxology/black_line-v0.6.2.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "131706"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 5,
+        "unique_downloads": 5,
+        "views": 6,
+        "unique_views": 6,
+        "version_downloads": 3,
+        "version_unique_downloads": 3,
+        "version_unique_views": 3,
+        "version_views": 3
+      },
+      "state": "done",
+      "submitted": true
+    },
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
   }
 }

@@ -133,7 +133,7 @@ def _archive_errors(repo_root: Path, rel: str, entry: dict) -> list[str]:
             capture_output=True,
             check=True,
             timeout=30,
-        )
+        stdin=subprocess.DEVNULL)
         index = subprocess.run(
             [
                 "git",
@@ -149,7 +149,7 @@ def _archive_errors(repo_root: Path, rel: str, entry: dict) -> list[str]:
             capture_output=True,
             check=False,
             timeout=30,
-        )
+        stdin=subprocess.DEVNULL)
         if index.returncode != 0:
             return [f"Git index differs from archive or is unavailable: {rel}"]
         archived = {}

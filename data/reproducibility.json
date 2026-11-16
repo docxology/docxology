@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T01:44:24Z",
+  "generated_at": "2026-11-16T02:51:48Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,31 +61,31 @@
     }
   ],
   "max_score": 6,
-  "work_count": 233,
+  "work_count": 234,
   "signal_totals": {
     "persistent_id": 217,
     "public_archive": 175,
     "open_full_text": 211,
-    "source_documents": 216,
-    "executable_code": 85,
-    "agent_readable": 216
+    "source_documents": 217,
+    "executable_code": 76,
+    "agent_readable": 217
   },
   "band_counts": {
     "independently reproducible": 173,
     "independently checkable": 43,
-    "citable only": 8,
+    "citable only": 9,
     "unverified": 9
   },
   "score_histogram": {
     "0": 9,
     "1": 4,
-    "2": 4,
+    "2": 5,
     "3": 10,
     "4": 33,
-    "5": 92,
-    "6": 81
+    "5": 101,
+    "6": 72
   },
-  "mean_score": 4.807,
+  "mean_score": 4.756,
   "works": [
     {
       "num": 5,
@@ -1139,132 +1139,6 @@
       ]
     },
     {
-      "num": 200,
-      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
-      "title": "The Witness Register: Co-Registration Without Aggregation",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "witness_register"
-      ]
-    },
-    {
-      "num": 201,
-      "citation_key": "Friedman2026LineSetHoldingInstruments201",
-      "title": "The Line Set: Holding Instruments Apart",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "line_set"
-      ]
-    },
-    {
-      "num": 202,
-      "citation_key": "Friedman2026WhiteLineTypedLedger202",
-      "title": "White Line: A Typed Ledger for the Edge of the Claim",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "white_line"
-      ]
-    },
-    {
-      "num": 203,
-      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
-      "title": "Personal Red Lines for Development",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "red_line"
-      ]
-    },
-    {
-      "num": 204,
-      "citation_key": "Friedman2026GoldenLineTowardWhat204",
-      "title": "Golden Line: Toward What Matters",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "golden_line"
-      ]
-    },
-    {
-      "num": 205,
-      "citation_key": "Friedman2026BlackLineStrongWork205",
-      "title": "Black Line: Strong Work in Public",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "black_line"
-      ]
-    },
-    {
       "num": 206,
       "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
       "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
@@ -1514,69 +1388,6 @@
       },
       "repositories": [
         "daf-jev"
-      ]
-    },
-    {
-      "num": 220,
-      "citation_key": "Friedman2026GreenLineCapacityUnder220",
-      "title": "Green Line: a capacity-under-development instrument",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "green_line"
-      ]
-    },
-    {
-      "num": 221,
-      "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
-      "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
-      "year": 2026,
-      "domain_name": "Active Inference",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "blue_line"
-      ]
-    },
-    {
-      "num": 223,
-      "citation_key": "Friedman2026SilverLineMemorySuccession223",
-      "title": "The Silver Line: A Memory-and-Succession Instrument",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 6,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "silver_line"
       ]
     },
     {
@@ -2626,7 +2437,7 @@
         "agent_readable": true
       },
       "repositories": [
-        "ActiveInferAnts",
+        "Active_InferAnts",
         "MetaInformAnt"
       ]
     },
@@ -3429,6 +3240,120 @@
       "repositories": []
     },
     {
+      "num": 200,
+      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 201,
+      "citation_key": "Friedman2026LineSetHoldingInstruments201",
+      "title": "The Line Set: Holding Instruments Apart",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 202,
+      "citation_key": "Friedman2026WhiteLineTypedLedger202",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 203,
+      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
+      "title": "Personal Red Lines for Development",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 204,
+      "citation_key": "Friedman2026GoldenLineTowardWhat204",
+      "title": "Golden Line: Toward What Matters",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 205,
+      "citation_key": "Friedman2026BlackLineStrongWork205",
+      "title": "Black Line: Strong Work in Public",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
       "num": 213,
       "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
       "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
@@ -3467,11 +3392,68 @@
       "repositories": []
     },
     {
+      "num": 220,
+      "citation_key": "Friedman2026GreenLineCapacityUnder220",
+      "title": "Green Line: a capacity-under-development instrument",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 221,
+      "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
+      "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
       "num": 222,
       "citation_key": "Friedman2026VioletLineConsentLedger222",
       "title": "The Violet Line: A Consent Ledger of Affected Parties",
       "year": 2026,
       "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 223,
+      "citation_key": "Friedman2026SilverLineMemorySuccession223",
+      "title": "The Silver Line: A Memory-and-Succession Instrument",
+      "year": 2026,
+      "domain_name": "Computational",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",
@@ -4436,6 +4418,25 @@
         "source_documents": false,
         "executable_code": false,
         "agent_readable": false
+      },
+      "repositories": []
+    },
+    {
+      "num": 238,
+      "citation_key": "Friedman2026OPHFEPSynergeticsExecutable238",
+      "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 2,
+      "band": "citable only",
+      "signals": {
+        "persistent_id": false,
+        "public_archive": false,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
       },
       "repositories": []
     },

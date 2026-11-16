@@ -1,8 +1,8 @@
 {
   "title": "The Witness Register: Co-Registration Without Aggregation",
   "version": "0.1.1",
-  "doi": "10.5281/zenodo.21754245",
-  "doi_url": "https://doi.org/10.5281/zenodo.21754245",
+  "doi": "10.5281/zenodo.24069487",
+  "doi_url": "https://doi.org/10.5281/zenodo.24069487",
   "zenodo_record": "https://zenodo.org/records/22833511",
   "record_id": "22833511",
   "publication_date": "2026-09-18",
@@ -113,5 +113,30 @@
     "scientific_or_runtime_reproduction": false,
     "historical_text_file": "full_text_before_2026-11-06.md"
   },
-  "document_title": "The Witness Register: Co-Registration Without Aggregation"
+  "document_title": "The Witness Register: Co-Registration Without Aggregation",
+  "prior_deposits": [
+    {
+      "doi": "10.5281/zenodo.21754245",
+      "note": "Retained manuscript citation and PDF edition before source-archive refresh."
+    }
+  ],
+  "latest_source_archive": {
+    "doi": "10.5281/zenodo.24124428",
+    "concept_doi": "10.5281/zenodo.24069487",
+    "record_id": "24124428",
+    "version": "0.5.0",
+    "publication_date": "2026-11-11",
+    "files": [
+      {
+        "id": "054a7e25-f883-421e-81b6-1c4364ee2c4e",
+        "key": "docxology/witness_register-v0.5.0.zip",
+        "size": 404868,
+        "checksum": "md5:61a2ee5e68e3abe65f8374a9a9cc1a6d",
+        "links": {
+          "self": "https://zenodo.org/api/records/24124428/files/docxology/witness_register-v0.5.0.zip/content"
+        }
+      }
+    ],
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+  }
 }

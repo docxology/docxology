@@ -4,7 +4,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21754239-blue)](https://doi.org/10.5281/zenodo.21754239)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24069255-blue)](https://doi.org/10.5281/zenodo.24069255)
 
 ---
 
@@ -36,14 +36,14 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.21754239](https://doi.org/10.5281/zenodo.21754239)
+- DOI: [10.5281/zenodo.24069255](https://doi.org/10.5281/zenodo.24069255)
 - Zenodo record: [https://zenodo.org/records/21754239](https://zenodo.org/records/21754239)
 - PDF: [red_line_combined.pdf](red_line_combined.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21754239)
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Personal Red Lines for Development*. Zenodo. DOI: 10.5281/zenodo.21754239. URL: https://doi.org/10.5281/zenodo.21754239.
+> Daniel Ari Friedman (2026). *Personal Red Lines for Development*. Zenodo. DOI: 10.5281/zenodo.24069255. URL: https://doi.org/10.5281/zenodo.24069255.
 
 ## Related
 

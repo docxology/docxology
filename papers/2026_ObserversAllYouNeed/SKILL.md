@@ -6,7 +6,7 @@ tags: ["emergent-spacetime", "quantum-gravity", "holographic-principle", "observ
 domain: "Computational"
 citation: "Bernhard Mueller, Mario Poneder, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Daniel Ari Friedman (2026). *Observers are all you need*. Zenodo (preprint)."
 doi: "10.5281/zenodo.18288113"
-artifact_doi: "10.5281/zenodo.23719196"
+artifact_doi: "10.5281/zenodo.24151588"
 ---
 
 # Observers are all you need
@@ -41,7 +41,7 @@ Verification points for this work:
 - PDF SHA-256: d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68
 - Pairing confidence: unknown
 - Last checked: 2026-11-05T02:52:11Z
-- Artifact DOI: 10.5281/zenodo.23719196
+- Artifact DOI: 10.5281/zenodo.24151588
 
 ## Prerequisites
 

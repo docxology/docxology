@@ -4,9 +4,30 @@
     <title>Active Inference &amp; Free Energy Principle — RSS</title>
     <link>https://danielarifriedman.com/domain-active-inference.html</link>
     <description>Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.</description>
-    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0000</lastBuildDate>
     <language>en</language>
     <atom:link href="https://danielarifriedman.com/feeds/domain-active-inference.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics</title>
+      <link>https://doi.org/10.5281/zenodo.19699233</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.19699233</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Active Inference -- A Synthetic Overview</title>
+      <link>https://doi.org/10.5281/zenodo.23321280</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23321280</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari, Alexandra Mikhailova</description>
+    </item>
+    <item>
+      <title>Active Inference as a Meta-Pragmatic Framework: Executable Models, Evidence, and the Discipline of Revision</title>
+      <link>https://doi.org/10.5281/zenodo.23397452</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.23397452</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
     <item>
       <title>Homeward: Typed Geospatial Active Inference in Cascadia | GEO-INFER, GNN &amp; Lean 4</title>
       <link>https://danielarifriedman.com/videos/institute-ULPPTRUvmg4.html</link>
@@ -64,6 +85,13 @@
       <description>Video — Active Inference Institute</description>
     </item>
     <item>
+      <title>Generalized_Notation_Notation (GNN)</title>
+      <link>https://doi.org/10.5281/zenodo.7803313</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.7803313</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
       <title>Fundamentals of Active Inference (Chapter 10, Session 48) September 25, 2026</title>
       <link>https://danielarifriedman.com/videos/institute-DVJKXtCx2Wo.html</link>
       <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-DVJKXtCx2Wo.html</guid>
@@ -85,11 +113,39 @@
       <description>Video — Active Inference Institute</description>
     </item>
     <item>
+      <title>Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus</title>
+      <link>https://doi.org/10.5281/zenodo.21864003</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21864003</guid>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
       <title>Fundamentals of Active Inference (Chapter 10, Session 46) September 18, 2026</title>
       <link>https://danielarifriedman.com/videos/institute-i5iMnVG17QU.html</link>
       <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-i5iMnVG17QU.html</guid>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
       <description>Video — Active Inference Institute</description>
+    </item>
+    <item>
+      <title>The Blue Line: A Stewardship Instrument for Maintained Commitments</title>
+      <link>https://doi.org/10.5281/zenodo.24069450</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24069450</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>The Violet Line: A Consent Ledger of Affected Parties</title>
+      <link>https://doi.org/10.5281/zenodo.22833487</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22833487</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case</title>
+      <link>https://doi.org/10.5281/zenodo.19695259</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.19695259</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
       <title>Fundamentals of Active Inference (Chapter 10, Session 45) September 15, 2026</title>
@@ -159,62 +215,6 @@
       <link>https://danielarifriedman.com/videos/institute-RaT71q68sOc.html</link>
       <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-RaT71q68sOc.html</guid>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>Fundamentals of Active Inference (Chapter 8, Session 35) August 11, 2026</title>
-      <link>https://danielarifriedman.com/videos/institute-1B8L0Fq8NYY.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-1B8L0Fq8NYY.html</guid>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>Fundamentals of Active Inference (Chapter 7, Session 34) August 7, 2026</title>
-      <link>https://danielarifriedman.com/videos/institute-BvCPqNNUfNU.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-BvCPqNNUfNU.html</guid>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>Fundamentals of Active Inference (Chapter 7, Session 33) August 4, 2026</title>
-      <link>https://danielarifriedman.com/videos/institute-6XjeJMWqCx0.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-6XjeJMWqCx0.html</guid>
-      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>Fundamentals of Active Inference (Chapter 7, Session 32) July 31, 2026</title>
-      <link>https://danielarifriedman.com/videos/institute-WdurCCUQ708.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-WdurCCUQ708.html</guid>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>ActInf GuestStream 130.1: Understanding Integrative Complexity Through Active Inference</title>
-      <link>https://danielarifriedman.com/videos/institute-IOuJgpK9M_A.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-IOuJgpK9M_A.html</guid>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>ActInf ModelStream 010.1: Sharath Sathish &quot;Active Circuit Discovery&quot;</title>
-      <link>https://danielarifriedman.com/videos/institute-U9Z0TIeq1Fc.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-U9Z0TIeq1Fc.html</guid>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>ActInf GuestStream 129.1: TRIAD &amp; ITCE Launch: The Thermodynamics of Ethics (Valeriia Zaiats)</title>
-      <link>https://danielarifriedman.com/videos/institute-mXCOz4OOpho.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-mXCOz4OOpho.html</guid>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Video — Active Inference Institute</description>
-    </item>
-    <item>
-      <title>Fundamentals of Active Inference (Chapter 7, Session 31) July 28, 2026</title>
-      <link>https://danielarifriedman.com/videos/institute-CBMDGH5JQzQ.html</link>
-      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-CBMDGH5JQzQ.html</guid>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
       <description>Video — Active Inference Institute</description>
     </item>
   </channel>

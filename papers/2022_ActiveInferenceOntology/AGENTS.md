@@ -4,7 +4,7 @@
 
 **Paper**: An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons (2022)
 **Domain**: Active Inference
-**Authors**: Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin
+**Authors**: Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin-Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin
 
 ---
 

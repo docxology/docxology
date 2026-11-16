@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T01:43:37Z",
+  "generated_at": "2026-11-16T02:50:56Z",
   "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
-  "count": 233,
+  "count": 234,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -9058,6 +9058,26 @@
         "kind": "publisher_description",
         "url": "https://zenodo.org/records/23986505"
       },
+      "summary_provenance": {}
+    },
+    "Friedman2026OPHFEPSynergeticsExecutable238": {
+      "citation_key": "Friedman2026OPHFEPSynergeticsExecutable238",
+      "source_revision_review": null,
+      "abstract": "An executable correspondence battery across Observer Patch Holography, the Free Energy Principle and Fuller’s Synergetics. Repository-declared scope; this catalog does not independently verify its scientific claims.",
+      "keywords": [
+        "active inference",
+        "synergetics",
+        "observer patch holography"
+      ],
+      "findings": [],
+      "methods": [],
+      "concepts": [],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {},
       "summary_provenance": {}
     }
   }

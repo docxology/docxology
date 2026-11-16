@@ -1,11 +1,11 @@
 {
   "title": "Observers are all you need",
-  "version": "r2054",
+  "version": "r2065",
   "doi": "10.5281/zenodo.18288113",
   "doi_url": "https://doi.org/10.5281/zenodo.18288113",
   "zenodo_record": "https://zenodo.org/records/18288113",
-  "record_id": "23719196",
-  "publication_date": "2026-10-28",
+  "record_id": "24151588",
+  "publication_date": "2026-11-12",
   "resource_type": {
     "title": "Preprint",
     "type": "publication",
@@ -26,6 +26,11 @@
       "affiliation": null
     },
     {
+      "name": "Friedman, Daniel",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    },
+    {
       "name": "Xue, Kai",
       "affiliation": null
     },
@@ -36,11 +41,6 @@
     {
       "name": "Nguyen, Peter",
       "affiliation": null
-    },
-    {
-      "name": "Friedman, Daniel Ari",
-      "affiliation": "Active Inference Institute",
-      "orcid": "0000-0001-6232-9096"
     }
   ],
   "description": "Observer Patch Holography models finite observer patches that retain records, compare overlap readbacks and repair disagreement. The deposited r2054 manuscript reports conditional thermodynamic, finite quantum, gauge-response and field constructions under stated repair-law, clock-and-energy calibration, quantum-algebra and matter premises. Its fine-structure comparisons are diagnostics; one executed interval excludes the measured value. The opening text explicitly states that the finite constructions do not establish physical realization or select a unique universe. This catalog summary does not independently verify the mathematics, software or physical claims.",
@@ -106,14 +106,14 @@
   "checked_at": "2026-11-05T02:52:11Z",
   "remote_primary_pdf": {
     "name": "observers_are_all_you_need.pdf",
-    "url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content",
-    "bytes": 1017315,
-    "sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
-    "record_id": "23719196",
-    "version": "r2054"
+    "url": "https://zenodo.org/api/records/24151588/files/observers_are_all_you_need.pdf/content",
+    "bytes": 449348,
+    "sha256": "cb10f71191c5b4cb217a264b4137bc77b800293a94bdccd63ac4b8de5e235620",
+    "record_id": "24151588",
+    "version": "r2065"
   },
-  "artifact_doi": "10.5281/zenodo.23719196",
-  "artifact_doi_url": "https://doi.org/10.5281/zenodo.23719196",
+  "artifact_doi": "10.5281/zenodo.24151588",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.24151588",
   "pages": 191,
   "pdf_sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
   "domain": "💻",
@@ -153,5 +153,22 @@
         "scope": "Flagship bibliography separately cites seven-author Observers Are All You Need; body calls component papers sources of longer proofs and implementation contracts."
       }
     ]
-  }
+  },
+  "prior_editions": [
+    {
+      "doi": "10.5281/zenodo.18288113",
+      "artifact_doi": "10.5281/zenodo.23719196",
+      "remote_primary_pdf": {
+        "name": "observers_are_all_you_need.pdf",
+        "url": "https://zenodo.org/api/records/23719196/files/observers_are_all_you_need.pdf/content",
+        "bytes": 1017315,
+        "sha256": "d88de3b37c7686d894a7a4e4ed731358f310888c00e9f4a33e6db824889dde68",
+        "record_id": "23719196",
+        "version": "r2054"
+      },
+      "publication_date": "2026-10-28",
+      "version": "r2054"
+    }
+  ],
+  "refresh_scope": "Registry metadata and checksum-verified current PDF. Existing extracted text, previews and summaries remain attributed to their retained earlier source edition; no new scientific verification. Deposited PDF title page states r2065, released November 11, 2026; registry publication date is November 12. The requested r2066 label is not asserted without source evidence."
 }

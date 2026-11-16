@@ -96,7 +96,7 @@ def tracked_paths() -> list[Path]:
         cwd=REPO_ROOT,
         check=True,
         capture_output=True,
-    )
+    stdin=subprocess.DEVNULL)
     paths = [Path(raw) for raw in result.stdout.decode().split("\0") if raw]
     if (
         ARTIFACT_MANIFEST.exists()
@@ -124,7 +124,7 @@ def _is_git_ignored(token: str) -> bool:
         ["git", "check-ignore", "-q", token],
         cwd=REPO_ROOT,
         capture_output=True,
-    )
+    stdin=subprocess.DEVNULL)
     return result.returncode == 0
 
 
@@ -136,7 +136,7 @@ def _head_commit(repo_root: Path) -> str | None:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     value = result.stdout.strip()
     return (
         value
@@ -227,7 +227,7 @@ def is_current_dirty_prepayload_link_snapshot(path: Path, repo_root: Path) -> bo
             capture_output=True,
             check=False,
             timeout=3,
-        )
+        stdin=subprocess.DEVNULL)
         if (
             indexed.returncode
             or {Path(p) for p in indexed.stdout.decode().split("\0") if p} != bundle
@@ -272,7 +272,7 @@ def dirty_postdeploy_payload_paths(
             capture_output=True,
             check=False,
             timeout=30,
-        )
+        stdin=subprocess.DEVNULL)
     except (OSError, subprocess.TimeoutExpired) as exc:
         raise SystemExit("unable to inspect indexed Pages inputs") from exc
     if indexed.returncode != 0:
@@ -283,7 +283,7 @@ def dirty_postdeploy_payload_paths(
         cwd=repo_root,
         capture_output=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         raise SystemExit("unable to inspect dirty Pages inputs")
     return sorted(

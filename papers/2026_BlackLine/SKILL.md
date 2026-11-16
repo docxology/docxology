@@ -5,7 +5,7 @@ description: "Black Line describes an operating discipline implemented through e
 tags: ["research-practice", "declaration-coverage", "evidence-discipline", "scientific-integrity", "reproducibility", "open-science", "engineering-practice"]
 domain: "Cognitive Security"
 citation: "Daniel Ari Friedman (2026). *Black Line: Strong Work in Public*. Zenodo."
-doi: "10.5281/zenodo.21754235"
+doi: "10.5281/zenodo.24069414"
 artifact_doi: "10.5281/zenodo.22833503"
 ---
 
@@ -47,7 +47,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- Canonical DOI: 10.5281/zenodo.21754235
+- Canonical DOI: 10.5281/zenodo.24069414
 - PDF SHA-256: e0c5bf331a5b77a1d1436cbe288ea5e2a2183de81627203dc20ac96e04071c04
 - Pairing confidence: unknown
 - Last checked: 2026-11-06T18:28:38.106041+00:00
@@ -63,6 +63,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.21754235`
+1. Reference the DOI for citation: `10.5281/zenodo.24069414`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -21,7 +21,7 @@ function showTab(e, name) {
         }, { threshold: 0.08 });
         document.querySelectorAll('.card,.stat,.pub-item,.art-card,.connect-card').forEach(el => observer.observe(el));
     }
-    <!-- Service Worker registration -->
+    // Service Worker registration
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js').catch(() => {});
         }

@@ -3416,7 +3416,7 @@
         "Choudhury, Arhan",
         "Cordes, RJ",
         "El Damaty, Shady",
-        "Guénin—Carlut, Avel",
+        "Guénin-Carlut, Avel",
         "Knight, V. Bleu",
         "Metelkin, Ivan",
         "Shrivastava, Siddhant",
@@ -3427,8 +3427,8 @@
       ],
       "year": 2022,
       "url": "/works/Friedman2022ActiveInferenceOntologyDecentralized066.html",
-      "bib": "@article{Friedman2022ActiveInferenceOntologyDecentralized066,\n  title = {An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons},\n  author = {Friedman, Daniel and Applegate-Swanson, Shaun and Balbuena, Jessica Angeli and Choudhury, Arhan and Cordes, RJ and El Damaty, Shady and Guénin—Carlut, Avel and Knight, V. Bleu and Metelkin, Ivan and Shrivastava, Siddhant and Singh, Amit Kumar and Smékal, Jakub and Caleb, Tuttle. and Vyatkin, Alexander},\n  year = {2022},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.6320574},\n  url = {https://doi.org/10.5281/zenodo.6320574},\n  keywords = {Active Inference; Paper},\n  note = {Catalog row 66; docs: papers/2022_ActiveInferenceOntology/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel\nAU  - Applegate-Swanson, Shaun\nAU  - Balbuena, Jessica Angeli\nAU  - Choudhury, Arhan\nAU  - Cordes, RJ\nAU  - El Damaty, Shady\nAU  - Guénin—Carlut, Avel\nAU  - Knight, V. Bleu\nAU  - Metelkin, Ivan\nAU  - Shrivastava, Siddhant\nAU  - Singh, Amit Kumar\nAU  - Smékal, Jakub\nAU  - Caleb, Tuttle.\nAU  - Vyatkin, Alexander\nPY  - 2022\nTI  - An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons\nT2  - Zenodo\nDO  - 10.5281/zenodo.6320574\nUR  - https://doi.org/10.5281/zenodo.6320574\nKW  - Active Inference\nKW  - Paper\nN1  - Catalog row 66; docs: papers/2022_ActiveInferenceOntology/\nER  -",
+      "bib": "@article{Friedman2022ActiveInferenceOntologyDecentralized066,\n  title = {An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons},\n  author = {Friedman, Daniel and Applegate-Swanson, Shaun and Balbuena, Jessica Angeli and Choudhury, Arhan and Cordes, RJ and El Damaty, Shady and Guénin-Carlut, Avel and Knight, V. Bleu and Metelkin, Ivan and Shrivastava, Siddhant and Singh, Amit Kumar and Smékal, Jakub and Caleb, Tuttle. and Vyatkin, Alexander},\n  year = {2022},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.6320574},\n  url = {https://doi.org/10.5281/zenodo.6320574},\n  keywords = {Active Inference; Paper},\n  note = {Catalog row 66; docs: papers/2022_ActiveInferenceOntology/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel\nAU  - Applegate-Swanson, Shaun\nAU  - Balbuena, Jessica Angeli\nAU  - Choudhury, Arhan\nAU  - Cordes, RJ\nAU  - El Damaty, Shady\nAU  - Guénin-Carlut, Avel\nAU  - Knight, V. Bleu\nAU  - Metelkin, Ivan\nAU  - Shrivastava, Siddhant\nAU  - Singh, Amit Kumar\nAU  - Smékal, Jakub\nAU  - Caleb, Tuttle.\nAU  - Vyatkin, Alexander\nPY  - 2022\nTI  - An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons\nT2  - Zenodo\nDO  - 10.5281/zenodo.6320574\nUR  - https://doi.org/10.5281/zenodo.6320574\nKW  - Active Inference\nKW  - Paper\nN1  - Catalog row 66; docs: papers/2022_ActiveInferenceOntology/\nER  -",
       "csl": {
         "id": "Friedman2022ActiveInferenceOntologyDecentralized066",
         "type": "article-journal",
@@ -3459,7 +3459,7 @@
             "given": "Shady"
           },
           {
-            "family": "Guénin—Carlut",
+            "family": "Guénin-Carlut",
             "given": "Avel"
           },
           {
@@ -9173,8 +9173,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026WitnessRegisterCoRegistration200.html",
-      "bib": "@article{Friedman2026WitnessRegisterCoRegistration200,\n  title = {The Witness Register: Co-Registration Without Aggregation},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.21754245},\n  url = {https://doi.org/10.5281/zenodo.21754245},\n  keywords = {Computational; Paper},\n  note = {Catalog row 200; docs: papers/2026_WitnessRegister/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - The Witness Register: Co-Registration Without Aggregation\nT2  - Zenodo\nDO  - 10.5281/zenodo.21754245\nUR  - https://doi.org/10.5281/zenodo.21754245\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 200; docs: papers/2026_WitnessRegister/\nER  -",
+      "bib": "@article{Friedman2026WitnessRegisterCoRegistration200,\n  title = {The Witness Register: Co-Registration Without Aggregation},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069487},\n  url = {https://doi.org/10.5281/zenodo.24069487},\n  keywords = {Computational; Paper},\n  note = {Catalog row 200; docs: papers/2026_WitnessRegister/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - The Witness Register: Co-Registration Without Aggregation\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069487\nUR  - https://doi.org/10.5281/zenodo.24069487\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 200; docs: papers/2026_WitnessRegister/\nER  -",
       "csl": {
         "id": "Friedman2026WitnessRegisterCoRegistration200",
         "type": "article-journal",
@@ -9197,8 +9197,8 @@
         "note": "Catalog row 200; docs: papers/2026_WitnessRegister/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.21754245",
-        "URL": "https://doi.org/10.5281/zenodo.21754245"
+        "DOI": "10.5281/zenodo.24069487",
+        "URL": "https://doi.org/10.5281/zenodo.24069487"
       }
     },
     {
@@ -9209,8 +9209,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026LineSetHoldingInstruments201.html",
-      "bib": "@article{Friedman2026LineSetHoldingInstruments201,\n  title = {The Line Set: Holding Instruments Apart},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.21754243},\n  url = {https://doi.org/10.5281/zenodo.21754243},\n  keywords = {Computational; Paper},\n  note = {Catalog row 201; docs: papers/2026_LineSet/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - The Line Set: Holding Instruments Apart\nT2  - Zenodo\nDO  - 10.5281/zenodo.21754243\nUR  - https://doi.org/10.5281/zenodo.21754243\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 201; docs: papers/2026_LineSet/\nER  -",
+      "bib": "@article{Friedman2026LineSetHoldingInstruments201,\n  title = {The Line Set: Holding Instruments Apart},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069474},\n  url = {https://doi.org/10.5281/zenodo.24069474},\n  keywords = {Computational; Paper},\n  note = {Catalog row 201; docs: papers/2026_LineSet/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - The Line Set: Holding Instruments Apart\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069474\nUR  - https://doi.org/10.5281/zenodo.24069474\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 201; docs: papers/2026_LineSet/\nER  -",
       "csl": {
         "id": "Friedman2026LineSetHoldingInstruments201",
         "type": "article-journal",
@@ -9233,8 +9233,8 @@
         "note": "Catalog row 201; docs: papers/2026_LineSet/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.21754243",
-        "URL": "https://doi.org/10.5281/zenodo.21754243"
+        "DOI": "10.5281/zenodo.24069474",
+        "URL": "https://doi.org/10.5281/zenodo.24069474"
       }
     },
     {
@@ -9245,8 +9245,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026WhiteLineTypedLedger202.html",
-      "bib": "@article{Friedman2026WhiteLineTypedLedger202,\n  title = {White Line: A Typed Ledger for the Edge of the Claim},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.21754241},\n  url = {https://doi.org/10.5281/zenodo.21754241},\n  keywords = {Computational; Paper},\n  note = {Catalog row 202; docs: papers/2026_WhiteLine/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - White Line: A Typed Ledger for the Edge of the Claim\nT2  - Zenodo\nDO  - 10.5281/zenodo.21754241\nUR  - https://doi.org/10.5281/zenodo.21754241\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 202; docs: papers/2026_WhiteLine/\nER  -",
+      "bib": "@article{Friedman2026WhiteLineTypedLedger202,\n  title = {White Line: A Typed Ledger for the Edge of the Claim},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069433},\n  url = {https://doi.org/10.5281/zenodo.24069433},\n  keywords = {Computational; Paper},\n  note = {Catalog row 202; docs: papers/2026_WhiteLine/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - White Line: A Typed Ledger for the Edge of the Claim\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069433\nUR  - https://doi.org/10.5281/zenodo.24069433\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 202; docs: papers/2026_WhiteLine/\nER  -",
       "csl": {
         "id": "Friedman2026WhiteLineTypedLedger202",
         "type": "article-journal",
@@ -9269,8 +9269,8 @@
         "note": "Catalog row 202; docs: papers/2026_WhiteLine/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.21754241",
-        "URL": "https://doi.org/10.5281/zenodo.21754241"
+        "DOI": "10.5281/zenodo.24069433",
+        "URL": "https://doi.org/10.5281/zenodo.24069433"
       }
     },
     {
@@ -9281,8 +9281,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026PersonalRedLinesDevelopment203.html",
-      "bib": "@article{Friedman2026PersonalRedLinesDevelopment203,\n  title = {Personal Red Lines for Development},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.21754239},\n  url = {https://doi.org/10.5281/zenodo.21754239},\n  keywords = {Cognitive Security; Paper},\n  note = {Catalog row 203; docs: papers/2026_PersonalRedLines/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Personal Red Lines for Development\nT2  - Zenodo\nDO  - 10.5281/zenodo.21754239\nUR  - https://doi.org/10.5281/zenodo.21754239\nKW  - Cognitive Security\nKW  - Paper\nN1  - Catalog row 203; docs: papers/2026_PersonalRedLines/\nER  -",
+      "bib": "@article{Friedman2026PersonalRedLinesDevelopment203,\n  title = {Personal Red Lines for Development},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069255},\n  url = {https://doi.org/10.5281/zenodo.24069255},\n  keywords = {Cognitive Security; Paper},\n  note = {Catalog row 203; docs: papers/2026_PersonalRedLines/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Personal Red Lines for Development\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069255\nUR  - https://doi.org/10.5281/zenodo.24069255\nKW  - Cognitive Security\nKW  - Paper\nN1  - Catalog row 203; docs: papers/2026_PersonalRedLines/\nER  -",
       "csl": {
         "id": "Friedman2026PersonalRedLinesDevelopment203",
         "type": "article-journal",
@@ -9305,8 +9305,8 @@
         "note": "Catalog row 203; docs: papers/2026_PersonalRedLines/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.21754239",
-        "URL": "https://doi.org/10.5281/zenodo.21754239"
+        "DOI": "10.5281/zenodo.24069255",
+        "URL": "https://doi.org/10.5281/zenodo.24069255"
       }
     },
     {
@@ -9317,8 +9317,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026GoldenLineTowardWhat204.html",
-      "bib": "@article{Friedman2026GoldenLineTowardWhat204,\n  title = {Golden Line: Toward What Matters},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.21754237},\n  url = {https://doi.org/10.5281/zenodo.21754237},\n  keywords = {Computational; Paper},\n  note = {Catalog row 204; docs: papers/2026_GoldenLine/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Golden Line: Toward What Matters\nT2  - Zenodo\nDO  - 10.5281/zenodo.21754237\nUR  - https://doi.org/10.5281/zenodo.21754237\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 204; docs: papers/2026_GoldenLine/\nER  -",
+      "bib": "@article{Friedman2026GoldenLineTowardWhat204,\n  title = {Golden Line: Toward What Matters},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069423},\n  url = {https://doi.org/10.5281/zenodo.24069423},\n  keywords = {Computational; Paper},\n  note = {Catalog row 204; docs: papers/2026_GoldenLine/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Golden Line: Toward What Matters\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069423\nUR  - https://doi.org/10.5281/zenodo.24069423\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 204; docs: papers/2026_GoldenLine/\nER  -",
       "csl": {
         "id": "Friedman2026GoldenLineTowardWhat204",
         "type": "article-journal",
@@ -9341,8 +9341,8 @@
         "note": "Catalog row 204; docs: papers/2026_GoldenLine/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.21754237",
-        "URL": "https://doi.org/10.5281/zenodo.21754237"
+        "DOI": "10.5281/zenodo.24069423",
+        "URL": "https://doi.org/10.5281/zenodo.24069423"
       }
     },
     {
@@ -9353,8 +9353,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026BlackLineStrongWork205.html",
-      "bib": "@article{Friedman2026BlackLineStrongWork205,\n  title = {Black Line: Strong Work in Public},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.21754235},\n  url = {https://doi.org/10.5281/zenodo.21754235},\n  keywords = {Cognitive Security; Paper},\n  note = {Catalog row 205; docs: papers/2026_BlackLine/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Black Line: Strong Work in Public\nT2  - Zenodo\nDO  - 10.5281/zenodo.21754235\nUR  - https://doi.org/10.5281/zenodo.21754235\nKW  - Cognitive Security\nKW  - Paper\nN1  - Catalog row 205; docs: papers/2026_BlackLine/\nER  -",
+      "bib": "@article{Friedman2026BlackLineStrongWork205,\n  title = {Black Line: Strong Work in Public},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069414},\n  url = {https://doi.org/10.5281/zenodo.24069414},\n  keywords = {Cognitive Security; Paper},\n  note = {Catalog row 205; docs: papers/2026_BlackLine/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Black Line: Strong Work in Public\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069414\nUR  - https://doi.org/10.5281/zenodo.24069414\nKW  - Cognitive Security\nKW  - Paper\nN1  - Catalog row 205; docs: papers/2026_BlackLine/\nER  -",
       "csl": {
         "id": "Friedman2026BlackLineStrongWork205",
         "type": "article-journal",
@@ -9377,8 +9377,8 @@
         "note": "Catalog row 205; docs: papers/2026_BlackLine/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.21754235",
-        "URL": "https://doi.org/10.5281/zenodo.21754235"
+        "DOI": "10.5281/zenodo.24069414",
+        "URL": "https://doi.org/10.5281/zenodo.24069414"
       }
     },
     {
@@ -9907,8 +9907,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026GreenLineCapacityUnder220.html",
-      "bib": "@article{Friedman2026GreenLineCapacityUnder220,\n  title = {Green Line: a capacity-under-development instrument},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.22833491},\n  url = {https://doi.org/10.5281/zenodo.22833491},\n  keywords = {Computational; Paper},\n  note = {Catalog row 220; docs: papers/2026_GreenLine/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Green Line: a capacity-under-development instrument\nT2  - Zenodo\nDO  - 10.5281/zenodo.22833491\nUR  - https://doi.org/10.5281/zenodo.22833491\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 220; docs: papers/2026_GreenLine/\nER  -",
+      "bib": "@article{Friedman2026GreenLineCapacityUnder220,\n  title = {Green Line: a capacity-under-development instrument},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069456},\n  url = {https://doi.org/10.5281/zenodo.24069456},\n  keywords = {Computational; Paper},\n  note = {Catalog row 220; docs: papers/2026_GreenLine/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - Green Line: a capacity-under-development instrument\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069456\nUR  - https://doi.org/10.5281/zenodo.24069456\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 220; docs: papers/2026_GreenLine/\nER  -",
       "csl": {
         "id": "Friedman2026GreenLineCapacityUnder220",
         "type": "article-journal",
@@ -9931,8 +9931,8 @@
         "note": "Catalog row 220; docs: papers/2026_GreenLine/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.22833491",
-        "URL": "https://doi.org/10.5281/zenodo.22833491"
+        "DOI": "10.5281/zenodo.24069456",
+        "URL": "https://doi.org/10.5281/zenodo.24069456"
       }
     },
     {
@@ -9943,8 +9943,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026BlueLineStewardshipInstrument221.html",
-      "bib": "@article{Friedman2026BlueLineStewardshipInstrument221,\n  title = {The Blue Line: A Stewardship Instrument for Maintained Commitments},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.22833489},\n  url = {https://doi.org/10.5281/zenodo.22833489},\n  keywords = {Active Inference; Paper},\n  note = {Catalog row 221; docs: papers/2026_BlueLine/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - The Blue Line: A Stewardship Instrument for Maintained Commitments\nT2  - Zenodo\nDO  - 10.5281/zenodo.22833489\nUR  - https://doi.org/10.5281/zenodo.22833489\nKW  - Active Inference\nKW  - Paper\nN1  - Catalog row 221; docs: papers/2026_BlueLine/\nER  -",
+      "bib": "@article{Friedman2026BlueLineStewardshipInstrument221,\n  title = {The Blue Line: A Stewardship Instrument for Maintained Commitments},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069450},\n  url = {https://doi.org/10.5281/zenodo.24069450},\n  keywords = {Active Inference; Paper},\n  note = {Catalog row 221; docs: papers/2026_BlueLine/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - The Blue Line: A Stewardship Instrument for Maintained Commitments\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069450\nUR  - https://doi.org/10.5281/zenodo.24069450\nKW  - Active Inference\nKW  - Paper\nN1  - Catalog row 221; docs: papers/2026_BlueLine/\nER  -",
       "csl": {
         "id": "Friedman2026BlueLineStewardshipInstrument221",
         "type": "article-journal",
@@ -9967,8 +9967,8 @@
         "note": "Catalog row 221; docs: papers/2026_BlueLine/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.22833489",
-        "URL": "https://doi.org/10.5281/zenodo.22833489"
+        "DOI": "10.5281/zenodo.24069450",
+        "URL": "https://doi.org/10.5281/zenodo.24069450"
       }
     },
     {
@@ -10015,8 +10015,8 @@
       ],
       "year": 2026,
       "url": "/works/Friedman2026SilverLineMemorySuccession223.html",
-      "bib": "@article{Friedman2026SilverLineMemorySuccession223,\n  title = {The Silver Line: A Memory-and-Succession Instrument},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.22833485},\n  url = {https://doi.org/10.5281/zenodo.22833485},\n  keywords = {Computational; Paper},\n  note = {Catalog row 223; docs: papers/2026_SilverLine/}\n}",
-      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - The Silver Line: A Memory-and-Succession Instrument\nT2  - Zenodo\nDO  - 10.5281/zenodo.22833485\nUR  - https://doi.org/10.5281/zenodo.22833485\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 223; docs: papers/2026_SilverLine/\nER  -",
+      "bib": "@article{Friedman2026SilverLineMemorySuccession223,\n  title = {The Silver Line: A Memory-and-Succession Instrument},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {Zenodo},\n  doi = {10.5281/zenodo.24069438},\n  url = {https://doi.org/10.5281/zenodo.24069438},\n  keywords = {Computational; Paper},\n  note = {Catalog row 223; docs: papers/2026_SilverLine/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - The Silver Line: A Memory-and-Succession Instrument\nT2  - Zenodo\nDO  - 10.5281/zenodo.24069438\nUR  - https://doi.org/10.5281/zenodo.24069438\nKW  - Computational\nKW  - Paper\nN1  - Catalog row 223; docs: papers/2026_SilverLine/\nER  -",
       "csl": {
         "id": "Friedman2026SilverLineMemorySuccession223",
         "type": "article-journal",
@@ -10039,8 +10039,8 @@
         "note": "Catalog row 223; docs: papers/2026_SilverLine/",
         "container-title": "Zenodo",
         "publisher": "Zenodo",
-        "DOI": "10.5281/zenodo.22833485",
-        "URL": "https://doi.org/10.5281/zenodo.22833485"
+        "DOI": "10.5281/zenodo.24069438",
+        "URL": "https://doi.org/10.5281/zenodo.24069438"
       }
     },
     {
@@ -10885,6 +10885,41 @@
         "publisher": "Zenodo (presenter program)",
         "DOI": "10.5281/zenodo.23986504",
         "URL": "https://doi.org/10.5281/zenodo.23986504"
+      }
+    },
+    {
+      "key": "Friedman2026OPHFEPSynergeticsExecutable238",
+      "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ],
+      "year": 2026,
+      "url": "/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
+      "bib": "@article{Friedman2026OPHFEPSynergeticsExecutable238,\n  title = {OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities},\n  author = {Friedman, Daniel Ari},\n  year = {2026},\n  journal = {GitHub release v0.1.0},\n  url = {https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0},\n  keywords = {Active Inference; Paper},\n  note = {Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/}\n}",
+      "ris": "TY  - JOUR\nAU  - Friedman, Daniel Ari\nPY  - 2026\nTI  - OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities\nT2  - GitHub release v0.1.0\nUR  - https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0\nKW  - Active Inference\nKW  - Paper\nN1  - Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/\nER  -",
+      "csl": {
+        "id": "Friedman2026OPHFEPSynergeticsExecutable238",
+        "type": "article-journal",
+        "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+        "author": [
+          {
+            "family": "Friedman",
+            "given": "Daniel Ari"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "genre": "Paper",
+        "keyword": "Active Inference; Paper",
+        "note": "Catalog row 238; docs: papers/2026_OPHFEP_Synergetics/",
+        "container-title": "GitHub release v0.1.0",
+        "publisher": "GitHub release v0.1.0",
+        "URL": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0"
       }
     }
   ]

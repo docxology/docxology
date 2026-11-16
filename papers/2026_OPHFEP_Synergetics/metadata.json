@@ -1,0 +1,22 @@
+{
+  "title": "OPH-FEP-Synergetics: executable correspondences, obstructions and complementarities",
+  "version": "0.1.0",
+  "publication_date": "2026-11-15",
+  "doi": "",
+  "doi_url": "",
+  "github_repo": "https://github.com/docxology/OPH-FEP-Synergetics",
+  "github_release_url": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0",
+  "domain": "🧠",
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari"
+    }
+  ],
+  "description": "An executable correspondence battery across Observer Patch Holography, the Free Energy Principle and Fuller’s Synergetics. Repository-declared scope; this catalog does not independently verify its scientific claims.",
+  "keywords": [
+    "active inference",
+    "synergetics",
+    "observer patch holography"
+  ],
+  "source": "GitHub release; no archival DOI asserted"
+}

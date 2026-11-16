@@ -4,7 +4,7 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21754235-blue)](https://doi.org/10.5281/zenodo.21754235)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24069414-blue)](https://doi.org/10.5281/zenodo.24069414)
 
 ---
 
@@ -36,7 +36,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.21754235](https://doi.org/10.5281/zenodo.21754235)
+- DOI: [10.5281/zenodo.24069414](https://doi.org/10.5281/zenodo.24069414)
 - Artifact DOI: [10.5281/zenodo.22833503](https://doi.org/10.5281/zenodo.22833503)
 - Zenodo record: [https://zenodo.org/records/22833503](https://zenodo.org/records/22833503)
 - Historical local PDF: [black_line_combined.pdf](black_line_combined.pdf)
@@ -47,7 +47,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Black Line: Strong Work in Public*. Zenodo. DOI: 10.5281/zenodo.21754235. URL: https://doi.org/10.5281/zenodo.21754235.
+> Daniel Ari Friedman (2026). *Black Line: Strong Work in Public*. Zenodo. DOI: 10.5281/zenodo.24069414. URL: https://doi.org/10.5281/zenodo.24069414.
 
 ## Related
 

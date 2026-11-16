@@ -5,7 +5,7 @@ description: "A versioned, evidence-gated personal security boundary and explici
 tags: ["red-lines", "ai-governance", "dual-use", "cognitive-security", "hash-based-canary", "precommitment", "open-science", "personal-governance", "global-political-thought", "research-ethics"]
 domain: "Cognitive Security"
 citation: "Daniel Ari Friedman (2026). *Personal Red Lines for Development*. Zenodo."
-doi: "10.5281/zenodo.21754239"
+doi: "10.5281/zenodo.24069255"
 ---
 
 # Personal Red Lines for Development
@@ -46,7 +46,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- Canonical DOI: 10.5281/zenodo.21754239
+- Canonical DOI: 10.5281/zenodo.24069255
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-08-02T15:12:41Z
@@ -61,6 +61,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.21754239`
+1. Reference the DOI for citation: `10.5281/zenodo.24069255`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

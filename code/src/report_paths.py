@@ -51,7 +51,7 @@ def source_commit(repo_root: Path = REPO_ROOT) -> str:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     return result.stdout.strip() if result.returncode == 0 else "unknown"
 
 
@@ -68,7 +68,7 @@ def _porcelain_paths(repo_root: Path) -> list[str] | None:
         cwd=repo_root,
         capture_output=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode != 0:
         return None
     records = result.stdout.split(b"\0")
@@ -219,7 +219,7 @@ def is_git_tracked(path: Path, *, repo_root: Path = REPO_ROOT) -> bool:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     return result.returncode == 0
 
 

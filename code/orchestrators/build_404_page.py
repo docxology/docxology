@@ -9,7 +9,7 @@ instead of bouncing. It is rendered here — never hand-edited (GENERATED.md).
 The search box reuses js/search-page.js: with no query the page shows the
 recent/popular default listing, so the 404 doubles as a functional search
 surface. Search engines already exclude true 404 responses from indexing via
-the HTTP status code, so no robots meta is emitted (a ``noindex`` meta here
+the HTTP status code; an explicit noindex directive also protects a 200 preview (previously a ``noindex`` meta here
 would fail Lighthouse's ``is-crawlable`` audit while adding nothing).
 """
 
@@ -63,6 +63,7 @@ def render() -> str:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found — Daniel Ari Friedman</title>
     <meta name="description" content="Page not found. Search Daniel Ari Friedman's works, videos, software, research domains, and public metadata, or use the links to top destinations.">

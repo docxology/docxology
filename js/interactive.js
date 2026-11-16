@@ -274,7 +274,7 @@
     });
   }
 
-  // Cached lowercase haystack per index entry. Rebuilding this for all ~1650
+  // Cached lowercase haystack per index entry. Rebuilding this for all search
   // entries on every keystroke was the bulk of the autocomplete's cost.
   function autocompleteHaystack(item) {
     if (item._acHay === undefined) {

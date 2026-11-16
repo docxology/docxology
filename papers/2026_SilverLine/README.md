@@ -36,3 +36,7 @@ memory · succession · active inference · declared custody · review gaps
 
 - Zenodo record: https://zenodo.org/records/22833485
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+
+## Source archive (2026-11-15)
+
+[Repository archive](https://doi.org/10.5281/zenodo.24124425). [Prior manuscript deposit](https://doi.org/10.5281/zenodo.22833485). The retained manuscript PDF and extracted text represent their earlier documented editions.

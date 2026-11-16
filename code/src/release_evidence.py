@@ -716,7 +716,7 @@ def _git_tree_for_commit(repo_root: Path, commit: str) -> str | None:
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     return result.stdout.strip() if result.returncode == 0 else None
 
 
@@ -734,7 +734,7 @@ def _git_is_ancestor(repo_root: Path, candidate: str, descendant: str) -> bool |
         capture_output=True,
         text=True,
         check=False,
-    )
+    stdin=subprocess.DEVNULL)
     if result.returncode == 0:
         return True
     if result.returncode == 1:

@@ -4,18 +4,18 @@ type: article
 title: "Golden Line: Toward What Matters"
 version: "0.4.0"
 date-released: 2026-08-02
-doi: 10.5281/zenodo.21754237
-url: "https://doi.org/10.5281/zenodo.21754237"
+doi: 10.5281/zenodo.24069423
+url: "https://doi.org/10.5281/zenodo.24069423"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.21754237"
+    value: "10.5281/zenodo.24069423"
     description: "Canonical citation DOI"
   - type: url
-    value: "https://doi.org/10.5281/zenodo.21754237"
+    value: "https://doi.org/10.5281/zenodo.24069423"
     description: "Canonical citation DOI resolver"
   - type: doi
     value: "10.5281/zenodo.22833506"

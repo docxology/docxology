@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-08T21:07:14Z",
+  "generated_at": "2026-11-16T02:55:33Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 233 works.",
+      "claim": "The curated bibliography contains 234 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-07T22:09:45+00:00",
+      "checked_at": "2026-11-16T02:50:37+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -25,7 +25,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-07T22:09:45+00:00",
+      "checked_at": "2026-11-16T02:50:37+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

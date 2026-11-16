@@ -35,3 +35,7 @@ active inference · governance · apprenticeship · growth records · capacity u
 
 - Zenodo record: https://zenodo.org/records/22833491
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+
+## Source archive (2026-11-15)
+
+[Repository archive](https://doi.org/10.5281/zenodo.24124419). [Prior manuscript deposit](https://doi.org/10.5281/zenodo.22833491). The retained manuscript PDF and extracted text represent their earlier documented editions.

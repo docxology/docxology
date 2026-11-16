@@ -1,8 +1,8 @@
 {
   "title": "The Silver Line: A Memory-and-Succession Instrument",
   "version": "0.1.0",
-  "doi": "10.5281/zenodo.22833485",
-  "doi_url": "https://doi.org/10.5281/zenodo.22833485",
+  "doi": "10.5281/zenodo.24069438",
+  "doi_url": "https://doi.org/10.5281/zenodo.24069438",
   "zenodo_record": "https://zenodo.org/records/22833485",
   "record_id": "22833486",
   "publication_date": "2026-09-18",
@@ -112,5 +112,30 @@
     "source_report": "reports/publication_intake_2026-10-23.json",
     "source_report_sha256": "219ca7e62ee509f78f9b5825a38e034e494704411d8b75371f3a4cdff056314f",
     "scope": "Repository software release only; archived manuscript, citation DOI, artifact version, extracted text and source-specific findings remain unchanged. No new archival DOI is asserted."
+  },
+  "prior_deposits": [
+    {
+      "doi": "10.5281/zenodo.22833485",
+      "note": "Retained manuscript citation and PDF edition before source-archive refresh."
+    }
+  ],
+  "latest_source_archive": {
+    "doi": "10.5281/zenodo.24124425",
+    "concept_doi": "10.5281/zenodo.24069438",
+    "record_id": "24124425",
+    "version": "0.5.0",
+    "publication_date": "2026-11-11",
+    "files": [
+      {
+        "id": "b016eac3-3321-4e0f-b907-5ec93752e8ea",
+        "key": "docxology/silver_line-v0.5.0.zip",
+        "size": 211296,
+        "checksum": "md5:c0ebb901f1bb283fa7df5ae00b48f8ac",
+        "links": {
+          "self": "https://zenodo.org/api/records/24124425/files/docxology/silver_line-v0.5.0.zip/content"
+        }
+      }
+    ],
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
   }
 }

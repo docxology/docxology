@@ -35,3 +35,7 @@ stewardship · maintenance · line set · accountability
 
 - Zenodo record: https://zenodo.org/records/22833489
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+
+## Source archive (2026-11-15)
+
+[Repository archive](https://doi.org/10.5281/zenodo.24124418). [Prior manuscript deposit](https://doi.org/10.5281/zenodo.22833489). The retained manuscript PDF and extracted text represent their earlier documented editions.

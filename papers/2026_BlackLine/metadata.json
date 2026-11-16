@@ -1,8 +1,8 @@
 {
   "title": "Black Line: Strong Work in Public",
   "version": "0.4.1",
-  "doi": "10.5281/zenodo.21754235",
-  "doi_url": "https://doi.org/10.5281/zenodo.21754235",
+  "doi": "10.5281/zenodo.24069414",
+  "doi_url": "https://doi.org/10.5281/zenodo.24069414",
   "zenodo_record": "https://zenodo.org/records/22833503",
   "record_id": "22833503",
   "publication_date": "2026-09-18",
@@ -134,5 +134,30 @@
     "scientific_or_runtime_reproduction": false,
     "historical_text_file": "full_text_before_2026-11-06.md"
   },
-  "document_title": "Black Line: Strong Work in Public"
+  "document_title": "Black Line: Strong Work in Public",
+  "prior_deposits": [
+    {
+      "doi": "10.5281/zenodo.21754235",
+      "note": "Retained manuscript citation and PDF edition before source-archive refresh."
+    }
+  ],
+  "latest_source_archive": {
+    "doi": "10.5281/zenodo.24124416",
+    "concept_doi": "10.5281/zenodo.24069414",
+    "record_id": "24124416",
+    "version": "0.6.2",
+    "publication_date": "2026-11-11",
+    "files": [
+      {
+        "id": "0039f114-84db-48f1-bce7-007e19e7a7c4",
+        "key": "docxology/black_line-v0.6.2.zip",
+        "size": 345855,
+        "checksum": "md5:675b04a63dc6df506aa264fc79ed7149",
+        "links": {
+          "self": "https://zenodo.org/api/records/24124416/files/docxology/black_line-v0.6.2.zip/content"
+        }
+      }
+    ],
+    "scope": "Repository ZIP archive; retained manuscript PDF, extracted text and scientific summary are earlier independent editions."
+  }
 }
