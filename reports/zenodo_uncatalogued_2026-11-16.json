@@ -1,59 +1,17 @@
 {
-  "generated_at": "2026-11-16T03:38:03Z",
+  "generated_at": "2026-11-16T04:34:22Z",
   "zenodo_records_fetched": 193,
   "zenodo_records_source": {
     "mode": "cached",
     "source_report": "reports/paired_publications_2026-11-16.json"
   },
   "bibliography_dois": 226,
-  "uncatalogued_count": 1,
+  "uncatalogued_count": 0,
   "software_catalogued_count": 9,
   "reviewed_source_archive_count": 1,
   "reviewed_source_archive_context": {
     "schema_version": 1,
     "records": [
-      {
-        "record_id": "24094530",
-        "doi": "10.5281/zenodo.16887767",
-        "title": "QuadCraft",
-        "publication_date": "2026-11-10",
-        "version": "v0.6.0",
-        "resource_type": {
-          "title": "Software",
-          "type": "software"
-        },
-        "creators": [
-          {
-            "name": "Friedman, Daniel Ari",
-            "affiliation": null,
-            "orcid": "0000-0001-6232-9096"
-          }
-        ],
-        "description": "Quadray-based Python/JavaScript games and an experimental C++/OpenGL voxel project. Shared coordinate contracts and browser/native checks in the Synergetics suite.",
-        "keywords": [],
-        "related_identifiers": [
-          {
-            "identifier": "https://github.com/docxology/QuadCraft/tree/v0.6.0",
-            "relation": "isSupplementTo",
-            "resource_type": "software",
-            "scheme": "url"
-          }
-        ],
-        "files": [
-          {
-            "id": "97208023-f316-459a-b17c-3c2fc532890a",
-            "key": "docxology/QuadCraft-v0.6.0.zip",
-            "size": 7262702,
-            "checksum": "md5:184bc2f0f8cbdc994cce8018a548fbd9",
-            "links": {
-              "self": "https://zenodo.org/api/records/24094530/files/docxology/QuadCraft-v0.6.0.zip/content"
-            }
-          }
-        ],
-        "html_url": "https://zenodo.org/records/24094530",
-        "doi_url": "https://doi.org/10.5281/zenodo.16887767",
-        "record_url": "https://zenodo.org/records/16887767"
-      },
       {
         "record_id": "23922458",
         "doi": "10.5281/zenodo.23922457",
@@ -196,15 +154,7 @@
   "approved_version_specific_doi_exception_count": 2,
   "version_specific_doi_exception_drift_count": 0,
   "warnings": [],
-  "uncatalogued": [
-    {
-      "record_id": "24094530",
-      "doi": "10.5281/zenodo.16887767",
-      "title": "QuadCraft",
-      "publication_date": "2026-11-10",
-      "html_url": "https://zenodo.org/records/24094530"
-    }
-  ],
+  "uncatalogued": [],
   "software_catalogued": [
     {
       "record_id": "24147945",

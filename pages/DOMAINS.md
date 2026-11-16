@@ -120,8 +120,8 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 **Selected repositories**
 
-- [p3if](https://github.com/docxology/p3if) — Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security
-- [opentir](https://github.com/docxology/opentir) — Repository analysis and offline documentation toolkit; v1.1.0 repairs packaging, configuration and reproducible generation. Release verification used local Git/HTTP fixtures; live organization-wide discovery was not rerun
+- [p3if](https://github.com/docxology/p3if) — Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security · Software DOI
+- [opentir](https://github.com/docxology/opentir) — Repository analysis and offline documentation toolkit; v1.1.0 repairs packaging, configuration and reproducible generation. Release verification used local Git/HTTP fixtures; live organization-wide discovery was not rerun · Software DOI
 - [cognitive-engine](https://github.com/docxology/cognitive-engine) — Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning
 - [ATLAS](https://github.com/ActiveInferenceInstitute/ATLAS) — Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces
 
@@ -155,11 +155,11 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 **Selected repositories**
 
-- [QuadCraft](https://github.com/docxology/QuadCraft) — Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.5.0 · Software DOI
-- [QuadMath](https://github.com/docxology/QuadMath) — Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.6.0 · Software DOI
+- [QuadCraft](https://github.com/docxology/QuadCraft) — Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.6.0 · Software DOI
+- [QuadMath](https://github.com/docxology/QuadMath) — Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.7.0 · Software DOI
 - [ivm-xyz](https://github.com/docxology/ivm-xyz) — Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations
 - [godel_ivm](https://github.com/docxology/godel_ivm) — Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
-- [symergetics](https://github.com/docxology/symergetics) — Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.3.0 · Software DOI
+- [symergetics](https://github.com/docxology/symergetics) — Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.4.0 · Software DOI
 
 ## 💻 [Computational Methods & Open Science](../domain-computational.html)
 
@@ -189,10 +189,10 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 **Selected repositories**
 
-- [template](https://github.com/docxology/template) — Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · Software version 5.0.0 artifact · Citation DOI · Site
-- [mdkv](https://github.com/docxology/mdkv) — MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents
+- [template](https://github.com/docxology/template) — Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · Software version 5.0.0 artifact · Citation DOI
+- [mdkv](https://github.com/docxology/mdkv) — MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents · Software DOI
 - [markdown_decision_process](https://github.com/docxology/markdown_decision_process) — Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning · Repository version DOI
-- [steganographer](https://github.com/docxology/steganographer) — Rust steganography and signed-media tools for image, audio, and video carriers, with native and WebAssembly builds, capacity checks, and bounded forensic analysis · Release v0.9.0
+- [steganographer](https://github.com/docxology/steganographer) — Rust steganography and signed-media tools for image, audio, and video carriers, with native and WebAssembly builds, capacity checks, and bounded forensic analysis · Release v0.9.1 · Software DOI
 - [timeline_generator](https://github.com/docxology/timeline_generator) — Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
 - [codomyrmex](https://github.com/docxology/codomyrmex) — AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Citation DOI
 - [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI

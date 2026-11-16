@@ -3,18 +3,17 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-11-16.json`
-- Checked URLs: 1053
-- OK: 775
-- Warnings: 278
+- Checked URLs: 1068
+- OK: 793
+- Warnings: 275
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 271 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 269 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `needs-replacement` | 1 | Returned 404 and should be replaced or removed if no longer valid. |
-| `ok` | 775 | Returned a 2xx/3xx response. |
+| `ok` | 793 | Returned a 2xx/3xx response. |
 | `timeout` | 4 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
@@ -108,12 +107,6 @@ Scoped network-link triage for public-facing repository hubs.
 | Status | URL | Sources |
 | ---: | --- | --- |
 | 0 | <https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman> | pages/LINKS.md |
-
-## needs-replacement
-
-| Status | URL | Sources |
-| ---: | --- | --- |
-| 404 | <https://docxology.github.io/template/> | pages/SOFTWARE.md, software.html, software.html |
 
 ## timeout
 

@@ -59,3 +59,9 @@ def test_release_backed_date_requires_the_exact_release_identity():
     assert publication_date(work, metadata) == "2026-11-15"
     metadata["github_release_url"] = url + "-other"
     assert publication_date(work, metadata) == "2026"
+
+
+@pytest.mark.parametrize("following", ["; second citation", ": explanatory note", "."])
+def test_doi_prose_delimiters(following):
+    doi = "10.5281/zenodo.24069474"
+    assert canonical_link_url(doi + following, "Zenodo") == "https://doi.org/" + doi

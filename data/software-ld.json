@@ -42,7 +42,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template#software",
             "name": "template",
-            "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · Software version 5.0.0 artifact · Citation DOI · Site",
+            "description": "Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · Software version 5.0.0 artifact · Citation DOI",
             "codeRepository": "https://github.com/docxology/template",
             "author": {
                 "@type": "Person",
@@ -52,8 +52,7 @@
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
             "dateModified": "2026-11-16T02:02:16Z",
-            "keywords": "agents-md, ai-agents, computational-research, github-template, latex, multi-project, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo",
-            "url": "https://docxology.github.io/template/"
+            "keywords": "agents-md, ai-agents, computational-research, github-template, latex, multi-project, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -91,7 +90,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/QuadCraft#software",
             "name": "QuadCraft",
-            "description": "Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.5.0 · Software DOI",
+            "description": "Tetrahedral voxel game in C++/OpenGL and a JavaScript browser game portfolio, with deterministic simulation, geometry-aware collision and picking, and conservative graph transport · Release v0.6.0 · Software DOI",
             "codeRepository": "https://github.com/docxology/QuadCraft",
             "author": {
                 "@type": "Person",
@@ -156,7 +155,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/opentir#software",
             "name": "opentir",
-            "description": "Repository analysis and offline documentation toolkit; v1.1.0 repairs packaging, configuration and reproducible generation. Release verification used local Git/HTTP fixtures; live organization-wide discovery was not rerun",
+            "description": "Repository analysis and offline documentation toolkit; v1.1.0 repairs packaging, configuration and reproducible generation. Release verification used local Git/HTTP fixtures; live organization-wide discovery was not rerun · Software DOI",
             "codeRepository": "https://github.com/docxology/opentir",
             "author": {
                 "@type": "Person",
@@ -166,7 +165,8 @@
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-06-24T15:57:52Z",
             "dateModified": "2026-11-16T01:54:44Z",
-            "keywords": "code-analysis, mkdocs, multi-repo, open-source, palantir, python, repository-mining, research-tools, software-analysis, software-metrics, static-analysis, visualization"
+            "keywords": "code-analysis, mkdocs, multi-repo, open-source, palantir, python, repository-mining, research-tools, software-analysis, software-metrics, static-analysis, visualization",
+            "sameAs": "https://doi.org/10.5281/zenodo.23372602"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -236,7 +236,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/QuadMath#software",
             "name": "QuadMath",
-            "description": "Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.6.0 · Software DOI",
+            "description": "Quadray-coordinate computation and TeX research documentation, with exact rational geometry, harmonic extension, conservative graph transport, and selected Lean proofs · Release 0.7.0 · Software DOI",
             "codeRepository": "https://github.com/docxology/QuadMath",
             "author": {
                 "@type": "Person",
@@ -381,7 +381,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/qr_live_protocol#software",
             "name": "qr_live_protocol",
-            "description": "QR code-based live protocol system for real-time data exchange and interactive session management",
+            "description": "QR code-based live protocol system for real-time data exchange and interactive session management · Software DOI",
             "codeRepository": "https://github.com/docxology/qr_live_protocol",
             "author": {
                 "@type": "Person",
@@ -390,7 +390,8 @@
             "programmingLanguage": "Python",
             "dateCreated": "2025-06-16T18:24:06Z",
             "dateModified": "2026-11-12T18:07:49Z",
-            "keywords": "blockchain, cryptography, flask, livestream, obs-studio, opentimestamps, provenance, python, qr-code, socketio, timestamping, verification"
+            "keywords": "blockchain, cryptography, flask, livestream, obs-studio, opentimestamps, provenance, python, qr-code, socketio, timestamping, verification",
+            "sameAs": "https://doi.org/10.5281/zenodo.21513385"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -411,7 +412,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/steganographer#software",
             "name": "steganographer",
-            "description": "Rust steganography and signed-media tools for image, audio, and video carriers, with native and WebAssembly builds, capacity checks, and bounded forensic analysis · Release v0.9.0",
+            "description": "Rust steganography and signed-media tools for image, audio, and video carriers, with native and WebAssembly builds, capacity checks, and bounded forensic analysis · Release v0.9.1 · Software DOI",
             "codeRepository": "https://github.com/docxology/steganographer",
             "author": {
                 "@type": "Person",
@@ -421,7 +422,8 @@
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-03-06T17:51:21Z",
             "dateModified": "2026-11-15T02:34:33Z",
-            "keywords": "audio, blake3, content-authenticity, cryptography, ed25519, gstreamer, media-verification, open-source, provenance, python, qr-code, rust, security, steganography, tamper-detection, video, watermarking"
+            "keywords": "audio, blake3, content-authenticity, cryptography, ed25519, gstreamer, media-verification, open-source, provenance, python, qr-code, rust, security, steganography, tamper-detection, video, watermarking",
+            "sameAs": "https://doi.org/10.5281/zenodo.21513412"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -877,7 +879,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/mdkv#software",
             "name": "mdkv",
-            "description": "MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents",
+            "description": "MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents · Software DOI",
             "codeRepository": "https://github.com/docxology/mdkv",
             "author": {
                 "@type": "Person",
@@ -887,13 +889,14 @@
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-09T23:15:48Z",
             "dateModified": "2026-11-16T01:54:58Z",
-            "keywords": "cli, container-format, documentation, fastapi, file-format, markdown, multilingual, python, translation, versioning"
+            "keywords": "cli, container-format, documentation, fastapi, file-format, markdown, multilingual, python, translation, versioning",
+            "sameAs": "https://doi.org/10.5281/zenodo.21513254"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/p3if#software",
             "name": "p3if",
-            "description": "Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security",
+            "description": "Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security · Software DOI",
             "codeRepository": "https://github.com/docxology/p3if",
             "author": {
                 "@type": "Person",
@@ -903,7 +906,8 @@
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-03-17T22:37:41Z",
             "dateModified": "2026-11-15T21:33:06Z",
-            "keywords": "3d-visualization, cognitive-security, flask, framework, healthcare, interoperability, pydantic, python, requirements-engineering, security, systems-thinking, visualization"
+            "keywords": "3d-visualization, cognitive-security, flask, framework, healthcare, interoperability, pydantic, python, requirements-engineering, security, systems-thinking, visualization",
+            "sameAs": "https://doi.org/10.5281/zenodo.21513392"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -958,7 +962,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/symergetics#software",
             "name": "symergetics",
-            "description": "Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.3.0 · Software DOI",
+            "description": "Computational synergetics for Quadray and IVM coordinates, with exact polyhedral metrics, solid mass centroids, and computed scientific visualizations · Release 1.4.0 · Software DOI",
             "codeRepository": "https://github.com/docxology/symergetics",
             "author": {
                 "@type": "Person",
@@ -1615,7 +1619,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/line_set#software",
             "name": "line_set",
-            "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice; repository v0.5.0 · Citation DOI · Zenodo artifact v0.1.0 · Prior manuscript deposit",
+            "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · Citation DOI · Zenodo artifact v0.1.0 · Prior manuscript deposit · Release v0.8.0",
             "codeRepository": "https://github.com/docxology/line_set",
             "author": {
                 "@type": "Person",
@@ -1630,7 +1634,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/black_line#software",
             "name": "black_line",
-            "description": "A positive operating discipline for concise, inspectable, revisable work; repository v0.5.0 · Citation DOI · Prior manuscript deposit",
+            "description": "A positive operating discipline for concise, inspectable, revisable work · Citation DOI · Prior manuscript deposit · Release v0.6.2",
             "codeRepository": "https://github.com/docxology/black_line",
             "author": {
                 "@type": "Person",
@@ -1645,7 +1649,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/white_line#software",
             "name": "white_line",
-            "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable; repository v0.8.0 · Zenodo · Prior manuscript deposit",
+            "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable · Zenodo · Prior manuscript deposit · Release v0.9.2",
             "codeRepository": "https://github.com/docxology/white_line",
             "author": {
                 "@type": "Person",
@@ -1661,7 +1665,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/golden_line#software",
             "name": "golden_line",
-            "description": "An aspirational thread and long-horizon direction for personal work; repository v0.5.0 · Citation DOI · Prior manuscript deposit",
+            "description": "An aspirational thread and long-horizon direction for personal work · Citation DOI · Prior manuscript deposit · Release v0.7.0",
             "codeRepository": "https://github.com/docxology/golden_line",
             "author": {
                 "@type": "Person",
@@ -1676,7 +1680,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/red_line#software",
             "name": "red_line",
-            "description": "A personal security boundary and explicit No document for dual-use development · Zenodo · Prior manuscript deposit",
+            "description": "A personal security boundary and explicit No document for dual-use development · Zenodo · Prior manuscript deposit · Release v0.5.2",
             "codeRepository": "https://github.com/docxology/red_line",
             "author": {
                 "@type": "Person",
@@ -1692,7 +1696,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/witness_register#software",
             "name": "witness_register",
-            "description": "Co-registration without aggregation — the Witness Register holding instrument; repository v0.2.0 · Citation DOI · Prior manuscript deposit",
+            "description": "Co-registration without aggregation — the Witness Register holding instrument · Citation DOI · Prior manuscript deposit · Release v0.5.0",
             "codeRepository": "https://github.com/docxology/witness_register",
             "author": {
                 "@type": "Person",
@@ -1707,7 +1711,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/blue_line#software",
             "name": "blue_line",
-            "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work; repository v0.2.0 · Zenodo · Prior manuscript deposit",
+            "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work · Zenodo · Prior manuscript deposit · Release v0.3.2",
             "codeRepository": "https://github.com/docxology/blue_line",
             "author": {
                 "@type": "Person",
@@ -1723,7 +1727,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/green_line#software",
             "name": "green_line",
-            "description": "A capacity-under-development instrument: the green line of the docxology line set; repository v0.2.0 · Zenodo · Prior manuscript deposit",
+            "description": "A capacity-under-development instrument: the green line of the docxology line set · Zenodo · Prior manuscript deposit · Release v0.5.0",
             "codeRepository": "https://github.com/docxology/green_line",
             "author": {
                 "@type": "Person",
@@ -1739,7 +1743,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/silver_line#software",
             "name": "silver_line",
-            "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse; repository v0.2.0 · Citation DOI · Zenodo artifact v0.1.0 · Prior manuscript deposit",
+            "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · Citation DOI · Zenodo artifact v0.1.0 · Prior manuscript deposit · Release v0.5.0",
             "codeRepository": "https://github.com/docxology/silver_line",
             "author": {
                 "@type": "Person",
@@ -2682,7 +2686,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal#software",
             "name": "ActiveInferenceJournal",
-            "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output · Software DOI · Site",
+            "description": "Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output · Software DOI · Site · Software DOI",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
             "author": {
                 "@type": "Person",
@@ -2857,7 +2861,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/Journal_Utilities#software",
             "name": "Journal_Utilities",
-            "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release",
+            "description": "Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release · Software DOI",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/Journal_Utilities",
             "author": {
                 "@type": "Person",
@@ -2868,7 +2872,7 @@
             "dateCreated": "2022-11-07T14:21:08Z",
             "dateModified": "2026-11-16T02:02:20Z",
             "keywords": "python, rag, transcription, video-processing, whisper, youtube",
-            "sameAs": "https://doi.org/10.5281/zenodo.18686966"
+            "sameAs": "https://doi.org/10.5281/zenodo.7752714"
         },
         {
             "@type": "SoftwareSourceCode",

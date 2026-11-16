@@ -90,6 +90,7 @@ OUT = dated_report_path("zenodo_uncatalogued", "json")
 # with no bibliography row. Keep this explicit so the freshness gate measures
 # actionable drift rather than known release-history records.
 KNOWN_STALE_RECORD_IDS = {
+    "24094530",  # QuadCraft v0.6.0 software-only archive; SOFTWARE.md cites concept 10.5281/zenodo.16887767; intentionally no bibliography paper.
     "21418901",  # SynthOBS v1.618.0; current row cites concept 21418782
     "20804586",  # CogSecSkills v1; current row cites concept 21513316
     "19139090",  # Template/Reproducible duplicate of kept row #1

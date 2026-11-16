@@ -1706,3 +1706,9 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - Use source-backed RSS dates, browser caching for deferred search data, noninteractive Git subprocess input, an explicit 404 noindex directive, and revised-date synchronization.
 
 - Omit incomplete scholarly citation blocks for unknown bylines while retaining verified editor roles, and align the strict native Pandoc pin to the Pandoc version declared by pandoc-crossref 0.3.26.
+
+- Reviewed QuadCraft v0.6.0 (Zenodo record 24094530, concept 10.5281/zenodo.16887767) as software only; updated its release link and retained no standalone bibliography paper.
+
+- Align all nine Line-Set software release labels with the verified November 11 source archives while preserving the explicitly earlier manuscript PDF editions.
+
+- Remove the unavailable template demo link after a fresh HTTP 404 observation; retain its evidence and the dated upstream GitHub homepage fact.
