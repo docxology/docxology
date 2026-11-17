@@ -26,18 +26,18 @@
       "ActiveInferenceInstitute": 47,
       "archived": 92,
       "curated": 208,
-      "docxology": 268,
+      "docxology": 269,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 99,
-      "forks": 101,
+      "fork_docxology": 100,
+      "forks": 102,
       "primary_ActiveInferenceInstitute": 45,
       "primary_docxology": 169,
       "primary_total": 214,
       "private": 0,
-      "public": 315,
-      "recently_updated": 315,
-      "total": 315,
-      "uncataloged": 107
+      "public": 316,
+      "recently_updated": 316,
+      "total": 316,
+      "uncataloged": 108
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -62,11 +62,11 @@
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 47,
-      "GitHub user docxology": 275,
+      "GitHub user docxology": 269,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 174,
-      "Zenodo exact-name creator records": 85
+      "Zenodo ORCID-linked records": 188,
+      "Zenodo exact-name creator records": 100
     },
     "software": {
       "active_inference_institute": 43,
@@ -83,14 +83,14 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-11-16T03:51:19+00:00",
+  "generated_at": "2026-11-17T00:36:30+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
     "paired_publications": "reports/paired_publications_2026-11-16.json",
     "paper_folders": "papers/README.md",
-    "public_source_snapshot": "reports/public_source_snapshot_2026-11-06.json",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-11-17.json",
     "software_catalog": "pages/SOFTWARE.md",
     "software_export": "data/software.json",
     "works_export": "data/works.json"

@@ -1,20 +1,20 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-11-16T03:11:04Z",
+  "generated_at": "2026-11-17T00:35:48Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
   "summary": {
-    "total_inventory": 315,
-    "uncatalogued": 107,
-    "forks": 99,
-    "acknowledged_forks": 99,
+    "total_inventory": 316,
+    "uncatalogued": 108,
+    "forks": 100,
+    "acknowledged_forks": 100,
     "primary_requires_review": 1,
     "acknowledged_excluded": 7,
     "archived": 89,
     "missing_description": 10,
     "short_description": 18,
-    "substantive_description": 79
+    "substantive_description": 80
   },
   "repositories": [
     {
@@ -1302,6 +1302,30 @@
       "acknowledged_reason": "fork_not_curated",
       "reviewed_by": "principal",
       "reviewed_at": "2026-08-26"
+    },
+    {
+      "full_name": "docxology/hybrid-aif",
+      "github_id": 1460688823,
+      "github_node_id": "R_kgDOVxBXtw",
+      "name": "hybrid-aif",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/hybrid-aif",
+      "fork": true,
+      "archived": false,
+      "private": false,
+      "description": "General-purpose hybrid (discrete / continuous / mixture / amortized) active inference + machine learning",
+      "description_quality": "substantive",
+      "language": "",
+      "topics": [],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "fork_not_curated",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-17",
+      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated."
     },
     {
       "full_name": "docxology/InsightSpike-AI",

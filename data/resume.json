@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:19:13Z",
+  "generated_at": "2026-11-17T00:39:21Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 275 public repositories.",
+      "claim": "The docxology GitHub profile has 269 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-11-06.json"
+        "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-06T17:57:11.092028+00:00",
+      "checked_at": "2026-11-17T00:38:35.790613+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -65,22 +65,22 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-11-06.json"
+        "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-06T17:57:11.092028+00:00",
+      "checked_at": "2026-11-17T00:38:35.790613+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 43 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-11-16T02:29:20Z",
+      "generated_at": "2026-11-17T00:34:19Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 315,
-      "public": 315,
+      "total": 316,
+      "public": 316,
       "primary_total": 214,
-      "forks": 101,
-      "docxology": 268,
+      "forks": 102,
+      "docxology": 269,
       "ActiveInferenceInstitute": 47
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "b6ed44f26c2239ac7362f506daee70d501dd03e06837cce333a600d640f7f4f5",
+      "sha256": "0cf2fc7f83373dfa43d37c868d5bc937215a34e5c480e0d0e4a2d0e5803ac9aa",
       "files": [
         {
           "path": "resume/source.json",
@@ -103,7 +103,7 @@
         {
           "path": "data/software.json",
           "bytes": 107597,
-          "sha256": "22e910623e5ac15723e08096bc78a32d88572ec79a64ceffb2a688b8e43edd69"
+          "sha256": "273149248409aa467acaa8c08b8251df26d66db8943f355d93b4553aecdad8b2"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 13016,
-          "sha256": "5be7cade42bf0aceb94f9ea8ebca75bf0f78b3cf460ee72fc2c0bfcc05ab762d"
+          "sha256": "b49fde7dbdb00a48a862f8b6fdc26d78ce8445c1d8f030f5a2789b7421b8d44b"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 367935,
-          "sha256": "df9168b00ac29fe678762c0773747f75787466db7c2fc71a72417e9b47a38e2c"
+          "bytes": 368891,
+          "sha256": "c81855485bdd52c43e3cb87cce833434e34435478f8a6eeef6c72598d959eedb"
         }
       ]
     },
@@ -10741,7 +10741,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-16T03:51:19+00:00",
+      "checked_at": "2026-11-17T00:36:30+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10755,7 +10755,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-16T03:51:19+00:00",
+      "checked_at": "2026-11-17T00:36:30+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -10763,13 +10763,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 275 public repositories.",
+      "claim": "The docxology GitHub profile has 269 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-11-06.json"
+        "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-06T17:57:11.092028+00:00",
+      "checked_at": "2026-11-17T00:38:35.790613+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -10781,9 +10781,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-11-06.json"
+        "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-06T17:57:11.092028+00:00",
+      "checked_at": "2026-11-17T00:38:35.790613+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

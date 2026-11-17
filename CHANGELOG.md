@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-17 — Reviewed public-source freshness
+
+- Refresh the primary public-source snapshot and complete repository inventory, and record exact hash-bound observation decisions.
+- Retain the new public hybrid-aif fork outside the curated catalog under the standing fork policy.
+- Verify newly surfaced Zenodo editions against existing concept DOIs, preserving curated work identities and all prior snapshots.
+- See [the drift review](reports/public_source_drift_review_2026-11-17.md) for source bindings and explicit unavailable-profile limits.
+
 ## 2026-11-16 — Metadata audit and public-link hardening
 
 - Replace emoji regular-expression ranges with Unicode codepoint checks and boundary tests.

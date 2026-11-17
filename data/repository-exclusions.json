@@ -13,78 +13,6 @@
   },
   "exclusions": [
     {
-      "full_name": "docxology/docxology",
-      "reason": "profile_repo",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Public research and software index (this site's own source repo).",
-      "github_id": 952180437,
-      "github_node_id": "R_kgDOOMEe1Q"
-    },
-    {
-      "full_name": "docxology/README",
-      "reason": "profile_infrastructure",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "GitHub profile README.",
-      "github_id": 952180295,
-      "github_node_id": "R_kgDOOMEeRw"
-    },
-    {
-      "full_name": "docxology/links",
-      "reason": "profile_infrastructure",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Link-hub page repository.",
-      "github_id": 963451287,
-      "github_node_id": "R_kgDOOW0Zlw"
-    },
-    {
-      "full_name": "docxology/identity",
-      "reason": "profile_infrastructure",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Identity/profile metadata repository.",
-      "github_id": 170901817,
-      "github_node_id": "MDEwOlJlcG9zaXRvcnkxNzA5MDE4MTc="
-    },
-    {
-      "full_name": "docxology/test_public",
-      "reason": "test_repo",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Public visibility test repository.",
-      "github_id": 1047646927,
-      "github_node_id": "R_kgDOPnHSzw"
-    },
-    {
-      "full_name": "docxology/template-release-smoke",
-      "reason": "test_repo",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Integration smoke test for the template release orchestrator (marked do-not-cite).",
-      "github_id": 1251507566,
-      "github_node_id": "R_kgDOSph9bg"
-    },
-    {
-      "full_name": "docxology/institute_website",
-      "reason": "website",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Active Inference Institute GitHub Pages website.",
-      "github_id": 1263285459,
-      "github_node_id": "R_kgDOS0w00w"
-    },
-    {
-      "full_name": "ActiveInferenceInstitute/institute_website",
-      "reason": "website",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Active Inference Institute information website.",
-      "github_id": 1263332613,
-      "github_node_id": "R_kgDOS0ztBQ"
-    },
-    {
       "full_name": "ActiveInferenceInstitute/aii-org",
       "reason": "website",
       "reviewed_by": "principal",
@@ -94,33 +22,6 @@
       "github_node_id": "R_kgDORptFpQ"
     },
     {
-      "full_name": "docxology/crescent_city",
-      "reason": "rename_duplicate",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Underscore variant of the catalogued docxology/crescent-city.",
-      "github_id": 1243672301,
-      "github_node_id": "R_kgDOSiDu7Q"
-    },
-    {
-      "full_name": "docxology/prior_cognitive_art",
-      "reason": "private_mirror",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Public mirror of working/prior_cognitive_art in docxology/projects.",
-      "github_id": 1293812034,
-      "github_node_id": "R_kgDOTR4BQg"
-    },
-    {
-      "full_name": "docxology/GrowthModel",
-      "reason": "empty_repo",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Empty / unused repository removed per principal direction.",
-      "github_id": 248624253,
-      "github_node_id": "MDEwOlJlcG9zaXRvcnkyNDg2MjQyNTM="
-    },
-    {
       "full_name": "ActiveInferenceInstitute/ants",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -128,6 +29,15 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 401134882,
       "github_node_id": "MDEwOlJlcG9zaXRvcnk0MDExMzQ4ODI="
+    },
+    {
+      "full_name": "ActiveInferenceInstitute/institute_website",
+      "reason": "website",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Active Inference Institute information website.",
+      "github_id": 1263332613,
+      "github_node_id": "R_kgDOS0ztBQ"
     },
     {
       "full_name": "ActiveInferenceInstitute/pymdp",
@@ -155,6 +65,16 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1119804379,
       "github_node_id": "R_kgDOQr7b2w"
+    },
+    {
+      "full_name": "docxology/ActiveACO",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-13",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork retained in the complete inventory; standing policy excludes it from original-software promotion.",
+      "github_id": 1418065202,
+      "github_node_id": "R_kgDOVIX1Mg"
     },
     {
       "full_name": "docxology/ActiveInference.jl",
@@ -265,6 +185,26 @@
       "github_node_id": "R_kgDOTqsNTg"
     },
     {
+      "full_name": "docxology/bend",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-18 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1375199521,
+      "github_node_id": "R_kgDOUffhIQ"
+    },
+    {
+      "full_name": "docxology/cadence",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-10-06 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1407667303,
+      "github_node_id": "R_kgDOU-dMZw"
+    },
+    {
       "full_name": "docxology/CatColab",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -292,6 +232,35 @@
       "github_node_id": "R_kgDOTqsNWQ"
     },
     {
+      "full_name": "docxology/covid19-forecast-hub",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1393276967,
+      "github_node_id": "R_kgDOUwu4Jw"
+    },
+    {
+      "full_name": "docxology/crescent_city",
+      "reason": "rename_duplicate",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Underscore variant of the catalogued docxology/crescent-city.",
+      "github_id": 1243672301,
+      "github_node_id": "R_kgDOSiDu7Q"
+    },
+    {
+      "full_name": "docxology/delphi-epidata",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-17",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-16 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1373659785,
+      "github_node_id": "R_kgDOUeBiiQ"
+    },
+    {
       "full_name": "docxology/dickens-arxiv24",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -299,6 +268,15 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1060436373,
       "github_node_id": "R_kgDOPzT5lQ"
+    },
+    {
+      "full_name": "docxology/docxology",
+      "reason": "profile_repo",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Public research and software index (this site's own source repo).",
+      "github_id": 952180437,
+      "github_node_id": "R_kgDOOMEe1Q"
     },
     {
       "full_name": "docxology/EFEasVFE",
@@ -326,6 +304,16 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 920257490,
       "github_node_id": "R_kgDONtoD0g"
+    },
+    {
+      "full_name": "docxology/exploration-tooling",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-17",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-16 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1373700592,
+      "github_node_id": "R_kgDOUeEB8A"
     },
     {
       "full_name": "docxology/ExponentialFamily.jl",
@@ -380,6 +368,27 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1084348261,
       "github_node_id": "R_kgDOQKHXZQ"
+    },
+    {
+      "full_name": "docxology/flu-metrocast",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1393402154,
+      "github_node_id": "R_kgDOUw2hKg"
+    },
+    {
+      "full_name": "docxology/FluSight-forecast-hub",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies an archived fork created 2026-11-02 under this spelling, with immutable GitHub ID 1443301258. Apply the standing policy to this new identity; the previous acknowledgement covered ID 1393276879 and is retained in the dated review evidence. No repository deletion or individual principal review is asserted.",
+      "github_id": 1443301258,
+      "github_node_id": "R_kgDOVgcHig",
+      "source_url": "https://github.com/docxology/FluSight-forecast-hub"
     },
     {
       "full_name": "docxology/flybody",
@@ -445,6 +454,16 @@
       "github_node_id": "R_kgDOP0Rheg"
     },
     {
+      "full_name": "docxology/graphcoder",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-24 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1385745614,
+      "github_node_id": "R_kgDOUpjMzg"
+    },
+    {
       "full_name": "docxology/GraphPPL.jl",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -452,6 +471,25 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1319832957,
       "github_node_id": "R_kgDOTqsNfQ"
+    },
+    {
+      "full_name": "docxology/groma.md",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-25 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1387974428,
+      "github_node_id": "R_kgDOUrrPHA"
+    },
+    {
+      "full_name": "docxology/GrowthModel",
+      "reason": "empty_repo",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Empty / unused repository removed per principal direction.",
+      "github_id": 248624253,
+      "github_node_id": "MDEwOlJlcG9zaXRvcnkyNDg2MjQyNTM="
     },
     {
       "full_name": "docxology/GuildNet",
@@ -499,6 +537,25 @@
       "github_node_id": "R_kgDOP1lqyA"
     },
     {
+      "full_name": "docxology/hybrid-aif",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-17",
+      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated.",
+      "note": "New public fork retained in the complete inventory; the standing fork policy does not establish an original software-catalog entry.",
+      "github_id": 1460688823,
+      "github_node_id": "R_kgDOVxBXtw"
+    },
+    {
+      "full_name": "docxology/identity",
+      "reason": "profile_infrastructure",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Identity/profile metadata repository.",
+      "github_id": 170901817,
+      "github_node_id": "MDEwOlJlcG9zaXRvcnkxNzA5MDE4MTc="
+    },
+    {
       "full_name": "docxology/InsightSpike-AI",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -506,6 +563,15 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1137884230,
       "github_node_id": "R_kgDOQ9K8Rg"
+    },
+    {
+      "full_name": "docxology/institute_website",
+      "reason": "website",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Active Inference Institute GitHub Pages website.",
+      "github_id": 1263285459,
+      "github_node_id": "R_kgDOS0w00w"
     },
     {
       "full_name": "docxology/IntroductionToAlgebraicEvaluation",
@@ -526,6 +592,28 @@
       "github_node_id": "R_kgDOOFcuHw"
     },
     {
+      "full_name": "docxology/k",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this archived repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1442244047,
+      "github_node_id": "R_kgDOVfblzw",
+      "source_url": "https://github.com/docxology/k"
+    },
+    {
+      "full_name": "docxology/keepassxc",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1446311511,
+      "github_node_id": "R_kgDOVjT2Vw",
+      "source_url": "https://github.com/docxology/keepassxc"
+    },
+    {
       "full_name": "docxology/ki_us",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -542,6 +630,65 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1322151179,
       "github_node_id": "R_kgDOTs5tCw"
+    },
+    {
+      "full_name": "docxology/koi-processor-node",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-05",
+      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated.",
+      "note": "Public fork of DarrenZal/koi-processor-node; the standing fork policy does not establish an original software-catalog entry.",
+      "github_id": 1446406514,
+      "github_node_id": "R_kgDOVjZpcg"
+    },
+    {
+      "full_name": "docxology/leanchess",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-23 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1384013100,
+      "github_node_id": "R_kgDOUn5dLA"
+    },
+    {
+      "full_name": "docxology/LeanDB",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-14",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork (created 2026-09-13) with no description; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1370377115,
+      "github_node_id": "R_kgDOUa5Lmw"
+    },
+    {
+      "full_name": "docxology/Lenticulum.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-16",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork; retained in the complete inventory without an original-software promotion.",
+      "github_id": 1420850101,
+      "github_node_id": "R_kgDOVLBztQ"
+    },
+    {
+      "full_name": "docxology/links",
+      "reason": "profile_infrastructure",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Link-hub page repository.",
+      "github_id": 963451287,
+      "github_node_id": "R_kgDOOW0Zlw"
+    },
+    {
+      "full_name": "docxology/MacroEnergy.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-25 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1387880521,
+      "github_node_id": "R_kgDOUrlgSQ"
     },
     {
       "full_name": "docxology/MatrixCorrectionTools.jl",
@@ -580,6 +727,16 @@
       "github_node_id": "R_kgDORmXZxw"
     },
     {
+      "full_name": "docxology/Moonkale",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-23 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1384327758,
+      "github_node_id": "R_kgDOUoMqTg"
+    },
+    {
       "full_name": "docxology/ngc-learn",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -607,6 +764,16 @@
       "github_node_id": "R_kgDOP03CJg"
     },
     {
+      "full_name": "docxology/observer-patch-holography",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-22 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1381827372,
+      "github_node_id": "R_kgDOUl0DLA"
+    },
+    {
       "full_name": "docxology/ODEM",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -623,6 +790,26 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1314133712,
       "github_node_id": "R_kgDOTlQW0A"
+    },
+    {
+      "full_name": "docxology/oh-my-pi",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-10",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork (created 2026-09-09) of the omp coding-agent upstream; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1363234262,
+      "github_node_id": "R_kgDOUUFN1g"
+    },
+    {
+      "full_name": "docxology/okn-registry",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-13",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork retained in the complete inventory; standing policy excludes it from original-software promotion.",
+      "github_id": 1416284345,
+      "github_node_id": "R_kgDOVGrIuQ"
     },
     {
       "full_name": "docxology/OpenGauss",
@@ -679,6 +866,15 @@
       "github_node_id": "R_kgDOQ0XTHA"
     },
     {
+      "full_name": "docxology/prior_cognitive_art",
+      "reason": "private_mirror",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Public mirror of working/prior_cognitive_art in docxology/projects.",
+      "github_id": 1293812034,
+      "github_node_id": "R_kgDOTR4BQg"
+    },
+    {
       "full_name": "docxology/psw.vibelandia.sing13",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -704,6 +900,16 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1082087629,
       "github_node_id": "R_kgDOQH9YzQ"
+    },
+    {
+      "full_name": "docxology/pyhgf",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-05",
+      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated.",
+      "note": "Public fork of ComputationalPsychiatry/pyhgf; the standing fork policy does not establish an original software-catalog entry.",
+      "github_id": 1447350639,
+      "github_node_id": "R_kgDOVkTRbw"
     },
     {
       "full_name": "docxology/pymdp",
@@ -733,6 +939,15 @@
       "github_node_id": "R_kgDOTqsNpQ"
     },
     {
+      "full_name": "docxology/README",
+      "reason": "profile_infrastructure",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "GitHub profile README.",
+      "github_id": 952180295,
+      "github_node_id": "R_kgDOOMEeRw"
+    },
+    {
       "full_name": "docxology/RGMs",
       "reason": "fork_not_curated",
       "reviewed_by": "standing_policy",
@@ -750,6 +965,16 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1319833004,
       "github_node_id": "R_kgDOTqsNrA"
+    },
+    {
+      "full_name": "docxology/rsv-forecast-hub",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-06",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1393303531,
+      "github_node_id": "R_kgDOUwwf6w"
     },
     {
       "full_name": "docxology/RxEnvironments.jl",
@@ -842,6 +1067,16 @@
       "github_node_id": "R_kgDOQPOkdA"
     },
     {
+      "full_name": "docxology/specification",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-10-31",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-10-26 (Typed Context Protocol community-group draft); excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1434805739,
+      "github_node_id": "R_kgDOVYVl6w"
+    },
+    {
       "full_name": "docxology/spm",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -869,6 +1104,24 @@
       "github_node_id": "R_kgDORHFadg"
     },
     {
+      "full_name": "docxology/template-release-smoke",
+      "reason": "test_repo",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Integration smoke test for the template release orchestrator (marked do-not-cite).",
+      "github_id": 1251507566,
+      "github_node_id": "R_kgDOSph9bg"
+    },
+    {
+      "full_name": "docxology/test_public",
+      "reason": "test_repo",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Public visibility test repository.",
+      "github_id": 1047646927,
+      "github_node_id": "R_kgDOPnHSzw"
+    },
+    {
       "full_name": "docxology/thrml",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -876,6 +1129,17 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1085906867,
       "github_node_id": "R_kgDOQLmfsw"
+    },
+    {
+      "full_name": "docxology/tiny-footprint-workstation",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-04",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Current public inventory identifies this repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
+      "github_id": 1444976634,
+      "github_node_id": "R_kgDOViCX-g",
+      "source_url": "https://github.com/docxology/tiny-footprint-workstation"
     },
     {
       "full_name": "docxology/triton",
@@ -903,260 +1167,6 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1025749336,
       "github_node_id": "R_kgDOPSOxWA"
-    },
-    {
-      "full_name": "docxology/oh-my-pi",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-10",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork (created 2026-09-09) of the omp coding-agent upstream; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1363234262,
-      "github_node_id": "R_kgDOUUFN1g"
-    },
-    {
-      "full_name": "docxology/LeanDB",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-14",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork (created 2026-09-13) with no description; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1370377115,
-      "github_node_id": "R_kgDOUa5Lmw"
-    },
-    {
-      "full_name": "docxology/delphi-epidata",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-17",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-16 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1373659785,
-      "github_node_id": "R_kgDOUeBiiQ"
-    },
-    {
-      "full_name": "docxology/exploration-tooling",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-17",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-16 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1373700592,
-      "github_node_id": "R_kgDOUeEB8A"
-    },
-    {
-      "full_name": "docxology/bend",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-25",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-18 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1375199521,
-      "github_node_id": "R_kgDOUffhIQ"
-    },
-    {
-      "full_name": "docxology/graphcoder",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-25",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-24 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1385745614,
-      "github_node_id": "R_kgDOUpjMzg"
-    },
-    {
-      "full_name": "docxology/leanchess",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-25",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-23 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1384013100,
-      "github_node_id": "R_kgDOUn5dLA"
-    },
-    {
-      "full_name": "docxology/Moonkale",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-25",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-23 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1384327758,
-      "github_node_id": "R_kgDOUoMqTg"
-    },
-    {
-      "full_name": "docxology/observer-patch-holography",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-09-25",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-22 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1381827372,
-      "github_node_id": "R_kgDOUl0DLA"
-    },
-    {
-      "full_name": "docxology/MacroEnergy.jl",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-06",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-25 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1387880521,
-      "github_node_id": "R_kgDOUrlgSQ"
-    },
-    {
-      "full_name": "docxology/groma.md",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-06",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-25 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1387974428,
-      "github_node_id": "R_kgDOUrrPHA"
-    },
-    {
-      "full_name": "docxology/FluSight-forecast-hub",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-11-04",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Current public inventory identifies an archived fork created 2026-11-02 under this spelling, with immutable GitHub ID 1443301258. Apply the standing policy to this new identity; the previous acknowledgement covered ID 1393276879 and is retained in the dated review evidence. No repository deletion or individual principal review is asserted.",
-      "github_id": 1443301258,
-      "github_node_id": "R_kgDOVgcHig",
-      "source_url": "https://github.com/docxology/FluSight-forecast-hub"
-    },
-    {
-      "full_name": "docxology/covid19-forecast-hub",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-06",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1393276967,
-      "github_node_id": "R_kgDOUwu4Jw"
-    },
-    {
-      "full_name": "docxology/rsv-forecast-hub",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-06",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1393303531,
-      "github_node_id": "R_kgDOUwwf6w"
-    },
-    {
-      "full_name": "docxology/flu-metrocast",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-06",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-09-28 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1393402154,
-      "github_node_id": "R_kgDOUw2hKg"
-    },
-    {
-      "full_name": "docxology/cadence",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-06",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-10-06 with no catalog role; excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1407667303,
-      "github_node_id": "R_kgDOU-dMZw"
-    },
-    {
-      "full_name": "docxology/ActiveACO",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-13",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork retained in the complete inventory; standing policy excludes it from original-software promotion.",
-      "github_id": 1418065202,
-      "github_node_id": "R_kgDOVIX1Mg"
-    },
-    {
-      "full_name": "docxology/okn-registry",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-13",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork retained in the complete inventory; standing policy excludes it from original-software promotion.",
-      "github_id": 1416284345,
-      "github_node_id": "R_kgDOVGrIuQ"
-    },
-    {
-      "full_name": "docxology/Lenticulum.jl",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-16",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork; retained in the complete inventory without an original-software promotion.",
-      "github_id": 1420850101,
-      "github_node_id": "R_kgDOVLBztQ"
-    },
-    {
-      "full_name": "docxology/specification",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-10-31",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Public fork created 2026-10-26 (Typed Context Protocol community-group draft); excluded by the standing fork policy, not by an individual review.",
-      "github_id": 1434805739,
-      "github_node_id": "R_kgDOVYVl6w"
-    },
-    {
-      "full_name": "docxology/k",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-11-04",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Current public inventory identifies this archived repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
-      "github_id": 1442244047,
-      "github_node_id": "R_kgDOVfblzw",
-      "source_url": "https://github.com/docxology/k"
-    },
-    {
-      "full_name": "docxology/keepassxc",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-11-04",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Current public inventory identifies this repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
-      "github_id": 1446311511,
-      "github_node_id": "R_kgDOVjT2Vw",
-      "source_url": "https://github.com/docxology/keepassxc"
-    },
-    {
-      "full_name": "docxology/tiny-footprint-workstation",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-11-04",
-      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
-      "note": "Current public inventory identifies this repository as a fork. Apply the existing fork policy to the exact GitHub identity; this records policy application, not an individual principal review or a deletion decision.",
-      "github_id": 1444976634,
-      "github_node_id": "R_kgDOViCX-g",
-      "source_url": "https://github.com/docxology/tiny-footprint-workstation"
-    },
-    {
-      "full_name": "docxology/koi-processor-node",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-11-05",
-      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated.",
-      "note": "Public fork of DarrenZal/koi-processor-node; the standing fork policy does not establish an original software-catalog entry.",
-      "github_id": 1446406514,
-      "github_node_id": "R_kgDOVjZpcg"
-    },
-    {
-      "full_name": "docxology/pyhgf",
-      "reason": "fork_not_curated",
-      "reviewed_by": "standing_policy",
-      "reviewed_at": "2026-11-05",
-      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated.",
-      "note": "Public fork of ComputationalPsychiatry/pyhgf; the standing fork policy does not establish an original software-catalog entry.",
-      "github_id": 1447350639,
-      "github_node_id": "R_kgDOVkTRbw"
     }
   ]
 }

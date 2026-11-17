@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-11-16T03:51:19+00:00`
+Generated: `2026-11-17T00:36:30+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -24,7 +24,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - works_export: `data/works.json`
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
-- public_source_snapshot: `reports/public_source_snapshot_2026-11-06.json`
+- public_source_snapshot: `reports/public_source_snapshot_2026-11-17.json`
 - paired_publications: `reports/paired_publications_2026-11-16.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
@@ -73,32 +73,32 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### GitHub Inventory
 
-- total: `315`
-- docxology: `268`
+- total: `316`
+- docxology: `269`
 - ActiveInferenceInstitute: `47`
 - curated: `208`
-- uncataloged: `107`
-- forks: `101`
+- uncataloged: `108`
+- forks: `102`
 - archived: `92`
-- public: `315`
+- public: `316`
 - private: `0`
-- recently_updated: `315`
+- recently_updated: `316`
 - primary_total: `214`
 - primary_docxology: `169`
 - primary_ActiveInferenceInstitute: `45`
-- fork_docxology: `99`
+- fork_docxology: `100`
 - fork_ActiveInferenceInstitute: `2`
 
 ### Public Source Snapshot
 
-- GitHub user docxology: `275`
+- GitHub user docxology: `269`
 - GitHub user ActiveInferenceInstitute: `47`
 - ORCID work groups: `20`
 - PubMed exact author records: `8`
 - Europe PMC exact author records: `10`
 - Crossref ORCID DOI records: `15`
-- Zenodo exact-name creator records: `85`
-- Zenodo ORCID-linked records: `174`
+- Zenodo exact-name creator records: `100`
+- Zenodo ORCID-linked records: `188`
 
 ### Paired Publications
 
