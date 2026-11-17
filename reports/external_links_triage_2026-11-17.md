@@ -3,27 +3,24 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-11-17.json`
-- Checked URLs: 1069
-- OK: 853
-- Warnings: 216
+- Checked URLs: 1073
+- OK: 908
+- Warnings: 165
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 211 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 159 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 853 | Returned a 2xx/3xx response. |
+| `ok` | 908 | Returned a 2xx/3xx response. |
 | `timeout` | 3 | Timed out under the bounded checker timeout. |
-| `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
+| `upstream-transient` | 2 | Server-side outage or temporary upstream failure. |
 
 ## bot-protected-or-rate-limited
 
 | Status | URL | Sources |
 | ---: | --- | --- |
-| 403 | <https://api.github.com/users/ActiveInferenceInstitute> | discovery.html, evidence.html, evidence.html |
-| 403 | <https://api.github.com/users/docxology> | discovery.html, domain-active-inference.html, domain-aii-ecosystem.html |
-| 403 | <https://api.github.com/users/docxology/repos> | domain-active-inference.html, domain-aii-ecosystem.html, domain-art-synergetics.html |
 | 403 | <https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind> | README.md, index.html, pages/PROFILE.md |
 | 403 | <https://doi.org/10.1002/asi.24900> | README.md, cognitive-security.html, cognitive-security.html |
 | 403 | <https://doi.org/10.1002/ece3.70063> | domain-entomology.html, domain-entomology.html, pages/BIBLIOGRAPHY.md |
@@ -38,8 +35,6 @@ Scoped network-link triage for public-facing repository hubs.
 | 403 | <https://doi.org/10.3390/e25070964> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
 | 403 | <https://doi.org/10.3390/e26040303> | insect-cognition.html, insect-cognition.html, pages/BIBLIOGRAPHY.md |
 | 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20144983> | README.md, blake-pathway.html, domain-art-synergetics.html |
-| 429 | <https://doi.org/10.5281/zenodo.20286170> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20286171> | updates.html |
 | 429 | <https://doi.org/10.5281/zenodo.20286477> | domain-biomedicine.html, domain-computational.html, domain-computational.html |
 | 429 | <https://doi.org/10.5281/zenodo.20286478> | pages/SOFTWARE.md, software.html, updates.html |
@@ -101,6 +96,11 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.21513254> | domain-computational.html, pages/SOFTWARE.md, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.21513316> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.21513385> | pages/SOFTWARE.md, software.html, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21513392> | domain-cognitive-security.html, pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21513412> | domain-computational.html, pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21695160> | README.md, domain-active-inference.html, domain-active-inference.html |
+| 429 | <https://doi.org/10.5281/zenodo.21750800> | README.md, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.21754235> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 
 ## connection-failure
 
@@ -121,3 +121,4 @@ Scoped network-link triage for public-facing repository hubs.
 | Status | URL | Sources |
 | ---: | --- | --- |
 | 503 | <https://dfri.people.stanford.edu/> | pages/LINKS.md |
+| 503 | <https://troncale.sched.com/> | domain-presentations-media.html |
