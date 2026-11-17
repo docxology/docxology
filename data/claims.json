@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:19:13Z",
+  "generated_at": "2026-11-17T00:39:21Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -11,7 +11,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-16T03:51:19+00:00",
+      "checked_at": "2026-11-17T00:36:30+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -25,7 +25,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-16T03:51:19+00:00",
+      "checked_at": "2026-11-17T00:36:30+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -33,13 +33,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 275 public repositories.",
+      "claim": "The docxology GitHub profile has 269 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-11-06.json"
+        "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-06T17:57:11.092028+00:00",
+      "checked_at": "2026-11-17T00:38:35.790613+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -51,9 +51,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-11-06.json"
+        "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-06T17:57:11.092028+00:00",
+      "checked_at": "2026-11-17T00:38:35.790613+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

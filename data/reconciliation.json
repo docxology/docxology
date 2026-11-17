@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T17:57:11.092028+00:00",
-  "snapshot": "reports/public_source_snapshot_2026-11-06.json",
+  "generated_at": "2026-11-17T00:33:43.069960+00:00",
+  "snapshot": "reports/public_source_snapshot_2026-11-17.json",
   "claims_count": 15,
   "comparisons": [
     {
@@ -27,14 +27,14 @@
     {
       "name": "Curated bibliography vs Zenodo ORCID-linked records",
       "local_value": 234,
-      "public_value": 174,
+      "public_value": 188,
       "relationship": "overlapping sets",
       "interpretation": "Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table."
     },
     {
       "name": "Catalogued docxology software vs GitHub public repository count",
       "local_value": 165,
-      "public_value": 275,
+      "public_value": 269,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments."
     },

@@ -51,7 +51,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-11-16T02:02:16Z",
+            "dateModified": "2026-11-17T00:10:11Z",
             "keywords": "agents-md, ai-agents, computational-research, github-template, latex, multi-project, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo"
         },
         {
@@ -67,7 +67,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-11-15T05:38:04Z",
+            "dateModified": "2026-11-16T10:20:03Z",
             "keywords": "agents, ai-agents, automation, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, python, rag, security, static-analysis, uv, zero-mock"
         },
         {
@@ -83,7 +83,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2022-01-08T18:33:36Z",
-            "dateModified": "2026-11-15T23:10:18Z",
+            "dateModified": "2026-11-16T23:05:51Z",
             "keywords": "active-inference, ant-behavior, ants, bioinformatics, computational-biology, data-visualization, ecology, entomology, epigenomics, eqtl, genomics, gwas, hymenoptera, multi-agent-systems, multi-omics, proteomics, python, rna-seq, single-cell, transcriptomics"
         },
         {
@@ -213,7 +213,7 @@
             "programmingLanguage": "Rich Text Format",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-10-08T12:18:49Z",
-            "dateModified": "2026-11-11T05:02:11Z",
+            "dateModified": "2026-11-16T20:57:34Z",
             "keywords": "ants, bibliometrics, bibtex, entomology, formis, literature, llm, myrmecology, visualization",
             "sameAs": "https://doi.org/10.5281/zenodo.13927024"
         },
@@ -245,7 +245,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-10T23:07:49Z",
-            "dateModified": "2026-11-12T17:53:27Z",
+            "dateModified": "2026-11-16T05:27:23Z",
             "keywords": "buckminster-fuller, geometry, lattice, mathematics, python, quadray, reproducible-research, synergetics, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.16887790"
         },
@@ -277,7 +277,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-05-24T23:28:57Z",
-            "dateModified": "2026-11-13T19:32:02Z",
+            "dateModified": "2026-11-16T04:50:41Z",
             "keywords": "agentic-ai, ai-alignment, ai-governance, ai-safety, cognitive-security, curriculum, intelligence-analysis, mermaid, open-access, open-education, python, textbook"
         },
         {
@@ -311,7 +311,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-03-13T16:31:42Z",
-            "dateModified": "2026-11-16T01:54:08Z",
+            "dateModified": "2026-11-16T21:01:43Z",
             "keywords": "buckminster-fuller, computational-geometry, coordinate-systems, matplotlib, numpy, polyhedra, python, quadray, synergetics"
         },
         {
@@ -327,7 +327,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-01-30T00:59:00Z",
-            "dateModified": "2026-11-11T05:01:46Z",
+            "dateModified": "2026-11-16T20:57:31Z",
             "keywords": "active-inference, agent-framework, agents, ai-agents, bayesian-inference, free-energy-principle, pomdp, python, simulation, tool-framework, tools"
         },
         {
@@ -421,7 +421,7 @@
             "programmingLanguage": "Rust",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-03-06T17:51:21Z",
-            "dateModified": "2026-11-15T02:34:33Z",
+            "dateModified": "2026-11-16T05:53:18Z",
             "keywords": "audio, blake3, content-authenticity, cryptography, ed25519, gstreamer, media-verification, open-source, provenance, python, qr-code, rust, security, steganography, tamper-detection, video, watermarking",
             "sameAs": "https://doi.org/10.5281/zenodo.21513412"
         },
@@ -438,7 +438,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-01T21:23:23Z",
-            "dateModified": "2026-11-16T01:53:58Z",
+            "dateModified": "2026-11-16T23:37:38Z",
             "keywords": "eye-tracking, gaze-estimation, mediapipe, microsaccades, neuroscience, numpy, psychophysics, pupillometry, python, saccades, streamlit, webcam",
             "sameAs": "https://doi.org/10.5281/zenodo.23404028"
         },
@@ -455,7 +455,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-05-21T22:57:17Z",
-            "dateModified": "2026-11-12T17:56:24Z",
+            "dateModified": "2026-11-16T16:53:17Z",
             "keywords": "assessment, biology, labs, matplotlib, mermaid, oer, open-education, python, teaching, textbook"
         },
         {
@@ -519,7 +519,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-03T22:21:57Z",
-            "dateModified": "2026-11-12T17:17:48Z",
+            "dateModified": "2026-11-16T05:37:59Z",
             "keywords": "newspaper, pdf-generation, pillow, print-design, pytest, python, reportlab, reproducible-research, research-template, typesetting, uv",
             "url": "https://docxology.github.io/template_newspaper/",
             "sameAs": "https://doi.org/10.5281/zenodo.20533675"
@@ -536,7 +536,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-06-01T20:35:49Z",
-            "dateModified": "2026-11-11T18:05:35Z",
+            "dateModified": "2026-11-16T21:04:26Z",
             "keywords": "algebraic-geometry, benchmarking, ensembles, llm-evaluation, ntqr, python, unsupervised-evaluation",
             "sameAs": "https://doi.org/10.5281/zenodo.20498699"
         },
@@ -616,7 +616,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2025-09-30T22:57:53Z",
-            "dateModified": "2026-11-13T17:55:02Z",
+            "dateModified": "2026-11-16T20:58:31Z",
             "keywords": "ants, complexity, embodied-ai, energetics, entomology, latex, pandoc, python, reproducible-research, robotics"
         },
         {
@@ -648,7 +648,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T17:24:32Z",
-            "dateModified": "2026-11-13T17:21:41Z",
+            "dateModified": "2026-11-16T22:35:43Z",
             "keywords": "ants, arxiv, discourse-analysis, entomology, linguistics, networkx, philosophy-of-science, pubmed, python, text-mining",
             "sameAs": "https://doi.org/10.5281/zenodo.19574117"
         },
@@ -726,7 +726,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-08-26T13:48:30Z",
-            "dateModified": "2026-11-11T18:13:25Z",
+            "dateModified": "2026-11-16T21:43:14Z",
             "keywords": "dash, data-integration, geopandas, geospatial, gis, h3, mapping, plotly, python"
         },
         {
@@ -905,7 +905,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-03-17T22:37:41Z",
-            "dateModified": "2026-11-15T21:33:06Z",
+            "dateModified": "2026-11-17T00:33:51Z",
             "keywords": "3d-visualization, cognitive-security, flask, framework, healthcare, interoperability, pydantic, python, requirements-engineering, security, systems-thinking, visualization",
             "sameAs": "https://doi.org/10.5281/zenodo.21513392"
         },
@@ -955,7 +955,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-05-12T19:51:37Z",
-            "dateModified": "2026-11-16T01:54:41Z",
+            "dateModified": "2026-11-16T21:01:44Z",
             "keywords": "active-inference, ai-alignment, cognitive-science, cognitive-security, education, essay, four-zoas, free-energy-principle, jiang-xueqin, latex, manuscript, markov-blanket, newtons-sleep, pandoc, philosophy, python, rapid-publication, reproducible-research, scholarly-communication, william-blake"
         },
         {
@@ -971,7 +971,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-09-09T15:07:52Z",
-            "dateModified": "2026-11-12T17:59:38Z",
+            "dateModified": "2026-11-16T05:29:15Z",
             "keywords": "buckminster-fuller, exact-arithmetic, geometry, mathematics, polyhedra, python, quadray, symbolic-computation, synergetics",
             "sameAs": "https://doi.org/10.5281/zenodo.17114383"
         },
@@ -988,7 +988,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-10-04T01:18:14Z",
-            "dateModified": "2026-11-16T01:54:24Z",
+            "dateModified": "2026-11-16T21:04:29Z",
             "keywords": "attention, deep-learning, education, interpretability, mechanistic-interpretability, pytorch, transformer, visualization"
         },
         {
@@ -1004,7 +1004,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-17T17:13:42Z",
-            "dateModified": "2026-11-15T19:23:20Z",
+            "dateModified": "2026-11-16T10:20:19Z",
             "keywords": "api-client, decision-making, python, toolkit, typesafe",
             "sameAs": "https://doi.org/10.5281/zenodo.22816187"
         },
@@ -1020,7 +1020,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-06-13T15:57:37Z",
-            "dateModified": "2026-11-11T08:36:56Z",
+            "dateModified": "2026-11-16T21:19:16Z",
             "keywords": "active-inference, bayesian-model-reduction, buddhism, consciousness, criticality, free-energy-principle, pymdp, python, quantum-reference-frames",
             "sameAs": "https://doi.org/10.5281/zenodo.23380253"
         },
@@ -1055,7 +1055,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-11T15:44:33Z",
-            "dateModified": "2026-11-13T10:14:10Z",
+            "dateModified": "2026-11-16T05:39:05Z",
             "keywords": "aes-gcm, archive, cryptography, data-standards, file-format, provenance, python, reproducible-research, research-data, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20396328"
         },
@@ -1071,7 +1071,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-06-30T22:05:14Z",
-            "dateModified": "2026-11-16T01:54:20Z",
+            "dateModified": "2026-11-16T06:06:34Z",
             "keywords": "algebraic-geometry, classifiers, evaluation, llm-evaluation, python, sortition, sympy, unsupervised-evaluation",
             "sameAs": "https://doi.org/10.5281/zenodo.21083779"
         },
@@ -1105,7 +1105,7 @@
             "programmingLanguage": "JavaScript",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-03-20T20:09:58Z",
-            "dateModified": "2026-11-13T20:27:00Z",
+            "dateModified": "2026-11-16T20:57:28Z",
             "keywords": "active-inference, bayesian-modeling, education, free-energy-principle, interactive-learning, katex, neuroscience, pocket-lab, pwa, python, react, research, simulation, vite"
         },
         {
@@ -1171,7 +1171,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-12T13:52:34Z",
-            "dateModified": "2026-11-12T17:21:12Z",
+            "dateModified": "2026-11-16T05:37:48Z",
             "keywords": "arxiv, bibtex, crossref, evidence-synthesis, literature-review, pytest, python, reproducible-research, research-template, uv",
             "sameAs": "https://doi.org/10.5281/zenodo.21298894"
         },
@@ -1205,7 +1205,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-13T15:40:32Z",
-            "dateModified": "2026-11-12T19:24:27Z",
+            "dateModified": "2026-11-16T20:58:31Z",
             "keywords": "active-inference, agent-based-model, entomology, honeybee, mujoco, neuroscience, python, robotics, simulation, swarm",
             "sameAs": "https://doi.org/10.5281/zenodo.20420556"
         },
@@ -1222,7 +1222,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-01T21:39:18Z",
-            "dateModified": "2026-11-16T02:02:16Z",
+            "dateModified": "2026-11-16T06:22:23Z",
             "keywords": "agents, bm25, dspy, llm, memory, prompt-optimization, python, rag, retrieval, sqlite",
             "sameAs": "https://doi.org/10.5281/zenodo.24061758"
         },
@@ -1254,7 +1254,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-01-27T23:23:02Z",
-            "dateModified": "2026-11-13T17:56:16Z",
+            "dateModified": "2026-11-16T08:55:11Z",
             "keywords": "ai-safety, cognitive-security, formal-methods, multi-agent-systems, security-architecture"
         },
         {
@@ -1269,7 +1269,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-07-02T16:48:35Z",
-            "dateModified": "2026-11-13T17:53:10Z",
+            "dateModified": "2026-11-16T22:33:59Z",
             "keywords": "entomology, forensic-entomology, insects, law, legal-tech, python, reference, regulation, yaml",
             "sameAs": "https://doi.org/10.5281/zenodo.21137276"
         },
@@ -1286,7 +1286,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-17T20:22:15Z",
-            "dateModified": "2026-11-11T18:11:03Z",
+            "dateModified": "2026-11-16T22:09:44Z",
             "keywords": "numpy, optical-illusions, perception, pillow, psychoacoustics, psychophysics, python, reproducible-research, stimuli, vision-science",
             "sameAs": "https://doi.org/10.5281/zenodo.21419693"
         },
@@ -1303,7 +1303,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-26T01:37:45Z",
-            "dateModified": "2026-11-11T20:14:58Z",
+            "dateModified": "2026-11-16T22:42:43Z",
             "keywords": "active-inference, economics, free-energy-principle, gnn, modeling, numpy, python, simulation",
             "sameAs": "https://doi.org/10.5281/zenodo.20976824"
         },
@@ -1337,7 +1337,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-09T14:30:57Z",
-            "dateModified": "2026-11-12T16:04:20Z",
+            "dateModified": "2026-11-17T00:23:13Z",
             "keywords": "deterministic-builds, pdf-generation, pitch-deck, presentation, pytest, python, python-pptx, reportlab, reproducible-research, research-template, uv",
             "sameAs": "https://doi.org/10.5281/zenodo.21281509"
         },
@@ -1371,7 +1371,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T18:34:15Z",
-            "dateModified": "2026-11-12T17:33:13Z",
+            "dateModified": "2026-11-16T21:20:49Z",
             "keywords": "ai-agents, automated-research, machine-learning, provenance, pytest, python, reproducible-research, research-template, uv",
             "url": "https://docxology.github.io/template_autoresearch_project/",
             "sameAs": "https://doi.org/10.5281/zenodo.20417016"
@@ -1425,7 +1425,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-10T19:14:23Z",
-            "dateModified": "2026-11-12T17:29:07Z",
+            "dateModified": "2026-11-16T05:38:29Z",
             "keywords": "active-inference, formal-methods, lean4, multi-agent, mypy, pytest, python, reproducible-research, research-template, tla-plus, type-safety, uv",
             "sameAs": "https://doi.org/10.5281/zenodo.21298885"
         },
@@ -1442,7 +1442,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-26T13:50:56Z",
-            "dateModified": "2026-11-16T02:00:51Z",
+            "dateModified": "2026-11-16T05:24:56Z",
             "keywords": "citation-analysis, editing, manuscript, networkx, pytest, python, quality-assurance, reproducible-research, research-template, uv",
             "sameAs": "https://doi.org/10.5281/zenodo.20931955"
         },
@@ -1475,7 +1475,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-10T19:14:26Z",
-            "dateModified": "2026-11-13T19:10:56Z",
+            "dateModified": "2026-11-16T05:38:53Z",
             "keywords": "jsonschema, provenance, pytest, python, reproducible-research, research-infrastructure, research-template, uv, validation",
             "sameAs": "https://doi.org/10.5281/zenodo.21298888"
         },
@@ -1492,7 +1492,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T18:34:13Z",
-            "dateModified": "2026-11-12T17:10:31Z",
+            "dateModified": "2026-11-16T05:38:10Z",
             "keywords": "bibtex, editorial, manuscript, pytest, python, readability, reproducible-research, research-template, uv, writing",
             "url": "https://docxology.github.io/template_prose_project/",
             "sameAs": "https://doi.org/10.5281/zenodo.20417104"
@@ -1542,7 +1542,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-14T19:54:36Z",
-            "dateModified": "2026-11-12T17:29:03Z",
+            "dateModified": "2026-11-16T05:38:40Z",
             "keywords": "agent-evaluation, ai-agents, benchmark, pytest, python, reproducible-research, research-template, self-improving-agents, uv",
             "url": "https://docxology.github.io/template_sia/",
             "sameAs": "https://doi.org/10.5281/zenodo.20453879"
@@ -1704,7 +1704,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-08-02T04:26:38Z",
-            "dateModified": "2026-11-16T02:02:18Z",
+            "dateModified": "2026-11-16T21:44:07Z",
             "keywords": "accountability, append-only, audit, cli, governance, provenance, python, research-integrity"
         },
         {
@@ -1767,7 +1767,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-23T16:24:06Z",
-            "dateModified": "2026-11-13T17:23:23Z",
+            "dateModified": "2026-11-16T22:35:42Z",
             "keywords": "arxiv, bibliometrics, literature-review, networkx, openalex, pytest, python, reproducible-research, research-template, uv"
         },
         {
@@ -1782,7 +1782,7 @@
             },
             "programmingLanguage": "TypeScript",
             "dateCreated": "2026-07-23T00:29:46Z",
-            "dateModified": "2026-11-13T20:24:40Z",
+            "dateModified": "2026-11-16T20:56:49Z",
             "keywords": "bun, california, chromadb, civic-tech, local-government, municipal-code, noaa, open-data, playwright, rag, tsunami",
             "url": "https://quadruplicate.org"
         },
@@ -1798,7 +1798,7 @@
             },
             "programmingLanguage": "TypeScript",
             "dateCreated": "2026-10-30T21:57:19Z",
-            "dateModified": "2026-11-13T20:46:15Z",
+            "dateModified": "2026-11-16T20:32:03Z",
             "keywords": "civic-tech, open-data, osint, rag, regional-intelligence, typescript"
         },
         {
@@ -1813,7 +1813,7 @@
             },
             "programmingLanguage": "TeX",
             "dateCreated": "2026-10-30T21:54:41Z",
-            "dateModified": "2026-11-13T20:27:36Z",
+            "dateModified": "2026-11-17T00:10:10Z",
             "keywords": "civic-tech, davis-california, open-data, regional-intelligence, yolo-county",
             "url": "https://docxology.github.io/davis-ca-intel/"
         },
@@ -1830,7 +1830,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-10-20T00:57:09Z",
-            "dateModified": "2026-11-12T17:48:39Z",
+            "dateModified": "2026-11-16T22:06:27Z",
             "keywords": "free-energy-principle, knowledge-representation, ontology, python, reasoning, sumo-ontology",
             "sameAs": "https://doi.org/10.5281/zenodo.23987622"
         },
@@ -1862,7 +1862,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-13T17:50:20Z",
-            "dateModified": "2026-11-12T17:45:43Z",
+            "dateModified": "2026-11-16T20:50:36Z",
             "keywords": "aes-gcm, cryptography, document-security, docx, ed25519, merkle-tree, odt, ooxml, provenance, python, steganography",
             "sameAs": "https://doi.org/10.5281/zenodo.21983948"
         },
@@ -1896,7 +1896,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-10T21:10:46Z",
-            "dateModified": "2026-11-13T20:13:54Z",
+            "dateModified": "2026-11-16T22:35:43Z",
             "keywords": "agent-skills, knowledge-base, llm-agents, python, skill-md",
             "sameAs": "https://doi.org/10.5281/zenodo.22712650"
         },
@@ -1929,7 +1929,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-03T15:48:34Z",
-            "dateModified": "2026-11-11T18:03:20Z",
+            "dateModified": "2026-11-16T21:01:04Z",
             "keywords": "automation, dashboard, devops, git, github-api, orchestration, repository-management, upstream-sync"
         },
         {
@@ -1961,7 +1961,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-08T21:29:18Z",
-            "dateModified": "2026-11-11T18:04:01Z",
+            "dateModified": "2026-11-16T21:01:16Z",
             "keywords": "migration-tool, nockchain, python, wallet"
         },
         {
@@ -1977,7 +1977,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-09-08T22:27:05Z",
-            "dateModified": "2026-11-11T18:04:06Z",
+            "dateModified": "2026-11-16T21:04:24Z",
             "keywords": "education, lattice, open-educational-resources, synergetics, textbook"
         },
         {
@@ -1993,7 +1993,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-10-09T19:12:20Z",
-            "dateModified": "2026-11-13T19:21:35Z",
+            "dateModified": "2026-11-16T16:53:11Z",
             "keywords": "complexity, entropy, information-theory, python, spatial-analysis",
             "sameAs": "https://doi.org/10.5281/zenodo.23306200"
         },
@@ -2025,7 +2025,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-26T00:34:45Z",
-            "dateModified": "2026-11-15T19:22:05Z",
+            "dateModified": "2026-11-16T21:04:33Z",
             "keywords": "active-inference, knowledge-graph, open-knowledge-network, rdf, skos",
             "url": "https://github.com/ActiveInferenceInstitute/cognitive"
         },
@@ -2090,7 +2090,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-10-22T21:11:49Z",
-            "dateModified": "2026-11-13T17:57:32Z",
+            "dateModified": "2026-11-16T23:30:40Z",
             "keywords": "finite-model-theory, gratitude, philosophy, reproducible-research"
         },
         {
@@ -2120,7 +2120,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-10-23T22:04:12Z",
-            "dateModified": "2026-11-11T18:08:58Z",
+            "dateModified": "2026-11-17T00:31:43Z",
             "keywords": "corpus-analysis, digital-humanities, federalism, non-domination, political-theory, reproducible-research, william-blake"
         },
         {
@@ -2135,7 +2135,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-11-01T23:05:35Z",
-            "dateModified": "2026-11-13T20:23:48Z",
+            "dateModified": "2026-11-17T00:10:10Z",
             "keywords": "civic-tech, open-data, regional-intelligence, reno-nevada",
             "url": "https://docxology.github.io/reno-nv-intel/"
         },
@@ -2247,7 +2247,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:26:01Z",
-            "dateModified": "2026-11-11T18:09:49Z",
+            "dateModified": "2026-11-16T22:32:58Z",
             "keywords": "coordination, project-bond, python, simulation"
         },
         {
@@ -2295,7 +2295,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:27:01Z",
-            "dateModified": "2026-11-11T18:10:09Z",
+            "dateModified": "2026-11-16T22:33:04Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2327,7 +2327,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:27:18Z",
-            "dateModified": "2026-11-11T18:10:19Z",
+            "dateModified": "2026-11-16T22:35:39Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2375,7 +2375,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:27:41Z",
-            "dateModified": "2026-11-13T20:15:32Z",
+            "dateModified": "2026-11-17T00:10:10Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2407,7 +2407,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:27:56Z",
-            "dateModified": "2026-11-13T20:15:53Z",
+            "dateModified": "2026-11-17T00:10:14Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2423,7 +2423,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:28:04Z",
-            "dateModified": "2026-11-13T20:16:04Z",
+            "dateModified": "2026-11-17T00:10:13Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2439,7 +2439,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:28:13Z",
-            "dateModified": "2026-11-11T18:11:01Z",
+            "dateModified": "2026-11-17T00:21:05Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2455,7 +2455,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:28:20Z",
-            "dateModified": "2026-11-11T18:11:07Z",
+            "dateModified": "2026-11-17T00:21:10Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2471,7 +2471,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:28:28Z",
-            "dateModified": "2026-11-11T18:11:11Z",
+            "dateModified": "2026-11-17T00:21:16Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2519,7 +2519,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:28:36Z",
-            "dateModified": "2026-11-13T20:16:12Z",
+            "dateModified": "2026-11-17T00:28:35Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2535,7 +2535,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:28:45Z",
-            "dateModified": "2026-11-11T18:11:37Z",
+            "dateModified": "2026-11-17T00:28:35Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2551,7 +2551,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:28:52Z",
-            "dateModified": "2026-11-13T20:16:20Z",
+            "dateModified": "2026-11-17T00:28:35Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2567,7 +2567,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:29:00Z",
-            "dateModified": "2026-11-13T20:17:00Z",
+            "dateModified": "2026-11-17T00:28:35Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2583,7 +2583,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:29:07Z",
-            "dateModified": "2026-11-11T18:11:59Z",
+            "dateModified": "2026-11-17T00:28:38Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2599,7 +2599,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:29:15Z",
-            "dateModified": "2026-11-11T18:11:54Z",
+            "dateModified": "2026-11-17T00:28:37Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2615,7 +2615,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:29:23Z",
-            "dateModified": "2026-11-11T18:12:05Z",
+            "dateModified": "2026-11-17T00:28:37Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2631,7 +2631,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:29:33Z",
-            "dateModified": "2026-11-11T18:12:10Z",
+            "dateModified": "2026-11-17T00:28:37Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2647,7 +2647,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:29:42Z",
-            "dateModified": "2026-11-13T20:17:12Z",
+            "dateModified": "2026-11-17T00:28:41Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2679,7 +2679,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-11T23:29:50Z",
-            "dateModified": "2026-11-13T20:17:40Z",
+            "dateModified": "2026-11-17T00:28:41Z",
             "keywords": "film-analysis, james-bond, project-bond, python, simulation"
         },
         {
@@ -2694,7 +2694,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2022-11-07T14:26:39Z",
-            "dateModified": "2026-11-16T00:37:36Z",
+            "dateModified": "2026-11-16T22:02:33Z",
             "keywords": "active-inference, archive, dataset, open-data, speaker-diarization, video-transcripts, youtube",
             "url": "https://activeinferenceinstitute.github.io/ActiveInferenceJournal/",
             "sameAs": "https://doi.org/10.5281/zenodo.21074926"
@@ -2712,7 +2712,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-03-19T17:35:28Z",
-            "dateModified": "2026-11-16T02:02:22Z",
+            "dateModified": "2026-11-16T23:10:26Z",
             "keywords": "active-inference, free-energy-principle, predictive-coding, python, textbook, variational-inference"
         },
         {
@@ -2727,7 +2727,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-11-16T02:26:43Z",
+            "dateModified": "2026-11-17T00:18:00Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
@@ -2744,7 +2744,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2022-02-18T17:54:38Z",
-            "dateModified": "2026-11-15T10:56:00Z",
+            "dateModified": "2026-11-16T20:27:25Z",
             "keywords": "active, active-inference, agent-based-modeling, cadcad, expected-free-energy, generative-model, grid-world, inference, python, radcad, reproducible-research, simulation"
         },
         {
@@ -2759,7 +2759,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2024-04-04T19:21:29Z",
-            "dateModified": "2026-11-16T02:02:21Z",
+            "dateModified": "2026-11-16T23:14:38Z",
             "keywords": "active-inference, ant-colony-optimization, free-energy-principle, multi-agent-systems, python, swarm-intelligence, variational-inference"
         },
         {
@@ -2775,7 +2775,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-02-17T17:46:31Z",
-            "dateModified": "2026-11-14T03:29:43Z",
+            "dateModified": "2026-11-16T22:47:49Z",
             "keywords": "active-inference, expected-free-energy, free-energy-principle, generative-model, pomdp, python"
         },
         {
@@ -2790,7 +2790,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-05-13T14:17:56Z",
-            "dateModified": "2026-11-13T20:45:36Z",
+            "dateModified": "2026-11-17T00:13:06Z",
             "keywords": "active-inference, agent-workflows, bayesian-inference, domain-modeling, geospatial, h3, monorepo, python, reproducible-research, spatial-analysis, uv"
         },
         {
@@ -2805,7 +2805,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2021-03-01T16:12:21Z",
-            "dateModified": "2026-11-15T21:10:05Z",
+            "dateModified": "2026-11-16T10:25:10Z",
             "keywords": "active, active-inference, controlled-vocabulary, dataset, free-energy-principle, inference, knowledge-graph, ontology, taxonomy",
             "sameAs": "https://doi.org/10.5281/zenodo.7972289"
         },
@@ -2821,7 +2821,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2025-04-07T22:46:41Z",
-            "dateModified": "2026-11-13T00:15:17Z",
+            "dateModified": "2026-11-16T23:14:39Z",
             "keywords": "active-inference, bayesian-inference, case-based-reasoning, cognitive-modeling, free-energy-principle, python",
             "sameAs": "https://doi.org/10.5281/zenodo.15170907"
         },
@@ -2838,7 +2838,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-11-05T19:42:21Z",
-            "dateModified": "2026-11-16T02:02:22Z",
+            "dateModified": "2026-11-16T21:55:30Z",
             "keywords": "active-inference, documentation, github-pages, llm, open-science, python, research, research-methods, scientific-workflows, symposium, visualization",
             "url": "https://activeinferenceinstitute.github.io/Symposium/"
         },
@@ -2854,7 +2854,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-02-08T19:49:40Z",
-            "dateModified": "2026-11-12T20:23:02Z",
+            "dateModified": "2026-11-17T00:20:52Z",
             "keywords": "active-inference, curriculum, education, free-energy-principle, k-12, python"
         },
         {
@@ -2870,7 +2870,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/CC0-1.0.html",
             "dateCreated": "2022-11-07T14:21:08Z",
-            "dateModified": "2026-11-16T02:02:20Z",
+            "dateModified": "2026-11-17T00:20:57Z",
             "keywords": "python, rag, transcription, video-processing, whisper, youtube",
             "sameAs": "https://doi.org/10.5281/zenodo.7752714"
         },
@@ -2886,7 +2886,7 @@
             },
             "license": "https://spdx.org/licenses/CC0-1.0.html",
             "dateCreated": "2023-05-12T16:23:23Z",
-            "dateModified": "2026-11-16T02:17:54Z",
+            "dateModified": "2026-11-17T00:16:46Z",
             "keywords": "active, active-inference, applied-category-theory, category, category-theory, curriculum, free-energy-principle, inference, mathematics"
         },
         {
@@ -2902,7 +2902,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/CC-BY-4.0.html",
             "dateCreated": "2022-03-01T00:25:54Z",
-            "dateModified": "2026-11-12T18:47:54Z",
+            "dateModified": "2026-11-16T22:45:51Z",
             "keywords": "active-inference, decentralized-science, free-energy-principle, knowledge-graph, ontology, python, schema, yaml",
             "sameAs": "https://doi.org/10.5281/zenodo.7484994"
         },
@@ -2918,7 +2918,7 @@
             },
             "programmingLanguage": "Julia",
             "dateCreated": "2022-04-29T13:45:33Z",
-            "dateModified": "2026-11-16T02:02:20Z",
+            "dateModified": "2026-11-17T00:20:59Z",
             "keywords": "active-inference, free-energy-principle, julia, jupyter, reading-group, textbook"
         },
         {
@@ -2933,7 +2933,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-03-14T16:00:58Z",
-            "dateModified": "2026-11-12T20:24:56Z",
+            "dateModified": "2026-11-16T21:17:03Z",
             "keywords": "knowledge-graph, llms, react, research-tools, typescript",
             "url": "https://research-discovery-engine.vercel.app",
             "sameAs": "https://doi.org/10.5281/zenodo.15084931"
@@ -2950,7 +2950,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2024-12-15T22:23:59Z",
-            "dateModified": "2026-11-12T22:10:41Z",
+            "dateModified": "2026-11-16T22:45:50Z",
             "keywords": "active-inference, curriculum, education, free-energy-principle, python",
             "sameAs": "https://doi.org/10.5281/zenodo.17047617"
         },
@@ -2966,7 +2966,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-04-07T20:10:34Z",
-            "dateModified": "2026-11-16T02:02:23Z",
+            "dateModified": "2026-11-16T21:55:49Z",
             "keywords": "active-inference, bibliometrics, free-energy-principle, knowledge-graph, llm, meta-analysis, nanopublications, reproducible-research",
             "sameAs": "https://doi.org/10.5281/zenodo.19461934"
         },
@@ -2982,7 +2982,7 @@
             },
             "programmingLanguage": "Jupyter Notebook",
             "dateCreated": "2022-02-09T13:07:24Z",
-            "dateModified": "2026-11-12T20:25:09Z",
+            "dateModified": "2026-11-17T00:16:59Z",
             "keywords": "active-inference, free-energy-principle, literature-review, ontology, pubmed, research-data",
             "sameAs": "https://doi.org/10.5281/zenodo.7449027"
         },
@@ -2998,7 +2998,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-11-14T04:07:44Z",
+            "dateModified": "2026-11-16T22:26:07Z",
             "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
             "sameAs": "https://doi.org/10.5281/zenodo.23196891"
         },
@@ -3015,7 +3015,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-10-31T14:24:22Z",
-            "dateModified": "2026-11-16T02:02:21Z",
+            "dateModified": "2026-11-16T22:45:51Z",
             "keywords": "active-inference, ecology, free-energy-principle, pymdp, python, reproducible-research, simulation"
         },
         {
@@ -3031,7 +3031,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-12T14:40:06Z",
-            "dateModified": "2026-11-14T01:44:17Z",
+            "dateModified": "2026-11-17T00:19:24Z",
             "keywords": "active-inference, mcp-server, model-context-protocol, pymdp, python, rest-api"
         },
         {
@@ -3047,7 +3047,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T21:43:07Z",
-            "dateModified": "2026-11-12T18:47:37Z",
+            "dateModified": "2026-11-16T20:59:30Z",
             "keywords": "active-inference, formal-verification, free-energy-principle, lean4, pymdp, variational-inference",
             "sameAs": "https://doi.org/10.5281/zenodo.20418904"
         },
@@ -3064,7 +3064,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-18T12:10:13Z",
-            "dateModified": "2026-11-12T18:50:33Z",
+            "dateModified": "2026-11-17T00:09:21Z",
             "keywords": "active-inference, free-energy-principle, knowledge-distillation, pymdp, reinforcement-learning, variational-inference"
         },
         {
@@ -3080,7 +3080,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-02-15T14:09:56Z",
-            "dateModified": "2026-11-12T23:42:19Z",
+            "dateModified": "2026-11-16T23:14:37Z",
             "keywords": "active-inference, bayesian-inference, julia, message-passing, probabilistic-programming, rxinfer, variational-inference"
         },
         {
@@ -3096,7 +3096,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-15T15:28:56Z",
-            "dateModified": "2026-11-16T01:26:27Z",
+            "dateModified": "2026-11-16T21:55:51Z",
             "keywords": "active-inference, code-analysis, free-energy-principle, generative-model, gnn, python, static-analysis"
         },
         {
@@ -3112,7 +3112,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-09T19:27:58Z",
-            "dateModified": "2026-11-16T02:02:25Z",
+            "dateModified": "2026-11-17T00:16:31Z",
             "keywords": "active-inference, bayesian-inference, computational-provenance, curriculum, free-energy-principle, reproducible-research, skilltree, variational-inference",
             "sameAs": "https://doi.org/10.5281/zenodo.21865643"
         },
@@ -3128,7 +3128,7 @@
             },
             "programmingLanguage": "TypeScript",
             "dateCreated": "2025-04-22T12:27:15Z",
-            "dateModified": "2026-11-16T02:02:23Z",
+            "dateModified": "2026-11-16T21:53:58Z",
             "keywords": "agents, llm, nodejs, orchestration, task-queue, typescript"
         },
         {
@@ -3144,7 +3144,7 @@
             "programmingLanguage": "Jupyter Notebook",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-08-19T19:09:18Z",
-            "dateModified": "2026-11-12T18:44:30Z",
+            "dateModified": "2026-11-16T19:30:09Z",
             "keywords": "content-generation, nlp, openai, python, translation"
         },
         {
@@ -3159,7 +3159,7 @@
             },
             "programmingLanguage": "Jupyter Notebook",
             "dateCreated": "2022-11-09T13:10:36Z",
-            "dateModified": "2026-11-16T02:02:20Z",
+            "dateModified": "2026-11-17T00:20:49Z",
             "keywords": "active-inference, bayesian-inference, julia, jupyter-notebook, message-passing, rxinfer, tutorial"
         },
         {
@@ -3174,7 +3174,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2024-08-21T20:33:41Z",
-            "dateModified": "2026-11-12T20:24:27Z",
+            "dateModified": "2026-11-16T23:10:27Z",
             "keywords": "graph-database, information-retrieval, knowledge-graph, knowledge-management, networkx, python, question-answering"
         },
         {
@@ -3202,7 +3202,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-15T17:32:25Z",
-            "dateModified": "2026-11-16T02:02:20Z",
+            "dateModified": "2026-11-16T20:27:24Z",
             "keywords": "collective-intelligence, discord-bot, language-model, nlp, openai, python"
         },
         {
@@ -3217,7 +3217,7 @@
             },
             "license": "https://spdx.org/licenses/CC0-1.0.html",
             "dateCreated": "2025-03-14T16:00:39Z",
-            "dateModified": "2026-11-16T02:02:22Z",
+            "dateModified": "2026-11-16T09:56:43Z",
             "keywords": "active-inference, documentation"
         },
         {
@@ -3233,7 +3233,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-03-22T16:46:52Z",
-            "dateModified": "2026-11-16T02:02:21Z",
+            "dateModified": "2026-11-17T00:20:54Z",
             "keywords": "data-pipeline, document-processing, ocr, python, web-scraping"
         },
         {
@@ -3249,7 +3249,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-13T01:15:55Z",
-            "dateModified": "2026-11-16T02:02:24Z",
+            "dateModified": "2026-11-16T21:52:28Z",
             "keywords": "active-inference, bayesian-inference, free-energy-principle, pymdp, python, reproducible-research, synthetic-data",
             "sameAs": "https://doi.org/10.5281/zenodo.21330636"
         },
@@ -3266,7 +3266,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-09T19:00:08Z",
-            "dateModified": "2026-11-16T01:41:33Z",
+            "dateModified": "2026-11-16T23:39:44Z",
             "keywords": "active-inference, bayesian-inference, federated-learning, free-energy-principle, python, reproducible-research, variational-inference"
         },
         {
@@ -3282,7 +3282,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-30T01:13:17Z",
-            "dateModified": "2026-11-16T02:02:25Z",
+            "dateModified": "2026-11-16T21:52:31Z",
             "keywords": "active-inference, multiple-testing, pymdp, python, reproducible-research, simulation, statistical-power, statistics",
             "sameAs": "https://doi.org/10.5281/zenodo.21695160"
         },
@@ -3310,7 +3310,7 @@
                 "name": "Daniel Ari Friedman"
             },
             "dateCreated": "2026-09-25T20:09:48Z",
-            "dateModified": "2026-11-11T22:21:48Z",
+            "dateModified": "2026-11-16T04:58:31Z",
             "keywords": "active-inference, governance, open-science, technology-roadmapping, working-groups",
             "url": "https://activeinference.institute/working-groups/"
         },
@@ -3326,7 +3326,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-09-28T00:12:03Z",
-            "dateModified": "2026-11-13T10:52:25Z",
+            "dateModified": "2026-11-16T02:48:43Z",
             "keywords": "active-inference, bayesian-inference, claims-ledger, computational-linguistics, discrete-state-space, free-energy-principle, gate-audit, generalized-notation-notation, generative-model, gnn, language-model, lean4, phonology, pymdp, reproducibility"
         },
         {
@@ -3342,7 +3342,7 @@
             "programmingLanguage": "TypeScript",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-10-23T15:55:50Z",
-            "dateModified": "2026-11-16T02:02:30Z",
+            "dateModified": "2026-11-16T22:46:41Z",
             "url": "https://activeinferenceinstitute.github.io/active_inference_battleship/"
         },
         {
@@ -3357,7 +3357,7 @@
             },
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-11-05T16:40:30Z",
-            "dateModified": "2026-11-16T02:02:31Z"
+            "dateModified": "2026-11-16T23:14:37Z"
         }
     ],
     "mentions": [
