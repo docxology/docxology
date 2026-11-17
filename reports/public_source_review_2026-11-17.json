@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-11-17T00:39:21Z",
+      "generated_at": "2026-11-17T20:11:56Z",
       "path": "data/claims.json",
-      "sha256": "b49fde7dbdb00a48a862f8b6fdc26d78ce8445c1d8f030f5a2789b7421b8d44b",
+      "sha256": "8d6c83f93b0609c6d6308c592325631b61b6caffb2a982ec5e5747ca2a0d988b",
       "source_commit": null
     },
     "doi_role_review": {
@@ -57,9 +57,9 @@
       "source_commit": "0c494cded04cf0dad6972d5098353f9e034a5375"
     },
     "repository_classification": {
-      "generated_at": "2026-11-17T00:35:48Z",
+      "generated_at": "2026-11-17T19:54:42Z",
       "path": "data/repository-classification.json",
-      "sha256": "5274af8c4f234b27bab7cc05888967b4e6757082f39c72d2200c2db8d8199f43",
+      "sha256": "a0a17214f9bde7f55bddd9eac16c9d0854bc85fdcaa86ebdb69ee3e26180e7be",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -3932,26 +3932,10 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "53782360a34c41b63ee8e67c30effb2baeac4e82",
-  "source_tree_sha": "a29886f7353f5afcb55307f341549a977916bbb2",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "CHANGELOG.md",
-    "data/github-repositories.json",
-    "data/public-source-observation-decisions.json",
-    "data/work-identifiers.json",
-    "pages/BIBLIOGRAPHY.md",
-    "pages/SOFTWARE.md",
-    "papers/README.md",
-    "papers/paper_metadata.json",
-    "reports/public_source_drift_review_2026-11-17.md",
-    "repositories-forks.html",
-    "repositories.html",
-    "papers/2026_CrossTalk_on_the_Page/full_text.md",
-    "papers/2026_CrossTalk_on_the_Page/metadata.json",
-    "papers/2026_CrossTalk_on_the_Page/source_evidence.json",
-    "reports/paired_publications_2026-11-17.json"
-  ],
+  "source_commit": "0bc564d97619f09cee7ae83cd387fcf612868c9a",
+  "source_tree_sha": "130f9392e3fb5e9193bb5658f9b6debad11672da",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
   "summary": {
     "applied": 193,
     "categories": {

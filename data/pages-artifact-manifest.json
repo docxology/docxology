@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-17T21:02:08Z",
-  "source_commit_at_generation": "53782360a34c41b63ee8e67c30effb2baeac4e82",
+  "generated_at": "2026-11-17T21:46:50Z",
+  "source_commit_at_generation": "0bc564d97619f09cee7ae83cd387fcf612868c9a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967502563,
+    "source_bytes": 967482158,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6310,
-    "artifact_bytes": 968621644
+    "artifact_bytes": 968601239
   },
   "included_files": [
     {
@@ -23761,18 +23761,18 @@
     },
     {
       "path": "reports/external_links_2026-11-17.json",
-      "bytes": 485863,
-      "sha256": "b662d0cd7d75a7034d572fbec066a852a2b50909386d343493f10e5dd3938d7b"
+      "bytes": 484406,
+      "sha256": "5d157cb05ab84e5224470e02d955cd836ea8a46a77e80522e50f270b0bdaefe0"
     },
     {
       "path": "reports/external_links_triage_2026-11-17.json",
-      "bytes": 86593,
-      "sha256": "862f92f897e7eb72cb260123f1f0c65c21012cd7735f76db60f01a953f2b88ef"
+      "bytes": 67629,
+      "sha256": "673663adc3433cdc81ec276f708205486eb09188e907cf6f84177ec48d446ce6"
     },
     {
       "path": "reports/external_links_triage_2026-11-17.md",
-      "bytes": 10670,
-      "sha256": "8390df4929ce734b0f0d98b42b6859c05499598f53ff7d39a066300a01555c99"
+      "bytes": 10686,
+      "sha256": "9fd5335f6ce81a03b1828d42b7d6c61ac55d07d75679cf82923aa4b9fefccbf2"
     },
     {
       "path": "reports/github_catalog_metadata_review_2026-10-16.json",
@@ -24302,7 +24302,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 430082,
-      "sha256": "98e2f8010f2e8aea9cec961b87b4a643dcee59f5e933669373eb7acaa4320318"
+      "sha256": "b1b8e945bab6efe3d4be73a74f73f52e04a5127e5ecde2e99d05878810b6370b"
     },
     {
       "path": "software.html",
