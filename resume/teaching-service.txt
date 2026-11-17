@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-11-17T00:39:21Z
+Generated: 2026-11-17T20:11:57Z
 
-Current public metrics: 234 curated works; 208 catalogued software repositories (165 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 269 docxology + 47 AII public repositories (214 primary, 102 forks).
+Current public metrics: 235 curated works; 209 catalogued software repositories (166 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 270 docxology + 47 AII public repositories (215 primary, 102 forks).
 
 SUMMARY
 -------
@@ -191,8 +191,9 @@ WORKS AND PUBLICATIONS (88)
 [237] 2026 | Book | 2026 Active Inference Symposium — Presenter Program | Zenodo (presenter program) | 10.5281/zenodo.23986504
 [238] 2026 | Paper | Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics | GitHub release v0.1.0 | https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0
 
-SOFTWARE (15)
+SOFTWARE (16)
 -------------
+docxology/CrossTalk-study | Python | https://github.com/docxology/CrossTalk-study | CrossTalk on the Page: literature review, corpus linguistics, and visual analysis of the defense software engineering journal · Tag v0.1.0 | paper: papers/2026_CrossTalk_on_the_Page/
 docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · Citation DOI | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
 docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science · Repository version DOI | zenodo: https://doi.org/10.5281/zenodo.17954165
 docxology/steganographer | Rust | https://github.com/docxology/steganographer | Rust steganography and signed-media tools for image, audio, and video carriers, with native and WebAssembly builds, capacity checks, and bounded forensic analysis · Release v0.9.1 · Software DOI | zenodo: https://doi.org/10.5281/zenodo.21513412

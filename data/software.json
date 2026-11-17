@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-17T00:39:21Z",
+  "generated_at": "2026-11-17T20:11:56Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 208,
+  "count": 209,
   "repositories": [
     {
       "name": "CRAM",
@@ -26,6 +26,18 @@
       "stars": 1,
       "updated_or_year": "2026-11",
       "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "CrossTalk-study",
+      "url": "https://github.com/docxology/CrossTalk-study",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "CrossTalk on the Page: literature review, corpus linguistics, and visual analysis of the defense software engineering journal · Tag v0.1.0",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_CrossTalk_on_the_Page/",
       "zenodo_url": ""
     },
     {

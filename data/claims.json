@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-17T00:39:21Z",
+  "generated_at": "2026-11-17T20:11:56Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 234 works.",
+      "claim": "The curated bibliography contains 235 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-17T00:36:30+00:00",
+      "checked_at": "2026-11-17T20:11:55+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -19,13 +19,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 217 per-paper documentation folders.",
+      "claim": "The repository contains 218 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-17T00:36:30+00:00",
+      "checked_at": "2026-11-17T20:11:55+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -33,13 +33,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 269 public repositories.",
+      "claim": "The docxology GitHub profile has 270 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-17T00:38:35.790613+00:00",
+      "checked_at": "2026-11-17T19:52:45.563718+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -53,7 +53,7 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-17T00:38:35.790613+00:00",
+      "checked_at": "2026-11-17T19:52:45.563718+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

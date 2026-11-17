@@ -4,14 +4,14 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
+  "works_sha256": "e33c29c5dba9e68065305ece5038638c67fc2e7a5a7a58e97289bfd237060486",
   "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
-    "works": 234,
+    "works": 235,
     "local_status": {
-      "blocked": 229,
+      "blocked": 230,
       "requires_review": 5
     },
     "blockers": {
@@ -19,7 +19,7 @@
       "missing_citation_doi": 1,
       "missing_citation_publication_date": 8,
       "missing_citation_title": 8,
-      "no_selected_local_pdf": 42,
+      "no_selected_local_pdf": 43,
       "pdf_directory_differs_from_abstract": 187,
       "pdf_exceeds_byte_limit": 41
     }
@@ -11643,6 +11643,45 @@
       "local_status": "blocked",
       "blockers": [
         "pdf_directory_differs_from_abstract"
+      ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026CrossTalkPage239",
+      "title": "CrossTalk on the Page",
+      "type": "Paper",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026CrossTalkPage239.html",
+      "page_sha256": "cbd7d6ec9ce3e70487495e9580a9c748298f1b07d9074c659644c2ca6cdaa82d",
+      "citation_tags": {
+        "citation_title": [
+          "CrossTalk on the Page"
+        ],
+        "citation_publication_date": [
+          "2026/11/17"
+        ],
+        "citation_author": [
+          "Daniel Ari Friedman"
+        ],
+        "citation_doi": [
+          "10.5281/zenodo.24297223"
+        ],
+        "citation_pdf_url": [
+          "https://zenodo.org/api/records/24297224/files/CrossTalk-on-the-Page-v0.1.0.pdf/content"
+        ]
+      },
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.1.0 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
+      "local_status": "blocked",
+      "blockers": [
+        "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
       "reviewed_prerequisites": {},

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:39:21Z",
+  "generated_at": "2026-11-17T20:11:57Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,9 +34,9 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 234,
-    "software_catalogued": 208,
-    "owned_software_catalogued": 165,
+    "works": 235,
+    "software_catalogued": 209,
+    "owned_software_catalogued": 166,
     "aii_software_catalogued": 43,
     "google_scholar": {
       "citations": 835,
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 269 public repositories.",
+      "claim": "The docxology GitHub profile has 270 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-17T00:38:35.790613+00:00",
+      "checked_at": "2026-11-17T19:52:45.563718+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -67,20 +67,20 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-17T00:38:35.790613+00:00",
+      "checked_at": "2026-11-17T19:52:45.563718+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "The public-source snapshot records this account's type as Organization; the repository count is read from /users/ActiveInferenceInstitute, which serves Organization accounts as well as Users. Local software catalog tracks 43 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-11-17T00:34:19Z",
+      "generated_at": "2026-11-17T19:45:17Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 316,
-      "public": 316,
-      "primary_total": 214,
+      "total": 317,
+      "public": 317,
+      "primary_total": 215,
       "forks": 102,
-      "docxology": 269,
+      "docxology": 270,
       "ActiveInferenceInstitute": 47
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 737,
-      "sha256": "0cf2fc7f83373dfa43d37c868d5bc937215a34e5c480e0d0e4a2d0e5803ac9aa",
+      "sha256": "1ea5e6e7cf6bd59f5b0c310cb5fa22a22805a23851b7c8837a244c68790052f9",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 194077,
-          "sha256": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330"
+          "bytes": 194788,
+          "sha256": "e33c29c5dba9e68065305ece5038638c67fc2e7a5a7a58e97289bfd237060486"
         },
         {
           "path": "data/software.json",
-          "bytes": 107597,
-          "sha256": "273149248409aa467acaa8c08b8251df26d66db8943f355d93b4553aecdad8b2"
+          "bytes": 108097,
+          "sha256": "f556dcdbb9efeae4aaee09b3a9445ef3b11b1ae065d9fd46aec80aaa045c1b30"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 13016,
-          "sha256": "b49fde7dbdb00a48a862f8b6fdc26d78ce8445c1d8f030f5a2789b7421b8d44b"
+          "sha256": "8d6c83f93b0609c6d6308c592325631b61b6caffb2a982ec5e5747ca2a0d988b"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 368891,
-          "sha256": "c81855485bdd52c43e3cb87cce833434e34435478f8a6eeef6c72598d959eedb"
+          "bytes": 369854,
+          "sha256": "30d8b8f375be4143772bd4d40085d3394439c582ef553e9196de4e699e86aef5"
         }
       ]
     },
@@ -8209,6 +8209,29 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 239,
+      "citation_key": "Friedman2026CrossTalkPage239",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "CrossTalk on the Page",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.24297223",
+      "doi": "10.5281/zenodo.24297223",
+      "docs_path": "papers/2026_CrossTalk_on_the_Page/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_CrossTalk_on_the_Page/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -8234,6 +8257,18 @@
       "stars": 1,
       "updated_or_year": "2026-11",
       "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "CrossTalk-study",
+      "url": "https://github.com/docxology/CrossTalk-study",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "CrossTalk on the Page: literature review, corpus linguistics, and visual analysis of the defense software engineering journal · Tag v0.1.0",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-11",
+      "paper_path": "papers/2026_CrossTalk_on_the_Page/",
       "zenodo_url": ""
     },
     {
@@ -10734,14 +10769,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 234 works.",
+      "claim": "The curated bibliography contains 235 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-11-17T00:36:30+00:00",
+      "checked_at": "2026-11-17T20:11:55+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -10749,13 +10784,13 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 217 per-paper documentation folders.",
+      "claim": "The repository contains 218 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-11-17T00:36:30+00:00",
+      "checked_at": "2026-11-17T20:11:55+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -10763,13 +10798,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 269 public repositories.",
+      "claim": "The docxology GitHub profile has 270 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-17T00:38:35.790613+00:00",
+      "checked_at": "2026-11-17T19:52:45.563718+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -10783,7 +10818,7 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-11-17.json"
       ],
-      "checked_at": "2026-11-17T00:38:35.790613+00:00",
+      "checked_at": "2026-11-17T19:52:45.563718+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API /users/ActiveInferenceInstitute response, type: Organization as recorded in the public-source snapshot.",
       "maintenance_owner": "INTEGRATOR",

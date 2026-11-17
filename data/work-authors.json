@@ -6314,6 +6314,23 @@
         "reviewed_at": "2026-11-06T18:45:07Z",
         "reason": "Preserve the exact 53 published institutional/presenter/group credit units in source order. Cover and registry agree; no splitting into inferred persons or editor roles."
       }
+    },
+    "Friedman2026CrossTalkPage239": {
+      "num": 239,
+      "doi": "10.5281/zenodo.24297223",
+      "title": "CrossTalk on the Page",
+      "status": "verified",
+      "resolved_title": "CrossTalk on the Page",
+      "registration_agency": "DataCite",
+      "title_similarity": 1.0,
+      "checked_at": "2026-11-17",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
     }
   }
 }

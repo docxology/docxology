@@ -1,86 +1,36 @@
 {
-  "generated_at": "2026-11-17T00:38:35.790613+00:00",
-  "source_commit": "fba657691f810ffb64e5c755816b32ed0f35829b",
+  "generated_at": "2026-11-17T19:52:45.563718+00:00",
+  "source_commit": "0c494cded04cf0dad6972d5098353f9e034a5375",
   "source_worktree_clean": false,
   "source_worktree_dirty_paths": [
-    "art.html",
-    "catalog.html",
-    "cite-verify.html",
-    "collaborators.html",
-    "data/catalog.json",
-    "data/claims.json",
-    "data/current-counts.json",
     "data/github-repositories.json",
-    "data/organizations.json",
-    "data/people.json",
-    "data/public-source-observation-decisions.json",
-    "data/reconciliation.json",
-    "data/repository-classification.json",
-    "data/repository-exclusions.json",
-    "data/resume.json",
-    "data/software-ld.json",
-    "data/software.json",
-    "discovery.html",
-    "domain-active-inference.html",
-    "domain-aii-ecosystem.html",
-    "domain-art-synergetics.html",
-    "domain-biomedicine.html",
-    "domain-cognitive-security.html",
-    "domain-computational.html",
-    "domain-entomology.html",
-    "domain-presentations-media.html",
-    "domains.html",
-    "evidence.html",
-    "exports.html",
-    "index.html",
-    "llms.txt",
-    "media.html",
-    "pages/DISCOVERY.md",
-    "pages/EVIDENCE.md",
-    "publications.html",
-    "reports/current_counts.md",
-    "reports/public_source_drift_review_2026-11-17.md",
-    "reports/public_source_inventory_2026-11-17.json",
+    "data/work-identifiers.json",
+    "pages/BIBLIOGRAPHY.md",
+    "papers/README.md",
+    "papers/paper_metadata.json",
     "repositories-forks.html",
     "repositories.html",
-    "resume/academic.txt",
-    "resume/full.txt",
-    "resume/resume.html",
-    "resume/resume.pdf",
-    "resume/software-consulting.txt",
-    "resume/teaching-service.txt",
-    "resume/verify.html",
-    "search-index-bootstrap.json",
-    "search-index-content-video.json",
-    "search-index-content-work.json",
-    "search-index-core.json",
-    "search-index.json",
-    "search.html",
-    "sitemap.xml",
-    "software.html",
-    "videos.html",
-    "reports/accessibility_static_2026-11-17.json",
-    "reports/asset_size_2026-11-17.json",
-    "reports/reconciliation_2026-11-17.md",
-    "reports/source_coverage_2026-11-17.json",
-    "reports/source_coverage_2026-11-17.md"
+    "papers/2026_CrossTalk_on_the_Page/full_text.md",
+    "papers/2026_CrossTalk_on_the_Page/metadata.json",
+    "papers/2026_CrossTalk_on_the_Page/source_evidence.json",
+    "reports/paired_publications_2026-11-17.json"
   ],
-  "source_tree_sha": "130338db8a4bf0e4f06f6da9609df0b0896c6345",
+  "source_tree_sha": "f9a4b776afa52a1b9f37a66b64a1fcbd1611958b",
   "date": "2026-11-17",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {
     "GitHub user docxology": {
       "login": "docxology",
       "type": "User",
-      "public_repos": 269,
-      "updated_at": "2026-11-15T00:22:28Z",
+      "public_repos": 270,
+      "updated_at": "2026-11-17T15:00:29Z",
       "html_url": "https://github.com/docxology"
     },
     "GitHub user ActiveInferenceInstitute": {
       "login": "ActiveInferenceInstitute",
       "type": "Organization",
       "public_repos": 47,
-      "updated_at": "2026-11-16T19:06:42Z",
+      "updated_at": "2026-11-17T01:40:38Z",
       "html_url": "https://github.com/ActiveInferenceInstitute"
     },
     "ORCID work groups": {
@@ -106,14 +56,14 @@
       "total_results": 15
     },
     "Zenodo exact-name creator records": {
-      "total": 100,
-      "first_title": "Generalized_Notation_Notation (GNN)",
-      "first_doi": "10.5281/zenodo.24167564"
+      "total": 101,
+      "first_title": "CrossTalk on the Page",
+      "first_doi": "10.5281/zenodo.24297224"
     },
     "Zenodo ORCID-linked records": {
-      "total": 188,
-      "first_title": "Generalized_Notation_Notation (GNN)",
-      "first_doi": "10.5281/zenodo.24167564"
+      "total": 189,
+      "first_title": "CrossTalk on the Page",
+      "first_doi": "10.5281/zenodo.24297224"
     },
     "Zenodo record 18686966": {
       "title": "ActiveInferenceInstitute/Journal_Utilities: v0.1.0: Hardened, Documented, and Feature-Complete",
@@ -290,8 +240,8 @@
       "result": {
         "login": "docxology",
         "type": "User",
-        "public_repos": 269,
-        "updated_at": "2026-11-15T00:22:28Z",
+        "public_repos": 270,
+        "updated_at": "2026-11-17T15:00:29Z",
         "html_url": "https://github.com/docxology"
       }
     },
@@ -303,7 +253,7 @@
         "login": "ActiveInferenceInstitute",
         "type": "Organization",
         "public_repos": 47,
-        "updated_at": "2026-11-16T19:06:42Z",
+        "updated_at": "2026-11-17T01:40:38Z",
         "html_url": "https://github.com/ActiveInferenceInstitute"
       }
     },
@@ -354,9 +304,9 @@
       "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C+Daniel+Ari%22&size=1&sort=mostrecent",
       "ok": true,
       "result": {
-        "total": 100,
-        "first_title": "Generalized_Notation_Notation (GNN)",
-        "first_doi": "10.5281/zenodo.24167564"
+        "total": 101,
+        "first_title": "CrossTalk on the Page",
+        "first_doi": "10.5281/zenodo.24297224"
       }
     },
     {
@@ -364,9 +314,9 @@
       "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22&size=1&sort=mostrecent",
       "ok": true,
       "result": {
-        "total": 188,
-        "first_title": "Generalized_Notation_Notation (GNN)",
-        "first_doi": "10.5281/zenodo.24167564"
+        "total": 189,
+        "first_title": "CrossTalk on the Page",
+        "first_doi": "10.5281/zenodo.24297224"
       }
     },
     {

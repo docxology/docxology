@@ -9,7 +9,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (217)
+## Papers (218)
 
 Archive links open the selected versioned PDFs without duplicating them here.
 
@@ -234,6 +234,7 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 216 | [2026_SymposiumPresenterProgram](2026_SymposiumPresenterProgram/) | [Zenodo PDF](https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf/content) | 2026 | SymposiumPresenterProgram |
 | 217 | [2026_OPHFEP_Synergetics](2026_OPHFEP_Synergetics/) | ✅ | 2026 | OPH, FEP and Synergetics |
 
+| 218 | [2026_CrossTalk_on_the_Page](2026_CrossTalk_on_the_Page/) | ✅ | 2026 | CrossTalk_on_the_Page |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-17T01:11:03Z",
-  "source_commit_at_generation": "53782360a34c41b63ee8e67c30effb2baeac4e82",
+  "generated_at": "2026-11-17T21:47:00Z",
+  "source_commit_at_generation": "0bc564d97619f09cee7ae83cd387fcf612868c9a",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -24,28 +24,28 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "43caca91f0ddce70de01cfadeb856157fc588ccc901f12c84988f998d6b70b62",
-    "data/work-identifiers.json": "23826d73d524fcf0a521f6f16894a3e8dccd886adef2fb2f77dfca3bab2d01c4",
-    "pages/SOFTWARE.md": "d091ced778bdebbcad8f4a20fd63c606c9cbb2f0ea6121fde0d4049700655303",
+    "pages/BIBLIOGRAPHY.md": "60199422a656f4073bd185904035a409c3f451075c0fa6fe4e4ceb74b5eebe70",
+    "data/work-identifiers.json": "a5872f3046dfd01b5d36ec422ce40b6bfe093f71dc87dc8c3fe0c5844117a13d",
+    "pages/SOFTWARE.md": "be65639b2ad9db83110900eb7228f1d3ea60ad28fc040e47b619fcfd0d8c92b2",
     "resume/source.json": "69cbd668ee8f0b859f525eef8216955dbf0eb87490ac51e01493996c81f2202a",
-    "data/current-counts.json": "1e5f774cd1d487991b5850faa6718f6c602dbc5a909445d96dc6a47074d4c281",
+    "data/current-counts.json": "745f4e91943e7e18f0756c29659253255ce8b165abbdbc6ba2926ce89c6cd751",
     "data/coverage-exceptions.json": "e8a253e85f233ddedc483897452251cb1a4de4371823286e4258f59567b274c0",
-    "data/repository-classification.json": "5274af8c4f234b27bab7cc05888967b4e6757082f39c72d2200c2db8d8199f43",
-    "data/agent-index.json": "975349d73c6bfdd85b098dd08c156cf229c6feb687975c93ee396de730b18f79",
-    "data/generated-manifest.json": "19a7e57a58e37de90c648fd535de9a13e3c9c431e849755235351a9e5a47a9b8",
-    "data/pages-artifact-manifest.json": "83bf53c06cfea343953c3096328554b502defbc74003ec0fe4f8eb07aeaa6e8e"
+    "data/repository-classification.json": "a0a17214f9bde7f55bddd9eac16c9d0854bc85fdcaa86ebdb69ee3e26180e7be",
+    "data/agent-index.json": "2a3cc93f90c63fa024d715857b25076dae95d5d5a5292109aaecb6da076b19ff",
+    "data/generated-manifest.json": "35406ce0a993d4a24d6e5e2ff0493ce2de79c7d65ea8379d4fb59ebb61bf93ab",
+    "data/pages-artifact-manifest.json": "667dd0291cbe06f5d594a1c7b7299e16e9d17cbbd3c0d350f468f359e794772d"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "53782360a34c41b63ee8e67c30effb2baeac4e82",
-    "artifact_file_count": 6300,
-    "artifact_bytes": 967010662,
+    "source_commit_at_generation": "0bc564d97619f09cee7ae83cd387fcf612868c9a",
+    "artifact_file_count": 6310,
+    "artifact_bytes": 968601239,
     "omitted_paper_image_count": 8959,
     "omitted_superseded_report_count": 820
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "53782360a34c41b63ee8e67c30effb2baeac4e82",
+    "candidate_source_commit": "0bc564d97619f09cee7ae83cd387fcf612868c9a",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -54,41 +54,41 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 217,
-    "bibliography_works": 234,
+    "bibliography_docs_links": 218,
+    "bibliography_works": 235,
     "domains": {
       "AII Ecosystem": 7,
       "Active Inference": 49,
       "Art & Synergetics": 17,
       "Cognitive Security": 37,
-      "Computational": 71,
+      "Computational": 72,
       "Entomology": 24,
       "Genetics & Biomedical": 13,
       "Presentations & Media": 15
     },
     "extracted_images": 8959,
-    "full_text_papers": 212,
+    "full_text_papers": 213,
     "generated_exports": {
-      "data_publications_ld_main_entity": 234,
-      "data_software_json": 208,
-      "data_software_ld_main_entity": 208,
-      "data_works_json": 234
+      "data_publications_ld_main_entity": 235,
+      "data_software_json": 209,
+      "data_software_ld_main_entity": 209,
+      "data_works_json": 235
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 47,
       "archived": 92,
-      "curated": 208,
-      "docxology": 269,
+      "curated": 209,
+      "docxology": 270,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 100,
       "forks": 102,
       "primary_ActiveInferenceInstitute": 45,
-      "primary_docxology": 169,
-      "primary_total": 214,
+      "primary_docxology": 170,
+      "primary_total": 215,
       "private": 0,
-      "public": 316,
-      "recently_updated": 316,
-      "total": 316,
+      "public": 317,
+      "recently_updated": 317,
+      "total": 317,
       "uncataloged": 108
     },
     "paired_publication_decisions": {
@@ -100,35 +100,35 @@
     "paired_publications": {
       "already_reviewed": 0,
       "create_new": 0,
-      "github_releases": 35,
-      "needs_review": 174,
-      "pairs": 175,
-      "software_catalogued": 1,
-      "strong_pairs": 1,
+      "github_releases": 17,
+      "needs_review": 86,
+      "pairs": 86,
+      "software_catalogued": 0,
+      "strong_pairs": 0,
       "update_existing": 0,
-      "zenodo_records": 193
+      "zenodo_records": 194
     },
-    "paper_folder_docs": 217,
+    "paper_folder_docs": 218,
     "papers_with_images": 145,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 47,
-      "GitHub user docxology": 269,
+      "GitHub user docxology": 270,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 188,
-      "Zenodo exact-name creator records": 100
+      "Zenodo ORCID-linked records": 189,
+      "Zenodo exact-name creator records": 101
     },
     "software": {
       "active_inference_institute": 43,
-      "curated_total": 208,
-      "docxology_owned": 165
+      "curated_total": 209,
+      "docxology_owned": 166
     },
     "types": {
       "Books": 6,
       "Courses": 3,
-      "Papers": 212,
+      "Papers": 213,
       "Playbooks": 2,
       "Presentations": 8,
       "Report": 1,
