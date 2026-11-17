@@ -1,0 +1,69 @@
+{
+  "title": "CrossTalk on the Page",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.24297223",
+  "doi_url": "https://doi.org/10.5281/zenodo.24297223",
+  "zenodo_record": "https://zenodo.org/records/24297223",
+  "record_id": "24297224",
+  "publication_date": "2026-11-17",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A literature review, corpus linguistic analysis, and visual study of CrossTalk, the defense software engineering journal. The retained corpus comprises 281 issue PDFs and 9,660 measured physical pages, with 2,708 distinct complete AI-assisted journal article appraisals and exact article counts for 270 of 281 retained PDF scopes.",
+  "keywords": [
+    "CrossTalk",
+    "software engineering",
+    "literature review",
+    "corpus linguistics",
+    "visual analysis"
+  ],
+  "files": [
+    {
+      "name": "CrossTalk-on-the-Page-v0.1.0.pdf",
+      "size_bytes": 220703,
+      "checksum": "md5:598e4aa1528295f7829e2c65fba7fea1",
+      "download_url": "https://zenodo.org/api/records/24297224/files/CrossTalk-on-the-Page-v0.1.0.pdf/content"
+    },
+    {
+      "name": "CrossTalk-on-the-Page-v0.1.0-data.zip",
+      "size_bytes": 169786,
+      "checksum": "md5:93f9f09db21738fa5f45e5cf8c5f18fa",
+      "download_url": "https://zenodo.org/api/records/24297224/files/CrossTalk-on-the-Page-v0.1.0-data.zip/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/CrossTalk-study"
+    }
+  ],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-11-17T19:31:00Z",
+  "remote_primary_pdf": {
+    "name": "CrossTalk-on-the-Page-v0.1.0.pdf",
+    "url": "https://zenodo.org/api/records/24297224/files/CrossTalk-on-the-Page-v0.1.0.pdf/content",
+    "bytes": 220703,
+    "sha256": "286a6b3a13d333145cc78148886182d850f1112b1771df85ef985b902ed0bcef",
+    "record_id": "24297224",
+    "version": "0.1.0"
+  },
+  "artifact_doi": "10.5281/zenodo.24297224",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.24297224",
+  "pages": 26,
+  "pdf_sha256": "286a6b3a13d333145cc78148886182d850f1112b1771df85ef985b902ed0bcef",
+  "domain": "💻",
+  "document_title": "CrossTalk on the Page: How defense software engineering was written and illustrated",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "rights_note": "The exact deposited record declares CC BY 4.0 for this deposit. Source locators identify third-party CrossTalk publications that remain under their own terms; those terms are not transferred."
+}

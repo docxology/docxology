@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Publications and Research Outputs in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**234 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**235 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-835_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -32,9 +32,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical · 🔍 Other
 
-**212** Papers · **8** Presentations · **6** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
+**213** Papers · **8** Presentations · **6** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
 
-> **234** works in the table below **·** **217** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **235** works in the table below **·** **218** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -278,6 +278,7 @@ The contributor column lists authors unless otherwise specified: the contributor
 | 236 | 2026 | 💻 | Paper | Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology | *Zenodo (preprint)* | [10.5281/zenodo.23987670](https://doi.org/10.5281/zenodo.23987670) | [📁](../papers/2026_Rikishi/) | Friedman, Daniel Ari |
 | 237 | 2026 | 🎥 | Book | 2026 Active Inference Symposium — Presenter Program | *Zenodo (presenter program)* | [10.5281/zenodo.23986504](https://doi.org/10.5281/zenodo.23986504) | [📁](../papers/2026_SymposiumPresenterProgram/) | Active Inference Institute; Bradly Alicea; Dan Corva, Kevin Backhouse; Hongju Pae; Karl Friston; Alison Gopnik; Bianca Avanzo; Ed Ober; John Boik, Glen EP Ropella; Luca Possati; Majid D. Beni; Mike Levin; Montijn van Loo; Ryan Smith; Sergio Rubin; Takuya Isomura; Ted J. Vrioni; Ahmad Nazzal; Alexander Sabine; Andrew Pashea; Anna Pereira; Avel Guénin—Carlut; Bo Lee; Bruce Tisler; Cleber Gomes; Colin Turfus; Daniel Dragolich; Daniel Friedman; Diaconescu Adrian-Stelian; Harshil Shah, Andrew Pashea; Harshil Shah, Satyaki Maitra; Holly Grimm, John H. Clippinger, Daniel Ari Friedman; Hyojun Choi; Jean-François Cloutier; Lancelot Da Costa; Matthew Brown; Michael Lennon; Michael Walker; Nick Hay, Adam Safron; Patricia Craja; Paulo Santiago; Rajkaushik Borgohain; Robert Worden; Sheena Yap Chan; Stell; Steph Macurdy; Tao Gong; Tiga Kailimai; Tran Hoang Linh; Viraj Deshwal; Vitalii Shapovalov; Vitória de Souza; Xin Sun |
 | 238 | 2026 | 🧠 | Paper | Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics | *GitHub release v0.1.0* | [Release](https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0) | [📁](../papers/2026_OPHFEP_Synergetics/) | Friedman, Daniel Ari |
+| 239 | 2026 | 💻 | Paper | CrossTalk on the Page | *Zenodo* | [10.5281/zenodo.24297223](https://doi.org/10.5281/zenodo.24297223) | [📁](../papers/2026_CrossTalk_on_the_Page/) | Friedman, Daniel Ari |
 ---
 
 ## Domain Index

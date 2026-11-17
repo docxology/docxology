@@ -76,13 +76,12 @@
       "id": "public-source-observation:GitHub user ActiveInferenceInstitute",
       "label": "GitHub user ActiveInferenceInstitute",
       "previous_sha256": "ed5dcb6f04e9646e956312d2735f2af053fb981d73b5ab89699da306de1e9bf1",
-      "current_sha256": "bb02aa3784111af5ba0b19e9a0ef3e6a583ed62abcfe32c2d7db302bb25d0151",
+      "current_sha256": "1a9e41de7cd250d28a926d8f05167ff962c6d812172e44781b4fee9a15ee826e",
       "decision": "acknowledged",
-      "decided_by": "Docxology Maintainer, owner-authorized public-source review",
-      "decided_at": "2026-11-17T00:39:18.811714+00:00",
-      "rationale": "Fresh primary API facts differ only in repository/account activity timestamps or star telemetry. Public identity, account type where present, repository URL and language remain unchanged. This acknowledgement establishes no new publication, software edition or biographical claim.",
+      "decided_by": "Docxology Reviewer, owner-authorized Wave 4 public-source review",
+      "decided_at": "2026-11-17T19:54:02.696776+00:00",
+      "rationale": "Only the organization profile updated_at changed (2026-11-06T14:12:07Z to 2026-11-17T01:40:38Z). The fresh complete inventory still contains 47 ActiveInferenceInstitute repositories. This is account activity, not publication or biographical evidence; no curated change.",
       "curated_targets": [
-        "reports/public_source_drift_review_2026-11-17.md",
         "data/github-repositories.json"
       ]
     },
@@ -154,44 +153,45 @@
       "id": "public-source-observation:GitHub user docxology",
       "label": "GitHub user docxology",
       "previous_sha256": "66c6092ba06f94ac139bb2f7db8d285b3ef28bcd27db13fc571b53dde9f08c13",
-      "current_sha256": "74a79950b613be5845afd30bada03b90401f3163e38648825ef40751ae55cdb9",
+      "current_sha256": "4c29882d03986cd6ed249cc1cc27282a7dc004bf4fa1b05c7e62a1985c5b93de",
       "decision": "acknowledged",
-      "decided_by": "Docxology Maintainer, owner-authorized public-source review",
-      "decided_at": "2026-11-17T00:39:18.811716+00:00",
-      "rationale": "The fresh complete public GitHub inventory contains 269 docxology repositories, matching this observation. The November 6 account count was 275; the pre-existing main inventory had already reconciled to 268, and the newly public hybrid-aif fork accounts for the additional repository. Its exact identity is recorded under the standing public-fork exclusion policy. This is inventory membership and account activity, not publication or biographical evidence.",
+      "decided_by": "Docxology Reviewer, owner-authorized Wave 4 public-source review",
+      "decided_at": "2026-11-17T19:54:02.696776+00:00",
+      "rationale": "The fresh complete public GitHub inventory contains 270 docxology repositories, matching public_repos. Relative to the earlier November 17 review (269), the addition is docxology/CrossTalk-study (created 2026-11-17, Apache-2.0), the source repository of the newly catalogued CrossTalk on the Page preprint; it receives a reviewed software row linking the paper folder. updated_at is account activity, not publication or biographical evidence.",
       "curated_targets": [
-        "reports/public_source_drift_review_2026-11-17.md",
-        "data/github-repositories.json"
+        "data/github-repositories.json",
+        "pages/SOFTWARE.md",
+        "reports/public_source_drift_review_2026-11-17.md"
       ]
     },
     {
       "id": "public-source-observation:Zenodo ORCID-linked records",
       "label": "Zenodo ORCID-linked records",
       "previous_sha256": "c1a6b2989ac313741567aa0b4c7ddacb52173d2faa66a8bd991a522eb6feed30",
-      "current_sha256": "a1d84d36787d7a3c474fd0b364d51222f30c15bad4b2220d429b71a928220a3a",
+      "current_sha256": "00d0b3aff1839cc31c7bb17fca4c87a106e9d8d720231c8709a4abedd6ad5d0e",
       "decision": "acknowledged",
-      "decided_by": "Docxology Maintainer, owner-authorized public-source review",
-      "decided_at": "2026-11-17T00:39:18.811718+00:00",
-      "rationale": "Fresh complete query inventories and primary Zenodo record APIs were compared with the November 6 inventory. All 17 distinct newly surfaced editions across the two queries resolve to concept DOIs already present in BIBLIOGRAPHY.md or SOFTWARE.md; the GNN and Observers removals are superseded editions. Search totals include software and editions and do not establish a new work. No curated row or canonical citation DOI change is needed. Exact version/concept bindings are retained in reports/public_source_drift_review_2026-11-17.md.",
+      "decided_by": "Docxology Reviewer, owner-authorized Wave 4 public-source review",
+      "decided_at": "2026-11-17T19:54:02.696776+00:00",
+      "rationale": "The 2026-11-17T19:52:45.563718+00:00 public-source refresh adds exactly one record relative to the earlier November 17 review: version record 24297224 (DOI 10.5281/zenodo.24297224, concept 10.5281/zenodo.24297223), \"CrossTalk on the Page\", a CC-BY-4.0 preprint by Friedman, Daniel Ari published 2026-11-17 and supplemented by https://github.com/docxology/CrossTalk-study/tree/v0.1.0. It is a new distinct work with no GitHub release, catalogued through the Zenodo-only path as bibliography row 239 citing the concept DOI, with a checksum-verified remote primary PDF. All other changes since the November 6 baseline remain as reviewed in reports/public_source_drift_review_2026-11-17.md. Query totals include software and editions and are not bibliography work counts.",
       "curated_targets": [
-        "reports/public_source_drift_review_2026-11-17.md",
         "pages/BIBLIOGRAPHY.md",
-        "pages/SOFTWARE.md"
+        "papers/2026_CrossTalk_on_the_Page/metadata.json",
+        "reports/public_source_drift_review_2026-11-17.md"
       ]
     },
     {
       "id": "public-source-observation:Zenodo exact-name creator records",
       "label": "Zenodo exact-name creator records",
       "previous_sha256": "2596414e6604884b775f5e275ca9cbbf4a2804f4a29c9f4ba9927aa359211457",
-      "current_sha256": "bbf124cd936b9b072be07f78d8594d7fcd896197e043a0bbf550c5681aac5212",
+      "current_sha256": "dd056ec1f3156de43d69cd74fbedc108b8d698f63a1362e5b6c0737128637630",
       "decision": "acknowledged",
-      "decided_by": "Docxology Maintainer, owner-authorized public-source review",
-      "decided_at": "2026-11-17T00:39:18.811719+00:00",
-      "rationale": "Fresh complete query inventories and primary Zenodo record APIs were compared with the November 6 inventory. All 17 distinct newly surfaced editions across the two queries resolve to concept DOIs already present in BIBLIOGRAPHY.md or SOFTWARE.md; the GNN and Observers removals are superseded editions. Search totals include software and editions and do not establish a new work. No curated row or canonical citation DOI change is needed. Exact version/concept bindings are retained in reports/public_source_drift_review_2026-11-17.md.",
+      "decided_by": "Docxology Reviewer, owner-authorized Wave 4 public-source review",
+      "decided_at": "2026-11-17T19:54:02.696776+00:00",
+      "rationale": "The 2026-11-17T19:52:45.563718+00:00 public-source refresh adds exactly one record relative to the earlier November 17 review: version record 24297224 (DOI 10.5281/zenodo.24297224, concept 10.5281/zenodo.24297223), \"CrossTalk on the Page\", a CC-BY-4.0 preprint by Friedman, Daniel Ari published 2026-11-17 and supplemented by https://github.com/docxology/CrossTalk-study/tree/v0.1.0. It is a new distinct work with no GitHub release, catalogued through the Zenodo-only path as bibliography row 239 citing the concept DOI, with a checksum-verified remote primary PDF. All other changes since the November 6 baseline remain as reviewed in reports/public_source_drift_review_2026-11-17.md. Query totals include software and editions and are not bibliography work counts.",
       "curated_targets": [
-        "reports/public_source_drift_review_2026-11-17.md",
         "pages/BIBLIOGRAPHY.md",
-        "pages/SOFTWARE.md"
+        "papers/2026_CrossTalk_on_the_Page/metadata.json",
+        "reports/public_source_drift_review_2026-11-17.md"
       ]
     }
   ],
@@ -385,6 +385,71 @@
         }
       ],
       "scope": "Exact old records retained unchanged; these are historical decisions, not fresh approvals."
+    },
+    {
+      "reviewed_at": "2026-11-17T19:54:02.696776+00:00",
+      "prior_ledger_sha256": "ec982b68e899bc704668d9898cd016db541a8da8e6e2329e8ebb4ead0c0f11af",
+      "prior_ledger_url": "https://github.com/docxology/docxology/blob/0c494cded04cf0dad6972d5098353f9e034a5375/data/public-source-observation-decisions.json",
+      "superseded_active_decisions": [
+        {
+          "id": "public-source-observation:GitHub user ActiveInferenceInstitute",
+          "label": "GitHub user ActiveInferenceInstitute",
+          "previous_sha256": "ed5dcb6f04e9646e956312d2735f2af053fb981d73b5ab89699da306de1e9bf1",
+          "current_sha256": "bb02aa3784111af5ba0b19e9a0ef3e6a583ed62abcfe32c2d7db302bb25d0151",
+          "decision": "acknowledged",
+          "decided_by": "Docxology Maintainer, owner-authorized public-source review",
+          "decided_at": "2026-11-17T00:39:18.811714+00:00",
+          "rationale": "Fresh primary API facts differ only in repository/account activity timestamps or star telemetry. Public identity, account type where present, repository URL and language remain unchanged. This acknowledgement establishes no new publication, software edition or biographical claim.",
+          "curated_targets": [
+            "reports/public_source_drift_review_2026-11-17.md",
+            "data/github-repositories.json"
+          ]
+        },
+        {
+          "id": "public-source-observation:GitHub user docxology",
+          "label": "GitHub user docxology",
+          "previous_sha256": "66c6092ba06f94ac139bb2f7db8d285b3ef28bcd27db13fc571b53dde9f08c13",
+          "current_sha256": "74a79950b613be5845afd30bada03b90401f3163e38648825ef40751ae55cdb9",
+          "decision": "acknowledged",
+          "decided_by": "Docxology Maintainer, owner-authorized public-source review",
+          "decided_at": "2026-11-17T00:39:18.811716+00:00",
+          "rationale": "The fresh complete public GitHub inventory contains 269 docxology repositories, matching this observation. The November 6 account count was 275; the pre-existing main inventory had already reconciled to 268, and the newly public hybrid-aif fork accounts for the additional repository. Its exact identity is recorded under the standing public-fork exclusion policy. This is inventory membership and account activity, not publication or biographical evidence.",
+          "curated_targets": [
+            "reports/public_source_drift_review_2026-11-17.md",
+            "data/github-repositories.json"
+          ]
+        },
+        {
+          "id": "public-source-observation:Zenodo ORCID-linked records",
+          "label": "Zenodo ORCID-linked records",
+          "previous_sha256": "c1a6b2989ac313741567aa0b4c7ddacb52173d2faa66a8bd991a522eb6feed30",
+          "current_sha256": "a1d84d36787d7a3c474fd0b364d51222f30c15bad4b2220d429b71a928220a3a",
+          "decision": "acknowledged",
+          "decided_by": "Docxology Maintainer, owner-authorized public-source review",
+          "decided_at": "2026-11-17T00:39:18.811718+00:00",
+          "rationale": "Fresh complete query inventories and primary Zenodo record APIs were compared with the November 6 inventory. All 17 distinct newly surfaced editions across the two queries resolve to concept DOIs already present in BIBLIOGRAPHY.md or SOFTWARE.md; the GNN and Observers removals are superseded editions. Search totals include software and editions and do not establish a new work. No curated row or canonical citation DOI change is needed. Exact version/concept bindings are retained in reports/public_source_drift_review_2026-11-17.md.",
+          "curated_targets": [
+            "reports/public_source_drift_review_2026-11-17.md",
+            "pages/BIBLIOGRAPHY.md",
+            "pages/SOFTWARE.md"
+          ]
+        },
+        {
+          "id": "public-source-observation:Zenodo exact-name creator records",
+          "label": "Zenodo exact-name creator records",
+          "previous_sha256": "2596414e6604884b775f5e275ca9cbbf4a2804f4a29c9f4ba9927aa359211457",
+          "current_sha256": "bbf124cd936b9b072be07f78d8594d7fcd896197e043a0bbf550c5681aac5212",
+          "decision": "acknowledged",
+          "decided_by": "Docxology Maintainer, owner-authorized public-source review",
+          "decided_at": "2026-11-17T00:39:18.811719+00:00",
+          "rationale": "Fresh complete query inventories and primary Zenodo record APIs were compared with the November 6 inventory. All 17 distinct newly surfaced editions across the two queries resolve to concept DOIs already present in BIBLIOGRAPHY.md or SOFTWARE.md; the GNN and Observers removals are superseded editions. Search totals include software and editions and do not establish a new work. No curated row or canonical citation DOI change is needed. Exact version/concept bindings are retained in reports/public_source_drift_review_2026-11-17.md.",
+          "curated_targets": [
+            "reports/public_source_drift_review_2026-11-17.md",
+            "pages/BIBLIOGRAPHY.md",
+            "pages/SOFTWARE.md"
+          ]
+        }
+      ]
     }
   ]
 }

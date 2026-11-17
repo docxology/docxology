@@ -2289,6 +2289,12 @@
       "url": "https://github.com/docxology/crescent_city"
     },
     {
+      "id": "software:https://github.com/docxology/crosstalk-study",
+      "kind": "software",
+      "label": "docxology/CrossTalk-study",
+      "url": "https://github.com/docxology/CrossTalk-study"
+    },
+    {
       "id": "software:https://github.com/docxology/daf-jev",
       "kind": "software",
       "label": "docxology/daf-jev",
@@ -3663,6 +3669,13 @@
       "kind": "work",
       "label": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
       "url": "/works/Friedman2026CrescentCityLivingWaves116.html",
+      "year": 2026
+    },
+    {
+      "id": "work:Friedman2026CrossTalkPage239",
+      "kind": "work",
+      "label": "CrossTalk on the Page",
+      "url": "/works/Friedman2026CrossTalkPage239.html",
       "year": 2026
     },
     {
@@ -10485,6 +10498,24 @@
       "target": "software:https://github.com/docxology/oph-fep-synergetics",
       "relation": "Associated software",
       "provenance": "papers/2026_OPHFEP_Synergetics/metadata.json"
+    },
+    {
+      "source": "work:Friedman2026CrossTalkPage239",
+      "target": "domain:computational",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026CrossTalkPage239",
+      "target": "person:friedman, daniel ari",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026CrossTalkPage239",
+      "target": "software:https://github.com/docxology/crosstalk-study",
+      "relation": "Associated software",
+      "provenance": "papers/2026_CrossTalk_on_the_Page/metadata.json"
     }
   ]
 }

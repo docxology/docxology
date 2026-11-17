@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "record_id": "24297224",
+    "concept_doi": "10.5281/zenodo.24297223",
+    "artifact_doi": "10.5281/zenodo.24297224",
+    "version": "0.1.0",
+    "url": "https://zenodo.org/api/records/24297224/files/CrossTalk-on-the-Page-v0.1.0.pdf/content",
+    "name": "CrossTalk-on-the-Page-v0.1.0.pdf",
+    "bytes": 220703,
+    "sha256": "286a6b3a13d333145cc78148886182d850f1112b1771df85ef985b902ed0bcef",
+    "md5": "598e4aa1528295f7829e2c65fba7fea1",
+    "pages": 26,
+    "storage": "remote primary; acquired review copy not committed",
+    "review_scope": "Streamed size/MD5 match against the registry manifest and all-page extraction; no independent scientific, corpus or visual verification."
+  },
+  "extraction": {
+    "file": "full_text.md",
+    "sha256": "041eefdb19513eaf57691073555da35af2092b0c4e37d9ea8e417ab4f1521d5d",
+    "source_pdf_sha256": "286a6b3a13d333145cc78148886182d850f1112b1771df85ef985b902ed0bcef",
+    "tool": "code/orchestrators/extract_paper_texts.py (PyMuPDF)",
+    "method": "All 26 pages extracted in document order with page markers; no OCR; no embedded images found."
+  },
+  "registry_observation": {
+    "record_id": "24297224",
+    "doi": "10.5281/zenodo.24297224",
+    "conceptdoi": "10.5281/zenodo.24297223",
+    "title": "CrossTalk on the Page",
+    "publication_date": "2026-11-17",
+    "version": "0.1.0",
+    "creators": [
+      {
+        "name": "Friedman, Daniel Ari",
+        "affiliation": "Active Inference Institute",
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/docxology/CrossTalk-study/tree/v0.1.0",
+        "relation": "isSupplementedBy",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "files": [
+      {
+        "key": "CrossTalk-on-the-Page-v0.1.0.pdf",
+        "size": 220703,
+        "checksum": "md5:598e4aa1528295f7829e2c65fba7fea1"
+      },
+      {
+        "key": "CrossTalk-on-the-Page-v0.1.0-data.zip",
+        "size": 169786,
+        "checksum": "md5:93f9f09db21738fa5f45e5cf8c5f18fa"
+      }
+    ],
+    "record_json_sha256": "fe8d82fb648bc81ab0ddee9dcad719c8a4ac06dba1da250be93851abff2c06af",
+    "record_json_serialization": "UTF-8 canonical JSON, sort_keys=True, separators comma/colon, ensure_ascii=False; exact GET https://zenodo.org/api/records/24297224 on 2026-11-17."
+  },
+  "document_observation": {
+    "title": "CrossTalk on the Page",
+    "subtitle": "How defense software engineering was written and illustrated",
+    "byline": [
+      "Friedman, Daniel Ari"
+    ],
+    "affiliation": "Active Inference Institute",
+    "orcid": "0000-0001-6232-9096",
+    "printed_doi": "10.5281/zenodo.24297224",
+    "printed_date": "2026-11-16",
+    "printed_edition": "Public edition 0.1.0",
+    "review_scope": "Page-1 title, byline, printed DOI/date and full-text privacy screening; no independent scientific replication.",
+    "date_relationship": "The title page prints 2026-11-16; the registry publication_date is 2026-11-17 and is used for citation."
+  }
+}

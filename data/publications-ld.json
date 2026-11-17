@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 234 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 235 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -9870,6 +9870,40 @@
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026OPHFEPSynergeticsExecutable238.html",
             "sameAs": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0",
             "citation": "Friedman, Daniel Ari. 2026. Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics. GitHub release v0.1.0. URL: https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "CrossTalk on the Page",
+            "headline": "CrossTalk on the Page",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026CrossTalkPage239.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026CrossTalkPage239.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CrossTalkPage239.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.24297223",
+                "url": "https://doi.org/10.5281/zenodo.24297223"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.24297223",
+            "citation": "Friedman, Daniel Ari. 2026. CrossTalk on the Page. Zenodo. DOI: 10.5281/zenodo.24297223. URL: https://doi.org/10.5281/zenodo.24297223."
         }
     ]
 }

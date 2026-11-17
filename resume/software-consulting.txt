@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-11-17T00:39:21Z
+Generated: 2026-11-17T20:11:57Z
 
-Current public metrics: 234 curated works; 208 catalogued software repositories (165 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 269 docxology + 47 AII public repositories (214 primary, 102 forks).
+Current public metrics: 235 curated works; 209 catalogued software repositories (166 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 270 docxology + 47 AII public repositories (215 primary, 102 forks).
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (226)
+WORKS AND PUBLICATIONS (227)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -282,11 +282,13 @@ WORKS AND PUBLICATIONS (226)
 [236] 2026 | Paper | Rikishi: Reproducible operation and analysis of the Suggested Upper Merged Ontology | Zenodo (preprint) | 10.5281/zenodo.23987670
 [237] 2026 | Book | 2026 Active Inference Symposium — Presenter Program | Zenodo (presenter program) | 10.5281/zenodo.23986504
 [238] 2026 | Paper | Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics | GitHub release v0.1.0 | https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0
+[239] 2026 | Paper | CrossTalk on the Page | Zenodo | 10.5281/zenodo.24297223
 
-SOFTWARE (208)
+SOFTWARE (209)
 --------------
 docxology/CRAM | unspecified | https://github.com/docxology/CRAM | Compact Reasoning Associative Memory: Classical Energies Learn to Reason 1,000× Faster than Looped Models
 docxology/OPH-FEP-Synergetics | Python | https://github.com/docxology/OPH-FEP-Synergetics | Executable correspondences, obstructions, and complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller's Synergetics. · Release v0.1.0 · Manuscript PDF
+docxology/CrossTalk-study | Python | https://github.com/docxology/CrossTalk-study | CrossTalk on the Page: literature review, corpus linguistics, and visual analysis of the defense software engineering journal · Tag v0.1.0 | paper: papers/2026_CrossTalk_on_the_Page/
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Earlier software v3.3.0 · Zenodo · Software version 5.0.0 artifact · Citation DOI | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.16903351
 docxology/codomyrmex | Python | https://github.com/docxology/codomyrmex | AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Citation DOI | paper: papers/2026_Codomyrmex/ | zenodo: https://doi.org/10.5281/zenodo.21750800
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/

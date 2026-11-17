@@ -7832,5 +7832,30 @@
     "container-title": "GitHub release v0.1.0",
     "publisher": "GitHub release v0.1.0",
     "URL": "https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0"
+  },
+  {
+    "id": "Friedman2026CrossTalkPage239",
+    "type": "article-journal",
+    "title": "CrossTalk on the Page",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 239; docs: papers/2026_CrossTalk_on_the_Page/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.24297223",
+    "URL": "https://doi.org/10.5281/zenodo.24297223"
   }
 ]

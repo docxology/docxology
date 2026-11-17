@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-17 — CrossTalk on the Page
+
+- Catalogue the Zenodo-only preprint *CrossTalk on the Page* as work 239, citing concept DOI 10.5281/zenodo.24297223. Its versioned record 24297224 supplies the checksum-verified remote primary PDF and literal text extraction.
+- Add the new public `docxology/CrossTalk-study` source repository to the inventory and software catalogue, and rebind the four afternoon observation changes to exact hash-bound decisions.
+- See [the drift review addendum](reports/public_source_drift_review_2026-11-17.md#afternoon-addendum--crosstalk-on-the-page) for source bindings and limits.
+
 ## 2026-11-17 — Reviewed public-source freshness
 
 - Refresh the primary public-source snapshot and complete repository inventory, and record exact hash-bound observation decisions.

@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *165 owned repositories · 43 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *166 owned repositories · 43 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -38,6 +38,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 |---|---|---|:---:|---|
 | [CRAM](https://github.com/docxology/CRAM) | Compact Reasoning Associative Memory: Classical Energies Learn to Reason 1,000× Faster than Looped Models | — | 1 | 2026-11 |
 | [OPH-FEP-Synergetics](https://github.com/docxology/OPH-FEP-Synergetics) | Executable correspondences, obstructions, and complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller's Synergetics. · [Release v0.1.0](https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0) · [Manuscript PDF](https://github.com/docxology/OPH-FEP-Synergetics/blob/v0.1.0/output/pdf/OPH-FEP-Synergetics_combined.pdf) | Python | 1 | 2026-11 |
+| [CrossTalk-study](https://github.com/docxology/CrossTalk-study) | CrossTalk on the Page: literature review, corpus linguistics, and visual analysis of the defense software engineering journal · [Tag v0.1.0](https://github.com/docxology/CrossTalk-study/tree/v0.1.0) · [📄](../papers/2026_CrossTalk_on_the_Page/) | Python | 0 | 2026-11 |
 | [template](https://github.com/docxology/template) | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · [Earlier software v3.3.0](https://doi.org/10.5281/zenodo.20584820) · [Zenodo](https://doi.org/10.5281/zenodo.21227869) · [📄](../papers/2026_AutopoieticProjectGeneration/) · [Software version 5.0.0 artifact](https://zenodo.org/records/23955189) · [Citation DOI](https://doi.org/10.5281/zenodo.16903351) | Python | 23 | 2026-11 |
 | [codomyrmex](https://github.com/docxology/codomyrmex) | AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · [📄](../papers/2026_Codomyrmex/) · [Citation DOI](https://doi.org/10.5281/zenodo.21750800) | Python | 10 | 2026-11 |
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond · [📄](../papers/2021_ActiveInferants/) | Python | 8 | 2026-11 |
@@ -284,8 +285,8 @@ The [PROJECT BOND compendium](https://github.com/docxology/bond) imports manuscr
 | Research Practice | 9 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, `blue_line`, `green_line`, `silver_line` |
 | Computational Research | 4 | `thanks_for_nothing`, `active_assembly_theory_and_practice`, `Blakean_Entomology`, `Blakean_Federalism` |
 | PROJECT BOND packages | 33 | [Infrastructure and film-analysis catalog](#project-bond-software-family) |
-| **docxology subtotal** | **165** | |
-| **Grand Total** | **208** | |
+| **docxology subtotal** | **166** | |
+| **Grand Total** | **209** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; GitHub reports the AII account as an **Organization** (observed 2026-10-06). See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ### Historical repository references
