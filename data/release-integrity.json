@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-16T20:50:48Z",
-  "source_commit_at_generation": "577d3478e3bb543a90c9d30fc33da6c941127c4c",
+  "generated_at": "2026-11-17T01:11:03Z",
+  "source_commit_at_generation": "53782360a34c41b63ee8e67c30effb2baeac4e82",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -28,24 +28,24 @@
     "data/work-identifiers.json": "23826d73d524fcf0a521f6f16894a3e8dccd886adef2fb2f77dfca3bab2d01c4",
     "pages/SOFTWARE.md": "d091ced778bdebbcad8f4a20fd63c606c9cbb2f0ea6121fde0d4049700655303",
     "resume/source.json": "69cbd668ee8f0b859f525eef8216955dbf0eb87490ac51e01493996c81f2202a",
-    "data/current-counts.json": "0ab9ccb57fbe7a2bb0128fa77183401336b456f8ab5f5d5becf3743db15f7ab9",
+    "data/current-counts.json": "1e5f774cd1d487991b5850faa6718f6c602dbc5a909445d96dc6a47074d4c281",
     "data/coverage-exceptions.json": "e8a253e85f233ddedc483897452251cb1a4de4371823286e4258f59567b274c0",
-    "data/repository-classification.json": "72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b",
-    "data/agent-index.json": "7459c68aa7315fa6f8a039a0652c00367fb9e0176022aad21fc6c7f33b4e176c",
-    "data/generated-manifest.json": "b690d0a1f711a93983b7118e26f09cc00c0d3179d996de84227738cb4ecbcfba",
-    "data/pages-artifact-manifest.json": "6e6d4e6a3f3b2e7d0d9876d2f4904651b84a834e32344f62964899fa2bde2f32"
+    "data/repository-classification.json": "5274af8c4f234b27bab7cc05888967b4e6757082f39c72d2200c2db8d8199f43",
+    "data/agent-index.json": "975349d73c6bfdd85b098dd08c156cf229c6feb687975c93ee396de730b18f79",
+    "data/generated-manifest.json": "19a7e57a58e37de90c648fd535de9a13e3c9c431e849755235351a9e5a47a9b8",
+    "data/pages-artifact-manifest.json": "83bf53c06cfea343953c3096328554b502defbc74003ec0fe4f8eb07aeaa6e8e"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "577d3478e3bb543a90c9d30fc33da6c941127c4c",
-    "artifact_file_count": 6299,
-    "artifact_bytes": 967083685,
+    "source_commit_at_generation": "53782360a34c41b63ee8e67c30effb2baeac4e82",
+    "artifact_file_count": 6300,
+    "artifact_bytes": 967010662,
     "omitted_paper_image_count": 8959,
-    "omitted_superseded_report_count": 807
+    "omitted_superseded_report_count": 820
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "577d3478e3bb543a90c9d30fc33da6c941127c4c",
+    "candidate_source_commit": "53782360a34c41b63ee8e67c30effb2baeac4e82",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -78,18 +78,18 @@
       "ActiveInferenceInstitute": 47,
       "archived": 92,
       "curated": 208,
-      "docxology": 268,
+      "docxology": 269,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 99,
-      "forks": 101,
+      "fork_docxology": 100,
+      "forks": 102,
       "primary_ActiveInferenceInstitute": 45,
       "primary_docxology": 169,
       "primary_total": 214,
       "private": 0,
-      "public": 315,
-      "recently_updated": 315,
-      "total": 315,
-      "uncataloged": 107
+      "public": 316,
+      "recently_updated": 316,
+      "total": 316,
+      "uncataloged": 108
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -114,11 +114,11 @@
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 47,
-      "GitHub user docxology": 275,
+      "GitHub user docxology": 269,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 174,
-      "Zenodo exact-name creator records": 85
+      "Zenodo ORCID-linked records": 188,
+      "Zenodo exact-name creator records": 100
     },
     "software": {
       "active_inference_institute": 43,

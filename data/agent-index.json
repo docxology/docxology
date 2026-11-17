@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-11-16T03:51:19+00:00",
+  "generated_at": "2026-11-17T00:36:30+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -338,7 +338,7 @@
     },
     "repositories": {
       "path": "/data/github-repositories.json",
-      "count": 315,
+      "count": 316,
       "schema": "Repository"
     },
     "artworks": {
@@ -383,7 +383,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 107,
+      "count": 108,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -452,14 +452,14 @@
     },
     {
       "id": "public-source-snapshot",
-      "path": "/reports/public_source_snapshot_2026-11-06.json",
+      "path": "/reports/public_source_snapshot_2026-11-17.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "public-source-inventory",
-      "path": "/reports/public_source_inventory_2026-11-06.json",
+      "path": "/reports/public_source_inventory_2026-11-17.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -473,14 +473,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-11-16.json",
+      "path": "/reports/accessibility_static_2026-11-17.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-11-16.json",
+      "path": "/reports/asset_size_2026-11-17.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1380,7 +1380,7 @@
         "default_branch": "main",
         "created_at": "2026-11-05T16:40:30Z",
         "updated_at": "2026-11-11T23:03:39Z",
-        "pushed_at": "2026-11-16T02:02:31Z",
+        "pushed_at": "2026-11-16T23:14:37Z",
         "curated": true,
         "recently_updated": true
       }
@@ -1395,7 +1395,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-11-16T03:51:19+00:00",
+        "checked_at": "2026-11-17T00:36:30+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1592,18 +1592,18 @@
           "ActiveInferenceInstitute": 47,
           "archived": 92,
           "curated": 208,
-          "docxology": 268,
+          "docxology": 269,
           "fork_ActiveInferenceInstitute": 2,
-          "fork_docxology": 99,
-          "forks": 101,
+          "fork_docxology": 100,
+          "forks": 102,
           "primary_ActiveInferenceInstitute": 45,
           "primary_docxology": 169,
           "primary_total": 214,
           "private": 0,
-          "public": 315,
-          "recently_updated": 315,
-          "total": 315,
-          "uncataloged": 107
+          "public": 316,
+          "recently_updated": 316,
+          "total": 316,
+          "uncataloged": 108
         },
         "paired_publication_decisions": {
           "decision": "mixed",
@@ -1628,11 +1628,11 @@
           "Crossref ORCID DOI records": 15,
           "Europe PMC exact author records": 10,
           "GitHub user ActiveInferenceInstitute": 47,
-          "GitHub user docxology": 275,
+          "GitHub user docxology": 269,
           "ORCID work groups": 20,
           "PubMed exact author records": 8,
-          "Zenodo ORCID-linked records": 174,
-          "Zenodo exact-name creator records": 85
+          "Zenodo ORCID-linked records": 188,
+          "Zenodo exact-name creator records": 100
         },
         "software": {
           "active_inference_institute": 43,
@@ -1649,14 +1649,14 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-11-16T03:51:19+00:00",
+      "generated_at": "2026-11-17T00:36:30+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
         "paired_publications": "reports/paired_publications_2026-11-16.json",
         "paper_folders": "papers/README.md",
-        "public_source_snapshot": "reports/public_source_snapshot_2026-11-06.json",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-11-17.json",
         "software_catalog": "pages/SOFTWARE.md",
         "software_export": "data/software.json",
         "works_export": "data/works.json"
@@ -1673,11 +1673,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 965966588,
+        "source_bytes": 965893384,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6299,
-        "artifact_bytes": 967083685
+        "artifact_file_count": 6300,
+        "artifact_bytes": 967010662
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6406,30 +6406,30 @@
     "blake_index": "f7f8fb0c8d06ed7db389dd3b35149a9792e39c184b1b908a11c958e8834fdb18",
     "works": "e074f1357655bebb40b2b466640e3fc00c0320f43473f5988a623fd27d8fc330",
     "work_identifiers": "23826d73d524fcf0a521f6f16894a3e8dccd886adef2fb2f77dfca3bab2d01c4",
-    "software": "22e910623e5ac15723e08096bc78a32d88572ec79a64ceffb2a688b8e43edd69",
-    "repositories": "df9168b00ac29fe678762c0773747f75787466db7c2fc71a72417e9b47a38e2c",
+    "software": "273149248409aa467acaa8c08b8251df26d66db8943f355d93b4553aecdad8b2",
+    "repositories": "c81855485bdd52c43e3cb87cce833434e34435478f8a6eeef6c72598d959eedb",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "4ab5da15a6878393ece05d08c613d931968035eefbeb107d148cf8ff5ddfb687",
     "videos_index": "aef1cfda7fa82b229d97d49742fc04e417cd8fba6db97bda12fcc8a323470f10",
-    "search": "e27656128f400404030e37b35e315e9224c6d5b4466b936b7cadadd174eb1be9",
-    "claims": "5be7cade42bf0aceb94f9ea8ebca75bf0f78b3cf460ee72fc2c0bfcc05ab762d",
+    "search": "83c3d481a0c9c267b1fe32ac4ed4e4d2fe1a110c1c10d167e9083099f91e0a83",
+    "claims": "b49fde7dbdb00a48a862f8b6fdc26d78ce8445c1d8f030f5a2789b7421b8d44b",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
     "coverage_exceptions": "e8a253e85f233ddedc483897452251cb1a4de4371823286e4258f59567b274c0",
-    "repository_classification": "72b3bb3b5f5e7ab7e0f34561343c17fd164eecde6bf90cf90f16235b0674e81b",
-    "people": "564402efe181f975a1a1318b99f82b5aa25fbdd8191560bf2093188ae01f49bb",
-    "organizations": "4e3a79239075023a50db1d0b11243a9eee765431916b739fced6daec6dc89b72",
-    "resume": "bf66651e788cdf9d79b334d19c1ee5733fba2b83435254995e15ecb21a1ba429",
+    "repository_classification": "5274af8c4f234b27bab7cc05888967b4e6757082f39c72d2200c2db8d8199f43",
+    "people": "0bdebb9de6dac0ad6156a20192b707245404c3fedfe6a8f4585d8a54b2fe8f2f",
+    "organizations": "9e4124d462571611ee4e107323659cb40646c5bcb3e9b3dc4d6ddf1847157630",
+    "resume": "3a4986124d4d4cef276d8eb9d72640d9df00a385124b73a34a0ec100175c5382",
     "work_enrichment": "3e1b51faba0d2ee08c4f2079028bf541e9308e28f279721a6219326cdb592d31",
     "collection_catalog": "654499e2aeb531ae449c1228ff2daf652f64b4220922023f1a175b7e68ae1f3c",
     "research_map": "f4f7051d652f20435c763eca9ff44dcedd47f19c0df7cbfa4746a5637a61db69",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
     "scholar_readiness": "1e88ddc93b9303c134340f73f6e59826329d08456fa38415208b5d2db1787742",
-    "catalog": "fb8d606e38a397d5cf64554117471a37a0d2b49ea8d9dd0b993e0511e0bc9b1f",
-    "reconciliation": "8bfb1938cc54583b2c65b81e151c953b3377ee790980d3f51daba5b414a43c6b",
+    "catalog": "7382c3673610a56d0ce38363dfdb6cc25f542cad7fdfe3af3b45124cf909dd0f",
+    "reconciliation": "139395c022c764f1d78eddc34d946b51e09f9209d53d5f677131ca64bebe11ac",
     "reproducibility": "6f95aa4ee5eb6370b307670bad0c6767415287069be77ca6a9dbf669d52b890f",
-    "generated_manifest": "b690d0a1f711a93983b7118e26f09cc00c0d3179d996de84227738cb4ecbcfba",
-    "current_counts": "0ab9ccb57fbe7a2bb0128fa77183401336b456f8ab5f5d5becf3743db15f7ab9"
+    "generated_manifest": "19a7e57a58e37de90c648fd535de9a13e3c9c431e849755235351a9e5a47a9b8",
+    "current_counts": "1e5f774cd1d487991b5850faa6718f6c602dbc5a909445d96dc6a47074d4c281"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -6485,18 +6485,18 @@
       "ActiveInferenceInstitute": 47,
       "archived": 92,
       "curated": 208,
-      "docxology": 268,
+      "docxology": 269,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 99,
-      "forks": 101,
+      "fork_docxology": 100,
+      "forks": 102,
       "primary_ActiveInferenceInstitute": 45,
       "primary_docxology": 169,
       "primary_total": 214,
       "private": 0,
-      "public": 315,
-      "recently_updated": 315,
-      "total": 315,
-      "uncataloged": 107
+      "public": 316,
+      "recently_updated": 316,
+      "total": 316,
+      "uncataloged": 108
     },
     "paired_publication_decisions": {
       "decision": "mixed",
@@ -6521,11 +6521,11 @@
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 47,
-      "GitHub user docxology": 275,
+      "GitHub user docxology": 269,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 174,
-      "Zenodo exact-name creator records": 85
+      "Zenodo ORCID-linked records": 188,
+      "Zenodo exact-name creator records": 100
     },
     "software": {
       "active_inference_institute": 43,
