@@ -220,3 +220,109 @@ def test_audited_name_aliases_are_bound_to_their_orcid(family, orcid, expected):
 def test_unknown_orcid_names_keep_compound_surnames_and_ambiguous_order(family):
     author = {"family": family, "given": "", "orcid": "0000-0000-0000-0000"}
     assert authors.format_author(author) == family
+
+
+@pytest.fixture
+def author_cli_catalog(tmp_path, monkeypatch):
+    bibliography = tmp_path / "BIBLIOGRAPHY.md"
+    bibliography.write_text(
+        "| # | Year | Domain | Type | Title | Venue | Link | Docs | Authors |\n"
+        "|---|---|---|---|---|---|---|---|---|\n"
+        "| 1 | 2026 | Other | Paper | Target | Archive | 10.5555/target | — | Target, Alice |\n"
+        "| 2 | 2026 | Other | Paper | Other | Archive | 10.5555/other | — | Avel Guénin-Carlut |\n"
+        "| 3 | 2026 | Other | Paper | Unresolved | Archive | — | — | Existing Credit |\n",
+        encoding="utf-8",
+    )
+    output = tmp_path / "work-authors.json"
+    output.write_text(
+        json.dumps(
+            {
+                "works": {
+                    "fixture2": {
+                        "num": 2,
+                        "status": "verified",
+                        "authors": [{"literal": "Avel Guénin—Carlut"}],
+                    },
+                }
+            }
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(authors, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(authors, "BIBLIOGRAPHY", bibliography)
+    monkeypatch.setattr(authors, "OUTPUT", output)
+    return bibliography, output
+
+
+@pytest.mark.parametrize(
+    "flags",
+    [
+        ["--only", "10.5555/target", "--apply"],
+        ["--apply", "--only", "10.5555/target"],
+        ["--only=", "--apply"],
+    ],
+)
+def test_apply_rejects_diagnostic_only_without_writes(
+    author_cli_catalog, monkeypatch, capsys, flags
+):
+    bibliography, output = author_cli_catalog
+    original = bibliography.read_bytes(), output.read_bytes()
+
+    def unexpected_dispatch(*args, **kwargs):
+        pytest.fail("incompatible CLI modes must be rejected before dispatch")
+
+    monkeypatch.setattr(authors, "apply_to_bibliography", unexpected_dispatch)
+    monkeypatch.setattr(authors, "load_works", unexpected_dispatch)
+    monkeypatch.setattr(authors, "resolve", unexpected_dispatch)
+    monkeypatch.setattr(sys, "argv", ["fetch_work_authors.py", *flags])
+
+    with pytest.raises(SystemExit) as exc_info:
+        authors.main()
+
+    assert exc_info.value.code == 2
+    assert "--only is diagnostic-only and cannot be combined with --apply" in (
+        capsys.readouterr().err
+    )
+    assert (bibliography.read_bytes(), output.read_bytes()) == original
+
+
+def test_only_resolves_one_doi_without_writing(author_cli_catalog, monkeypatch, capsys):
+    bibliography, output = author_cli_catalog
+    original = bibliography.read_bytes(), output.read_bytes()
+    result = {"status": "verified", "authors": [{"family": "Target", "given": "Alice"}]}
+
+    def resolve(doi, title):
+        assert (doi, title) == ("10.5555/target", "Target")
+        return result
+
+    monkeypatch.setattr(
+        authors, "load_works", lambda: [{"doi": "10.5555/target", "title": "Target"}]
+    )
+    monkeypatch.setattr(authors, "resolve", resolve)
+    monkeypatch.setattr(
+        sys, "argv", ["fetch_work_authors.py", "--only", "10.5555/target"]
+    )
+
+    assert authors.main() == 0
+    assert json.loads(capsys.readouterr().out) == result
+    assert (bibliography.read_bytes(), output.read_bytes()) == original
+
+
+def test_apply_updates_bibliography_from_cache(author_cli_catalog, monkeypatch):
+    bibliography, output = author_cli_catalog
+    original = output.read_bytes()
+
+    def unexpected_resolve(*args, **kwargs):
+        pytest.fail("standalone --apply must not resolve any DOIs")
+
+    monkeypatch.setattr(authors, "resolve", unexpected_resolve)
+    monkeypatch.setattr(sys, "argv", ["fetch_work_authors.py", "--apply"])
+
+    assert authors.main() == 0
+    rows = bibliography.read_text(encoding="utf-8").splitlines()[2:]
+    assert [row.split("|")[-2].strip() for row in rows] == [
+        "—",
+        "Avel Guénin—Carlut",
+        "—",
+    ]
+    assert output.read_bytes() == original
