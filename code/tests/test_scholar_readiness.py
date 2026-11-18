@@ -95,6 +95,20 @@ def test_missing_author_tag_remains_counted_by_citation_scope(tmp_path, kind, ro
     assert report["summary"]["blockers"]["missing_citation_author"] == 1
 
 
+def test_report_explains_missing_primary_citation_evidence(tmp_path):
+    fixture(tmp_path, pdf=False)
+    dataset = tmp_path / "data/works.json"
+    works = json.loads(dataset.read_text())
+    key = "Friedman2017OsteopathyVariableVariabilityHealth163"
+    works["works"][0]["citation_key"] = key
+    dataset.write_text(json.dumps(works))
+    (tmp_path / f"works/{key}.html").write_text("<head><title>Work</title></head>")
+    report = build_report(tmp_path)
+    assert report["summary"]["blockers"]["missing_citation_title"] == 1
+    assert report["summary"]["blockers"]["citation_source_evidence_unverified"] == 1
+    assert "The Cranial Letter 70(4)" in render_markdown(report)
+
+
 def test_ambiguous_pdf_is_never_guessed(tmp_path):
     folder = fixture(tmp_path)
     (folder / "second.pdf").write_bytes(b"other")

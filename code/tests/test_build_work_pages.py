@@ -79,6 +79,14 @@ def test_unsigned_science_item_uses_its_reviewed_issue_date():
     assert '<meta name="citation_author"' not in head
 
 
+@pytest.mark.parametrize("num", [157, 163, 164])
+def test_work_with_unverified_source_keeps_catalog_title_without_citation_tags(num):
+    work = next(work for work in bwp.load_works() if int(work["num"]) == num)
+    rendered = bwp.render_work_page(work)
+    assert work["title"] in rendered
+    assert '<meta name="citation_' not in rendered
+
+
 @pytest.mark.parametrize("num", [71, 79, 89])
 def test_cogsec_books_keep_document_verified_editor_credits(num):
     work = next(work for work in bwp.load_works() if int(work["num"]) == num)

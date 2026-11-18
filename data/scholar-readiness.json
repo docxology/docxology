@@ -15,8 +15,11 @@
       "requires_review": 5
     },
     "blockers": {
+      "citation_source_evidence_unverified": 3,
       "missing_citation_author": 11,
       "missing_citation_doi": 1,
+      "missing_citation_publication_date": 3,
+      "missing_citation_title": 3,
       "no_selected_local_pdf": 43,
       "pdf_directory_differs_from_abstract": 187,
       "pdf_exceeds_byte_limit": 41
@@ -8138,21 +8141,18 @@
       "title": "Disinforge",
       "type": "Paper",
       "citation_scope": "individual_work",
+      "citation_evidence_gap": "The linked Science article is the containing feature. The contribution’s byline and date require direct evidence.",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html",
-      "page_sha256": "d8c97b3a97cea2ae3bd97fcf9ea43d5f5f2ba29d5c91451c500c7d3b7d1b56ab",
-      "citation_tags": {
-        "citation_title": [
-          "Disinforge"
-        ],
-        "citation_publication_date": [
-          "2021"
-        ]
-      },
+      "page_sha256": "3079ae76895425fb525a13de7dacaa7f561ed6ca45471d271def8be8e021e83d",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "citation_source_evidence_unverified",
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -8388,21 +8388,18 @@
       "title": "Osteopathy and the Variable Variability of Health",
       "type": "Paper",
       "citation_scope": "individual_work",
+      "citation_evidence_gap": "The Cranial Letter 70(4) contents or a page scan must establish the printed title, byline, and date.",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2017OsteopathyVariableVariabilityHealth163.html",
-      "page_sha256": "531c158c1a67d66a70f9e9bb065eba69f8835df5eabba5ec64a96c5092965736",
-      "citation_tags": {
-        "citation_title": [
-          "Osteopathy and the Variable Variability of Health"
-        ],
-        "citation_publication_date": [
-          "2017"
-        ]
-      },
+      "page_sha256": "1e25b5a09b8eba3ca97292ded20fbd9ecceed8ad71f0e39db2dad9a18dc9c6a7",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "citation_source_evidence_unverified",
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,
@@ -8420,21 +8417,18 @@
       "title": "Cells, Mechanobiology, and Osteopathy",
       "type": "Paper",
       "citation_scope": "individual_work",
+      "citation_evidence_gap": "The Cranial Letter 69(1) contents or a page scan must establish the printed title, byline, and date.",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2016CellsMechanobiologyOsteopathy164.html",
-      "page_sha256": "65457dbb39bd6d8aace3efbdadadb8a357cff2d69b0b8d85985b2f6ce3fc8d57",
-      "citation_tags": {
-        "citation_title": [
-          "Cells, Mechanobiology, and Osteopathy"
-        ],
-        "citation_publication_date": [
-          "2016"
-        ]
-      },
+      "page_sha256": "4675d0b26de69a41c104f2569e26c4049ccd7b930152f4af54141817f9047a75",
+      "citation_tags": {},
       "primary_pdf": null,
       "selection_issue": "",
       "local_status": "blocked",
       "blockers": [
+        "citation_source_evidence_unverified",
+        "missing_citation_title",
         "missing_citation_author",
+        "missing_citation_publication_date",
         "no_selected_local_pdf"
       ],
       "visible_complete_author_abstract": null,

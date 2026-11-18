@@ -8,7 +8,7 @@ import json
 from pathlib import Path, PurePosixPath
 from urllib.parse import urlsplit
 
-from docxology_tools.citation_metadata import CitationHead
+from docxology_tools.citation_metadata import CitationHead, citation_evidence_gap
 from docxology_tools.scholar_pdf_projection import REGISTRY, abstract_visible
 from docxology_tools.paper_artifacts import (
     PaperResources,
@@ -36,6 +36,9 @@ def assess_work(root: Path, work: dict, visible: frozenset[str]) -> dict:
         parser.feed(page_text)
     tags = parser.tags
     blockers = []
+    evidence_gap = citation_evidence_gap(work)
+    if evidence_gap:
+        blockers.append("citation_source_evidence_unverified")
     for field in ("citation_title", "citation_author", "citation_publication_date"):
         if not tags.get(field) or not all(value.strip() for value in tags[field]):
             blockers.append(f"missing_{field}")
@@ -92,6 +95,7 @@ def assess_work(root: Path, work: dict, visible: frozenset[str]) -> dict:
         "title": work["title"],
         "type": work["type"],
         "citation_scope": citation_scope,
+        **({"citation_evidence_gap": evidence_gap} if evidence_gap else {}),
         "abstract_url": SITE_URL + page_rel,
         "page_sha256": fingerprint(page) if page else None,
         "citation_tags": tags,
@@ -188,6 +192,8 @@ def render_markdown(report: dict) -> str:
             ", ".join(row["blockers"])
             or "Separate content and indexing review required"
         )
+        if row.get("citation_evidence_gap"):
+            findings += f". {row['citation_evidence_gap']}"
         lines.append(
             f"| [{title}](../works/{row['citation_key']}.html) | {row['citation_scope'].replace('_', ' ')} | {size} | {findings} |"
         )

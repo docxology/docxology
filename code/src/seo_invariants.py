@@ -182,6 +182,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
     from docxology_tools.author_entities import load_author_records, verified_author_types
     from docxology_tools.citation_metadata import (
         CitationHead,
+        citation_evidence_gap,
         journal_fields,
         publication_date,
     )
@@ -231,6 +232,8 @@ def check_work_citations(repo_root: Path) -> list[str]:
                     ).items()
                 }
             )
+        if citation_evidence_gap(work):
+            expected = {}
         for name in tags.keys() | expected.keys():
             if tags.get(name, []) != expected.get(name, []):
                 errors.append(

@@ -46,7 +46,11 @@ from docxology_tools.report_paths import generated_timestamp  # noqa: E402
 from docxology_tools.publication_revisions import revision_notice_html  # noqa: E402
 from docxology_tools.abstract_text import abstract_display_text  # noqa: E402
 from docxology_tools.paper_artifacts import PaperResources, source_file, source_paths  # noqa: E402
-from docxology_tools.citation_metadata import journal_fields, publication_date  # noqa: E402
+from docxology_tools.citation_metadata import (  # noqa: E402
+    citation_evidence_gap,
+    journal_fields,
+    publication_date,
+)
 from docxology_tools.author_entities import (  # noqa: E402
     author_entity,
     load_author_records,
@@ -946,26 +950,28 @@ def page_head(work: dict) -> str:
     canon_url = f"https://danielarifriedman.com/works/{canonical_work_key(work['citation_key'])}.html"
     page_title = work_page_title(work)
     resources = resources_for(work)
-    citation_meta = [
-        f'<meta name="citation_title" content="{h(work["title"])}">',
-        f'<meta name="citation_publication_date" content="{h(publication_date(work, resources.metadata or {}).replace("-", "/"))}">',
-    ]
-    role = work.get("contributor_role", "author")
-    citation_meta.extend(
-        f'<meta name="citation_{role}" content="{h(display_name(name, work.get("_author_types", {}).get(name)))}">'
-        for name in work.get("authors") or []
-    )
-    if work.get("authors"):
+    citation_meta = []
+    if not citation_evidence_gap(work):
+        citation_meta = [
+            f'<meta name="citation_title" content="{h(work["title"])}">',
+            f'<meta name="citation_publication_date" content="{h(publication_date(work, resources.metadata or {}).replace("-", "/"))}">',
+        ]
+        role = work.get("contributor_role", "author")
         citation_meta.extend(
-            f'<meta name="citation_{name}" content="{h(value)}">'
-            for name, value in journal_fields(work, resources.metadata or {}).items()
+            f'<meta name="citation_{role}" content="{h(display_name(name, work.get("_author_types", {}).get(name)))}">'
+            for name in work.get("authors") or []
         )
-        if work.get("doi"):
-            citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
-        if resources.primary_pdf_url:
-            citation_meta.append(
-                f'<meta name="citation_pdf_url" content="{h(resources.primary_pdf_url)}">'
+        if work.get("authors"):
+            citation_meta.extend(
+                f'<meta name="citation_{name}" content="{h(value)}">'
+                for name, value in journal_fields(work, resources.metadata or {}).items()
             )
+            if work.get("doi"):
+                citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
+            if resources.primary_pdf_url:
+                citation_meta.append(
+                    f'<meta name="citation_pdf_url" content="{h(resources.primary_pdf_url)}">'
+                )
     citation_meta_html = "\n    ".join(citation_meta) if citation_meta else ""
     return f"""<!DOCTYPE html>
 <html lang="en">

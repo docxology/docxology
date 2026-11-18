@@ -10,8 +10,11 @@ Audited works: 235. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
+| citation_source_evidence_unverified | 3 |
 | missing_citation_author | 11 |
 | missing_citation_doi | 1 |
+| missing_citation_publication_date | 3 |
+| missing_citation_title | 3 |
 | no_selected_local_pdf | 43 |
 | pdf_directory_differs_from_abstract | 187 |
 | pdf_exceeds_byte_limit | 41 |
@@ -175,14 +178,14 @@ The citation scope identifies courses, series and edited books. Missing-tag coun
 | [The Template Textbook](../works/Friedman2026TemplateTextbook154.html) | individual work | 1122785 | pdf_directory_differs_from_abstract |
 | [Lessons from the colony](../works/Friedman2016LessonsFromColony155.html) | individual work | — | no_selected_local_pdf |
 | [Full speed ahead to the City on the Hill](../works/Friedman2016FullSpeedAheadCity156.html) | individual work | — | missing_citation_author, missing_citation_doi, no_selected_local_pdf |
-| [Disinforge](../works/Friedman2021Disinforge157.html) | individual work | — | missing_citation_author, no_selected_local_pdf |
+| [Disinforge](../works/Friedman2021Disinforge157.html) | individual work | — | citation_source_evidence_unverified, missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf. The linked Science article is the containing feature. The contribution’s byline and date require direct evidence. |
 | [Defining events: 2020 in hindsight](../works/Friedman2021DefiningEvents2020Hindsight158.html) | individual work | — | no_selected_local_pdf |
 | [Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling](../works/Friedman2022ActiveBlockferenceCadCADActive159.html) | individual work | — | no_selected_local_pdf |
 | [From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace](../works/Friedman2024FromNeuronalPacketsThoughtseeds160.html) | individual work | — | no_selected_local_pdf |
 | [Knowledge Management Archipelago](../works/Friedman2021KnowledgeManagementArchipelago161.html) | individual work | — | no_selected_local_pdf |
 | [Comments Submitted by BlockScience, University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Cognitive Security and Education Forum (COGSEC), and the Active Inference Institute (AII) to the Networking and Information Technology Research and Development National Coordination Office's Request for Comment on The Creation of a National Digital Twins R&D Strategic Plan NITRD-2024-13379](../works/Friedman2024CommentsSubmittedByBlockScience162.html) | individual work | — | no_selected_local_pdf |
-| [Osteopathy and the Variable Variability of Health](../works/Friedman2017OsteopathyVariableVariabilityHealth163.html) | individual work | — | missing_citation_author, no_selected_local_pdf |
-| [Cells, Mechanobiology, and Osteopathy](../works/Friedman2016CellsMechanobiologyOsteopathy164.html) | individual work | — | missing_citation_author, no_selected_local_pdf |
+| [Osteopathy and the Variable Variability of Health](../works/Friedman2017OsteopathyVariableVariabilityHealth163.html) | individual work | — | citation_source_evidence_unverified, missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf. The Cranial Letter 70(4) contents or a page scan must establish the printed title, byline, and date. |
+| [Cells, Mechanobiology, and Osteopathy](../works/Friedman2016CellsMechanobiologyOsteopathy164.html) | individual work | — | citation_source_evidence_unverified, missing_citation_title, missing_citation_author, missing_citation_publication_date, no_selected_local_pdf. The Cranial Letter 69(1) contents or a page scan must establish the printed title, byline, and date. |
 | [iTrace: verification-first webcam eye-movement analysis (corrected manuscript)](../works/Friedman2026ITraceVerificationFirstWebcam165.html) | individual work | 5732341 | pdf_directory_differs_from_abstract, pdf_exceeds_byte_limit |
 | [DemoCreate: Declarative Audio-Visual Demo Generation for Software](../works/Friedman2026DemoCreateDeclarativeAudioVisual166.html) | individual work | 1246461 | pdf_directory_differs_from_abstract |
 | [ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data](../works/Friedman2026ENTOENcryptedTypedOmnitrack167.html) | individual work | 3481755 | pdf_directory_differs_from_abstract |
