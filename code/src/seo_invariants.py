@@ -218,20 +218,19 @@ def check_work_citations(repo_root: Path) -> list[str]:
                 publication_date(work, resources.metadata or {}).replace("-", "/")
             ],
         }
-        if work.get("doi"):
-            expected["citation_doi"] = [work["doi"]]
-        if resources.primary_pdf_url:
-            expected["citation_pdf_url"] = [resources.primary_pdf_url]
-        expected.update(
-            {
-                f"citation_{name}": [value]
-                for name, value in journal_fields(
-                    work, resources.metadata or {}
-                ).items()
-            }
-        )
-        if not work.get("authors"):
-            expected = {}
+        if work.get("authors"):
+            if work.get("doi"):
+                expected["citation_doi"] = [work["doi"]]
+            if resources.primary_pdf_url:
+                expected["citation_pdf_url"] = [resources.primary_pdf_url]
+            expected.update(
+                {
+                    f"citation_{name}": [value]
+                    for name, value in journal_fields(
+                        work, resources.metadata or {}
+                    ).items()
+                }
+            )
         for name in tags.keys() | expected.keys():
             if tags.get(name, []) != expected.get(name, []):
                 errors.append(

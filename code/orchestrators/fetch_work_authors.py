@@ -361,7 +361,7 @@ def format_authors(authors: list[dict]) -> str:
 
 
 def apply_to_bibliography() -> int:
-    """Write the Authors column into pages/BIBLIOGRAPHY.md from verified data."""
+    """Fill missing bibliography credits from the verified cache."""
     if not OUTPUT.is_file():
         print(
             f"missing {OUTPUT.relative_to(REPO_ROOT)}; run without --apply first",
@@ -380,8 +380,10 @@ def apply_to_bibliography() -> int:
         if entry.get("status") in APPLIED_STATUSES and entry.get("authors")
     }
 
-    lines = BIBLIOGRAPHY.read_text(encoding="utf-8").splitlines(keepends=True)
+    original = BIBLIOGRAPHY.read_text(encoding="utf-8")
+    lines = original.splitlines(keepends=True)
     written = 0
+    conflicts = []
     for index, line in enumerate(lines):
         if not line.startswith("|"):
             continue
@@ -402,25 +404,26 @@ def apply_to_bibliography() -> int:
         except ValueError:
             continue
         entry = by_num.get(num)
-        if entry is None:
-            # Leave unresolved works with an explicit gap rather than implying
-            # sole authorship we have not confirmed against a registry.
-            authors_cell = " — "
-        else:
-            authors_cell = " " + format_authors(entry["authors"]) + " "
+        cached_credit = format_authors(entry["authors"]) if entry else ""
+        curated_credit = cells[8].strip() if len(cells) > 8 else ""
+        if curated_credit not in {"", "—", "–", "-"}:
+            if cached_credit and cached_credit != curated_credit:
+                conflicts.append(num)
+            continue
+        if cached_credit:
             written += 1
-        cells = cells[:8] + [authors_cell]
+        cells = cells[:8] + [f" {cached_credit or '—'} "]
         lines[index] = "|" + "|".join(cells) + "|\n"
 
-    BIBLIOGRAPHY.write_text("".join(lines), encoding="utf-8")
+    if conflicts:
+        rows = ", ".join(str(num) for num in conflicts)
+        print(f"Retained curated credits with differing cached bylines in rows: {rows}", file=sys.stderr)
+    rendered = "".join(lines)
+    if rendered != original:
+        BIBLIOGRAPHY.write_text(rendered, encoding="utf-8")
     print(
-        f"wrote Authors column for {written} works into {BIBLIOGRAPHY.relative_to(REPO_ROOT)}"
+        f"filled {written} missing author credits in {BIBLIOGRAPHY.relative_to(REPO_ROOT)}"
     )
-    unresolved = len(payload["works"]) - written
-    if unresolved:
-        print(
-            f"  {unresolved} works left as '—' (no DOI, unresolved DOI, or no authors published)"
-        )
     return 0
 
 
@@ -928,7 +931,7 @@ def main() -> int:
     parser.add_argument(
         "--apply",
         action="store_true",
-        help="write the Authors column into pages/BIBLIOGRAPHY.md; no network",
+        help="fill missing Authors cells in pages/BIBLIOGRAPHY.md from cache; no network",
     )
     args = parser.parse_args()
     if args.only is not None and args.apply:

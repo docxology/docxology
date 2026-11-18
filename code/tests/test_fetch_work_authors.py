@@ -230,7 +230,9 @@ def author_cli_catalog(tmp_path, monkeypatch):
         "|---|---|---|---|---|---|---|---|---|\n"
         "| 1 | 2026 | Other | Paper | Target | Archive | 10.5555/target | — | Target, Alice |\n"
         "| 2 | 2026 | Other | Paper | Other | Archive | 10.5555/other | — | Avel Guénin-Carlut |\n"
-        "| 3 | 2026 | Other | Paper | Unresolved | Archive | — | — | Existing Credit |\n",
+        "| 3 | 2026 | Other | Paper | Unresolved | Archive | — | — | Existing Credit |\n"
+        "| 4 | 2026 | Other | Paper | Uncredited | Archive | — | — | — |\n"
+        "| 5 | 2026 | Other | Paper | Ready | Archive | — | — | — |\n",
         encoding="utf-8",
     )
     output = tmp_path / "work-authors.json"
@@ -242,6 +244,11 @@ def author_cli_catalog(tmp_path, monkeypatch):
                         "num": 2,
                         "status": "verified",
                         "authors": [{"literal": "Avel Guénin—Carlut"}],
+                    },
+                    "fixture5": {
+                        "num": 5,
+                        "status": "verified",
+                        "authors": [{"family": "Example", "given": "Pat"}],
                     },
                 }
             }
@@ -308,7 +315,7 @@ def test_only_resolves_one_doi_without_writing(author_cli_catalog, monkeypatch, 
     assert (bibliography.read_bytes(), output.read_bytes()) == original
 
 
-def test_apply_updates_bibliography_from_cache(author_cli_catalog, monkeypatch):
+def test_apply_fills_gaps_and_reports_conflicts(author_cli_catalog, monkeypatch, capsys):
     bibliography, output = author_cli_catalog
     original = output.read_bytes()
 
@@ -321,8 +328,14 @@ def test_apply_updates_bibliography_from_cache(author_cli_catalog, monkeypatch):
     assert authors.main() == 0
     rows = bibliography.read_text(encoding="utf-8").splitlines()[2:]
     assert [row.split("|")[-2].strip() for row in rows] == [
+        "Target, Alice",
+        "Avel Guénin-Carlut",
+        "Existing Credit",
         "—",
-        "Avel Guénin—Carlut",
-        "—",
+        "Example, Pat",
     ]
+    assert "differing cached bylines in rows: 2" in capsys.readouterr().err
+    applied = bibliography.read_bytes()
+    assert authors.main() == 0
+    assert bibliography.read_bytes() == applied
     assert output.read_bytes() == original

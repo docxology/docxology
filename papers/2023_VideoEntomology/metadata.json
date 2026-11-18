@@ -84,5 +84,14 @@
     "issue": "192",
     "issn": "1940-087X",
     "publication_date": "2023-02-10"
+  },
+  "primary_pdf": "2023_VideoEntomology.clean.pdf",
+  "primary_pdf_provenance": {
+    "source": "2023_VideoEntomology.pdf",
+    "source_bytes": 98577,
+    "source_sha256": "83963352cb7c86248f7777985e0b87091e0dab5145ba0e9ccd0894b0fc8bc28e",
+    "method": "Extract PDF bytes at offsets 119 through 98575 inclusive from the archived HTTP capture.",
+    "bytes": 98457,
+    "sha256": "5a1d152031cf669850deefd8c51929f26a4a716067beb4f462e93b2764a41a17"
   }
 }

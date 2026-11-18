@@ -61,7 +61,22 @@ def test_citation_preserves_verified_author_order_and_collectives():
 
 
 def test_citation_does_not_invent_an_author_when_none_are_recorded():
-    assert bwp.citation_text(_work()).startswith("2026. Example Work.")
+    work = _work(type="Paper", domain_name="Entomology")
+    assert bwp.citation_text(work).startswith("2026. Example Work.")
+    head = bwp.page_head(work)
+    assert '<meta name="citation_title" content="Example Work">' in head
+    assert '<meta name="citation_publication_date" content="2026">' in head
+    assert '<meta name="citation_author"' not in head
+
+
+def test_unsigned_science_item_uses_its_reviewed_issue_date():
+    head = bwp.page_head(_work(
+        doi="10.1126/science.aag1520", year=2016,
+        title="Full speed ahead to the City on the Hill", type="Paper",
+        domain_name="Ecology",
+    ))
+    assert '<meta name="citation_publication_date" content="2016/05/20">' in head
+    assert '<meta name="citation_author"' not in head
 
 
 @pytest.mark.parametrize("num", [71, 79, 89])

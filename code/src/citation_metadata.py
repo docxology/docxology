@@ -6,6 +6,13 @@ from datetime import date
 from html.parser import HTMLParser
 
 
+# Science's published issue contents date this unsigned introduction and list
+# the signed contributions separately: https://www.jstor.org/stable/i24744260
+_CITATION_DATES_WITHOUT_PAPER_FOLDER = {
+    ('10.1126/science.aag1520', 'Full speed ahead to the City on the Hill'): '2016-05-20',
+}
+
+
 def _doi(record: dict) -> str:
     value = record.get("doi", "")
     if not isinstance(value, str):
@@ -42,7 +49,7 @@ def publication_date(work: dict, metadata: dict) -> str:
     ):
         value = metadata.get("publication_date")
     else:
-        value = None
+        value = _CITATION_DATES_WITHOUT_PAPER_FOLDER.get((doi, work.get("title")))
     if not isinstance(value, str) or len(value) != 10:
         return year
     try:

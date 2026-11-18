@@ -77,6 +77,24 @@ def test_missing_pdf_and_body_or_comment_tags(tmp_path):
     )
 
 
+@pytest.mark.parametrize(
+    "kind,role,scope",
+    [("Paper", "author", "individual_work"), ("Course", "author", "course"),
+     ("Series", "author", "series"), ("Book", "editor", "edited_book")],
+)
+def test_missing_author_tag_remains_counted_by_citation_scope(tmp_path, kind, role, scope):
+    fixture(tmp_path, pdf=False)
+    dataset = tmp_path / "data/works.json"
+    works = json.loads(dataset.read_text())
+    works["works"][0].update(type=kind, contributor_role=role)
+    dataset.write_text(json.dumps(works))
+    page = tmp_path / "works/Example.html"
+    page.write_text(page.read_text().replace('name="citation_author"', 'name="citation_editor"'))
+    report = build_report(tmp_path)
+    assert report["works"][0]["citation_scope"] == scope
+    assert report["summary"]["blockers"]["missing_citation_author"] == 1
+
+
 def test_ambiguous_pdf_is_never_guessed(tmp_path):
     folder = fixture(tmp_path)
     (folder / "second.pdf").write_bytes(b"other")

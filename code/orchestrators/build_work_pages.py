@@ -955,18 +955,17 @@ def page_head(work: dict) -> str:
         f'<meta name="citation_{role}" content="{h(display_name(name, work.get("_author_types", {}).get(name)))}">'
         for name in work.get("authors") or []
     )
-    citation_meta.extend(
-        f'<meta name="citation_{name}" content="{h(value)}">'
-        for name, value in journal_fields(work, resources.metadata or {}).items()
-    )
-    if work.get("doi"):
-        citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
-    if resources.primary_pdf_url:
-        citation_meta.append(
-            f'<meta name="citation_pdf_url" content="{h(resources.primary_pdf_url)}">'
+    if work.get("authors"):
+        citation_meta.extend(
+            f'<meta name="citation_{name}" content="{h(value)}">'
+            for name, value in journal_fields(work, resources.metadata or {}).items()
         )
-    if not work.get("authors"):
-        citation_meta = []
+        if work.get("doi"):
+            citation_meta.append(f'<meta name="citation_doi" content="{h(work["doi"])}">')
+        if resources.primary_pdf_url:
+            citation_meta.append(
+                f'<meta name="citation_pdf_url" content="{h(resources.primary_pdf_url)}">'
+            )
     citation_meta_html = "\n    ".join(citation_meta) if citation_meta else ""
     return f"""<!DOCTYPE html>
 <html lang="en">
