@@ -931,6 +931,8 @@ def main() -> int:
         help="write the Authors column into pages/BIBLIOGRAPHY.md; no network",
     )
     args = parser.parse_args()
+    if args.only is not None and args.apply:
+        parser.error("--only is diagnostic-only and cannot be combined with --apply")
 
     if args.apply:
         return apply_to_bibliography()
