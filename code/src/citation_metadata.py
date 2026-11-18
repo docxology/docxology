@@ -6,6 +6,31 @@ from datetime import date
 from html.parser import HTMLParser
 
 
+# Science's published issue contents date this unsigned introduction and list
+# the signed contributions separately: https://www.jstor.org/stable/i24744260
+_CITATION_DATES_WITHOUT_PAPER_FOLDER = {
+    ('10.1126/science.aag1520', 'Full speed ahead to the City on the Hill'): '2016-05-20',
+}
+
+
+_UNVERIFIED_CITATION_SOURCES = {
+    "Friedman2021Disinforge157": (
+        "The linked Science article is the containing feature. The contribution’s byline and date require direct evidence."
+    ),
+    "Friedman2017OsteopathyVariableVariabilityHealth163": (
+        "The Cranial Letter 70(4) contents or a page scan must establish the printed title, byline, and date."
+    ),
+    "Friedman2016CellsMechanobiologyOsteopathy164": (
+        "The Cranial Letter 69(1) contents or a page scan must establish the printed title, byline, and date."
+    ),
+}
+
+
+def citation_evidence_gap(work: dict) -> str | None:
+    """Find the source evidence still needed before publishing citation tags."""
+    return _UNVERIFIED_CITATION_SOURCES.get(work.get("citation_key"))
+
+
 def _doi(record: dict) -> str:
     value = record.get("doi", "")
     if not isinstance(value, str):
@@ -42,7 +67,7 @@ def publication_date(work: dict, metadata: dict) -> str:
     ):
         value = metadata.get("publication_date")
     else:
-        value = None
+        value = _CITATION_DATES_WITHOUT_PAPER_FOLDER.get((doi, work.get("title")))
     if not isinstance(value, str) or len(value) != 10:
         return year
     try:

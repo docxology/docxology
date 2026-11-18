@@ -182,6 +182,7 @@ def check_work_citations(repo_root: Path) -> list[str]:
     from docxology_tools.author_entities import load_author_records, verified_author_types
     from docxology_tools.citation_metadata import (
         CitationHead,
+        citation_evidence_gap,
         journal_fields,
         publication_date,
     )
@@ -218,19 +219,20 @@ def check_work_citations(repo_root: Path) -> list[str]:
                 publication_date(work, resources.metadata or {}).replace("-", "/")
             ],
         }
-        if work.get("doi"):
-            expected["citation_doi"] = [work["doi"]]
-        if resources.primary_pdf_url:
-            expected["citation_pdf_url"] = [resources.primary_pdf_url]
-        expected.update(
-            {
-                f"citation_{name}": [value]
-                for name, value in journal_fields(
-                    work, resources.metadata or {}
-                ).items()
-            }
-        )
-        if not work.get("authors"):
+        if work.get("authors"):
+            if work.get("doi"):
+                expected["citation_doi"] = [work["doi"]]
+            if resources.primary_pdf_url:
+                expected["citation_pdf_url"] = [resources.primary_pdf_url]
+            expected.update(
+                {
+                    f"citation_{name}": [value]
+                    for name, value in journal_fields(
+                        work, resources.metadata or {}
+                    ).items()
+                }
+            )
+        if citation_evidence_gap(work):
             expected = {}
         for name in tags.keys() | expected.keys():
             if tags.get(name, []) != expected.get(name, []):

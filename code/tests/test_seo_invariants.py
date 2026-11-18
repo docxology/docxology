@@ -327,6 +327,22 @@ def test_one_seo_pass_reads_each_page_once_across_the_eight_checks(monkeypatch):
     )
 
 
+def test_unverified_citation_fields_are_rejected(tmp_path):
+    from docxology_tools.seo_invariants import check_work_citations
+
+    subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
+    (tmp_path / "data").mkdir()
+    (tmp_path / "works").mkdir()
+    key = "Friedman2021Disinforge157"
+    work = {"citation_key": key, "title": "Disinforge", "year": 2021}
+    (tmp_path / "data/works.json").write_text(json.dumps({"works": [work]}))
+    page = tmp_path / f"works/{key}.html"
+    page.write_text("<head><title>Disinforge</title></head>")
+    assert check_work_citations(tmp_path) == []
+    page.write_text('<head><meta name="citation_title" content="Disinforge"></head>')
+    assert any("citation_title differs" in error for error in check_work_citations(tmp_path))
+
+
 def test_work_citation_identity_rejects_collapsed_doi_missing_author_and_wrong_pdf(
     tmp_path,
 ):

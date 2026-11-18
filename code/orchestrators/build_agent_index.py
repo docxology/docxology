@@ -572,7 +572,7 @@ SCHEMAS = {
             "network_checked": "false",
             "indexing_verified": "false",
             "summary": "local blockers; reviewed prerequisites remain separate from unverified indexing",
-            "works": "per-work source hashes, citation tags, selected PDF size/placement, reviewed content/rights prerequisites, static visible-abstract measurement and unverified indexing",
+            "works": "per-work citation scope, source hashes, literal citation tags, selected PDF size/placement, reviewed content/rights prerequisites, static visible-abstract measurement and unverified indexing",
         },
     },
     "WorkEnrichment": {

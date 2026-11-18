@@ -32,6 +32,7 @@ _Methods and findings are summarized from the full text; each item is backed by 
 ## Artifacts
 
 - DOI: [10.3791/65002](https://doi.org/10.3791/65002)
+- PDF: [2023_VideoEntomology.clean.pdf](2023_VideoEntomology.clean.pdf)
 - PDF: [2023_VideoEntomology.pdf](2023_VideoEntomology.pdf)
 - PDF SHA-256: Not recorded
 

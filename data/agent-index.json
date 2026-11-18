@@ -1040,7 +1040,7 @@
         "network_checked": "false",
         "indexing_verified": "false",
         "summary": "local blockers; reviewed prerequisites remain separate from unverified indexing",
-        "works": "per-work source hashes, citation tags, selected PDF size/placement, reviewed content/rights prerequisites, static visible-abstract measurement and unverified indexing"
+        "works": "per-work citation scope, source hashes, literal citation tags, selected PDF size/placement, reviewed content/rights prerequisites, static visible-abstract measurement and unverified indexing"
       }
     },
     "WorkEnrichment": {
@@ -1442,10 +1442,11 @@
           "requires_review": 5
         },
         "blockers": {
+          "citation_source_evidence_unverified": 3,
           "missing_citation_author": 11,
           "missing_citation_doi": 1,
-          "missing_citation_publication_date": 8,
-          "missing_citation_title": 8,
+          "missing_citation_publication_date": 3,
+          "missing_citation_title": 3,
           "no_selected_local_pdf": 43,
           "pdf_directory_differs_from_abstract": 187,
           "pdf_exceeds_byte_limit": 41
@@ -1456,6 +1457,7 @@
           "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
           "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
           "type": "Paper",
+          "citation_scope": "individual_work",
           "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
           "page_sha256": "0be5ab42a71b72ed612e4b1316868e30ef1b7c810188e698a2d686a43943486e",
           "citation_tags": {
@@ -1673,11 +1675,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 967486151,
+        "source_bytes": 967609295,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6310,
-        "artifact_bytes": 968605233
+        "artifact_file_count": 6311,
+        "artifact_bytes": 968728571
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6445,7 +6447,7 @@
     "collection_catalog": "1e074d73955e096f5a36bd68687cdde0402d3006635fda4aacf6a2f5d7cca91a",
     "research_map": "ddfddc0e6c2f48a877ca37ef6c4c3cd3bb0bbdee944d8de626880a0c96c57b1f",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
-    "scholar_readiness": "e8be8e289c637106b7e1402d2c2ca776240baaa7b4c82660da2fd1b665dbca18",
+    "scholar_readiness": "dc5fc4446b1b8f5ebc42891be0d7bc8fa7f7435539c515a07cd99e1febdbf29b",
     "catalog": "fda5a5ed9fa3ad8a3cd52eca5fc30d05ba59d8e49757ecb0dae06ceff0754ddd",
     "reconciliation": "7544d137eaad1aca45f2fc4fe4d8e74a068e5239894b451e31369981c75de333",
     "reproducibility": "849f32958ef0c8073c0518eae0f545b8a64cab5c83ac39f3594fa8b5a231ea5b",

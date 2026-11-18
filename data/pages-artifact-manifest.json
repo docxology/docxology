@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-18T01:17:00Z",
-  "source_commit_at_generation": "a47f07b05fef8acd8fc3c5c1c3c396fb4a410789",
+  "generated_at": "2026-11-18T03:45:59Z",
+  "source_commit_at_generation": "765f01c297f40e681ca816d02965a5e13b05680c",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967486151,
+    "source_bytes": 967609295,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6310,
-    "artifact_bytes": 968605233
+    "artifact_file_count": 6311,
+    "artifact_bytes": 968728571
   },
   "included_files": [
     {
@@ -10276,8 +10276,8 @@
     },
     {
       "path": "code/orchestrators/build_agent_index.py",
-      "bytes": 55926,
-      "sha256": "57d69c32af845c9589af0271ab0f58c98abb58d482b3d7269f0c350f3c17f7eb"
+      "bytes": 55950,
+      "sha256": "3fa3cf2d697720026ec11714c6c235b1feeb86121905a956f04adbad7c3578b3"
     },
     {
       "path": "code/orchestrators/build_artwork_index.py",
@@ -10421,8 +10421,8 @@
     },
     {
       "path": "code/orchestrators/build_work_pages.py",
-      "bytes": 62250,
-      "sha256": "d7d8add1654dc162af2381b2da40a41ec795629f441225f1e0f4504db351274f"
+      "bytes": 62442,
+      "sha256": "e0eb67664f1ca42bb134e3c87ac22a08089531dbf9eca29cbd97a134de61a39b"
     },
     {
       "path": "code/orchestrators/check_external_links.py",
@@ -10471,8 +10471,8 @@
     },
     {
       "path": "code/orchestrators/fetch_work_authors.py",
-      "bytes": 44033,
-      "sha256": "eba32fc3f15679c69c39b5df48e5747b95ed6d9e3ccc72be216c97bc34390f80"
+      "bytes": 44185,
+      "sha256": "3d6aef8c8bf953a080f3f309c59df09f00a5a8f13823eda027bce7b909aa9c80"
     },
     {
       "path": "code/orchestrators/fetch_youtube_data.py",
@@ -10716,8 +10716,8 @@
     },
     {
       "path": "code/src/citation_metadata.py",
-      "bytes": 8365,
-      "sha256": "6c6f78740c2cfc6c1cde6e1676efb299f058a0f51c39f20c02a2483f2445c797"
+      "bytes": 9480,
+      "sha256": "30a00f3479ef63fc86d5364c217be7d09434763fb177637a8cf7218ca7c1d5a0"
     },
     {
       "path": "code/src/collection_jsonld.py",
@@ -10891,8 +10891,8 @@
     },
     {
       "path": "code/src/scholar_readiness.py",
-      "bytes": 7545,
-      "sha256": "bfea0eb6ab51edcd2b63b2976c89c2423cf02924939e4f89dfc548a5ebb18f6a"
+      "bytes": 8379,
+      "sha256": "5ae7f739aa451d2656c6233e9165038a1cc5fc979ba4ce3bad396eeddd48b2c8"
     },
     {
       "path": "code/src/scholar_verification.py",
@@ -10901,8 +10901,8 @@
     },
     {
       "path": "code/src/seo_invariants.py",
-      "bytes": 21779,
-      "sha256": "56c5a5bb268939557308fe6e6b78ae7db88ccc94a2c3a0525550247799224c84"
+      "bytes": 21894,
+      "sha256": "9509e93196fe81348b1a8ef7193d39e29ee093747f35f6644e88d79a28b3ee04"
     },
     {
       "path": "code/src/site_facts.py",
@@ -11146,8 +11146,8 @@
     },
     {
       "path": "code/tests/test_build_work_pages.py",
-      "bytes": 7187,
-      "sha256": "94dc4551823b6b4549cc2b760928a8c274efd3e338d17fed0f41c226b9d09f58"
+      "bytes": 8212,
+      "sha256": "7e485dbf8d2e20d764623d2a99f2306ed554a65a49a608e39e5ba747d63dbb2e"
     },
     {
       "path": "code/tests/test_canonical_invariant.py",
@@ -11266,8 +11266,8 @@
     },
     {
       "path": "code/tests/test_fetch_work_authors.py",
-      "bytes": 12082,
-      "sha256": "5d6e4a072c220d960ca76b8a61eb40ea4dfbd50d1908c6297b70233c2c11f454"
+      "bytes": 12717,
+      "sha256": "47a2330654286ceb2a7b40fac2af16e99996360b9a6f7cf6ebf4d2538150d7d3"
     },
     {
       "path": "code/tests/test_fetch_youtube_data.py",
@@ -11666,8 +11666,8 @@
     },
     {
       "path": "code/tests/test_scholar_readiness.py",
-      "bytes": 5180,
-      "sha256": "41066d77eb1cb9a7ba343bc121dbbbb64b1cb7b80dbc7f74c67f03d1ce69ebe2"
+      "bytes": 6690,
+      "sha256": "3b8bcefd3e04fd7b098dedc65e390fa4fced1e5f4d5df96ffbea33cf7d526eca"
     },
     {
       "path": "code/tests/test_scholar_verification.py",
@@ -11691,8 +11691,8 @@
     },
     {
       "path": "code/tests/test_seo_invariants.py",
-      "bytes": 14779,
-      "sha256": "b0f18b3a69f0a558b50764406006a901e6ac8e519fec6e887dacbd66dd81740a"
+      "bytes": 15561,
+      "sha256": "f89ca1b1f7e730a2660f44b17be9986b0a7526f181cfee94b530c14a4e8bb390"
     },
     {
       "path": "code/tests/test_seo_lane_2026_08_27.py",
@@ -12101,8 +12101,8 @@
     },
     {
       "path": "data/scholar-readiness.json",
-      "bytes": 442645,
-      "sha256": "e8be8e289c637106b7e1402d2c2ca776240baaa7b4c82660da2fd1b665dbca18"
+      "bytes": 453933,
+      "sha256": "dc5fc4446b1b8f5ebc42891be0d7bc8fa7f7435539c515a07cd99e1febdbf29b"
     },
     {
       "path": "data/scholar-snapshot.json",
@@ -12627,7 +12627,7 @@
     {
       "path": "feeds/domain-aii-ecosystem.xml",
       "bytes": 4940,
-      "sha256": "4d616ee3931bb80a44fb1f1bb6c940810f5bb93ddd4dc0ff9ecc6ace27966c04"
+      "sha256": "876c9c3e1697f763ea7dff951ee30f27a712ecf165bbe7846c475092297eb2df"
     },
     {
       "path": "feeds/domain-art-synergetics.xml",
@@ -16415,6 +16415,11 @@
       "sha256": "10ba292f186ef1abb5f61da9bae3950e7325fe27b74b9a0e0616bfe3f9507e6e"
     },
     {
+      "path": "papers/2023_VideoEntomology/2023_VideoEntomology.clean.pdf",
+      "bytes": 98457,
+      "sha256": "5a1d152031cf669850deefd8c51929f26a4a716067beb4f462e93b2764a41a17"
+    },
+    {
       "path": "papers/2023_VideoEntomology/2023_VideoEntomology.pdf",
       "bytes": 98577,
       "sha256": "83963352cb7c86248f7777985e0b87091e0dab5145ba0e9ccd0894b0fc8bc28e"
@@ -16431,8 +16436,8 @@
     },
     {
       "path": "papers/2023_VideoEntomology/README.md",
-      "bytes": 2672,
-      "sha256": "737dae411d80f553281515b5843e66727dbf3e5b467226533c2457345ade4c4f"
+      "bytes": 2744,
+      "sha256": "2a8431d5f2cfb7f5921710d32e3db9774c4d3be8587ed38cc8c31e2deb9c0359"
     },
     {
       "path": "papers/2023_VideoEntomology/SKILL.md",
@@ -16446,13 +16451,13 @@
     },
     {
       "path": "papers/2023_VideoEntomology/index.html",
-      "bytes": 10711,
-      "sha256": "26389a6bcd70ff6f16c52b9c9c183b31c8518ece7797fd04b68994e22ed0e1b6"
+      "bytes": 10930,
+      "sha256": "446950ada2d6b84898a3018bba5aa879e93448ad92405261c226090150a3d409"
     },
     {
       "path": "papers/2023_VideoEntomology/metadata.json",
-      "bytes": 5717,
-      "sha256": "fb693d600d73eeeafa32c06e96dde03b58991108ac55288425a9426bed026073"
+      "bytes": 6168,
+      "sha256": "8de1fddddb27982b548453ea894532570d464ed9080cf792deab2996a19887b8"
     },
     {
       "path": "papers/2024_AII_v2/AGENTS.md",
@@ -24071,8 +24076,8 @@
     },
     {
       "path": "reports/scholar_readiness.md",
-      "bytes": 46608,
-      "sha256": "e8c16d464f5e1d4ee3592844319a31612d3b6a11e4235539dd22218b4320c344"
+      "bytes": 51130,
+      "sha256": "c3ae273c63f30c466bd5a27d518aa410bead1a93ce9e2cd5df72ebf9c641d41f"
     },
     {
       "path": "reports/seo-discoverability-audit-2026-06-10.md",
@@ -24302,7 +24307,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 430082,
-      "sha256": "b1b8e945bab6efe3d4be73a74f73f52e04a5127e5ecde2e99d05878810b6370b"
+      "sha256": "3e544c5f4091e5ca1d3b46d6522b2803ad4f8a867a33f264acd69ed1e639cd23"
     },
     {
       "path": "software.html",
@@ -30342,7 +30347,7 @@
     {
       "path": "works/Friedman2016CellsMechanobiologyOsteopathy164.html",
       "bytes": 14131,
-      "sha256": "dbbb3f28dd14240460e2ac1d6b5ba51ac2335f79940f1b570e15d658a04991af"
+      "sha256": "4675d0b26de69a41c104f2569e26c4049ccd7b930152f4af54141817f9047a75"
     },
     {
       "path": "works/Friedman2016ContextDependentExpressionForaging104.html",
@@ -30351,8 +30356,8 @@
     },
     {
       "path": "works/Friedman2016FullSpeedAheadCity156.html",
-      "bytes": 14569,
-      "sha256": "3a8e0173a2fab9b31f7229193bb2c288704363e6c33e04a8704d42fb9d8d26ad"
+      "bytes": 14723,
+      "sha256": "c845105f70b6993ef99b394fc3c6a4718bc3a72057fe15fe9d25a9751448bcec"
     },
     {
       "path": "works/Friedman2016InfluenceNuclearStructureFormation105.html",
@@ -30372,7 +30377,7 @@
     {
       "path": "works/Friedman2017OsteopathyVariableVariabilityHealth163.html",
       "bytes": 14401,
-      "sha256": "00ffcde6e3c7928955959acc53ca2beb6f9b258d95429af87264ec7bdeef2f19"
+      "sha256": "1e25b5a09b8eba3ca97292ded20fbd9ecceed8ad71f0e39db2dad9a18dc9c6a7"
     },
     {
       "path": "works/Friedman2017TwoLineagesThatNeed102.html",
@@ -30431,8 +30436,8 @@
     },
     {
       "path": "works/Friedman2020CommunicationRemoteTeams083.html",
-      "bytes": 14081,
-      "sha256": "d39ba43fef2932ec38aac9dc5c316532ab97453d0ff12ec5b1a023b9b5fbb959"
+      "bytes": 14213,
+      "sha256": "24e2dce837c970b41907a0eef9296101a12d16fcf7c46ad96f7b6ac802261e5c"
     },
     {
       "path": "works/Friedman2020DistributedPhysiologyMolecularBasis084.html",
@@ -30461,8 +30466,8 @@
     },
     {
       "path": "works/Friedman2020HowUseKeybaseRemote087.html",
-      "bytes": 14076,
-      "sha256": "a25dc74b4b57313ceb6f4041b11c22a7927104585df2d738ffdaf09333edb479"
+      "bytes": 14213,
+      "sha256": "26653262a88eb184bd59b04a8b2a02be35a4d2e51b2d5f66bd2e0005fedba5e1"
     },
     {
       "path": "works/Friedman2020InfiniteGamesInfiniteTeams149.html",
@@ -30517,7 +30522,7 @@
     {
       "path": "works/Friedman2021Disinforge157.html",
       "bytes": 13756,
-      "sha256": "341facab0f341acde2a38a29f39052d9bd3b6257253ac4e1bc0fa378f62f8a29"
+      "sha256": "3079ae76895425fb525a13de7dacaa7f561ed6ca45471d271def8be8e021e83d"
     },
     {
       "path": "works/Friedman2021FacilitatorSCatechismPlaybook081.html",
@@ -30676,8 +30681,8 @@
     },
     {
       "path": "works/Friedman2023ExperimentalEntomologyAgeVideo055.html",
-      "bytes": 23843,
-      "sha256": "858f335fb085a72aff5dc79d7a3e57bc984a89b7b9cfed1dc57d1e8edf262063"
+      "bytes": 24811,
+      "sha256": "3eab83ca0e0cca51694f1f8b7665c9e9f36c2ff99a3e9a13a5f975efb11d6e08"
     },
     {
       "path": "works/Friedman2023GeneralizedNotationNotationActive056.html",
@@ -31011,8 +31016,8 @@
     },
     {
       "path": "works/Friedman2026ActiveInferenceJournal500002.html",
-      "bytes": 14785,
-      "sha256": "d571ecb0bffa43bf04b93803e38941186d96ab2e121ddf7aa7ea704e0a966569"
+      "bytes": 14964,
+      "sha256": "11679f076356d298b27e27e37dc12080d499666effe862eb56292b82dbff37d9"
     },
     {
       "path": "works/Friedman2026ActiveInferenceLanguageModel231.html",
@@ -31346,8 +31351,8 @@
     },
     {
       "path": "works/Friedman2026PersonalYouTube200Livestreams006.html",
-      "bytes": 14915,
-      "sha256": "4be2f9bc091eba47ef80c2dbe3a7ad9f24486e0af3bd3d9f0609c4ad8946b653"
+      "bytes": 15096,
+      "sha256": "cd0d726f95e52408fa0c5165382d326b864c3e32d62988bb882bd0037ba8204e"
     },
     {
       "path": "works/Friedman2026PolicyDistillationAsActive171.html",
