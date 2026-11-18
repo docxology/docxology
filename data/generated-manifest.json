@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T20:17:46Z",
+  "generated_at": "2026-11-18T00:56:26Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -335,7 +335,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-11-17.json"
+        "reports/pages_artifact_growth_2026-11-18.json"
       ],
       "sources": [
         "data/scholar-pdf-projections.json",
