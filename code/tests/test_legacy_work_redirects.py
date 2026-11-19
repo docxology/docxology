@@ -27,6 +27,13 @@ LEGACY_WORKS = {
     "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174": 174,
     "Friedman2025CEREBRUMCaseEnabledReasoning118": 10,
     "Friedman2026LiteratureReviewArchitectureActive110": 110,
+    "Friedman2023ATLASQuestionOrientedApproach049": 136,
+    "Friedman2026TemplateApproachReproducibleGenerative193": 1,
+}
+RETIRED_LEGACY_IDS = {
+    "Friedman2025CEREBRUMCaseEnabledReasoning118": "118",
+    "Friedman2023ATLASQuestionOrientedApproach049": "49",
+    "Friedman2026TemplateApproachReproducibleGenerative193": "193",
 }
 
 
@@ -43,9 +50,11 @@ def test_old_work_url_reaches_its_catalogued_identity(legacy: str, num: int):
     assert stub.target_url == stub.canonical_url == target
     assert CSP_META_TAG in render_stub(stub)
     assert (REPO_ROOT / "works" / f"{key}.html").is_file()
-    if legacy.endswith("118"):
+    if legacy in RETIRED_LEGACY_IDS:
         registry = json.loads((REPO_ROOT / "data/work-identifiers.json").read_text())
-        assert registry["identifiers"]["118"]["status"] == "retired"
+        entry = registry["identifiers"][RETIRED_LEGACY_IDS[legacy]]
+        assert entry["status"] == "retired"
+        assert entry["citation_key"] == legacy
 
 
 def test_known_work_redirects_are_excluded_from_both_sitemap_interfaces(tmp_path):
