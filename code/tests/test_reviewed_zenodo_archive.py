@@ -6,6 +6,7 @@ from dataclasses import replace
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 import sys
 
 import pytest
@@ -15,6 +16,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 import docxology_tools  # noqa: E402,F401
 from docxology_tools.publication_pairing import ZenodoRecord  # noqa: E402
+import check_zenodo_uncatalogued  # noqa: E402
 from check_zenodo_uncatalogued import build_report, check_report  # noqa: E402
 
 
@@ -177,6 +179,87 @@ def test_source_report_must_be_exact_safe_and_unambiguous(archive_review, failur
         raw["source_report_sha256"] = hashlib.sha256(source.read_bytes()).hexdigest()
         _json(root / "data/paired-publication-decisions.json", ledger)
     _assert_not_exempt(_build(archive_review))
+
+
+def _git(root, *args):
+    return subprocess.run(
+        ["git", "-c", "core.hooksPath=/dev/null", "-c", "commit.gpgsign=false", *args],
+        cwd=root, stdin=subprocess.DEVNULL, capture_output=True, check=True, text=True,
+    ).stdout.strip()
+
+
+@pytest.fixture
+def pinned_review(archive_review):
+    root, _, source, ledger = archive_review
+    _git(root, "init", "--quiet", "--template=")
+    _git(root, "add", "--", source.relative_to(root).as_posix())
+    _git(root, "-c", "user.name=Reviewer", "-c", "user.email=reviewer@example.org",
+         "commit", "--quiet", "-m", "Freeze the reviewed record")
+    commit = _git(root, "rev-parse", "HEAD")
+    raw = ledger["groups"][0]["raw_candidates"][0]
+    raw["source_report"] = (
+        f"https://github.com/docxology/docxology/blob/{commit}/{source.relative_to(root).as_posix()}"
+    )
+    _json(root / "data/paired-publication-decisions.json", ledger)
+    return archive_review, commit
+
+
+def test_pinned_source_reads_frozen_blob_and_revalidates_saved_receipt(pinned_review):
+    review, _ = pinned_review
+    root, _, source, ledger = review
+    source.unlink()
+    report = _build(review)
+    assert report["uncatalogued_count"] == report["reviewed_source_archive_drift_count"] == 0
+    assert report["reviewed_source_archive_count"] == 1
+    assert report["reviewed_source_archives"][0]["source_report"] == (
+        ledger["groups"][0]["raw_candidates"][0]["source_report"]
+    )
+    _assert_saved_report_passes(root, report)
+
+
+@pytest.mark.parametrize("failure", (
+    "foreign", "branch", "short-sha", "missing-commit", "non-commit", "disallowed-path",
+    "missing-path", "symlink", "oversize", "wrong-digest",
+))
+def test_pinned_source_fails_closed(pinned_review, failure, monkeypatch):
+    review, commit = pinned_review
+    root, _, source, ledger = review
+    raw = ledger["groups"][0]["raw_candidates"][0]
+    locator = raw["source_report"]
+    if failure == "foreign":
+        locator = locator.replace("docxology/docxology", "other/docxology")
+    elif failure == "branch":
+        locator = locator.replace(commit, "HEAD")
+    elif failure == "short-sha":
+        locator = locator.replace(commit, commit[:12])
+    elif failure == "missing-commit":
+        locator = locator.replace(commit, "a" * 40)
+    elif failure == "non-commit":
+        locator = locator.replace(commit, _git(root, "rev-parse", "HEAD^{tree}"))
+    elif failure == "disallowed-path":
+        locator = locator.replace("publication_intake_", "public_source_")
+    elif failure == "missing-path":
+        locator = locator.replace("2026-11-05", "2026-11-06")
+        source.with_name("publication_intake_2026-11-06.json").write_bytes(source.read_bytes())
+    elif failure == "symlink":
+        contents = source.read_bytes()
+        source.unlink()
+        source.symlink_to("redirect.json")
+        _git(root, "add", "--", source.relative_to(root).as_posix())
+        _git(root, "-c", "user.name=Reviewer", "-c", "user.email=reviewer@example.org",
+             "commit", "--quiet", "-m", "Replace evidence with a symlink")
+        locator = locator.replace(commit, _git(root, "rev-parse", "HEAD"))
+        source.unlink()
+        source.write_bytes(contents)
+    elif failure == "oversize":
+        monkeypatch.setattr(check_zenodo_uncatalogued, "_ARCHIVE_REPORT_LIMIT", 64)
+    else:
+        raw["source_report_sha256"] = "b" * 64
+    raw["source_report"] = locator
+    _json(root / "data/paired-publication-decisions.json", ledger)
+    report = _build(review)
+    _assert_not_exempt(report)
+    assert report["reviewed_source_archive_drift_count"] == 1
 
 
 @pytest.mark.parametrize("target", ("software-doi", "paper-folder", "repository", "review-folder"))

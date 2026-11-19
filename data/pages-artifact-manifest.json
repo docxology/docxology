@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-18T03:45:59Z",
-  "source_commit_at_generation": "765f01c297f40e681ca816d02965a5e13b05680c",
+  "generated_at": "2026-11-19T02:36:56Z",
+  "source_commit_at_generation": "87c47c77b9a9cef1b9d84ad0fd9e4c2490144edb",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967609295,
+    "source_bytes": 967614859,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6311,
-    "artifact_bytes": 968728571
+    "artifact_bytes": 968734135
   },
   "included_files": [
     {
@@ -10431,8 +10431,8 @@
     },
     {
       "path": "code/orchestrators/check_zenodo_uncatalogued.py",
-      "bytes": 35430,
-      "sha256": "a2811fc4e95c54a7403b8d63e614e27f2c6d927f7025912e54ee1e5c9229e4ab"
+      "bytes": 37330,
+      "sha256": "dcccc8f0ad22f7fe5cd972ca0ea69237c11a379c5153c217e1c34d752cf78696"
     },
     {
       "path": "code/orchestrators/classify_repositories.py",
@@ -11656,8 +11656,8 @@
     },
     {
       "path": "code/tests/test_reviewed_zenodo_archive.py",
-      "bytes": 16610,
-      "sha256": "b233e678e79f7fa8393ae0731a1f8b04c30bdf425c4cdc77fbbde5839f476bd1"
+      "bytes": 20274,
+      "sha256": "6601b5976018e2513ef012b0b342928de17009004e344687c49cf9c8685f6d92"
     },
     {
       "path": "code/tests/test_scholar_pdf_projection.py",
@@ -31608,7 +31608,7 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/pages_artifact_growth_2026-11-18.json",
+      "path": "reports/pages_artifact_growth_2026-11-19.json",
       "role": "public control metadata"
     },
     {
@@ -31695,8 +31695,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 821,
-    "bytes": 272665450,
+    "count": 822,
+    "bytes": 272666009,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
@@ -31720,5 +31720,5 @@
       "reports/accessibility_static_2026-06-30.json"
     ]
   },
-  "growth_report": "reports/pages_artifact_growth_2026-11-18.json"
+  "growth_report": "reports/pages_artifact_growth_2026-11-19.json"
 }
