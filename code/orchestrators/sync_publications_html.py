@@ -422,7 +422,7 @@ def replace_tbody(html_content: str, works: list[dict]) -> str:
     tbody_inner = chr(10) + render_static_tbody(works) + chr(10) + "                "
     replaced, replacement_count = re.subn(
         r'<tbody id="pub-tbody">[\s\S]*?</tbody>',
-        f'<tbody id="pub-tbody">{tbody_inner}</tbody>',
+        lambda _: f'<tbody id="pub-tbody">{tbody_inner}</tbody>',
         html_content,
         count=1,
     )

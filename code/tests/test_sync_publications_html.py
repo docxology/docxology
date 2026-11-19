@@ -164,6 +164,20 @@ def test_explicit_doi_destination_and_identifier(cell_template, doi, url_suffix)
     assert f"\nDO  - {doi}\nUR  - {url}\n" in exports["bibliography.ris"]
 
 
+def test_static_publication_href_preserves_a_decoded_literal_backslash():
+    url = r"https://doi.org/10.1000/probe?x=\n&y=2"
+    row = load_rows()[0]._replace(
+        link_cell="[DOI](https://doi.org/10.1000/probe?x=&bsol;n&amp;y=2)"
+    )
+
+    outputs = render_outputs([row])
+    (entity,) = json.loads(outputs[PUBLICATIONS_LD_JSON])["mainEntity"]
+    assert entity["sameAs"] == url
+    assert entity["identifier"]["value"] == "10.1000/probe"
+    tbody = outputs[PUBLICATIONS_HTML].split('<tbody id="pub-tbody">', 1)[1]
+    assert f'href="{html.escape(url)}" target="_blank" rel="noopener">→ Link</a>' in tbody
+
+
 def test_course_metadata_decodes_the_first_explicit_destination_once():
     url = "https://education.example.org/course(a)</script>?x=1&y=2&keep=&amp;&notit;"
     row = load_rows()[0]._replace(
