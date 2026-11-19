@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-19T09:34:08Z",
-  "source_commit_at_generation": "3dde609ce725c3a088366c4cd1d46e12f8124d16",
+  "generated_at": "2026-11-19T09:59:53Z",
+  "source_commit_at_generation": "45276811ded36d4a93ee89fa00706496fde4a6a4",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967615843,
+    "source_bytes": 967617366,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6311,
-    "artifact_bytes": 968735120
+    "artifact_bytes": 968736643
   },
   "included_files": [
     {
@@ -10456,8 +10456,8 @@
     },
     {
       "path": "code/orchestrators/export_bibliography.py",
-      "bytes": 14616,
-      "sha256": "d95bee51b5cee6d4bf51d9327155c0385a156203e3be0c71fa7d34d7983eaafd"
+      "bytes": 14628,
+      "sha256": "52c5bfe6d5fce8240cd0fa418e34f14230712fbb61af1bb2097966c2189fbae0"
     },
     {
       "path": "code/orchestrators/extract_paper_texts.py",
@@ -10601,8 +10601,8 @@
     },
     {
       "path": "code/orchestrators/sync_publications_html.py",
-      "bytes": 18716,
-      "sha256": "4c3b1af6aa5cda118650e21f397aa547212b62ef2e4cf173338ba2799fb4d3fa"
+      "bytes": 18740,
+      "sha256": "6bfc65d05995a5426f6d1e60ad2b9683021c976aa386d11948efa4559eb2682a"
     },
     {
       "path": "code/orchestrators/sync_scholar_metrics.py",
@@ -10696,8 +10696,8 @@
     },
     {
       "path": "code/src/bibliography_links.py",
-      "bytes": 1218,
-      "sha256": "3f4218d98d2851f4479c7896a5577e28f283c536140b5efd9d6c7acbaae9bffd"
+      "bytes": 1439,
+      "sha256": "bebc3c4c4a4e2c131f0502e74e54751c3f4b39ed55c5f484f2d1b655ea637112"
     },
     {
       "path": "code/src/build_stamp.py",
@@ -11776,8 +11776,8 @@
     },
     {
       "path": "code/tests/test_sync_publications_html.py",
-      "bytes": 10301,
-      "sha256": "bba49a78bacdad0f612507634eb5c06684a637658e598dd1c5025958f001775c"
+      "bytes": 11567,
+      "sha256": "42af5bd2fa11d91b12e359b893c684f7d0098c088774c2b77bd79dfdfe6474d1"
     },
     {
       "path": "code/tests/test_sync_software_html.py",
