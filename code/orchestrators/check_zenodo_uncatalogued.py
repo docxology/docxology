@@ -44,6 +44,7 @@ import argparse
 import hashlib
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path, PurePosixPath
 
@@ -187,6 +188,20 @@ def uncatalogued_records(
     ]
 
 
+_ARCHIVE_REPORT_PATH = r"reports/(?:publication_intake|paired_publications)_[0-9]{4}-[0-9]{2}-[0-9]{2}\.json"
+_ARCHIVE_REPORT_BLOB = re.compile(
+    rf"https://github\.com/docxology/docxology/blob/([0-9a-f]{{40}})/({_ARCHIVE_REPORT_PATH})"
+)
+_ARCHIVE_REPORT_LIMIT = 32 * 1024 * 1024
+
+
+def _review_payload(raw: bytes) -> tuple[str, dict]:
+    payload = json.loads(raw)
+    if not isinstance(payload, dict):
+        raise ValueError("review evidence must be a JSON object")
+    return hashlib.sha256(raw).hexdigest(), payload
+
+
 def _review_json(repo_root: Path, relative: str, limit: int) -> tuple[str, dict]:
     """Read bounded, independent local evidence without following links."""
     rel = PurePosixPath(relative)
@@ -202,10 +217,41 @@ def _review_json(repo_root: Path, relative: str, limit: int) -> tuple[str, dict]
         raw = stream.read(limit + 1)
     if len(raw) > limit:
         raise ValueError("review evidence exceeds its bounded reader")
-    payload = json.loads(raw)
-    if not isinstance(payload, dict):
-        raise ValueError("review evidence must be a JSON object")
-    return hashlib.sha256(raw).hexdigest(), payload
+    return _review_payload(raw)
+
+
+def _archive_report_json(repo_root: Path, locator: str) -> tuple[str, dict]:
+    if re.fullmatch(_ARCHIVE_REPORT_PATH, locator):
+        return _review_json(repo_root, locator, _ARCHIVE_REPORT_LIMIT)
+
+    pinned = _ARCHIVE_REPORT_BLOB.fullmatch(locator)
+    if pinned is None:
+        raise ValueError("review requires an exact local or commit-pinned source report")
+    commit, path = pinned.groups()
+
+    def git(*args: str) -> bytes:
+        return subprocess.run(
+            ["git", "--no-lazy-fetch", "--no-replace-objects", "--literal-pathspecs", *args],
+            cwd=repo_root, stdin=subprocess.DEVNULL, capture_output=True, check=True, timeout=10,
+        ).stdout
+
+    try:
+        if git("cat-file", "-t", commit) != b"commit\n":
+            raise ValueError("pinned source report must name an exact Git commit")
+        entry, _, name = git("ls-tree", "-z", commit, "--", path).partition(b"\t")
+        blob = re.fullmatch(rb"(?:100644|100755) blob ([0-9a-f]{40})", entry)
+        if blob is None or name != path.encode("ascii") + b"\0":
+            raise ValueError("pinned source report must name a regular file in its Git commit")
+        oid = blob[1].decode("ascii")
+        size = int(git("cat-file", "-s", oid))
+        if size > _ARCHIVE_REPORT_LIMIT:
+            raise ValueError("review evidence exceeds its bounded reader")
+        raw = git("cat-file", "blob", oid)
+        if len(raw) != size:
+            raise ValueError("pinned source report size changed")
+    except subprocess.SubprocessError as exc:
+        raise ValueError("pinned source report is unavailable in local Git") from exc
+    return _review_payload(raw)
 
 
 def reviewed_source_archives(
@@ -289,13 +335,12 @@ def reviewed_source_archives(
                 digest = raw.get("source_report_sha256")
                 if (
                     not isinstance(source, str)
-                    or not re.fullmatch(r"reports/(?:publication_intake|paired_publications)_\d{4}-\d{2}-\d{2}\.json", source)
                     or not isinstance(digest, str)
                     or not re.fullmatch(r"[0-9a-f]{64}", digest)
                 ):
-                    raise ValueError("review requires an exact local source report and SHA-256")
+                    raise ValueError("review requires a source report and exact SHA-256")
                 if source not in sources:
-                    sources[source] = _review_json(repo_root, source, 32 * 1024 * 1024)
+                    sources[source] = _archive_report_json(repo_root, source)
                 source_digest, payload = sources[source]
                 if source_digest != digest:
                     raise ValueError("frozen source report SHA-256 changed")
