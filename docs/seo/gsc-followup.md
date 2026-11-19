@@ -79,6 +79,9 @@ Open [Page indexing](https://search.google.com/search-console/index?resource_id=
 
 ### Legitimate exclusions (no action)
 
+- **`www` URL-prefix property** — `https://www.danielarifriedman.com/` reports 0 indexed pages by design: every `www` URL returns 301 to the apex, so its examples appear as **Page with redirect**. Use the apex property for indexing work. The retired `sitemap-images.xml` had also been submitted there and was removed on 2026-11-19.
+- **Parameterized search and reading-list URLs** — `search.html?q=…` and `collections.html?add=…` variants canonicalize to their base pages and rewrite the address client-side, so they appear as **Page with redirect** or **Alternate page with proper canonical**. Expected; do not validate.
+- **Removed report artifacts** — report files pruned under [report retention](../operations/report-retention.md) (for example the May 2026 browser-smoke and visual-QA manifests) are permanent 404s and need no stub.
 - **Alternate page with proper canonical** — every `papers/{folder}/` page is `noindex, follow` with a canonical to `works/{citation_key}.html`, and JSON-LD is removed from paper pages. This is intended.
 - **Page with redirect** / **Excluded by ‘noindex’ tag** — the legacy redirect stubs (`noindex, follow` plus a canonical pointing away; defined in [redirect_stubs.py](../../code/src/redirect_stubs.py)):
   - `about.html`, `blog/` (index), `meditations.html`, `research.html` canonicalize to the homepage (`https://danielarifriedman.com/`); their meta-refresh targets are the `#about`, `#media`, `#media` and `#research` sections
@@ -147,7 +150,7 @@ Meaningful count changes often take **1–4 weeks**.
 
 ## Observation log
 
-Dated Search Console observations (what was read, what was requested, the next recheck) live in `reports/gsc_observations_<date>.md`, not in this runbook. Latest: [gsc_observations_2026-11-05.md](../../reports/gsc_observations_2026-11-05.md).
+Dated Search Console observations (what was read, what was requested, the next recheck) live in `reports/gsc_observations_<date>.md`, not in this runbook. Latest: [gsc_observations_2026-11-19.md](../../reports/gsc_observations_2026-11-19.md).
 
 ---
 
