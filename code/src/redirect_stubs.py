@@ -133,6 +133,23 @@ REDIRECT_STUBS: tuple[RedirectStub, ...] = (
         f"{SITE_ORIGIN}works/Friedman2026LivingMetaAnalysisArchitecture110.html",
         "A Living Meta-Analysis Architecture for Active Inference",
     ),
+    # Retired duplicate identifiers observed as live 404s in the 2026-11-19
+    # Search Console follow-up. Both IDs stay retired; each leads to its kept
+    # primary record (ATLAS #136, Template/Reproducible #1).
+    RedirectStub(
+        "works/Friedman2023ATLASQuestionOrientedApproach049.html",
+        "ATLAS — previous work URL",
+        f"{SITE_ORIGIN}works/Friedman2023ATLASQuestionOrientedApproach136.html",
+        f"{SITE_ORIGIN}works/Friedman2023ATLASQuestionOrientedApproach136.html",
+        "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
+    ),
+    RedirectStub(
+        "works/Friedman2026TemplateApproachReproducibleGenerative193.html",
+        "Template/ Reproducible Generative Research — previous work URL",
+        f"{SITE_ORIGIN}works/Friedman2026TemplateApproachReproducibleGenerative001.html",
+        f"{SITE_ORIGIN}works/Friedman2026TemplateApproachReproducibleGenerative001.html",
+        "A template/ approach to Reproducible Generative Research",
+    ),
 )
 
 
