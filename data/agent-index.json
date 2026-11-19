@@ -473,7 +473,7 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-11-17.json",
+      "path": "/reports/accessibility_static_2026-11-19.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1675,11 +1675,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 967624813,
+        "source_bytes": 967638763,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6311,
-        "artifact_bytes": 968744090
+        "artifact_file_count": 6314,
+        "artifact_bytes": 968758603
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6435,7 +6435,7 @@
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
     "videos": "4ab5da15a6878393ece05d08c613d931968035eefbeb107d148cf8ff5ddfb687",
     "videos_index": "aef1cfda7fa82b229d97d49742fc04e417cd8fba6db97bda12fcc8a323470f10",
-    "search": "0b2d72a6f97c6d0fce492e77dfb2e10137be7b16e54cbb350d5e68e67e2da2bc",
+    "search": "7e394223f5f8c1e7a345506253546daaff93e3a163efee6d678901ee9fffb1b3",
     "claims": "8d6c83f93b0609c6d6308c592325631b61b6caffb2a982ec5e5747ca2a0d988b",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
     "coverage_exceptions": "e8a253e85f233ddedc483897452251cb1a4de4371823286e4258f59567b274c0",
@@ -6448,10 +6448,10 @@
     "research_map": "ddfddc0e6c2f48a877ca37ef6c4c3cd3bb0bbdee944d8de626880a0c96c57b1f",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
     "scholar_readiness": "dc5fc4446b1b8f5ebc42891be0d7bc8fa7f7435539c515a07cd99e1febdbf29b",
-    "catalog": "fda5a5ed9fa3ad8a3cd52eca5fc30d05ba59d8e49757ecb0dae06ceff0754ddd",
+    "catalog": "a16dfd18509e9ba29f653353698c21eb16575f5e86f270ba1ed4b13c7621ffab",
     "reconciliation": "7544d137eaad1aca45f2fc4fe4d8e74a068e5239894b451e31369981c75de333",
     "reproducibility": "849f32958ef0c8073c0518eae0f545b8a64cab5c83ac39f3594fa8b5a231ea5b",
-    "generated_manifest": "3aba9803f7189b4aa694bfbddc71ea4da1b7c7438df1ce2a33cfcd2643c8c340",
+    "generated_manifest": "45e577bf9c63366a2b065c1ccc7c2d4327e86e2aea0a0481f555f8b3c02443b0",
     "current_counts": "745f4e91943e7e18f0756c29659253255ce8b165abbdbc6ba2926ce89c6cd751"
   },
   "source_provenance": {

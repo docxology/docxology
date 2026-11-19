@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T02:24:59Z",
+  "generated_at": "2026-11-19T23:42:41Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -274,7 +274,9 @@
         "research.html",
         "works/Friedman2025CEREBRUMCaseEnabledReasoning118.html",
         "works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html",
-        "works/Friedman2026LiteratureReviewArchitectureActive110.html"
+        "works/Friedman2026LiteratureReviewArchitectureActive110.html",
+        "works/Friedman2023ATLASQuestionOrientedApproach049.html",
+        "works/Friedman2026TemplateApproachReproducibleGenerative193.html"
       ],
       "sources": [
         "code/src/redirect_stubs.py",
@@ -846,7 +848,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-11-17.json"
+        "reports/accessibility_static_2026-11-19.json"
       ],
       "sources": [
         "root HTML pages",
