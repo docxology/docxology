@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-19T10:45:37Z",
-  "source_commit_at_generation": "0e9b0fe18315b69c63defbc2e286c95761168acd",
+  "generated_at": "2026-11-19T11:10:06Z",
+  "source_commit_at_generation": "85a2e64b843d799ffff6c0c7b85c8abc8a2e74e8",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967622441,
+    "source_bytes": 967624805,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6311,
-    "artifact_bytes": 968741718
+    "artifact_bytes": 968744082
   },
   "included_files": [
     {
@@ -10356,8 +10356,8 @@
     },
     {
       "path": "code/orchestrators/build_paper_pages.py",
-      "bytes": 17558,
-      "sha256": "7a0625140be57cab525da63ff23f3642de3b1f1762523b044e2f0f9f4c9bdc1c"
+      "bytes": 17523,
+      "sha256": "804178869712966df4bee003b756ecd403b304510b4aa1ceca4099ef3a5c79aa"
     },
     {
       "path": "code/orchestrators/build_public_source_review.py",
@@ -10696,8 +10696,8 @@
     },
     {
       "path": "code/src/bibliography_links.py",
-      "bytes": 4102,
-      "sha256": "dc73bc4b3618091775ee3a28f338e0045301680eaee6fbcd10ed0b88bd0e9bda"
+      "bytes": 5058,
+      "sha256": "9e8b8f5de2ddcd2d5a7ef9e04852baf1243b4a216e6bc4eb827bad3a26944c5b"
     },
     {
       "path": "code/src/build_stamp.py",
@@ -11446,8 +11446,8 @@
     },
     {
       "path": "code/tests/test_paper_pages.py",
-      "bytes": 3319,
-      "sha256": "1a8aecb1f5820640923e9b1b4bf04e58542e26c6021f0f9db048e7f09f7290e9"
+      "bytes": 4013,
+      "sha256": "fa80256a4707f2cb83f4f2406ebf5e9022c31d952ec3e99749484d27c613dd6a"
     },
     {
       "path": "code/tests/test_paper_readme_contracts.py",
@@ -11541,8 +11541,8 @@
     },
     {
       "path": "code/tests/test_refresh_regressions.py",
-      "bytes": 12915,
-      "sha256": "de4547dd4412cafa2254e44d83d35588da7555370c04d8d15490f426e16f09f3"
+      "bytes": 13259,
+      "sha256": "d99ab3e0b743e92689ade4c84c1088d9010ce09294e7496e117e3e8ae2b5dc29"
     },
     {
       "path": "code/tests/test_regenerate_all.py",
@@ -11776,8 +11776,8 @@
     },
     {
       "path": "code/tests/test_sync_publications_html.py",
-      "bytes": 13835,
-      "sha256": "0ffd2285e7561c1b3ef4fb18e9fd89a81e090e4c9d96cab34451e7bf866b36c7"
+      "bytes": 14240,
+      "sha256": "551abf0d3a704b4f0fc732a2fe313a714d319285f7dbb000e9057c688e113e18"
     },
     {
       "path": "code/tests/test_sync_software_html.py",
