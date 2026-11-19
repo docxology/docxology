@@ -6,13 +6,13 @@ import re
 
 
 def canonical_link_url(link_cell: str, venue: str) -> str:
-    """Return the canonical URL encoded by one bibliography link cell."""
+    """Preserve explicit Markdown URLs; trim prose punctuation from bare links."""
     cell = (link_cell or "").strip()
     venue_u = venue.upper()
 
     m = re.search(r"\[([^\]]*)\]\((https?://[^)\s]+)\)", cell)
     if m:
-        return m.group(2).rstrip(").,;:!?")
+        return m.group(2)
 
     m = re.search(r"(https?://[^\s\])>]+)", cell)
     if m:

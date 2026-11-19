@@ -26,6 +26,14 @@ def test_private_owned_urls_are_projected_across_hosts(url):
     assert project_public_links(url, frozenset()) == "[non-public repository]"
     assert project_public_links("https://github.com/independent/hidden", frozenset()) == "https://github.com/independent/hidden"
 
+
+@pytest.mark.parametrize("suffix", [".", ",", ";", ":", "!", "?"])
+def test_explicit_markdown_destination_punctuation(suffix):
+    url = "https://example.org/a" + suffix
+    cell = f"[Primary]({url}); [Prior deposit](https://example.org/earlier)."
+    assert canonical_link_url(cell, "") == url
+
+
 @pytest.mark.parametrize("suffix", ["", ".", ",", ";", ":", "!", "?"])
 def test_doi_prose_punctuation(suffix):
     doi = "10.5281/zenodo.24069474"

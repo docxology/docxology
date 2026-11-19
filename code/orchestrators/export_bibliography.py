@@ -114,8 +114,9 @@ def clean_text(value: str) -> str:
 
 
 def doi_from_url(url: str) -> str:
+    """Extract a DOI from an already normalized bibliography URL."""
     m = re.search(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", url)
-    return m.group(1).rstrip(").,") if m else ""
+    return m.group(1) if m else ""
 
 
 def citation_key(row: BiblioRow, *, registry: dict | None = None) -> str:

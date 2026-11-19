@@ -118,6 +118,20 @@ def _replace_in_static_tbody(html_text: str, old: str, new: str) -> str:
     return head + tbody.replace(old, new, 1)
 
 
+@pytest.mark.parametrize("suffix", [";", ".", ","])
+def test_publication_outputs_preserve_explicit_doi_destination(suffix):
+    doi = "10.1000/explicit" + suffix
+    url = f"https://doi.org/{doi}"
+    row = load_rows()[0]._replace(link_cell=f"[DOI]({url})")
+
+    outputs = render_outputs([row])
+    (entity,) = json.loads(outputs[PUBLICATIONS_LD_JSON])["mainEntity"]
+    assert entity["sameAs"] == entity["identifier"]["url"] == url
+    assert entity["identifier"]["value"] == doi
+    tbody = outputs[PUBLICATIONS_HTML].split('<tbody id="pub-tbody">', 1)[1]
+    assert f'href="{url}" target="_blank" rel="noopener">→ Link</a>' in tbody
+
+
 def test_render_and_check_detect_stale_doi_static_row_and_json_ld(tmp_path: Path):
     """Every generated publication surface must fail an exact no-write check.
 
