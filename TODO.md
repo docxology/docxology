@@ -217,19 +217,24 @@ Recurring checks below are operating obligations, not unfinished feature work.
   content/rights evidence from actual deployment and indexing. Verify old/new
   PDF byte identity after deployment, then monitor index inclusion separately;
   see [scholar-inclusion.md](docs/seo/scholar-inclusion.md).
-- Latest signed-in Search Console follow-up: 2026-11-05, recorded in
-  [the dated report](reports/gsc_observations_2026-11-05.md). Only the successful
-  current sitemap remains submitted. Open actions:
-  - Verify the three restored legacy work routes after deployment, then monitor
-    Google's recrawl. Do not validate the whole 404 bucket while historical QA
-    manifest custody and retention remain unresolved.
-  - Request indexing for selected indexable canonical work and video detail
-    pages, spread across days for the quota; never the noindex `videos/` index
-    or redirect stubs.
-  - Inspect actual status before another selective indexing request. The
-    initial November 5 request failed; a later live-test retry is unconfirmed.
-    No accepted request was observed. Recheck Page indexing weekly and retain
-    the report's scope/date when comparing counts.
+- Latest signed-in Search Console follow-up: 2026-11-19, recorded in
+  [the dated report](reports/gsc_observations_2026-11-19.md). Only the successful
+  current sitemap remains on the apex property; the retired image sitemap was
+  removed from the `www` property. Open actions
+  ([issue 85](https://github.com/docxology/docxology/issues/85)):
+  - After deployment, confirm the two retired-key work stubs (049, 193) return
+    200 live, then submit **Validate fix** for the 404 bucket. The three pruned
+    QA manifests are accepted permanent 404s.
+  - Stop emitting followable per-item `search.html?q=` (video pages) and
+    `collections.html?add=` (work pages) links; keep `robots.txt` open.
+  - Link the homepage as `/` rather than `index.html` in shared navigation.
+  - Emit timezone-qualified `uploadDate` values in video JSON-LD.
+  - Add internal links to `blake-pathway.html` and the newest works; enrich
+    thin work pages from their paper folders.
+  - Continue selective **Request indexing** for indexable canonical work and
+    video pages, spread across days for the quota; never the noindex `videos/`
+    index or redirect stubs. Recheck Page indexing weekly and retain the
+    report's scope/date when comparing counts.
   - Follow [gsc-followup.md](docs/seo/gsc-followup.md); never recreate or resubmit
     the retired image sitemap.
 
