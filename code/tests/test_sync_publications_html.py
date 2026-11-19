@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import html
 import json
 import re
 import subprocess
@@ -18,6 +19,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from export_bibliography import render_outputs as render_bibliography, row_to_work, source_paths  # noqa: E402
 from sync_publications_html import (  # noqa: E402
     PUBLICATIONS_HTML,
     PUBLICATIONS_LD_JSON,
@@ -118,18 +120,42 @@ def _replace_in_static_tbody(html_text: str, old: str, new: str) -> str:
     return head + tbody.replace(old, new, 1)
 
 
-@pytest.mark.parametrize("suffix", [";", ".", ","])
-def test_publication_outputs_preserve_explicit_doi_destination(suffix):
-    doi = "10.1000/explicit" + suffix
-    url = f"https://doi.org/{doi}"
-    row = load_rows()[0]._replace(link_cell=f"[DOI]({url})")
+@pytest.mark.parametrize(
+    ("destination", "doi", "url_suffix"),
+    [
+        ("{url}", "10.1000/explicit;", ""),
+        ("{url}", "10.1000/explicit.", ""),
+        ("{url}", "10.1000/explicit,", ""),
+        ("<{url}>", "10.1000/explicit;", ""),
+        ('{url} "Source title"', "10.1000/explicit;", ""),
+        ("{url} 'Source title'", "10.1000/explicit:", ""),
+        ("<{url}> (Source title)", "10.1000/explicit!", ""),
+        ("{url}", "10.1000/explicit", "?"),
+        ("{url}", "10.1000/encoded%3F%23;", "?x=1&y=2#part"),
+    ],
+)
+def test_explicit_doi_destination_and_identifier(destination, doi, url_suffix):
+    doi_url = f"https://doi.org/{doi}"
+    url = doi_url + url_suffix
+    cell = f"[Primary]({destination.format(url=url)}); [Prior](https://doi.org/10.1000/prior)"
+    row = load_rows()[0]._replace(link_cell=cell)
 
     outputs = render_outputs([row])
     (entity,) = json.loads(outputs[PUBLICATIONS_LD_JSON])["mainEntity"]
-    assert entity["sameAs"] == entity["identifier"]["url"] == url
+    assert entity["sameAs"] == url
+    assert entity["identifier"]["url"] == doi_url
     assert entity["identifier"]["value"] == doi
     tbody = outputs[PUBLICATIONS_HTML].split('<tbody id="pub-tbody">', 1)[1]
-    assert f'href="{url}" target="_blank" rel="noopener">→ Link</a>' in tbody
+    assert f'href="{html.escape(url)}" target="_blank" rel="noopener">→ Link</a>' in tbody
+
+    work = row_to_work(row, visible_source_paths=source_paths())
+    exports = {p.name: text for p, text in render_bibliography([work]).items()}
+    (work_record,) = json.loads(exports["works.json"])["works"]
+    (csl,) = json.loads(exports["bibliography.csl.json"])
+    assert work_record["url"] == csl["URL"] == url
+    assert work_record["doi"] == csl["DOI"] == doi
+    assert f"  doi = {{{doi}}},\n  url = {{{url}}}," in exports["bibliography.bib"]
+    assert f"\nDO  - {doi}\nUR  - {url}\n" in exports["bibliography.ris"]
 
 
 def test_render_and_check_detect_stale_doi_static_row_and_json_ld(tmp_path: Path):

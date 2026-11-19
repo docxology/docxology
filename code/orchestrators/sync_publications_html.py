@@ -370,17 +370,17 @@ def render_static_tbody(works: list[dict]) -> str:
         citation_key = p.get("citation_key", "")
         work_page = f"works/{citation_key}.html" if citation_key else ""
         url = p.get("url", "")
-        doi_url = f"https://doi.org/{p['doi']}" if p.get("doi") else url
+        primary_url = url or (f"https://doi.org/{p['doi']}" if p.get("doi") else "")
 
         if work_page:
             title_cell = f'<a href="{html.escape(work_page)}">{title}</a>'
-        elif doi_url:
-            title_cell = f'<a href="{html.escape(doi_url)}" target="_blank" rel="noopener">{title}</a>'
+        elif primary_url:
+            title_cell = f'<a href="{html.escape(primary_url)}" target="_blank" rel="noopener">{title}</a>'
         else:
             title_cell = title
 
         if p.get("doi") or (url and url.startswith("https://doi.org/")):
-            primary = f'<a href="{html.escape(doi_url)}" target="_blank" rel="noopener">→ Link</a>'
+            primary = f'<a href="{html.escape(primary_url)}" target="_blank" rel="noopener">→ Link</a>'
         else:
             primary = '<span aria-label="No primary link">—</span>'
 

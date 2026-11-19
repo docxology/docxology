@@ -5,14 +5,22 @@ from __future__ import annotations
 import re
 
 
+_MARKDOWN_LINK = re.compile(
+    r"""\[[^\]]*\]\(\s*
+        (?:<(?P<angle>https?://[^<>\s]+)>|(?P<plain>https?://[^)\s]+))
+        (?:\s+(?:"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\((?:\\.|[^()\\])*\)))?
+        \s*\)""",
+    re.VERBOSE,
+)
+
+
 def canonical_link_url(link_cell: str, venue: str) -> str:
     """Preserve explicit Markdown URLs; trim prose punctuation from bare links."""
     cell = (link_cell or "").strip()
     venue_u = venue.upper()
 
-    m = re.search(r"\[([^\]]*)\]\((https?://[^)\s]+)\)", cell)
-    if m:
-        return m.group(2)
+    if m := _MARKDOWN_LINK.search(cell):
+        return m["angle"] or m["plain"]
 
     m = re.search(r"(https?://[^\s\])>]+)", cell)
     if m:

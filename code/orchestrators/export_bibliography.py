@@ -114,8 +114,8 @@ def clean_text(value: str) -> str:
 
 
 def doi_from_url(url: str) -> str:
-    """Extract a DOI from an already normalized bibliography URL."""
-    m = re.search(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", url)
+    """Extract the DOI from the resolver path, not its query or fragment."""
+    m = re.match(r"https?://(?:dx\.)?doi\.org/(10\.[^\s?#]+)", url)
     return m.group(1) if m else ""
 
 
