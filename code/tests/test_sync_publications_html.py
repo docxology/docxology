@@ -139,6 +139,10 @@ def _replace_in_static_tbody(html_text: str, old: str, new: str) -> str:
         ("[DOI]({url}?x=1&amp;y=2&#x26;z=3)", "10.1000/probe;", "?x=1&y=2&z=3"),
         ('[![Cover](https://example.org/cover "Figure ]")]({url})', "10.1000/probe:", ""),
         ("[Outer [Inner]({url})](https://example.org/outer)", "10.1000/probe;", ""),
+        ('![Cover](https://example.org/cover.png "Cover thumbnail") [DOI]({url})', "10.1000/review;", ""),
+        ("![Cover [Credit](https://example.org/credit)](https://example.org/cover.png) [DOI]({url})", "10.1000/review", ""),
+        ("[DOI]({url}?note=a&#10;b;)", "10.1000/review", "?note=a%0Ab;"),
+        ("[DOI]({url}?note=a&#13;&Tab;&#x2028;b;)", "10.1000/review", "?note=a%0D%09%E2%80%A8b;"),
     ],
 )
 def test_explicit_doi_destination_and_identifier(cell_template, doi, url_suffix):

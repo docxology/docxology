@@ -6,6 +6,7 @@ import re
 from html import unescape
 from html.entities import html5
 from string import punctuation
+from urllib.parse import quote
 
 
 _ESCAPED_PUNCTUATION = rf"\\([{re.escape(punctuation)}])"
@@ -23,7 +24,10 @@ def _decode_destination_token(match: re.Match[str]) -> str:
     if match[1] is not None:
         return match[1]
     token = match[0]
-    return unescape(token) if token.startswith("&#") else html5.get(token[1:], token)
+    value = unescape(token) if token.startswith("&#") else html5.get(token[1:], token)
+    # Browsers strip literal CR, LF and TAB from URLs, and line-based
+    # citation formats cannot represent them inside a URL field.
+    return quote(value) if value.isspace() else value
 
 
 def _destination_at(cell: str, label_end: int) -> tuple[str, int] | None:
@@ -60,10 +64,11 @@ def _destination_at(cell: str, label_end: int) -> tuple[str, int] | None:
     return _DESTINATION_TEXT.sub(_decode_destination_token, cell[start:end]), closing.end()
 
 
-def _explicit_link_url(cell: str) -> str:
-    # Brackets close inside-out, but an enclosing link precedes links inside
-    # its label (for example a linked image). Keep the earliest opening.
-    openings: list[tuple[int, bool]] = []
+def _scan_explicit_links(cell: str) -> tuple[str, str]:
+    # Brackets close inside-out. Save link state on image open so that links
+    # in the alt text of a completed image don't count as source links.
+    openings: list[tuple[int, int | None]] = []
+    images: list[tuple[int, int]] = []
     last_link = -1
     first = len(cell)
     url = ""
@@ -71,20 +76,36 @@ def _explicit_link_url(cell: str) -> str:
     while token := _LABEL_TOKEN.search(cell, cursor):
         cursor = token.end()
         if token[0] in ("[", "!["):
-            openings.append((token.start(), token[0] == "!["))
+            openings.append((token.start(), last_link if token[0] == "![" else None))
         elif token[0] == "]" and openings:
-            start, image = openings.pop()
-            if image or start > last_link:
+            start, before_image = openings.pop()
+            if before_image is not None or start > last_link:
                 if parsed := _destination_at(cell, cursor):
                     candidate, cursor = parsed
-                    if not image:
+                    if before_image is not None:
+                        last_link = before_image
+                        if start < first:
+                            first, url = len(cell), ""
+                        images.append((start, cursor))
+                    else:
                         # An inline link cannot be nested in another link label.
                         last_link = start
-                    if start < first and candidate.startswith(("https://", "http://")):
-                        first, url = start, candidate
+                        if start < first and candidate.startswith(("https://", "http://")):
+                            first, url = start, candidate
             if url and not openings:
                 break
-    return url
+    if url or not images:
+        return url, cell
+
+    # Do not rediscover image URLs or titles through the bare/prose fallback.
+    prose: list[str] = []
+    cursor = 0
+    for start, end in sorted(images):
+        if start >= cursor:
+            prose.append(cell[cursor:start])
+            cursor = end
+    prose.append(cell[cursor:])
+    return "", " ".join(prose).strip()
 
 
 def canonical_link_url(link_cell: str, venue: str) -> str:
@@ -92,7 +113,8 @@ def canonical_link_url(link_cell: str, venue: str) -> str:
     cell = (link_cell or "").strip()
     venue_u = venue.upper()
 
-    if url := _explicit_link_url(cell):
+    url, cell = _scan_explicit_links(cell)
+    if url:
         return url
 
     m = re.search(r"(https?://[^\s\])>]+)", cell)

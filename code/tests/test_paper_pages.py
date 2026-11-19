@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import html
 import json
 import sys
+from dataclasses import asdict
 from pathlib import Path
 
 import pytest
@@ -17,8 +19,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
-from build_paper_pages import reconcile_outputs, render_outputs, validate_inputs  # noqa: E402
+from build_paper_pages import reconcile_outputs, render_outputs, render_page, validate_inputs  # noqa: E402
+from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
 from docxology_tools.generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
+from export_bibliography import row_to_work, source_paths  # noqa: E402
 
 
 def test_every_docs_path_has_required_folder_docs():
@@ -53,6 +57,18 @@ def test_docs_folder_page_links_local_docs_and_canonical():
     assert work["doi"] in content or "doi.org" in content
     assert '<meta name="robots" content="noindex, follow">' in content
     assert "application/ld+json" not in content
+
+
+def test_paper_source_href_keeps_the_exported_doi_query_and_fragment():
+    doi = "10.1000/review"
+    url = f"https://doi.org/{doi}?download=1&format=pdf#supplement"
+    row = next(row for row in iter_bibliography_rows() if row.folder)
+    work = row_to_work(
+        row._replace(link_cell=f"[DOI]({url})"), visible_source_paths=source_paths()
+    )
+
+    content = render_page(asdict(work))
+    assert f'<strong>DOI / Source</strong><a href="{html.escape(url)}">{doi}</a>' in content
 
 
 def test_paper_page_reconcile_rejects_symlinked_output_without_touching_target(

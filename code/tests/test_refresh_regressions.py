@@ -34,6 +34,15 @@ def test_explicit_markdown_destination_punctuation(suffix):
     assert canonical_link_url(cell, "") == url
 
 
+@pytest.mark.parametrize(
+    ("after_image", "url"),
+    [("", ""), (" 10.1000/review; follow-up", "https://doi.org/10.1000/review")],
+)
+def test_inline_image_is_not_a_bare_source(after_image, url):
+    cell = '![Cover](https://example.org/cover.png "https://example.org/title")'
+    assert canonical_link_url(cell + after_image, "") == url
+
+
 @pytest.mark.parametrize("suffix", ["", ".", ",", ";", ":", "!", "?"])
 def test_doi_prose_punctuation(suffix):
     doi = "10.5281/zenodo.24069474"
