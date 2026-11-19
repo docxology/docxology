@@ -1058,7 +1058,7 @@ def test_ssr_thumbnail_fallback_preserves_decoded_tile_across_sorting(gallery_se
         )
         page.goto(gallery_server + "/art.html")
         page.wait_for_function(
-            '() => document.querySelector("#grid [data-index] img").naturalWidth > 0'
+            '() => (document.querySelector("#grid [data-index] img")?.naturalWidth ?? 0) > 0'
         )
         assert page.locator("#grid img").get_attribute("src") == compact["thumb"]
         page.evaluate(
