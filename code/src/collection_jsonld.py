@@ -27,6 +27,8 @@ def inline_collection_ld_marker_block(
         payload = json.dumps(collection, ensure_ascii=False, separators=(",", ":"))
     else:
         payload = json.dumps(collection, indent=4, ensure_ascii=False)
+    # Markdown entities in authored destinations can decode to a literal "<".
+    payload = payload.replace("<", "\\u003c")
     return (
         f"    {begin_marker}\n"
         f'    <script type="application/ld+json">{payload if compact else chr(10) + payload + chr(10) + "    "}</script>\n'
@@ -79,7 +81,7 @@ def replace_inline_collection_ld(
     if begin_count == 1:
         replaced, replacement_count = re.subn(
             re.escape(begin_marker) + r"[\s\S]*?" + re.escape(end_marker),
-            marker.strip(),
+            lambda _: marker.strip(),
             html_text,
             count=1,
         )

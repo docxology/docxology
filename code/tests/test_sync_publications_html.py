@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import html
 import json
 import re
 import subprocess
@@ -18,6 +19,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from export_bibliography import render_outputs as render_bibliography, row_to_work, source_paths  # noqa: E402
 from sync_publications_html import (  # noqa: E402
     PUBLICATIONS_HTML,
     PUBLICATIONS_LD_JSON,
@@ -116,6 +118,94 @@ def _replace_in_static_tbody(html_text: str, old: str, new: str) -> str:
     head, tbody = html_text[:tbody_start], html_text[tbody_start:]
     assert old in tbody
     return head + tbody.replace(old, new, 1)
+
+
+@pytest.mark.parametrize(
+    ("cell_template", "doi", "url_suffix"),
+    [
+        ("[Primary]({url}); [Prior](https://doi.org/10.1000/prior)", "10.1000/explicit;", ""),
+        ("[Primary]({url})", "10.1000/explicit.", ""),
+        ("[Primary]({url})", "10.1000/explicit,", ""),
+        ("[Primary](<{url}>)", "10.1000/explicit;", ""),
+        ('[Primary]({url} "Source title")', "10.1000/explicit;", ""),
+        ("[Primary]({url} 'Source title')", "10.1000/explicit:", ""),
+        ("[Primary](<{url}> (Source title))", "10.1000/explicit!", ""),
+        ("[Primary]({url}?)", "10.1000/explicit", "?"),
+        ("[Primary]({url}?x=1&y=2#part)", "10.1000/encoded%3F%23;", "?x=1&y=2#part"),
+        ("[DOI [Preprint]]({url}); [Prior](https://doi.org/10.1000/prior)", "10.1000/probe;", ""),
+        (r"[DOI \[Preprint\]]({url})", "10.1000/probe!", ""),
+        ('[DOI [Preprint [v2]]](<{url}> "Source title")', "10.1000/probe,", ""),
+        ("[DOI]({url})", "10.1000/a(b(c)d)e(f)", ""),
+        ("[DOI]({url}?x=1&amp;y=2&#x26;z=3)", "10.1000/probe;", "?x=1&y=2&z=3"),
+        ('[![Cover](https://example.org/cover "Figure ]")]({url})', "10.1000/probe:", ""),
+        ("[Outer [Inner]({url})](https://example.org/outer)", "10.1000/probe;", ""),
+        ('![Cover](https://example.org/cover.png "Cover thumbnail") [DOI]({url})', "10.1000/review;", ""),
+        ("![Cover [Credit](https://example.org/credit)](https://example.org/cover.png) [DOI]({url})", "10.1000/review", ""),
+        ("[DOI]({url}?note=a&#10;b;)", "10.1000/review", "?note=a%0Ab;"),
+        ("[DOI]({url}?note=a&#13;&Tab;&#x2028;b;)", "10.1000/review", "?note=a%0D%09%E2%80%A8b;"),
+    ],
+)
+def test_explicit_doi_destination_and_identifier(cell_template, doi, url_suffix):
+    doi_url = f"https://doi.org/{doi}"
+    url = doi_url + url_suffix
+    row = load_rows()[0]._replace(link_cell=cell_template.format(url=doi_url))
+
+    outputs = render_outputs([row])
+    (entity,) = json.loads(outputs[PUBLICATIONS_LD_JSON])["mainEntity"]
+    assert entity["sameAs"] == url
+    assert entity["identifier"]["url"] == doi_url
+    assert entity["identifier"]["value"] == doi
+    tbody = outputs[PUBLICATIONS_HTML].split('<tbody id="pub-tbody">', 1)[1]
+    assert f'href="{html.escape(url)}" target="_blank" rel="noopener">→ Link</a>' in tbody
+
+    work = row_to_work(row, visible_source_paths=source_paths())
+    exports = {p.name: text for p, text in render_bibliography([work]).items()}
+    (work_record,) = json.loads(exports["works.json"])["works"]
+    (csl,) = json.loads(exports["bibliography.csl.json"])
+    assert work_record["url"] == csl["URL"] == url
+    assert work_record["doi"] == csl["DOI"] == doi
+    assert f"  doi = {{{doi}}},\n  url = {{{url}}}," in exports["bibliography.bib"]
+    assert f"\nDO  - {doi}\nUR  - {url}\n" in exports["bibliography.ris"]
+
+
+def test_static_publication_href_preserves_a_decoded_literal_backslash():
+    url = r"https://doi.org/10.1000/probe?x=\n&y=2"
+    row = load_rows()[0]._replace(
+        link_cell="[DOI](https://doi.org/10.1000/probe?x=&bsol;n&amp;y=2)"
+    )
+
+    outputs = render_outputs([row])
+    (entity,) = json.loads(outputs[PUBLICATIONS_LD_JSON])["mainEntity"]
+    assert entity["sameAs"] == url
+    assert entity["identifier"]["value"] == "10.1000/probe"
+    tbody = outputs[PUBLICATIONS_HTML].split('<tbody id="pub-tbody">', 1)[1]
+    assert f'href="{html.escape(url)}" target="_blank" rel="noopener">→ Link</a>' in tbody
+
+
+def test_course_metadata_decodes_the_first_explicit_destination_once():
+    url = "https://education.example.org/course(a)</script>?x=1&y=2&keep=&amp;&notit;"
+    row = load_rows()[0]._replace(
+        typ="Course",
+        link_cell=(
+            '[Course [2026]](<https://education.example.org/course(a)&lt;/script&gt;?x=1&amp;y=2&amp;keep=&amp;amp;&notit;> "Syllabus")'
+            "; [Archive](https://education.example.org/previous)"
+        ),
+    )
+    outputs = render_outputs([row])
+    (entity,) = json.loads(outputs[PUBLICATIONS_LD_JSON])["mainEntity"]
+    assert entity["@type"] == "Course"
+    assert entity["sameAs"] == url
+    assert "identifier" not in entity
+    scripts = re.findall(
+        r'<script type="application/ld\+json">(.*?)</script>',
+        outputs[PUBLICATIONS_HTML],
+        re.DOTALL,
+    )
+    (inline,) = [
+        payload for script in scripts
+        if (payload := json.loads(script))["@type"] == "CollectionPage"
+    ]
+    assert inline["mainEntity"] == [entity]
 
 
 def test_render_and_check_detect_stale_doi_static_row_and_json_ld(tmp_path: Path):

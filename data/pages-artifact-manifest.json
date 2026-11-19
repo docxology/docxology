@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-19T02:36:56Z",
-  "source_commit_at_generation": "87c47c77b9a9cef1b9d84ad0fd9e4c2490144edb",
+  "generated_at": "2026-11-19T11:10:06Z",
+  "source_commit_at_generation": "85a2e64b843d799ffff6c0c7b85c8abc8a2e74e8",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 967614859,
+    "source_bytes": 967624805,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6311,
-    "artifact_bytes": 968734135
+    "artifact_bytes": 968744082
   },
   "included_files": [
     {
@@ -10356,8 +10356,8 @@
     },
     {
       "path": "code/orchestrators/build_paper_pages.py",
-      "bytes": 17558,
-      "sha256": "7a0625140be57cab525da63ff23f3642de3b1f1762523b044e2f0f9f4c9bdc1c"
+      "bytes": 17523,
+      "sha256": "804178869712966df4bee003b756ecd403b304510b4aa1ceca4099ef3a5c79aa"
     },
     {
       "path": "code/orchestrators/build_public_source_review.py",
@@ -10456,8 +10456,8 @@
     },
     {
       "path": "code/orchestrators/export_bibliography.py",
-      "bytes": 14561,
-      "sha256": "ae42fc3de3242ab16c1ccc25a0cac7da9984dc2577c8dae4a0dbadea723e8fd7"
+      "bytes": 14628,
+      "sha256": "52c5bfe6d5fce8240cd0fa418e34f14230712fbb61af1bb2097966c2189fbae0"
     },
     {
       "path": "code/orchestrators/extract_paper_texts.py",
@@ -10601,8 +10601,8 @@
     },
     {
       "path": "code/orchestrators/sync_publications_html.py",
-      "bytes": 18716,
-      "sha256": "4c3b1af6aa5cda118650e21f397aa547212b62ef2e4cf173338ba2799fb4d3fa"
+      "bytes": 18750,
+      "sha256": "d3a8609b3f882f046a7fba5badcaaf68a8ffbba2853c2d3a153c64de201b0e13"
     },
     {
       "path": "code/orchestrators/sync_scholar_metrics.py",
@@ -10696,8 +10696,8 @@
     },
     {
       "path": "code/src/bibliography_links.py",
-      "bytes": 1227,
-      "sha256": "ee8be7fddd03cb2a1b4f5c6131f7954fd40f7548e6857569f5a6405bde1420ad"
+      "bytes": 5058,
+      "sha256": "9e8b8f5de2ddcd2d5a7ef9e04852baf1243b4a216e6bc4eb827bad3a26944c5b"
     },
     {
       "path": "code/src/build_stamp.py",
@@ -10721,8 +10721,8 @@
     },
     {
       "path": "code/src/collection_jsonld.py",
-      "bytes": 3703,
-      "sha256": "f119f0a0d40a06cea3e44542ac389facd2e5015f65f667b0c681bec87868187b"
+      "bytes": 3837,
+      "sha256": "c7cef548a87279615601df8b41786b811b45d5ed0669bf26b1145c488f4900f2"
     },
     {
       "path": "code/src/content_audit.py",
@@ -11446,8 +11446,8 @@
     },
     {
       "path": "code/tests/test_paper_pages.py",
-      "bytes": 3319,
-      "sha256": "1a8aecb1f5820640923e9b1b4bf04e58542e26c6021f0f9db048e7f09f7290e9"
+      "bytes": 4013,
+      "sha256": "fa80256a4707f2cb83f4f2406ebf5e9022c31d952ec3e99749484d27c613dd6a"
     },
     {
       "path": "code/tests/test_paper_readme_contracts.py",
@@ -11541,8 +11541,8 @@
     },
     {
       "path": "code/tests/test_refresh_regressions.py",
-      "bytes": 12617,
-      "sha256": "d529e8c1ce5ef971313ae6e0eb1a05dcdeb5cd1991d13c9a439175308944b127"
+      "bytes": 13259,
+      "sha256": "d99ab3e0b743e92689ade4c84c1088d9010ce09294e7496e117e3e8ae2b5dc29"
     },
     {
       "path": "code/tests/test_regenerate_all.py",
@@ -11776,8 +11776,8 @@
     },
     {
       "path": "code/tests/test_sync_publications_html.py",
-      "bytes": 9661,
-      "sha256": "ac7846abe4c22d29652e794913fa21715e83cb3c5cfdd7ab019951b7e5bcb891"
+      "bytes": 14240,
+      "sha256": "551abf0d3a704b4f0fc732a2fe313a714d319285f7dbb000e9057c688e113e18"
     },
     {
       "path": "code/tests/test_sync_software_html.py",

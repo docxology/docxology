@@ -237,7 +237,8 @@ def render_page(work: dict) -> str:
         "<p>" + h(paragraph).replace("\n", "<br>") + "</p>"
         for paragraph in summary.split("\n\n")
     )
-    doi_url = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
+    doi = work.get("doi")
+    source_url = work.get("url") or (f"https://doi.org/{doi}" if doi else "../../publications.html")
     canonical = works_canonical(work)
     domain_href = domain_page_href(work.get("domain", ""), depth=2)
     domain_label = (
@@ -294,7 +295,7 @@ def render_page(work: dict) -> str:
         <section class="section">
             <div class="artifact-grid">
                 <div class="artifact-card"><strong>Primary Work Page</strong><a href="../../works/{h(work["citation_key"])}.html">{h(work["citation_key"])}</a></div>
-                <div class="artifact-card"><strong>DOI / Source</strong>{f'<a href="{h(doi_url)}">{h(work["doi"])}</a>' if doi_url else f'<a href="{h(work.get("url") or "../../publications.html")}">Primary source</a>'}</div>
+                <div class="artifact-card"><strong>DOI / Source</strong><a href="{h(source_url)}">{h(doi or "Primary source")}</a></div>
                 <div class="artifact-card"><strong>Folder</strong><span>{h(docs_path)}/</span></div>
             </div>
         </section>
