@@ -3932,8 +3932,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "d7d05ff0b985cf1c7ee4848b93d1a8b37e07f83c",
-  "source_tree_sha": "b3f08e867b5617e3c7000c97def9ee5b5e455a7f",
+  "source_commit": "2e829f746489a3a7c3a2b042c68a91b1cac0cfa5",
+  "source_tree_sha": "830c9f7886a5fe5a5433772c137985a37c2cc63e",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
