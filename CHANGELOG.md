@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-19 — Search Console follow-up
+
+- Add redirect stubs for the retired duplicate work keys 049 (ATLAS) and 193 (Template/Reproducible), which Search Console reported as live 404s. Both identifiers stay retired and lead to their kept records, works 136 and 001.
+- Remove the homepage `google-site-verification` meta, which carried the HTML-file token name; ownership stays verified by the HTML file.
+- Record the pruned May 2026 QA manifests as accepted permanent 404s, and add the `www` property and parameterized search URLs to the runbook's legitimate exclusions.
+- See [the Search Console observation](reports/gsc_observations_2026-11-19.md) for the inspected reports, accepted indexing requests and remaining work.
+
 ## 2026-11-17 — CrossTalk on the Page
 
 - Catalogue the Zenodo-only preprint *CrossTalk on the Page* as work 239, citing concept DOI 10.5281/zenodo.24297223. Its versioned record 24297224 supplies the checksum-verified remote primary PDF and literal text extraction.
