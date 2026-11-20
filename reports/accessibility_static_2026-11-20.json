@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T00:22:50Z",
+  "generated_at": "2026-11-20T22:20:43Z",
   "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 2632,
-  "passing": 2632,
+  "page_count": 2634,
+  "passing": 2634,
   "results": [
     {
       "path": "404.html",
@@ -29156,6 +29156,31 @@
     },
     {
       "path": "papers/2026_PriorCognitiveArt/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "papers/2026_PyCIPro/index.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -65056,6 +65081,31 @@
     },
     {
       "path": "works/Friedman2026PriorCognitiveArt194.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "works/Friedman2026PyCIProExactGeometry240.html",
       "ok": true,
       "checks": {
         "lang": true,

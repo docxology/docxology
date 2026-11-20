@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-20 — Publications, repositories, and selected domain works
+
+- Catalogue the py-CIPro manuscript as work 240, with its versioned Zenodo PDF and source evidence.
+- Refresh the public GitHub inventory and apply the standing fork policy to otc-fam.
+- Feature an editorial selection for each of the eight domains, ordered by relevance and supported by the catalog. Use the same selection in the domain map and link the William Blake reading pathway from Art & Synergetics.
+
 ## 2026-11-19 — Crawl hygiene from the Search Console follow-up
 
 - Stop emitting a followable per-video `search.html?q=<title>` link. Every remaining internal link with a query string (site search, reading lists, research map, gallery tag filters and bibliography domain filters) now carries `rel="nofollow"`, and `seo_invariants.check_crawl_hygiene` fails validation if a followable query link, an `index.html` homepage link or a date-only video `uploadDate` returns.

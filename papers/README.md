@@ -9,7 +9,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (218)
+## Papers (219)
 
 Archive links open the selected versioned PDFs without duplicating them here.
 
@@ -235,6 +235,7 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 217 | [2026_OPHFEP_Synergetics](2026_OPHFEP_Synergetics/) | ✅ | 2026 | OPH, FEP and Synergetics |
 
 | 218 | [2026_CrossTalk_on_the_Page](2026_CrossTalk_on_the_Page/) | ✅ | 2026 | CrossTalk_on_the_Page |
+| 219 | [2026_PyCIPro](2026_PyCIPro/) | ✅ | 2026 | PyCIPro |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

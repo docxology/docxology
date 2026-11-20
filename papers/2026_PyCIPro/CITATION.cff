@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds"
+version: "0.9.3"
+date-released: 2026-11-18
+doi: 10.5281/zenodo.24352379
+url: "https://doi.org/10.5281/zenodo.24352379"
+repository-code: "https://github.com/docxology/py-CIPro"
+authors:
+  - family-names: "Friedman"
+    given-names: "Daniel"
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24352379"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.24352379"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.24352380"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.24352380"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/24352380"
+    description: "Version/download landing page (Zenodo artifact)"
+  - type: url
+    value: "https://github.com/docxology/py-CIPro/releases/tag/v0.9.3"
+    description: "GitHub release"

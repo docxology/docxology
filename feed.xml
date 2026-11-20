@@ -6,7 +6,14 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 20:02:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 22:21:36 +0000</lastBuildDate>
+    <item>
+      <title>py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds</title>
+      <link>https://danielarifriedman.com/works/Friedman2026PyCIProExactGeometry240.html</link>
+      <guid isPermaLink="false">work-Friedman2026PyCIProExactGeometry240</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
     <item>
       <title>CrossTalk on the Page</title>
       <link>https://danielarifriedman.com/works/Friedman2026CrossTalkPage239.html</link>
@@ -160,13 +167,6 @@
       <guid isPermaLink="false">work-Friedman2026AgenticSecurityOperatingSystems218</guid>
       <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)</title>
-      <link>https://danielarifriedman.com/works/Friedman2026ForensicAuditMillenniumLeanClay215.html</link>
-      <guid isPermaLink="false">work-Friedman2026ForensicAuditMillenniumLeanClay215</guid>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <description>Report · Zenodo · Other · 2026</description>
     </item>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>

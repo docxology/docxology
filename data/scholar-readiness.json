@@ -4,14 +4,14 @@
   "inclusion_guidance": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "pdf_byte_limit": 5000000,
   "limit_interpretation": "Conservative decimal 5 MB; archived PDFs are never rewritten by this audit.",
-  "works_sha256": "e33c29c5dba9e68065305ece5038638c67fc2e7a5a7a58e97289bfd237060486",
+  "works_sha256": "a9c4115fb3cbf198d71d070aa12e04c4d97bfb01d73f35cbf14299ebd0be87ae",
   "projection_registry_sha256": "21ae02d3ab2c8cf5b039722149a57b956adb6968e3b84d287fbc61d15a342567",
   "network_checked": false,
   "indexing_verified": false,
   "summary": {
-    "works": 235,
+    "works": 236,
     "local_status": {
-      "blocked": 230,
+      "blocked": 231,
       "requires_review": 5
     },
     "blockers": {
@@ -20,7 +20,7 @@
       "missing_citation_doi": 1,
       "missing_citation_publication_date": 3,
       "missing_citation_title": 3,
-      "no_selected_local_pdf": 43,
+      "no_selected_local_pdf": 44,
       "pdf_directory_differs_from_abstract": 187,
       "pdf_exceeds_byte_limit": 41
     }
@@ -415,7 +415,7 @@
       "type": "Paper",
       "citation_scope": "individual_work",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025AdaptiveBasicIncomeAuBI009.html",
-      "page_sha256": "d8a381bbd1a0c2f6dde9635d96864c425ff93232a06192a47d008d6d03390927",
+      "page_sha256": "c1c2f2a4a90bcea6fbb01211bfeb636a7067bb7cb7e3f359f1da42a719d95994",
       "citation_tags": {
         "citation_title": [
           "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference for Next-Generation Economic Systems"
@@ -660,7 +660,7 @@
       "type": "Paper",
       "citation_scope": "individual_work",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025MDKVMultitrackMarkdownContainer014.html",
-      "page_sha256": "4a560181076c85dcbeabcaf22d32005dc8d61fc88e6177bb9f9a2083df68de9a",
+      "page_sha256": "dddb75532832fdd716cd26bca3e6295dcd1b664d2f7e8f3fd405046c10eeff6f",
       "citation_tags": {
         "citation_title": [
           "MDKV: A Multitrack Markdown Container for Structured, Portable Documents"
@@ -708,7 +708,7 @@
       "type": "Paper",
       "citation_scope": "individual_work",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025MarkdownDecisionProcessFramework015.html",
-      "page_sha256": "566575debdb19d77bec79882fc66b84f8a9f074cb418e7afbe07708cb54bc777",
+      "page_sha256": "335fcf425722247a899d6dfdceb69e01968d0fe09d69f0276789beac9d2115a0",
       "citation_tags": {
         "citation_title": [
           "Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization"
@@ -5104,7 +5104,7 @@
       "type": "Presentation",
       "citation_scope": "individual_work",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html",
-      "page_sha256": "b6ef41bc4f6b5c2ec819026610ce0b6907c86238840c3ba551fe4bcf0bef1263",
+      "page_sha256": "05be3bff3a500aedce7621927b60a0890dd5a93729807cddfa82981e4c11a09d",
       "citation_tags": {
         "citation_title": [
           "MVEE: A Framework for Evolutionary Studies"
@@ -6802,7 +6802,7 @@
       "type": "Paper",
       "citation_scope": "individual_work",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025ConCatEnateEmulation129.html",
-      "page_sha256": "198879e157df15af4faaf549dc071568c0e21aefe04f30cc481316a6e76770a9",
+      "page_sha256": "e6c06eb91942b27f4bad68dbce9f5ff50d993c789f395bc402dd0a126f44491e",
       "citation_tags": {
         "citation_title": [
           "Con-cat-enate: emulation of Cat Hippocampus"
@@ -6949,7 +6949,7 @@
       "type": "Paper",
       "citation_scope": "individual_work",
       "abstract_url": "https://danielarifriedman.com/works/Friedman2025BeaconsPreEmulationSocial132.html",
-      "page_sha256": "fdb6b5b240b60fbfaf38fdf2c06e245c8cca4745194435bd5bc0483df77583c5",
+      "page_sha256": "4451a6ad0bcc3daf19bbc2190243400a2d8f2c490cc918da0f894464a1bc5c42",
       "citation_tags": {
         "citation_title": [
           "Beacons - pre emulation of social cortex"
@@ -11946,6 +11946,46 @@
       },
       "primary_pdf": null,
       "selection_issue": "Current PDF version 0.1.0 is hosted at Zenodo. Extracted text retains its own source provenance; a matching filename does not establish edition identity.",
+      "local_status": "blocked",
+      "blockers": [
+        "no_selected_local_pdf"
+      ],
+      "visible_complete_author_abstract": null,
+      "reviewed_prerequisites": {},
+      "projection": null,
+      "unverified_requirements": [
+        "searchable_pdf",
+        "scholarly_content",
+        "complete_author_written_abstract_or_full_text",
+        "actual_scholar_indexing"
+      ]
+    },
+    {
+      "citation_key": "Friedman2026PyCIProExactGeometry240",
+      "title": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+      "type": "Paper",
+      "citation_scope": "individual_work",
+      "abstract_url": "https://danielarifriedman.com/works/Friedman2026PyCIProExactGeometry240.html",
+      "page_sha256": "7929f9231ce23f7a7225098b47b4151620a3adda36d8d045d16d8170636e49b7",
+      "citation_tags": {
+        "citation_title": [
+          "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds"
+        ],
+        "citation_publication_date": [
+          "2026/11/18"
+        ],
+        "citation_author": [
+          "Daniel Friedman"
+        ],
+        "citation_doi": [
+          "10.5281/zenodo.24352379"
+        ],
+        "citation_pdf_url": [
+          "https://zenodo.org/api/records/24352380/files/py-CIPro-manuscript.pdf/content"
+        ]
+      },
+      "primary_pdf": null,
+      "selection_issue": "Current PDF version 0.9.3 is hosted at Zenodo.",
       "local_status": "blocked",
       "blockers": [
         "no_selected_local_pdf"

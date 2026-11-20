@@ -104,15 +104,6 @@
       "github_node_id": "R_kgDOOOjlQw"
     },
     {
-      "full_name": "docxology/AI-ConductorBlindSpot",
-      "reason": "fork_not_curated",
-      "reviewed_by": "principal",
-      "reviewed_at": "2026-08-26",
-      "note": "Principal approved keeping this public fork out of the curated software catalog.",
-      "github_id": 1246693271,
-      "github_node_id": "R_kgDOSk8Hlw"
-    },
-    {
       "full_name": "docxology/aif_iwai2025_thoughtseeds",
       "reason": "fork_not_curated",
       "reviewed_by": "principal",
@@ -837,6 +828,16 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1018124691,
       "github_node_id": "R_kgDOPK9Zkw"
+    },
+    {
+      "full_name": "docxology/otc-fam",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-11-20",
+      "policy_source": "Principal decision 2026-08-26, TODO.md DOC-005: public forks remain fork_not_curated.",
+      "note": "New public fork retained in the complete inventory under the standing fork policy.",
+      "github_id": 1465499160,
+      "github_node_id": "R_kgDOV1m-GA"
     },
     {
       "full_name": "docxology/PackageTemplate",

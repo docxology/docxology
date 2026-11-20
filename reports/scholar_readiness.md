@@ -6,7 +6,7 @@ Per-work source/content/rights reviews are recorded separately from local placem
 Source: [Google Scholar inclusion guidance](https://scholar.google.com/intl/en/scholar/inclusion.html).
 See [the placement policy](../docs/seo/scholar-inclusion.md) and [machine-readable results](../data/scholar-readiness.json).
 
-Audited works: 235. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
+Audited works: 236. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 
 | Local blocker | Works |
 | --- | ---: |
@@ -15,7 +15,7 @@ Audited works: 235. PDF limit: 5,000,000 bytes (conservative decimal 5 MB).
 | missing_citation_doi | 1 |
 | missing_citation_publication_date | 3 |
 | missing_citation_title | 3 |
-| no_selected_local_pdf | 43 |
+| no_selected_local_pdf | 44 |
 | pdf_directory_differs_from_abstract | 187 |
 | pdf_exceeds_byte_limit | 41 |
 
@@ -260,3 +260,4 @@ The citation scope identifies courses, series and edited books. Missing-tag coun
 | [2026 Active Inference Symposium — Presenter Program](../works/Friedman20262026ActiveInferenceSymposium237.html) | individual work | — | no_selected_local_pdf |
 | [Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics](../works/Friedman2026OPHFEPSynergeticsExecutable238.html) | individual work | 4407619 | pdf_directory_differs_from_abstract |
 | [CrossTalk on the Page](../works/Friedman2026CrossTalkPage239.html) | individual work | — | no_selected_local_pdf |
+| [py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds](../works/Friedman2026PyCIProExactGeometry240.html) | individual work | — | no_selected_local_pdf |

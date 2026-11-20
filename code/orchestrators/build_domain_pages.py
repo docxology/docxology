@@ -39,6 +39,7 @@ class DomainConfig:
     short_title: str
     description: str
     domains: tuple[str, ...]
+    featured_work_numbers: tuple[int, ...]
     repo_names: tuple[str, ...]
     learning_path: tuple[str, ...]
     collaborators: tuple[str, ...]
@@ -52,6 +53,7 @@ DOMAINS = [
         short_title="Entomology",
         description="Ant colony behavior, physiology, transcriptomics, and computational models of collective cognition.",
         domains=("🐜",),
+        featured_work_numbers=(100, 86, 95, 93, 103, 75, 46, 32, 84, 94, 25, 233),
         repo_names=(
             "MetaInformAnt",
             "ActiveInferAnts",
@@ -80,6 +82,7 @@ DOMAINS = [
         short_title="Active Inference",
         description="Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.",
         domains=("🧠",),
+        featured_work_numbers=(73, 36, 40, 113, 56, 143, 98, 48, 23, 110, 210, 238),
         repo_names=(
             "active_inference",
             "active_torchference",
@@ -117,6 +120,7 @@ DOMAINS = [
         short_title="Cognitive Security",
         description="Narrative ecosystems, information commons, digital rhetoric, and multiagent security.",
         domains=("🛡️", "🛡", "🔍"),
+        featured_work_numbers=(31, 79, 71, 5, 213, 214, 62, 74, 68, 80, 85, 136),
         repo_names=("p3if", "opentir", "cognitive-engine", "ATLAS"),
         learning_path=(
             "Read the comprehensive explainer guide <a href='cognitive-security.html'>What Is Cognitive Security? Theory, Threat Models, and Defense</a>.",
@@ -136,6 +140,7 @@ DOMAINS = [
         short_title="Art & Synergetics",
         description="William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates, and synergetics.",
         domains=("🎨",),
+        featured_work_numbers=(65, 196, 18, 20, 44, 99, 7, 3, 4, 16, 42, 234),
         repo_names=(
             "QuadCraft",
             "QuadMath",
@@ -145,6 +150,7 @@ DOMAINS = [
         ),
         learning_path=(
             "Browse the curated visual archive on the <a href='art.html'>Visual Art Gallery</a> (940+ catalogued pen-and-ink drawings).",
+            "Follow the <a href='blake-pathway.html'>William Blake reading pathway</a> through the source texts and related studies.",
             "Browse the themed drawing collections: <a href='art-collections/sacred-geometry-kabbalistic-triangles.html'>Sacred Geometry &amp; Kabbalistic Triangles</a> and <a href='art-collections/americana-seals.html'>Americana &amp; Seals</a>, each with one page per artwork.",
             "Explore early blockchain history with <a href='art.html#curio-cards'>Curio Cards (Cards 24, 25, 26 — Complexity, Passion, Education; 2017)</a>.",
             "Study prophetic economics and metaphysics in <a href='works/Friedman2026GoldenCompassLunarFlux004.html'>The Golden Compass and the Lunar Flux: William Blake and the Architecture of Value</a>.",
@@ -166,6 +172,7 @@ DOMAINS = [
         short_title="Computational",
         description="Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.",
         domains=("💻",),
+        featured_work_numbers=(1, 26, 15, 14, 206, 187, 188, 192, 151, 152, 212, 239),
         repo_names=(
             "template",
             "mdkv",
@@ -197,6 +204,7 @@ DOMAINS = [
         short_title="Genetics & Biomedicine",
         description="Honey bee evolution, gene expression variation, nuclear structure, population genetics, and biomedical mechanisms.",
         domains=("🧬",),
+        featured_work_numbers=(108, 105, 106, 91, 69, 92, 43),
         repo_names=("MetaInformAnt", "EvoJump", "biology_textbook", "biol-8", "biol-1"),
         learning_path=(
             "Explore empirical behavioral genomics in <a href='works/Friedman2020GeneExpressionVariationBrains086.html'>Gene Expression Variation in Harvester Ant Forager Brains</a>.",
@@ -215,6 +223,7 @@ DOMAINS = [
         short_title="AII Ecosystem",
         description="Active Inference Institute programs, infrastructure, textbook cohorts, and organizational ecosystem work.",
         domains=("🌍",),
+        featured_work_numbers=(24, 224, 29, 61, 41, 67),
         repo_names=("active_inference", "fep_formal", "cognitive", "AgenticMesh"),
         learning_path=(
             "Discover the organizational mission, governance, and programs on the <a href='https://activeinference.institute/'>Active Inference Institute Official Portal</a>.",
@@ -236,6 +245,7 @@ DOMAINS = [
         short_title="Presentations & Media",
         description="Talks, courses, presentations, and media artifacts connected to the research and teaching program.",
         domains=("🎥",),
+        featured_work_numbers=(2, 237, 8, 22, 38, 58, 39, 6, 64, 97, 78),
         repo_names=("biology_textbook", "biol-1", "biol-8"),
         learning_path=(
             "Browse 500+ indexed lectures, symposia, and live streams on the <a href='videos.html'>Video Index &amp; Interactive Timeline</a>.",
@@ -407,6 +417,19 @@ def select_repositories(repos: list[dict], names: tuple[str, ...]) -> list[dict]
     )
 
 
+def select_featured_works(config: DomainConfig, domain_works: list[dict]) -> list[dict]:
+    """Resolve the editorial selection in its declared order."""
+    numbers = config.featured_work_numbers
+    if not 1 <= len(numbers) <= 12 or len(set(numbers)) != len(numbers):
+        raise ValueError(f"{config.slug} must feature 1 to 12 unique work numbers")
+
+    by_number = {work["num"]: work for work in domain_works}
+    missing = [number for number in numbers if number not in by_number]
+    if missing:
+        raise ValueError(f"{config.slug} has featured works outside its current catalog: {missing}")
+    return [by_number[number] for number in numbers]
+
+
 def render_domain_page(
     config: DomainConfig,
     works: list[dict],
@@ -418,17 +441,7 @@ def render_domain_page(
 
     domain_works = [w for w in works if w["domain"] in config.domains]
 
-    def _year_key(w: dict) -> int:
-        try:
-            return int(w["year"]) if str(w["year"]).isdigit() else 9999
-        except TypeError, ValueError, KeyError:
-            return 9999
-
-    selected = sorted(
-        domain_works,
-        key=lambda w: (_year_key(w), -int(w.get("num", 0) or 0)),
-        reverse=True,
-    )[:12]
+    selected = select_featured_works(config, domain_works)
     domain_repos = select_repositories(repos, config.repo_names)
 
     # Count extraction stats for this domain
@@ -726,9 +739,7 @@ def render_domains_md(works: list[dict], repos: list[dict]) -> str:
             md_item = strip_html_tags(item)
             lines.append(f"- {md_item}")
         lines.extend(["", "**Selected works**", ""])
-        for w in sorted(
-            domain_works, key=lambda x: (int(x["year"]), -int(x["num"])), reverse=True
-        )[:6]:
+        for w in select_featured_works(config, domain_works)[:6]:
             lines.append(f"- {w['year']} — [{w['title']}]({w['url']})")
         lines.extend(["", "**Selected repositories**", ""])
         for r in domain_repos[:8]:

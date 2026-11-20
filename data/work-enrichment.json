@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T19:56:20Z",
+  "generated_at": "2026-11-20T22:17:31Z",
   "source": "papers/paper_metadata.json, papers/*/metadata.json, README.md and SKILL.md",
-  "count": 235,
+  "count": 236,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -9097,6 +9097,33 @@
       "sources": {
         "abstract": "papers/paper_metadata.json",
         "keywords": "papers/paper_metadata.json"
+      },
+      "source": "papers/paper_metadata.json",
+      "abstract_provenance": {},
+      "summary_provenance": {}
+    },
+    "Friedman2026PyCIProExactGeometry240": {
+      "citation_key": "Friedman2026PyCIProExactGeometry240",
+      "source_revision_review": null,
+      "abstract": "<p>py-CIPro provides Python bindings and exact native calculations for complete intersections in products of projective spaces. This release includes an interactive audit of the Riemann&ndash;Roch index fixed divisor on ambient CICY3 divisor lattices. The archive contains the software wheel, manuscript, graphical abstract, vector figures, and record-level analysis data.</p>\n<p>Source code: <a href=\"https://github.com/docxology/py-CIPro\">https://github.com/docxology/py-CIPro</a> (release <a href=\"https://github.com/docxology/py-CIPro/releases/tag/v0.9.3\">v0.9.3</a>).</p>",
+      "keywords": [
+        "Calabi–Yau threefolds",
+        "complete intersections",
+        "line-bundle cohomology",
+        "exact computation"
+      ],
+      "findings": [],
+      "methods": [],
+      "concepts": [
+        "Calabi–Yau threefolds",
+        "complete intersections",
+        "line-bundle cohomology",
+        "exact computation"
+      ],
+      "sources": {
+        "abstract": "papers/paper_metadata.json",
+        "keywords": "papers/paper_metadata.json",
+        "concepts": "papers/2026_PyCIPro/SKILL.md"
       },
       "source": "papers/paper_metadata.json",
       "abstract_provenance": {},

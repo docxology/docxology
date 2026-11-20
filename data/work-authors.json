@@ -6331,6 +6331,23 @@
           "orcid": "0000-0001-6232-9096"
         }
       ]
+    },
+    "Friedman2026PyCIProExactGeometry240": {
+      "num": 240,
+      "doi": "10.5281/zenodo.24352379",
+      "title": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+      "status": "verified",
+      "resolved_title": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+      "registration_agency": "DataCite",
+      "title_similarity": 1.0,
+      "checked_at": "2026-11-20",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
     }
   }
 }
