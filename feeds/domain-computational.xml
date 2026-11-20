@@ -4,9 +4,16 @@
     <title>Computational Methods &amp; Open Science — RSS</title>
     <link>https://danielarifriedman.com/domain-computational.html</link>
     <description>Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.</description>
-    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
     <language>en</language>
     <atom:link href="https://danielarifriedman.com/feeds/domain-computational.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds</title>
+      <link>https://doi.org/10.5281/zenodo.24352379</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.24352379</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel</description>
+    </item>
     <item>
       <title>CrossTalk on the Page</title>
       <link>https://doi.org/10.5281/zenodo.24297223</link>
@@ -208,13 +215,6 @@
       <link>https://doi.org/10.5281/zenodo.21298892</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21298892</guid>
       <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Data Descriptor Template: Schema, Provenance, and Release Readiness</title>
-      <link>https://doi.org/10.5281/zenodo.21298883</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21298883</guid>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
   </channel>

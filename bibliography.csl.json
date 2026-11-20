@@ -7857,5 +7857,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.24297223",
     "URL": "https://doi.org/10.5281/zenodo.24297223"
+  },
+  {
+    "id": "Friedman2026PyCIProExactGeometry240",
+    "type": "article-journal",
+    "title": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 240; docs: papers/2026_PyCIPro/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.24352379",
+    "URL": "https://doi.org/10.5281/zenodo.24352379"
   }
 ]

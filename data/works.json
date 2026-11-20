@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-17T19:55:01Z",
+  "generated_at": "2026-11-20T22:16:51Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 235,
+  "count": 236,
   "works": [
     {
       "num": 1,
@@ -5923,6 +5923,29 @@
       "full_text_url": "/papers/2026_CrossTalk_on_the_Page/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 240,
+      "citation_key": "Friedman2026PyCIProExactGeometry240",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.24352379",
+      "doi": "10.5281/zenodo.24352379",
+      "docs_path": "papers/2026_PyCIPro/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel"
       ]
     }
   ]

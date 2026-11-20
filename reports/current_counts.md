@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-11-17T20:11:55+00:00`
+Generated: `2026-11-20T22:24:20+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -24,24 +24,24 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - works_export: `data/works.json`
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
-- public_source_snapshot: `reports/public_source_snapshot_2026-11-17.json`
-- paired_publications: `reports/paired_publications_2026-11-17.json`
+- public_source_snapshot: `reports/public_source_snapshot_2026-11-20.json`
+- paired_publications: `reports/paired_publications_2026-11-20.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `235`
-- Paper-folder docs: `218`
+- Bibliography works: `236`
+- Paper-folder docs: `219`
 - Full-text extractions: `213`
 - Papers with image galleries: `145`
 - Total extracted images: `8959`
-- Bibliography docs links: `218`
+- Bibliography docs links: `219`
 
 ### Types
 
 - Books: `6`
 - Courses: `3`
-- Papers: `213`
+- Papers: `214`
 - Playbooks: `2`
 - Presentations: `8`
 - Report: `1`
@@ -53,7 +53,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `49`
 - Cognitive Security: `37`
 - Art & Synergetics: `17`
-- Computational: `72`
+- Computational: `73`
 - AII Ecosystem: `7`
 - Presentations & Media: `15`
 - Genetics & Biomedical: `13`
@@ -66,51 +66,51 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `235`
+- data_works_json: `236`
 - data_software_json: `209`
-- data_publications_ld_main_entity: `235`
+- data_publications_ld_main_entity: `236`
 - data_software_ld_main_entity: `209`
 
 ### GitHub Inventory
 
-- total: `317`
-- docxology: `270`
+- total: `319`
+- docxology: `272`
 - ActiveInferenceInstitute: `47`
 - curated: `209`
-- uncataloged: `108`
+- uncataloged: `110`
 - forks: `102`
-- archived: `92`
-- public: `317`
+- archived: `90`
+- public: `319`
 - private: `0`
-- recently_updated: `317`
-- primary_total: `215`
-- primary_docxology: `170`
+- recently_updated: `319`
+- primary_total: `217`
+- primary_docxology: `172`
 - primary_ActiveInferenceInstitute: `45`
 - fork_docxology: `100`
 - fork_ActiveInferenceInstitute: `2`
 
 ### Public Source Snapshot
 
-- GitHub user docxology: `270`
+- GitHub user docxology: `272`
 - GitHub user ActiveInferenceInstitute: `47`
 - ORCID work groups: `20`
 - PubMed exact author records: `8`
 - Europe PMC exact author records: `10`
 - Crossref ORCID DOI records: `15`
-- Zenodo exact-name creator records: `101`
-- Zenodo ORCID-linked records: `189`
+- Zenodo exact-name creator records: `102`
+- Zenodo ORCID-linked records: `190`
 
 ### Paired Publications
 
-- github_releases: `17`
-- zenodo_records: `194`
-- pairs: `86`
-- strong_pairs: `0`
+- github_releases: `7`
+- zenodo_records: `195`
+- pairs: `7`
+- strong_pairs: `1`
 - software_catalogued: `0`
 - already_reviewed: `0`
-- needs_review: `86`
+- needs_review: `6`
 - create_new: `0`
-- update_existing: `0`
+- update_existing: `1`
 
 ### Paired Publication Decisions
 

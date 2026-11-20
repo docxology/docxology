@@ -1,0 +1,77 @@
+{
+  "title": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+  "version": "0.9.3",
+  "doi": "10.5281/zenodo.24352379",
+  "doi_url": "https://doi.org/10.5281/zenodo.24352379",
+  "zenodo_record": "https://zenodo.org/records/24352379",
+  "record_id": "24352380",
+  "publication_date": "2026-11-18",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel",
+      "affiliation": null,
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "<p>py-CIPro provides Python bindings and exact native calculations for complete intersections in products of projective spaces. This release includes an interactive audit of the Riemann&ndash;Roch index fixed divisor on ambient CICY3 divisor lattices. The archive contains the software wheel, manuscript, graphical abstract, vector figures, and record-level analysis data.</p>\n<p>Source code: <a href=\"https://github.com/docxology/py-CIPro\">https://github.com/docxology/py-CIPro</a> (release <a href=\"https://github.com/docxology/py-CIPro/releases/tag/v0.9.3\">v0.9.3</a>).</p>",
+  "keywords": [
+    "Calabi–Yau threefolds",
+    "complete intersections",
+    "line-bundle cohomology",
+    "exact computation"
+  ],
+  "files": [
+    {
+      "name": "py-CIPro-manuscript.pdf",
+      "size_bytes": 2105452,
+      "checksum": "md5:b10ead85aa81b63374de5ee0313448c8",
+      "download_url": "https://zenodo.org/api/records/24352380/files/py-CIPro-manuscript.pdf/content"
+    },
+    {
+      "name": "py-CIPro-0.9.3-research.zip",
+      "size_bytes": 34058924,
+      "checksum": "md5:1a2d3e5aabc03e9342a40f4716cf48b8",
+      "download_url": "https://zenodo.org/api/records/24352380/files/py-CIPro-0.9.3-research.zip/content"
+    },
+    {
+      "name": "py_cipro-0.9.3-py3-none-any.whl",
+      "size_bytes": 29037718,
+      "checksum": "md5:00e85db7f25801a9b1812d5bea8b83d4",
+      "download_url": "https://zenodo.org/api/records/24352380/files/py_cipro-0.9.3-py3-none-any.whl/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/py-CIPro"
+    }
+  ],
+  "github_repo": "docxology/py-CIPro",
+  "github_release_url": "https://github.com/docxology/py-CIPro/releases/tag/v0.9.3",
+  "release_tag": "v0.9.3",
+  "release_name": "py-CIPro 0.9.3",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-11-20T22:14:02Z",
+  "remote_primary_pdf": {
+    "name": "py-CIPro-manuscript.pdf",
+    "url": "https://zenodo.org/api/records/24352380/files/py-CIPro-manuscript.pdf/content",
+    "bytes": 2105452,
+    "sha256": "b745abaee156668c27875150041c1f6ccd0d046dcbbf9d97c7a690bc1647028f",
+    "record_id": "24352380",
+    "version": "0.9.3"
+  },
+  "artifact_doi": "10.5281/zenodo.24352380",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.24352380",
+  "pages": 28,
+  "license": "GPL-3.0",
+  "rights_note": "The archived record declares GPL 3.0 for the deposit. The versioned manuscript remains hosted by Zenodo."
+}

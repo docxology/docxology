@@ -2385,6 +2385,12 @@
       "url": "https://github.com/docxology/prior_cognitive_art"
     },
     {
+      "id": "software:https://github.com/docxology/py-cipro",
+      "kind": "software",
+      "label": "docxology/py-CIPro",
+      "url": "https://github.com/docxology/py-CIPro"
+    },
+    {
       "id": "software:https://github.com/docxology/realizing_emptiness",
       "kind": "software",
       "label": "docxology/realizing_emptiness",
@@ -3963,6 +3969,13 @@
       "kind": "work",
       "label": "Prior Cognitive Art",
       "url": "/works/Friedman2026PriorCognitiveArt194.html",
+      "year": 2026
+    },
+    {
+      "id": "work:Friedman2026PyCIProExactGeometry240",
+      "kind": "work",
+      "label": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+      "url": "/works/Friedman2026PyCIProExactGeometry240.html",
       "year": 2026
     },
     {
@@ -10516,6 +10529,24 @@
       "target": "software:https://github.com/docxology/crosstalk-study",
       "relation": "Associated software",
       "provenance": "papers/2026_CrossTalk_on_the_Page/metadata.json"
+    },
+    {
+      "source": "work:Friedman2026PyCIProExactGeometry240",
+      "target": "domain:computational",
+      "relation": "Catalog domain",
+      "provenance": "pages/BIBLIOGRAPHY.md"
+    },
+    {
+      "source": "work:Friedman2026PyCIProExactGeometry240",
+      "target": "person:friedman, daniel",
+      "relation": "Recorded author",
+      "provenance": "data/work-authors.json"
+    },
+    {
+      "source": "work:Friedman2026PyCIProExactGeometry240",
+      "target": "software:https://github.com/docxology/py-cipro",
+      "relation": "Associated software",
+      "provenance": "papers/2026_PyCIPro/metadata.json"
     }
   ]
 }

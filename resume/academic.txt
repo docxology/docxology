@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-11-17T20:11:57Z
+Generated: 2026-11-20T22:24:24Z
 
-Current public metrics: 235 curated works; 209 catalogued software repositories (166 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 270 docxology + 47 AII public repositories (215 primary, 102 forks).
+Current public metrics: 236 curated works; 209 catalogued software repositories (166 owned + 43 AII); 835 Google Scholar citations, h-index 14, i10-index 16 as of 2026-11-01; GitHub inventory 272 docxology + 47 AII public repositories (217 primary, 102 forks).
 
 SUMMARY
 -------
@@ -136,7 +136,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (235)
+WORKS AND PUBLICATIONS (236)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -373,6 +373,7 @@ WORKS AND PUBLICATIONS (235)
 [237] 2026 | Book | 2026 Active Inference Symposium — Presenter Program | Zenodo (presenter program) | 10.5281/zenodo.23986504
 [238] 2026 | Paper | Observers, Blankets, and Screens: Executable Correspondences, Obstructions, and Complementarities across Observer Patch Holography, the Free Energy Principle, and Fuller’s Synergetics | GitHub release v0.1.0 | https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0
 [239] 2026 | Paper | CrossTalk on the Page | Zenodo | 10.5281/zenodo.24297223
+[240] 2026 | Paper | py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds | Zenodo | 10.5281/zenodo.24352379
 
 SOFTWARE (113)
 --------------

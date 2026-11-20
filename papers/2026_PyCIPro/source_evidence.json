@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "source_pdf": {
+    "name": "py-CIPro-manuscript.pdf",
+    "url": "https://zenodo.org/api/records/24352380/files/py-CIPro-manuscript.pdf/content",
+    "bytes": 2105452,
+    "sha256": "b745abaee156668c27875150041c1f6ccd0d046dcbbf9d97c7a690bc1647028f",
+    "record_id": "24352380",
+    "version": "0.9.3",
+    "concept_doi": "10.5281/zenodo.24352379",
+    "artifact_doi": "10.5281/zenodo.24352380",
+    "md5": "b10ead85aa81b63374de5ee0313448c8",
+    "pages": 28,
+    "storage": "remote primary",
+    "review_scope": "Verified the versioned PDF header, byte count and MD5 against the Zenodo manifest and computed SHA-256. Checked title, byline, ORCID, printed DOI and date on the first page."
+  },
+  "registry_observation": {
+    "record_id": "24352380",
+    "doi": "10.5281/zenodo.24352380",
+    "conceptdoi": "10.5281/zenodo.24352379",
+    "title": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+    "publication_date": "2026-11-18",
+    "version": "0.9.3",
+    "creators": [
+      {
+        "name": "Friedman, Daniel",
+        "affiliation": null,
+        "orcid": "0000-0001-6232-9096"
+      }
+    ],
+    "license": {
+      "id": "gpl-3.0"
+    },
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/docxology/py-CIPro/releases/tag/v0.9.3",
+        "relation": "isSupplementTo",
+        "resource_type": "software",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.48550/arXiv.2606.27588",
+        "relation": "references",
+        "resource_type": "publication-preprint",
+        "scheme": "doi"
+      }
+    ],
+    "files": [
+      {
+        "key": "py-CIPro-manuscript.pdf",
+        "size": 2105452,
+        "checksum": "md5:b10ead85aa81b63374de5ee0313448c8"
+      },
+      {
+        "key": "py-CIPro-0.9.3-research.zip",
+        "size": 34058924,
+        "checksum": "md5:1a2d3e5aabc03e9342a40f4716cf48b8"
+      },
+      {
+        "key": "py_cipro-0.9.3-py3-none-any.whl",
+        "size": 29037718,
+        "checksum": "md5:00e85db7f25801a9b1812d5bea8b83d4"
+      }
+    ],
+    "record_json_sha256": "54b002da9063b335b42fa51d3695dc0bf59145082b97329f0b311015357f2c36",
+    "record_json_serialization": "UTF-8 canonical JSON with sorted keys and compact separators from GET https://zenodo.org/api/records/24352380 on 2026-11-20."
+  },
+  "document_observation": {
+    "title": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+    "byline": [
+      "Daniel Friedman"
+    ],
+    "orcid": "0000-0001-6232-9096",
+    "printed_doi": "10.5281/zenodo.24352380",
+    "printed_date": "2026-11-18"
+  },
+  "github_release_observation": {
+    "url": "https://github.com/docxology/py-CIPro/releases/tag/v0.9.3",
+    "tag": "v0.9.3",
+    "tag_commit": "2d1dc2eef1a2ba9777b488a0c8617ec1a19e271c",
+    "manuscript_config": "https://github.com/docxology/py-CIPro/blob/2d1dc2eef1a2ba9777b488a0c8617ec1a19e271c/manuscript/config.yaml"
+  }
+}

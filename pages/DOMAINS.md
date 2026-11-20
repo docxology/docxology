@@ -36,12 +36,12 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 **Selected works**
 
-- 2026 — [Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology](https://doi.org/10.5281/zenodo.19574117)
-- 2026 — [Illegal States, Mostly Unrepresentable](https://doi.org/10.5281/zenodo.21298885)
-- 2026 — [Blakean Entomology: Small Lives, Uncertain Bodies, and the Work of Attention](https://doi.org/10.5281/zenodo.23900582)
-- 2025 — [Computational Complexity and Energetics of the Ant Stack](https://doi.org/10.5281/zenodo.17238736)
-- 2025 — [The Ant Stack](https://doi.org/10.5281/zenodo.16782756)
-- 2025 — [Towards a Science of Consciousness and Social Complexity... For Ants](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes)
+- 2018 — [The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants](https://doi.org/10.1016/j.isci.2018.09.001)
+- 2020 — [Gene expression variation in the brains of harvester ant foragers is associated with collective behavior](https://doi.org/10.1038/s42003-020-0813-8)
+- 2019 — [The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior](https://doi.org/10.1038/s41598-019-41586-3)
+- 2019 — [Behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)](https://purl.stanford.edu/pb813wm1484)
+- 2016 — [Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior](https://doi.org/10.1146/annurev-neuro-070815-013927)
+- 2021 — [Active Inferants: An Active Inference Framework for Ant Colony Behavior](https://doi.org/10.3389/fnbeh.2021.647732)
 
 **Selected repositories**
 
@@ -73,12 +73,12 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 **Selected works**
 
-- 2026 — [A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring](https://doi.org/10.5281/zenodo.19461933)
-- 2026 — [Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences](https://doi.org/10.1007/978-3-032-16955-6_11)
-- 2026 — [Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case](https://doi.org/10.5281/zenodo.19695259)
+- 2022 — [The Free Energy Principle & Active Inference: a Systematic Literature Analysis](https://doi.org/10.5281/zenodo.7449367)
+- 2024 — [Federated inference and belief sharing](https://doi.org/10.1016/j.neubiorev.2023.105500)
+- 2024 — [Shared Protentions in Multi-Agent Active Inference](https://doi.org/10.3390/e26040303)
 - 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699233)
-- 2026 — [Generalized_Notation_Notation (GNN)](https://doi.org/10.5281/zenodo.7803313)
-- 2026 — [On-Policy Distillation as Active Inference in Finite Variational Models](https://doi.org/10.5281/zenodo.20747834)
+- 2023 — [Generalized Notation Notation for Active Inference Models](https://doi.org/10.5281/zenodo.7803327)
+- 2022 — [A Worked Example of the Bayesian Mechanics of Classical Objects](https://doi.org/10.5281/zenodo.7400785)
 
 **Selected repositories**
 
@@ -111,12 +111,12 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 **Selected works**
 
+- 2024 — [Bridging gaps in image meme research: A multidisciplinary paradigm for scaling up qualitative analyses](https://doi.org/10.1002/asi.24900)
+- 2021 — [Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier](https://cogsec.org)
+- 2022 — [Structuring the Information Commons: Open Standards and Cognitive Security](https://cogsec.org)
 - 2026 — [Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)](https://doi.org/10.5281/zenodo.18364118)
-- 2026 — [Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast](https://doi.org/10.5281/zenodo.20286170)
-- 2026 — [California Public Records: A Technical and Legal Reference for the Post-AB 473 Era](https://doi.org/10.5281/zenodo.20789899)
-- 2026 — [CogSecSkills: Multiharness Agentic Skills for Cognitive Security](https://doi.org/10.5281/zenodo.21513316)
-- 2026 — [Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations](https://doi.org/10.5281/zenodo.21330636)
-- 2026 — [Personal Red Lines for Development](https://doi.org/10.5281/zenodo.24069255)
+- 2026 — [Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)](https://doi.org/10.5281/zenodo.22134545)
+- 2026 — [Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)](https://doi.org/10.5281/zenodo.22134547)
 
 **Selected repositories**
 
@@ -136,6 +136,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 **Learning path**
 
 - Browse the curated visual archive on the Visual Art Gallery (940+ catalogued pen-and-ink drawings).
+- Follow the William Blake reading pathway through the source texts and related studies.
 - Browse the themed drawing collections: Sacred Geometry &amp; Kabbalistic Triangles and Americana &amp; Seals, each with one page per artwork.
 - Explore early blockchain history with Curio Cards (Cards 24, 25, 26 — Complexity, Passion, Education; 2017).
 - Study prophetic economics and metaphysics in The Golden Compass and the Lunar Flux: William Blake and the Architecture of Value.
@@ -146,12 +147,12 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 **Selected works**
 
-- 2026 — [Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology](https://doi.org/10.5281/zenodo.18807970)
-- 2026 — [The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value](https://doi.org/10.5281/zenodo.19335195)
-- 2026 — [The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing](https://doi.org/10.5281/zenodo.18600040)
-- 2026 — [The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision](https://doi.org/10.5281/zenodo.20144983)
+- 2023 — [William Blake & Buckminster Fuller: Lives in Juxtaposition (A study in Comprehensivity)](https://doi.org/10.5281/zenodo.7514367)
 - 2026 — [Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing](https://doi.org/10.5281/zenodo.21388456)
-- 2026 — [States Change: Blakean Federalism and composition without capture](https://doi.org/10.5281/zenodo.23900616)
+- 2025 — [QuadMath: An Analytical Review of 4D and Quadray Coordinates](https://doi.org/10.5281/zenodo.16887799)
+- 2025 — [Symergetics: Symbolic Synergetics for Rational Arithmetic, Geometric Pattern Discovery, and All-Integer Accounting](https://doi.org/10.5281/zenodo.17114389)
+- 2024 — [Writing on Curio Cards for the "On NFT" book](https://www.worldcat.org/isbn/978-3-8365-9970-2)
+- 2018 — [Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for Relationship Improvement](https://doi.org/10.3390/arts7030039)
 
 **Selected repositories**
 
@@ -165,7 +166,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 72
+- Works: 73
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -181,11 +182,11 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 **Selected works**
 
 - 2026 — [A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication](https://doi.org/10.5281/zenodo.16903351)
-- 2026 — [Introduction to Biology: A Generative Approach](https://doi.org/10.5281/zenodo.20286477)
-- 2026 — [Policy Entanglement in Active Inference: A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary](https://doi.org/10.5281/zenodo.20418904)
-- 2026 — [Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task](https://doi.org/10.5281/zenodo.20417016)
-- 2026 — [Convergence Analysis of Gradient Descent Optimization](https://doi.org/10.5281/zenodo.20417136)
-- 2026 — [Editorial Quality at Scale: A Reproducible Prose-Review Pipeline](https://doi.org/10.5281/zenodo.20417104)
+- 2025 — [The Discovery Engine: A Framework for AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes](https://doi.org/10.48550/arXiv.2505.17500)
+- 2025 — [Markdown Decision Process: A Framework for Probabilistic Document Analysis and Optimization](https://doi.org/10.5281/zenodo.17244386)
+- 2025 — [MDKV: A Multitrack Markdown Container for Structured, Portable Documents](https://doi.org/10.5281/zenodo.16790554)
+- 2026 — [Codomyrmex: An Artificial Ecology for Agentic Software Development](https://doi.org/10.5281/zenodo.21750800)
+- 2026 — [Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference](https://doi.org/10.5281/zenodo.21298894)
 
 **Selected repositories**
 
@@ -217,12 +218,12 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 
 **Selected works**
 
-- 2025 — [BevCyc - posit on primitive drivers of creatures](https://doi.org/10.5281/zenodo.14737075)
-- 2025 — [Con-cat-enate: pilot overview](https://doi.org/10.5281/zenodo.14737042)
-- 2024 — [Why Paleolithic Rockstars were both enigmatic and sporadic: A comment on: ‘Snakes and Ladders’ in paleoanthropology: From cognitive surprise to skillfulness a million years ago](https://doi.org/10.1016/j.plrev.2024.04.010)
-- 2023 — [To comment or not to comment, that is the question!](https://doi.org/10.1016/j.plrev.2023.06.002)
-- 2022 — [On free will or the lack thereof](https://doi.org/10.5281/zenodo.7394900)
+- 2015 — [Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees](https://doi.org/10.1093/molbev/msu292)
+- 2016 — [Influence of nuclear structure on the formation of radiation-induced lethal lesions](https://doi.org/10.3109/09553002.2016.1144941)
+- 2015 — [Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history](https://doi.org/10.3389/fgene.2015.00261)
 - 2020 — [The Neuroscience of Decision Making. An interview of Timothy Hanks by Alexandra Mikhailova and Daniel A. Friedman.](https://doi.org/10.34700/8pg4-0h12)
+- 2022 — [On free will or the lack thereof](https://doi.org/10.5281/zenodo.7394900)
+- 2019 — [Dennett Explained. An interview with Daniel Dennett.](https://doi.org/10.34700/7gkw-zh08)
 
 **Selected repositories**
 
@@ -251,11 +252,11 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 
 **Selected works**
 
-- 2026 — [Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference](https://doi.org/10.5281/zenodo.23066903)
 - 2025 — [The Active Inference Institute & Active Inference Ecosystem](https://doi.org/10.5281/zenodo.17982447)
+- 2026 — [Coordinating the Field: The Case for Ecosystem-Level Technology Roadmapping and Community Working Groups in Active Inference](https://doi.org/10.5281/zenodo.23066903)
 - 2024 — [Aligning Active Inference Ontology to SUMO](https://doi.org/10.5281/zenodo.11459322)
-- 2024 — [The Active Inference Institute & Active Inference Ecosystem](https://doi.org/10.5281/zenodo.14108992)
 - 2023 — [The Active Inference Institute and Active Inference Ecosystem](https://doi.org/10.5281/zenodo.8266280)
+- 2024 — [The Active Inference Institute & Active Inference Ecosystem](https://doi.org/10.5281/zenodo.14108992)
 - 2022 — [Catechism for: "Towards Active Diffusion: A Tale of Multiple (den)Cities"](https://doi.org/10.5281/zenodo.7443847)
 
 **Selected repositories**
@@ -285,11 +286,11 @@ Talks, courses, presentations, and media artifacts connected to the research and
 **Selected works**
 
 - 2026 — [Active Inference Journal — 500+ videos on Active Inference with transcripts](https://video.activeinference.institute/)
-- 2026 — [Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions](https://www.youtube.com/@danielarifriedman/playlists)
 - 2026 — [2026 Active Inference Symposium — Presenter Program](https://doi.org/10.5281/zenodo.23986504)
 - 2025 — [Abstract book for: 5th Applied Active Inference Symposium](https://doi.org/10.5281/zenodo.17555266)
 - 2025 — [Systems Processes, Active Inference, and Beyond](https://doi.org/10.5281/zenodo.17138223)
 - 2024 — [MathArt Stream #8 ~ William Blake and Active Inference](https://doi.org/10.5281/zenodo.13711301)
+- 2023 — [Of Ants & Aging](https://doi.org/10.5281/zenodo.7855581)
 
 **Selected repositories**
 

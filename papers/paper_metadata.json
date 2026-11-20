@@ -4516,5 +4516,21 @@
       "visual analysis"
     ],
     "doi": "10.5281/zenodo.24297223"
+  },
+  "2026_PyCIPro": {
+    "year": "2026",
+    "topic": "PyCIPro",
+    "name": "py-CIPro: Exact geometry of complete-intersection Calabi–Yau threefolds",
+    "description": "<p>py-CIPro provides Python bindings and exact native calculations for complete intersections in products of projective spaces. This release includes an interactive audit of the Riemann&ndash;Roch index fixed divisor on ambient CICY3 divisor lattices. The archive contains the software wheel, manuscript, graphical abstract, vector figures, and record-level analysis data.</p>\n<p>Source code: <a href=\"https://github.com/docxology/py-CIPro\">https://github.com/docxology/py-CIPro</a> (release <a href=\"https://github.com/docxology/py-CIPro/releases/tag/v0.9.3\">v0.9.3</a>).</p>",
+    "authors": "Daniel Friedman",
+    "abstract": "<p>py-CIPro provides Python bindings and exact native calculations for complete intersections in products of projective spaces. This release includes an interactive audit of the Riemann&ndash;Roch index fixed divisor on ambient CICY3 divisor lattices. The archive contains the software wheel, manuscript, graphical abstract, vector figures, and record-level analysis data.</p>\n<p>Source code: <a href=\"https://github.com/docxology/py-CIPro\">https://github.com/docxology/py-CIPro</a> (release <a href=\"https://github.com/docxology/py-CIPro/releases/tag/v0.9.3\">v0.9.3</a>).</p>",
+    "keywords": [
+      "Calabi–Yau threefolds",
+      "complete intersections",
+      "line-bundle cohomology",
+      "exact computation"
+    ],
+    "doi": "10.5281/zenodo.24352379",
+    "github_release_url": "https://github.com/docxology/py-CIPro/releases/tag/v0.9.3"
   }
 }

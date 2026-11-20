@@ -14,6 +14,8 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ORCHESTRATORS = REPO_ROOT / "code" / "orchestrators"
 
+import docxology_tools  # noqa: E402,F401
+import build_domain_pages  # noqa: E402
 import generate_pillar_pages  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 
@@ -80,3 +82,24 @@ def test_build_domain_pages_check_runs_cleanly_without_rewriting_the_repository(
         content = path.read_text(encoding="utf-8")
         assert "<!DOCTYPE html>" in content
         assert "BreadcrumbList" in content
+
+
+def test_domain_pages_and_markdown_follow_the_same_curated_order():
+    works = build_domain_pages.load_json("data/works.json")["works"]
+    outputs = build_domain_pages.render_outputs()
+    markdown = outputs[REPO_ROOT / "pages" / "DOMAINS.md"]
+    for config in build_domain_pages.DOMAINS:
+        domain_works = [work for work in works if work["domain"] in config.domains]
+        selected = build_domain_pages.select_featured_works(config, domain_works)
+        assert tuple(work["num"] for work in selected) == config.featured_work_numbers
+        html = outputs[REPO_ROOT / f"domain-{config.slug}.html"]
+        html_section = html.split("<h2>Selected Works</h2>", 1)[1].split("</section>", 1)[0]
+        html_positions = [html_section.index(f'works/{work["citation_key"]}.html') for work in selected]
+        assert html_positions == sorted(html_positions)
+        md_section = markdown.split(f"## {config.emoji} [{config.title}]", 1)[1]
+        md_section = md_section.split("**Selected works**", 1)[1].split("**Selected repositories**", 1)[0]
+        md_positions = [
+            md_section.index(f"- {work['year']} — [{work['title']}]({work['url']})")
+            for work in selected[:6]
+        ]
+        assert md_positions == sorted(md_positions)
