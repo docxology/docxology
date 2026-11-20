@@ -376,5 +376,7 @@ def test_rendered_search_links_are_nofollow_and_upload_date_has_timezone():
     for match in re.finditer(r'<a href="\.\./search\.html\?[^"]*"([^>]*)>', html):
         assert 'rel="nofollow"' in match.group(1)
     assert '"uploadDate": "2026-06-01T00:00:00+00:00"' in html
-    assert build_video_pages.upload_datetime("2026-06-01") == "2026-06-01T00:00:00+00:00"
+    assert (
+        build_video_pages.upload_datetime("2026-06-01") == "2026-06-01T00:00:00+00:00"
+    )
     assert build_video_pages.upload_datetime("") == ""

@@ -185,5 +185,7 @@ def test_homepage_links_use_the_canonical_root_not_index_html():
         assert "index.html" not in nav.replace("works/index.html", "")
         assert f'href="{home_href(depth)}" class="nav-logo"' in nav
         assert f'href="{home_href(depth)}#about"' in nav
-    crumb = render_breadcrumb([("Home", ""), ("Works", "works/"), ("Item", "")], depth=1)
+    crumb = render_breadcrumb(
+        [("Home", ""), ("Works", "works/"), ("Item", "")], depth=1
+    )
     assert '<a href="../">Home</a>' in crumb

@@ -10,6 +10,10 @@ This site is served by GitHub Pages at `https://danielarifriedman.com/`, with `C
 - Keep source Markdown paths in GitHub links, but use apex URLs for public HTML pages.
 - **Full public crawl:** `robots.txt` uses `Allow: /` with no `Disallow` rules. Sitemap lists index-priority URLs only; `llms.txt` documents the full public path inventory.
 - **Publication canonicals:** `works/{citation_key}.html` is the primary index target; `papers/{folder}/` pages use `noindex, follow` and canonical to the matching work page.
+- **Internal query links:** canonical URLs never carry a query string, so every internal link that does (`search.html?q=`, `collections.html?add=`, `research-map.html?node=`, `art.html?q=`, `publications.html?domain=`) carries `rel="nofollow"`. Generators must not emit one followable parameter URL per item.
+- **Homepage links:** link the homepage as the site root (`./`, `../`, or `/#section`), never `index.html`, so crawlers do not record `/index.html` as a duplicate. Shared navigation uses `site_nav.home_href()`.
+- **Video dates:** VideoObject `uploadDate` carries an explicit time-zone offset (the cached YouTube day is published as `T00:00:00+00:00`).
+- These three rules are enforced by `seo_invariants.check_crawl_hygiene` inside `validate_repo.py`.
 
 ## Work URLs are a permanent contract
 

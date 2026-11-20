@@ -459,12 +459,12 @@ def render_html(
                 {fork_route_card}
             </div>
             <div class="topic-routes" aria-label="High-interest repository searches">
-                <a href="search.html?q=active%20inference">Active Inference</a>
-                <a href="search.html?q=mdkv">MDKV</a>
-                <a href="search.html?q=p3if">P3IF</a>
-                <a href="search.html?q=cognitive%20security">Cognitive security</a>
-                <a href="search.html?q=computational%20biology">Computational biology</a>
-                <a href="search.html?q=SpikingBrain">SpikingBrain</a>
+                <a href="search.html?q=active%20inference" rel="nofollow">Active Inference</a>
+                <a href="search.html?q=mdkv" rel="nofollow">MDKV</a>
+                <a href="search.html?q=p3if" rel="nofollow">P3IF</a>
+                <a href="search.html?q=cognitive%20security" rel="nofollow">Cognitive security</a>
+                <a href="search.html?q=computational%20biology" rel="nofollow">Computational biology</a>
+                <a href="search.html?q=SpikingBrain" rel="nofollow">SpikingBrain</a>
             </div>
         </section>
         <section class="section section-alt">

@@ -929,7 +929,7 @@ def render_index(payload: dict) -> str:
     <main id="main" class="main">
         <section class="section">
             <div class="section-header"><h2>Browse the Video Graph</h2><p>Every cached YouTube item has a stable page with VideoObject metadata, YouTube links, inferred topics, related works, and transcript text when available.</p><div class="section-divider"></div></div>
-            <p><a href="../videos.html">Open the interactive timeline</a> or use <a href="../search.html?q=active%20inference%20videos">site search</a> to cross-search videos, works, software, and claims.</p>
+            <p><a href="../videos.html">Open the interactive timeline</a> or use <a href="../search.html?q=active%20inference%20videos" rel="nofollow">site search</a> to cross-search videos, works, software, and claims.</p>
         </section>
         <section class="section">
             <div class="section-header"><h2>All Video Pages</h2><p>Newest first; titles link to local indexable landing pages, not directly out to YouTube.</p><div class="section-divider"></div></div>

@@ -403,3 +403,70 @@ def test_work_citation_identity_rejects_collapsed_doi_missing_author_and_wrong_p
 
     with pytest.raises(ValueError, match="Unavailable primary_pdf"):
         check_work_citations(tmp_path)
+
+
+def _crawl_site(tmp_path, pages: dict[str, str]):
+    for rel, body in pages.items():
+        path = tmp_path / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(body, encoding="utf-8")
+    return tmp_path
+
+
+def test_crawl_hygiene_requires_nofollow_on_internal_query_links(tmp_path):
+    from docxology_tools.seo_invariants import check_crawl_hygiene
+
+    root = _crawl_site(
+        tmp_path,
+        {
+            "works/a.html": '<a href="../collections.html?add=a">Add</a>'
+            '<a href="../research-map.html?node=w" rel="nofollow">Map</a>'
+            '<a href="https://example.org/?q=x">External</a>',
+            "videos/v.html": '<a href="../search.html?q=x" rel="external nofollow">S</a>',
+        },
+    )
+    errors = check_crawl_hygiene(root)
+    assert len(errors) == 1
+    assert "works/a.html" in errors[0] and "collections.html?add=a" in errors[0]
+
+
+def test_crawl_hygiene_rejects_index_html_homepage_links(tmp_path):
+    from docxology_tools.seo_invariants import check_crawl_hygiene
+
+    root = _crawl_site(
+        tmp_path,
+        {
+            "about.html": '<a href="index.html#about">About</a><a href="./">Home</a>',
+            "works/b.html": '<a href="../index.html">Home</a><a href="index.html">Works index</a>'
+            '<a href="../">Home</a>',
+            "works/index.html": '<a href="/index.html">Home</a>',
+        },
+    )
+    errors = sorted(check_crawl_hygiene(root))
+    assert len(errors) == 3
+    assert any(e.startswith("about.html") for e in errors)
+    assert any(e.startswith("works/b.html") and "../index.html" in e for e in errors)
+    assert any(e.startswith("works/index.html") for e in errors)
+
+
+def test_crawl_hygiene_requires_timezone_qualified_video_upload_dates(tmp_path):
+    from docxology_tools.seo_invariants import check_crawl_hygiene
+
+    root = _crawl_site(
+        tmp_path,
+        {
+            "videos/ok.html": '{"uploadDate": "2026-10-06T00:00:00+00:00"}',
+            "videos/bad.html": '{"uploadDate": "2026-10-06"}',
+            "videos/index.html": '{"uploadDate": "2026-10-06"}',
+        },
+    )
+    errors = check_crawl_hygiene(root)
+    assert errors == [
+        "videos/bad.html: uploadDate needs a time-zone-qualified datetime, got '2026-10-06'"
+    ]
+
+
+def test_repository_passes_crawl_hygiene():
+    from docxology_tools.seo_invariants import check_crawl_hygiene
+
+    assert check_crawl_hygiene(REPO_ROOT) == []
