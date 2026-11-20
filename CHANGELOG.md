@@ -6,7 +6,7 @@
 - Link the homepage as the site root (`./`, `../`) instead of `index.html` in the shared navigation, breadcrumbs and root-page templates, so crawlers stop recording `/index.html` as a duplicate.
 - Publish video `uploadDate` values as the start of the recorded UTC upload day with an explicit `+00:00` offset; the visible date is unchanged.
 - Link the Blake publication pathway from Start Here, the art gallery and every work on the pathway, and add a redirect stub from the pre-site store address `store/p1/Complexity.html` to the *Complexity* artwork page.
-- See [issue 85](https://github.com/docxology/docxology/issues/85) for the remaining editorial items.
+- Remaining editorial items (thin work pages without in-repository sources, domain-page selection order) stay in the Search Console backlog item in `TODO.md`.
 
 ## 2026-11-19 — Search Console follow-up
 
