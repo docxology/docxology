@@ -667,9 +667,9 @@ Two follow-ups it intentionally leaves to you:
 #    content markers. A 4xx/5xx for a route missing locally remains a hard failure.
 GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/verify_live_site.py
 
-# 2. Gates.
-uv run python3 code/orchestrators/validate_repo.py
-uv run python3 -m pytest code/tests -q
+# 2. Core checks. See development.md for browser and full-suite prerequisites.
+uv run --no-sync python3 code/orchestrators/validate_repo.py
+uv run --no-sync python3 -m pytest code/tests -q -m "not browser and not manuscript_render" -n auto --dist loadfile
 ```
 
 Land the intake with the settle driver (see [settle.md](settle.md)) — a

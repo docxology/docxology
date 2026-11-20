@@ -11,7 +11,6 @@ procedure.
 - After changing a generated surface, the ordered pipeline matters — the authoritative
   plan is `uv run python3 code/orchestrators/regenerate_all.py --list`, and
   `GENERATED.md` is the output matrix. Do not maintain a second list here.
-- Nothing tests the runbooks themselves; `validate_repo.py` and the Python suite check
-  the repository, not these documents.
+- `validate_repo.py` checks local link targets in Markdown and HTML. Verify changed procedures against their command help, implementation, or CI workflow.
 
 Docs-tree guide: [`../AGENTS.md`](../AGENTS.md).

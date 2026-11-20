@@ -1,19 +1,49 @@
 {
-  "generated_at": "2026-11-20T22:23:40Z",
+  "generated_at": "2026-11-20T23:34:43Z",
   "source": "reports/external_links_2026-11-20.json",
-  "checked_urls": 1076,
-  "ok": 869,
-  "warnings": 207,
+  "checked_urls": 1075,
+  "ok": 862,
+  "warnings": 213,
   "categories": {
-    "bot-protected-or-rate-limited": 202,
+    "bot-protected-or-rate-limited": 205,
     "connection-failure": 1,
-    "ok": 869,
-    "timeout": 2,
+    "needs-replacement": 2,
+    "ok": 862,
+    "timeout": 3,
     "upstream-transient": 2
   },
   "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
   "warnings_by_category": {
     "bot-protected-or-rate-limited": [
+      {
+        "url": "https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "discovery.html",
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "domain-aii-ecosystem.html",
+          "domain-aii-ecosystem.html",
+          "domain-art-synergetics.html",
+          "domain-art-synergetics.html",
+          "domain-biomedicine.html",
+          "domain-biomedicine.html",
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "domain-computational.html",
+          "domain-computational.html",
+          "domain-entomology.html",
+          "domain-entomology.html",
+          "domain-presentations-media.html",
+          "domain-presentations-media.html",
+          "pages/DISCOVERY.md",
+          "pages/LINKS.md",
+          "pages/PROFILE.md"
+        ],
+        "error": ""
+      },
       {
         "url": "https://api.github.com/users/ActiveInferenceInstitute",
         "status": 403,
@@ -87,7 +117,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "cognitive-security.html",
           "cognitive-security.html",
           "domain-cognitive-security.html",
@@ -123,7 +152,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-biomedicine.html",
           "domain-biomedicine.html",
           "pages/BIBLIOGRAPHY.md",
@@ -194,7 +222,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-entomology.html",
           "domain-entomology.html",
           "pages/BIBLIOGRAPHY.md",
@@ -243,7 +270,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-active-inference.html",
           "domain-active-inference.html",
           "pages/BIBLIOGRAPHY.md",
@@ -279,7 +305,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "publications.html",
           "publications.html",
@@ -289,15 +314,26 @@
         "error": ""
       },
       {
-        "url": "https://doi.org/10.5281/zenodo.20286170",
+        "url": "https://doi.org/10.5281/zenodo.19699233",
         "status": 429,
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
+          "active-inference.html",
+          "active-inference.html",
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "domain-aii-ecosystem.html",
+          "neurosymbolic-ai.html",
+          "neurosymbolic-ai.html",
           "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "pages/SOFTWARE.md",
           "publications.html",
           "publications.html",
-          "publications.html"
+          "publications.html",
+          "software.html"
         ],
         "error": ""
       },
@@ -561,7 +597,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-computational.html",
           "domain-computational.html",
           "pages/BIBLIOGRAPHY.md",
@@ -580,7 +615,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "publications.html",
@@ -597,7 +631,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-computational.html",
           "domain-computational.html",
           "pages/BIBLIOGRAPHY.md",
@@ -616,7 +649,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "publications.html",
@@ -676,7 +708,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "computational-entomology.html",
           "computational-entomology.html",
           "neurosymbolic-ai.html",
@@ -715,16 +746,6 @@
           "publications.html",
           "publications.html",
           "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://doi.org/10.5281/zenodo.20732275",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "README.md"
         ],
         "error": ""
       },
@@ -1260,7 +1281,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "publications.html",
@@ -1277,7 +1297,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-computational.html",
           "domain-computational.html",
           "domain-computational.html",
@@ -1297,7 +1316,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "software.html"
@@ -1310,7 +1328,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "software.html"
@@ -1323,7 +1340,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "software.html"
@@ -1336,7 +1352,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "software.html"
@@ -1349,7 +1364,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "software.html"
@@ -1373,7 +1387,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "software.html"
@@ -1386,7 +1399,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "pages/BIBLIOGRAPHY.md",
           "pages/SOFTWARE.md",
           "publications.html",
@@ -2408,7 +2420,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-biomedicine.html",
           "domain-biomedicine.html",
           "pages/BIBLIOGRAPHY.md",
@@ -2549,7 +2560,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "blake-pathway.html",
           "domain-art-synergetics.html",
           "domain-art-synergetics.html",
@@ -2608,7 +2618,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "active-inference.html",
           "active-inference.html",
           "domain-active-inference.html",
@@ -2640,7 +2649,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-presentations-media.html",
           "domain-presentations-media.html",
           "pages/BIBLIOGRAPHY.md",
@@ -2732,7 +2740,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "domain-aii-ecosystem.html",
           "domain-aii-ecosystem.html",
           "pages/BIBLIOGRAPHY.md",
@@ -2791,6 +2798,36 @@
           "pages/DISCOVERY.md",
           "pages/LINKS.md",
           "pages/PROFILE.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://github.com/docxology/yt-transcriber",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "repositories-forks.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://github.com/docxology?tab=repositories",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/DISCOVERY.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://github.com/infer-actively/pymdp",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "active-inference.html"
         ],
         "error": ""
       },
@@ -2891,8 +2928,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
-          "README.md",
           "index.html",
           "index.html",
           "pages/BIBLIOGRAPHY.md",
@@ -2919,7 +2954,6 @@
         "ok": false,
         "category": "bot-protected-or-rate-limited",
         "sources": [
-          "README.md",
           "index.html",
           "pages/BIBLIOGRAPHY.md",
           "pages/LINKS.md",
@@ -2964,24 +2998,62 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 183 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 161 ms: Couldn't connect to server"
+      }
+    ],
+    "needs-replacement": [
+      {
+        "url": "https://doi.org/10.1007/978-3-031-28719-0_10",
+        "status": 404,
+        "ok": false,
+        "category": "needs-replacement",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1007/978-3-032-16955-6_11",
+        "status": 404,
+        "ok": false,
+        "category": "needs-replacement",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
       }
     ],
     "timeout": [
+      {
+        "url": "https://grantome.com/grant/NSF/DBI-2010290",
+        "status": 0,
+        "ok": false,
+        "category": "timeout",
+        "sources": [
+          "pages/EVIDENCE.md",
+          "pages/EVIDENCE.md"
+        ],
+        "error": "curl: (28) Connection timed out after 8010 milliseconds"
+      },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
         "status": 0,
         "ok": false,
         "category": "timeout",
         "sources": [
-          "README.md",
           "art.html",
           "media.html",
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 8003 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 8009 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -2992,7 +3064,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 8006 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 8011 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [

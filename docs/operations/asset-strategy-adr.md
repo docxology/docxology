@@ -248,8 +248,7 @@ against the review gate while it still carried both pairing reports. The
 7,266,403-byte November 6 observation was retained in Pages by a stale
 current-counts link copied into the agent index. The November 6 evidence
 remains in the repository, with immutable archive links from the review and
-paper evidence. Current-facing reports should point to the November 7
-classification replay. The current projection is recorded in the
+paper evidence. Current-facing reports use the latest reviewed, tracked source evidence. The current projection is recorded in the
 [Pages manifest](../../data/pages-artifact-manifest.json).
 
 For new papers and editions, use an existing reviewed versioned archive as

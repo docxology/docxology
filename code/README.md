@@ -9,7 +9,7 @@ helpers, and write the generated artifacts checked into the repo root.
 - Artifact-by-artifact rebuild matrix (generated): [`../GENERATED.md`](../GENERATED.md)
 - Dependency-ordered full rebuild: `uv run python3 code/orchestrators/regenerate_all.py --validate`
 - Gate before declaring work done: `uv run python3 code/orchestrators/validate_repo.py`
-- Tests: `uv run python3 -m pytest code/tests -q`
+- Test selections and prerequisites are in [Development](../docs/operations/development.md#verification-sequence).
 
 ## Python runtime
 

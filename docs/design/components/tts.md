@@ -73,13 +73,9 @@ window.__tts.toggle()      // Open/close panel
 
 ## Adding TTS to New Pages
 
-The TTS script auto-initializes on DOMContentLoaded. To add to a new page:
-
-```html
-<script src="/js/tts-controls.js?v=20260712" defer></script>
-```
-
-No additional markup required. The script creates:
+Use [the shared script tags](../../../code/src/site_nav.py) for an indexable
+page. They include the current version of the TTS script. The script initializes
+automatically when the page loads and creates:
 - A floating toggle button (`.tts-toggle`) appended to `document.body`
 - A floating panel (`.tts-panel`) appended to `document.body`
 

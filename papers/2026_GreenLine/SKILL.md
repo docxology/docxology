@@ -1,6 +1,6 @@
 ---
 name: "GreenLine"
-description: "Use for Green Line: a capacity-under-development instrument, a Zenodo publication with DOI 10.5281/zenodo.22833491."
+description: "Use for Green Line: a capacity-under-development instrument, a Zenodo publication with DOI 10.5281/zenodo.24069456."
 tags: ["active-inference", "governance", "apprenticeship", "growth-records", "capacity-under-development", "open-science"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["active-inference", "governance", "apprenticeship", "growth-records", "ca
 
 Use this skill when working with the publication **Green Line: a capacity-under-development instrument** or its archival record.
 
-1. Ground citations in DOI `10.5281/zenodo.22833491`.
+1. Ground citations in DOI `10.5281/zenodo.24069456`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts

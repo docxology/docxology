@@ -47,11 +47,11 @@ Python tooling is `uv`-only (never bare `pip`). Everything runs from the repo ro
 
 ```bash
 # Environment (the .venv interpreter path goes stale if the repo is moved — recreate it):
-uv sync --python 3.15
+uv sync --locked --python 3.15
 
-# Tests (CI gate):
-uv run python3 -m pytest code/tests -q
-uv run python3 -m pytest code/tests/test_seo_invariants.py::test_collect_seo_errors_empty_on_repo -q   # single test
+# Core CI test selection (browser and native-render prerequisites are separate):
+uv run --no-sync python3 -m pytest code/tests -q -m "not browser and not manuscript_render" -n auto --dist loadfile
+uv run --no-sync python3 -m pytest code/tests/test_seo_invariants.py::test_collect_seo_errors_empty_on_repo -q   # single test
 
 # Lint (CI gate):
 uv run --group lint ruff check code

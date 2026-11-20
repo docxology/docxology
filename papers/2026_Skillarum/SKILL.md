@@ -12,7 +12,7 @@ Use this skill when working with the publication **Skillarum: Conditionally Repr
 
 1. Ground citations in DOI `10.5281/zenodo.22663906`.
 2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.2.0` and repository `docxology/Skillarum` linked when updating catalog surfaces.
+3. Use the [current catalog release](https://github.com/docxology/Skillarum/releases/tag/v0.3.1) when updating catalog surfaces. Preserve earlier release references in their original evidence records.
 
 ## Key Concepts
 

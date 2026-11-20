@@ -27,6 +27,6 @@ Check release v0.1.0 and source CITATION.cff.
 Familiarity with active inference and Synergetics.
 
 ## Instructions
-1. Open the linked repository release.
+1. Open the [v0.1.0 repository release](https://github.com/docxology/OPH-FEP-Synergetics/releases/tag/v0.1.0) and check the [local evidence receipt](source_evidence.json). The [paper overview](README.md) links the manuscript and citation.
 2. Read the manuscript and probe definitions.
 3. Keep failed probes and premises explicit when explaining results.

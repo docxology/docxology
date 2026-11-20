@@ -597,6 +597,15 @@ def test_check_report_accepts_applied_create_new_existing_doi(tmp_path: Path):
 def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):
     _write_minimal_repo(tmp_path)
     pair = _pair()
+    paper_index = tmp_path / "papers" / "README.md"
+    paper_index.write_text(
+        "# Papers\n\n## Papers (1)\n\n"
+        "| # | Folder | PDF | Year | Topic |\n"
+        "|---|---|---|---|---|\n"
+        "| 1 | [2025_Example](2025_Example/) | ✅ | 2025 | Example |\n"
+        "\n## Scripts\n",
+        encoding="utf-8",
+    )
 
     first = apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
     second = apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
@@ -630,6 +639,12 @@ def test_apply_creates_new_publication_and_is_idempotent(tmp_path: Path):
     software = (tmp_path / "pages" / "SOFTWARE.md").read_text(encoding="utf-8")
     assert "https://doi.org/10.5281/zenodo.20990001" in software
     assert "[📄](../papers/2026_NewComputationalProject/)" in software
+
+    assert paper_index.read_text(encoding="utf-8").endswith(
+        "| 1 | [2025_Example](2025_Example/) | ✅ | 2025 | Example |\n"
+        "| 2 | [2026_NewComputationalProject](2026_NewComputationalProject/) | — | 2026 | NewComputationalProject |\n"
+        "\n## Scripts\n"
+    )
 
 
 def test_paired_intake_rejects_unsafe_key_before_bibliography_write(tmp_path):

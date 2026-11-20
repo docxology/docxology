@@ -1450,16 +1450,22 @@ def update_papers_readme(
     if not text:
         return
     if f"]({folder}/)" not in text:
-        rows = [line for line in text.splitlines() if re.match(r"\| \d+ \|", line)]
+        lines = text.splitlines()
+        rows = [index for index, line in enumerate(lines) if re.match(r"\| \d+ \|", line)]
         next_num = len(rows) + 1
         year, topic = folder.split("_", 1)
-        row = f"| {next_num} | [{folder}]({folder}/) | ✅ | {year} | {topic} |"
-        lines = text.splitlines()
-        insert_at = len(lines)
-        for idx, line in enumerate(lines):
-            if line.startswith("## Scripts"):
-                insert_at = idx
-                break
+        has_local_pdf = any(
+            file.suffix.lower() == ".pdf" and file.is_file() and not file.is_symlink()
+            for file in (path.parent / folder).iterdir()
+        )
+        pdf = "✅" if has_local_pdf else "—"
+        row = f"| {next_num} | [{folder}]({folder}/) | {pdf} | {year} | {topic} |"
+        insert_at = rows[-1] + 1 if rows else next(
+            (index for index, line in enumerate(lines) if line.startswith("## Scripts")),
+            len(lines),
+        )
+        if insert_at < len(lines) and lines[insert_at].strip():
+            lines.insert(insert_at, "")
         lines.insert(insert_at, row)
         text = "\n".join(lines).rstrip() + "\n"
     count = len([line for line in text.splitlines() if re.match(r"\| \d+ \|", line)])
