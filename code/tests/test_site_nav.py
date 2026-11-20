@@ -172,3 +172,20 @@ def test_ensure_agent_map_link_is_idempotent_for_bespoke_navigation():
 def test_ensure_agent_map_link_supports_art_navigation():
     source = '<nav><div class="nav-right"><a href="index.html">Home</a></div></nav>'
     assert 'href="data/agent-index.json">Agent Map</a>' in ensure_agent_map_link(source)
+
+
+def test_homepage_links_use_the_canonical_root_not_index_html():
+    from docxology_tools.site_nav import home_href, render_breadcrumb
+
+    assert home_href(0) == "./"
+    assert home_href(1) == "../"
+    assert home_href(2) == "../../"
+    for depth in (0, 1, 2):
+        nav = render_nav(active="works", depth=depth)
+        assert "index.html" not in nav.replace("works/index.html", "")
+        assert f'href="{home_href(depth)}" class="nav-logo"' in nav
+        assert f'href="{home_href(depth)}#about"' in nav
+    crumb = render_breadcrumb(
+        [("Home", ""), ("Works", "works/"), ("Item", "")], depth=1
+    )
+    assert '<a href="../">Home</a>' in crumb

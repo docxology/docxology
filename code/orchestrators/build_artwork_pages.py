@@ -290,7 +290,7 @@ def render_artwork_page(
     chips = record_collections(record, collections)
 
     tag_links = "\n".join(
-        f'<a href="../art.html?q={quote(tag)}">{h(tag)}</a>'
+        f'<a href="../art.html?q={quote(tag)}" rel="nofollow">{h(tag)}</a>'
         for tag in record.get("tags", [])[:TAG_LINK_CAP]
     )
     chip_links = "\n".join(

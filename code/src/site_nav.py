@@ -358,6 +358,16 @@ def breadcrumb_jsonld_script(trail: list[tuple[str, str]]) -> str:
     return f'    <script type="application/ld+json">\n{payload}\n    </script>'
 
 
+def home_href(depth: int = 0) -> str:
+    """Relative link to the site root that resolves to the canonical ``/``.
+
+    Linking ``index.html`` makes crawlers record ``/index.html`` as a separate
+    URL (an "Alternate page with proper canonical" in Search Console); linking
+    the directory keeps every internal homepage link on the canonical address.
+    """
+    return "../" * depth if depth else "./"
+
+
 def render_breadcrumb(trail: list[tuple[str, str]], *, depth: int = 0) -> str:
     """Accessible visible breadcrumb nav. Last item is the current page (no link)."""
     prefix = "../" * depth
@@ -366,7 +376,7 @@ def render_breadcrumb(trail: list[tuple[str, str]], *, depth: int = 0) -> str:
         if i == len(trail) - 1:
             out.append(f'<li aria-current="page">{html.escape(label)}</li>')
         else:
-            href = f"{prefix}{rel}" if rel else f"{prefix}index.html"
+            href = f"{prefix}{rel}" if rel else home_href(depth)
             out.append(
                 f'<li><a href="{html.escape(href, quote=True)}">{html.escape(label)}</a></li>'
             )
@@ -390,7 +400,7 @@ def nav_manifest(
 ) -> tuple[list[tuple[str, str, str, str]], list[tuple[str, str, str, str]]]:
     """Return (primary, secondary) nav link tuples (key, href, label, extra_class)."""
     prefix = "../" * depth
-    home = f"{prefix}index.html"
+    home = home_href(depth)
     primary = [
         ("publications", f"{prefix}publications.html", "Publications", ""),
         ("works", f"{prefix}works/", "Works", ""),
@@ -433,8 +443,7 @@ def _nav_anchor(
 
 def _render_nav_shell(*, active: str = "", depth: int = 0) -> str:
     """Render the shared header nav: plain <nav><ul><li><a> (no menubar roles)."""
-    prefix = "../" * depth
-    home = f"{prefix}index.html"
+    home = home_href(depth)
     primary, secondary = nav_manifest(depth)
     items = "\n".join(
         f"            <li>{_nav_anchor(*item, active=active)}</li>" for item in primary

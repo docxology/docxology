@@ -39,7 +39,7 @@ OUT = REPO_ROOT / "404.html"
 # Top destinations offered on the 404 page (label, path). Kept to ~8 so the
 # recovery block stays scannable.
 TOP_DESTINATIONS: tuple[tuple[str, str], ...] = (
-    ("Home", "index.html"),
+    ("Home", ""),
     ("Publications", "publications.html"),
     ("Works Index", "works/"),
     ("Domains", "domains.html"),
@@ -106,7 +106,7 @@ def render() -> str:
     <a href="#main" class="skip-link">Skip to main content</a>
 {render_nav(active="")}
     <nav class="breadcrumb" aria-label="Breadcrumb">
-        <ol><li><a href="/index.html">Home</a></li><li aria-current="page">Page Not Found</li></ol>
+        <ol><li><a href="/">Home</a></li><li aria-current="page">Page Not Found</li></ol>
     </nav>
     <main id="main" class="notfound-shell">
         <p class="notfound-code">404</p>

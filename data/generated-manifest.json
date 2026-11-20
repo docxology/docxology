@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T23:42:41Z",
+  "generated_at": "2026-11-20T21:42:46Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -194,8 +194,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-11-17.json",
-        "reports/source_coverage_2026-11-17.md"
+        "reports/source_coverage_2026-11-20.json",
+        "reports/source_coverage_2026-11-20.md"
       ],
       "sources": [
         "data/works.json",
@@ -276,7 +276,8 @@
         "works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html",
         "works/Friedman2026LiteratureReviewArchitectureActive110.html",
         "works/Friedman2023ATLASQuestionOrientedApproach049.html",
-        "works/Friedman2026TemplateApproachReproducibleGenerative193.html"
+        "works/Friedman2026TemplateApproachReproducibleGenerative193.html",
+        "store/p1/Complexity.html"
       ],
       "sources": [
         "code/src/redirect_stubs.py",
@@ -337,7 +338,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-11-19.json"
+        "reports/pages_artifact_growth_2026-11-20.json"
       ],
       "sources": [
         "data/scholar-pdf-projections.json",
@@ -848,7 +849,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-11-19.json"
+        "reports/accessibility_static_2026-11-20.json"
       ],
       "sources": [
         "root HTML pages",

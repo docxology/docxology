@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -238,3 +239,16 @@ def test_redacted_repository_marker_never_becomes_a_platform_link():
     assert bwp.platform_link("IPFS/Software-Heritage", work) == ""
     assert bwp.present_platform_urls(work) == []
     assert "[non-public repository]" not in bwp.platform_availability_card(work)
+
+
+def test_blake_pathway_works_link_back_to_the_pathway_hub(monkeypatch):
+    monkeypatch.setattr(bwp, "_BLAKE_KEYS", frozenset({"Friedman2026Blake001"}))
+    button = bwp.blake_pathway_button({"citation_key": "Friedman2026Blake001"})
+    assert 'href="../blake-pathway.html"' in button
+    assert bwp.blake_pathway_button({"citation_key": "Friedman2026Other002"}) == ""
+
+
+def test_blake_pathway_keys_come_from_the_committed_index():
+    keys = bwp.load_blake_pathway_keys()
+    index = json.loads((bwp.REPO_ROOT / "data" / "blake-index.json").read_text())
+    assert keys == {item["citation_key"] for item in index["works"]}

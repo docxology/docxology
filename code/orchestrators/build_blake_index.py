@@ -351,7 +351,7 @@ def render_html(payload: dict) -> str:
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <a href="./" class="nav-logo">Daniel Ari Friedman</a>
         <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
         <div class="nav-links">
             <a href="publications.html">Publications</a>

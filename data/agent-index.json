@@ -473,7 +473,7 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-11-19.json",
+      "path": "/reports/accessibility_static_2026-11-20.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1307,7 +1307,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-11-07T01:43:54Z",
+      "generated_at": "2026-11-20T00:22:15Z",
       "source": "data/videos.json",
       "count": 1186,
       "counts": {
@@ -1459,7 +1459,7 @@
           "type": "Paper",
           "citation_scope": "individual_work",
           "abstract_url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html",
-          "page_sha256": "0be5ab42a71b72ed612e4b1316868e30ef1b7c810188e698a2d686a43943486e",
+          "page_sha256": "92658a886a8b259ea4ec1353f9c62b2592e5cb11715296e1fef9109cf23d3f41",
           "citation_tags": {
             "citation_title": [
               "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
@@ -1675,11 +1675,11 @@
         "release_hard_ceiling_bytes": 996147200,
         "safety_ceiling_bytes": 996147200,
         "warning_bytes": 975175680,
-        "source_bytes": 967638763,
+        "source_bytes": 967407785,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 6314,
-        "artifact_bytes": 968758603
+        "artifact_file_count": 6315,
+        "artifact_bytes": 968527784
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6433,9 +6433,9 @@
     "repositories": "30d8b8f375be4143772bd4d40085d3394439c582ef553e9196de4e699e86aef5",
     "artworks_index": "29270719124f00fb4d9c2729262c33318c82e9dbb114ec8b0f777436bb270769",
     "artworks": "c301e510179c71a95484200248a033e0ed166c8f1b0e1e6bb648e4a36d5f6d13",
-    "videos": "4ab5da15a6878393ece05d08c613d931968035eefbeb107d148cf8ff5ddfb687",
-    "videos_index": "aef1cfda7fa82b229d97d49742fc04e417cd8fba6db97bda12fcc8a323470f10",
-    "search": "7e394223f5f8c1e7a345506253546daaff93e3a163efee6d678901ee9fffb1b3",
+    "videos": "072e85109f4bfc4ab078dd10a9717adf486f7b8141ad0380b32b607e85a419ca",
+    "videos_index": "4fc08aab9b274f88188852c5c5f12de76990354fe8e8d99906a26e8ecc1f93a4",
+    "search": "b0f40d7870526df6230f0f5367013de77bcced6b8f3cb7784313f58f810abb4d",
     "claims": "8d6c83f93b0609c6d6308c592325631b61b6caffb2a982ec5e5747ca2a0d988b",
     "scholar_verification_receipt": "889e829f258bfaaca0c17d3cc2eec68ac114152e41e32a31f75b6bb925f9b16d",
     "coverage_exceptions": "e8a253e85f233ddedc483897452251cb1a4de4371823286e4258f59567b274c0",
@@ -6447,11 +6447,11 @@
     "collection_catalog": "1e074d73955e096f5a36bd68687cdde0402d3006635fda4aacf6a2f5d7cca91a",
     "research_map": "ddfddc0e6c2f48a877ca37ef6c4c3cd3bb0bbdee944d8de626880a0c96c57b1f",
     "research_trails": "2e6a76a3974b495906a1764725835ffa3ef47065a304c812f7756fb17166d34e",
-    "scholar_readiness": "dc5fc4446b1b8f5ebc42891be0d7bc8fa7f7435539c515a07cd99e1febdbf29b",
-    "catalog": "a16dfd18509e9ba29f653353698c21eb16575f5e86f270ba1ed4b13c7621ffab",
+    "scholar_readiness": "0227a5dbd51a813e444f880875a4fd0ec5d8662a3070ad7dfc1cdeda381c7303",
+    "catalog": "8a658b84f8733e7c395482532f8e6d674d14bf82e5582ca71316339caf81e028",
     "reconciliation": "7544d137eaad1aca45f2fc4fe4d8e74a068e5239894b451e31369981c75de333",
     "reproducibility": "849f32958ef0c8073c0518eae0f545b8a64cab5c83ac39f3594fa8b5a231ea5b",
-    "generated_manifest": "45e577bf9c63366a2b065c1ccc7c2d4327e86e2aea0a0481f555f8b3c02443b0",
+    "generated_manifest": "7c9fc477bb59b23758d1b142751ddd0016067a66a0ac7934382d59fe6d27dd14",
     "current_counts": "745f4e91943e7e18f0756c29659253255ce8b165abbdbc6ba2926ce89c6cd751"
   },
   "source_provenance": {

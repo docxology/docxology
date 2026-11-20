@@ -112,7 +112,7 @@ def collection_content() -> str:
 def map_content(works: list[dict]) -> str:
     domains = sorted({w["domain_name"] for w in works})
     fallback = "".join(
-        f'<li><a href="/publications.html?domain={h(next(w["domain"] for w in works if w["domain_name"] == name))}">{h(name)}</a></li>'
+        f'<li><a href="/publications.html?domain={h(next(w["domain"] for w in works if w["domain_name"] == name))}" rel="nofollow">{h(name)}</a></li>'
         for name in domains
     )
     return f"""<p>Explore recorded authorship, catalog domains and associated software. These are metadata relationships, not citation links or causal claims. Contributor nodes group exact normalized labels within each recorded entity type; homonyms may be grouped and spelling variants remain separate.</p>

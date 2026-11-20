@@ -54,6 +54,7 @@ def _seed_page_inputs(tmp_path, step):
     for relative in (
         *COMMON_INPUTS,
         "data/publishing-status.json",
+        "data/blake-index.json",
         "data/work-authors.json",
         "bibliography.bib",
         "code/src/author_entities.py",
@@ -118,4 +119,13 @@ def test_adding_another_pdf_invalidates_the_cached_selection(tmp_path, identifie
     state = _seed_page_inputs(tmp_path, step)
     (tmp_path / "papers/Example/supplement.pdf").write_bytes(b"new PDF")
 
+    assert step_skip_reason(step, state, tmp_path) is None
+
+
+def test_blake_index_changes_invalidate_work_page_generation(tmp_path):
+    step = next(
+        item for item in LOCAL_GENERATION_STEPS if item.identifier == "work-pages"
+    )
+    state = _seed_page_inputs(tmp_path, step)
+    (tmp_path / "data/blake-index.json").write_text("changed\n", encoding="utf-8")
     assert step_skip_reason(step, state, tmp_path) is None

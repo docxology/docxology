@@ -524,6 +524,91 @@ def check_head_canonicals(repo_root: Path) -> list[str]:
     return errors
 
 
+_ANCHOR_TAG = re.compile(r"<a\b[^>]*>", re.I)
+_ANCHOR_HREF = re.compile(r"""\bhref\s*=\s*(?:"([^"]*)"|'([^']*)')""", re.I)
+_ANCHOR_REL = re.compile(r"""\brel\s*=\s*(?:"([^"]*)"|'([^']*)')""", re.I)
+_UPLOAD_DATE = re.compile(r'"uploadDate"\s*:\s*"([^"]*)"')
+_TZ_DATETIME = re.compile(
+    r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$"
+)
+
+
+def _internal_path(href: str) -> str | None:
+    """Return the site-relative target of an internal link, or None if external."""
+    if href.startswith(SITE_ORIGIN):
+        return href[len(SITE_ORIGIN) :]
+    if re.match(r"^[a-z][a-z0-9+.-]*:|^//", href, re.I) or href.startswith("#"):
+        return None
+    return href
+
+
+def check_crawl_hygiene(repo_root: Path) -> list[str]:
+    """Keep internal links on canonical, crawlable URLs (Search Console follow-up).
+
+    * Canonical URLs never carry a query string, so every internal link with
+      one (client-side search, reading-list and filter routes) is
+      ``rel="nofollow"`` to keep parameter variants out of the crawl.
+    * The homepage is linked as the site root, never ``index.html``, so
+      crawlers do not record ``/index.html`` as a duplicate.
+    * Video ``uploadDate`` values carry an explicit time-zone offset.
+    """
+    from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS
+
+    errors: list[str] = []
+    for path in sorted(repo_root.rglob("*.html")):
+        if EXCLUDED_HTML_PATH_PARTS.intersection(path.parts) or "reports" in path.parts:
+            continue
+        if path.name == "googlef0f1a1a4a7ba4be8.html":
+            continue
+        text = _read(path)
+        rel = path.relative_to(repo_root).as_posix()
+        parent = path.parent.relative_to(repo_root).as_posix()
+        for tag in _ANCHOR_TAG.findall(text):
+            href_match = _ANCHOR_HREF.search(tag)
+            if not href_match:
+                continue
+            href = (
+                href_match.group(1)
+                if href_match.group(1) is not None
+                else href_match.group(2)
+            )
+            target = _internal_path(href)
+            if target is None:
+                continue
+            path_part = target.split("#", 1)[0]
+            if "?" in path_part:
+                rel_match = _ANCHOR_REL.search(tag)
+                rel_value = (
+                    (rel_match.group(1) or rel_match.group(2) or "")
+                    if rel_match
+                    else ""
+                )
+                if "nofollow" not in rel_value.lower().split():
+                    errors.append(
+                        f'{rel}: internal query link must be rel="nofollow": {href[:120]}'
+                    )
+                path_part = path_part.split("?", 1)[0]
+            if not path_part.endswith("index.html"):
+                continue
+            base = "https://site.invalid/" + ("" if parent == "." else parent + "/")
+            resolved = urllib.parse.urlsplit(urllib.parse.urljoin(base, path_part)).path
+            if resolved == "/index.html":
+                errors.append(
+                    f"{rel}: link the homepage as the site root, not index.html: {href[:120]}"
+                )
+    videos = repo_root / "videos"
+    if videos.is_dir():
+        for path in sorted(videos.glob("*.html")):
+            if path.name == "index.html":
+                continue
+            for value in _UPLOAD_DATE.findall(_read(path)):
+                if not _TZ_DATETIME.match(value):
+                    errors.append(
+                        f"{path.relative_to(repo_root).as_posix()}: uploadDate needs a time-zone-qualified datetime, got {value!r}"
+                    )
+    return errors
+
+
 def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     root = repo_root or REPO_ROOT
     errors: list[str] = []
@@ -537,4 +622,5 @@ def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     errors.extend(check_public_html_security(root))
     errors.extend(check_canonical_integrity(root))
     errors.extend(check_head_canonicals(root))
+    errors.extend(check_crawl_hygiene(root))
     return errors

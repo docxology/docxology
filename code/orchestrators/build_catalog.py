@@ -484,7 +484,7 @@ def render_html(date_modified: str | None = None) -> str:
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <nav role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <a href="./" class="nav-logo">Daniel Ari Friedman</a>
         <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
         <div class="nav-links"><a href="publications.html">Publications</a><a href="works/">Works</a><a href="catalog.html">Data Catalog</a><a href="exports.html">Exports</a><a href="cite-verify.html">Cite</a><a href="discovery.html">Discovery</a> <a href="data/agent-index.json">Agent Map</a>
         </div>
