@@ -88,6 +88,37 @@ def load_publishing_status() -> dict[str, dict]:
     return {e["canonical_page"]: e for e in entries if e.get("canonical_page")}
 
 
+def load_blake_pathway_keys() -> frozenset[str]:
+    """Citation keys listed on the Blake publication pathway (``data/blake-index.json``)."""
+    path = REPO_ROOT / "data" / "blake-index.json"
+    if not path.is_file():
+        return frozenset()
+    with open(path, encoding="utf-8") as f:
+        index = json.load(f)
+    return frozenset(
+        item["citation_key"]
+        for item in index.get("works", [])
+        if item.get("citation_key")
+    )
+
+
+def blake_pathway_button(work: dict) -> str:
+    """Link Blake-pathway works back to the pathway hub so it has internal referrers."""
+    if work.get("citation_key") not in _blake_pathway_keys():
+        return ""
+    return '\n<a class="btn btn-outline" href="../blake-pathway.html">Blake publication pathway</a>'
+
+
+_BLAKE_KEYS: frozenset[str] | None = None
+
+
+def _blake_pathway_keys() -> frozenset[str]:
+    global _BLAKE_KEYS
+    if _BLAKE_KEYS is None:
+        _BLAKE_KEYS = load_blake_pathway_keys()
+    return _BLAKE_KEYS
+
+
 def load_works() -> list[dict]:
     with open(REPO_ROOT / "data" / "works.json", encoding="utf-8") as f:
         works = json.load(f)["works"]
@@ -1246,8 +1277,9 @@ def render_work_page(work: dict) -> str:
     citation_buttons = (
         bibtex_button_html(work)
         + '\n<a class="btn btn-outline" href="../bibliography.bib" download>Download bibliography</a>'
-        + f'\n<a class="btn btn-outline" href="../collections.html?add={h(work["citation_key"])}">Add to reading list</a>'
-        + f'\n<a class="btn btn-outline" href="../research-map.html?node=work%3A{h(work["citation_key"])}">Explore connections</a>'
+        + f'\n<a class="btn btn-outline" href="../collections.html?add={h(work["citation_key"])}" rel="nofollow">Add to reading list</a>'
+        + f'\n<a class="btn btn-outline" href="../research-map.html?node=work%3A{h(work["citation_key"])}" rel="nofollow">Explore connections</a>'
+        + blake_pathway_button(work)
     )
     return (
         page_head(work)

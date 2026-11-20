@@ -150,6 +150,15 @@ REDIRECT_STUBS: tuple[RedirectStub, ...] = (
         f"{SITE_ORIGIN}works/Friedman2026TemplateApproachReproducibleGenerative001.html",
         "A template/ approach to Reproducible Generative Research",
     ),
+    # Pre-site print-store address that Search Console still crawls (via the
+    # www host). The matching drawing now has its own artwork page.
+    RedirectStub(
+        "store/p1/Complexity.html",
+        "Complexity — previous store URL",
+        f"{SITE_ORIGIN}artworks/13746159173-complexity.html",
+        f"{SITE_ORIGIN}artworks/13746159173-complexity.html",
+        "Complexity",
+    ),
 )
 
 

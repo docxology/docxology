@@ -498,6 +498,24 @@ def compact_index(payload: dict) -> dict:
     }
 
 
+def parameter_link_rel(url: str) -> str:
+    """Mark client-side parameter routes (site search) as not to be followed."""
+    return ' rel="nofollow"' if url.startswith("/search.html?") else ""
+
+
+def upload_datetime(date: str) -> str:
+    """Timezone-qualified ``uploadDate`` for VideoObject JSON-LD.
+
+    The cached YouTube metadata records only the UTC upload day (yt-dlp
+    ``upload_date``). Google reports a date without a time zone as an invalid or
+    incomplete datetime, so the value is published as the start of that UTC
+    day. The visible page keeps the plain date.
+    """
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date or ""):
+        return f"{date}T00:00:00+00:00"
+    return date
+
+
 def related_pages(video: dict) -> list[dict]:
     pages = [
         {"label": "Interactive video timeline", "url": "/videos.html"},
@@ -506,9 +524,10 @@ def related_pages(video: dict) -> list[dict]:
         topic["label"] == "Computational Methods" for topic in video.get("topics", [])
     ):
         pages.append({"label": "Software catalog", "url": "/software.html"})
-    pages.append(
-        {"label": "Site search", "url": f"/search.html?q={quote_plus(video['title'])}"}
-    )
+    # No per-video title search link: one followable ``search.html?q=<title>``
+    # URL per video page created a crawl trap of client-rewritten parameter
+    # URLs (Search Console "Page with redirect"). Shared topic searches remain
+    # and are rendered ``rel="nofollow"`` by ``render_video_page``.
     seen = {item["url"] for item in pages}
     for topic in video.get("topics", []):
         url = "/" + topic["url"] if not topic["url"].startswith("/") else topic["url"]
@@ -620,7 +639,7 @@ def video_json_ld(video: dict, transcript: str) -> str:
         "name": video["title"],
         "description": description_for_video(video),
         "thumbnailUrl": [video["thumbnail_url"]],
-        "uploadDate": video["date"],
+        "uploadDate": upload_datetime(video["date"]),
         "duration": iso_duration(video.get("duration")),
         "embedUrl": video["embed_url"],
         "contentUrl": video["youtube_url"],
@@ -673,7 +692,7 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
         for topic in video.get("topics", [])
     )
     related_pages = "\n".join(
-        f'<li><a href="..{h(page["url"])}">{h(page["label"])}</a></li>'
+        f'<li><a href="..{h(page["url"])}"{parameter_link_rel(page["url"])}>{h(page["label"])}</a></li>'
         for page in video.get("related_pages", [])
     )
     related_works = (

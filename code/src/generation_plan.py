@@ -364,6 +364,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
             "code/src/scholar_pdf_projection.py",
             "data/work-authors.json",
             "data/publishing-status.json",
+            "data/blake-index.json",
             "bibliography.bib",
             "papers/paper_metadata.json",
             "papers/*/metadata.json",

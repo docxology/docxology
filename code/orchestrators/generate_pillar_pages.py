@@ -176,9 +176,9 @@ def render_page(
 
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
-        <p>Daniel Ari Friedman, PhD · <a href="https://activeinference.institute/">Active Inference Institute</a> · <a href="index.html">danielarifriedman.com</a></p>
+        <p>Daniel Ari Friedman, PhD · <a href="https://activeinference.institute/">Active Inference Institute</a> · <a href="./">danielarifriedman.com</a></p>
         <div class="footer-links">
-            <a href="index.html">Home</a>
+            <a href="./">Home</a>
             <a href="publications.html">Publications</a>
             <a href="domains.html">Domains</a>
             <a href="software.html">Software</a>

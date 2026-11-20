@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-19 — Crawl hygiene from the Search Console follow-up
+
+- Stop emitting a followable per-video `search.html?q=<title>` link; shared topic searches on video pages, and the per-work reading-list and research-map parameter links, now carry `rel="nofollow"`.
+- Link the homepage as the site root (`./`, `../`) instead of `index.html` in the shared navigation, breadcrumbs and root-page templates, so crawlers stop recording `/index.html` as a duplicate.
+- Publish video `uploadDate` values as the start of the recorded UTC upload day with an explicit `+00:00` offset; the visible date is unchanged.
+- Link the Blake publication pathway from Start Here, the art gallery and every work on the pathway, and add a redirect stub from the pre-site store address `store/p1/Complexity.html` to the *Complexity* artwork page.
+- See [issue 85](https://github.com/docxology/docxology/issues/85) for the remaining editorial items.
+
 ## 2026-11-19 — Search Console follow-up
 
 - Add redirect stubs for the retired duplicate work keys 049 (ATLAS) and 193 (Template/Reproducible), which Search Console reported as live 404s. Both identifiers stay retired and lead to their kept records, works 136 and 001.

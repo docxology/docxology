@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -355,3 +356,25 @@ def test_transcript_from_vtt_cleans_timestamps_and_duplicate_partials():
     assert "<" not in text
     assert "-->" not in text
     assert text == "active inference model"
+
+
+def test_related_pages_omit_per_video_title_search():
+    video = sample_video()
+    video["topics"] = build_video_pages.infer_topics(video)
+    pages = build_video_pages.related_pages(video)
+    assert all(page["label"] != "Site search" for page in pages)
+    title_query = build_video_pages.quote_plus(video["title"])
+    assert all(title_query not in page["url"] for page in pages)
+
+
+def test_rendered_search_links_are_nofollow_and_upload_date_has_timezone():
+    video = sample_video()
+    video["topics"] = build_video_pages.infer_topics(video)
+    video["related_pages"] = build_video_pages.related_pages(video)
+    video["related_works"] = []
+    html = build_video_pages.render_video_page(video, transcript="")
+    for match in re.finditer(r'<a href="\.\./search\.html\?[^"]*"([^>]*)>', html):
+        assert 'rel="nofollow"' in match.group(1)
+    assert '"uploadDate": "2026-06-01T00:00:00+00:00"' in html
+    assert build_video_pages.upload_datetime("2026-06-01") == "2026-06-01T00:00:00+00:00"
+    assert build_video_pages.upload_datetime("") == ""

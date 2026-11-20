@@ -326,6 +326,7 @@ ARTIFACTS = [
             "works/Friedman2026LiteratureReviewArchitectureActive110.html",
             "works/Friedman2023ATLASQuestionOrientedApproach049.html",
             "works/Friedman2026TemplateApproachReproducibleGenerative193.html",
+            "store/p1/Complexity.html",
         ],
         "sources": [
             "code/src/redirect_stubs.py",

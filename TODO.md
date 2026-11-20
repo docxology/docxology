@@ -222,15 +222,13 @@ Recurring checks below are operating obligations, not unfinished feature work.
   current sitemap remains on the apex property; the retired image sitemap was
   removed from the `www` property. Open actions
   ([issue 85](https://github.com/docxology/docxology/issues/85)):
-  - After deployment, confirm the two retired-key work stubs (049, 193) return
-    200 live, then submit **Validate fix** for the 404 bucket. The three pruned
-    QA manifests are accepted permanent 404s.
-  - Stop emitting followable per-item `search.html?q=` (video pages) and
-    `collections.html?add=` (work pages) links; keep `robots.txt` open.
-  - Link the homepage as `/` rather than `index.html` in shared navigation.
-  - Emit timezone-qualified `uploadDate` values in video JSON-LD.
-  - Add internal links to `blake-pathway.html` and the newest works; enrich
-    thin work pages from their paper folders.
+  - Submit **Validate fix** for the 404 bucket once the retired-key work stubs
+    (049, 193) are confirmed live. The three pruned QA manifests are accepted
+    permanent 404s.
+  - Editorial: about 20 work pages without in-repository full text have fewer
+    than 350 words; enrich them only from acquired, reviewed sources. Decide
+    whether domain pages should surface the newest catalogue additions (their
+    "Selected Works" order currently favours lower identifiers within a year).
   - Continue selective **Request indexing** for indexable canonical work and
     video pages, spread across days for the quota; never the noindex `videos/`
     index or redirect stubs. Recheck Page indexing weekly and retain the
