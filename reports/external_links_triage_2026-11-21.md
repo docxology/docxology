@@ -1,0 +1,123 @@
+# External Link Triage
+
+Scoped network-link triage for public-facing repository hubs.
+
+- Source report: `reports/external_links_2026-11-21.json`
+- Checked URLs: 1077
+- OK: 742
+- Warnings: 335
+
+## Categories
+
+| Category | Count | Meaning |
+| --- | ---: | --- |
+| `bot-protected-or-rate-limited` | 330 | Likely blocks automated checks; verify manually before replacing. |
+| `connection-failure` | 1 | Could not connect during this run. |
+| `ok` | 742 | Returned a 2xx/3xx response. |
+| `timeout` | 2 | Timed out under the bounded checker timeout. |
+| `upstream-transient` | 2 | Server-side outage or temporary upstream failure. |
+
+## bot-protected-or-rate-limited
+
+| Status | URL | Sources |
+| ---: | --- | --- |
+| 403 | <https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind> | README.md, index.html, pages/PROFILE.md |
+| 403 | <https://doi.org/10.1002/asi.24900> | cognitive-security.html, cognitive-security.html, domain-cognitive-security.html |
+| 403 | <https://doi.org/10.1002/ece3.70063> | domain-entomology.html, domain-entomology.html, pages/BIBLIOGRAPHY.md |
+| 403 | <https://doi.org/10.1093/molbev/msu292> | domain-biomedicine.html, domain-biomedicine.html, pages/BIBLIOGRAPHY.md |
+| 403 | <https://doi.org/10.1098/rspb.2016.0841> | insect-cognition.html, insect-cognition.html, pages/BIBLIOGRAPHY.md |
+| 403 | <https://doi.org/10.1111/mec.13964> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 403 | <https://doi.org/10.1126/science.aag1520> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 403 | <https://doi.org/10.1126/science.abg0904> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 403 | <https://doi.org/10.1146/annurev-neuro-070815-013927> | domain-entomology.html, domain-entomology.html, pages/BIBLIOGRAPHY.md |
+| 403 | <https://doi.org/10.3109/09553002.2016.1144941> | domain-biomedicine.html, domain-biomedicine.html, pages/BIBLIOGRAPHY.md |
+| 403 | <https://doi.org/10.3390/arts7030039> | domain-art-synergetics.html, domain-art-synergetics.html, pages/BIBLIOGRAPHY.md |
+| 403 | <https://doi.org/10.3390/e25070964> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
+| 403 | <https://doi.org/10.3390/e26040303> | domain-active-inference.html, domain-active-inference.html, insect-cognition.html |
+| 403 | <https://doi.org/10.3390/e27050459> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.19695259> | cognitive-security.html, cognitive-security.html, neurosymbolic-ai.html |
+| 429 | <https://doi.org/10.5281/zenodo.20144983> | blake-pathway.html, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
+| 429 | <https://doi.org/10.5281/zenodo.20286170> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20286171> | updates.html |
+| 429 | <https://doi.org/10.5281/zenodo.20286477> | domain-biomedicine.html, domain-computational.html, domain-presentations-media.html |
+| 429 | <https://doi.org/10.5281/zenodo.20286478> | pages/SOFTWARE.md, software.html, updates.html |
+| 429 | <https://doi.org/10.5281/zenodo.20396328> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20417016> | neurosymbolic-ai.html, neurosymbolic-ai.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20417021> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20417104> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20417136> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20418904> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20419007> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20420556> | computational-entomology.html, computational-entomology.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20450880> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20450970> | pages/SOFTWARE.md, software.html, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20453879> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20469500> | discovery.html, updates.html |
+| 429 | <https://doi.org/10.5281/zenodo.20482025> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20482026> | pages/SOFTWARE.md, software.html, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20498699> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20533125> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20533669> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20533675> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20584820> | pages/DISCOVERY.md, pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20614908> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20693216> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20705350> | computational-entomology.html, computational-entomology.html, neurosymbolic-ai.html |
+| 429 | <https://doi.org/10.5281/zenodo.20705351> | pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20732274> | neurosymbolic-ai.html, neurosymbolic-ai.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20747834> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20749817> | pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20786638> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20789899> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20804585> | pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20834846> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20931955> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20931964> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20976824> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21047573> | blake-pathway.html, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
+| 429 | <https://doi.org/10.5281/zenodo.21074926> | pages/SOFTWARE.md, software.html, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21083779> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21086292> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21086548> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21137276> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21176000> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21227869> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, pages/SOFTWARE.md |
+| 429 | <https://doi.org/10.5281/zenodo.21281509> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21298883> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.21298885> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21298888> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21298890> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21298892> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.21298894> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.21316510> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21330636> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21388456> | blake-pathway.html, domain-art-synergetics.html, domain-art-synergetics.html |
+| 429 | <https://doi.org/10.5281/zenodo.21418687> | pages/SOFTWARE.md, software.html, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21418782> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21419693> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21513254> | domain-computational.html, pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21513316> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.21513385> | pages/SOFTWARE.md, software.html, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21513392> | domain-cognitive-security.html, pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21513412> | domain-computational.html, pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.21695160> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+
+## connection-failure
+
+| Status | URL | Sources |
+| ---: | --- | --- |
+| 0 | <https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman> | pages/LINKS.md |
+
+## timeout
+
+| Status | URL | Sources |
+| ---: | --- | --- |
+| 0 | <https://www.christies.com/en/lot/lot-6337619> | art.html, media.html, pages/EVIDENCE.md |
+| 0 | <https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd> | pages/EVIDENCE.md, pages/EVIDENCE.md |
+
+## upstream-transient
+
+| Status | URL | Sources |
+| ---: | --- | --- |
+| 503 | <https://dfri.people.stanford.edu/> | pages/LINKS.md |
+| 503 | <https://troncale.sched.com/> | domain-presentations-media.html |

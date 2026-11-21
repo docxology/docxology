@@ -58,3 +58,43 @@ def test_publication_skill_audit_reports_contract_errors(tmp_path):
     assert any("legacy GitHub Pages host" in error for error in errors)
     assert any("tags must be a JSON list" in error for error in errors)
     assert any("missing ## Instructions section" in error for error in errors)
+
+
+def test_publication_skill_audit_checks_only_explicit_citation_dois(tmp_path):
+    folder = "papers/2026_Example"
+    canonical = "10.5281/zenodo.5678"
+    artifact = "10.5281/zenodo.1234"
+    (tmp_path / "data").mkdir()
+    (tmp_path / folder).mkdir(parents=True)
+    (tmp_path / "data/works.json").write_text(
+        json.dumps({"works": [{"docs_path": folder + "/", "doi": canonical}]}),
+        encoding="utf-8",
+    )
+    skill = tmp_path / folder / "SKILL.md"
+    content = (
+        f'---\nname: example\ndescription: Example paper\ntags: ["example"]\n'
+        f'doi: "https://doi.org/{canonical.upper()}"\n'
+        f'artifact_doi: "{artifact}"\n---\n\n'
+        f"## Instructions\n\n1. Ground citations in DOI `{canonical}`.\n\n"
+        f"## Historical source\n\nEarlier edition: https://doi.org/{artifact}.\n"
+    )
+    skill.write_text(content, encoding="utf-8")
+    assert collect_skill_errors(tmp_path) == []
+
+    skill.write_text(
+        content.replace(f"`{canonical}`", f"`{artifact}`"),
+        encoding="utf-8",
+    )
+    assert collect_skill_errors(tmp_path) == [
+        f"{folder}/SKILL.md: citation DOI {artifact!r} differs from data/works.json "
+        f"({canonical})"
+    ]
+
+    skill.write_text(
+        content.replace(canonical.upper(), artifact),
+        encoding="utf-8",
+    )
+    assert collect_skill_errors(tmp_path) == [
+        f"{folder}/SKILL.md: citation DOI {artifact!r} differs from data/works.json "
+        f"({canonical})"
+    ]

@@ -2,8 +2,9 @@
 """Validate publication SKILL.md files for agent-facing operability.
 
 Cross-checks `papers/*/SKILL.md` against `data/works.json` docs_path references
-(missing or unreferenced folders), bounds description length, and rejects
-legacy-host URLs. `--check` runs inside `validate_repo.py`.
+(missing or unreferenced folders), checks explicit citation DOIs, bounds
+description length, and rejects legacy-host URLs. `--check` runs inside
+`validate_repo.py`.
 """
 
 from __future__ import annotations
@@ -17,6 +18,15 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parents[2]
 LEGACY_HOST = "docxology.github.io/docxology"
 MAX_DESCRIPTION_CHARS = 1024
+INSTRUCTIONS = re.compile(
+    r"^##[ \t]+Instructions[ \t]*(?:\n|\Z)(.*?)(?=^##[ \t]|\Z)",
+    re.MULTILINE | re.DOTALL,
+)
+CITATION_INSTRUCTION = re.compile(
+    r"^\d+\.[ \t]+(?:Reference the DOI for citation:|Ground citations in DOI)"
+    r"[ \t]+`([^`\n]+)`",
+    re.MULTILINE,
+)
 
 
 def _load_works(repo_root: Path) -> list[dict[str, Any]]:
@@ -24,9 +34,9 @@ def _load_works(repo_root: Path) -> list[dict[str, Any]]:
     return json.loads(path.read_text(encoding="utf-8"))["works"]
 
 
-def _doc_paths(repo_root: Path) -> set[str]:
+def _catalog_dois(repo_root: Path) -> dict[str, str]:
     return {
-        str(work.get("docs_path") or "").rstrip("/")
+        str(work["docs_path"]).rstrip("/"): str(work.get("doi") or "")
         for work in _load_works(repo_root)
         if str(work.get("docs_path") or "").strip()
     }
@@ -63,6 +73,15 @@ def _unquote(value: str) -> str:
     return value
 
 
+def _doi_identifier(value: str) -> str:
+    return re.sub(
+        r"^(?:https?://(?:dx\.)?doi\.org/|doi:[ \t]*)",
+        "",
+        _unquote(value).strip(),
+        flags=re.IGNORECASE,
+    ).casefold()
+
+
 def _validate_tags(raw: str) -> str | None:
     try:
         parsed = json.loads(raw)
@@ -78,7 +97,8 @@ def _validate_tags(raw: str) -> str | None:
 
 def collect_skill_errors(repo_root: Path = REPO_ROOT) -> list[str]:
     errors: list[str] = []
-    docs = _doc_paths(repo_root)
+    catalog_dois = _catalog_dois(repo_root)
+    docs = catalog_dois.keys()
     skills = _skill_dirs(repo_root)
 
     for missing in sorted(docs - skills):
@@ -112,8 +132,23 @@ def collect_skill_errors(repo_root: Path = REPO_ROOT) -> list[str]:
             tag_error = _validate_tags(fields["tags"])
             if tag_error:
                 errors.append(f"{rel}: {tag_error}")
-        if not re.search(r"^##\s+Instructions\s*$", text, re.MULTILINE):
+        body = text.split("\n---\n", 1)[1]
+        instructions = INSTRUCTIONS.search(body)
+        citation_dois = set()
+        if instructions is None:
             errors.append(f"{rel}: missing ## Instructions section")
+        else:
+            citation_dois.update(CITATION_INSTRUCTION.findall(instructions.group(1)))
+        if fields.get("doi"):
+            citation_dois.add(fields["doi"])
+
+        expected = _doi_identifier(catalog_dois[folder])
+        for declared in sorted({_doi_identifier(doi) for doi in citation_dois}):
+            if declared != expected:
+                errors.append(
+                    f"{rel}: citation DOI {declared!r} differs from data/works.json "
+                    f"({expected or 'no canonical DOI'})"
+                )
     return errors
 
 

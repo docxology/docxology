@@ -228,7 +228,7 @@ def test_display_author_name_inverts_family_given():
 def test_skill_prefers_curated_abstract_including_explicit_none(abstract):
     metadata = {"abstract": abstract, "description": "Incorrect seed description."}
     skill = regenerate_docs.generate_skill("2026_Example", metadata)
-    expected = abstract or regenerate_docs.NO_ABSTRACT_NOTE
+    expected = abstract or "Use this guide to cite or inspect Example."
     assert f'description: "{expected}"' in skill
     assert "Incorrect seed description" not in skill
 

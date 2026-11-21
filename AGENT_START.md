@@ -4,8 +4,10 @@ This repository is the public research, software, citation, evidence, and websit
 
 ## Inspect maintenance commands
 
-`uv run python3 code/orchestrators/agent.py status --json` observes local
-prerequisites; `plan --json` previews the authoritative ordered write/check
+After [setting up the locked environment](docs/operations/development.md#configuration-ownership),
+`uv run --no-sync python3 code/orchestrators/agent.py status --json` observes local
+prerequisites. `uv run --no-sync python3 code/orchestrators/agent.py plan --json`
+previews the authoritative ordered write/check
 commands and manual/network exclusions. Neither executes those commands nor
 certifies validation or deployment. Use `plan --step <id> --json` to inspect one
 step. See the [interface contract](docs/operations/agent-interface.md).
@@ -45,17 +47,18 @@ step. See the [interface contract](docs/operations/agent-interface.md).
 | Audit publication skills | [`papers/`](papers/), [`data/works.json`](data/works.json) | `uv run python3 code/orchestrators/audit_publication_skills.py --check` |
 | Refresh generated files | [`GENERATED.md`](GENERATED.md) | `uv run python3 code/orchestrators/regenerate_all.py --validate`; rerun as a byte-stability assurance |
 | Google Search Console follow-up | [`docs/seo/gsc-followup.md`](docs/seo/gsc-followup.md), [`data/gsc-followup-checklist.json`](data/gsc-followup-checklist.json) | `uv run python3 code/orchestrators/gsc_followup_preflight.py` |
-| Check deployed site health | latest `reports/live_site_verification_*.json` | `uv run python3 code/orchestrators/verify_live_site.py` |
+| Refresh the live-site observation | [Live verification](docs/operations/live-verification.md) | `uv run --no-sync python3 code/orchestrators/verify_live_site.py` writes a dated maintenance report. |
+| Verify a specific Pages deployment | [Live verification](docs/operations/live-verification.md) | From the clean deployed checkout, use `verify_live_site.py` with `--expected-commit`, the Pages `--deployment-run-id`, and `--output` for a fresh receipt. |
 | Verify a deployed candidate's bytes | [`docs/operations/github-pages-artifact.md`](docs/operations/github-pages-artifact.md) | `uv run python3 code/orchestrators/verify_deployed_artifact.py --expected-commit <full-HEAD-SHA> --output /tmp/deployment-acceptance.json`; receipt is targeted technical acceptance, separate from full release attestation |
 | Classify repository inventory | [`docs/operations/repository-classification.md`](docs/operations/repository-classification.md) | `uv run python3 code/orchestrators/classify_repositories.py --check` |
 | Refresh evidence and coverage | [`docs/operations/evidence-refresh.md`](docs/operations/evidence-refresh.md) | latest `reports/public_source_*.json`, `reports/source_coverage_*.json` |
 | Run accessibility and visual QA | [`docs/operations/accessibility-qa.md`](docs/operations/accessibility-qa.md) | `uv run python3 code/orchestrators/accessibility_audit.py --check`; use the `browser-qa` extra for dynamic commands |
 | Check Pages artifact size | [`docs/operations/github-pages-artifact.md`](docs/operations/github-pages-artifact.md) | `uv run python3 code/orchestrators/build_pages_artifact.py --output /tmp/docxology-pages --check-size` |
-| Run browser behavior QA | [`code/orchestrators/browser_qa.py`](code/orchestrators/browser_qa.py), latest `reports/browser-qa/` | `uv sync --extra browser-qa`, `uv run --extra browser-qa playwright install chromium`, then `uv run --extra browser-qa python3 code/orchestrators/browser_qa.py` and `--check` |
+| Run browser behavior QA | [Browser and Lighthouse checks](docs/operations/site-runtime.md#declared-browser-and-lighthouse-checks) | Follow the locked setup and run the rendered checks. Browser reports are under `reports/browser-qa/`. |
 | Check release integrity | [`data/release-integrity.json`](data/release-integrity.json), [`data/pages-artifact-manifest.json`](data/pages-artifact-manifest.json) | `uv run python3 code/orchestrators/build_release_integrity.py --check`; require a deployed release with `--require-deployed` |
 | Refresh public-source inventory | latest `reports/public_source_inventory_*.json` | `uv run python3 code/orchestrators/refresh_public_source_inventory.py` |
 | Triage external links | latest dated report under `reports/` via the [GENERATED.md](GENERATED.md) triage row | `uv run python3 code/orchestrators/check_external_links.py`, then `uv run python3 code/orchestrators/build_external_link_triage.py` |
-| Extract paper full text + images | [`papers/AGENTS.md`](papers/AGENTS.md), [`code/orchestrators/extract_paper_texts.py`](code/orchestrators/extract_paper_texts.py) | `uv sync --extra pdf-extraction`, then `uv run --extra pdf-extraction python3 code/orchestrators/extract_paper_texts.py --only <folder>`; add `--force` only for an intended source-bound re-extraction (base `pypdf` remains the text fallback) |
+| Extract paper full text + images | [`papers/AGENTS.md`](papers/AGENTS.md), [`code/orchestrators/extract_paper_texts.py`](code/orchestrators/extract_paper_texts.py) | `uv sync --locked --extra pdf-extraction`, then `uv run --no-sync python3 code/orchestrators/extract_paper_texts.py --only <folder>`; add `--force` only for an intended source-bound re-extraction (base `pypdf` remains the text fallback) |
 | Synchronize paper CITATION.cff | [`papers/`](papers/), [`code/orchestrators/generate_citation_cff.py`](code/orchestrators/generate_citation_cff.py) | `uv run python3 code/orchestrators/generate_citation_cff.py --apply`, then `--check`; curated citation identity owns DOI roles and registry-verified title/authors, while other fields are preserved |
 | Validate the repository manuscript | [`docs/manuscript/README.md`](docs/manuscript/README.md), [`MANUSCRIPT_STATUS.md`](docs/manuscript/MANUSCRIPT_STATUS.md) | `uv run python3 code/orchestrators/validate_manuscript.py`; `--json` records structural findings, not rendering or publication readiness |
 | Deploy SEO + security tags | [`*.html`](.), [`code/orchestrators/deploy_seo_security.py`](code/orchestrators/deploy_seo_security.py) | `uv run python3 code/orchestrators/deploy_seo_security.py` (idempotent — only adds missing CSP, rel-me, hreflang) |
@@ -85,11 +88,9 @@ see the do-not-skip list in
 - Prefer existing versioned Zenodo archives for new primary PDF editions, keeping metadata, pages, available extracted text, and previews here. Record `remote_primary_pdf` and independent `source_evidence` per the [hosting policy](docs/operations/github-pages-artifact.md#primary-pdf-hosting-and-source-custody); preserve all existing local PDFs and URLs. A declaration does not verify remote bytes or authorize migration, deletion, a new repository, or a budget change.
 - Preserve archived PDFs and literal `full_text.md` source extractions during directory/link maintenance. A replacement extraction requires the identified source document, its hash, and checks of affected quotations; PDF presence or a matching hash alone does not establish correct extraction or scientific replication. When the selected primary is remote, keep older local extraction provenance explicit.
 - Repository-methods prose in `docs/manuscript/` describes this index system. It is separate from the publications archived in `papers/`; local manuscript validation does not grant publication status to either.
-- After `gh pr merge --delete-branch`, `gh` switches the checkout to the
-  default branch — commit on a work branch, never on local `main` (2026-09-08:
-  two commits landed on local main mid-session and had to be moved to a
-  branch before pushing). Create the next work branch *before* merging, or
-  `git checkout <work-branch>` immediately after the merge returns.
+- Follow the [landing workflow](docs/operations/settle.md) for integration.
+  Confirm the active work branch after merging or switching checkouts and before
+  staging or committing.
 
 ## Validation commands
 

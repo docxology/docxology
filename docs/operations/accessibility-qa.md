@@ -4,13 +4,13 @@ Run static checks after any HTML/CSS/JavaScript change and dynamic checks after
 interactive-layer changes:
 
 ```bash
-uv run python3 code/orchestrators/accessibility_audit.py --check
 uv sync --locked --extra browser-qa
-uv run --extra browser-qa playwright install chromium
-uv run --extra browser-qa python3 code/orchestrators/browser_smoke.py
-uv run --extra browser-qa python3 code/orchestrators/browser_qa.py
-uv run --extra browser-qa python3 code/orchestrators/browser_qa.py --check
-uv run --extra browser-qa python3 code/orchestrators/visual_qa.py
+uv run --no-sync python3 code/orchestrators/accessibility_audit.py --check
+uv run --no-sync playwright install chromium
+uv run --no-sync python3 code/orchestrators/browser_smoke.py
+uv run --no-sync python3 code/orchestrators/browser_qa.py
+uv run --no-sync python3 code/orchestrators/browser_qa.py --check
+uv run --no-sync python3 code/orchestrators/visual_qa.py
 ```
 
 The progressive suite covers no-JavaScript fallbacks, keyboard and Escape
@@ -48,9 +48,9 @@ review record. Capture first, inspect those exact post-deploy PNGs, then record
 the review without recapturing them:
 
 ```bash
-uv run --extra browser-qa python3 code/orchestrators/visual_qa.py
+uv run --no-sync python3 code/orchestrators/visual_qa.py
 # Inspect reports/visual-qa/<date>/*.png.
-uv run --extra browser-qa python3 code/orchestrators/visual_qa.py \
+uv run --no-sync python3 code/orchestrators/visual_qa.py \
   --approve-existing --reviewed-by "Reviewer name"
 ```
 

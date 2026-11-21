@@ -8,6 +8,11 @@
   [`docs/operations/report-retention.md`](report-retention.md),
   `data/report-retention.json`
 
+Use the [current asset strategy](#current-asset-strategy-2026-11-07) and
+[Pages artifact policy](github-pages-artifact.md) for the active budgets and review
+criteria. The sections before the current strategy preserve the earlier
+measurements, decisions, and thresholds.
+
 ## Context
 
 The canonical repository includes paper PDFs, extracted paper figures, and
@@ -83,12 +88,11 @@ genuinely superseded sets (see the report-retention appendix).
 
 ## Triggers for revisiting Option A (self-hosted art thumbnails)
 
-Revisit Option A when **any** of the following becomes true:
+The original decision identified these triggers for reviewing Option A:
 
 1. **Artifact size trigger:** the Pages artifact is projected at more than
-   880 MiB in a release check (`build_pages_artifact.py --check-size`), i.e.
-   the review-warning band is reached again (the band moved 850 → 880 MiB in
-   the 2026-09-11 budget review below).
+   880 MiB in a release check (`build_pages_artifact.py --check-size`), the
+   review-warning band adopted in the 2026-09-11 budget review below.
 2. **Flickr dependency trigger:** Flickr changes its hotlinking behavior or
    terms of service such that `live.staticflickr.com` thumbnails become
    unreliable, rate-limited, or disallowed for this use.
@@ -248,7 +252,8 @@ against the review gate while it still carried both pairing reports. The
 7,266,403-byte November 6 observation was retained in Pages by a stale
 current-counts link copied into the agent index. The November 6 evidence
 remains in the repository, with immutable archive links from the review and
-paper evidence. Current-facing reports use the latest reviewed, tracked source evidence. The current projection is recorded in the
+paper evidence. Current-facing reports use the latest reviewed, tracked source
+evidence. The current projection is recorded in the
 [Pages manifest](../../data/pages-artifact-manifest.json).
 
 For new papers and editions, use an existing reviewed versioned archive as
