@@ -1,7 +1,7 @@
 # AGENTS.md — Papers Directory
 
 **Directory**: [papers/](.)
-**Purpose**: Per-paper documentation folders for bibliography entries with in-tree README.md, AGENTS.md, and Claude Code-compatible SKILL.md files.
+**Purpose**: Per-paper documentation folders for bibliography entries with in-tree README.md, AGENTS.md, and repository-local SKILL.md guides.
 
 ---
 
@@ -10,7 +10,7 @@
 ### 📖 ARCHIVIST
 
 - Maintains the directory index in [README.md](README.md)
-- Tracks PDF availability using the **PDF** column in the [README](README.md) index (per-folder ✅/❌)
+- Records local PDF availability and reviewed remote primary PDF links in the [README](README.md) index
 - Cross-references with [BIBLIOGRAPHY.md](../pages/BIBLIOGRAPHY.md) entries
 - Manages [paper_metadata.json](paper_metadata.json) with structured metadata for all paper folders; current folder/export counts live in [`../reports/current_counts.md`](../reports/current_counts.md)
 
@@ -22,9 +22,8 @@
 
 ### 🎓 EDUCATOR
 
-- Generates Claude Code-compatible SKILL.md for each paper
-- Ensures YAML frontmatter with `name`, `description`, `tags`, `domain`, `citation`, and optional `doi`
-- Populates `## Context`, `## Methods`, `## Key Findings`, `## Related Works`, `## Validation`, `## Prerequisites`, and `## Instructions` sections
+- Keeps the per-paper guides aligned with their bibliographic sources and reported findings.
+- Uses the renderer for manifest-owned guides and reviews edits to hand-authored guides in place.
 - Creates learning pathways across the 8 research domains
 
 ### 🔗 INTEGRATOR
@@ -42,7 +41,7 @@
 
 | Script | Purpose |
 |--------|---------|
-| [regenerate_docs.py](../code/orchestrators/regenerate_docs.py) | Rebuild README.md, AGENTS.md, and SKILL.md from metadata |
+| [regenerate_docs.py](../code/orchestrators/regenerate_docs.py) | Check or rebuild manifest-owned README.md, AGENTS.md, and SKILL.md from metadata |
 | [sync_publications_html.py](../code/orchestrators/sync_publications_html.py) | Rebuild `publications.html` head meta and `data/publications-ld.json` JSON-LD **mainEntity** from the unified bibliography table (`pages/BIBLIOGRAPHY.md`); run after adds/reorders in that table |
 | [../code/orchestrators/sync_paired_publications.py](../code/orchestrators/sync_paired_publications.py) | Dry-run or apply strong GitHub release + Zenodo record pairs using the runbook in [`docs/operations/publication-sync.md`](../docs/operations/publication-sync.md) |
 
@@ -56,28 +55,16 @@ Keep newer extractions when they supersede an older version. Source-custody
 receipts distinguish exact byte identity, sampled PDF checks, and quotation
 matching from a complete independent extraction or research replication.
 
-Universal baseline (every paper folder, regardless of when it was created):
+For every indexed paper folder, verify README.md, AGENTS.md, and SKILL.md. Run
+[`audit_publication_skills.py --check`](../code/orchestrators/audit_publication_skills.py)
+from the repository root to check coverage, the `name`, `description`, and
+`tags` frontmatter fields, and the Instructions section.
 
-| Check | Status |
-|-------|--------|
-| README.md present | required per folder; current coverage is generated in [`../reports/current_counts.md`](../reports/current_counts.md) |
-| AGENTS.md present | required per folder |
-| SKILL.md present | required per folder |
-| SKILL.md YAML frontmatter (name, description, tags, domain, citation) | required per folder |
-| SKILL.md `## Context` section | required |
-| SKILL.md `## Methods` section | required |
-| SKILL.md `## Key Findings` section | required |
-| SKILL.md `## Related Works` section | required |
-| SKILL.md `## Validation` section | required |
-| SKILL.md `## Prerequisites` section | required |
-| SKILL.md `## Instructions` section | required |
-
-Additional files required
-
-| Check | Status |
-|-------|--------|
-| `metadata.json` present | required for pipeline-managed folders; backfilled from the live Zenodo API for every pre-pipeline folder with a Zenodo DOI (2026-06-30). The remaining gap is folders whose canonical record is a non-Zenodo DOI (journal article, arXiv, OSF) — these never have a Zenodo-shaped `metadata.json`/`CITATION.cff` to backfill. |
-| `CITATION.cff` present | required for pipeline-managed folders; same scope and backfill status as `metadata.json` |
+The [paper documentation manifest](generated-documents.json)
+determines which guides the renderer owns. Managed guides use the template’s
+additional citation and domain metadata and standard sections. Reviewed
+historical guides may have a different structure. Pipeline-managed folders
+also carry `metadata.json` and `CITATION.cff` for citation and source tracking.
 
 ---
 

@@ -39,7 +39,7 @@ No paper-specific findings have been summarized yet; see the abstract and the fu
 Verification points for this work:
 
 - Canonical DOI: 10.1016/j.plrev.2024.04.010
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: Not recorded
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
 
@@ -54,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.plrev.2024.04.010`
-2. Read the methods in the full text before reusing this work.
-3. Validate findings against the original PDF and metadata.
+2. Consult the published source for the methods before reusing this work.
+3. Check reported findings against the published source and metadata.

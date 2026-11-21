@@ -66,4 +66,4 @@ When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7803313`
 2. Apply methods listed in the Methods section for related analysis.
-3. Validate findings against the original PDF and metadata.
+3. Check reported findings against the published source and metadata.

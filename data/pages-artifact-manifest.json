@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T22:51:52Z",
-  "source_commit_at_generation": "48aeeca0f80e6be906ec0df6892a4a54ca13f235",
+  "generated_at": "2026-11-20T23:53:16Z",
+  "source_commit_at_generation": "30095b207ce8f3821f0fa4a954d8f0ffbb5549d9",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 966885838,
+    "source_bytes": 966863494,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 6323,
-    "artifact_bytes": 968007185
+    "artifact_bytes": 967984841
   },
   "included_files": [
     {
@@ -71,18 +71,18 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 21045,
-      "sha256": "7e63f2c0090fede6dd51bd63fce9d39407bff988cb34d85be49c5e5f962ab336"
+      "bytes": 21078,
+      "sha256": "0b63f293c4d5fe78b5bd87ddf4b2118d369a881f368110fac12374e93028e69e"
     },
     {
       "path": "AGENT_START.md",
-      "bytes": 13702,
-      "sha256": "ae253eb7d24fd0d94c8299bee1671c0c443d377b62e407bcf1f085b91727bc55"
+      "bytes": 13776,
+      "sha256": "bc5ca740892b651d87d43b1ae9ced2ba8e5c77dddac3d6c4bf21b098323ee7f9"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 167346,
-      "sha256": "c12c04ef7f02a03a9258efe55ab92f588e04c6a8a6c115fc2282eeda67907306"
+      "bytes": 167807,
+      "sha256": "0955c810c2296a816716fec7ce0e36d282433400d717197e4b8ea58fd51ffd2a"
     },
     {
       "path": "CITATION.cff",
@@ -91,8 +91,8 @@
     },
     {
       "path": "CLAUDE.md",
-      "bytes": 11623,
-      "sha256": "ea86a5ba7e71dc84eb66ac9a390de0f013ad3fd121e802c0c0ffbab6e2050f72"
+      "bytes": 11781,
+      "sha256": "51be899851374ac2cd45019932f34b540c50b017844cae4a02e2805b32979bb5"
     },
     {
       "path": "CNAME",
@@ -111,13 +111,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 34633,
-      "sha256": "71d7c20a6a122ebcc15ae6bf6a00cc1f96658e1edc6904d84a46968e0b797b23"
+      "bytes": 4267,
+      "sha256": "773e18690d793d441aac2aefcc45d185806c18064a8b91511420dfff3c34a936"
     },
     {
       "path": "SKILL.md",
-      "bytes": 5911,
-      "sha256": "ba9b60678d07aeb5d6427f8774d8f34652089789c82fea891c18a7e5d7beead1"
+      "bytes": 2379,
+      "sha256": "b415ca9561e20cbd49d46c6d10d22b6e6a8c4e4742bad2bf18c1a4d1dd71b253"
     },
     {
       "path": "TODO.md",
@@ -10151,13 +10151,13 @@
     },
     {
       "path": "code/AGENTS.md",
-      "bytes": 12121,
-      "sha256": "bb61d551fadad1a125be0b7a96d6baa11071b06fb4d0e53dd94292d170ff9654"
+      "bytes": 12131,
+      "sha256": "878531837d86f64bd235dec5e466bc94a3f096f42d7504305230cf07ef3550fd"
     },
     {
       "path": "code/README.md",
-      "bytes": 8254,
-      "sha256": "fdc1daabb85a9a1ff6287e23465280cf46d09eec7d48697a1fc88372ea5955d8"
+      "bytes": 8319,
+      "sha256": "721db763488de47e236ddaccbc302a9281ea6e11d5669707f68b58afff5955e7"
     },
     {
       "path": "code/artifacts/AGENTS.md",
@@ -10556,8 +10556,8 @@
     },
     {
       "path": "code/orchestrators/regenerate_docs.py",
-      "bytes": 65127,
-      "sha256": "2377c1b526fa310bf8f372d30b1850be8f7e8c249e4535b8bb926553ca61efbe"
+      "bytes": 65143,
+      "sha256": "d0061fb51a6bf71aa07e40ec990fcb64346cae4c193d87ad851f3dec76daa266"
     },
     {
       "path": "code/orchestrators/render_github_inventory.py",
@@ -10596,8 +10596,8 @@
     },
     {
       "path": "code/orchestrators/sync_paired_publications.py",
-      "bytes": 84510,
-      "sha256": "3409d589f1a3dde1570abd42afa496d82a964b9e29af3900e2f879f901464ec6"
+      "bytes": 84856,
+      "sha256": "2ee0a514fba2fb196077d21d9408ad039d21d6179adf07b624e66f2a1acdc22f"
     },
     {
       "path": "code/orchestrators/sync_publications_html.py",
@@ -11771,8 +11771,8 @@
     },
     {
       "path": "code/tests/test_sync_paired_publications.py",
-      "bytes": 100080,
-      "sha256": "4db2fef0194332039732eaf9133ad29d5a43583d099ac2f18c10f07865ff30e7"
+      "bytes": 100700,
+      "sha256": "89eeda2f1de6d6426369479ab2cdbd535f65edd79be9e1028352e76642266bf3"
     },
     {
       "path": "code/tests/test_sync_publications_html.py",
@@ -12281,8 +12281,8 @@
     },
     {
       "path": "docs/design/components/tts.md",
-      "bytes": 4109,
-      "sha256": "42b8949b27b2e87b17f56320cf8bebabb4e63b1d3441433c81c61ce656052b87"
+      "bytes": 4113,
+      "sha256": "28664c91d5d2d80e0cf7b28b902ead24c2a9b944284b4607faa25d6b0fd411e7"
     },
     {
       "path": "docs/design/design-system.md",
@@ -12376,8 +12376,8 @@
     },
     {
       "path": "docs/operations/AGENTS.md",
-      "bytes": 944,
-      "sha256": "9f30be63e933ba600a946982de3a15a4e98934b3c014730183667e31f7444e9e"
+      "bytes": 973,
+      "sha256": "f49bc049076cce76f6b1405cddff7973f655246c65858e9cbe5a43e147d26363"
     },
     {
       "path": "docs/operations/README.md",
@@ -12386,8 +12386,8 @@
     },
     {
       "path": "docs/operations/accessibility-qa.md",
-      "bytes": 3208,
-      "sha256": "0dd14ed2f6761489dd1f84770913fa9806a4d2c3a7b23270bec81f3b26af95ff"
+      "bytes": 3217,
+      "sha256": "7fdf040711cf73988ce45b6267442ec3f34b023919faf1de61de52440aae4320"
     },
     {
       "path": "docs/operations/agent-interface.md",
@@ -12396,8 +12396,8 @@
     },
     {
       "path": "docs/operations/asset-strategy-adr.md",
-      "bytes": 15877,
-      "sha256": "452d014cb17b52a05d6f5cab64aab1231218db60fdcf33e98d6c20f58060b860"
+      "bytes": 15873,
+      "sha256": "9a24775d36d25886a3c6052e7be311c24d8bc61067eb4f975cb7b6b0e7c5d1ce"
     },
     {
       "path": "docs/operations/backend-profiling.md",
@@ -12441,8 +12441,8 @@
     },
     {
       "path": "docs/operations/publication-sync.md",
-      "bytes": 47915,
-      "sha256": "d4b2e19220ae3aa0e8a9c4f73d736e97203ea019f52fedfbb21db2ed92935501"
+      "bytes": 48069,
+      "sha256": "b4a73c2e12cc947433108432d2669d0f1689737e54d05c8476aeccee6c838b30"
     },
     {
       "path": "docs/operations/regeneration.md",
@@ -12476,8 +12476,8 @@
     },
     {
       "path": "docs/operations/site-runtime.md",
-      "bytes": 13375,
-      "sha256": "84312e0835a888eb4d0ae1b81cf3b14cd712e22184f9bd455b86da53b3e962c3"
+      "bytes": 13384,
+      "sha256": "bbf645f0496f2b7f362270e5ed2df37dfc279dd3263c63859bc415c14ad5fc5a"
     },
     {
       "path": "docs/releases/2026-05-discovery-layer.md",
@@ -13031,8 +13031,8 @@
     },
     {
       "path": "papers/2015_CryptoJews/SKILL.md",
-      "bytes": 3372,
-      "sha256": "26127d49da8d2bdbf5dd6915ee0d8048e796347b784ad5a9b4925af2002bb8cf"
+      "bytes": 3377,
+      "sha256": "58a2a93af0479cb3025854598a7cd035230ed0e6fbcc45bbdad8f758f6a43eb2"
     },
     {
       "path": "papers/2015_CryptoJews/full_text.md",
@@ -13071,8 +13071,8 @@
     },
     {
       "path": "papers/2015_EhrlichialInfection/SKILL.md",
-      "bytes": 3934,
-      "sha256": "d9ceef1739172cbc5c72d37447180dce1ca17b26275405c660e5fe0edd126e50"
+      "bytes": 3939,
+      "sha256": "561af7beab71ea6775322c7cd1a09dbb8abc76f0c56747a835f5ea5cb9e94056"
     },
     {
       "path": "papers/2015_EhrlichialInfection/full_text.md",
@@ -13121,8 +13121,8 @@
     },
     {
       "path": "papers/2015_HoneyBeeEvolution/SKILL.md",
-      "bytes": 4218,
-      "sha256": "fdf48953972af3a681bf9adc45c705745c6dee9650670c5fac4eb01e3b6a63c4"
+      "bytes": 4223,
+      "sha256": "ad9dcfde1776c8f469d9c39880f17cad69bad18ba1f9e1bee946fc8992dcd96b"
     },
     {
       "path": "papers/2015_HoneyBeeEvolution/full_text.md",
@@ -13171,8 +13171,8 @@
     },
     {
       "path": "papers/2016_AntGenetics/SKILL.md",
-      "bytes": 3420,
-      "sha256": "14805ab3c429bc0495d0819ac17dba4a4ff08d923b039f298bb3c7acb48fae8f"
+      "bytes": 3425,
+      "sha256": "b7bee9d2be75a3e25f4aa8d45f6fc4a2cf9c8d2fb6aa34ea3bd23088ca3d9b62"
     },
     {
       "path": "papers/2016_AntGenetics/full_text.md",
@@ -13221,8 +13221,8 @@
     },
     {
       "path": "papers/2016_ForagingGene/SKILL.md",
-      "bytes": 4072,
-      "sha256": "8bb4face88774e3dd0b1281537037776c4b573eebbcaac42cdf6aae1b1c5252e"
+      "bytes": 4077,
+      "sha256": "7284cbc255cb75e61047b3291082d80a247b8ccd3e92496bd7b76cb58b382ef4"
     },
     {
       "path": "papers/2016_ForagingGene/full_text.md",
@@ -13271,8 +13271,8 @@
     },
     {
       "path": "papers/2016_NuclearStructure/SKILL.md",
-      "bytes": 3786,
-      "sha256": "59e57a8b3fb0515366af1ce7004312de38a246a5f09593963a588c63cda56e2d"
+      "bytes": 3791,
+      "sha256": "86fd327aaab811cb85d78e2b88652ac8690504b923cd5601d06b641afa82560b"
     },
     {
       "path": "papers/2016_NuclearStructure/full_text.md",
@@ -13321,8 +13321,8 @@
     },
     {
       "path": "papers/2017_MutAnts/SKILL.md",
-      "bytes": 2909,
-      "sha256": "3e36297df2cb43fc1b96314a1e0746e324400336ebcf3749fa39a248cecd5eed"
+      "bytes": 2914,
+      "sha256": "c38b42c5456915cd086c525af82e0551df563265abfa112863506084bcdd8f44"
     },
     {
       "path": "papers/2017_MutAnts/full_text.md",
@@ -13371,8 +13371,8 @@
     },
     {
       "path": "papers/2017_TwoLineages/SKILL.md",
-      "bytes": 2800,
-      "sha256": "f6e62165949819df01dc917ae77169150c11d0bce7fe54cfd1446c088053d0f3"
+      "bytes": 2816,
+      "sha256": "bfc459ede549b4eaf946fc5194134fb285f00fad684af3465fbb47b0026ca90e"
     },
     {
       "path": "papers/2017_TwoLineages/full_text.md",
@@ -13421,8 +13421,8 @@
     },
     {
       "path": "papers/2018_ArgentineAnt/SKILL.md",
-      "bytes": 4038,
-      "sha256": "79ab46e648589201f8fc0fe2361233a095bf63b46e5e3946dce6451e4f16808e"
+      "bytes": 4043,
+      "sha256": "ed0c45254fffa7120a6b572dbea0876a350b8f2f1027b3b722376daf9184921e"
     },
     {
       "path": "papers/2018_ArgentineAnt/full_text.md",
@@ -13471,8 +13471,8 @@
     },
     {
       "path": "papers/2018_DopamineForaging/SKILL.md",
-      "bytes": 3966,
-      "sha256": "846164784a9096b4efa1f3727d4e36dba0a8285afbf8a02d84aebe39c7fd6615"
+      "bytes": 3976,
+      "sha256": "fa148ae9840a51c190e2e31d1cb401e4b2e70d4fbd587029b52cfe0bc1f7f566"
     },
     {
       "path": "papers/2018_DopamineForaging/full_text.md",
@@ -13511,8 +13511,8 @@
     },
     {
       "path": "papers/2018_MVEE/SKILL.md",
-      "bytes": 3676,
-      "sha256": "8e7dd72efc5ee9bc2624ee425ed9990454486101a237ec6a6b2ee8dba9fe5b1a"
+      "bytes": 3681,
+      "sha256": "428168272b92ba5baf67792631ec3200f435eebe519c3d20dfa0448d536f47a7"
     },
     {
       "path": "papers/2018_MVEE/full_text.md",
@@ -13561,8 +13561,8 @@
     },
     {
       "path": "papers/2018_PPPiP/SKILL.md",
-      "bytes": 3740,
-      "sha256": "aa016e4fedb71c8a5a11a4f10bb53fbcdab5927450e31b458e0b1c96597b2737"
+      "bytes": 3745,
+      "sha256": "7762a0659a0aae7d4bbedcce0fc27527472133568e339062de88b03ff4ae4ac0"
     },
     {
       "path": "papers/2018_PPPiP/full_text.md",
@@ -13611,8 +13611,8 @@
     },
     {
       "path": "papers/2018_WoodliceAndMen/SKILL.md",
-      "bytes": 3734,
-      "sha256": "12d9c566ce84e775327918424f9db401af4d1d0fa4c72142d97f1df956d39824"
+      "bytes": 3739,
+      "sha256": "5333e6241939c8166620ec008461c10f24dba003437f5f1b4d70a2ccbe7272c6"
     },
     {
       "path": "papers/2018_WoodliceAndMen/full_text.md",
@@ -13661,8 +13661,8 @@
     },
     {
       "path": "papers/2019_AntConsciousness/SKILL.md",
-      "bytes": 3935,
-      "sha256": "4d46958ce28229fd9f295a1d586ab0b9b3c1a1dacbe3e0565b20e20de762d579"
+      "bytes": 3940,
+      "sha256": "2a1777bf2154e6dd1a865ff543ee3eb5c91243d255a2d2b88432ae43a887bc54"
     },
     {
       "path": "papers/2019_AntConsciousness/full_text.md",
@@ -13711,8 +13711,8 @@
     },
     {
       "path": "papers/2019_DennettExplained/SKILL.md",
-      "bytes": 3115,
-      "sha256": "9d2deb3a541f2f71e03ca9b22445de991655dc2080aaef9c02e6599a1fbfeb6c"
+      "bytes": 3120,
+      "sha256": "47ba29ab807b8e552106327a1c804123347d8919c92d18e0465b4614ebbf4e67"
     },
     {
       "path": "papers/2019_DennettExplained/full_text.md",
@@ -13751,8 +13751,8 @@
     },
     {
       "path": "papers/2019_ForagerHydration/SKILL.md",
-      "bytes": 4310,
-      "sha256": "03f6c35c4c156c9f974f26f2a86e68e92586a9b8117b8a1df32ee90479a11329"
+      "bytes": 4315,
+      "sha256": "0a53ba90ce34758c5d90ec989a97e835f3e41ef309a0f2de9eb056ff5fac965f"
     },
     {
       "path": "papers/2019_ForagerHydration/full_text.md",
@@ -13801,8 +13801,8 @@
     },
     {
       "path": "papers/2019_PhDDissertation/SKILL.md",
-      "bytes": 4244,
-      "sha256": "c8a424fc36ad072fa48ed80fe429a2118383c08208b00bd5a20ec9265afe33fd"
+      "bytes": 4249,
+      "sha256": "18f1700cec0579016f15473537363622f60b29a737f0959fd1f34414e6199a54"
     },
     {
       "path": "papers/2019_PhDDissertation/full_text.md",
@@ -13841,8 +13841,8 @@
     },
     {
       "path": "papers/2020_BehaviorEngineering/SKILL.md",
-      "bytes": 4019,
-      "sha256": "70561be02595b376c6685f7b0d32431f90d71a1bbd17d1593c21681b90bc87b3"
+      "bytes": 4024,
+      "sha256": "9f965a7889905c71c994022132ed5a9fd993a21cdc077f260bd8bdae62ecf54b"
     },
     {
       "path": "papers/2020_BehaviorEngineering/full_text.md",
@@ -13891,8 +13891,8 @@
     },
     {
       "path": "papers/2020_DistributedPhysiology/SKILL.md",
-      "bytes": 3820,
-      "sha256": "008044ce2c76b30777e3e11d69fb50e5a31e5074c2288341d11bcb83a90d8ba5"
+      "bytes": 3825,
+      "sha256": "0946351302846c1895bb4086ab7a2e827665254b66400d19a1e953f7eeb13fab"
     },
     {
       "path": "papers/2020_DistributedPhysiology/full_text.md",
@@ -13941,8 +13941,8 @@
     },
     {
       "path": "papers/2020_EmergentTeams/SKILL.md",
-      "bytes": 3683,
-      "sha256": "9b5ed2d9a7e5e55b2bad377a70c9c65d719960d3976a42c8da481eb5ba268544"
+      "bytes": 3688,
+      "sha256": "33c079ab2370a59c95560e5438e47b4991969b78b89944b0eae39a0e7290341e"
     },
     {
       "path": "papers/2020_EmergentTeams/full_text.md",
@@ -13981,8 +13981,8 @@
     },
     {
       "path": "papers/2020_FacilitatorsCatechism/SKILL.md",
-      "bytes": 3652,
-      "sha256": "31af60a93c4d5ebc06c30178fe3cb9b1365197bbb013e65aae0ef52da191f077"
+      "bytes": 3657,
+      "sha256": "9aa71fa0b276b0e93b768814c939fb7697fd438b4c0ee94613a97715b672b3a2"
     },
     {
       "path": "papers/2020_FacilitatorsCatechism/full_text.md",
@@ -14031,8 +14031,8 @@
     },
     {
       "path": "papers/2020_GeneExpressionForagers/SKILL.md",
-      "bytes": 4085,
-      "sha256": "aa6a13513345644bce78fe69092ef24b015c4e5d8cdd5b6fccd1bd9303276a17"
+      "bytes": 4090,
+      "sha256": "0e90e009caa2db049dd094c3e8d99bbd3fcf4f5ce1c7f12e0bfd0dc4eb78db99"
     },
     {
       "path": "papers/2020_GeneExpressionForagers/full_text.md",
@@ -14076,8 +14076,8 @@
     },
     {
       "path": "papers/2020_GreatPreset/SKILL.md",
-      "bytes": 4009,
-      "sha256": "12acf037bd38756da0f6bfca827f2dc89ae2bd2874c45fd5a10e27e47745b498"
+      "bytes": 4014,
+      "sha256": "35261c32fcf82ff8021f3a94e747340fe9abafa35c5973f01d212c537b8a2bc9"
     },
     {
       "path": "papers/2020_GreatPreset/full_text.md",
@@ -14126,8 +14126,8 @@
     },
     {
       "path": "papers/2020_InfiniteGamesInfinite/SKILL.md",
-      "bytes": 3309,
-      "sha256": "afa25efa8b7015216c64f830228c54c5e647b103acd67f20aba168956ea92643"
+      "bytes": 3314,
+      "sha256": "76b21165c92e51e2939ccfec05a1edef6b920f45a0bd8ac003159b50a67a132d"
     },
     {
       "path": "papers/2020_InfiniteGamesInfinite/full_text.md",
@@ -14176,8 +14176,8 @@
     },
     {
       "path": "papers/2020_InnovatorsCatechism/SKILL.md",
-      "bytes": 3566,
-      "sha256": "4891a9a295b2e9e61cfc736e7b521cef8eb9db6a3b92532dbdc4a9f2effbd68d"
+      "bytes": 3571,
+      "sha256": "6f4063c759bcda92f4bc71ff17123bcc974460852ab287abef5b368f6c6bc492"
     },
     {
       "path": "papers/2020_InnovatorsCatechism/full_text.md",
@@ -14226,8 +14226,8 @@
     },
     {
       "path": "papers/2020_NeuroscienceDecision/SKILL.md",
-      "bytes": 3493,
-      "sha256": "6224f95574600a95e46ad5a037198a7385afed91c31a35e09f8836c9588be56d"
+      "bytes": 3498,
+      "sha256": "8d4e4a4d4f528c992e394792fc0542d0e962a4b2b824b4079c1ad0ea7f9679ff"
     },
     {
       "path": "papers/2020_NeuroscienceDecision/full_text.md",
@@ -14276,8 +14276,8 @@
     },
     {
       "path": "papers/2020_NeurotransmitterVariation/SKILL.md",
-      "bytes": 3672,
-      "sha256": "233f90d9a1cfe95bad492a020fffb386f3f15e2e2563adead02252715c0d600b"
+      "bytes": 3677,
+      "sha256": "5ead1c146de3f28fa3b93fcc9ed2fcf54e89d9b85a88ab8fc7f2bcf20e1a24d2"
     },
     {
       "path": "papers/2020_NeurotransmitterVariation/full_text.md",
@@ -14326,8 +14326,8 @@
     },
     {
       "path": "papers/2020_ReimaginingMaps/SKILL.md",
-      "bytes": 3795,
-      "sha256": "34948e9ea1964e01a40fd65196d8d19a18566bd1741d0d43faf115095195d610"
+      "bytes": 3800,
+      "sha256": "cc415513374b5dc3c7b881d6948ebc01816fdd795c415cc03f7c78af8fcf0275"
     },
     {
       "path": "papers/2020_ReimaginingMaps/full_text.md",
@@ -14376,8 +14376,8 @@
     },
     {
       "path": "papers/2021_ActiveInferants/SKILL.md",
-      "bytes": 3566,
-      "sha256": "6256291930739fb4bddc6973e58b2b75ca601999f35c9e585418bb95b0f87dc8"
+      "bytes": 3571,
+      "sha256": "6e86ff9d1416ec9b5b5db78e71150856e8deb1fbe959f3f71dd9877867b57329"
     },
     {
       "path": "papers/2021_ActiveInferants/full_text.md",
@@ -14426,8 +14426,8 @@
     },
     {
       "path": "papers/2021_CollaborativeWritingCatechism/SKILL.md",
-      "bytes": 2778,
-      "sha256": "ebf2a2224b2acb5e00546797af13c6c8d973898eff7f5be576ad97e4bdd74d87"
+      "bytes": 2794,
+      "sha256": "5b8bc3e6ea3e77901aa7e14d763b01d054171b5fd8cb66a2aa538415bbe42fff"
     },
     {
       "path": "papers/2021_CollaborativeWritingCatechism/full_text.md",
@@ -14476,8 +14476,8 @@
     },
     {
       "path": "papers/2021_DigitalRhetorical/SKILL.md",
-      "bytes": 3918,
-      "sha256": "18c17667a343ab9ed1ea3abfb6d0973252f0f1932407919bde84c8c80922bc2c"
+      "bytes": 3923,
+      "sha256": "4cdd77745b13d71939c4085198f4d084233e829b051d0840684cd7ebb0e84a75"
     },
     {
       "path": "papers/2021_DigitalRhetorical/full_text.md",
@@ -14526,8 +14526,8 @@
     },
     {
       "path": "papers/2021_ModelingConflict/SKILL.md",
-      "bytes": 3678,
-      "sha256": "88fc05482ae7f29f84909b994dde65d9b9a0951e635a905607768895815698ff"
+      "bytes": 3683,
+      "sha256": "328ac34cb8704368adfbb4a762dbf891d79d056c2703562f302f050a529a9517"
     },
     {
       "path": "papers/2021_ModelingConflict/full_text.md",
@@ -14571,8 +14571,8 @@
     },
     {
       "path": "papers/2021_NarrativeEcosystems/SKILL.md",
-      "bytes": 3987,
-      "sha256": "1efba79c9f63353581aa4344eee557d3b08adcfeb90cdf8bb6bcd966fb73937a"
+      "bytes": 3992,
+      "sha256": "4af356f8bd53381eb5d5df295639112b992c7a6c3f3caf6f05636ab410bdf548"
     },
     {
       "path": "papers/2021_NarrativeEcosystems/full_text.md",
@@ -14621,8 +14621,8 @@
     },
     {
       "path": "papers/2021_NarrativeInformationMgmt/SKILL.md",
-      "bytes": 3636,
-      "sha256": "fbce058bd42569d4f8b198fbc69e116d472c66b7b934027fe7d23b1a52743cb9"
+      "bytes": 3641,
+      "sha256": "247f0b6cfc89173a203b5976e45aa6bfa4e4871744765297553ae050f9d03639"
     },
     {
       "path": "papers/2021_NarrativeInformationMgmt/full_text.md",
@@ -14656,8 +14656,8 @@
     },
     {
       "path": "papers/2021_Transcript/SKILL.md",
-      "bytes": 3999,
-      "sha256": "b6c4fa77c2ec7f71853e498d64f10715de13e35dd5e59349092350c50b29eb9b"
+      "bytes": 4004,
+      "sha256": "f52cd702ce77307e2cc49e0426c56716d755eaaff1240b6cee66ac104b84e79b"
     },
     {
       "path": "papers/2021_Transcript/full_text.md",
@@ -14711,8 +14711,8 @@
     },
     {
       "path": "papers/2022_ActiveDiffusion/SKILL.md",
-      "bytes": 3208,
-      "sha256": "dceb8f74a8b6d6afbd5088fd6eafc9d88ed16b4120066455889fc83bbad93c15"
+      "bytes": 3213,
+      "sha256": "8b021b9a8ff940b5a1126df427aaa31f08b5beb45c341f4f33fd115536a82dbd"
     },
     {
       "path": "papers/2022_ActiveDiffusion/full_text.md",
@@ -14751,8 +14751,8 @@
     },
     {
       "path": "papers/2022_ActiveInferenceOntology/SKILL.md",
-      "bytes": 4537,
-      "sha256": "ab3d550e4a9648fe46a6d115669fe3e8838c53a1e6f346e7865f62c801359f0f"
+      "bytes": 4542,
+      "sha256": "5b316c070fd968e6234e12b57c0cf7aa9fee2a2778e407f97602ffd208c302bc"
     },
     {
       "path": "papers/2022_ActiveInferenceOntology/full_text.md",
@@ -14801,8 +14801,8 @@
     },
     {
       "path": "papers/2022_CanonicalNeuralNetworks/SKILL.md",
-      "bytes": 3311,
-      "sha256": "53cb80e07a3fe29b8dde5f34e7f4e5f09e45636471a53adac3894f6e1a2d5181"
+      "bytes": 3316,
+      "sha256": "b26efe3be3afcd10cccf5b986df45f14c5e8673cfaef4f02361ee95c343c6ed5"
     },
     {
       "path": "papers/2022_CanonicalNeuralNetworks/full_text.md",
@@ -14841,8 +14841,8 @@
     },
     {
       "path": "papers/2022_FreeWillSapolsky/SKILL.md",
-      "bytes": 3132,
-      "sha256": "daf64f05a33649cb41db5517848655593fed857e769e87ca8a0a0cb74a98156d"
+      "bytes": 3137,
+      "sha256": "b85c8c7d5d45e9a9efdf98832da98ad8ee95305f5bfc1d9435cb381641fa00d2"
     },
     {
       "path": "papers/2022_FreeWillSapolsky/full_text.md",
@@ -14881,8 +14881,8 @@
     },
     {
       "path": "papers/2022_HypercertEcosystems/SKILL.md",
-      "bytes": 3411,
-      "sha256": "e5dbb998e34e294f450ef487e114dbefa9458cfbb0d37502306d6e77327b527f"
+      "bytes": 3416,
+      "sha256": "1d7bdc9be045486b77f9f9be4f6d6d0c34aef47a0e4bd5c402770b688db7f8a5"
     },
     {
       "path": "papers/2022_HypercertEcosystems/full_text.md",
@@ -14916,8 +14916,8 @@
     },
     {
       "path": "papers/2022_InformationCommons/SKILL.md",
-      "bytes": 3842,
-      "sha256": "9de5336d6e8a57f018638e6baad09abefb46d889e18721e36a5ef776e49c2ce4"
+      "bytes": 3847,
+      "sha256": "cbae4742f4f970b629b4336a06c459a524f27a47514b74e1b4e92c5b7ba89ddc"
     },
     {
       "path": "papers/2022_InformationCommons/full_text.md",
@@ -14966,8 +14966,8 @@
     },
     {
       "path": "papers/2022_InteroceptionAsModeling/SKILL.md",
-      "bytes": 3378,
-      "sha256": "266b78c0ad13e730613bc8463e8eee89ef314355d3187196addea97d52cb1783"
+      "bytes": 3383,
+      "sha256": "f578a4e10558d8b15a90edad2c7e3d4ae545a604e1a80d47d838efa44c8ccc10"
     },
     {
       "path": "papers/2022_InteroceptionAsModeling/full_text.md",
@@ -15006,8 +15006,8 @@
     },
     {
       "path": "papers/2022_MirrorTest/SKILL.md",
-      "bytes": 3767,
-      "sha256": "f6709048cf3cb2d134dd546a1c8fc51943b85f896d76911032ca1f4b16848cb4"
+      "bytes": 3772,
+      "sha256": "4ccc0bc17683233ecfef15aea41849fad2076df5397a21a23d489a35b4c5d06f"
     },
     {
       "path": "papers/2022_MirrorTest/full_text.md",
@@ -15046,8 +15046,8 @@
     },
     {
       "path": "papers/2022_StigmergicAnnotation/SKILL.md",
-      "bytes": 3811,
-      "sha256": "0cf3ef078667076589b0b8ad1fca4ff9fd4997c8ccf0b67e3e4449c3892299f5"
+      "bytes": 3816,
+      "sha256": "b3ccbc18a67d8e33e6223b06840844c2c5ad95bcc2f930d7878fbb7f6da53daf"
     },
     {
       "path": "papers/2022_StigmergicAnnotation/full_text.md",
@@ -15086,8 +15086,8 @@
     },
     {
       "path": "papers/2022_SystematicLiteratureAnalysis/SKILL.md",
-      "bytes": 3855,
-      "sha256": "2f0dd6f9bb770f59debffbf600d99c395f16a08e45479e127adfacd4e6293356"
+      "bytes": 3860,
+      "sha256": "c3d401ff1e505d4805176c1ec408eb234ed0da30db73935e5e0f9fb4fb7c2683"
     },
     {
       "path": "papers/2022_SystematicLiteratureAnalysis/full_text.md",
@@ -15136,8 +15136,8 @@
     },
     {
       "path": "papers/2022_TrackingPublicSensemaking/SKILL.md",
-      "bytes": 3750,
-      "sha256": "839ebf27e87e443ffa22ec1e05230fef09cbd25a5880877b2daf9b4883a6a9f7"
+      "bytes": 3755,
+      "sha256": "0efe92ffdc8c3ee7cd2b842fda561156088cdb04c45669bd2bd53f4872b079e5"
     },
     {
       "path": "papers/2022_TrackingPublicSensemaking/full_text.md",
@@ -15186,8 +15186,8 @@
     },
     {
       "path": "papers/2022_Transcript/SKILL.md",
-      "bytes": 3766,
-      "sha256": "fe79b8e0c6d8464e40d707651bf489635ed59c96f8ef7860b44fdb9007edacee"
+      "bytes": 3771,
+      "sha256": "978b41a8254d067d410c0b09968241365316e747bb6ee3196ddf03e2c6c0dcf7"
     },
     {
       "path": "papers/2022_Transcript/full_text.md",
@@ -15236,8 +15236,8 @@
     },
     {
       "path": "papers/2022_TranscriptDiscussions/SKILL.md",
-      "bytes": 3678,
-      "sha256": "908ef587732dcf26d98e86f540abbc20099574a6efc8249298e34b2d2ad99aa6"
+      "bytes": 3683,
+      "sha256": "d3885083847b4286b599f716e80fd66744c49f6a982f54dc944ca100560749ce"
     },
     {
       "path": "papers/2022_TranscriptDiscussions/full_text.md",
@@ -15276,8 +15276,8 @@
     },
     {
       "path": "papers/2022_TrustFinder/SKILL.md",
-      "bytes": 3783,
-      "sha256": "c55fd2e99b8e407f8da5df2bb1f33bcc0c286dd9a4c1692c637bfe9a2d778609"
+      "bytes": 3788,
+      "sha256": "2c1027a41fa2459c14fd770f2416be18cca307120572cfbff16cbd98198b98a4"
     },
     {
       "path": "papers/2022_TrustFinder/full_text.md",
@@ -15326,8 +15326,8 @@
     },
     {
       "path": "papers/2022_WorkedExampleBayesian/SKILL.md",
-      "bytes": 3370,
-      "sha256": "38120fcc95f25f37643da76d811c226a818d8cb8d3379c649c63fe3d088b5e72"
+      "bytes": 3375,
+      "sha256": "319c5ca6e6c21656c20b197303b18495c0440189154de01e26ffa3dbc2290676"
     },
     {
       "path": "papers/2022_WorkedExampleBayesian/full_text.md",
@@ -15366,8 +15366,8 @@
     },
     {
       "path": "papers/2023_AIAccountability/SKILL.md",
-      "bytes": 3517,
-      "sha256": "84ede209da68ee06f11d67bdc8bbb365d0c1e31415a300f5f4ddb5805f41b5d6"
+      "bytes": 3522,
+      "sha256": "0cc350088c9d6834e677c8651c53c73f47c5bf68a52e5ac4b8c91d79779b6425"
     },
     {
       "path": "papers/2023_AIAccountability/full_text.md",
@@ -15416,8 +15416,8 @@
     },
     {
       "path": "papers/2023_AII_v1/SKILL.md",
-      "bytes": 4303,
-      "sha256": "88cd2a8e50d59d0862b7f9ccb4c53278614ff2036c750d39851748d1e8a5c216"
+      "bytes": 4308,
+      "sha256": "3e0615b28a601b313e76a8b14ca6934223aa1b7172996a93f2a93077c7c8756a"
     },
     {
       "path": "papers/2023_AII_v1/full_text.md",
@@ -15466,8 +15466,8 @@
     },
     {
       "path": "papers/2023_ATLAS2/SKILL.md",
-      "bytes": 3653,
-      "sha256": "67c31a88ea39fab7fc3215c142f8a4bd9a2b7528bccc353d619193a8eb868a05"
+      "bytes": 3658,
+      "sha256": "6b1609d318f782d2fb7224c5d66e64aa1b16a486e16b00f9b4509b28eb9c3f79"
     },
     {
       "path": "papers/2023_ATLAS2/full_text.md",
@@ -15516,8 +15516,8 @@
     },
     {
       "path": "papers/2023_AccountActiveInference/SKILL.md",
-      "bytes": 3147,
-      "sha256": "f77dd3ac5a6fc2e25f16cd2e7fb1be405f91784d262c7c3ba8bfff51961dd076"
+      "bytes": 3152,
+      "sha256": "78610b328fcef6864d769039e27731705f0d6fa9a3362275738e9ea036ab5e47"
     },
     {
       "path": "papers/2023_AccountActiveInference/full_text.md",
@@ -15556,8 +15556,8 @@
     },
     {
       "path": "papers/2023_AntsAging/SKILL.md",
-      "bytes": 3301,
-      "sha256": "b708256fccf5ea0c3e104037f8eac31aba741f5f5d403a961758d2bf2935c26c"
+      "bytes": 3306,
+      "sha256": "4d51c4a95bc8064fc1649890e20da1ac520464b82fc342b492d5f52f0f6ac5d7"
     },
     {
       "path": "papers/2023_AntsAging/full_text.md",
@@ -15606,8 +15606,8 @@
     },
     {
       "path": "papers/2023_BlakeFuller/SKILL.md",
-      "bytes": 3136,
-      "sha256": "9707199e11200d3ed0d5638c419e6c7b2ae050ede87dd88d054bae1e3117518d"
+      "bytes": 3141,
+      "sha256": "92f701b3b7db51f18237a626b2df93539f14762397c56ef2f81f82a0841e0eeb"
     },
     {
       "path": "papers/2023_BlakeFuller/full_text.md",
@@ -15656,8 +15656,8 @@
     },
     {
       "path": "papers/2023_CognitiveSovereignty/SKILL.md",
-      "bytes": 3608,
-      "sha256": "64f4ed707097c9d172fc6a6cca1f09b2d49a15edeb3b533980a2ba7cb8ae7672"
+      "bytes": 3613,
+      "sha256": "913c621aff4a97a0dbd49d25aee729671e62ce1a573ccda893b3802150cb1112"
     },
     {
       "path": "papers/2023_CognitiveSovereignty/full_text.md",
@@ -15696,8 +15696,8 @@
     },
     {
       "path": "papers/2023_DistributedScience/SKILL.md",
-      "bytes": 4029,
-      "sha256": "6697d59e2b6a0770b23a9e98553ddd5c15165557f16c28c937284eb4f03b5d70"
+      "bytes": 4034,
+      "sha256": "be7e7b75861a88f07f675ea02c444afd6ffc442c17be53da647cbf385440f231"
     },
     {
       "path": "papers/2023_DistributedScience/full_text.md",
@@ -15746,8 +15746,8 @@
     },
     {
       "path": "papers/2023_GNN/SKILL.md",
-      "bytes": 3415,
-      "sha256": "7c89540b94292c97583e1c7c744f4cf4b817d95251bcab9ff4141df005ae7711"
+      "bytes": 3420,
+      "sha256": "29e6a49a5982b984bce614c810eeb1ac3624cc4b15801caaa0e60a0232e71fd0"
     },
     {
       "path": "papers/2023_GNN/full_text.md",
@@ -15796,8 +15796,8 @@
     },
     {
       "path": "papers/2023_GenerativeResearchTeams/SKILL.md",
-      "bytes": 3994,
-      "sha256": "b63b15debe250924c42c7e274014bbd596a3cb025eb24c852b5b784f1fb58875"
+      "bytes": 3999,
+      "sha256": "0733675530c45bb0bac41163d944bc78a6e5a2550fe260a61e49f310cc502161"
     },
     {
       "path": "papers/2023_GenerativeResearchTeams/full_text.md",
@@ -15846,8 +15846,8 @@
     },
     {
       "path": "papers/2023_GuidedTourMinds/SKILL.md",
-      "bytes": 3479,
-      "sha256": "bfe5e9ba868291b50c6ccdd955cd1e6dd4a389aeb7fd61c1d9e887c3333f4dac"
+      "bytes": 3484,
+      "sha256": "4ba0d3c4dc6253c573eecc47e0f794f89b86804089f77d9b624dd36d1444f535"
     },
     {
       "path": "papers/2023_GuidedTourMinds/full_text.md",
@@ -15896,8 +15896,8 @@
     },
     {
       "path": "papers/2023_HoneyBeeGeneExpression/SKILL.md",
-      "bytes": 4169,
-      "sha256": "3cf842bac2efb32a4a79b3e8552fe7268d071a99846cf014f0991f2c401bcfbd"
+      "bytes": 4174,
+      "sha256": "0473d9116758792954110e772006324b69694f3711e035f772604baf78da0488"
     },
     {
       "path": "papers/2023_HoneyBeeGeneExpression/full_text.md",
@@ -15946,8 +15946,8 @@
     },
     {
       "path": "papers/2023_ModernNostrIndex/SKILL.md",
-      "bytes": 2939,
-      "sha256": "47eba7152f48b40e7b0ce11e84ff21e643360eeb7c416f6dd3a2bc781d8da26c"
+      "bytes": 2944,
+      "sha256": "1157f968b8a1c03db7b5510c794ecdcc91b81c4ce975da17f7a6433a737a7e38"
     },
     {
       "path": "papers/2023_ModernNostrIndex/full_text.md",
@@ -15986,8 +15986,8 @@
     },
     {
       "path": "papers/2023_NSFReporting/SKILL.md",
-      "bytes": 2728,
-      "sha256": "0f7405bc31e257c103fe6c8c28d3b71f308495a2bd2f968f047bf04f649294bf"
+      "bytes": 2744,
+      "sha256": "95d63752705b95d3e2149f2ac4e6c11993c4662a7fe7aceca4bf8b53e661f509"
     },
     {
       "path": "papers/2023_NSFReporting/full_text.md",
@@ -16026,8 +16026,8 @@
     },
     {
       "path": "papers/2023_NaturalAIBased/SKILL.md",
-      "bytes": 3635,
-      "sha256": "7476cf7ea5522d4973ce125c001a9abf5f72ef7a95c8d2305dc3959e37a74989"
+      "bytes": 3651,
+      "sha256": "932c3f57dc71374cf14c76f43716df5e13929e87ce665ef7a0b275681a2d56c2"
     },
     {
       "path": "papers/2023_NaturalAIBased/full_text.md",
@@ -16066,8 +16066,8 @@
     },
     {
       "path": "papers/2023_OpenScienceSensemaking/SKILL.md",
-      "bytes": 3690,
-      "sha256": "6c5740c56fb0cba16247549c2cc3b22ce563bc7dfa7308a2a03b1ef937be5e9a"
+      "bytes": 3695,
+      "sha256": "9d984c850eb7a5113ccb4a0b8025ac2222a42087a156d7c01bc9ca6ab067b408"
     },
     {
       "path": "papers/2023_OpenScienceSensemaking/full_text.md",
@@ -16116,8 +16116,8 @@
     },
     {
       "path": "papers/2023_P3IF/SKILL.md",
-      "bytes": 4091,
-      "sha256": "91a08733c972717bcc5529865e70ea289b6eafd7d6c093f907f5505387733664"
+      "bytes": 4096,
+      "sha256": "835c4977b2016138f8313c3a4e222442ba00965cbbac092ac1ba5fef2b71c69d"
     },
     {
       "path": "papers/2023_P3IF/full_text.md",
@@ -16166,8 +16166,8 @@
     },
     {
       "path": "papers/2023_PostdocReview/SKILL.md",
-      "bytes": 3244,
-      "sha256": "ec7ad454332fcb119eb6ca3d0162a0c345da3565e31867efbef832ec717704ff"
+      "bytes": 3249,
+      "sha256": "146986db53640ee7584569147cd9aa4d8687c66dc597e6076839aec1696b0d7b"
     },
     {
       "path": "papers/2023_PostdocReview/full_text.md",
@@ -16216,8 +16216,8 @@
     },
     {
       "path": "papers/2023_SinglePheromone/SKILL.md",
-      "bytes": 3963,
-      "sha256": "50060579f18a0cb37c4f12bfb769ae79cd319af4d97be7a751f4bd488a2a3596"
+      "bytes": 3968,
+      "sha256": "0e09d8c2d72b1f600365aa33d7582c067577d1f0741ceeea24a374164dc0f2a3"
     },
     {
       "path": "papers/2023_SinglePheromone/full_text.md",
@@ -16261,8 +16261,8 @@
     },
     {
       "path": "papers/2023_SlidesIris/SKILL.md",
-      "bytes": 2948,
-      "sha256": "50438df49ad18b1847121d1fec73a73eafbdb9bb6ddab035e4658f1830a3ebba"
+      "bytes": 2953,
+      "sha256": "ed996458ee03065140bb72a9c8dc69806eaffd3db784cf3b3510a7f68b1207dc"
     },
     {
       "path": "papers/2023_SlidesIris/Slides for Iris April 17 2023.pdf",
@@ -16311,8 +16311,8 @@
     },
     {
       "path": "papers/2023_ToComment/SKILL.md",
-      "bytes": 1686,
-      "sha256": "f9d8bba50b3c07e3b7d01be9ada3b01663593131a1d54e071ca3f378df857823"
+      "bytes": 1702,
+      "sha256": "320a8a5e08e651a496f293b430ddaf0568a7425a47bbe88b7bb13ad992cac9f6"
     },
     {
       "path": "papers/2023_ToComment/index.html",
@@ -16346,8 +16346,8 @@
     },
     {
       "path": "papers/2023_TranscriptActiveInference/SKILL.md",
-      "bytes": 3253,
-      "sha256": "38bfa302147d420a443c523e5398665c735c9a6af570028078975c6f8d3601a3"
+      "bytes": 3258,
+      "sha256": "04cbd767c2d17e967fded3e0c1f70f15a81d2ebb98c3a687a3d96db0998005e9"
     },
     {
       "path": "papers/2023_TranscriptActiveInference/full_text.md",
@@ -16386,8 +16386,8 @@
     },
     {
       "path": "papers/2023_VariationalSynthesis/SKILL.md",
-      "bytes": 4039,
-      "sha256": "0871bbcc0b097d99cc9ba1b6595f78987876e557a72f5dd5426518c89a4c1257"
+      "bytes": 4044,
+      "sha256": "51dbdac494a120439734457a814867061076ca5c2d071634dd01af34a0f0340f"
     },
     {
       "path": "papers/2023_VariationalSynthesis/full_text.md",
@@ -16441,8 +16441,8 @@
     },
     {
       "path": "papers/2023_VideoEntomology/SKILL.md",
-      "bytes": 2878,
-      "sha256": "80e2f4b708671a02a49067769341477e225368f8e544d8976fd066c63cc0e048"
+      "bytes": 2883,
+      "sha256": "6e315a0ab26decbba224c2d58f5be1f997600943964003d0e2e87f76ec9a47f1"
     },
     {
       "path": "papers/2023_VideoEntomology/full_text.md",
@@ -16481,8 +16481,8 @@
     },
     {
       "path": "papers/2024_AII_v2/SKILL.md",
-      "bytes": 4099,
-      "sha256": "29e69d4c9f0e2c4b1920cb7a16eb62cd6d0f154123486e22dfaf602594d6cb24"
+      "bytes": 4104,
+      "sha256": "1c343bd59d86282ca88b10831d85a2a4d723006cb97ac20ad825b6f2570824f5"
     },
     {
       "path": "papers/2024_AII_v2/full_text.md",
@@ -16531,8 +16531,8 @@
     },
     {
       "path": "papers/2024_BlattodeaDiversity/SKILL.md",
-      "bytes": 4072,
-      "sha256": "c0027c61332059dbb1b3bf3f84b52f5965d79de195507b33ff6efcb808c1d455"
+      "bytes": 4077,
+      "sha256": "bb078c9ce27cc66bca1b935492d351592def434623ccaedc5c90c476e2181a15"
     },
     {
       "path": "papers/2024_BlattodeaDiversity/full_text.md",
@@ -16581,8 +16581,8 @@
     },
     {
       "path": "papers/2024_CurioCards/SKILL.md",
-      "bytes": 2551,
-      "sha256": "2945ea424ef11c278cb15b955a5c0b9c86aacde09e7b3391a97cfad0ae070eb4"
+      "bytes": 2556,
+      "sha256": "fb126278d945cef8e336146f9a887386aa0ed5b4f2c0fc7f6c9e12cc08b0cb5d"
     },
     {
       "path": "papers/2024_CurioCards/full_text.md",
@@ -16631,8 +16631,8 @@
     },
     {
       "path": "papers/2024_DigitalTwins/SKILL.md",
-      "bytes": 3899,
-      "sha256": "e69cfbb21e58a38dd54540f05cb29597355ff4bdacd04d66526dc9fbbda68c76"
+      "bytes": 3915,
+      "sha256": "4a373f751d2905eb1cb1858884d9a6e32ca985de9668759ac85747e0ec4ad3c5"
     },
     {
       "path": "papers/2024_DigitalTwins/full_text.md",
@@ -16681,8 +16681,8 @@
     },
     {
       "path": "papers/2024_FarmWorks/SKILL.md",
-      "bytes": 3968,
-      "sha256": "7f09a3262116ed78762d5b45cc140604a084c247bae6cc630ca92395309b7d58"
+      "bytes": 3973,
+      "sha256": "150a25f7743c3d24f9d5e459bb4c665196bd42bd26e74b753e580a14d67c2a95"
     },
     {
       "path": "papers/2024_FarmWorks/full_text.md",
@@ -16731,8 +16731,8 @@
     },
     {
       "path": "papers/2024_FederatedInference/SKILL.md",
-      "bytes": 4403,
-      "sha256": "bab182ba3bc8aba649168b6823d14750a0c7235a95b540659d873c4c41903070"
+      "bytes": 4408,
+      "sha256": "a00d02203a5c6fc325bbbdb399ced8cf4e915aa677560af40b272ccaad97ed7f"
     },
     {
       "path": "papers/2024_FederatedInference/full_text.md",
@@ -16781,8 +16781,8 @@
     },
     {
       "path": "papers/2024_ImageMemeResearch/SKILL.md",
-      "bytes": 3865,
-      "sha256": "b74de8d016e652e17dfb4cd5a6ce298c9bd5544d37ab2c09b99639bb3ca6265a"
+      "bytes": 3870,
+      "sha256": "fa7b213b820d416346436b8c6d2d1d3d0301f0f45765d11469c1e1edc034f0bd"
     },
     {
       "path": "papers/2024_ImageMemeResearch/full_text.md",
@@ -16831,8 +16831,8 @@
     },
     {
       "path": "papers/2024_InfiniteImaginarium/SKILL.md",
-      "bytes": 3061,
-      "sha256": "2169bb375f882ee1903a8d366ef4e6022587eb431177002f89219704d9d51e8a"
+      "bytes": 3066,
+      "sha256": "8bddd4623caa3d3d047a15bce2111840d2901e778b097d1aec1950d5c570b448"
     },
     {
       "path": "papers/2024_InfiniteImaginarium/full_text.md",
@@ -16866,8 +16866,8 @@
     },
     {
       "path": "papers/2024_MathArtBlake/SKILL.md",
-      "bytes": 3149,
-      "sha256": "4e4d5f938ade6efaef5d1a0eb377e7c1beced4d40bb69e193e6cb99f4bfbc92e"
+      "bytes": 3154,
+      "sha256": "c17dc73d676abf992eea5b489f1bba8bf84764eff7bcd5a4ed900a103edb0a62"
     },
     {
       "path": "papers/2024_MathArtBlake/WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf",
@@ -16921,8 +16921,8 @@
     },
     {
       "path": "papers/2024_OntologySUMO/SKILL.md",
-      "bytes": 3824,
-      "sha256": "2e1907dc93cfdd63807a1cfdc2fa74918d07395c6c93bca3be7a5c2b6a845cff"
+      "bytes": 3829,
+      "sha256": "1424ee72fa2d6d3b616753e735e009fceb74a26342a0720b82c8bb22b4e4de78"
     },
     {
       "path": "papers/2024_OntologySUMO/full_text.md",
@@ -16956,8 +16956,8 @@
     },
     {
       "path": "papers/2024_PaleolithicRockstars/SKILL.md",
-      "bytes": 2114,
-      "sha256": "dfb9cbf255f93eac4d76f7eec649807d95432cd274f0b079cf5733709557c54a"
+      "bytes": 2130,
+      "sha256": "aadd55b7983d8727d617aeb6ea0395a715b1c39d385935a60a9a2a3da0d6edb0"
     },
     {
       "path": "papers/2024_PaleolithicRockstars/index.html",
@@ -16991,8 +16991,8 @@
     },
     {
       "path": "papers/2024_PopulationSearch/SKILL.md",
-      "bytes": 4596,
-      "sha256": "2fe2cdef7ae9fa037d45d543a3b5092da5498326c4f3e3a76d355168a23b821c"
+      "bytes": 4601,
+      "sha256": "fd54eb3deab3cd42158e7cdd67fc6ce128c1942a4806a9e4737d5f86380dd162"
     },
     {
       "path": "papers/2024_PopulationSearch/full_text.md",
@@ -17041,8 +17041,8 @@
     },
     {
       "path": "papers/2024_PushPull/SKILL.md",
-      "bytes": 2699,
-      "sha256": "0b31ee0580980d4bed0069439b7cdba2928bc296653dc2aac9ce52b4504ad8dd"
+      "bytes": 2704,
+      "sha256": "c42a62324579b3a29cf7363c494815dac3f117bab97191f9c8a9e556f4632b88"
     },
     {
       "path": "papers/2024_PushPull/full_text.md",
@@ -17091,8 +17091,8 @@
     },
     {
       "path": "papers/2024_QuantumDreams/SKILL.md",
-      "bytes": 2915,
-      "sha256": "000ffdea6bca901be57f2aa3b2ce77fa1c0f484f65d1ce7f11cdd9fefa772339"
+      "bytes": 2920,
+      "sha256": "923fd060643a3b416fff140e4de6f203cb823bef56e7c2755e4c8871086f4c1b"
     },
     {
       "path": "papers/2024_QuantumDreams/full_text.md",
@@ -17141,8 +17141,8 @@
     },
     {
       "path": "papers/2024_SensemakingFederation/SKILL.md",
-      "bytes": 3366,
-      "sha256": "fc6ad127c8dbc1ddbc92ec5243cc7c0b3e97b50e7864c62a5b2af5ac13bd444e"
+      "bytes": 3371,
+      "sha256": "5aef4f47afae5e5c85fe1e1c82db4de127659290017b68cda2d15a9221ddc937"
     },
     {
       "path": "papers/2024_SensemakingFederation/full_text.md",
@@ -17181,8 +17181,8 @@
     },
     {
       "path": "papers/2024_SharedProtentions/SKILL.md",
-      "bytes": 3520,
-      "sha256": "b9d739836d29456faf9cbf7412ef903eb0e9bd6ad6fc72e7214526d76921d5f8"
+      "bytes": 3525,
+      "sha256": "d0265b14aaf4146a3c88f991d729a74239598c3c36320c1a9f7d028c5ede40a2"
     },
     {
       "path": "papers/2024_SharedProtentions/full_text.md",
@@ -17231,8 +17231,8 @@
     },
     {
       "path": "papers/2025_5thSymposium/SKILL.md",
-      "bytes": 4252,
-      "sha256": "c8a11e87923f8588930bed8e693031d41cf1ccce15a96460e74af2c46ea61d08"
+      "bytes": 4257,
+      "sha256": "442fbf7d7e2c2e42b8d36fef1e0f1c62245c758f49325118d77879e3b6964b3a"
     },
     {
       "path": "papers/2025_5thSymposium/full_text.md",
@@ -17281,8 +17281,8 @@
     },
     {
       "path": "papers/2025_AII_v3/SKILL.md",
-      "bytes": 4162,
-      "sha256": "1104bb1095e6fda80c020cac96e384ba1e0bdcb18384eacb52dc04a0f8ed40d6"
+      "bytes": 4167,
+      "sha256": "a9b76941e5090c57041643300ddfffb7ac9fe9b5b324bfb32f2067b118204108"
     },
     {
       "path": "papers/2025_AII_v3/full_text.md",
@@ -17331,8 +17331,8 @@
     },
     {
       "path": "papers/2025_AccessibilityActiveInference/SKILL.md",
-      "bytes": 3749,
-      "sha256": "8283804b91a8c12a057318c70f89c174cd122cfb04c113e7a73f534a4d8da225"
+      "bytes": 3754,
+      "sha256": "5d727b6c7062976b089978067f545671cb6abea259fce01d2e58e8060cfd5cf6"
     },
     {
       "path": "papers/2025_AccessibilityActiveInference/full_text.md",
@@ -17371,8 +17371,8 @@
     },
     {
       "path": "papers/2025_AgentAndNiche/SKILL.md",
-      "bytes": 3051,
-      "sha256": "e631ddd9510f56d009ad395ed976530a60b0bef7ca6db51f525d4e20e878c843"
+      "bytes": 3056,
+      "sha256": "bf32bcc379768db7c580978fc49c1e6786a656328ba52a300078c88f7e54e7d8"
     },
     {
       "path": "papers/2025_AgentAndNiche/full_text.md",
@@ -17411,8 +17411,8 @@
     },
     {
       "path": "papers/2025_AntStack/SKILL.md",
-      "bytes": 3649,
-      "sha256": "462803db706a88399bf8a85e451d19ee335c05ea46bfc380f4cc3951ecd73d2e"
+      "bytes": 3654,
+      "sha256": "bd64480debc17ed170ff535273a3c7a514e8af0260d4dafb25f6aaafef49f923"
     },
     {
       "path": "papers/2025_AntStack/full_text.md",
@@ -17461,8 +17461,8 @@
     },
     {
       "path": "papers/2025_AntStackComplexity/SKILL.md",
-      "bytes": 3590,
-      "sha256": "e82cd0990ecc454498a367db5c5686db7b8164feb8eb96922889fef4809fc08e"
+      "bytes": 3595,
+      "sha256": "53191bbdff0fb4a3b5958aee91ee4def8a809800717bb51f54c0831a0eb81e62"
     },
     {
       "path": "papers/2025_AntStackComplexity/full_text.md",
@@ -17511,8 +17511,8 @@
     },
     {
       "path": "papers/2025_AuBI/SKILL.md",
-      "bytes": 3986,
-      "sha256": "81feb7f609ab791f46b87c4e2e72e4cb7108759c71204cdb6c58e1243008db22"
+      "bytes": 3991,
+      "sha256": "eaf6744324b30eac7b9a676cea278b26a9f52773ff959a36d16fde30c40796de"
     },
     {
       "path": "papers/2025_AuBI/full_text.md",
@@ -17556,8 +17556,8 @@
     },
     {
       "path": "papers/2025_BeaconsPreEmulation/SKILL.md",
-      "bytes": 3286,
-      "sha256": "d9b3d7b923af51046047fb7932be2ad92009e8c801cf5257384761e0ea57bbd4"
+      "bytes": 3291,
+      "sha256": "507d7d205c5ac3c7d863cda16862a458473236af443c8fb54f0559d82fa08aee"
     },
     {
       "path": "papers/2025_BeaconsPreEmulation/beacons.pdf",
@@ -17606,8 +17606,8 @@
     },
     {
       "path": "papers/2025_BevCycPositPrimitive/SKILL.md",
-      "bytes": 3425,
-      "sha256": "99aa870ca1988db276ba18ac09e649d11c6048f823b51b59026c094062db239a"
+      "bytes": 3430,
+      "sha256": "2fbb737f6b584f539bd9503ef6cc9574c87d56ca54140b396086147cfbeb5994"
     },
     {
       "path": "papers/2025_BevCycPositPrimitive/bevcyc.pdf",
@@ -17661,8 +17661,8 @@
     },
     {
       "path": "papers/2025_BiofirmDevelopmentWith/SKILL.md",
-      "bytes": 2891,
-      "sha256": "5807bcb866b79dd2a48268e5c03d68612e99e8a135d84e74b6481237cd9b8b58"
+      "bytes": 2896,
+      "sha256": "16b9d44780d5fc2efbef0478d9aa6cea808a593d3a02b5045f942510ad754684"
     },
     {
       "path": "papers/2025_BiofirmDevelopmentWith/full_text.md",
@@ -17716,8 +17716,8 @@
     },
     {
       "path": "papers/2025_CEREBRUM/SKILL.md",
-      "bytes": 3584,
-      "sha256": "6730c4d47ce316b520da0b19afa7cf6ae9f8a707209889966d16c785fecb6b70"
+      "bytes": 3589,
+      "sha256": "f212e8be302268c4e6408df168c1f558bea2294a34afd1a1d4dcd6843eff3c54"
     },
     {
       "path": "papers/2025_CEREBRUM/full_text.md",
@@ -17766,8 +17766,8 @@
     },
     {
       "path": "papers/2025_CognitiveArtScience/SKILL.md",
-      "bytes": 2913,
-      "sha256": "05997db9e662715f5f3d9707730a06531837908bffa3d5ac1f803b978e397e11"
+      "bytes": 2918,
+      "sha256": "8f3a0df8466ef557f94f98d9dae611c60337a2a9e9a5bce1d8202b208a3a50d3"
     },
     {
       "path": "papers/2025_CognitiveArtScience/full_text.md",
@@ -17816,8 +17816,8 @@
     },
     {
       "path": "papers/2025_ConCatEnate/SKILL.md",
-      "bytes": 3549,
-      "sha256": "5eb023e28d07a6c857079a0be6e9629f1f662c177a8c3abd73833f3b484f74d2"
+      "bytes": 3554,
+      "sha256": "892b2f98118dce1dece8cb9966cd719d8df81e59bddb2a542057703f13e1d914"
     },
     {
       "path": "papers/2025_ConCatEnate/full_text.md",
@@ -17861,8 +17861,8 @@
     },
     {
       "path": "papers/2025_ConCatEnate2/SKILL.md",
-      "bytes": 2941,
-      "sha256": "18598dee59cc6405d0a230020d086bdca9b8d249c584c79cd087fc52847b1de5"
+      "bytes": 2946,
+      "sha256": "82b0fca97acefb0bdafb844211e90d94e25cc390662e51c3b087e3d9e284b0f4"
     },
     {
       "path": "papers/2025_ConCatEnate2/catpilot.pdf",
@@ -17916,8 +17916,8 @@
     },
     {
       "path": "papers/2025_ConsciousnessAnts/SKILL.md",
-      "bytes": 3593,
-      "sha256": "d01e4c1dbd69ed05beb0dc9ecf0eec63d89c38dd4ce8c0fbdf2daad8033aa054"
+      "bytes": 3598,
+      "sha256": "aa29b0605976222a46c179c61b7fb47a27fa87cbba7621194582366af0396b1e"
     },
     {
       "path": "papers/2025_ConsciousnessAnts/full_text.md",
@@ -17966,8 +17966,8 @@
     },
     {
       "path": "papers/2025_DiscoveryEngine/SKILL.md",
-      "bytes": 4364,
-      "sha256": "2d02b7a60514c26c7985953f5b933f6a7f4180c4b85614564ee78226ccdc23e8"
+      "bytes": 4369,
+      "sha256": "be8313bc7b29aaac416581920324e164eb21bf6c24c1ac6c6ec55f7fa5ea7935"
     },
     {
       "path": "papers/2025_DiscoveryEngine/full_text.md",
@@ -18016,8 +18016,8 @@
     },
     {
       "path": "papers/2025_EvoJump/SKILL.md",
-      "bytes": 3857,
-      "sha256": "19d40fc867006697f7817ea181246f9869534db9edc9ac6859d4d354dc347dfd"
+      "bytes": 3862,
+      "sha256": "665aa5b69edef81da706c5d3f8b4e77d4b1ff54f915abe21983be96b721d6183"
     },
     {
       "path": "papers/2025_EvoJump/full_text.md",
@@ -18061,8 +18061,8 @@
     },
     {
       "path": "papers/2025_Graphspeak/SKILL.md",
-      "bytes": 3086,
-      "sha256": "8bb85d48d2c2477e454e739789dfdd3fd60f8bfa3bf8de495fca65f0b9fe9747"
+      "bytes": 3091,
+      "sha256": "fb334999304aa2e0317b2015ee40405bc36999fefd7b9a87500cea8e584813a3"
     },
     {
       "path": "papers/2025_Graphspeak/full_text.md",
@@ -18116,8 +18116,8 @@
     },
     {
       "path": "papers/2025_MDKV/SKILL.md",
-      "bytes": 3675,
-      "sha256": "309f955472958921e4367084bd55c2aca40e1447c706d4fc08482fc01186a4c7"
+      "bytes": 3680,
+      "sha256": "41a22ea8365799d6a22b76ac9c2d296880898f358dc0d7e24fb65eb42d5f10be"
     },
     {
       "path": "papers/2025_MDKV/full_text.md",
@@ -18156,8 +18156,8 @@
     },
     {
       "path": "papers/2025_MarkdownDecisionProcess/SKILL.md",
-      "bytes": 4808,
-      "sha256": "94605a1f8d4199e800a80872d017d5e7a62b82579a63520adcaf59ca319b3a1d"
+      "bytes": 4813,
+      "sha256": "9d5ed5157050fdc9b651e24e58429e1771fe28ea37f4a345ccc975648692990c"
     },
     {
       "path": "papers/2025_MarkdownDecisionProcess/full_text.md",
@@ -18196,8 +18196,8 @@
     },
     {
       "path": "papers/2025_OnTime/SKILL.md",
-      "bytes": 2518,
-      "sha256": "c204ca9866c1ff19d09c66266df5d078db4a605a610346088c44edd6d838674d"
+      "bytes": 2534,
+      "sha256": "73714e17cef4990ad8efe4e1cdb8e3db30f4e35acae40233267b7a775a75d7fd"
     },
     {
       "path": "papers/2025_OnTime/full_text.md",
@@ -18236,8 +18236,8 @@
     },
     {
       "path": "papers/2025_QuadMath/SKILL.md",
-      "bytes": 3961,
-      "sha256": "e2313570db122b30ae6712eeca4798b7f52d2def4e06692f5cef6909dfdbbd91"
+      "bytes": 3966,
+      "sha256": "87fd1b5356a1bf61401b037620950f6c0d6c7b022d1888ae0e7f469f7e98c654"
     },
     {
       "path": "papers/2025_QuadMath/full_text.md",
@@ -18286,8 +18286,8 @@
     },
     {
       "path": "papers/2025_ResNei/SKILL.md",
-      "bytes": 3906,
-      "sha256": "1f874a74a5508b7d4ae72fa72c8146d40e0bd208fff9be2aa75f44d63b8dad5e"
+      "bytes": 3911,
+      "sha256": "8c47e469d25162dc72056e1a27a61a976e24a7ab7f4658f089b00cda9d93c8ad"
     },
     {
       "path": "papers/2025_ResNei/full_text.md",
@@ -18336,8 +18336,8 @@
     },
     {
       "path": "papers/2025_Symergetics/SKILL.md",
-      "bytes": 3582,
-      "sha256": "1f492ddb24d9d3aab7eff4f3c1ffd0ce6f487ea0d4b0a50f6bcdf1d987f51d39"
+      "bytes": 3587,
+      "sha256": "7c0af8a0fd0d6804bf8272f736a574c5ba7001711ce178f272de747e6dcc4a33"
     },
     {
       "path": "papers/2025_Symergetics/full_text.md",
@@ -18386,8 +18386,8 @@
     },
     {
       "path": "papers/2025_SystemsProcesses/SKILL.md",
-      "bytes": 2830,
-      "sha256": "d36f3912543f8ed19f00ea50af202a83f414aaff20ee18fc69d80ff0988c3f8f"
+      "bytes": 2835,
+      "sha256": "93b62011c7fa0f94a777f5619b3ae03d88b10b56dc3e880554be42849543b037"
     },
     {
       "path": "papers/2025_SystemsProcesses/full_text.md",
@@ -18436,8 +18436,8 @@
     },
     {
       "path": "papers/2025_TemporalDepth/SKILL.md",
-      "bytes": 4035,
-      "sha256": "9cc9a0c3e372337b86e52aa6bbc659cb3e9b4e8cc221081ba2d9a67a0b647a4e"
+      "bytes": 4040,
+      "sha256": "27745638c5ee9119b67645d615d4fe164e5e3483f9c0b707568c2bcd4b6948d2"
     },
     {
       "path": "papers/2025_TemporalDepth/full_text.md",
@@ -18486,8 +18486,8 @@
     },
     {
       "path": "papers/2025_Thoughtseeds/SKILL.md",
-      "bytes": 4065,
-      "sha256": "0e30dbd000ed9587acaf8c1f2f979b0dfa22d803000d3e1c5cb2fcbdef10cd1b"
+      "bytes": 4070,
+      "sha256": "c4d587ddf299a5a62452f8b691965bc6745e0e96252dd13b45dedd3bcb0605cb"
     },
     {
       "path": "papers/2025_Thoughtseeds/full_text.md",
@@ -18536,8 +18536,8 @@
     },
     {
       "path": "papers/2026_AGEINT/SKILL.md",
-      "bytes": 4141,
-      "sha256": "acba430d29f19607e68a14ba684a739824020e5da6c05872bfeef658e502da66"
+      "bytes": 4146,
+      "sha256": "03cdc4d6b0b0ff0bf0b28ac836a5d0046ae13317d5e67bcdd60d2021728502ec"
     },
     {
       "path": "papers/2026_AGEINT/full_text.md",
@@ -18581,8 +18581,8 @@
     },
     {
       "path": "papers/2026_ActInfMetaAnalysis/SKILL.md",
-      "bytes": 4149,
-      "sha256": "1c248b359ddd391e1fc429aae33eca8f5c51c6d60bab7f7e174014a239759434"
+      "bytes": 4154,
+      "sha256": "2e635a97b3b33a6f415b3a897a380163a7d2a21e62ea4db06eaf0c75d48bd7b3"
     },
     {
       "path": "papers/2026_ActInfMetaAnalysis/act_inf_metaanalysis_v2_04-30-2026.pdf",
@@ -18676,8 +18676,8 @@
     },
     {
       "path": "papers/2026_ActiveFractalRabbit/SKILL.md",
-      "bytes": 3900,
-      "sha256": "2117dff1cd709257c3dca162af24518290a348b02eb58ae957bcc0fd9e4400ef"
+      "bytes": 3910,
+      "sha256": "365b0359f4d84d798a348caf52efb3e992b600d170422caac9b46ff288da2eb6"
     },
     {
       "path": "papers/2026_ActiveFractalRabbit/full_text.md",
@@ -18711,8 +18711,8 @@
     },
     {
       "path": "papers/2026_ActiveInferenceAs/SKILL.md",
-      "bytes": 3016,
-      "sha256": "3e57f96253971351e937a8b989402fb81ff0a36cc3df659fe3b58ce09985b37a"
+      "bytes": 3021,
+      "sha256": "64b7fb35034ad488f001b27bb366641cdd7eb799c520351cfbbdabc85a20b487"
     },
     {
       "path": "papers/2026_ActiveInferenceAs/active_inference_meta_pragmatic-1.0.0.pdf",
@@ -18806,8 +18806,8 @@
     },
     {
       "path": "papers/2026_ActiveInferenceMulti/SKILL.md",
-      "bytes": 3695,
-      "sha256": "3de97e33149cf02c34f795fdb473eb6bca4ff9d4742a5603b4d1a62224849a84"
+      "bytes": 3705,
+      "sha256": "5059f90c40be1cff2a921bc0fe289ff7e2abb181ec02bacfe867ee06cd03bee2"
     },
     {
       "path": "papers/2026_ActiveInferenceMulti/full_text.md",
@@ -18851,8 +18851,8 @@
     },
     {
       "path": "papers/2026_ActiveInferencePower/SKILL.md",
-      "bytes": 4112,
-      "sha256": "f0fa5437af0e903966789e03b54631920e464ab03776e39692578a7cb5aa2425"
+      "bytes": 4122,
+      "sha256": "85ba5c0c40bcd53c46fb6f7fcd324385f080bb66e5f1340e97b4213ae3c9a8fd"
     },
     {
       "path": "papers/2026_ActiveInferencePower/active_inference_power_v1.0.0.pdf",
@@ -18911,8 +18911,8 @@
     },
     {
       "path": "papers/2026_ActiveInferenceSynthetic/SKILL.md",
-      "bytes": 2045,
-      "sha256": "483714a9ef28abeefe3504081282f2de0ca78b7a4cca6f08ecf7c463f21b6a9c"
+      "bytes": 2061,
+      "sha256": "d0ceaeabee60c7190a7aa290bbcb5077de60087c19cd780a67b77bdd3e93e1df"
     },
     {
       "path": "papers/2026_ActiveInferenceSynthetic/full_text.md",
@@ -18956,8 +18956,8 @@
     },
     {
       "path": "papers/2026_ActiveSkillference/SKILL.md",
-      "bytes": 3954,
-      "sha256": "5b5d00eea256d987419ffa448348bd290d0a8a4057e34869f4696523fe956a58"
+      "bytes": 3959,
+      "sha256": "04c5c02e17233fe31d3ba803083623c8067a597b9705ab9a564cf40f9ae28e7d"
     },
     {
       "path": "papers/2026_ActiveSkillference/full_text.md",
@@ -19046,8 +19046,8 @@
     },
     {
       "path": "papers/2026_AlphaCOGANT/SKILL.md",
-      "bytes": 4235,
-      "sha256": "821f92176a758d6385402ab62b0e3ceba7731fe62310d85b4026510f2d51d6a1"
+      "bytes": 4240,
+      "sha256": "48d6cd7dfa27efd6faf17118abcecc10a8bcb052bfebd5d8bd37c3f7a1d5541e"
     },
     {
       "path": "papers/2026_AlphaCOGANT/full_text.md",
@@ -19136,8 +19136,8 @@
     },
     {
       "path": "papers/2026_AutopoieticProjectGeneration/SKILL.md",
-      "bytes": 3718,
-      "sha256": "7ceb7bf670732f1dcb05191e73f867f244f5615c01728cea856c1c1ab7bd2cc3"
+      "bytes": 3723,
+      "sha256": "a8c721ec54648805f5365ec21c543df45d5d3158aef7a2b602a024c19699ec7d"
     },
     {
       "path": "papers/2026_AutopoieticProjectGeneration/full_text.md",
@@ -19186,8 +19186,8 @@
     },
     {
       "path": "papers/2026_BeeStack/SKILL.md",
-      "bytes": 4162,
-      "sha256": "12dfcf8e297648cc60f9944bef7234b430fc60b4afcfa9de2920e49e9868bb48"
+      "bytes": 4167,
+      "sha256": "e3a81e4545cbbd98ad2e5f5b1d98178ab485f837c7b9129abcd94e00bc27d464"
     },
     {
       "path": "papers/2026_BeeStack/full_text.md",
@@ -19236,8 +19236,8 @@
     },
     {
       "path": "papers/2026_BeforePragmatism/SKILL.md",
-      "bytes": 3882,
-      "sha256": "84f5105b8c5b52c82c1754aa437cb0fff90be9509ce0ce66704a1c71cbdb2bd8"
+      "bytes": 3887,
+      "sha256": "91158da3402663d1b3d445ab679a29a03ab27823bf6f809d1970f97e6b8b8417"
     },
     {
       "path": "papers/2026_BeforePragmatism/full_text.md",
@@ -19286,8 +19286,8 @@
     },
     {
       "path": "papers/2026_Bimetalism/SKILL.md",
-      "bytes": 3704,
-      "sha256": "f50c5cc548c5c8902c69de68d9fa4fea915b4d8beba308dd1d9e3413f279021f"
+      "bytes": 3709,
+      "sha256": "8846b2df5a39eb6aec57d39dabfe85e37fad956765528d890875a4185d10ac69"
     },
     {
       "path": "papers/2026_Bimetalism/full_text.md",
@@ -19331,8 +19331,8 @@
     },
     {
       "path": "papers/2026_BiologyTextbook/SKILL.md",
-      "bytes": 3284,
-      "sha256": "9a0fb0e4b33866bc8cdb668e6e585f1d88535754dccf4950898db160ebd12a13"
+      "bytes": 3289,
+      "sha256": "a79e8b0069ee646b1f3544afc9b17df0abfe7ad10b6d6c3f6ce66d9e6ade64be"
     },
     {
       "path": "papers/2026_BiologyTextbook/biology_textbook_v1_05-26-2026-compressed.pdf",
@@ -19381,8 +19381,8 @@
     },
     {
       "path": "papers/2026_BlackLine/SKILL.md",
-      "bytes": 3810,
-      "sha256": "e205acfce6a5b902e0ec082624794ef829facd4ae8c7b43b5884f1510833e89b"
+      "bytes": 3820,
+      "sha256": "0038d48398447af49709313e47aec0be46b4e84a0d99731ab8c3948ede1b6a84"
     },
     {
       "path": "papers/2026_BlackLine/black_line_combined.pdf",
@@ -19431,8 +19431,8 @@
     },
     {
       "path": "papers/2026_BlakeJiang/SKILL.md",
-      "bytes": 3789,
-      "sha256": "be0dc9242403dad17439cd102307b62d641112aeac9b8aa531f4d7e0bb6c7acd"
+      "bytes": 3794,
+      "sha256": "bece6fe122d2bec8ce8189074abd9dd8ee25bd99fe64098487ff378620daaa63"
     },
     {
       "path": "papers/2026_BlakeJiang/blake_jiang_DAF_v1_05-12-2026.pdf",
@@ -19481,8 +19481,8 @@
     },
     {
       "path": "papers/2026_BlakeanEntomology/SKILL.md",
-      "bytes": 2648,
-      "sha256": "6da26f39f16c893d299768a397d2f9d0307d5c80a55012fd28cdd7e0126c35a2"
+      "bytes": 2658,
+      "sha256": "d6a38665b8166e8f514b014f3794d7a19d863a4e7ea12c5cec4873fa564851ee"
     },
     {
       "path": "papers/2026_BlakeanEntomology/full_text.md",
@@ -19522,7 +19522,7 @@
     {
       "path": "papers/2026_BlueLine/SKILL.md",
       "bytes": 755,
-      "sha256": "2e5a02710837e136422097c55049a400f57d64b1b477c97708f24367e29d3db2"
+      "sha256": "0dd2222df4d42474bb4f4e77192d5c7d86f47c209d9cb0de458c20a665cf3450"
     },
     {
       "path": "papers/2026_BlueLine/blue_line_combined.pdf",
@@ -19591,8 +19591,8 @@
     },
     {
       "path": "papers/2026_BoundedAutoResearchTiny/SKILL.md",
-      "bytes": 3834,
-      "sha256": "f7c6fd7a2643f33c55764878d61097e12317ca4124ff4cba38f25a02ae510eb8"
+      "bytes": 3844,
+      "sha256": "b7b82b35bc92d4f124c74d543d12f7f94289b5e60a8147eb6e14fdc86e127d74"
     },
     {
       "path": "papers/2026_BoundedAutoResearchTiny/full_text.md",
@@ -19641,8 +19641,8 @@
     },
     {
       "path": "papers/2026_COGANT/SKILL.md",
-      "bytes": 4039,
-      "sha256": "79b0648a8c0af4f52252508366dc992fed68fa44fc2f99a5906f7ca8f8686921"
+      "bytes": 4044,
+      "sha256": "a50161d88de0d67caf64199a6b67dec73206cb43350330513b1ccb05a00b7e5a"
     },
     {
       "path": "papers/2026_COGANT/full_text.md",
@@ -19691,8 +19691,8 @@
     },
     {
       "path": "papers/2026_CaliforniaPublicRecords/SKILL.md",
-      "bytes": 3926,
-      "sha256": "e6f1555a33c03f83cda319d3a7cef01c896bd50c8d16c1ce33cf60786f81511e"
+      "bytes": 3931,
+      "sha256": "3d4c3e74b71f1bb1a72db50833291c6ebe479c667be436b47ad590246dba7b42"
     },
     {
       "path": "papers/2026_CaliforniaPublicRecords/full_text.md",
@@ -19736,8 +19736,8 @@
     },
     {
       "path": "papers/2026_Codomyrmex/SKILL.md",
-      "bytes": 3969,
-      "sha256": "196ebbe2f3cce7d2cdce66a2040f0486c28c39ada8ffcf6a492e893d554d4690"
+      "bytes": 3979,
+      "sha256": "e50a4447a8d06e5d237519fdf18b7a6c6b3f3323ca88832c4fff2d196dc953c3"
     },
     {
       "path": "papers/2026_Codomyrmex/codomyrmex-1.3.0-content.pdf",
@@ -19786,8 +19786,8 @@
     },
     {
       "path": "papers/2026_CogSecSkills/SKILL.md",
-      "bytes": 3920,
-      "sha256": "7a1b43221e7ba9f12d974eee3a4f24b4b24b22f4f3434fd2a83ff72ab864d356"
+      "bytes": 3925,
+      "sha256": "c1574c327b6e7b98f41d340cc92f63c0df180e575c29cdd3ae57bd41b5acb61e"
     },
     {
       "path": "papers/2026_CogSecSkills/full_text.md",
@@ -19831,8 +19831,8 @@
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/SKILL.md",
-      "bytes": 2673,
-      "sha256": "0b89fddf777d5a188f24e2606c2218a565588caca289e33c41ce6037b64f53fd"
+      "bytes": 2683,
+      "sha256": "efedb4213164b2d24ed4991a5197014b79468f32aafb29a0602d52bbb1a327d4"
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/cognitive_case_diagrams-2.6.0.pdf",
@@ -19901,8 +19901,8 @@
     },
     {
       "path": "papers/2026_CognitiveIntegrity/SKILL.md",
-      "bytes": 2950,
-      "sha256": "48bf471cc35730782ad168a08b55295d8bca96ab83047446fff0ee86d39dfbea"
+      "bytes": 2960,
+      "sha256": "0565678416d85c621bc26f8032c4bfea1b3aa2d0810ea999bb4e09b9aaa320f6"
     },
     {
       "path": "papers/2026_CognitiveIntegrity/full_text.md",
@@ -20061,8 +20061,8 @@
     },
     {
       "path": "papers/2026_ConvergenceAnalysisGradient/SKILL.md",
-      "bytes": 3822,
-      "sha256": "8ecddaf47908bb49e8af442212ab7414ded5a7b8bf9bb0fc2f4a25148cace277"
+      "bytes": 3832,
+      "sha256": "795edb9423f4131d7d86512531a44cc0ab49142ceedf64569ba67f868ca788ab"
     },
     {
       "path": "papers/2026_ConvergenceAnalysisGradient/full_text.md",
@@ -20141,8 +20141,8 @@
     },
     {
       "path": "papers/2026_CrescentCity/SKILL.md",
-      "bytes": 3955,
-      "sha256": "1f1aa55c03ce603598f2efe96cded087be86a060acd167f8c25d612999eac8fb"
+      "bytes": 3960,
+      "sha256": "f04e8ccdbfe631d527889c94a46b5e1a3e9b3b52ea0f27642b359e901525b7f6"
     },
     {
       "path": "papers/2026_CrescentCity/crescent_city_v1_DAF_05_19_2026.pdf",
@@ -20191,8 +20191,8 @@
     },
     {
       "path": "papers/2026_CrossTalk_on_the_Page/SKILL.md",
-      "bytes": 1929,
-      "sha256": "eebb0f0cafd71a58fde7d93fc7d33ccca0b0cb47788ab28a0b16543df22fdeae"
+      "bytes": 1950,
+      "sha256": "02601151384562b67b8a168862798c75ae06a26fb2a3d015db9e446c7a630916"
     },
     {
       "path": "papers/2026_CrossTalk_on_the_Page/full_text.md",
@@ -20236,8 +20236,8 @@
     },
     {
       "path": "papers/2026_DataDescriptorTemplate/SKILL.md",
-      "bytes": 3392,
-      "sha256": "87c1e279a7800dc9201817cb38f47cc847f3cbd7033226406695fa091ff3c5c4"
+      "bytes": 3397,
+      "sha256": "5a891fed0cdf7e9e5a9ae56c89ffa90cf719a1fbb24d6a74f4f6e84dceeb1103"
     },
     {
       "path": "papers/2026_DataDescriptorTemplate/full_text.md",
@@ -20281,8 +20281,8 @@
     },
     {
       "path": "papers/2026_DemoCreate/SKILL.md",
-      "bytes": 4007,
-      "sha256": "9160ee0568c68f7effd064066bf0cedded40fbabec29184d3a98670d5a51db28"
+      "bytes": 4012,
+      "sha256": "675c9a33ca3195faf371255dc42c19824c42749de07a194f2fb1c988708483f1"
     },
     {
       "path": "papers/2026_DemoCreate/democreate-0.6.2-manuscript.pdf",
@@ -20346,8 +20346,8 @@
     },
     {
       "path": "papers/2026_DeterministicTestbedSelf/SKILL.md",
-      "bytes": 3884,
-      "sha256": "cd0f43dfb86f51c251f004459a463b69cfd8864bdcf471d2b5948509a79d4ec4"
+      "bytes": 3894,
+      "sha256": "f40c7726273edf385c656e575fd3a5a653011c210b6112ed4dd3de880373e098"
     },
     {
       "path": "papers/2026_DeterministicTestbedSelf/full_text.md",
@@ -20391,8 +20391,8 @@
     },
     {
       "path": "papers/2026_DigiPPPiP/SKILL.md",
-      "bytes": 4010,
-      "sha256": "7035d11014b6cc8c6c59422c499dcebc713981b8ff2442f57de12042c1f96faf"
+      "bytes": 4015,
+      "sha256": "33ee4aa6bdbd0b3077b6cd9066df3cc7d157825754268a9ac9768fd9ff142d2b"
     },
     {
       "path": "papers/2026_DigiPPPiP/Shrivastava_2026_Digipppip_f5ca95ce.pdf",
@@ -20431,8 +20431,8 @@
     },
     {
       "path": "papers/2026_DocxplusIntelligentDocument/SKILL.md",
-      "bytes": 3826,
-      "sha256": "3f95eee9c8c1f348295e2789e489810cceb381e6ba6002dd456487dc5b1c26c6"
+      "bytes": 3831,
+      "sha256": "967cffe35ecaa4df4993f8b65926aed038fcdf30aa7d4d2ed074467082f14480"
     },
     {
       "path": "papers/2026_DocxplusIntelligentDocument/full_text.md",
@@ -20476,8 +20476,8 @@
     },
     {
       "path": "papers/2026_DomainLanguageSpecifying/SKILL.md",
-      "bytes": 3869,
-      "sha256": "c2cad349cee150cdfb7743bbecf4dbb5840ba4936a81d22b9456fd8b3a074203"
+      "bytes": 3879,
+      "sha256": "2ec75455d1fafd1353e612840a74b289b75b4c64f589d02b5df905f2944c3884"
     },
     {
       "path": "papers/2026_DomainLanguageSpecifying/full_text.md",
@@ -20526,8 +20526,8 @@
     },
     {
       "path": "papers/2026_DoorsOfPerception/SKILL.md",
-      "bytes": 3740,
-      "sha256": "8b78ec1c44856b61f934075b27305b120faf027c84d21e702553550f7adecf85"
+      "bytes": 3745,
+      "sha256": "b3a005fdd325d08e0bd771794e36dabdcb69d0352391be94f5b5b7f7523f3dca"
     },
     {
       "path": "papers/2026_DoorsOfPerception/full_text.md",
@@ -20576,8 +20576,8 @@
     },
     {
       "path": "papers/2026_DuckRabbit/SKILL.md",
-      "bytes": 3916,
-      "sha256": "e85c55935218021e71e5684d5974a61be47a6ec73b73aefc033b1b0437a6b136"
+      "bytes": 3921,
+      "sha256": "73138298391500deccd5f3c0e0a9c1b159a081bd0add99049a6a0086e9363871"
     },
     {
       "path": "papers/2026_DuckRabbit/full_text.md",
@@ -20611,8 +20611,8 @@
     },
     {
       "path": "papers/2026_ENTO/SKILL.md",
-      "bytes": 3759,
-      "sha256": "9001100edebf1163ef57ea4150ed75480bed9e0bc915de1510fe01b359ac7806"
+      "bytes": 3764,
+      "sha256": "fc5ef7f9e6d5add009f180565216752223e6e4731f17ae4cd41be4d7203735b4"
     },
     {
       "path": "papers/2026_ENTO/entofile-0.4.pdf",
@@ -20676,8 +20676,8 @@
     },
     {
       "path": "papers/2026_EditorialQualityAt/SKILL.md",
-      "bytes": 3582,
-      "sha256": "9d1367d1539977555d13c0b6600277c2c97aa91f2b3b420776d14610c4a67ca8"
+      "bytes": 3592,
+      "sha256": "dead84931929a2406ffa2bc1d3c338e22badec5644a9b01c35de1607bdf71d27"
     },
     {
       "path": "papers/2026_EditorialQualityAt/full_text.md",
@@ -20731,8 +20731,8 @@
     },
     {
       "path": "papers/2026_EntoLinguistics/SKILL.md",
-      "bytes": 3646,
-      "sha256": "2c91703aac2e49ba57e4ab49868e0bcb170e653d0af197944514d4ea1774ee41"
+      "bytes": 3651,
+      "sha256": "a15d8fce10bfcbb2003f6313d2c27779ad19eb194d101c1426f98e9de6dc1e91"
     },
     {
       "path": "papers/2026_EntoLinguistics/full_text.md",
@@ -20781,8 +20781,8 @@
     },
     {
       "path": "papers/2026_EntomologicalLaw/SKILL.md",
-      "bytes": 3866,
-      "sha256": "4fa3fbde9716d9e3994fa505b0320075288bbaabc7c59298104858f1b8e1ff58"
+      "bytes": 3871,
+      "sha256": "88ecf072f7d9baba6b2afdc2f1cef9bb555e9a3b992aaf13c857660aac5b5a39"
     },
     {
       "path": "papers/2026_EntomologicalLaw/full_text.md",
@@ -20831,8 +20831,8 @@
     },
     {
       "path": "papers/2026_ExploratoryDataAnalysis/SKILL.md",
-      "bytes": 3755,
-      "sha256": "56f59b5c73c8fef336e41ddf7c4a98c3035243f1d424efa0bba73c57752fc021"
+      "bytes": 3765,
+      "sha256": "6b9bde209da9aaf7e1d0a9808e9bc0b786842d954fc6b152147b9d7e94b1f9a5"
     },
     {
       "path": "papers/2026_ExploratoryDataAnalysis/full_text.md",
@@ -20881,8 +20881,8 @@
     },
     {
       "path": "papers/2026_FEPLean/SKILL.md",
-      "bytes": 3200,
-      "sha256": "62e2cae908b7c3ebc44f108565cea124f55c7abc6ad9285ff00a584558bec662"
+      "bytes": 3210,
+      "sha256": "d39a9eb5d5a862b18c2bae1cb80d9c206e865b33c04319d5394e6bf69bdc4fe4"
     },
     {
       "path": "papers/2026_FEPLean/fep-lean-manuscript-1.1.0.pdf",
@@ -20951,8 +20951,8 @@
     },
     {
       "path": "papers/2026_FocusedAttentionMeditation/SKILL.md",
-      "bytes": 2522,
-      "sha256": "0b5f2bcb14c2af61849bc1caa84ca334063642b0168153903fd89297fde2a376"
+      "bytes": 2538,
+      "sha256": "e8cfb03a0509578e41848d15f13c7c974632e03a56eb50eac3917f8472798f03"
     },
     {
       "path": "papers/2026_FocusedAttentionMeditation/index.html",
@@ -20981,8 +20981,8 @@
     },
     {
       "path": "papers/2026_FourfoldVision/SKILL.md",
-      "bytes": 3751,
-      "sha256": "e1d73eec8dcc9ee68ad0d7560d194a4d476a15d5868904ac8bd95e6027bcc6d6"
+      "bytes": 3756,
+      "sha256": "5e7474d8cf9004729e37b9728aadab2b9afb1e8c24c6234ee37483d318ccadc9"
     },
     {
       "path": "papers/2026_FourfoldVision/blake_fourfold_synergetics_combined.pdf",
@@ -21121,8 +21121,8 @@
     },
     {
       "path": "papers/2026_GeneralizedNotationNotationGNN/SKILL.md",
-      "bytes": 3696,
-      "sha256": "93837cceee7fa2abf771be21da1466f55a103f72dfd0c539edb5aa66b3f0a3d5"
+      "bytes": 3706,
+      "sha256": "2c4ff7cf51b26358991881e4a28cfe2bf0f1581ea373dda958a183c3b72acb16"
     },
     {
       "path": "papers/2026_GeneralizedNotationNotationGNN/full_text.md",
@@ -21156,8 +21156,8 @@
     },
     {
       "path": "papers/2026_GoldenLine/SKILL.md",
-      "bytes": 3929,
-      "sha256": "326631316f4cb74fc53eeb81bc50422acf0ab18408d789826c720e2db0525c84"
+      "bytes": 3939,
+      "sha256": "4bb0c0ac3489f8291c2201c2ddb6e4da799a3dfde1d9a9be6bf987d15f60eedd"
     },
     {
       "path": "papers/2026_GoldenLine/full_text.md",
@@ -21207,7 +21207,7 @@
     {
       "path": "papers/2026_GreenLine/SKILL.md",
       "bytes": 829,
-      "sha256": "bf5f667b2b8825fce19d0efac202f5aa78ccf78b948cab35e53022939b514951"
+      "sha256": "7ba201113ef51ebc4c9e70339149884e435f531a86612e890f9e6a5b754430e0"
     },
     {
       "path": "papers/2026_GreenLine/full_text.md",
@@ -21261,8 +21261,8 @@
     },
     {
       "path": "papers/2026_ITrace/SKILL.md",
-      "bytes": 3067,
-      "sha256": "9f437e3e0a16a9e52f4f5761a197718eeefea16d87dd9fe8873b7b643fbcd00a"
+      "bytes": 3072,
+      "sha256": "3487e462bfdecab53e994cbbfa54cba195015c6db56434276bbc38ec7d902418"
     },
     {
       "path": "papers/2026_ITrace/full_text.md",
@@ -21331,8 +21331,8 @@
     },
     {
       "path": "papers/2026_IllegalStatesMostly/SKILL.md",
-      "bytes": 3859,
-      "sha256": "d79c0b4673993e6882e36c3482dcd34a5092b5651fc15fbecf83f3d7396d3515"
+      "bytes": 3864,
+      "sha256": "d18fba6409ea840e2680032d1d9b9724e823701cef3a6e4a85b1a1877b9f7384"
     },
     {
       "path": "papers/2026_IllegalStatesMostly/full_text.md",
@@ -21376,8 +21376,8 @@
     },
     {
       "path": "papers/2026_JevPractice/SKILL.md",
-      "bytes": 1069,
-      "sha256": "0207e81c156c56febe6815054a8e79175e6097b950098286ed6a2685cff59f40"
+      "bytes": 1138,
+      "sha256": "d127c124bd7cc6afdad75bbea13c8e831fa23b56009d8fda8ccbd3f8d1addba6"
     },
     {
       "path": "papers/2026_JevPractice/daf-jev-0.7.2-manuscript.pdf",
@@ -21431,8 +21431,8 @@
     },
     {
       "path": "papers/2026_LineSet/SKILL.md",
-      "bytes": 2688,
-      "sha256": "7fe1ad6f8406de32c78a460c3b8df8001a75cb819f3d3baa7e08ace202fa8a13"
+      "bytes": 2698,
+      "sha256": "a8daf1e7d33741c72ab3478e799ea7d633994164da8f26af8cd8262842868a91"
     },
     {
       "path": "papers/2026_LineSet/full_text.md",
@@ -21486,8 +21486,8 @@
     },
     {
       "path": "papers/2026_LivingMetaAnalysis/SKILL.md",
-      "bytes": 3913,
-      "sha256": "09369d158f33e8d8c9ac949aabdc17ab19221fd7f1d4827bc482237acbee91e9"
+      "bytes": 3923,
+      "sha256": "e8ab89b640a3af97452e43cb392c419abe53475277df391d12b71414cf7f0c98"
     },
     {
       "path": "papers/2026_LivingMetaAnalysis/full_text.md",
@@ -21531,8 +21531,8 @@
     },
     {
       "path": "papers/2026_MappingWilliamBlake/SKILL.md",
-      "bytes": 4269,
-      "sha256": "7242a7098d2bd39a56d2418d91ee267ad47f4ef96c02c09e57d3a9c48c4524e6"
+      "bytes": 4279,
+      "sha256": "a2d9f69abc5cb23739753c5fa2949a75bf2fd7c32eedbb7b149fa42ac9ffff71"
     },
     {
       "path": "papers/2026_MappingWilliamBlake/blake_working_paper.pdf",
@@ -21601,8 +21601,8 @@
     },
     {
       "path": "papers/2026_MillenniumAudit/SKILL.md",
-      "bytes": 2696,
-      "sha256": "f4dceb8b260b86364d6e73543c2fe312298b23c960c76b8d1b18dbbd64324d46"
+      "bytes": 2706,
+      "sha256": "71c2b1bc3e7484db2700a88addf0b50cf6e8376ad8fb940777e8bffb3df2f3af"
     },
     {
       "path": "papers/2026_MillenniumAudit/full_text.md",
@@ -21651,8 +21651,8 @@
     },
     {
       "path": "papers/2026_MusicNeverStopped/SKILL.md",
-      "bytes": 3938,
-      "sha256": "c0000d36f1edb66938d1829ec3568a7c03a34901abfc54705aacb2effa805c32"
+      "bytes": 3948,
+      "sha256": "057689f1b1f5033a3a09f19bf5caee0209fb172c992a1b537d4198a12662a73d"
     },
     {
       "path": "papers/2026_MusicNeverStopped/full_text.md",
@@ -21701,8 +21701,8 @@
     },
     {
       "path": "papers/2026_OPHFEP_Synergetics/SKILL.md",
-      "bytes": 871,
-      "sha256": "d943f3b887dd57a056c86e4651094216914d4b8d7e6f81c44af1880a7a264d17"
+      "bytes": 1071,
+      "sha256": "ce5550d3f503fb108cab1155d4aa07f89f547776fa229548848bea55250420c4"
     },
     {
       "path": "papers/2026_OPHFEP_Synergetics/full_text.md",
@@ -21741,8 +21741,8 @@
     },
     {
       "path": "papers/2026_ObserversAllYouNeed/SKILL.md",
-      "bytes": 2297,
-      "sha256": "80983121ad6fa4c5bb690df8e4bb42816c62b32253062412ace95135ac20cae7"
+      "bytes": 2318,
+      "sha256": "f459b24b92786b71637ae4a0e98bd0c703d251b06df2d10391929f61a8369cb0"
     },
     {
       "path": "papers/2026_ObserversAllYouNeed/full_text.md",
@@ -21856,8 +21856,8 @@
     },
     {
       "path": "papers/2026_PROJECTBONDSpecial/SKILL.md",
-      "bytes": 3734,
-      "sha256": "693a5b0488e21fe6dd4a8a5e3526ccd18d04f4fd4c17310079395de0e2e6a8ed"
+      "bytes": 3739,
+      "sha256": "dc131c36cd83bfa06aa5430bd1760476b3317de2aa756219994062c939382ff4"
     },
     {
       "path": "papers/2026_PROJECTBONDSpecial/bond-manuscript_combined.pdf",
@@ -21896,8 +21896,8 @@
     },
     {
       "path": "papers/2026_PersonalRedLines/SKILL.md",
-      "bytes": 3819,
-      "sha256": "bacb670f0f7558b44e9a0e7c8bc73c31956fd84e3ded18caa4e581cf7c6b8cd3"
+      "bytes": 3824,
+      "sha256": "0f7de73eba9f5504728764635e5b7932a87cf601a1acb82021e61952d7d3070e"
     },
     {
       "path": "papers/2026_PersonalRedLines/full_text.md",
@@ -21946,8 +21946,8 @@
     },
     {
       "path": "papers/2026_PolicyDistillationAs/SKILL.md",
-      "bytes": 4095,
-      "sha256": "0fc1fa1f3d21f9643ab9d5042cd8bba9826720b14022ffdaf0b8eee2cbe91b49"
+      "bytes": 4105,
+      "sha256": "a346295ceb287faa5f34865a652f46368098b4ae6722468469b0038cd3b2b24f"
     },
     {
       "path": "papers/2026_PolicyDistillationAs/full_text.md",
@@ -21996,8 +21996,8 @@
     },
     {
       "path": "papers/2026_PolicyEntanglementActive/SKILL.md",
-      "bytes": 4512,
-      "sha256": "eb6ce301e51ae86f953d4c93442ef0dc13551132b1cb57c296fcef32a60060a4"
+      "bytes": 4522,
+      "sha256": "ce0d86b94ac1e971b879d31dca83d476626a7f2fe3b22b185fd704be7fda242f"
     },
     {
       "path": "papers/2026_PolicyEntanglementActive/full_text.md",
@@ -22046,8 +22046,8 @@
     },
     {
       "path": "papers/2026_PoolsRulesTools/SKILL.md",
-      "bytes": 3681,
-      "sha256": "1c7445036886cec973186ed0f5947d8780b32ddfddf39a533888df1831eac3cf"
+      "bytes": 3686,
+      "sha256": "a31b802eb393bd927bd13536bfbcc6b562564b20be53d7251ba0861e2e2f4dc0"
     },
     {
       "path": "papers/2026_PoolsRulesTools/full_text.md",
@@ -22096,8 +22096,8 @@
     },
     {
       "path": "papers/2026_PriorCognitiveArt/SKILL.md",
-      "bytes": 3654,
-      "sha256": "eaf96b3ba75259b59ec3ffc2ff4297517d0d25a74a7614ef6317e0e19585d30b"
+      "bytes": 3659,
+      "sha256": "35130237cee0eebba918b81d43b52ffcc531c3bf43cfbd5cb133fedd9b1327fb"
     },
     {
       "path": "papers/2026_PriorCognitiveArt/full_text.md",
@@ -22176,8 +22176,8 @@
     },
     {
       "path": "papers/2026_RealizingEmptiness/SKILL.md",
-      "bytes": 3976,
-      "sha256": "08bbd58e1f30ada6706d406570f9e5d0e45a7ffa6100b3015a5d8b26846157ce"
+      "bytes": 3981,
+      "sha256": "9a60c73f18dc2f4abe8d34faa8bf9e2e17b5638d81c57471f5c874ab5b5bde95"
     },
     {
       "path": "papers/2026_RealizingEmptiness/full_text.md",
@@ -22231,8 +22231,8 @@
     },
     {
       "path": "papers/2026_RecoveringLLMPersona/SKILL.md",
-      "bytes": 3930,
-      "sha256": "03fbee4349fe6bee68b4a29711cc557dd488c7175e2b5cd1546bc421abc1d879"
+      "bytes": 3940,
+      "sha256": "c6ef54b172525d968225f9b3e7ee391cc0e77e8be5cd24725d35b50551c5ac18"
     },
     {
       "path": "papers/2026_RecoveringLLMPersona/full_text.md",
@@ -22281,8 +22281,8 @@
     },
     {
       "path": "papers/2026_RedactedReportTemplate/SKILL.md",
-      "bytes": 3798,
-      "sha256": "b994fb1be4c285e1f440cccf7b5d32f93c760d16e172ffe1c45b5429c481aeb5"
+      "bytes": 3803,
+      "sha256": "53b1bb1376f4f35191f136bf3ac52e5fae245de35a0d053947beaea827d6bdc2"
     },
     {
       "path": "papers/2026_RedactedReportTemplate/full_text.md",
@@ -22321,8 +22321,8 @@
     },
     {
       "path": "papers/2026_RefinementGold/SKILL.md",
-      "bytes": 2808,
-      "sha256": "eb2141fabb8a36d889e83b83634dc64308468a1017ff3eb80a0848f856e0a320"
+      "bytes": 2818,
+      "sha256": "66835ea3cc508ba5903cec734ab8a29133407261a50b0dfe35a933dae30b098d"
     },
     {
       "path": "papers/2026_RefinementGold/full_text.md",
@@ -22381,8 +22381,8 @@
     },
     {
       "path": "papers/2026_RegisteredReportTemplate/SKILL.md",
-      "bytes": 3690,
-      "sha256": "5e3a98867919581528e59a67ab518a6e3f9105a58fcb2e4a6eee72c7fe17445f"
+      "bytes": 3695,
+      "sha256": "07c4999e556fac6231daf66727c0ad45a96243a71d1952ce78c7eef378aa0901"
     },
     {
       "path": "papers/2026_RegisteredReportTemplate/full_text.md",
@@ -22431,8 +22431,8 @@
     },
     {
       "path": "papers/2026_ReproducibleLiteratureSynthesis/SKILL.md",
-      "bytes": 3779,
-      "sha256": "2bc11cec537d6d6b608a96a6e45a909969f667732aa7eb7bf2dc7666c7aee634"
+      "bytes": 3784,
+      "sha256": "9419b9951ddd1207d981e0c860e584af4b25c75ff99b8b274172d469a3d47267"
     },
     {
       "path": "papers/2026_ReproducibleLiteratureSynthesis/full_text.md",
@@ -22476,8 +22476,8 @@
     },
     {
       "path": "papers/2026_ReproducibleResearch/SKILL.md",
-      "bytes": 3955,
-      "sha256": "57eb97492a4af39b172b7c6e7926a2a11e566c310c74544ee313f8c791307faf"
+      "bytes": 3960,
+      "sha256": "de579f63153b9dea3c3a4c4838db2645c3bb843624bf994f482d6c31d91802da"
     },
     {
       "path": "papers/2026_ReproducibleResearch/full_text.md",
@@ -22526,8 +22526,8 @@
     },
     {
       "path": "papers/2026_Rikishi/SKILL.md",
-      "bytes": 2148,
-      "sha256": "948f2621bd6ac5dc4330e878b3d517d82cf849768c61732ce491e72e5602bbfe"
+      "bytes": 2169,
+      "sha256": "3751ec8dd34a23ef811442f6b863d0798ef1ee7c2cfd7e74cde9115a1a4592c2"
     },
     {
       "path": "papers/2026_Rikishi/full_text.md",
@@ -22566,8 +22566,8 @@
     },
     {
       "path": "papers/2026_RobustBeliefSharing/SKILL.md",
-      "bytes": 2989,
-      "sha256": "a81a4481f733ac145d65ffdda5753f4c512bed0be6da0a314412b61b86542338"
+      "bytes": 2999,
+      "sha256": "3e42b8669a5b6d11f164401146bd687a03b3f508e9079eb9e0f1655bce60e6fc"
     },
     {
       "path": "papers/2026_RobustBeliefSharing/active_fedference_combined.pdf",
@@ -22631,8 +22631,8 @@
     },
     {
       "path": "papers/2026_SelfImprovementAgent/SKILL.md",
-      "bytes": 3471,
-      "sha256": "5cd087f784dfa01adcf983c026f4fbd901a7d9bfaa4075f6064232fca3ce7b93"
+      "bytes": 3481,
+      "sha256": "bb01561af68ccbfcc1bffbe177807c8b286a9c499c25488bf96ac34f43da04bd"
     },
     {
       "path": "papers/2026_SelfImprovementAgent/full_text.md",
@@ -22681,8 +22681,8 @@
     },
     {
       "path": "papers/2026_ShapeBetween/SKILL.md",
-      "bytes": 2469,
-      "sha256": "02bc9143d63cc4bfd7d343194dab0ce7ba9b9f532a3531cd6f353b2587a5c780"
+      "bytes": 2474,
+      "sha256": "9087733b7822130a69dd3cb72b12eea9ebe2f745a6b1ec12fd56cd9ba4a7e732"
     },
     {
       "path": "papers/2026_ShapeBetween/full_text.md",
@@ -22732,7 +22732,7 @@
     {
       "path": "papers/2026_SilverLine/SKILL.md",
       "bytes": 753,
-      "sha256": "25c3e689d6dfcab393c3cdf1b57579d1e5155ea412b148eebede068f8f7516de"
+      "sha256": "effb585d8441c7a9b0dcc2c30c8ab7749960d7643944905ed44a3ae61f3c4fce"
     },
     {
       "path": "papers/2026_SilverLine/full_text.md",
@@ -22786,8 +22786,8 @@
     },
     {
       "path": "papers/2026_Skillarum/SKILL.md",
-      "bytes": 1227,
-      "sha256": "46103c145360c1ed5db230750b699925e5dd7775a51eba2a100067ee6bb1f0db"
+      "bytes": 1323,
+      "sha256": "924e412e8385761e6e0190a6715c5ae8f3f0deb59dc278aafe98e7100dfa3942"
     },
     {
       "path": "papers/2026_Skillarum/Skillarum_combined.pdf",
@@ -22851,8 +22851,8 @@
     },
     {
       "path": "papers/2026_SortitionUpstreamNTQR/SKILL.md",
-      "bytes": 4160,
-      "sha256": "73eea2633dcded0be0c343079702c473e0e22a83ab30954f5a52d7f49f9a9a32"
+      "bytes": 4165,
+      "sha256": "8f52772a0d1c25315be572ec5cdaecbfff80a60c52ee262ff21e269b91c73a54"
     },
     {
       "path": "papers/2026_SortitionUpstreamNTQR/full_text.md",
@@ -22896,8 +22896,8 @@
     },
     {
       "path": "papers/2026_StatesChange/SKILL.md",
-      "bytes": 2673,
-      "sha256": "120bbc237a8a2c0b6fdc92dec1a62957102e2ea438350673ce05c63745cb9a2e"
+      "bytes": 2683,
+      "sha256": "7193d7f48b0045bffc25c179b449663def3a45bf0b71ccb9592c55d37a0d12d6"
     },
     {
       "path": "papers/2026_StatesChange/full_text.md",
@@ -22936,8 +22936,8 @@
     },
     {
       "path": "papers/2026_SymposiumPresenterProgram/SKILL.md",
-      "bytes": 3879,
-      "sha256": "7f0d79ac7a3fcb97055998888585467d52fe602f61272e1693a5da319925ddb1"
+      "bytes": 3900,
+      "sha256": "843f89e8d65596d1424e34840cf1e210a457b9663631278e23d44889b5590993"
     },
     {
       "path": "papers/2026_SymposiumPresenterProgram/full_text.md",
@@ -22976,8 +22976,8 @@
     },
     {
       "path": "papers/2026_SynthOBSFractiSynth/SKILL.md",
-      "bytes": 3848,
-      "sha256": "364b11a88b396054ddb3ce6f6ede9b11d9a819d3bde7e6bdde2b02bc298fc38e"
+      "bytes": 3853,
+      "sha256": "6b120342675376799deabaebf350b11010767013542d3e6f58a1c09586ee52ed"
     },
     {
       "path": "papers/2026_SynthOBSFractiSynth/SynthOBS_v1.618.0.pdf",
@@ -23016,8 +23016,8 @@
     },
     {
       "path": "papers/2026_THALIA/SKILL.md",
-      "bytes": 3906,
-      "sha256": "02701520412706e6b68368d657625331a9d32fffc112c926251e2fffe13d791f"
+      "bytes": 3911,
+      "sha256": "9ca3baa93fa7deb241525b0c3a697021b16b9aaccf8a486deca4c9f545a63fc8"
     },
     {
       "path": "papers/2026_THALIA/full_text.md",
@@ -23076,8 +23076,8 @@
     },
     {
       "path": "papers/2026_TemplateApproachReproducible/SKILL.md",
-      "bytes": 3888,
-      "sha256": "078d05f0b4687c8c797f6b5b6913bf8f381f2f540e9127b3e357cf2f7ad12cdd"
+      "bytes": 3898,
+      "sha256": "0f1b3b44fe29443602b7a8b30f8099fb1fa68847ba1834cba5d9788470837137"
     },
     {
       "path": "papers/2026_TemplateApproachReproducible/full_text.md",
@@ -23131,8 +23131,8 @@
     },
     {
       "path": "papers/2026_TemplateMadlib/SKILL.md",
-      "bytes": 3837,
-      "sha256": "374ae81eb1fef90ecfbc85dafd2c05f07db80099ddf39034fde1c63e1bcd60ff"
+      "bytes": 3847,
+      "sha256": "098b54ae06f2e3053dd6c4fbba5cf77dd9a761883bcf9222b8bc1b287f9cc911"
     },
     {
       "path": "papers/2026_TemplateMadlib/full_text.md",
@@ -23181,8 +23181,8 @@
     },
     {
       "path": "papers/2026_TemplatePitchDeck/SKILL.md",
-      "bytes": 4035,
-      "sha256": "e1021c05e04405b0d915b10aa77d93c02804feda14f757f9449c2dbc7b81c289"
+      "bytes": 4040,
+      "sha256": "03b9745655418384dde04846fd47d2041f151ee520711f4392151d0985d11aff"
     },
     {
       "path": "papers/2026_TemplatePitchDeck/full_text.md",
@@ -23241,8 +23241,8 @@
     },
     {
       "path": "papers/2026_TemplateTextbook/SKILL.md",
-      "bytes": 3369,
-      "sha256": "3d7d254d513f787ffbe8df7d1d2098801095f6e20252deb6544baa653c1661fe"
+      "bytes": 3379,
+      "sha256": "443d7013293a57b63a8f2e388918880c1a86182df5ab7aa4c505a73ec241174a"
     },
     {
       "path": "papers/2026_TemplateTextbook/full_text.md",
@@ -23291,8 +23291,8 @@
     },
     {
       "path": "papers/2026_ThanksNothing/SKILL.md",
-      "bytes": 2036,
-      "sha256": "75a25778f826f2829801fb9b3f96806d240266fa206b37277a64ae650de9a03b"
+      "bytes": 2052,
+      "sha256": "ef40f39921bc3b7a87aa12af29b1813bfaff9871ca19846c629c969cb2c634c6"
     },
     {
       "path": "papers/2026_ThanksNothing/full_text.md",
@@ -23346,8 +23346,8 @@
     },
     {
       "path": "papers/2026_Triplicate/SKILL.md",
-      "bytes": 3730,
-      "sha256": "331e78e8bd228051b1571bbb6d1263023b6a1d6271138a01f31e7d97097b796b"
+      "bytes": 3740,
+      "sha256": "deaf2bb8df1a1654e48c7f6a6b349a56b56f1979e100cb9efcde96d85117c9ec"
     },
     {
       "path": "papers/2026_Triplicate/full_text.md",
@@ -23431,8 +23431,8 @@
     },
     {
       "path": "papers/2026_WhenDoBugs/SKILL.md",
-      "bytes": 4006,
-      "sha256": "e4ed4aab37855cdaf3053d2ce4d4da4f02e5ea9e89d033b55715fec2985fa385"
+      "bytes": 4011,
+      "sha256": "d71803047ca17a380c8a8766bf4d6839ed2f70dbec942b915f5ae6636c1b9718"
     },
     {
       "path": "papers/2026_WhenDoBugs/cohereants_combined.pdf",
@@ -23481,8 +23481,8 @@
     },
     {
       "path": "papers/2026_WhiteLine/SKILL.md",
-      "bytes": 3764,
-      "sha256": "40d0b99f17052e5f708b97d83c04872d9a70904568efc36e20e26a3fa0aff77f"
+      "bytes": 3769,
+      "sha256": "68c0e1ea4851a3ce8d70f00fb43b87db7e730102395b926983356182be64aa1c"
     },
     {
       "path": "papers/2026_WhiteLine/full_text.md",
@@ -23526,8 +23526,8 @@
     },
     {
       "path": "papers/2026_WitnessRegister/SKILL.md",
-      "bytes": 2701,
-      "sha256": "faeade4214037c4d8a4cbb1a4f52229fb93d92af578a7f53d92dfb5db6582f75"
+      "bytes": 2711,
+      "sha256": "182f075b23c3efd8fd40cadc643e27b9319b5931370c7f5c6a250128e431956f"
     },
     {
       "path": "papers/2026_WitnessRegister/full_text.md",
@@ -23561,13 +23561,13 @@
     },
     {
       "path": "papers/AGENTS.md",
-      "bytes": 9636,
-      "sha256": "f3adb2a0436486cf7dd9620f7f9c5016fdb7a264bc06bb5b7861337288794683"
+      "bytes": 8892,
+      "sha256": "9045c1c8c0f4380810db74a100d4f11f52366a7adc2d2ea77c7b9b9cdb7c121d"
     },
     {
       "path": "papers/README.md",
-      "bytes": 21613,
-      "sha256": "cba216406777c4105c0f9259eae6abad29a95836e214189ccc21a24f291f6c52"
+      "bytes": 22329,
+      "sha256": "800cdc33c51294c506f6ac0be1a93b2b1b8b62eef7cb94e828175bba31d7f800"
     },
     {
       "path": "papers/generated-documents.json",
@@ -23801,18 +23801,18 @@
     },
     {
       "path": "reports/external_links_2026-11-20.json",
-      "bytes": 489344,
-      "sha256": "b96c75e28f2600460bc4d735f60aeb4115d6d7a0c8e7054ca4159845ced00390"
+      "bytes": 492938,
+      "sha256": "b87fd7d501fd227847aa93033281ea8b4f05f5a72a1543da8decdfdcaa2e7c03"
     },
     {
       "path": "reports/external_links_triage_2026-11-20.json",
-      "bytes": 82958,
-      "sha256": "760bfc61d861f018a7ea54b042bfd5a4a1345b22a25029e4aa314e212ef9633b"
+      "bytes": 85323,
+      "sha256": "a24a36bb69d9fda9b7fdf482a4805a722b512b63b3c2afbb2838bad5137024f8"
     },
     {
       "path": "reports/external_links_triage_2026-11-20.md",
-      "bytes": 10466,
-      "sha256": "b97ffe153102287b9443c0bb26b471bc84d013167244785331893a7d534cc23c"
+      "bytes": 11193,
+      "sha256": "0c218f1270a179606ab805b84f027eb7be07e5917a2cc23e7fbfaa5bb7a2e41c"
     },
     {
       "path": "reports/github_catalog_metadata_review_2026-10-16.json",
@@ -24347,7 +24347,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 430268,
-      "sha256": "71f9d73b4205a9f75a66e3bdba78257d46d5a5d890caafb957f6bf058b5a7541"
+      "sha256": "6a6724c41e0d479a10030b6d68c2b60a722625aa12df573a6e4784e7eb14b8cc"
     },
     {
       "path": "software.html",
@@ -24381,8 +24381,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 257514,
-      "sha256": "aaa7d5c9b00fd1c31155b1e09c42055bbc833d9bb88456fc4370db83c8d94b42"
+      "bytes": 258696,
+      "sha256": "7a03446699bb60e1a476796861831fdd44192ded997cf93c6f62aff970fc3b4c"
     },
     {
       "path": "uv.lock",

@@ -1,9 +1,9 @@
 # 📚 Papers Directory
 
-Documentation index for all publications. Each folder contains:
+Index of bibliography entries with local documentation. Each folder includes these guides and, where available, source materials.
 - **README.md** — Paper overview, abstract, keywords, and citation
 - **AGENTS.md** — Agent roles and extraction log
-- **SKILL.md** — Claude Code-compatible skill definition with YAML frontmatter
+- **SKILL.md** — Repository-local publication guide with skill frontmatter
 - **full_text.md** — Full text extracted from the PDF or ODT/DOCX source (when available), with page-level structure and inline image references
 - **images/** — Figures and images extracted from the PDF or document source (when available)
 
@@ -11,7 +11,7 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 
 ## Papers (219)
 
-Archive links open the selected versioned PDFs without duplicating them here.
+A checkmark (✅) marks a local archive PDF. A Zenodo PDF link opens the selected versioned archive. A dash (—) marks a folder with no PDF available through this index.
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -70,10 +70,10 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 53 | [2023_P3IF](2023_P3IF/) | ✅ | 2023 | P3IF |
 | 54 | [2023_PostdocReview](2023_PostdocReview/) | ✅ | 2023 | PostdocReview |
 | 55 | [2023_SinglePheromone](2023_SinglePheromone/) | ✅ | 2023 | SinglePheromone |
-| 56 | [2023_ToComment](2023_ToComment/) | ✅ | 2023 | ToComment |
+| 56 | [2023_ToComment](2023_ToComment/) | — | 2023 | ToComment |
 | 57 | [2023_VariationalSynthesis](2023_VariationalSynthesis/) | ✅ | 2023 | VariationalSynthesis |
 | 58 | [2023_VideoEntomology](2023_VideoEntomology/) | ✅ | 2023 | VideoEntomology |
-| 59 | [2024_AII_v2](2024_AII_v2/) | ❌ | 2024 | AII_v2 |
+| 59 | [2024_AII_v2](2024_AII_v2/) | ✅ | 2024 | AII_v2 |
 | 60 | [2024_BlattodeaDiversity](2024_BlattodeaDiversity/) | ✅ | 2024 | BlattodeaDiversity |
 | 61 | [2024_CurioCards](2024_CurioCards/) | ✅ | 2024 | CurioCards |
 | 62 | [2024_DigitalTwins](2024_DigitalTwins/) | ✅ | 2024 | DigitalTwins |
@@ -81,9 +81,9 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 64 | [2024_FederatedInference](2024_FederatedInference/) | ✅ | 2024 | FederatedInference |
 | 65 | [2024_ImageMemeResearch](2024_ImageMemeResearch/) | ✅ | 2024 | ImageMemeResearch |
 | 66 | [2024_InfiniteImaginarium](2024_InfiniteImaginarium/) | ✅ | 2024 | InfiniteImaginarium |
-| 67 | [2024_MathArtBlake](2024_MathArtBlake/) | ❌ | 2024 | MathArtBlake |
+| 67 | [2024_MathArtBlake](2024_MathArtBlake/) | ✅ | 2024 | MathArtBlake |
 | 68 | [2024_OntologySUMO](2024_OntologySUMO/) | ✅ | 2024 | OntologySUMO |
-| 69 | [2024_PaleolithicRockstars](2024_PaleolithicRockstars/) | ❌ | 2024 | PaleolithicRockstars |
+| 69 | [2024_PaleolithicRockstars](2024_PaleolithicRockstars/) | — | 2024 | PaleolithicRockstars |
 | 70 | [2024_PopulationSearch](2024_PopulationSearch/) | ✅ | 2024 | PopulationSearch |
 | 71 | [2024_QuantumDreams](2024_QuantumDreams/) | ✅ | 2024 | QuantumDreams |
 | 72 | [2024_SensemakingFederation](2024_SensemakingFederation/) | ✅ | 2024 | SensemakingFederation |
@@ -116,7 +116,7 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 99 | [2026_Bimetalism](2026_Bimetalism/) | ✅ | 2026 | Bimetalism |
 | 100 | [2026_EntoLinguistics](2026_EntoLinguistics/) | ✅ | 2026 | EntoLinguistics |
 | 101 | [2026_ActInfMetaAnalysis](2026_ActInfMetaAnalysis/) | ✅ | 2026 | ActInfMetaAnalysis |
-| 102 | [2026_FocusedAttentionMeditation](2026_FocusedAttentionMeditation/) | ❌ | 2026 | FocusedAttentionMeditation |
+| 102 | [2026_FocusedAttentionMeditation](2026_FocusedAttentionMeditation/) | — | 2026 | FocusedAttentionMeditation |
 | 103 | [2026_CognitiveCaseDiagrams](2026_CognitiveCaseDiagrams/) | ✅ | 2026 | CognitiveCaseDiagrams |
 | 104 | [2026_FEPLean](2026_FEPLean/) | ✅ | 2026 | FEPLean |
 | 105 | [2020_FacilitatorsCatechism](2020_FacilitatorsCatechism/) | ✅ | 2020 | FacilitatorsCatechism |
@@ -146,7 +146,7 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 129 | [2023_SlidesIris](2023_SlidesIris/) | ✅ | 2023 | SlidesIris |
 | 130 | [2022_CanonicalNeuralNetworks](2022_CanonicalNeuralNetworks/) | — | 2022 | CanonicalNeuralNetworks |
 | 131 | [2022_InteroceptionAsModeling](2022_InteroceptionAsModeling/) | — | 2022 | InteroceptionAsModeling |
-| 132 | [2022_Transcript](2022_Transcript/) | — | 2022 | Transcript |
+| 132 | [2022_Transcript](2022_Transcript/) | ✅ | 2022 | Transcript |
 | 133 | [2022_WorkedExampleBayesian](2022_WorkedExampleBayesian/) | — | 2022 | WorkedExampleBayesian |
 | 134 | [2022_TranscriptDiscussions](2022_TranscriptDiscussions/) | — | 2022 | TranscriptDiscussions |
 | 135 | [2022_TrackingPublicSensemaking](2022_TrackingPublicSensemaking/) | ✅ | 2022 | TrackingPublicSensemaking |
@@ -162,7 +162,7 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 145 | [2026_ITrace](2026_ITrace/) | ✅ | 2026 | ITrace |
 | 146 | [2026_DemoCreate](2026_DemoCreate/) | ✅ | 2026 | DemoCreate |
 | 147 | [2026_ENTO](2026_ENTO/) | ✅ | 2026 | ENTO |
-| 148 | [2026_GeneralizedNotationNotationGNN](2026_GeneralizedNotationNotationGNN/) | — | 2026 | GeneralizedNotationNotationGNN |
+| 148 | [2026_GeneralizedNotationNotationGNN](2026_GeneralizedNotationNotationGNN/) | ✅ | 2026 | GeneralizedNotationNotationGNN |
 | 149 | [2026_COGANT](2026_COGANT/) | ✅ | 2026 | COGANT |
 | 150 | [2026_AGEINT](2026_AGEINT/) | ✅ | 2026 | AGEINT |
 | 151 | [2026_PolicyDistillationAs](2026_PolicyDistillationAs/) | ✅ | 2026 | PolicyDistillationAs |
@@ -224,26 +224,25 @@ Archive links open the selected versioned PDFs without duplicating them here.
 | 207 | [2026_ActiveAssemblyTheory](2026_ActiveAssemblyTheory/) | ✅ | 2026 | ActiveAssemblyTheory |
 | 208 | [2026_ThanksNothing](2026_ThanksNothing/) | ✅ | 2026 | ThanksNothing |
 | 209 | [2026_ObserversReadUniverse](2026_ObserversReadUniverse/) | ✅ | 2026 | ObserversReadUniverse |
-
 | 210 | [2026_ActiveInferenceLanguage](2026_ActiveInferenceLanguage/) | ✅ | 2026 | ActiveInferenceLanguage |
 | 211 | [2026_GNNBasedActive](2026_GNNBasedActive/) | ✅ | 2026 | GNNBasedActive |
-| 212 | [2026_BlakeanEntomology](2026_BlakeanEntomology/) | ✅ | 2026 | BlakeanEntomology |
-| 213 | [2026_StatesChange](2026_StatesChange/) | ✅ | 2026 | StatesChange |
-| 214 | [2026_ObserversAllYouNeed](2026_ObserversAllYouNeed/) | — | 2026 | ObserversAllYouNeed |
+| 212 | [2026_BlakeanEntomology](2026_BlakeanEntomology/) | [Zenodo PDF](https://zenodo.org/api/records/23900583/files/Blakean_Entomology.pdf/content) | 2026 | BlakeanEntomology |
+| 213 | [2026_StatesChange](2026_StatesChange/) | [Zenodo PDF](https://zenodo.org/api/records/23900617/files/Blakean_Federalism.pdf/content) | 2026 | StatesChange |
+| 214 | [2026_ObserversAllYouNeed](2026_ObserversAllYouNeed/) | [Zenodo PDF](https://zenodo.org/api/records/24151588/files/observers_are_all_you_need.pdf/content) | 2026 | ObserversAllYouNeed |
 | 215 | [2026_Rikishi](2026_Rikishi/) | [Zenodo PDF](https://zenodo.org/api/records/23987671/files/rikishi-1.1.0-paper.pdf/content) | 2026 | Rikishi |
 | 216 | [2026_SymposiumPresenterProgram](2026_SymposiumPresenterProgram/) | [Zenodo PDF](https://zenodo.org/api/records/23986505/files/Active-Inference-Symposium-2026-Presenter-Program-v3.2.0.pdf/content) | 2026 | SymposiumPresenterProgram |
 | 217 | [2026_OPHFEP_Synergetics](2026_OPHFEP_Synergetics/) | ✅ | 2026 | OPH, FEP and Synergetics |
+| 218 | [2026_CrossTalk_on_the_Page](2026_CrossTalk_on_the_Page/) | [Zenodo PDF](https://zenodo.org/api/records/24297224/files/CrossTalk-on-the-Page-v0.1.0.pdf/content) | 2026 | CrossTalk_on_the_Page |
+| 219 | [2026_PyCIPro](2026_PyCIPro/) | [Zenodo PDF](https://zenodo.org/api/records/24352380/files/py-CIPro-manuscript.pdf/content) | 2026 | PyCIPro |
 
-| 218 | [2026_CrossTalk_on_the_Page](2026_CrossTalk_on_the_Page/) | ✅ | 2026 | CrossTalk_on_the_Page |
-| 219 | [2026_PyCIPro](2026_PyCIPro/) | ✅ | 2026 | PyCIPro |
 ## Scripts
 
-All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:
+Use these tools from the repository root. The [paper documentation manifest](generated-documents.json) assigns renderer ownership.
 
 | Script | Purpose |
 |--------|---------|
-| [`code/orchestrators/regenerate_docs.py`](../code/orchestrators/regenerate_docs.py) | Regenerate every per-folder README.md / AGENTS.md / SKILL.md from `paper_metadata.json` (`--apply` to write, `--force` to overwrite) |
-| [`code/orchestrators/extract_paper_texts.py`](../code/orchestrators/extract_paper_texts.py) | Extract full text and images from all paper PDFs (`--force` to overwrite existing extractions) |
+| [`code/orchestrators/regenerate_docs.py`](../code/orchestrators/regenerate_docs.py) | Check (`--check`) or rebuild (`--apply`) manifest-owned per-folder guides. Adoption of an existing file requires an explicit manifest entry and `--adopt-existing --apply`. |
+| [`code/orchestrators/extract_paper_texts.py`](../code/orchestrators/extract_paper_texts.py) | Extract full text and images from local paper PDFs. Follow the [source custody guidance](AGENTS.md#quality-checks-spot-check-after-adds) before replacing an extraction. |
 | [`code/orchestrators/sync_publications_html.py`](../code/orchestrators/sync_publications_html.py) | Rebuild `publications.html` head meta + `data/publications-ld.json` mainEntity from `pages/BIBLIOGRAPHY.md` |
 | [`code/src/biblio_table.py`](../code/src/biblio_table.py) | Shared eight-column `pages/BIBLIOGRAPHY.md` row parser |
 

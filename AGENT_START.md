@@ -91,17 +91,21 @@ see the do-not-skip list in
   branch before pushing). Create the next work branch *before* merging, or
   `git checkout <work-branch>` immediately after the merge returns.
 
-## Validation Command
+## Validation commands
 
 ```bash
-uv run python3 code/orchestrators/validate_repo.py
-PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q -n auto --dist loadfile
-uv run --group lint ruff check code
+uv run --no-sync python3 code/orchestrators/validate_repo.py
+PYTHONDONTWRITEBYTECODE=1 uv run --no-sync python3 -m pytest code/tests -q -m "not browser and not manuscript_render" -n auto --dist loadfile
+uv run --no-sync --group lint ruff check code
+uv run --no-sync python3 code/src/artifact_budget.py
 ```
 
-These are the core checks CI runs. CI also enforces the artifact budget and a separate mandatory browser job; the ordinary local suite can skip optional browser tools. For interactive changes, follow [`docs/operations/site-runtime.md`](docs/operations/site-runtime.md) and run the browser suite with `DOCXOLOGY_REQUIRE_BROWSER_QA=1` so missing browser capabilities fail. The lint rule set is configured in
-`pyproject.toml` under `[tool.ruff.lint]`, not on the command line, so a local
-run and CI enforce exactly the same rules.
+These commands reproduce the core validation checks. Install the locked
+environment and lint group first. Follow [Site runtime](docs/operations/site-runtime.md)
+for the separate browser and Lighthouse jobs. The default pytest selection
+includes browser and native manuscript tests and fails when any selected test
+skips. See [Development](docs/operations/development.md#verification-sequence)
+for full-suite prerequisites and [Settle](docs/operations/settle.md) for landing.
 
 ## Backend performance
 

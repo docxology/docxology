@@ -46,7 +46,7 @@ Methods and findings are summarized from the full text; each item is backed by a
 Verification points for this work:
 
 - Canonical DOI: Not assigned
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: Not recorded
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
 
@@ -62,4 +62,4 @@ When working with this paper:
 
 1. Use the canonical citation above.
 2. Apply methods listed in the Methods section for related analysis.
-3. Validate findings against the original PDF and metadata.
+3. Check reported findings against the published source and metadata.

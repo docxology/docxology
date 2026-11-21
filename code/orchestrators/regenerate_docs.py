@@ -1434,7 +1434,7 @@ def generate_skill(
             "Verification points for this work:",
             "",
             f"- Canonical DOI: {doi if doi else 'Not assigned'}",
-            f"- PDF SHA-256: {meta.get('pdf_sha256') or 'See zenodo_record'}",
+            f"- PDF SHA-256: {meta.get('pdf_sha256') or 'Not recorded'}",
             f"- Pairing confidence: {meta.get('pairing_confidence') or 'unknown'}",
             f"- Last checked: {meta.get('checked_at') or 'unknown'}",
             "",
@@ -1462,8 +1462,8 @@ def generate_skill(
             else "1. Use the canonical citation above.",
             "2. Apply methods listed in the Methods section for related analysis."
             if methods
-            else "2. Read the methods in the full text before reusing this work.",
-            "3. Validate findings against the original PDF and metadata.",
+            else "2. Consult the published source for the methods before reusing this work.",
+            "3. Check reported findings against the published source and metadata.",
             "",
         ]
     )

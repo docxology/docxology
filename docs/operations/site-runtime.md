@@ -159,7 +159,7 @@ independent of browser caching and the Pages projection policy.
 Run the focused acceptance checks with the optional browser runtime installed:
 
 ```bash
-uv sync --extra browser-qa
+uv sync --locked --extra browser-qa
 uv run playwright install chromium
 uv run --extra browser-qa python3 -m pytest code/tests -q -m "browser and not lighthouse" -n 2 --dist loadfile
 # Install lighthouse@13.4.1 on PATH before this separate, serial measurement.

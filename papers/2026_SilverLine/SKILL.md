@@ -1,6 +1,6 @@
 ---
 name: "SilverLine"
-description: "Use for The Silver Line: A Memory-and-Succession Instrument, a Zenodo publication with DOI 10.5281/zenodo.22833485."
+description: "Use for The Silver Line: A Memory-and-Succession Instrument, a Zenodo publication with DOI 10.5281/zenodo.24069438."
 tags: ["memory", "succession", "active-inference", "declared-custody", "review-gaps"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["memory", "succession", "active-inference", "declared-custody", "review-g
 
 Use this skill when working with the publication **The Silver Line: A Memory-and-Succession Instrument** or its archival record.
 
-1. Ground citations in DOI `10.5281/zenodo.22833485`.
+1. Ground citations in DOI `10.5281/zenodo.24069438`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts

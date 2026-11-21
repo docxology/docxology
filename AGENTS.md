@@ -18,7 +18,7 @@ evidence. Existing source ownership and landing rules apply.
 ### 📖 ARCHIVIST
 
 - Maintains the unified [pages/BIBLIOGRAPHY.md](pages/BIBLIOGRAPHY.md) catalog of all publications
-- Ensures every publication has a corresponding paper folder with documentation
+- Checks paper-folder coverage and the documented exceptions in the bibliography
 - Cross-references DOIs, venues, and citation metadata
 - Tracks publication counts and domain coverage
 
@@ -31,7 +31,7 @@ evidence. Existing source ownership and landing rules apply.
 
 ### 🎓 EDUCATOR
 
-- Generates Claude Code-compatible SKILL.md files for each publication
+- Maintains the repository-local SKILL.md guides for indexed paper folders, following their ownership manifest
 - Creates learning pathways across the bibliography
 - Maintains clear documentation hierarchy (README → pages/ → BIBLIOGRAPHY → papers/)
 - Ensures YAML frontmatter, tags, and Instructions sections are present
@@ -171,7 +171,7 @@ The completed maintenance record is kept in [docs/operations/maintenance-log.md]
 - Homepage teaching blurbs: BIOL-1 General Biology — College of the Redwoods, Pelican Bay, Spring and Fall 2026; BIOL-8 — Human Biology, College of the Redwoods, Spring 2026.
 - AII Textbook Group site copy: nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort; link the Parr/Pezzulo/Friston MIT Press OA monograph and the Namjoshi Fundamentals monograph as in the Educator line.
 - On SEO passes for `index.html`, remove legacy Twitter card meta and drop Twitter from Person `sameAs` when the user requests a Twitter-free head.
-- After substantive repo edits, run `uv run python3 -m pytest code/tests -q` (Python via `uv`) to confirm the suite still passes.
+- Follow [development](docs/operations/development.md#verification-sequence) for CI-equivalent checks and full-suite prerequisites.
 - Prefer full-catalog regeneration of `software.html` from `pages/SOFTWARE.md` (all owned + AII catalog rows, not a highlight subset), mirroring the publications.html / `sync_publications_html.py` pattern.
 - For new publication editions, prefer the existing versioned Zenodo PDF archive and keep metadata, work/paper pages, available extracted text, and previews here. Curate `remote_primary_pdf` and independent `source_evidence` under the [PDF hosting policy](docs/operations/github-pages-artifact.md#primary-pdf-hosting-and-source-custody); preserve existing local originals, public PDF URLs, and historical extraction provenance. Hosting curation does not authorize bulk migration, deletion, repository creation, or budget increases.
 
@@ -190,4 +190,4 @@ The completed maintenance record is kept in [docs/operations/maintenance-log.md]
 - `ActiveInferenceInstitute` on GitHub is an **Organization** (GitHub API `type: Organization`, observed 2026-10-06; both `https://api.github.com/users/ActiveInferenceInstitute` and `/orgs/ActiveInferenceInstitute` resolve, and `/users/` API calls remain valid for organizations); recorded in `organizations.json` as `github_account_type: organization`. Earlier records called it a User account; the profile's `updated_at` of 2026-09-22 is consistent with a conversion around then, but do not state a conversion date as fact. `refresh_public_sources.py` now records the account `type` in the snapshot facts, so a future type change surfaces as freshness drift.
 - Independent anchors: AII **EIN 88-2985125** (see [ProPublica Nonprofit Explorer](https://projects.propublica.org/nonprofits/organizations/882985125)); NSF PRFB **DBI-2010290** ([official award record](https://api.nsf.gov/services/v1/awards/2010290.json), 2020-10-01 to 2023-09-30). `pages/VERIFICATION_LOG.md` + `data/verification-log.json` record dated evidence passes and should stay paired when updated.
 - College of the Redwoods teaching (BIOL-1 at Pelican Bay in Spring and Fall 2026; BIOL-8 Human Biology in Spring 2026) is **principal-confirmed instructor-of-record**; do not remove or soften because a public WebAdvisor schedule may not yet list it.
-- Python tooling under `code/`; run `uv run python3 -m pytest code/tests -q` and validate with `code/orchestrators/validate_repo.py`. Repo-wide **reports** may fail or warn for CDN latency or bot protection—triage before rewriting site copy. Representative Zenodo anchors: GNN `10.5281/zenodo.19600217`, Journal-Utilities `10.5281/zenodo.18686966`.
+- Run the project’s [validation sequence](docs/operations/development.md#verification-sequence) from the repository root. Repo-wide **reports** may fail or warn for CDN latency or bot protection—triage before rewriting site copy. Representative Zenodo anchors: GNN `10.5281/zenodo.19600217`, Journal-Utilities `10.5281/zenodo.18686966`.

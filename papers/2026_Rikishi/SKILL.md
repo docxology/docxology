@@ -54,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.23987670`
-2. Read the methods in the full text before reusing this work.
-3. Validate findings against the original PDF and metadata.
+2. Consult the published source for the methods before reusing this work.
+3. Check reported findings against the published source and metadata.

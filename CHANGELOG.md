@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-20 — GitHub profile and maintenance guides
+
+- Streamline the GitHub profile around the live research tools, eight domain pages, and canonical sources.
+- Update the site skill and maintenance guides for the locked runtime, generated-output ownership, and current validation commands.
+- Correct publication guide citations, release references, and PDF evidence wording. Keep paper-index rows contiguous and label local and archived PDFs accurately.
+
 ## 2026-11-20 — Publications, repositories, and selected domain works
 
 - Catalogue the py-CIPro manuscript as work 240, with its versioned Zenodo PDF and source evidence.

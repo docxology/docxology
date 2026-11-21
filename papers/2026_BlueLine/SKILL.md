@@ -1,6 +1,6 @@
 ---
 name: "BlueLine"
-description: "Use for The Blue Line: A Stewardship Instrument for Maintained Commitments, a Zenodo publication with DOI 10.5281/zenodo.22833489."
+description: "Use for The Blue Line: A Stewardship Instrument for Maintained Commitments, a Zenodo publication with DOI 10.5281/zenodo.24069450."
 tags: ["stewardship", "maintenance", "line-set", "accountability"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["stewardship", "maintenance", "line-set", "accountability"]
 
 Use this skill when working with the publication **The Blue Line: A Stewardship Instrument for Maintained Commitments** or its archival record.
 
-1. Ground citations in DOI `10.5281/zenodo.22833489`.
+1. Ground citations in DOI `10.5281/zenodo.24069450`.
 2. Treat the Zenodo record as the archival source.
 
 ## Key Concepts

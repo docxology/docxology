@@ -5,7 +5,7 @@ interactive-layer changes:
 
 ```bash
 uv run python3 code/orchestrators/accessibility_audit.py --check
-uv sync --extra browser-qa
+uv sync --locked --extra browser-qa
 uv run --extra browser-qa playwright install chromium
 uv run --extra browser-qa python3 code/orchestrators/browser_smoke.py
 uv run --extra browser-qa python3 code/orchestrators/browser_qa.py

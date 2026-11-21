@@ -47,7 +47,7 @@ Methods and findings are summarized from the full text; each item is backed by a
 Verification points for this work:
 
 - Canonical DOI: 10.3389/fnbeh.2021.647732
-- PDF SHA-256: See zenodo_record
+- PDF SHA-256: Not recorded
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
 
@@ -63,4 +63,4 @@ When working with this paper:
 
 1. Reference the DOI for citation: `10.3389/fnbeh.2021.647732`
 2. Apply methods listed in the Methods section for related analysis.
-3. Validate findings against the original PDF and metadata.
+3. Check reported findings against the published source and metadata.

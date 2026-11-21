@@ -3,42 +3,44 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-11-20.json`
-- Checked URLs: 1076
-- OK: 869
-- Warnings: 207
+- Checked URLs: 1075
+- OK: 862
+- Warnings: 213
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 202 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 205 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 869 | Returned a 2xx/3xx response. |
-| `timeout` | 2 | Timed out under the bounded checker timeout. |
+| `needs-replacement` | 2 | Returned 404 and should be replaced or removed if no longer valid. |
+| `ok` | 862 | Returned a 2xx/3xx response. |
+| `timeout` | 3 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 2 | Server-side outage or temporary upstream failure. |
 
 ## bot-protected-or-rate-limited
 
 | Status | URL | Sources |
 | ---: | --- | --- |
+| 429 | <https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096> | discovery.html, domain-active-inference.html, domain-active-inference.html |
 | 403 | <https://api.github.com/users/ActiveInferenceInstitute> | discovery.html, evidence.html, evidence.html |
 | 403 | <https://api.github.com/users/docxology> | discovery.html, domain-active-inference.html, domain-aii-ecosystem.html |
 | 403 | <https://api.github.com/users/docxology/repos> | domain-active-inference.html, domain-aii-ecosystem.html, domain-art-synergetics.html |
 | 403 | <https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind> | README.md, index.html, pages/PROFILE.md |
-| 403 | <https://doi.org/10.1002/asi.24900> | README.md, cognitive-security.html, cognitive-security.html |
+| 403 | <https://doi.org/10.1002/asi.24900> | cognitive-security.html, cognitive-security.html, domain-cognitive-security.html |
 | 403 | <https://doi.org/10.1002/ece3.70063> | domain-entomology.html, domain-entomology.html, pages/BIBLIOGRAPHY.md |
-| 403 | <https://doi.org/10.1093/molbev/msu292> | README.md, domain-biomedicine.html, domain-biomedicine.html |
+| 403 | <https://doi.org/10.1093/molbev/msu292> | domain-biomedicine.html, domain-biomedicine.html, pages/BIBLIOGRAPHY.md |
 | 403 | <https://doi.org/10.1098/rspb.2016.0841> | insect-cognition.html, insect-cognition.html, pages/BIBLIOGRAPHY.md |
 | 403 | <https://doi.org/10.1111/mec.13964> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.1126/science.aag1520> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.1126/science.abg0904> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 403 | <https://doi.org/10.1146/annurev-neuro-070815-013927> | README.md, domain-entomology.html, domain-entomology.html |
+| 403 | <https://doi.org/10.1146/annurev-neuro-070815-013927> | domain-entomology.html, domain-entomology.html, pages/BIBLIOGRAPHY.md |
 | 403 | <https://doi.org/10.3109/09553002.2016.1144941> | domain-biomedicine.html, domain-biomedicine.html, pages/BIBLIOGRAPHY.md |
 | 403 | <https://doi.org/10.3390/arts7030039> | domain-art-synergetics.html, domain-art-synergetics.html, pages/BIBLIOGRAPHY.md |
-| 403 | <https://doi.org/10.3390/e25070964> | README.md, domain-active-inference.html, domain-active-inference.html |
+| 403 | <https://doi.org/10.3390/e25070964> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
 | 403 | <https://doi.org/10.3390/e26040303> | domain-active-inference.html, domain-active-inference.html, insect-cognition.html |
-| 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20286170> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 403 | <https://doi.org/10.3390/e27050459> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.19699233> | active-inference.html, active-inference.html, domain-active-inference.html |
 | 429 | <https://doi.org/10.5281/zenodo.20286171> | updates.html |
 | 429 | <https://doi.org/10.5281/zenodo.20286477> | domain-biomedicine.html, domain-computational.html, domain-presentations-media.html |
 | 429 | <https://doi.org/10.5281/zenodo.20286478> | pages/SOFTWARE.md, software.html, updates.html |
@@ -56,17 +58,16 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.20469500> | discovery.html, updates.html |
 | 429 | <https://doi.org/10.5281/zenodo.20482025> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20482026> | pages/SOFTWARE.md, software.html, software.html |
-| 429 | <https://doi.org/10.5281/zenodo.20498699> | README.md, domain-computational.html, domain-computational.html |
-| 429 | <https://doi.org/10.5281/zenodo.20533125> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
-| 429 | <https://doi.org/10.5281/zenodo.20533669> | README.md, domain-computational.html, domain-computational.html |
-| 429 | <https://doi.org/10.5281/zenodo.20533675> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
+| 429 | <https://doi.org/10.5281/zenodo.20498699> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20533125> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20533669> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20533675> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20584820> | pages/DISCOVERY.md, pages/SOFTWARE.md, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.20614908> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20693216> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20705350> | README.md, computational-entomology.html, computational-entomology.html |
+| 429 | <https://doi.org/10.5281/zenodo.20705350> | computational-entomology.html, computational-entomology.html, neurosymbolic-ai.html |
 | 429 | <https://doi.org/10.5281/zenodo.20705351> | pages/SOFTWARE.md, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.20732274> | neurosymbolic-ai.html, neurosymbolic-ai.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20732275> | README.md |
 | 429 | <https://doi.org/10.5281/zenodo.20747834> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20749817> | pages/SOFTWARE.md, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.20786638> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
@@ -108,11 +109,19 @@ Scoped network-link triage for public-facing repository hubs.
 | ---: | --- | --- |
 | 0 | <https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman> | pages/LINKS.md |
 
+## needs-replacement
+
+| Status | URL | Sources |
+| ---: | --- | --- |
+| 404 | <https://doi.org/10.1007/978-3-031-28719-0_10> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 404 | <https://doi.org/10.1007/978-3-032-16955-6_11> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+
 ## timeout
 
 | Status | URL | Sources |
 | ---: | --- | --- |
-| 0 | <https://www.christies.com/en/lot/lot-6337619> | README.md, art.html, media.html |
+| 0 | <https://grantome.com/grant/NSF/DBI-2010290> | pages/EVIDENCE.md, pages/EVIDENCE.md |
+| 0 | <https://www.christies.com/en/lot/lot-6337619> | art.html, media.html, pages/EVIDENCE.md |
 | 0 | <https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd> | pages/EVIDENCE.md, pages/EVIDENCE.md |
 
 ## upstream-transient

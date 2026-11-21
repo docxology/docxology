@@ -130,12 +130,7 @@ Use [GENERATED.md](../GENERATED.md) as the exhaustive rebuild matrix. Dependency
 
 ## Tests
 
-From repo root:
-
-```bash
-uv run python3 -m pytest code/tests -q
-uv run python3 code/orchestrators/validate_repo.py
-```
+Use the [validation sequence](../docs/operations/development.md#verification-sequence) for core, browser, and full-suite checks.
 
 ## Maintenance
 
