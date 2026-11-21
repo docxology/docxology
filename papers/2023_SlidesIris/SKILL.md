@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Slides for Iris"
-description: "No abstract is recorded for this work yet; see the DOI or bibliography link."
+description: "Use this guide to cite or inspect Slides for Iris."
 tags: ["slidesiris"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2023). *Slides for Iris*. Zenodo."

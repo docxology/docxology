@@ -471,6 +471,13 @@ def test_bibliography_doi_is_rendered_as_canonical_while_artifact_is_labeled(
     assert f"- Artifact DOI: {ARTIFACT_DOI}" in skill
 
 
+def test_skill_with_missing_summaries_identifies_the_paper_and_routes_to_source():
+    skill = rd.generate_skill("2026_Example", {"title": "A documented study"})
+    assert 'description: "Use this guide to cite or inspect A documented study."' in skill
+    assert skill.count("[paper overview](README.md) for the source.") == 2
+    assert "see the abstract and the full text" not in skill
+
+
 def test_removed_force_flag_fails_before_writes():
     with pytest.raises(SystemExit) as caught:
         rd.build_argument_parser().parse_args(["--apply", "--force"])

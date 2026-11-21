@@ -1,7 +1,7 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "To comment or not to comment, that is the question!"
-description: "No abstract is recorded for this work yet; see the DOI or bibliography link."
+description: "Use this guide to cite or inspect To comment or not to comment, that is the question!."
 tags: ["tocomment"]
 domain: "Genetics & Biomedical"
 citation: "Dean Tickles, Daniel Friedman (2023). *To comment or not to comment, that is the question!*. Physics of Life Reviews."
@@ -20,13 +20,13 @@ This work addresses topics in **Genetics & Biomedical**: tocomment.
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+No paper-specific methods summary is recorded. See the [paper overview](README.md) for the source.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+No paper-specific findings summary is recorded. See the [paper overview](README.md) for the source.
 
 ## Related Works
 

@@ -43,7 +43,7 @@ evidence. Existing source ownership and landing rules apply.
 - Connects the 8 research domains through cross-references
 - Keeps the repository map in [README.md](README.md) current
 - Keeps [pages/DISCOVERY.md](pages/DISCOVERY.md) current with canonical public identifiers, API endpoints, query recipes, and verification cautions
-- Keeps teaching and AII program lines aligned across [index.html](index.html) (visible on GitHub Pages), [pages/PROFILE.md](pages/PROFILE.md), [pages/VIDEOS.md](pages/VIDEOS.md), and the **Educator** bullet in [README.md](README.md) (e.g. CR BIOL courses, AII Textbook cohort count, textbook monograph links)
+- Keeps teaching and AII program lines aligned across [index.html](index.html) (visible on GitHub Pages), [pages/PROFILE.md](pages/PROFILE.md), [pages/VIDEOS.md](pages/VIDEOS.md), and the [Teaching and media section of README.md](README.md#teaching-and-media) (e.g. CR BIOL courses, AII Textbook cohort count, textbook monograph links)
 
 ### 🛠️ MAINTAINER
 
@@ -169,7 +169,7 @@ The completed maintenance record is kept in [docs/operations/maintenance-log.md]
 - Keep Wikidata anchored on `https://www.wikidata.org/wiki/Q138781444`: Person JSON-LD in `index.html` must list this URL first in `sameAs`, and body copy (`rel="me"`), `README.md` snippets, LINKS/WIKIPEDIA tables, and anywhere else must use **Q138781444** rather than merged duplicate **Q85887463**.
 - After Google Scholar metrics change, record the direct authenticated observation with [`code/orchestrators/record_scholar_observation.py`](code/orchestrators/record_scholar_observation.py) (it writes `data/scholar-snapshot.json` and its SHA-256-bound `data/scholar-verification-receipt.json` together), then run `code/orchestrators/sync_scholar_metrics.py` and regenerate claim/resume/public outputs; keep hand-authored docs pointed at the snapshot instead of repeating the current count.
 - Homepage teaching blurbs: BIOL-1 General Biology — College of the Redwoods, Pelican Bay, Spring and Fall 2026; BIOL-8 — Human Biology, College of the Redwoods, Spring 2026.
-- AII Textbook Group site copy: nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort; link the Parr/Pezzulo/Friston MIT Press OA monograph and the Namjoshi Fundamentals monograph as in the Educator line.
+- AII Textbook Group site copy: nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort; link the Parr/Pezzulo/Friston MIT Press OA monograph and the Namjoshi Fundamentals monograph as listed in the [README’s Teaching and media section](README.md#teaching-and-media).
 - On SEO passes for `index.html`, remove legacy Twitter card meta and drop Twitter from Person `sameAs` when the user requests a Twitter-free head.
 - Follow [development](docs/operations/development.md#verification-sequence) for CI-equivalent checks and full-suite prerequisites.
 - Prefer full-catalog regeneration of `software.html` from `pages/SOFTWARE.md` (all owned + AII catalog rows, not a highlight subset), mirroring the publications.html / `sync_publications_html.py` pattern.

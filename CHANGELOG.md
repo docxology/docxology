@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-21 — GitHub profile research guide
+
+- Add tables for the eight research domains, selected paper and software pairs, interactive tools, reading trails, and teaching materials.
+- Link straight to individual work records, lab experiments, preloaded research-map views and reading lists, and citation downloads.
+
 ## 2026-11-20 — GitHub profile and maintenance guides
 
 - Streamline the GitHub profile around the live research tools, eight domain pages, and canonical sources.

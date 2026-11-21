@@ -27,7 +27,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+No paper-specific findings summary is recorded. See the [paper overview](README.md) for the source.
 
 Methods and findings are summarized from the full text; each item is backed by a verbatim quote recorded in `metadata.json` (`evidence`, `key_findings_evidence`).
 

@@ -21,13 +21,13 @@ This work addresses topics in **Presentations & Media**: active inference, sympo
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+No paper-specific methods summary is recorded. See the [paper overview](README.md) for the source.
 
 ## Key Findings
 
 Core contributions and results:
 
-No paper-specific findings have been summarized yet; see the abstract and the full text.
+No paper-specific findings summary is recorded. See the [paper overview](README.md) for the source.
 
 ## Related Works
 

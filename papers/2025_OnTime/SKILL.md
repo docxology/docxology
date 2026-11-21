@@ -20,7 +20,7 @@ This work addresses topics in **Art & Synergetics**: temporal dynamics, Active I
 
 Primary methods and techniques applied in this work:
 
-No paper-specific methods have been summarized yet; see the abstract and the full text.
+No paper-specific methods summary is recorded. See the [paper overview](README.md) for the source.
 
 ## Key Findings
 

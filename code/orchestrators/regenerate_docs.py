@@ -1298,17 +1298,14 @@ def generate_skill(
     all_folders: list[str] | None = None,
     bib_entry: dict | None = None,
 ) -> str:
-    """Generate SKILL.md content with Claude Code-compatible YAML frontmatter.
-
-    Extended version with Methods, Key Findings, Related Works, Datasets, and Validation sections.
-    """
+    """Render a repository-local paper guide from its recorded sources."""
     year, topic = parse_folder_id(folder)
     title = work_title(folder, meta, bib_entry)
     authors = work_authors(meta, bib_entry)
     venue = work_venue(bib_entry)
     description = (
         clean_abstract_text(meta.get("abstract", meta.get("description", "")))
-        or NO_ABSTRACT_NOTE
+        or f"Use this guide to cite or inspect {title}."
     )
     domain = resolve_domain(folder, meta, bib_entry)
     tags = meta.get("tags", meta.get("keywords", [topic.lower()]))
@@ -1376,7 +1373,10 @@ def generate_skill(
     for bullet in method_bullets(meta)[:6]:
         lines.append(f"- {bullet}")
     if not methods:
-        lines.append(NO_METHODS_NOTE)
+        lines.append(
+            "No paper-specific methods summary is recorded. "
+            "See the [paper overview](README.md) for the source."
+        )
     lines.append("")
 
     # Key Findings section
@@ -1391,7 +1391,10 @@ def generate_skill(
     for finding in findings[:6]:
         lines.append(f"- {finding}")
     if not findings:
-        lines.append(NO_FINDINGS_NOTE)
+        lines.append(
+            "No paper-specific findings summary is recorded. "
+            "See the [paper overview](README.md) for the source."
+        )
     lines.append("")
     if grounded_note(meta) and (methods or findings):
         lines.extend([grounded_note(meta), ""])
