@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T23:09:31Z",
+  "generated_at": "2026-11-22T20:51:14Z",
   "artifacts": [
     {
       "name": "Research exploration tools",
@@ -194,8 +194,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-11-21.json",
-        "reports/source_coverage_2026-11-21.md"
+        "reports/source_coverage_2026-11-22.json",
+        "reports/source_coverage_2026-11-22.md"
       ],
       "sources": [
         "data/works.json",
@@ -338,7 +338,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-11-21.json"
+        "reports/pages_artifact_growth_2026-11-22.json"
       ],
       "sources": [
         "data/scholar-pdf-projections.json",
@@ -835,7 +835,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-11-21.json"
+        "reports/asset_size_2026-11-22.json"
       ],
       "sources": [
         "root HTML pages",
@@ -849,7 +849,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-11-21.json"
+        "reports/accessibility_static_2026-11-22.json"
       ],
       "sources": [
         "root HTML pages",
