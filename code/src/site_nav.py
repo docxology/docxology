@@ -358,13 +358,15 @@ def breadcrumb_jsonld_script(trail: list[tuple[str, str]]) -> str:
     return f'    <script type="application/ld+json">\n{payload}\n    </script>'
 
 
-def home_href(depth: int = 0) -> str:
+def home_href(depth: int | None = 0) -> str:
     """Relative link to the site root that resolves to the canonical ``/``.
 
     Linking ``index.html`` makes crawlers record ``/index.html`` as a separate
     URL (an "Alternate page with proper canonical" in Search Console); linking
     the directory keeps every internal homepage link on the canonical address.
     """
+    if depth is None:
+        return "/"
     return "../" * depth if depth else "./"
 
 
@@ -396,10 +398,10 @@ def render_breadcrumb(trail: list[tuple[str, str]], *, depth: int = 0) -> str:
 
 
 def nav_manifest(
-    depth: int = 0,
+    depth: int | None = 0,
 ) -> tuple[list[tuple[str, str, str, str]], list[tuple[str, str, str, str]]]:
     """Return (primary, secondary) nav link tuples (key, href, label, extra_class)."""
-    prefix = "../" * depth
+    prefix = "/" if depth is None else "../" * depth
     home = home_href(depth)
     primary = [
         ("publications", f"{prefix}publications.html", "Publications", ""),
@@ -441,7 +443,7 @@ def _nav_anchor(
     return f'<a href="{html.escape(href, quote=True)}"{attrs}{current}>{html.escape(label)}</a>'
 
 
-def _render_nav_shell(*, active: str = "", depth: int = 0) -> str:
+def _render_nav_shell(*, active: str = "", depth: int | None = 0) -> str:
     """Render the shared header nav: plain <nav><ul><li><a> (no menubar roles)."""
     home = home_href(depth)
     primary, secondary = nav_manifest(depth)
@@ -471,8 +473,8 @@ def _render_nav_shell(*, active: str = "", depth: int = 0) -> str:
     )
 
 
-def render_nav(*, active: str = "", depth: int = 0) -> str:
-    """Shared header nav from the single manifest. depth=0 root, 1+ nested."""
+def render_nav(*, active: str = "", depth: int | None = 0) -> str:
+    """Shared header nav from the single manifest. depth=0 root, 1+ nested, None for unknown request depth."""
     return _render_nav_shell(active=active, depth=depth)
 
 
