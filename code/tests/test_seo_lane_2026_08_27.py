@@ -145,6 +145,11 @@ def test_build_404_page_shell_and_recovery_features():
     assert "/js/search-page.js" in content  # wired to the search index
     assert 'name="robots" content="noindex, follow"' in content
     assert 'class="destinations"' in content
+    # Pages serves this document at arbitrary missing request paths.
+    assert 'href="/index.html"' not in content
+    assert 'href="/" class="nav-logo"' in content
+    assert 'href="/#about"' in content
+    assert 'href="/publications.html"' in content
     # Exactly the top-8 destinations
     assert content.count('<a href="/') >= 8
     assert build_404_page.OUT == REPO_ROOT / "404.html"

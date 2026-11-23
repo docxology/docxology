@@ -89,7 +89,7 @@ def render() -> str:
         .notfound-lede{{color:var(--text-secondary);font-size:1.02rem;max-width:36rem;margin:0 auto 2rem}}
         .search-panel{{display:grid;gap:1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;max-width:36rem;margin:0 auto 2.5rem}}
         .search-input{{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);font:inherit;font-size:1.05rem;padding:.8rem 1rem}}
-        .destinations{{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}}
+        .notfound-shell nav.destinations{{position:static;height:auto;min-height:0;padding:0;background:transparent;border:0;box-shadow:none;display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}}
         .destinations a{{border:1px solid var(--border);border-radius:999px;padding:.4rem .9rem;color:var(--silver-bright);text-decoration:none;font-size:.85rem}}
         .destinations a:hover{{border-color:var(--gold,#d4a857);color:var(--gold,#d4a857)}}
         footer a{{display:inline-flex;align-items:center;min-height:24px}}
@@ -104,7 +104,7 @@ def render() -> str:
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-{render_nav(active="")}
+{render_nav(depth=None)}
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="/">Home</a></li><li aria-current="page">Page Not Found</li></ol>
     </nav>
