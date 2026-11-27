@@ -6,6 +6,12 @@ and references live in topic subdirectories; point-in-time snapshots are archive
 [`reports/current_counts.md`](../reports/current_counts.md) and
 [`data/current-counts.json`](../data/current-counts.json) instead.
 
+For the public research index, start at the [website](https://danielarifriedman.com/start-here.html)
+or the [GitHub landing page](../README.md). Use the [development guide](operations/development.md)
+to set up the checkout and the [manuscript guide](manuscript/README.md) to verify
+the index's architecture. The [per-work archive](../papers/) has the individual
+publication sources and their own guides.
+
 Agents: see [`AGENTS.md`](AGENTS.md) for operational guidance (bibliography ↔ folders,
 generated-layer rebuild ordering, canonical/reports). This README is the human map.
 

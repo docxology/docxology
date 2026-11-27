@@ -13,6 +13,19 @@ inspection and `plan --json` for the generation contract. The
 exit codes, and the distinction between inspection, execution, and release
 evidence. Existing source ownership and landing rules apply.
 
+For the repository and profile landing, edit [root README.md](README.md) and
+regenerate the GitHub-selected [.github/README.md](.github/README.md). Run the
+generator without writes to verify the mirror.
+
+```sh
+uv run python code/orchestrators/build_github_readme.py
+uv run python code/orchestrators/build_github_readme.py --check
+```
+
+Use the [documentation index](docs/README.md) to find the owning guide before
+editing. The [repository manuscript](docs/manuscript/README.md) explains the
+index. Each [paper folder](papers/) retains its own publication identity.
+
 ## Agent Roles
 
 ### 📖 ARCHIVIST
