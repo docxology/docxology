@@ -42,10 +42,10 @@ Read [`MANUSCRIPT_STATUS.md`](MANUSCRIPT_STATUS.md) for the evidence and renderi
 
 ## Build the PDF and HTML reader
 
-Use the repository's locked Python environment with the `pdf-extraction`
-extra to stage the existing cover and four diagrams. Set `TEMPLATE_ROOT` to
+Use Python 3.15 in the source checkout with the repository's locked
+`pdf-extraction` extra to stage the existing cover and four diagrams. Set `TEMPLATE_ROOT` to
 a clean [Template checkout at `87704feae0a4490ef7dad9c931d268e8c30273c2`](https://github.com/docxology/template/tree/87704feae0a4490ef7dad9c931d268e8c30273c2)
-with its locked environment, Pandoc, pandoc-crossref, and XeLaTeX. From the
+with its separate locked environment, Pandoc, pandoc-crossref, and XeLaTeX. From the
 repository root, run the following.
 
 ```sh
