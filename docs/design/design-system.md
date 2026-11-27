@@ -84,7 +84,7 @@ this generated-page rule in
 
 - Research tools extend these tokens through
   [`research-tools.css`](../../css/research-tools.css). The
-  [research design contract](../../DESIGN.md) defines ordered reading rows,
+  [research design contract](research-exploration.md) defines ordered reading rows,
   trail steps, bounded graph neighborhoods with complete list alternatives,
   and labelled numerical controls. Native focus, 44px controls, wrapping and
   document-owned scrolling apply at every breakpoint. See the

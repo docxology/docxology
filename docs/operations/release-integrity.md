@@ -81,7 +81,7 @@ required managed filesystem permission profile is unavailable. Its absence is
 not a passing result and does not contribute to a release-ready claim. When
 that profile is available, run the scan against the clean candidate, retain its
 evidence and limitations, and triage validated findings under
-[`SEC-002`](../../TODO.md) before a security-sensitive release.
+[`SEC-002`](backlog.md) before a security-sensitive release.
 
 The final release gate permits only `_site/` and the narrowly defined fresh
 post-commit evidence/attestation paths to appear in the checkout. Those files

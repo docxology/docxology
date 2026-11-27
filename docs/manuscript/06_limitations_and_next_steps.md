@@ -30,4 +30,4 @@ Relationship ranking depends on recorded metadata and editorial choices. Common 
 4. Add quantitative findings only after an explicit measurement design and retained candidate-bound observations exist; use a generated-value producer for volatile results.
 5. Obtain editorial and human visual review before considering publication.
 
-The active implementation backlog remains [TODO.md](../../TODO.md). This section records manuscript requirements without replacing repository ownership, account access, or source-review decisions.
+The active implementation backlog remains [TODO.md](../operations/backlog.md). This section records manuscript requirements without replacing repository ownership, account access, or source-review decisions.

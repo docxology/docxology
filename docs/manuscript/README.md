@@ -40,6 +40,33 @@ Read [`MANUSCRIPT_STATUS.md`](MANUSCRIPT_STATUS.md) for the evidence and renderi
 | [`works/`](../../works/) | Generated permanent work landing pages |
 | [`data/`](../../data/) | Identity reservations, cached observations, structured exports, and release controls |
 
+## Build the PDF and HTML reader
+
+Use the repository's locked Python environment with the `pdf-extraction`
+extra to stage the existing cover and four diagrams. Set `TEMPLATE_ROOT` to
+a clean [Template checkout at `87704feae0a4490ef7dad9c931d268e8c30273c2`](https://github.com/docxology/template/tree/87704feae0a4490ef7dad9c931d268e8c30273c2)
+with its locked environment, Pandoc, pandoc-crossref, and XeLaTeX. From the
+repository root, run the following.
+
+```sh
+uv sync --locked --extra pdf-extraction
+project="$TEMPLATE_ROOT/projects/working/docxology"
+git worktree add --detach "$project" HEAD
+uv run --no-sync python "$project/code/tools/stage_manuscript_reader.py"
+cd "$TEMPLATE_ROOT"
+uv run --no-sync python scripts/pipeline/stage_03_render.py --project working/docxology
+uv run --no-sync python scripts/pipeline/stage_04_validate.py --project working/docxology
+```
+
+For a sparse worktree, include the manuscript, staging script, and
+`code/src/` Python modules. The script uses indexed paths to bind source links
+to the checked-out revision and writes to a new `output/` tree. The reader
+build includes all numbered sections, the supplement, citations, and the
+existing explanatory diagrams. The PDF and HTML are under `output/pdf/` and
+`output/web/`, and Stage 04 writes its checks under `output/reports/`.
+This PDF/HTML workflow is separate from the repository's four-format native
+renderer and its historical receipts below.
+
 ## Verification
 
 From this repository root:

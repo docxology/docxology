@@ -47,7 +47,7 @@ evidence. Existing source ownership and landing rules apply.
 
 ### 🛠️ MAINTAINER
 
-- Treat [`TODO.md`](TODO.md) as the active backlog: each unfinished item has a
+- Treat [`TODO.md`](docs/operations/backlog.md) as the active backlog: each unfinished item has a
   stable ID, priority, owner, trigger, deliverable, acceptance criteria, and
   dependencies. Completed work belongs in `CHANGELOG.md`, release snapshots,
   and dated reports.
