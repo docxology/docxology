@@ -13,4 +13,4 @@ in [`../README.md`](../README.md).
 
 Follow [`AGENTS.md`](AGENTS.md) and the root repository instructions. Dated
 completed history belongs in [`maintenance-log.md`](maintenance-log.md) or
-release snapshots; active unfinished work belongs in [`../../TODO.md`](../../TODO.md).
+release snapshots; active unfinished work belongs in [`backlog.md`](backlog.md).

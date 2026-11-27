@@ -15,7 +15,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | **Development** | [`operations/development.md`](operations/development.md) | Source authority, thin command/shared-module boundaries, configuration ownership, and local/hosted/live evidence |
 | **Operations** | [`operations/agent-interface.md`](operations/agent-interface.md) | Offline versioned JSON inspection of checkout prerequisites and authoritative generation commands |
 | **Operations** | [`operations/regeneration.md`](operations/regeneration.md) | Declared local writers/checks, ordered passes, source fingerprints, interruption behavior, and release boundaries |
-| **Backlog** | [`../TODO.md`](../TODO.md) | Active unfinished release, evidence, accessibility, Pages, and operating-model work; no completed history |
+| **Backlog** | [`operations/backlog.md`](operations/backlog.md) | Active unfinished release, evidence, accessibility, Pages, and operating-model work; no completed history |
 | **Operations** | [`operations/settle.md`](operations/settle.md) | One-command settle driver: tiered gate battery, payload/control-tail commit split, push/PR |
 | **Operations** | [`operations/publication-sync.md`](operations/publication-sync.md) | GitHub + Zenodo publication intake, Zenodo-only backfill, and software-only GitHub record triage |
 | **Operations** | [`operations/github-pages-artifact.md`](operations/github-pages-artifact.md) | Bounded GitHub Pages deployment projection, 1 GiB limit, and repository-vs-site asset policy |

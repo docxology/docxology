@@ -1,7 +1,7 @@
 # Historical backlog notes
 
 These completed review and session notes were previously kept in `TODO.md`.
-The active backlog is [TODO.md](../../TODO.md); the public change record is
+The active backlog is [TODO.md](backlog.md); the public change record is
 [CHANGELOG.md](../../CHANGELOG.md). Dates, measurements, and verification claims
 below describe those historical passes rather than current repository state.
 

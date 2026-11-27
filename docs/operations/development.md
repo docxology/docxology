@@ -9,7 +9,7 @@ published catalog.
 This guide describes ownership and workflow. The exact output matrix is
 [`GENERATED.md`](../../GENERATED.md), the executable order is
 [`generation_plan.py`](../../code/src/generation_plan.py), and the unfinished
-work is [`TODO.md`](../../TODO.md).
+work is [`TODO.md`](backlog.md).
 
 ## Source and projection
 
