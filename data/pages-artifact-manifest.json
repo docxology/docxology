@@ -31695,11 +31695,11 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-11-20.json",
+      "path": "reports/public_source_review_2026-11-27.json",
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-11-20.md",
+      "path": "reports/public_source_review_2026-11-27.md",
       "role": "public control metadata"
     }
   ],
@@ -31770,8 +31770,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 851,
-    "bytes": 282801723,
+    "count": 853,
+    "bytes": 282980118,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
