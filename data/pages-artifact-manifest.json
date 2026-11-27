@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-22T21:14:24Z",
-  "source_commit_at_generation": "94da637c1256e1029b89550b8e511cd249f422b5",
+  "generated_at": "2026-11-27T01:13:59Z",
+  "source_commit_at_generation": "e6ae611da210d6b334cc29730129a436dd34ed32",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -22,11 +22,11 @@
     "release_hard_ceiling_bytes": 996147200,
     "safety_ceiling_bytes": 996147200,
     "warning_bytes": 975175680,
-    "source_bytes": 966904769,
+    "source_bytes": 966910322,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 6323,
-    "artifact_bytes": 968026118
+    "artifact_file_count": 6326,
+    "artifact_bytes": 968032173
   },
   "included_files": [
     {
@@ -71,8 +71,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 21167,
-      "sha256": "cf240832f15719fab035a6a2ba29104fb0f520b2c1e2e8ef9b985c640a406fe0"
+      "bytes": 21186,
+      "sha256": "8713983a2acde39b9fe765093b9c5e712d722f17708fc0c3b4a7bfda5e886cbf"
     },
     {
       "path": "AGENT_START.md",
@@ -101,8 +101,8 @@
     },
     {
       "path": "DESIGN.md",
-      "bytes": 3168,
-      "sha256": "4a563f8d57a6c6ae393768d0a8acb661e951e6b41905c824479ddd0f5c3840a6"
+      "bytes": 163,
+      "sha256": "2cbbbda0eaefa50ef9e7ae1a15a8c7350c3c69d57ef71ee30df1cb3574787a1e"
     },
     {
       "path": "LICENSE",
@@ -121,8 +121,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 20576,
-      "sha256": "8838897110a4de9804a42db87764333c07224d9ca99c665c1130b97f02e18037"
+      "bytes": 125,
+      "sha256": "4afb1069575016a65ae435c8c485108e15a957725df18b4f6106aec66807e7a1"
     },
     {
       "path": "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt",
@@ -11865,6 +11865,11 @@
       "sha256": "94f9ca73ce51dbf732974f70855303c9a4552adbec6ee702fbd25b7c2d1e6876"
     },
     {
+      "path": "code/tools/stage_manuscript_reader.py",
+      "bytes": 3676,
+      "sha256": "7fa5e56cec074a1f5052bee790e28598c255d8587af897caf8be8887a09615cf"
+    },
+    {
       "path": "code/tools/vendor/AGENTS.md",
       "bytes": 513,
       "sha256": "7e156ffcec9da5f8f36f1b93ec840768246c33e315849fb1aebe54f8c74775c3"
@@ -12211,8 +12216,8 @@
     },
     {
       "path": "docs/README.md",
-      "bytes": 6326,
-      "sha256": "d914289bdf1860d24b07390a35c3df45550bbe9ae93dc2603c534268a730d00e"
+      "bytes": 6348,
+      "sha256": "17d0690f80f3c9ad80d31d3b99956fd1b73200f246703ef683d3e27a7237b698"
     },
     {
       "path": "docs/design/AGENTS.md",
@@ -12286,8 +12291,13 @@
     },
     {
       "path": "docs/design/design-system.md",
-      "bytes": 10715,
-      "sha256": "81817f060c7976653ce9b96e7bd391d7a9f62c54b993949ac2d3db41b4ee7a5f"
+      "bytes": 10723,
+      "sha256": "0a9bd258246be1eaa1fc2a60fa06cfd0bae7d4389bf06a6e460c382de5fd4718"
+    },
+    {
+      "path": "docs/design/research-exploration.md",
+      "bytes": 3144,
+      "sha256": "25c258109e56679da8075cb39490d725ec82e81c528f7c4e844b832b381c7506"
     },
     {
       "path": "docs/manuscript/00_abstract.md",
@@ -12321,8 +12331,8 @@
     },
     {
       "path": "docs/manuscript/06_limitations_and_next_steps.md",
-      "bytes": 3949,
-      "sha256": "c77795b48a75d515b422ffa56e2ee084eb64a0dabf9573b092f3fdff7479d3ff"
+      "bytes": 3960,
+      "sha256": "c142c6cf61d8f2e3055c70e23e902dad047cfc78707e6d642963da54b4244b22"
     },
     {
       "path": "docs/manuscript/98_symbols_glossary.md",
@@ -12346,8 +12356,8 @@
     },
     {
       "path": "docs/manuscript/README.md",
-      "bytes": 9956,
-      "sha256": "ede47604f6345b2482de2b94b7634cb35b7ec133d38e35e90a360ec82201100d"
+      "bytes": 11389,
+      "sha256": "49332f39bfd485d144aa7905937ced61516c2a5f848642d9f29e0b61582fa570"
     },
     {
       "path": "docs/manuscript/S01_source_surface.md",
@@ -12381,8 +12391,8 @@
     },
     {
       "path": "docs/operations/README.md",
-      "bytes": 1100,
-      "sha256": "5ff96b1f61c6ba954dbdc20f58fdae69a8961c8da7802083d3a5316770f77da0"
+      "bytes": 1094,
+      "sha256": "6f08a02150dd86418f639b3f23c11788d9235e44ff50ceb180bdd9ecbcd66679"
     },
     {
       "path": "docs/operations/accessibility-qa.md",
@@ -12406,8 +12416,13 @@
     },
     {
       "path": "docs/operations/backlog-history.md",
-      "bytes": 15744,
-      "sha256": "db484609fe7de81d7fd81f919184e92cde62bf751743f20ae0e69823bdccd802"
+      "bytes": 15741,
+      "sha256": "295cdbd4454c84c06f7c7cb9ae8cee986b78ffdf3666f9f7a0f9510c55b358fd"
+    },
+    {
+      "path": "docs/operations/backlog.md",
+      "bytes": 20714,
+      "sha256": "87c07d6d46477c0f5d56a9e7540b8fd54b2eac808018a2c6ca3f774dc7f1d742"
     },
     {
       "path": "docs/operations/cv-release.md",
@@ -12416,8 +12431,8 @@
     },
     {
       "path": "docs/operations/development.md",
-      "bytes": 12749,
-      "sha256": "d22566390a4d1b5a4c7d05dc3f9bfff7b86e82a54b311764a29e0c44e86e3b9b"
+      "bytes": 12746,
+      "sha256": "6bac2ff27e9aa6ae76751e2088aa1d0722841e746360d701c4b6eafecfafb9b1"
     },
     {
       "path": "docs/operations/evidence-refresh.md",
@@ -12436,8 +12451,8 @@
     },
     {
       "path": "docs/operations/maintenance-log.md",
-      "bytes": 1785,
-      "sha256": "928f153990616cd050b5e8b8ddfad3526d93be46a432e09477cce3dd26ba5909"
+      "bytes": 1782,
+      "sha256": "0567a4ab66c8452d3d2be65b0fb73fd368e175ba2d09200a279a3de7ada7b6a5"
     },
     {
       "path": "docs/operations/publication-sync.md",
@@ -12451,8 +12466,8 @@
     },
     {
       "path": "docs/operations/release-integrity.md",
-      "bytes": 13289,
-      "sha256": "17cb0255f9b7d358ab18c8ea5820b64b16ac6552f089e2933e35256e5f528182"
+      "bytes": 13286,
+      "sha256": "b0b31bf7ae6b34591750e65319ae48b7ad0e639ffa135c37f3e536de0031192b"
     },
     {
       "path": "docs/operations/report-retention.md",
