@@ -6,6 +6,17 @@ I study how systems make sense of the world, from [harvester ant colonies](domai
 
 [Research domains](#research-domains) · [Featured projects](#featured-projects) · [Interactive tools](#interactive-tools) · [Reading trails](#reading-trails) · [Teaching and media](#teaching-and-media) · [Art](#art) · [Sources and reuse](#sources-and-reuse)
 
+## Start exploring
+
+- [Start here](start-here.html) offers guided routes into the research, writing, and tools.
+- [Data catalog](catalog.html) describes the public datasets, and [exports](exports.html) links to the files for citation managers and analysis.
+- [Cite and verify](cite-verify.html) connects citations, source evidence, and version-specific records.
+
+The public website brings together the bibliography, software, research media,
+and art. The [paper folders](papers/) retain per-work sources and documentation.
+The [repository manuscript](docs/manuscript/README.md) explains how the index is
+built and checked.
+
 ## Research domains
 
 | Domain | Start with | Follow the connections |
@@ -16,7 +27,7 @@ I study how systems make sense of the world, from [harvester ant colonies](domai
 | [Art and Synergetics](domain-art-synergetics.html) | [William Blake and Buckminster Fuller](works/Friedman2023WilliamBlakeBuckminsterFuller065.html) · [Fourfold vision and William Blake](works/Friedman2026FourfoldVisionWilliamBlake196.html) | [William Blake publication pathway](blake-pathway.html) · [Artwork gallery](art.html) |
 | [Computational methods](domain-computational.html) | [A template for reproducible research](works/Friedman2026TemplateApproachReproducibleGenerative001.html) · [Discovery Engine](works/Friedman2025DiscoveryEngineAIDriven026.html) | [Reproducibility trail](trails.html#reproducible-research) · [Software catalog](software.html) |
 | [Genetics and biomedicine](domain-biomedicine.html) | [Coding sequence change in honey bees](works/Friedman2015LargeScaleCodingSequence108.html) · [Nuclear structure and radiation damage](works/Friedman2016InfluenceNuclearStructureFormation105.html) | [Genetics and biomedicine on the map](research-map.html?node=domain%3Agenetics%20%26%20biomedical) |
-| [Active Inference Institute ecosystem](domain-aii-ecosystem.html) | [Active Inference Institute overview](works/Friedman2025ActiveInferenceInstituteActive024.html) · [Coordinating the field](works/Friedman2026CoordinatingFieldCaseEcosystem224.html) | [Institute programs](pages/PROFILE.md#active-inference-institute) · [Institute software](pages/SOFTWARE.md#active-inference-institute) |
+| [Active Inference Institute ecosystem](domain-aii-ecosystem.html) | [Active Inference Institute overview](works/Friedman2025ActiveInferenceInstituteActive024.html) · [Coordinating the field](works/Friedman2026CoordinatingFieldCaseEcosystem224.html) | [Institute programs](pages/PROFILE.md#active-inference-institute) · [Institute software](software.html) |
 | [Presentations and media](domain-presentations-media.html) | [Active Inference Journal video archive](works/Friedman2026ActiveInferenceJournal500002.html) · [2026 Active Inference Symposium](works/Friedman20262026ActiveInferenceSymposium237.html) | [Talks and courses](media.html) · [Video archive](videos.html) |
 
 ## Featured projects
@@ -79,4 +90,4 @@ I study how systems make sense of the world, from [harvester ant colonies](domai
 | **Evidence and source notes** | [Cite and verify](cite-verify.html) · [Claim ledger](evidence.html) · [Collection counts](reports/current_counts.md) · [Scholar snapshot](data/scholar-snapshot.json) · [Discovery map](discovery.html) |
 | **About and contact** | [Full biography](pages/PROFILE.md) · [Collaborators](pages/COLLABORATORS.md) · [Contact and links](pages/LINKS.md) |
 | **Research profiles** | [ORCID](https://orcid.org/0000-0001-6232-9096) · [Google Scholar](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) · [Wikidata](https://www.wikidata.org/wiki/Q138781444) |
-| **Maintaining this repository** | [Agent start guide](AGENT_START.md) · [Project skill](SKILL.md) · [Documentation index](docs/README.md) · [Generated outputs](GENERATED.md) · [Changelog](CHANGELOG.md) |
+| **Maintaining this repository** | [Agent start guide](AGENT_START.md) · [Project skill](SKILL.md) · [Documentation index](docs/README.md) · [Development and setup](docs/operations/development.md) · [Generated outputs](GENERATED.md) · [Changelog](CHANGELOG.md) |

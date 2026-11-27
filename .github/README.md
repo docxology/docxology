@@ -8,6 +8,17 @@ I study how systems make sense of the world, from [harvester ant colonies](https
 
 [Research domains](#research-domains) · [Featured projects](#featured-projects) · [Interactive tools](#interactive-tools) · [Reading trails](#reading-trails) · [Teaching and media](#teaching-and-media) · [Art](#art) · [Sources and reuse](#sources-and-reuse)
 
+## Start exploring
+
+- [Start here](https://danielarifriedman.com/start-here.html) offers guided routes into the research, writing, and tools.
+- [Data catalog](https://danielarifriedman.com/catalog.html) describes the public datasets, and [exports](https://danielarifriedman.com/exports.html) links to the files for citation managers and analysis.
+- [Cite and verify](https://danielarifriedman.com/cite-verify.html) connects citations, source evidence, and version-specific records.
+
+The public website brings together the bibliography, software, research media,
+and art. The [paper folders](https://github.com/docxology/docxology/tree/main/papers/) retain per-work sources and documentation.
+The [repository manuscript](https://github.com/docxology/docxology/blob/main/docs/manuscript/README.md) explains how the index is
+built and checked.
+
 ## Research domains
 
 | Domain | Start with | Follow the connections |
@@ -18,7 +29,7 @@ I study how systems make sense of the world, from [harvester ant colonies](https
 | [Art and Synergetics](https://danielarifriedman.com/domain-art-synergetics.html) | [William Blake and Buckminster Fuller](https://danielarifriedman.com/works/Friedman2023WilliamBlakeBuckminsterFuller065.html) · [Fourfold vision and William Blake](https://danielarifriedman.com/works/Friedman2026FourfoldVisionWilliamBlake196.html) | [William Blake publication pathway](https://danielarifriedman.com/blake-pathway.html) · [Artwork gallery](https://danielarifriedman.com/art.html) |
 | [Computational methods](https://danielarifriedman.com/domain-computational.html) | [A template for reproducible research](https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative001.html) · [Discovery Engine](https://danielarifriedman.com/works/Friedman2025DiscoveryEngineAIDriven026.html) | [Reproducibility trail](https://danielarifriedman.com/trails.html#reproducible-research) · [Software catalog](https://danielarifriedman.com/software.html) |
 | [Genetics and biomedicine](https://danielarifriedman.com/domain-biomedicine.html) | [Coding sequence change in honey bees](https://danielarifriedman.com/works/Friedman2015LargeScaleCodingSequence108.html) · [Nuclear structure and radiation damage](https://danielarifriedman.com/works/Friedman2016InfluenceNuclearStructureFormation105.html) | [Genetics and biomedicine on the map](https://danielarifriedman.com/research-map.html?node=domain%3Agenetics%20%26%20biomedical) |
-| [Active Inference Institute ecosystem](https://danielarifriedman.com/domain-aii-ecosystem.html) | [Active Inference Institute overview](https://danielarifriedman.com/works/Friedman2025ActiveInferenceInstituteActive024.html) · [Coordinating the field](https://danielarifriedman.com/works/Friedman2026CoordinatingFieldCaseEcosystem224.html) | [Institute programs](https://github.com/docxology/docxology/blob/main/pages/PROFILE.md#active-inference-institute) · [Institute software](https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md#active-inference-institute) |
+| [Active Inference Institute ecosystem](https://danielarifriedman.com/domain-aii-ecosystem.html) | [Active Inference Institute overview](https://danielarifriedman.com/works/Friedman2025ActiveInferenceInstituteActive024.html) · [Coordinating the field](https://danielarifriedman.com/works/Friedman2026CoordinatingFieldCaseEcosystem224.html) | [Institute programs](https://github.com/docxology/docxology/blob/main/pages/PROFILE.md#active-inference-institute) · [Institute software](https://danielarifriedman.com/software.html) |
 | [Presentations and media](https://danielarifriedman.com/domain-presentations-media.html) | [Active Inference Journal video archive](https://danielarifriedman.com/works/Friedman2026ActiveInferenceJournal500002.html) · [2026 Active Inference Symposium](https://danielarifriedman.com/works/Friedman20262026ActiveInferenceSymposium237.html) | [Talks and courses](https://danielarifriedman.com/media.html) · [Video archive](https://danielarifriedman.com/videos.html) |
 
 ## Featured projects
@@ -81,4 +92,4 @@ I study how systems make sense of the world, from [harvester ant colonies](https
 | **Evidence and source notes** | [Cite and verify](https://danielarifriedman.com/cite-verify.html) · [Claim ledger](https://danielarifriedman.com/evidence.html) · [Collection counts](https://github.com/docxology/docxology/blob/main/reports/current_counts.md) · [Scholar snapshot](https://danielarifriedman.com/data/scholar-snapshot.json) · [Discovery map](https://danielarifriedman.com/discovery.html) |
 | **About and contact** | [Full biography](https://github.com/docxology/docxology/blob/main/pages/PROFILE.md) · [Collaborators](https://github.com/docxology/docxology/blob/main/pages/COLLABORATORS.md) · [Contact and links](https://github.com/docxology/docxology/blob/main/pages/LINKS.md) |
 | **Research profiles** | [ORCID](https://orcid.org/0000-0001-6232-9096) · [Google Scholar](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) · [Wikidata](https://www.wikidata.org/wiki/Q138781444) |
-| **Maintaining this repository** | [Agent start guide](https://github.com/docxology/docxology/blob/main/AGENT_START.md) · [Project skill](https://github.com/docxology/docxology/blob/main/SKILL.md) · [Documentation index](https://github.com/docxology/docxology/blob/main/docs/README.md) · [Generated outputs](https://github.com/docxology/docxology/blob/main/GENERATED.md) · [Changelog](https://github.com/docxology/docxology/blob/main/CHANGELOG.md) |
+| **Maintaining this repository** | [Agent start guide](https://github.com/docxology/docxology/blob/main/AGENT_START.md) · [Project skill](https://github.com/docxology/docxology/blob/main/SKILL.md) · [Documentation index](https://github.com/docxology/docxology/blob/main/docs/README.md) · [Development and setup](https://github.com/docxology/docxology/blob/main/docs/operations/development.md) · [Generated outputs](https://github.com/docxology/docxology/blob/main/GENERATED.md) · [Changelog](https://github.com/docxology/docxology/blob/main/CHANGELOG.md) |
